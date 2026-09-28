@@ -1,0 +1,21 @@
+# 构建 / 临时产物
+*.zip
+*.7z
+*.rar
+tmp/
+dump/
+exports/
+__pycache__/
+*.pyc
+
+# 备份
+*.bak
+*.bak-*
+*.orig
+
+# 编辑器
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

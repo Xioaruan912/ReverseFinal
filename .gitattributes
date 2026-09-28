@@ -1,0 +1,14 @@
+# 统一换行策略：Windows 原生批处理与 GBK 文本不要被转换
+* text=auto
+
+*.md        text eol=lf
+*.py        text eol=lf
+*.cs        text eol=crlf
+
+# 二进制 / 需要原样保留
+*.bat       -text -diff
+*.txt       -text -diff
+*.exe       -text -diff
+*.dll       -text -diff
+*.ilraw     -text -diff
+*.png       -text -diff

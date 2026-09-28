@@ -1,0 +1,294 @@
+# dispatcher: ::  (0x0600222f)
+# resolver  :   (0x06002234)
+# strdec    : ::
+=== Listary.Core.Pro.LicenseChecker::CheckLicense  id=5639761
+   tok[0] = null
+   tok[1] = SIG[6]
+   tok[2] = M System.String::get_Length
+   tok[3] = F Listary.Core.Pro.LicenseChecker::LicenseLen
+   tok[4] = M System.String::ToLowerInvariant
+   tok[5] = M Listary.Core.Pro.LicenseChecker::\ue000
+   tok[6] = M System.Numerics.BigInteger::.ctor
+   tok[7] = M System.Numerics.BigInteger::op_LeftShift
+   tok[8] = M Listary.Core.Pro.LicenseChecker::\ue001
+   tok[9] = M System.Numerics.BigInteger::.ctor
+   tok[10] = M System.Numerics.BigInteger::op_LeftShift
+   tok[11] = M System.Numerics.BigInteger::op_BitwiseOr
+   tok[12] = M Listary.Core.Pro.LicenseChecker::\ue002
+   tok[13] = M System.Numerics.BigInteger::.ctor
+   tok[14] = M System.Numerics.BigInteger::op_BitwiseOr
+   tok[15] = str ""
+   tok[16] = M System.Numerics.BigInteger::op_RightShift
+   tok[17] = M System.Numerics.BigInteger::op_Implicit
+   tok[18] = M System.Numerics.BigInteger::op_BitwiseAnd
+   tok[19] = M System.Numerics.BigInteger::op_Explicit
+   tok[20] = F Listary.Core.Pro.LicenseChecker::\ue000
+   tok[21] = M System.String::get_Chars
+   tok[22] = M System.Char::ToString
+   tok[23] = M System.String::Concat
+   tok[24] = M System.String::Substring
+   tok[25] = M System.String::op_Inequality
+   tok[26] = F Listary.Core.Pro.LicenseChecker::\ue001
+   tok[27] = M System.String::Concat
+   tok[28] = M Listary.Core.Pro.LicenseChecker::\ue003
+   tok[29] = F Listary.Core.Pro.LicenseChecker::\ue002
+   tok[30] = System.Reflection.Emit.GenericMethodInfo
+   IL bytes: 226  tokens: 31
+    IL_0000: ldarg.0      
+    IL_0001: brfalse.s    IL_0006
+    IL_0003: ldarg.1      
+    IL_0004: brtrue.s     IL_0008
+    IL_0006: ldc.i4.0     
+    IL_0007: ret          
+    IL_0008: ldarg.1      
+    IL_0009: callvirt     raw=0x06000002 System.String::get_Length
+    IL_000e: ldsfld       raw=0x04000003 Listary.Core.Pro.LicenseChecker::LicenseLen
+    IL_0013: beq.s        IL_0017
+    IL_0015: ldc.i4.0     
+    IL_0016: ret          
+    IL_0017: ldarg.0      
+    IL_0018: callvirt     raw=0x06000004 System.String::ToLowerInvariant
+    IL_001d: starg.s      V0
+    IL_001f: ldarg.0      
+    IL_0020: call         raw=0x06000005 Listary.Core.Pro.LicenseChecker::\ue000
+    IL_0025: newobj       raw=0x06000006 System.Numerics.BigInteger::.ctor
+    IL_002a: ldc.i4.s     64
+    IL_002c: call         raw=0x06000007 System.Numerics.BigInteger::op_LeftShift
+    IL_0031: ldarg.0      
+    IL_0032: call         raw=0x06000008 Listary.Core.Pro.LicenseChecker::\ue001
+    IL_0037: newobj       raw=0x06000009 System.Numerics.BigInteger::.ctor
+    IL_003c: ldc.i4.s     32
+    IL_003e: call         raw=0x0600000a System.Numerics.BigInteger::op_LeftShift
+    IL_0043: call         raw=0x0600000b System.Numerics.BigInteger::op_BitwiseOr
+    IL_0048: ldarg.0      
+    IL_0049: call         raw=0x0600000c Listary.Core.Pro.LicenseChecker::\ue002
+    IL_004e: newobj       raw=0x0600000d System.Numerics.BigInteger::.ctor
+    IL_0053: call         raw=0x0600000e System.Numerics.BigInteger::op_BitwiseOr
+    IL_0058: stloc.0      
+    IL_0059: ldstr        raw=0x7000000f dyn[15] str=""
+    IL_005e: stloc.1      
+    IL_005f: ldc.i4.0     
+    IL_0060: stloc.3      
+    IL_0061: br.s         IL_00a4
+    IL_0063: ldloc.0      
+    IL_0064: ldc.i4.s     96
+    IL_0066: ldloc.3      
+    IL_0067: ldc.i4.1     
+    IL_0068: add          
+    IL_0069: ldc.i4.5     
+    IL_006a: mul          
+    IL_006b: sub          
+    IL_006c: call         raw=0x06000010 System.Numerics.BigInteger::op_RightShift
+    IL_0071: ldc.i4.s     31
+    IL_0073: call         raw=0x06000011 System.Numerics.BigInteger::op_Implicit
+    IL_0078: call         raw=0x06000012 System.Numerics.BigInteger::op_BitwiseAnd
+    IL_007d: call         raw=0x06000013 System.Numerics.BigInteger::op_Explicit
+    IL_0082: stloc.s      V4
+    IL_0084: ldloc.1      
+    IL_0085: ldsfld       raw=0x04000014 Listary.Core.Pro.LicenseChecker::\ue000
+    IL_008a: ldloc.s      V4
+    IL_008c: callvirt     raw=0x06000015 System.String::get_Chars
+    IL_0091: stloc.s      V5
+    IL_0093: ldloca.s     V5
+    IL_0095: call         raw=0x06000016 System.Char::ToString
+    IL_009a: call         raw=0x06000017 System.String::Concat
+    IL_009f: stloc.1      
+    IL_00a0: ldloc.3      
+    IL_00a1: ldc.i4.1     
+    IL_00a2: add          
+    IL_00a3: stloc.3      
+    IL_00a4: ldloc.3      
+    IL_00a5: ldc.i4.s     19
+    IL_00a7: blt.s        IL_0063
+    IL_00a9: ldarg.1      
+    IL_00aa: ldc.i4       160
+    IL_00af: ldc.i4.s     19
+    IL_00b1: callvirt     raw=0x06000018 System.String::Substring
+    IL_00b6: ldloc.1      
+    IL_00b7: call         raw=0x06000019 System.String::op_Inequality
+    IL_00bc: brfalse.s    IL_00c0
+    IL_00be: ldc.i4.0     
+    IL_00bf: ret          
+    IL_00c0: ldarg.0      
+    IL_00c1: ldsfld       raw=0x0400001a Listary.Core.Pro.LicenseChecker::\ue001
+    IL_00c6: call         raw=0x0600001b System.String::Concat
+    IL_00cb: call         raw=0x0600001c Listary.Core.Pro.LicenseChecker::\ue003
+    IL_00d0: stloc.2      
+    IL_00d1: ldsfld       raw=0x0400001d Listary.Core.Pro.LicenseChecker::\ue002
+    IL_00d6: ldloc.2      
+    IL_00d7: callvirt     raw=0x0600001e dyn[30] System.Reflection.Emit.GenericMethodInfo
+    IL_00dc: brfalse.s    IL_00e0
+    IL_00de: ldc.i4.0     
+    IL_00df: ret          
+    IL_00e0: ldc.i4.1     
+    IL_00e1: ret          
+=== Listary.Core.Pro.LicenseChecker::\ue000  id=5639981
+   tok[0] = null
+   tok[1] = SIG[5]
+   tok[2] = M System.String::get_Chars
+   tok[3] = M System.String::get_Length
+   IL bytes: 38  tokens: 4
+    IL_0000: ldc.i4.0     
+    IL_0001: stloc.0      
+    IL_0002: ldarg.0      
+    IL_0003: stloc.1      
+    IL_0004: ldc.i4.0     
+    IL_0005: stloc.2      
+    IL_0006: br.s         IL_001b
+    IL_0008: ldloc.1      
+    IL_0009: ldloc.2      
+    IL_000a: callvirt     raw=0x06000002 System.String::get_Chars
+    IL_000f: stloc.3      
+    IL_0010: ldc.i4.s     43
+    IL_0012: ldloc.0      
+    IL_0013: mul          
+    IL_0014: ldloc.3      
+    IL_0015: add          
+    IL_0016: stloc.0      
+    IL_0017: ldloc.2      
+    IL_0018: ldc.i4.1     
+    IL_0019: add          
+    IL_001a: stloc.2      
+    IL_001b: ldloc.2      
+    IL_001c: ldloc.1      
+    IL_001d: callvirt     raw=0x06000003 System.String::get_Length
+    IL_0022: blt.s        IL_0008
+    IL_0024: ldloc.0      
+    IL_0025: ret          
+=== Listary.Core.Pro.LicenseChecker::\ue001  id=5640066
+   tok[0] = null
+   tok[1] = SIG[5]
+   tok[2] = M System.String::get_Chars
+   tok[3] = M System.String::get_Length
+   IL bytes: 63  tokens: 4
+    IL_0000: ldc.i4.0     
+    IL_0001: stloc.0      
+    IL_0002: ldarg.0      
+    IL_0003: stloc.1      
+    IL_0004: ldc.i4.0     
+    IL_0005: stloc.2      
+    IL_0006: br.s         IL_0034
+    IL_0008: ldloc.1      
+    IL_0009: ldloc.2      
+    IL_000a: callvirt     raw=0x06000002 System.String::get_Chars
+    IL_000f: stloc.3      
+    IL_0010: ldloc.0      
+    IL_0011: ldc.i4.4     
+    IL_0012: shl          
+    IL_0013: ldloc.3      
+    IL_0014: add          
+    IL_0015: stloc.0      
+    IL_0016: ldloc.0      
+    IL_0017: ldc.i4       -268435456
+    IL_001c: and          
+    IL_001d: stloc.s      V4
+    IL_001f: ldloc.s      V4
+    IL_0021: brfalse.s    IL_0030
+    IL_0023: ldloc.0      
+    IL_0024: ldloc.s      V4
+    IL_0026: ldc.i4.s     24
+    IL_0028: shr.un       
+    IL_0029: xor          
+    IL_002a: stloc.0      
+    IL_002b: ldloc.0      
+    IL_002c: ldloc.s      V4
+    IL_002e: xor          
+    IL_002f: stloc.0      
+    IL_0030: ldloc.2      
+    IL_0031: ldc.i4.1     
+    IL_0032: add          
+    IL_0033: stloc.2      
+    IL_0034: ldloc.2      
+    IL_0035: ldloc.1      
+    IL_0036: callvirt     raw=0x06000003 System.String::get_Length
+    IL_003b: blt.s        IL_0008
+    IL_003d: ldloc.0      
+    IL_003e: ret          
+=== Listary.Core.Pro.LicenseChecker::\ue002  id=5639173
+   tok[0] = null
+   tok[1] = SIG[5]
+   tok[2] = M System.String::get_Chars
+   tok[3] = M System.String::get_Length
+   IL bytes: 50  tokens: 4
+    IL_0000: ldc.i4.0     
+    IL_0001: stloc.0      
+    IL_0002: ldc.i4.0     
+    IL_0003: stloc.1      
+    IL_0004: br.s         IL_002c
+    IL_0006: ldloc.1      
+    IL_0007: stloc.2      
+    IL_0008: br.s         IL_001f
+    IL_000a: ldloc.0      
+    IL_000b: ldarg.0      
+    IL_000c: ldloc.2      
+    IL_000d: callvirt     raw=0x06000002 System.String::get_Chars
+    IL_0012: ldloc.1      
+    IL_0013: ldc.i4.8     
+    IL_0014: mul          
+    IL_0015: ldc.i4.s     31
+    IL_0017: and          
+    IL_0018: shl          
+    IL_0019: xor          
+    IL_001a: stloc.0      
+    IL_001b: ldloc.2      
+    IL_001c: ldc.i4.4     
+    IL_001d: add          
+    IL_001e: stloc.2      
+    IL_001f: ldloc.2      
+    IL_0020: ldarg.0      
+    IL_0021: callvirt     raw=0x06000003 System.String::get_Length
+    IL_0026: blt.s        IL_000a
+    IL_0028: ldloc.1      
+    IL_0029: ldc.i4.1     
+    IL_002a: add          
+    IL_002b: stloc.1      
+    IL_002c: ldloc.1      
+    IL_002d: ldc.i4.4     
+    IL_002e: blt.s        IL_0006
+    IL_0030: ldloc.0      
+    IL_0031: ret          
+=== Listary.Core.Pro.LicenseChecker::\ue003  id=5639313
+   tok[0] = null
+   tok[1] = SIG[5]
+   tok[2] = M System.Security.Cryptography.MD5::Create
+   tok[3] = M System.Text.Encoding::get_UTF8
+   tok[4] = M System.Text.Encoding::GetBytes
+   tok[5] = M System.Security.Cryptography.HashAlgorithm::ComputeHash
+   tok[6] = M System.Text.StringBuilder::.ctor
+   tok[7] = System.RuntimeTypeHandle
+   tok[8] = str "x2"
+   tok[9] = M System.Byte::ToString
+   tok[10] = M System.Text.StringBuilder::Append
+   tok[11] = M System.Object::ToString
+   IL bytes: 73  tokens: 12
+    IL_0000: call         raw=0x06000002 System.Security.Cryptography.MD5::Create
+    IL_0005: call         raw=0x06000003 System.Text.Encoding::get_UTF8
+    IL_000a: ldarg.0      
+    IL_000b: callvirt     raw=0x06000004 System.Text.Encoding::GetBytes
+    IL_0010: callvirt     raw=0x06000005 System.Security.Cryptography.HashAlgorithm::ComputeHash
+    IL_0015: stloc.0      
+    IL_0016: newobj       raw=0x06000006 System.Text.StringBuilder::.ctor
+    IL_001b: stloc.1      
+    IL_001c: ldc.i4.0     
+    IL_001d: stloc.2      
+    IL_001e: br.s         IL_003c
+    IL_0020: ldloc.1      
+    IL_0021: ldloc.0      
+    IL_0022: ldloc.2      
+    IL_0023: ldelema      raw=0x02000007 dyn[7] System.RuntimeTypeHandle
+    IL_0028: ldstr        raw=0x70000008 dyn[8] str="x2"
+    IL_002d: call         raw=0x06000009 System.Byte::ToString
+    IL_0032: callvirt     raw=0x0600000a System.Text.StringBuilder::Append
+    IL_0037: pop          
+    IL_0038: ldloc.2      
+    IL_0039: ldc.i4.1     
+    IL_003a: add          
+    IL_003b: stloc.2      
+    IL_003c: ldloc.2      
+    IL_003d: ldloc.0      
+    IL_003e: ldlen        
+    IL_003f: conv.i4      
+    IL_0040: blt.s        IL_0020
+    IL_0042: ldloc.1      
+    IL_0043: callvirt     raw=0x0600000b System.Object::ToString
+    IL_0048: ret          
