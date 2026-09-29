@@ -1,5 +1,5 @@
 {
-  "_comment": "妙妙屋X 白盒鉴权测试 —— 版本锁定清单。部署脚本只读本文件，不访问上游 latest。",
+  "_comment": "妙妙屋X 许可与配额测试 —— 版本锁定清单。部署脚本只读本文件，不访问上游 latest。",
   "product": "miaomiaowuX",
   "pinned_version": "v0.5.4",
   "pinned_date": "2026-09-08",

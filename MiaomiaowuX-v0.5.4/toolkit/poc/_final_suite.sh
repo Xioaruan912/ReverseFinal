@@ -6,7 +6,7 @@ export PATH=/root/.nvm/versions/node/v22.23.2/bin:$PATH
 cp -f /mnt/c/Users/Administrator/Desktop/Reverse/Tool/mcp/mmwx-license-audit/poc/*.js /root/mmwx/pw/ 2>/dev/null
 {
 echo "================================================================================"
-echo " 妙妙屋X (miaomiaowux) v0.5.4 —— 白盒鉴权脆弱性 最终验证"
+echo " 妙妙屋X (miaomiaowux) v0.5.4 —— 许可与配额 最终验证"
 echo " A/B：官方原版 12889  vs  破解版 12890（同一客户端、同一操作序列）"
 echo " 破解产物 sha256: 1c1a55979845da533ebe305c6602f411ce32c2d2936938320ae200f3c0636e1c"
 echo "================================================================================"

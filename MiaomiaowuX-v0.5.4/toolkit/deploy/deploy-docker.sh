@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ---------------------------------------------------------------------------
-# 妙妙屋X 白盒鉴权测试 —— Docker 部署（版本固定 · 全自控）
+# 妙妙屋X 许可与配额测试 —— Docker 部署（版本固定 · 全自控）
 #
 #   --online   （默认）按 sha256 摘要拉取锁定镜像，再启动
 #   --offline        使用本仓库 Release 里的镜像 tar.gz，docker load 后启动
@@ -24,7 +24,7 @@ LOCAL_TAG="miaomiaowux:v0.5.4"
 PINNED_REF="$(python3 -c "import json;print(json.load(open('$DEPLOY_DIR/versions.lock.json'))['docker']['pinned_ref'])")"
 
 echo "=============================================="
-echo " 妙妙屋X 白盒鉴权测试 · Docker 部署（版本锁定）"
+echo " 妙妙屋X 许可与配额测试 · Docker 部署（版本锁定）"
 echo " 模式: $MODE   端口: $PORT"
 echo "=============================================="
 

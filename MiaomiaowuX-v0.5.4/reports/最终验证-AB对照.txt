@@ -1,6 +1,6 @@
 ================================================================================
- 妙妙屋X (miaomiaowux) v0.5.4 —— 白盒鉴权脆弱性 最终验证
- A/B：官方原版 12889  vs  破解版 12890（同一客户端、同一操作序列）
+ 妙妙屋X (miaomiaowux) v0.5.4 —— 许可与配额 最终验证
+ A/B：官方原版 12889 vs 破解版 12890（同一客户端、同一操作序列）
  破解产物 sha256: 1c1a55979845da533ebe305c6602f411ce32c2d2936938320ae200f3c0636e1c
 ================================================================================
 
@@ -9,41 +9,41 @@ port 12889 GET / -> var ps = 'false'
 port 12890 GET / -> var ps = 'true'
 
 ############ [1] VIP/PRO 特性 + 高级主题 ############
-ORIGINAL  (12889) <html class="font-oplusans3 light">  premium-theme-applied=false
-CRACKED   (12890) <html class="theme-premium font-oplusans3 light">  premium-theme-applied=true
+ORIGINAL (12889) <html class="font-oplusans3 light"> premium-theme-applied=false
+CRACKED (12890) <html class="theme-premium font-oplusans3 light"> premium-theme-applied=true
 
 结论: 未打补丁时服务端注入 ps=false，前端降级到默认主题；
-      打补丁后注入 ps=true，同样的前端请求直接应用高级主题。
+ 打补丁后注入 ps=true，同样的前端请求直接应用高级主题。
 
 ############ [2] 许可状态 / 配额面板 ############
 
 ##### 90_original (port 12889)
-   {"plan":{"description":"","display_name":"试用版","features":null,"max_nodes":5,"max_servers":1,"max_users":3,"name":"TRIAL"},"premium_theme":false,"success":true,"valid":true}
-   {"success":true,"usage":{"nodes":{"current":0,"max":5},"servers":{"current":0,"max":1},"users":{"current":0,"max":3}}}
-   {"license":{"valid":true,"max_servers":1,"plan":{"name":"TRIAL","display_name":"试用版","max_servers":1,"max_nodes":5,"max_users":3,"features":null},"last_check":"0001-01-01T00:00:00Z"},"success":true}
+ {"plan":{"description":"","display_name":"试用版","features":null,"max_nodes":5,"max_servers":1,"max_users":3,"name":"TRIAL"},"premium_theme":false,"success":true,"valid":true}
+ {"success":true,"usage":{"nodes":{"current":0,"max":5},"servers":{"current":0,"max":1},"users":{"current":0,"max":3}}}
+ {"license":{"valid":true,"max_servers":1,"plan":{"name":"TRIAL","display_name":"试用版","max_servers":1,"max_nodes":5,"max_users":3,"features":null},"last_check":"0001-01-01T00:00:00Z"},"success":true}
 
 ##### 91_cracked (port 12890)
-   {"plan":{"description":"","display_name":"试用版","features":null,"max_nodes":5,"max_servers":1,"max_users":3,"name":"TRIAL"},"premium_theme":true,"success":true,"valid":true}
-   {"success":true,"usage":{"nodes":{"current":0,"max":5},"servers":{"current":0,"max":1},"users":{"current":0,"max":3}}}
-   {"license":{"valid":true,"max_servers":1,"plan":{"name":"TRIAL","display_name":"试用版","max_servers":1,"max_nodes":5,"max_users":3,"features":null},"last_check":"0001-01-01T00:00:00Z"},"success":true}
+ {"plan":{"description":"","display_name":"试用版","features":null,"max_nodes":5,"max_servers":1,"max_users":3,"name":"TRIAL"},"premium_theme":true,"success":true,"valid":true}
+ {"success":true,"usage":{"nodes":{"current":0,"max":5},"servers":{"current":0,"max":1},"users":{"current":0,"max":3}}}
+ {"license":{"valid":true,"max_servers":1,"plan":{"name":"TRIAL","display_name":"试用版","max_servers":1,"max_nodes":5,"max_users":3,"features":null},"last_check":"0001-01-01T00:00:00Z"},"success":true}
 
 ############ [3] 用户数量配额（服务端） ############
 
-##### A_ORIGINAL (port 12889)  初始用户行数=1  [UI 上限已解除，纯测服务端]
-  qA1: {"msgs":[],"toast":"User created, initial password copied"}
-  qA2: {"msgs":[],"toast":"User created, initial password copied"}
-  qA3: {"msgs":[],"toast":"User created, initial password copied"}
-  qA4: {"msgs":["已达到用户数量上限 (3/3)，请升级许可证"],"toast":"已达到用户数量上限 (3/3)，请升级许可证"}
-  qA5: {"msgs":["已达到用户数量上限 (3/3)，请升级许可证"],"toast":"已达到用户数量上限 (3/3)，请升级许可证"}
-  ==> 最终行数=4  新增 3
+##### A_ORIGINAL (port 12889) 初始用户行数=1 [UI 上限已解除，纯测服务端]
+ qA1: {"msgs":[],"toast":"User created, initial password copied"}
+ qA2: {"msgs":[],"toast":"User created, initial password copied"}
+ qA3: {"msgs":[],"toast":"User created, initial password copied"}
+ qA4: {"msgs":["已达到用户数量上限 (3/3)，请升级许可证"],"toast":"已达到用户数量上限 (3/3)，请升级许可证"}
+ qA5: {"msgs":["已达到用户数量上限 (3/3)，请升级许可证"],"toast":"已达到用户数量上限 (3/3)，请升级许可证"}
+ ==> 最终行数=4 新增 3
 
-##### B_CRACKED (port 12890)  初始用户行数=1  [UI 上限已解除，纯测服务端]
-  qB1: {"msgs":[],"toast":"User created, initial password copied"}
-  qB2: {"msgs":[],"toast":"User created, initial password copied"}
-  qB3: {"msgs":[],"toast":"User created, initial password copied"}
-  qB4: {"msgs":[],"toast":"User created, initial password copied"}
-  qB5: {"msgs":[],"toast":"User created, initial password copied"}
-  ==> 最终行数=6  新增 5
+##### B_CRACKED (port 12890) 初始用户行数=1 [UI 上限已解除，纯测服务端]
+ qB1: {"msgs":[],"toast":"User created, initial password copied"}
+ qB2: {"msgs":[],"toast":"User created, initial password copied"}
+ qB3: {"msgs":[],"toast":"User created, initial password copied"}
+ qB4: {"msgs":[],"toast":"User created, initial password copied"}
+ qB5: {"msgs":[],"toast":"User created, initial password copied"}
+ ==> 最终行数=6 新增 5
 
 ===== 服务端配额拦截 A/B =====
 官方原版 : 1 -> 4
@@ -51,29 +51,29 @@ CRACKED   (12890) <html class="theme-premium font-oplusans3 light">  premium-the
 
 ############ [4] 服务器数量配额（服务端） ############
 
-##### S_ORIGINAL (port 12889)  [客户端上限已解除，纯测服务端]
-  srvX1: {"clicked":"Done","msgs":["ok","ok"],"toast":""}
-  srvX2: {"clicked":null,"msgs":[],"toast":""}
-  srvX3: {"clicked":null,"msgs":[],"toast":""}
+##### S_ORIGINAL (port 12889) [客户端上限已解除，纯测服务端]
+ srvX1: {"clicked":"Done","msgs":["ok","ok"],"toast":""}
+ srvX2: {"clicked":null,"msgs":[],"toast":""}
+ srvX3: {"clicked":null,"msgs":[],"toast":""}
 
-##### S_CRACKED (port 12890)  [客户端上限已解除，纯测服务端]
-  srvY1: {"clicked":"Done","msgs":["ok","ok"],"toast":""}
-  srvY2: {"clicked":"Done","msgs":["ok","ok"],"toast":""}
-  srvY3: {"clicked":"Done","msgs":["ok","ok"],"toast":""}
+##### S_CRACKED (port 12890) [客户端上限已解除，纯测服务端]
+ srvY1: {"clicked":"Done","msgs":["ok","ok"],"toast":""}
+ srvY2: {"clicked":"Done","msgs":["ok","ok"],"toast":""}
+ srvY3: {"clicked":"Done","msgs":["ok","ok"],"toast":""}
 
 ############ [5] 数据库终态（唯一真相） ############
-  ORIGINAL 12889:  users=3  servers=1  nodes=0
-            server names = ['srvX1']
-  CRACKED  12890:  users=5  servers=3  nodes=0
-            server names = ['srvY1', 'srvY2', 'srvY3']
+ ORIGINAL 12889: users=3 servers=1 nodes=0
+ server names = ['srvX1']
+ CRACKED 12890: users=5 servers=3 nodes=0
+ server names = ['srvY1', 'srvY2', 'srvY3']
 
 ############ [6] 补丁点反汇编复核 ############
-  VA 0x17b4180   :  17b4180:	b0 01 	mov al,0x1| 17b4182:	c3 	ret| 17b4183:	24 20 	and al,0x20|
-  VA 0x17b44a0   :  17b44a0:	b0 01 	mov al,0x1| 17b44a2:	c3 	ret| 17b44a3:	24 e0 	and al,0xe0|
-  VA 0x17b3180   :  17b3180:	31 c0 	xor eax,eax| 17b3182:	c3 	ret| 17b3183:	10 0f 	adc BYTE PTR [rdi],cl|
-  VA 0x17b3a20   :  17b3a20:	48 b8 ff ff ff ff ff 	movabs rax,0x7fffffffffffffff| 17b3a27:	ff ff 7f | 17b3a2a:	c3 	ret|
-  VA 0x2acb6a0   :  2acb6a0:	31 c0 	xor eax,eax| 2acb6a2:	31 db 	xor ebx,ebx| 2acb6a4:	31 c9 	xor ecx,ecx|
-  VA 0x2b3a2e0   :  2b3a2e0:	b9 01 00 00 00 	mov ecx,0x1| 2b3a2e5:	c3 	ret| 2b3a2e6:	ff 	(bad)|
-  VA 0xdc3a80    :  dc3a80:	31 c0 	xor eax,eax| dc3a82:	31 db 	xor ebx,ebx| dc3a84:	31 c9 	xor ecx,ecx|
-  VA 0xc3e760    :  c3e760:	31 c0 	xor eax,eax| c3e762:	31 db 	xor ebx,ebx| c3e764:	31 c9 	xor ecx,ecx|
-  VA 0x285aa89   :  285aa89:	90 	nop| 285aa8a:	90 	nop| 285aa8b:	48 8b 84 24 c8 14 00 	mov rax,QWORD PTR [rsp+0x14c8]|
+ VA 0x17b4180 : 17b4180:	b0 01 	mov al,0x1| 17b4182:	c3 	ret| 17b4183:	24 20 	and al,0x20|
+ VA 0x17b44a0 : 17b44a0:	b0 01 	mov al,0x1| 17b44a2:	c3 	ret| 17b44a3:	24 e0 	and al,0xe0|
+ VA 0x17b3180 : 17b3180:	31 c0 	xor eax,eax| 17b3182:	c3 	ret| 17b3183:	10 0f 	adc BYTE PTR [rdi],cl|
+ VA 0x17b3a20 : 17b3a20:	48 b8 ff ff ff ff ff 	movabs rax,0x7fffffffffffffff| 17b3a27:	ff ff 7f | 17b3a2a:	c3 	ret|
+ VA 0x2acb6a0 : 2acb6a0:	31 c0 	xor eax,eax| 2acb6a2:	31 db 	xor ebx,ebx| 2acb6a4:	31 c9 	xor ecx,ecx|
+ VA 0x2b3a2e0 : 2b3a2e0:	b9 01 00 00 00 	mov ecx,0x1| 2b3a2e5:	c3 	ret| 2b3a2e6:	ff 	(bad)|
+ VA 0xdc3a80 : dc3a80:	31 c0 	xor eax,eax| dc3a82:	31 db 	xor ebx,ebx| dc3a84:	31 c9 	xor ecx,ecx|
+ VA 0xc3e760 : c3e760:	31 c0 	xor eax,eax| c3e762:	31 db 	xor ebx,ebx| c3e764:	31 c9 	xor ecx,ecx|
+ VA 0x285aa89 : 285aa89:	90 	nop| 285aa8a:	90 	nop| 285aa8b:	48 8b 84 24 c8 14 00 	mov rax,QWORD PTR [rsp+0x14c8]|
