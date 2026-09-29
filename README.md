@@ -6,7 +6,7 @@
 
 ## 一键命令
 
-三条命令，各自复制即用。测试工具包与被测软件**全部从本仓库 Release 拉取**，
+四条命令，各自复制即用。测试工具包与被测软件**全部从本仓库 Release 拉取**，
 下载后逐一校验 sha256，不匹配立即中止；不访问被测软件官网的「最新版」，
 厂商发新版不会改变测试对象。
 
@@ -49,7 +49,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 Reverse_OK/
 ├── README.md
 ├── Agent.md                     作业规范（脚本 / 安装包 / 一键 / 上传）
-├── oneclick/                    一键命令入口（三条命令的脚本）
+├── oneclick/                    一键命令入口（四条命令的脚本）
 │   ├── README.md
 │   ├── hexhub-vip-test.ps1
 │   ├── listary-pro-test.ps1
