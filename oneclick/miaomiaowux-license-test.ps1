@@ -1,32 +1,30 @@
-﻿#Requires -Version 5.1
-<#
-.SYNOPSIS
-  妙妙屋X (miaomiaowuX) 白盒鉴权脆弱性测试 —— 一键运行（Windows 侧入口）
-
-.DESCRIPTION
-  妙妙屋X 是 Linux 服务端程序，本脚本负责在 Windows 上把整套流程交给 WSL 执行：
-  测试工具包与固定版本主程序全部从本交付仓库 Release 拉取并校验 sha256。
-
-  固定版本 : miaomiaowuX v0.5.4
-  前置条件 : 已安装 WSL2 + 任意 Debian/Ubuntu 发行版
-
-.EXAMPLE
-  powershell -NoProfile -ExecutionPolicy Bypass -File .\miaomiaowux-license-test.ps1
-
-.EXAMPLE
-  .\miaomiaowux-license-test.ps1 -Distro Debian -Port 12889
-#>
-[CmdletBinding()]
-param(
-    [string] $Distro = '',
-    [int]    $Port   = 12889
-)
+﻿# 妙妙屋X (miaomiaowuX) 白盒鉴权脆弱性测试 —— 一键运行（Windows 侧入口，支持 irm | iex）
+#
+#  用法一（一行管道，无需落盘）:
+#    powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.ps1 | iex"
+#
+#  用法二（先存盘再跑，可用环境变量调参）:
+#    $env:MMWX_DISTRO='Debian'; $env:PORT='12889'
+#    powershell -NoProfile -ExecutionPolicy Bypass -File .\miaomiaowux-license-test.ps1
+#
+#  可选环境变量:
+#    MMWX_DISTRO  指定 WSL 发行版（默认自动选 Debian → Ubuntu → 第一个）
+#    PORT         面板端口（默认 12889）
+#
+#  注意：本脚本刻意不使用 param()/[CmdletBinding()] —— 那两者只能出现在脚本文件里，
+#        经 iex 以字符串执行时会报 UnexpectedAttribute。故选项一律走环境变量。
+#
+#  固定版本 : miaomiaowuX v0.5.4
+#  前置条件 : 已安装 WSL2 + 任意 Debian/Ubuntu 发行版
 
 $ErrorActionPreference = 'Stop'
 [Console]::OutputEncoding = [Text.Encoding]::UTF8
 
 $ONECLICK_URL = 'https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh'
 $PINNED_VER   = 'v0.5.4'
+
+$Distro = $env:MMWX_DISTRO
+$Port   = if ($env:PORT) { [int]$env:PORT } else { 12889 }
 
 function Head($t) { Write-Host "`n=== $t ===" -ForegroundColor Cyan }
 function Ok($m)   { Write-Host "  [+] $m" -ForegroundColor Green }

@@ -3,7 +3,7 @@
 # 妙妙屋X (miaomiaowuX) v0.5.4 —— 白盒鉴权「全归零」一键测试（版本固定 · 自控源）
 #
 #   普通「一条命令跑通」入口；被测程序一律锁定 v0.5.4，绝不使用 releases/latest。
-#   构件来源顺序： 本地 ./artifacts/ → 本仓库 Release 固定件 → MMWX_MIRROR
+#   构件来源顺序： 本地 toolkit/artifacts/ → 本仓库 Release 固定件 → MMWX_MIRROR
 #   取到后强制 sha256 校验，不匹配立即中止。
 #
 #   只想部署、不打补丁： 见 deploy/deploy-native.sh / deploy/deploy-docker.sh
@@ -15,7 +15,7 @@ ROOT="$(cd "$HERE/.." && pwd)"
 LOCK_SHA="ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657"
 ASSET="mmwx-v0.5.4-linux-amd64"
 RELEASE_BASE="https://github.com/Xioaruan912/ReverseFinal/releases/download/whitebox-audit-v1.0"
-ART_DIR="${MMWX_ARTIFACTS:-$ROOT/artifacts}"
+ART_DIR="${MMWX_ARTIFACTS:-$HERE/artifacts}"
 SRC="$ART_DIR/$ASSET"
 mkdir -p "$ART_DIR"
 
@@ -44,7 +44,7 @@ else
 fi
 
 # ---- 2) 解包并打补丁（补丁明细见 mmwx-crack.py / 本目录 README） ----
-WORK="$ROOT/run-test"
+WORK="$HERE/run-test"
 mkdir -p "$WORK"
 cp -f "$SRC" "$WORK/mmwx-packed"
 cd "$WORK"

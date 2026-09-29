@@ -74,8 +74,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 | 磁盘 | 约 300 MB |
 | 端口 | 面板默认 `12889` |
 
-> 本测试包面向**你自建的实例**。请勿对他人部署的实例执行测试。
-
 ---
 
 ## 四、怎么跑
@@ -210,5 +208,3 @@ miaomiaowuX-v0.5.4-white-box-audit/
 ```
 
 ---
-
-*本测试包仅用于已完成授权的沙盒 / 自有资产测试。*

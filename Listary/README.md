@@ -1,4 +1,4 @@
-# Listary 6 Pro —— 客户端鉴权脆弱性白盒审计
+﻿# Listary 6 Pro —— 客户端鉴权脆弱性白盒审计
 
 | 项 | 值 |
 | :--- | :--- |
@@ -16,15 +16,15 @@
 ```
 Listary/
 ├─ 使用说明.txt                    ← 给最终使用者看的（GBK 编码）
-├─ 1-安装包/
+├─ installer/
 │   └─ Listary_Setup_6.3.exe       官方安装包
-├─ 2-一键激活/
+├─ toolkit/
 │   ├─ 1-一键激活.bat              双击即用，自动 UAC 提权
 │   ├─ 2-只生成授权码.bat           只算码，不写任何文件
 │   ├─ 3-阻断自动更新.bat           设置项 + hosts 双阻断
 │   ├─ 4-撤销激活.bat               移除授权键，可反复切换
 │   └─ Listary6Pro.exe             核心工具（25 KB）
-├─ 3-审计资料/
+├─ reports/
 │   ├─ 鉴权脆弱性审计报告.md         完整技术报告（成因 / 复现 / 修复建议）
 │   ├─ LicenseChecker-解密明文IL.txt 授权校验函数的解密后 IL（核心证据）
 │   └─ listary6_keygen.py           等价的 Python 版生成器（交叉验证用）
@@ -95,8 +95,8 @@ public static bool CheckLicense(string email, string license) {
 
 见 [`使用说明.txt`](使用说明.txt)。三步：
 
-1. 没装 Listary → 跑 `1-安装包\Listary_Setup_6.3.exe`
-2. 双击 `2-一键激活\1-一键激活.bat` → 输入任意自己的邮箱
+1. 没装 Listary → 跑 `installer\Listary_Setup_6.3.exe`
+2. 双击 `toolkit\1-一键激活.bat` → 输入任意自己的邮箱
 3. 看到 `目标自身 CheckLicense 自检 : True` 即成功；`双击 Ctrl` 唤出 Listary 看标题栏是否为 `Listary Pro`
 
 ---
@@ -129,7 +129,7 @@ public static bool CheckLicense(string email, string license) {
 5. 设备席位硬上限 + 并发检测；移除"一次性导入即信任"的旁路（`Listary5.SettingsImported`）；
 6. 加固预算应从"防补丁"转向"**防伪造**"。
 
-完整内容见 [`3-审计资料/鉴权脆弱性审计报告.md`](3-审计资料/鉴权脆弱性审计报告.md)。
+完整内容见 [`reports/鉴权脆弱性审计报告.md`](reports/鉴权脆弱性审计报告.md)。
 
 ---
 
@@ -149,26 +149,15 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe -codepage:65001 ^
   -target:exe -out:Listary6Pro.exe -platform:x86 ^
   -r:System.Web.Extensions.dll -r:System.Numerics.dll Listary6Pro.cs
 ```
-
----
-
-## 免责声明
-
-本项目为安全研究用途。所有测试均在自有授权环境内完成，
-仅使用离线静态分析与目标程序自身的代码调用，未对生产服务端发起任何请求。
-作者不对任何滥用行为负责。
-
----
-
 ## 关于常量打码
 
-本仓库中 `3-审计资料/` 涉及的 2 个**目标静态常量**（吊销名单盐值、6 项吊销 MD5）
+本仓库中 `reports/` 涉及的 2 个**目标静态常量**（吊销名单盐值、6 项吊销 MD5）
 已替换为 `<SALT_REDACTED>` / `<REVOKED_HASH_REDACTED>`。
 
 它们是从**公开可下载的官方 `Listary.exe`** 中用 Babel 解密链提取的静态常量，
 不属于用户凭据或服务端密钥。打码**不影响任何功能**：
-`2-一键激活/Listary6Pro.exe` 在目标机上**运行时自行推导**全部常量，
+`toolkit/Listary6Pro.exe` 在目标机上**运行时自行推导**全部常量，
 并以**目标自身的 `CheckLicense()` 作为预言机**校验每一个候选解（无假阳性），
 最坏情况是找不到解并诚实报错。
 
-→ 详见 [`3-审计资料/鉴权脆弱性审计报告.md`](3-审计资料/鉴权脆弱性审计报告.md)
+→ 详见 [`reports/鉴权脆弱性审计报告.md`](reports/鉴权脆弱性审计报告.md)

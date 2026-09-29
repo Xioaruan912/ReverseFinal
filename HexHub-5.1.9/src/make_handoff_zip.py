@@ -1,4 +1,4 @@
-"""打包交付物（剔除大体积中间产物，保持轻量可分发给接手人）"""
+﻿"""打包交付物（剔除大体积中间产物，保持轻量可分发给接手人）"""
 import os, zipfile, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +20,7 @@ INCLUDE_DIRS = {
     "reports": (".md",),
     "patches": (".js", ".md"),          # 排除 118MB 的 exe 副本
     "optional": None,
-    "exports": (".png",),               # 只带证据截图
+    "exports": (".png",),               # 只带evidence
 }
 EXCLUDE = {"nsis_solid_stream.bin"}
 

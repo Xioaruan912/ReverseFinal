@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # ============================================================================
 # 妙妙屋X (miaomiaowuX) · 白盒鉴权脆弱性测试 —— 一键运行
 #
@@ -21,7 +21,7 @@ set -euo pipefail
 
 REL_BASE="https://github.com/Xioaruan912/ReverseFinal/releases/download/whitebox-audit-v1.0"
 PACK_NAME="miaomiaowuX-whitebox-audit-pack-v1.0.zip"
-PACK_SHA256="5a1d8b1247e23e8d1af553444ca6f643d42d87eeb78e2993c2327501a1a59f1c"
+PACK_SHA256="b02d3950a3f3fc719f9867ace5af191c8f92a4c8849be58c34047b09287e98b0"
 PINNED_VER="v0.5.4"
 PORT="${PORT:-12889}"
 WORKDIR="${WORKDIR:-$HOME/mmwx-lab}"
@@ -78,13 +78,13 @@ ok "已展开到 $PKGROOT"
 
 # ── 2/3 固定版本主程序（由包内 deploy/fetch.sh 按 lock 文件取件并校验）──────
 head_ "2/3  取得妙妙屋X $PINNED_VER 主程序（本交付仓库 Release + sha256 校验）"
-cd "$PKGROOT/2-一键白盒测试"
+cd "$PKGROOT/toolkit"
 if [ -f deploy/fetch.sh ]; then
   BIN="$(bash -c 'source deploy/fetch.sh; fetch_asset linux_amd64')"
   ok "主程序就绪: $BIN"
 else
   warn '包内缺少 deploy/fetch.sh，退回直接下载'
-  BIN="$PKGROOT/2-一键白盒测试/artifacts/mmwx-v0.5.4-linux-amd64"
+  BIN="$PKGROOT/toolkit/artifacts/mmwx-v0.5.4-linux-amd64"
   mkdir -p "$(dirname "$BIN")"
   get_pinned "$REL_BASE/mmwx-v0.5.4-linux-amd64" "$BIN" \
     'ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657' '主程序'
@@ -92,7 +92,7 @@ fi
 
 # ── 3/3 执行白盒鉴权测试 ───────────────────────────────────────────────────
 head_ '3/3  执行白盒鉴权测试'
-[ -f '一键白盒测试.sh' ] || die '包结构异常：未找到 2-一键白盒测试/一键白盒测试.sh'
+[ -f 'run.sh' ] || die '包结构异常：未找到 toolkit/run.sh'
 cat <<TIP
   接下来会：
     · 使用刚校验过的 $PINNED_VER 主程序准备测试副本
@@ -106,4 +106,4 @@ cat <<TIP
   测试之后          ：档位显示专业版、高级主题生效、可继续添加用户与服务器
 
 TIP
-exec bash '一键白盒测试.sh'
+exec bash 'run.sh'

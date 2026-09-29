@@ -1,4 +1,4 @@
-# 白盒鉴权脆弱性测试（CWE-602）—— 通用方法论 + HexHub 实操手册
+﻿# 白盒鉴权脆弱性测试（CWE-602）—— 通用方法论 + HexHub 实操手册
 
 > 配套案例：`HexHub-Client-windows-amd64-installer-5.1.9.exe`
 > 适用场景：**授权沙盒内**的客户端鉴权逻辑走查（会员/订阅/许可/激活/试用）
@@ -374,4 +374,4 @@ cd ../..
 NODE_PATH="C:\Users\Administrator\.pi\agent\npm\node_modules" node poc_offline_vip.js   # ③ 断网注入+取证
 ```
 
-产物：`exports/poc_offline_vip.png`（👑 Plus 证据截图）
+产物：`exports/poc_offline_vip.png`（👑 Plus evidence）

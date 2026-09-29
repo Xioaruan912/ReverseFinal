@@ -1,4 +1,4 @@
-# 版本固定记录
+﻿# 版本固定记录
 
 本案例的测试结论只对下列**固定版本**成立。厂商后续发新版可能改变行为，届时需重新复测。
 
@@ -48,4 +48,4 @@ sha256sum mmwx-v0.5.4-linux-amd64
 `releases/latest`、或使用 `:latest` 镜像，厂商一发新版测试对象就变了，本案例的结论与证据将无法复现。
 
 因此约定：**只用 v0.5.4**。要升级需显式修改
-`2-一键白盒测试/deploy/versions.lock.json` 中的版本号与哈希。
+`toolkit/deploy/versions.lock.json` 中的版本号与哈希。

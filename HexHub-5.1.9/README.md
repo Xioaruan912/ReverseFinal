@@ -1,10 +1,9 @@
-# HexHub Client 5.1.9 —— 客户端鉴权脆弱性白盒审计（CWE-602）
+﻿# HexHub Client 5.1.9 —— 客户端鉴权脆弱性白盒审计（CWE-602）
 
 > **目标**：HexHub Client `windows-amd64-installer-5.1.9.exe`（CEF + Go 架构的数据库/SSH/Docker 客户端）
 > **结论**：会员（VIP）权益判定**完全在客户端**，且"完整性签名"是不含任何服务端密钥的**自证式哈希**。
 > 无需账号、无需破解通信协议，只要让厂商授权服务器不可达并写入本地会话，即可点亮 **👑 Plus 终身版**。
 >
-> ⚠️ 仅限**用户自有授权环境**下的客户端逻辑验证与防御加固研究。包内不含任何真实凭据。
 
 ---
 
@@ -12,9 +11,9 @@
 
 | 目录 | 说明 |
 | :--- | :--- |
-| [`1-安装包/`](1-安装包/) | 目标安装包放置说明（145MB 超 GitHub 限制，不入库） |
-| [`2-一键白盒测试/`](2-一键白盒测试/) | ★ 一键测试工装（静态解包 / 启动 / 断网注入 / 取证 / 二进制补丁） |
-| [`3-审计资料/`](3-审计资料/) | ★ 评估报告 + VIP 功能测绘 + 通用方法论 SOP + 证据截图 |
+| [`installer/`](installer/) | 目标安装包放置说明（145MB 超 GitHub 限制，不入库） |
+| [`toolkit/`](toolkit/) | ★ 一键测试工装（静态解包 / 启动 / 断网注入 / 取证 / 二进制补丁） |
+| [`reports/`](reports/) | ★ 评估报告 + VIP 功能测绘 + 通用方法论 SOP + evidence |
 | [`src/`](src/) | 自研分析工装源码（NSIS 解析器 / bundle 定位 / JS 美化 / VIP 门禁测绘） |
 
 ---
@@ -61,11 +60,11 @@ Xs = async (priKey, token) => {
 
 | 用例 | 数据 | 二进制 / 网络 | 顶栏徽章 | 截图 |
 | :--- | :--- | :--- | :--- | :--- |
-| **A** | 伪造终身会员 | 原版 · **厂商服务器阻断** | ✅ 👑 Plus（未登录） | [`证据A`](3-审计资料/证据截图/证据A-未登录断网仍显示Plus.png) |
+| **A** | 伪造终身会员 | 原版 · **厂商服务器阻断** | ✅ 👑 Plus（未登录） | [`证据A`](reports/evidence/证据A-未登录断网仍显示Plus.png) |
 | **B** | 伪造 token | 原版 · 服务器可达 | ❌ 会话被 401 拦截器清空 | — |
-| **C1** | **已过期** + 伪造签名 | 原版 | ❌ 无徽章 | [`证据C1`](3-审计资料/证据截图/证据C1-原版无徽章.png) |
-| **C2** | 同 C1（**同一份过期/伪造数据**） | **等长补丁版** | ✅ 👑 Plus | [`证据C2`](3-审计资料/证据截图/证据C2-补丁版Plus.png) |
-| **D** | 自建 RSA 密钥对 + mock 响应 | 原版 · 服务器阻断 | ✅ 👑 Plus（客户端认为已登录+已同步） | [`证据D`](3-审计资料/证据截图/证据D-完全离线模拟登录Plus.png) |
+| **C1** | **已过期** + 伪造签名 | 原版 | ❌ 无徽章 | [`证据C1`](reports/evidence/证据C1-原版无徽章.png) |
+| **C2** | 同 C1（**同一份过期/伪造数据**） | **等长补丁版** | ✅ 👑 Plus | [`证据C2`](reports/evidence/证据C2-补丁版Plus.png) |
+| **D** | 自建 RSA 密钥对 + mock 响应 | 原版 · 服务器阻断 | ✅ 👑 Plus（客户端认为已登录+已同步） | [`证据D`](reports/evidence/证据D-完全离线模拟登录Plus.png) |
 
 > **C 组意义**：同一份「2023 已过期 + 伪造签名」数据，仅换二进制 → 结果翻转，证明判定被绕过。
 > **D 组意义**：连"登录"都不需要 —— 客户端用**自建密钥**解出**伪造会员**并完整走通「拉取 → 解密 → 验签 → 落盘 → 点亮会员」。
@@ -81,7 +80,7 @@ Xs = async (priKey, token) => {
   而「自定义私有储存仓库」的 **local / WebDAV / S3** 三类**完全由客户端直连用户自有存储**，旁路后可**完全离线工作**
 * 唯一由服务端强制的是**登录设备数配额**（Pro 2 台 / Plus 5 台）
 
-详见 [`3-审计资料/VIP功能测绘与服务端依赖分析.md`](3-审计资料/VIP功能测绘与服务端依赖分析.md)
+详见 [`reports/VIP功能测绘与服务端依赖分析.md`](reports/VIP功能测绘与服务端依赖分析.md)
 
 ---
 
@@ -91,13 +90,13 @@ Xs = async (priKey, token) => {
 cd HexHub-5.1.9
 
 # ① 环境自检（13 项）
-powershell -ExecutionPolicy Bypass -File .\2-一键白盒测试\preflight.ps1
+powershell -ExecutionPolicy Bypass -File .\toolkit\preflight.ps1
 
 # ② 主测试：静态解包 -> 启动客户端 -> 页面级断网 + 伪造会话 -> 取证
-powershell -ExecutionPolicy Bypass -File .\2-一键白盒测试\run_test.ps1 -NegativeControl
+powershell -ExecutionPolicy Bypass -File .\toolkit\run_test.ps1 -NegativeControl
 
 # ③ 路线 D：完全离线模拟登录（无需任何账号）
-cd 2-一键白盒测试
+cd toolkit
 $env:NODE_PATH="C:\Users\Administrator\.pi\agent\npm\node_modules"
 node poc_fake_login.js
 ```
@@ -110,7 +109,7 @@ node poc_fake_login.js
 ## 六、二进制微创补丁（登录场景首选）
 
 ```powershell
-cd 2-一键白盒测试
+cd toolkit
 python patch_vip.py
 #  P1a/P1b  isMemberValid(){...}  ->  isMemberValid(){return!0}   (主 bundle + worker bundle)
 #  P2       ue=le=>{...}          ->  ue=le=>!0                   (完整性校验)

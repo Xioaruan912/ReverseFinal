@@ -9,9 +9,9 @@
 
 【快速开始】三步
   1) 如果没有装 Listary：
-     双击  1-安装包\Listary_Setup_6.3.exe  完成安装（一路下一步即可）。
+     双击  installer\Listary_Setup_6.3.exe  完成安装（一路下一步即可）。
 
-  2) 双击  2-一键激活\1-一键激活.bat
+  2) 双击  toolkit\1-一键激活.bat
      - 会弹出 UAC 提权窗口，点"是"
      - 按提示输入任意一个你自己的邮箱
      - 看到  目标自身 CheckLicense 自检 : True   即成功
@@ -21,10 +21,10 @@
      也可打开 选项 -> 关于 / Listary Pro 页 查看授权信息。
 
 【目录说明】
-  1-安装包\
+  installer\
       Listary_Setup_6.3.exe        官方安装包
 
-  2-一键激活\
+  toolkit\
       Listary6Pro.exe              核心工具（命令行）
        info                        探测已安装版本、设置文件位置、更新阻断状态
        gen  <邮箱>                 只为该邮箱生成授权码（不写任何文件）
@@ -37,7 +37,7 @@
       3-阻断自动更新.bat           单独执行更新阻断
       4-撤销激活.bat               撤销激活（移除授权键，可反复激活/撤销）
 
-  3-审计资料\
+  reports\
       鉴权脆弱性审计报告.md        完整技术报告（成因/复现/修复建议）
       LicenseChecker-解密明文IL.txt 目标授权校验函数的解密后中间码（核心证据）
       listary6_keygen.py           等价的 Python 版授权码生成器（供交叉验证）
@@ -67,7 +67,7 @@
 
 【常见问题】
   Q: 提示"找不到 Listary 安装目录"
-  A: 先用  1-安装包\Listary_Setup_6.3.exe 安装 Listary，再运行激活。
+  A: 先用  installer\Listary_Setup_6.3.exe 安装 Listary，再运行激活。
 
   Q: 自检显示 False
   A: 说明该 Listary 版本的算法结构与已知形态差异过大。
@@ -78,7 +78,7 @@
      或直接重跑一次 1-一键激活.bat 让它自动重启。
 
   Q: 想撤销
-  A: 双击  2-一键激活\4-还原设置.bat，会从 .bak 恢复原设置。
+  A: 双击  toolkit\4-还原设置.bat，会从 .bak 恢复原设置。
 
   Q: hosts 改不动
   A: 必须是管理员。bat 会自动弹 UAC；若被安全软件拦截，
