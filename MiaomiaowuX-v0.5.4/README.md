@@ -83,11 +83,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 
 ```
 [1] 提示构件来自 GitHub，中国大陆可能较慢（可自建镜像 / 手动放置）
-[2] 选择运行方式：1) 测试模式   2) 生产模式（持久化）
-[3] 询问目录（测试=工作目录；生产=安装目录）
-[4] 取测试包 + 取固定版本 v0.5.4 主程序 → 逐个校验 sha256
-[5] 测试模式：12889 端口临时启动，停止后清理
-    生产模式：安装到指定目录 + 注册 systemd 服务 + 开机自启，长期保留
+[2] 询问安装目录（回车用默认 /opt/mmwx）
+[3] 取测试包 + 取固定版本 v0.5.4 主程序 → 逐个校验 sha256
+[4] 安装到指定目录 + 注册 systemd 服务 + 设为开机自启
+[5] 证据与报告另存到 ~/ReverseAudit-Evidence/，临时文件自动清理
+    （安装目录长期保留，不做临时测试运行）
 ```
 
 **GitHub 下载慢时**：
@@ -104,9 +104,9 @@ MMWX_MIRROR=https://your-mirror/mmwx bash <(curl -fsSL .../miaomiaowux-license-t
 | 变量 | 作用 |
 | :--- | :--- |
 | `PORT` | 面板端口（默认 12889） |
-| `MMWX_WORKDIR` | 安装/工作目录（跳过询问） |
+| `MMWX_INSTALLDIR` | 安装目录（跳过询问，默认 `/opt/mmwx`） |
 | `MMWX_YES=1` | 非交互，全部用默认值 |
-| `MMWX_KEEP_FILES=1` | 保留中间产物不清理 |
+| `MMWX_NO_SERVICE=1` | 只安装，不注册 systemd 服务 |
 | `MMWX_MIRROR` | 自建镜像前缀 |
 
 ---
@@ -129,30 +129,9 @@ MMWX_MIRROR=https://your-mirror/mmwx bash <(curl -fsSL .../miaomiaowux-license-t
 
 ---
 
-## 六、两种使用方式
+## 六、部署与运维
 
-### 方式一：测试模式（默认）
-
-临时启动，验证完即走：
-
-- 停止实例（Ctrl+C）后，**证据与报告**先另存到 `~/ReverseAudit-Evidence/MiaomiaowuX-v0.5.4/<时间戳>/`
-- 随后**自动删除**中间产物（下载的包、测试副本、解包件）
-
-### 方式二：生产模式（持久化，长期使用）
-
-想把这个实例当作长期运行的服务，选择生产模式：
-
-```bash
-MMWX_MODE=persist MMWX_INSTALLDIR=/opt/mmwx bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
-```
-
-脚本会：
-
-1. 把可执行文件安装到 `<安装目录>/mmwx`，数据目录为 `<安装目录>/data`（**长期保留，不清理**）
-2. 注册 systemd 服务 `mmwx.service`（`Restart=always` + **开机自启**）
-3. 立即启动并打印管理命令
-
-管理命令：
+安装完成后即为常驻服务（systemd + 开机自启），日常用这几条命令：
 
 ```bash
 systemctl status  mmwx      # 查看状态
@@ -162,15 +141,27 @@ systemctl disable mmwx      # 取消开机自启
 journalctl -u mmwx -f       # 实时日志
 ```
 
+数据与程序都在安装目录：
+
+```
+/opt/mmwx/
+├── mmwx            可执行文件
+├── artifacts/      固定版本构件缓存（重跑可直接复用）
+└── data/           数据目录（长期保留）
+```
+
+升级：重跑同一条命令即可（会覆盖可执行文件，`data/` 不受影响）。
+
 卸载：
 
 ```bash
 systemctl disable --now mmwx && rm -f /etc/systemd/system/mmwx.service && rm -rf /opt/mmwx
 ```
 
-> WSL 默认未启用 systemd？脚本会自动降级为后台常驻脚本，安装目录下会生成
-> `start.sh` / `stop.sh`，日志在 `<安装目录>/mmwx.log`。
-> 想用 systemd：在 `/etc/wsl.conf` 写入 `[boot]` + `systemd=true` 后重启 WSL，再重跑本脚本即可。
+> **WSL 未启用 systemd？** 脚本会自动降级为安装目录下的 `start.sh` / `stop.sh` + `mmwx.log`。
+> 想用 systemd：在 `/etc/wsl.conf` 写入 `[boot]` + `systemd=true` 后重启 WSL，再重跑本脚本。
+>
+> **只想安装不注册服务**：`MMWX_NO_SERVICE=1`。
 
 ### 前端与 Docker 部署
 

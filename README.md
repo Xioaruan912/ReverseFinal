@@ -42,6 +42,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 ```
 Reverse_OK/
 ├── README.md
+├── Agent.md                     作业规范（脚本 / 安装包 / 一键 / 上传）
 ├── oneclick/                    一键命令入口（三条命令的脚本）
 │   ├── README.md
 │   ├── hexhub-vip-test.ps1
@@ -77,4 +78,6 @@ Reverse_OK/
     └── src/                     逆向与取证脚本
 ```
 
-各目标的漏洞成因、复现步骤、验证证据与整改建议，见对应子目录下的 `README.md`。
+各目标的成因、复现步骤、验证证据与整改建议，见对应子目录下的 `README.md`。
+
+要基于本仓库继续开发，请先读 **[`Agent.md`](Agent.md)** —— 脚本要求、安装包要求、一键安装要求、Linux 产品默认持久化、上传 GitHub 规范都在里面。

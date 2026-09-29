@@ -94,15 +94,17 @@ MMWX_MIRROR=https://your-mirror/mmwx bash <(...)
 
 跑完后：
 
-- **证据与报告** 会自动复制到 `%USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>\`
-- **中间产物**（下载的包、安装包缓存、解包副本）自动删除
+- **证据与报告** 自动复制到 `%USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>\`
+- **中间产物**（下载的包、解包副本）自动删除
+- Linux 产品（妙妙屋X）**默认持久化**：安装到指定目录 + systemd 常驻 + 开机自启，
+  安装目录与 `data/` 长期保留；Windows 桌面软件保留已安装的程序
 - 想保留中间产物：加 `..._KEEP_FILES=1`
 
 ### 可用环境变量（跳过交互）
 
 | 变量 | 作用 |
 | :--- | :--- |
-| `HEXHUB_WORKDIR` / `LISTARY_WORKDIR` / `MMWX_WORKDIR` | 直接指定工作目录 |
+| `HEXHUB_WORKDIR` / `LISTARY_WORKDIR` / `MMWX_INSTALLDIR` | 直接指定工作目录 / 安装目录 |
 | `LISTARY_INSTALLDIR` | 指定 Listary 安装目录（默认 `C:\Program Files\Listary`） |
 | `HEXHUB_YES` / `LISTARY_YES` / `MMWX_YES` | `=1` 非交互，全部用默认值 |
 | `HEXHUB_KEEP_FILES` / `LISTARY_KEEP_FILES` / `MMWX_KEEP_FILES` | `=1` 保留中间产物 |
