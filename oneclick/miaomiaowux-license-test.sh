@@ -21,7 +21,7 @@ set -euo pipefail
 
 REL_BASE="https://github.com/Xioaruan912/ReverseFinal/releases/download/whitebox-audit-v1.0"
 PACK_NAME="miaomiaowuX-whitebox-audit-pack-v1.0.zip"
-PACK_SHA256="b02d3950a3f3fc719f9867ace5af191c8f92a4c8849be58c34047b09287e98b0"
+PACK_SHA256="a674be1eb5b398107cd4b1cabd45f884818f7db731214255b63eac5cc50b7937"
 PINNED_VER="v0.5.4"
 PORT="${PORT:-12889}"
 WORKDIR="${WORKDIR:-$HOME/mmwx-lab}"
