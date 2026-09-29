@@ -1,0 +1,31 @@
+HexHub Client 5.1.9 —— 客户端鉴权脆弱性白盒测试
+=====================================================
+
+【一键流程】
+
+  1) 环境自检
+     powershell -ExecutionPolicy Bypass -File .\2-一键白盒测试\preflight.ps1
+
+  2) 主测试（静态解包 -> 启动客户端 -> 页面级断网 + 伪造会话 -> 取证）
+     powershell -ExecutionPolicy Bypass -File .\2-一键白盒测试\run_test.ps1
+
+  3) 登录场景 / 完全离线模拟登录（路线 D）
+     cd 2-一键白盒测试
+     $env:NODE_PATH="<你的 node_modules 路径>"
+     node poc_fake_login.js
+
+【产物】
+  exports\vip_bypass.png   证据 A：未登录 + 断网，顶栏 👑 Plus
+  exports\fake_login.png   证据 D：完全离线模拟登录，顶栏 👑 Plus
+
+【测试不做什么】
+  不改 hosts / 防火墙 / 注册表；不执行安装器；不碰已安装的 HexHub。
+  断网走 Playwright 页面级 route abort（仅拦截本页面请求）。
+
+【文档】
+  3-审计资料\HexHub-5.1.9-VIP鉴权脆弱性评估报告.md  评估报告（含 12 条整改建议）
+  3-审计资料\VIP功能测绘与服务端依赖分析.md          VIP 全量清单 + 服务端依赖分级 + 登录四方案
+  3-审计资料\HOWTO-白盒鉴权脆弱性测试-SOP.md         通用六步法 + 实操手册 + 踩坑清单
+
+【免责】
+  仅限已授权的自有资产 / 沙盒环境白盒验证。包内不含任何真实凭据。

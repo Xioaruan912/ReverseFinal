@@ -1,0 +1,50 @@
+<Configuration>
+  <!--
+    HexHub 白盒鉴权脆弱性测试 —— Windows Sandbox 金标准隔离配置
+    ---------------------------------------------------------------
+    使用：
+      1) 一次性启用功能（管理员，需重启）：
+         Enable-WindowsOptionalFeature -Online -FeatureName Containers-DisposableClientVM -All
+      2) 双击本文件，或：
+         WindowsSandbox.exe .\HexHubAudit.wsb
+      3) 容器内进入 C:\Audit\HexHub 执行：
+         powershell -ExecutionPolicy Bypass -File .\preflight.ps1
+         powershell -ExecutionPolicy Bypass -File .\run_isolated.ps1
+
+    特性：
+      - 一次性容器：关闭窗口后所有改动（含 %APPDATA%、hosts、注册表）全部销毁
+      - ReadOnly 映射测试包目录，防止误改交付物
+      - 宿主机零改动（Sandbox 内的 hosts / 防火墙改动不出容器）
+      - 注意：Sandbox 内需联网下载 Python/Node，或改用包内自带的免依赖路线
+  -->
+
+  <VGpu>Disable</VGpu>
+  <Networking>Enable</Networking>
+  <ClipboardRedirection>Enable</ClipboardRedirection>
+  <MemoryInMB>8192</MemoryInMB>
+
+  <MappedFolders>
+    <!-- 测试包：只读挂载，防误改 -->
+    <MappedFolder>
+      <HostFolder>C:\Users\Administrator\Desktop\Reverse\cases\hexhub-5.1.9</HostFolder>
+      <SandboxFolder>C:\Audit\HexHub</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <!-- 安装包所在目录：只读挂载 -->
+    <MappedFolder>
+      <HostFolder>C:\Users\Administrator\Downloads</HostFolder>
+      <SandboxFolder>C:\Audit\Downloads</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <!-- 产物输出：可写，测试完把 exports 拷回宿主 -->
+    <MappedFolder>
+      <HostFolder>C:\Users\Administrator\Desktop\Reverse\cases\hexhub-5.1.9\exports</HostFolder>
+      <SandboxFolder>C:\Audit\out</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+
+  <LogonCommand>
+    <Command>cmd.exe /c echo HexHub 白盒鉴权测试环境已就绪 ^& echo 请执行: cd C:\Audit\HexHub ^&^& powershell -ExecutionPolicy Bypass -File .\preflight.ps1</Command>
+  </LogonCommand>
+</Configuration>
