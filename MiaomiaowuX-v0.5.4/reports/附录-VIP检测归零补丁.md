@@ -231,3 +231,65 @@ const isTrial = !licenseKey || license?.['plan']?.['name'] === 'TRIAL'
   前一个弹窗未关时后续 `click` 会被 `intercepts pointer events` 拦掉 → 每次操作后按 `Escape`。
 - 新增用户表单的字段 `name` 属性与预期不符（`input[name=username]` 未命中），
   需先 dump 弹窗内 input 的 `name`/`placeholder` 再写选择器。
+
+---
+
+# 附录 E：更新检查根除（本轮新增）
+
+> 目标：**彻底根除更新弹窗与更新检查**，不再与上游 `github.com/iluobei/miaomiaowuX` 通信。
+
+## E.1 更新链（从内嵌 bundle 反推）
+
+```js
+const yn='0.5.4', C0='https://github.com/iluobei/miaomiaowuX/releases';
+
+function W0(enabled=true){
+  const channel = localStorage.getItem('mmwx-update-channel')==='prerelease'?'prerelease':'stable',
+  {data} = useQuery({
+    queryKey:['update-check',channel],
+    queryFn: async()=>(await N.get('§32a29375dacb94db',{params:{channel}}))['data'],
+    'enabled': enabled,                 // ← ① 网络请求开关
+    staleTime:..., gcTime:..., retry:1, refetchOnWindowFocus:false
+  });
+  return {
+    currentVersion: data?.['current_version']||yn,
+    latestVersion:  data?.['latest_version']||yn,   // ← ③ 版本比对
+    hasUpdate:      data?.['has_update'] ?? false,  // ← ② 弹窗唯一汇聚点
+    releaseUrl:     data?.['release_url']||C0
+  };
+}
+```
+
+`hasUpdate` 是**唯一汇聚点** —— 所有更新弹窗 / 提示条都读它。
+
+## E.2 补丁清单（3 处，等长替换）
+
+| 文件偏移 | 目标 | 改前 | 改后 | 长度 |
+| --- | --- | --- | --- | --- |
+| `0x54a3c6a` | **`hasUpdate` 汇聚点** | 31 B `data?.['has_update']??!0x1` | `!0x1` | 31 |
+| `0x54a3b79` | 更新请求开关 | 19 B `'enabled':enabled` | `'enabled':!0x1` | 19 |
+| `0x54a3c3c` | 版本比对 | 33 B `data?.['latest_version']\|\|yn` | `yn` | 33 |
+
+**效果**：① 不再发起 `update-check` 请求（彻底不联系上游）→ ② 即使有缓存数据也不会弹窗 → ③ `latestVersion === currentVersion`，版本比对恒等。
+
+## E.3 补丁总账
+
+| 层 | 处数 |
+| --- | --- |
+| Go 门禁 | 11 |
+| 前端许可状态 | 6 |
+| **前端更新根除** | **3** |
+| **合计** | **20** |
+
+**合成产物 sha256**：`fa94ed615a9cbd58edf9f3716f305334adccf835437f5845927bad5fbf2f2e93`
+
+## E.4 验证
+
+| 检查 | 结果 |
+| --- | --- |
+| 20 处补丁回读校验 | 全部通过 |
+| 黄金哈希 | 一致 |
+| 可执行文件自检 | 通过 |
+| 服务 / 面板 | `active` / HTTP 200 |
+| 下发 JS 含 `'enabled':!0x1` | ✅（更新请求已关） |
+| 下发 JS 残留 `has_update` 判据 | **0**（已根除） |
