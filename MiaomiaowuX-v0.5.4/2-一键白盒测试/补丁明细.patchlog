@@ -1,0 +1,34 @@
+# mmwx v0.5.4 VIP 检测移除补丁日志
+# 输入 sha256 : ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657
+# 输出 sha256 : 573a95ffbafe3a75cdd6b196aa738ed24cab3771af90668ec9b9d6d6c2cb0243
+
+IWPMOgYs4.(*BcGS_j).HasFeature
+  VA=0x17b4180 FILE_OFFSET=0x13b4180
+  4c8da42420fdffff4d3b6610 -> b001c3
+  ★ 全部 VIP/PRO 特性判定恒为 true（18 个调用方一次覆盖）
+
+IWPMOgYs4.(*BcGS_j).HasFeatureForDataPlane
+  VA=0x17b44a0 FILE_OFFSET=0x13b44a0
+  4c8da424e0fcffff4d3b6610 -> b001c3
+  数据面特性（限速 / 限连接数）恒为 true
+
+IWPMOgYs4.(*BcGS_j).QuotaEnforced
+  VA=0x17b3180 FILE_OFFSET=0x13b3180
+  493b6610 -> 31c0c3
+  关闭配额强制（用户/服务器/节点数量上限不再拦截）
+
+IWPMOgYs4.(*BcGS_j).EffectiveUserQuota
+  VA=0x17b3a20 FILE_OFFSET=0x13b3a20
+  4c8da42430fdffff4d3b6610 -> 48b8ffffffffffffff7fc3
+  用户数配额 -> INT64_MAX
+
+IWPMOgYs4.(*BcGS_j).EffectiveServerQuota
+  VA=0x17b3280 FILE_OFFSET=0x13b3280
+  493b6610 -> 48b8ffffffffffffff7fc3
+  服务器数配额 -> INT64_MAX
+
+IWPMOgYs4.(*BcGS_j).EffectiveNodeQuota
+  VA=0x17b37c0 FILE_OFFSET=0x13b37c0
+  4c8da42430fdffff4d3b6610 -> 48b8ffffffffffffff7fc3
+  节点数配额 -> INT64_MAX
+

@@ -1,0 +1,47 @@
+{
+  "_comment": "妙妙屋X 白盒鉴权测试 —— 版本锁定清单。部署脚本只读本文件，不访问上游 latest。",
+  "product": "miaomiaowuX",
+  "pinned_version": "v0.5.4",
+  "pinned_date": "2026-09-08",
+  "source": {
+    "owner": "Xioaruan912",
+    "repo": "ReverseFinal",
+    "release_tag": "whitebox-audit-v1.0",
+    "base_url": "https://github.com/Xioaruan912/ReverseFinal/releases/download/whitebox-audit-v1.0"
+  },
+  "native": {
+    "linux_amd64": {
+      "asset": "mmwx-v0.5.4-linux-amd64",
+      "sha256": "ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657",
+      "size": 36605840
+    },
+    "windows_amd64": {
+      "asset": "mmwx-v0.5.4-windows-amd64.exe",
+      "sha256": "d11895aa6819b68ad61dd50cf1713556445e377d6257467dc8f1b06f01e6cc81",
+      "size": 133516800
+    },
+    "checksums": {
+      "asset": "mmwx-v0.5.4-checksums.txt",
+      "sha256": "8b7abd735611f6bf2e26b16b3363d84ffa2a6dca9f2aa32ae5f7ebc58616352b"
+    },
+    "guard_manifest": {
+      "asset": "mmwx-v0.5.4-master.manifest",
+      "sha256": "7322c755071815b06ef87382f5d9f13ede78bc33c8001e53d6a2347ba101937b"
+    }
+  },
+  "docker": {
+    "image": "ghcr.io/iluobei/miaomiaowux",
+    "pinned_digest": "sha256:5edb2de21b5a4ae6eba8094267d36c2a61bc25304c36efb9a083d698fbbde6d1",
+    "pinned_ref": "ghcr.io/iluobei/miaomiaowux@sha256:5edb2de21b5a4ae6eba8094267d36c2a61bc25304c36efb9a083d698fbbde6d1",
+    "offline_tar": {
+      "asset": "miaomiaowux-docker-image-v0.5.4.tar.gz",
+      "sha256": "465cda1bd6efbbe471150a7f5f53bc7bedde5cae6c1c1115f3247ee5a55a7156",
+      "loaded_tag": "miaomiaowux:v0.5.4"
+    }
+  },
+  "prohibited": [
+    "https://github.com/iluobei/miaomiaowuX/releases/latest",
+    "ghcr.io/iluobei/miaomiaowux:latest",
+    "docker-compose.yml 中的 :latest 标签"
+  ]
+}

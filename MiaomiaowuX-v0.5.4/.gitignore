@@ -1,0 +1,10 @@
+# 运行时产物（可由 2-一键白盒测试/ 内脚本一键重建，不入库）
+artifacts/
+run/
+run-test/
+data/
+subscribes/
+rule_templates/
+*.log
+__pycache__/
+*.pyc

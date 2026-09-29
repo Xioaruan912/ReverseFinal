@@ -1,0 +1,77 @@
+================================================================
+  妙妙屋X v0.5.4 —— 客户端鉴权脆弱性白盒测试   使用说明
+================================================================
+
+【这是什么】
+  妙妙屋X 是一套自托管的代理节点管理与订阅分发系统：把多台远程服务器上的
+  节点统一管起来，并把订阅链接分发给用户。
+
+  本次测试针对它的「许可鉴权」部分，也就是：
+    · 专业版（Pro）能力的解锁判定
+    · 服务器 / 节点 / 用户 的数量上限
+  验证这些限制究竟是服务端说了算，还是客户端说了算。
+
+  （结论与整改建议见 3-审计资料/鉴权脆弱性评估报告.md）
+
+
+【30 秒开始】
+
+  Linux / WSL：
+
+    bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
+
+  Windows（自动交给 WSL 执行）：
+
+    powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.ps1 | iex"
+
+  脚本会从本交付仓库的 Release 拉取「测试工具包 + 固定版本 v0.5.4 主程序」，
+  逐个校验 sha256 后自动跑完测试，并在 12889 端口启动测试实例。
+
+
+【手动分步】
+
+  1) 部署（版本固定 · 自控源）
+     cd 2-一键白盒测试
+     bash deploy/deploy-native.sh            # 本机部署
+     bash deploy/deploy-docker.sh            # Docker（在线，按摘要锁定）
+     bash deploy/deploy-docker.sh --offline  # Docker（离线，用包内镜像 tar）
+
+  2) 打开面板
+     浏览器访问  http://127.0.0.1:12889/
+     首次进入是初始化向导 → 创建管理员 → 登录
+
+  3) 记录基线
+     系统设置 → 许可证：看当前档位、到期时间、服务器/节点/用户的数量上限
+
+  4) 执行测试
+     bash 一键白盒测试.sh           # 一键归零（含补丁）
+     # 或只看界面行为、不改程序：
+     #   cd poc && node verify_crack_theme.js / verify_quota_server.js / ...
+
+  5) 对照结果
+     未处理：档位显示试用、高级主题不生效、到上限后被拦回
+     处理过：档位显示专业版、高级主题生效、可继续添加用户与服务器
+
+
+【产物】
+  3-审计资料/最终验证-AB对照.txt     官方版 vs 测试版的逐项对照
+  3-审计资料/鉴权脆弱性评估报告.md    正式评估报告
+  3-审计资料/证据截图/                界面取证截图
+
+
+【测试不做什么】
+  不写 systemd、不改 /etc、不动系统网络配置；
+  主程序与数据都在包目录（或工作目录）内，删目录即彻底清理。
+
+
+【文档索引】
+  README.md                          图文版说明（含版本固定与自控部署）
+  PINNED-VERSIONS.md                 固定版本与 sha256
+  2-一键白盒测试/补丁说明.md          补丁清单与逐条作用
+  2-一键白盒测试/deploy/README.md     版本固定 / 自控部署说明
+  3-审计资料/技术档案.md              技术档案（面向复核）
+
+
+【免责声明】
+  仅用于已完成授权的自有资产 / 沙盒环境的安全研究，
+  请勿对他人部署的实例执行本测试。

@@ -1,0 +1,16017 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/xray-servers-xVcDcjHX.js", "assets/vendor-modules-Dj_pKOlV.js", "assets/xray-outbounds-DxCHOOhB.js", "assets/xray-inbounds-CdNSA0l0.js", "assets/users-30KdT1Y6.js", "assets/format-BY2kjLkp.js", "assets/use-subscription-base-url-A-NjcQ5S.js", "assets/use-copy-to-clipboard-CU2-Zpo8.js", "assets/badge--ODnVbZ-.js", "assets/card-C97wu-vm.js", "assets/popover-j8_-ZTK9.js", "assets/scroll-area-BMnfsqPT.js", "assets/select-BMWiFmy0.js", "assets/tooltip-CgXb-Hud.js", "assets/connection-ips-DVH9xhdz.js", "assets/data-table-DSA9TaXk.js", "assets/table-BCgfARJh.js", "assets/tg-bot-invites-BWaC5K9-.js", "assets/templates-DTnWZkds.js", "assets/system-settings-COObzK0l.js", "assets/country-flag-CF94k7yy.js", "assets/use-proxy-groups-Cu0YJPOC.js", "assets/useTurnstile-xHtdXXk2.js", "assets/radio-group-DH5j_5dd.js", "assets/switch-ClujPZze.js", "assets/tabs-7TBbpSzn.js", "assets/textarea-GmBFspjO.js", "assets/flag-emoji-picker-DdCPlneK.js", "assets/twemoji-VTjb_zhr.js", "assets/node-probe-dialog-UOOMYR4v.js", "assets/pro-feature-gate-MAgw608N.js", "assets/subscription-Ctf9-l7C.js", "assets/subscribe-files-DtihhVmt.js", "assets/settings-CEPlzyi5.js", "assets/input-otp-LDvLgobn.js", "assets/rules-s5KbdcDr.js", "assets/separator-Cs8XUGhS.js", "assets/skeleton-CC4i4Bu9.js", "assets/rule-providers-HD_-P54p.js", "assets/routed-outbounds-DTWI3AMW.js", "assets/packages-CWV37AtS.js", "assets/nodes-DTnWZkds.js", "assets/my-forward-Cx8zTY6L.js", "assets/migrate-from-mmw-ClbQVAJ0.js", "assets/logs-BsLPzmRI.js", "assets/login-CJNA80c4.js", "assets/generator-OmDrWRoj.js", "assets/mobile-edit-nodes-dialog-JRVGLtHr.js", "assets/button-group-jldg5W6D.js", "assets/sheet-CViWLCkF.js", "assets/protocol-colors-RKFOS_-E.js", "assets/template-presets-l6RndiNe.js", "assets/collapsible-D9ffBdfT.js", "assets/forward-DoXks0uE.js", "assets/page-layout-DFtxpwjN.js", "assets/custom-rules-DtihhVmt.js", "assets/change-password-OGuY7Cg6.js", "assets/certificates-D96LI9W6.js", "assets/index-CVAzD6ZM.js", "assets/view-toggle-dnbHOobQ.js", "assets/index-CKItl9FB.css", "assets/xray-servers.index-DzWEIztT.js", "assets/empty-state-DTL3VUPL.js", "assets/table-card-BSofcmZB.js", "assets/xray-config-generator-CJhzTtgA.js", "assets/inbound-wizard-hjQ1vXoI.js", "assets/wireguard-transit-modal-Bi28CiHH.js", "assets/balancer-manager-dialog-Dr5sbCmo.js", "assets/xray-outbounds.index-LRB_DEcb.js", "assets/server-selector-DKFK_fem.js", "assets/xray-inbounds.index-C0uJ63qk.js", "assets/templates.index-Bk6O3VpD.js", "assets/surge-template-utils-DYAoNc3c.js", "assets/custom-rules-templates-DQ8TnXGO.js", "assets/subscription.index-DVQ9-9Ox.js", "assets/subscribe-files.index-GcltT_6U.js", "assets/use-external-sync-selection-Cf8k5DTd.js", "assets/routed-outbounds.index-J_4BDxAj.js", "assets/routed-outbounds-panel-DTTJs_s1.js", "assets/packages.index-BOQnWAzC.js", "assets/nodes.index-CWNLSvP0.js", "assets/my-forward.index-iBAexzTQ.js", "assets/migrate-from-mmw.index-CDKexkBE.js", "assets/forward.index-XxROtpuC.js", "assets/custom-rules.index-CinqvEwk.js", "assets/certificates.index-CIDfg6Kk.js", "assets/subscribe-files.custom-BGL8a4Ww.js"]))) => i.map(i => d[i]);
+import {
+  c as _0x2ac8f5,
+  i as _0x1981a4,
+  B as _0x36f3c3,
+  a as _0x5a77e4,
+  A as _0x5183b7,
+  t as _0x5e6a09,
+  b as _0x15465f,
+  d as _0x1b4905,
+  j as _0x2c4709,
+  S as _0xac6b7,
+  e as _0x592b48,
+  R as _0x131517,
+  C as _0x30976e,
+  T as _0x303ba7,
+  D as _0x4b6aa9,
+  f as _0x5f033b,
+  P as _0x291d2c,
+  O as _0x3eb54b,
+  g as _0x1e3ba9,
+  h as _0x14c81b,
+  r as _0x4eb10f,
+  u as _0x4c4113,
+  k as _0x2c5578,
+  p as _0x1650b7,
+  l as _0x42154b,
+  s as _0x18f172,
+  m as _0x361b2c,
+  n as _0x596d2f,
+  o as _0x40fa57,
+  q as _0x8fb83,
+  v as _0x15f148,
+  w as _0x5d69d0,
+  L as _0x1319c7,
+  x as _0x285465,
+  y as _0x3a61de,
+  F as _0x363bf5,
+  z as _0x2d8c74,
+  N as _0x5181d4,
+  W as _0x3667d4,
+  E as _0x4a71cd,
+  U as _0xbed91c,
+  G as _0x44d464,
+  H as _0x20ba53,
+  I as _0x5ac447,
+  J as _0x46ab54,
+  K as _0xf1679a,
+  M as _0x2b65eb,
+  Q as _0xa281b2,
+  V as _0x38eb80,
+  X as _0xdfb0f4,
+  Y as _0x415e95,
+  Z as _0x4d9e38,
+  _ as _0x32ab6c,
+  $ as _0x37f136,
+  a0 as _0x152efe,
+  a1 as _0x2b2228,
+  a2 as _0x2ff280,
+  a3 as _0x1d40bd,
+  a4 as _0x35fc76,
+  a5 as _0x4dc6b8,
+  a6 as _0x1e5e12,
+  a7 as _0x469fdc,
+  a8 as _0x20ece2,
+  a9 as _0x1f06b4,
+  aa as _0x5e145c,
+  ab as _0x1eaa96,
+  ac as _0x1d55f9,
+  ad as _0x10f9cb,
+  ae as _0xc5c397,
+  af as _0x4d13c1,
+  ag as _0x2efbc9,
+  ah as _0x6f3bb4,
+  ai as _0x55132f,
+  aj as _0x48c60f,
+  ak as _0x4e0278,
+  al as _0x461121,
+  am as _0xe10d9a,
+  an as _0x2a1aea,
+  ao as _0x38d9f5,
+  ap as _0x51e4ec,
+  aq as _0x310c5a,
+  ar as _0x2fb705,
+  as as _0x3d676f,
+  at as _0x317c18,
+  au as _0x44666b,
+  av as _0xa9c8f6,
+  aw as _0x34e242,
+  ax as _0x502642,
+  ay as _0x3dbd1d,
+  az as _0x53bb92,
+  aA as _0x29a345,
+  aB as _0x5a59f3,
+  aC as _0x4cc600,
+  aD as _0x26a794,
+  aE as _0x7947ec,
+  aF as _0x1cbf52,
+  aG as _0x3f631e,
+  aH as _0x3f3ab3,
+  aI as _0x23e5a0,
+  aJ as _0x3ffcfe,
+  aK as _0x21fd6a,
+  aL as _0x2415ba,
+  aM as _0x468903,
+  aN as _0x3cf691,
+  aO as _0x4d07b5,
+  aP as _0x5c1558,
+  aQ as _0x4d7d12,
+  aR as _0xa6f612,
+  aS as _0x1c2ee8,
+  aT as _0xf0d655,
+  aU as _0x1b5cc7,
+  aV as _0x290638,
+  aW as _0x488e2d,
+  aX as _0xf77abb,
+  aY as _0x2aadc2,
+  aZ as _0x38ba04,
+  a_ as _0x20e1bf,
+  a$ as _0x378f5d,
+  b0 as _0x2c8dcb,
+  b1 as _0x1db211,
+  b2 as _0x4e22e4,
+  b3 as _0x323a19,
+  b4 as _0x26ac2d,
+  b5 as _0x4e3a2c,
+  b6 as _0xfe6e61,
+  b7 as _0x4cede0,
+  b8 as _0x51ac0d
+} from './vendor-modules-Dj_pKOlV.js';
+(function() {
+  const _0x22c57f = document['createElement']('link')['relList'];
+  if (_0x22c57f && _0x22c57f['supports'] && _0x22c57f['supports']('modulepreload')) return;
+  for (const _0x381443 of document['querySelectorAll']('link[rel=\x22modulepreload\x22]')) _0x3b7c40(_0x381443);
+  new MutationObserver(_0xf0e0a8 => {
+    for (const _0x38ba86 of _0xf0e0a8)
+      if (_0x38ba86['type'] === 'childList') {
+        for (const _0x34d09d of _0x38ba86['addedNodes']) _0x34d09d['tagName'] === 'LINK' && _0x34d09d['rel'] === 'modulepreload' && _0x3b7c40(_0x34d09d);
+      }
+  })['observe'](document, {
+    'childList': !0x0,
+    'subtree': !0x0
+  });
+
+  function _0x478d5c(_0x56e4f9) {
+    const _0x37a860 = {};
+    return _0x56e4f9['integrity'] && (_0x37a860['integrity'] = _0x56e4f9['integrity']), _0x56e4f9['referrerPolicy'] && (_0x37a860['referrerPolicy'] = _0x56e4f9['referrerPolicy']), _0x56e4f9['crossOrigin'] === 'use-credentials' ? _0x37a860['credentials'] = 'include' : _0x56e4f9['crossOrigin'] === 'anonymous' ? _0x37a860['credentials'] = 'omit' : _0x37a860['credentials'] = 'same-origin', _0x37a860;
+  }
+
+  function _0x3b7c40(_0x590f59) {
+    if (_0x590f59['ep']) return;
+    _0x590f59['ep'] = !0x0;
+    const _0x25e5e9 = _0x478d5c(_0x590f59);
+    fetch(_0x590f59['href'], _0x25e5e9);
+  }
+}());
+const Km = 0xe10 * 0x18 * 0x7;
+
+function be(_0x3836e3) {
+  if (typeof document > 'u') return;
+  const _0x359a19 = (';\x20' + document['cookie'])['split'](';\x20' + _0x3836e3 + '=');
+  if (_0x359a19['length'] === 0x2) return _0x359a19['pop']()?.['split'](';')['shift']();
+}
+
+function Pe(_0x809ab1, _0x5ef9da, _0x4d6cc1 = Km) {
+  typeof document > 'u' || (document['cookie'] = _0x809ab1 + '=' + _0x5ef9da + ';\x20path=/;\x20max-age=' + _0x4d6cc1);
+}
+
+function je(_0x10a926) {
+  typeof document > 'u' || (document['cookie'] = _0x10a926 + '=;\x20path=/;\x20max-age=0');
+}
+const Qe = 'traffic_info_access_token',
+  _ = _0x2ac8f5()(_0x44978c => {
+    const _0x5a89a8 = be(Qe);
+    return {
+      'auth': {
+        'accessToken': _0x5a89a8 ? JSON['parse'](_0x5a89a8) : '',
+        'setAccessToken': _0xbd0590 => _0x44978c(_0x4107a2 => (_0xbd0590 ? Pe(Qe, JSON['stringify'](_0xbd0590)) : je(Qe), {
+          ..._0x4107a2,
+          'auth': {
+            ..._0x4107a2['auth'],
+            'accessToken': _0xbd0590
+          }
+        })),
+        'reset': () => _0x44978c(_0x24d0ff => (je(Qe), {
+          ..._0x24d0ff,
+          'auth': {
+            ..._0x24d0ff['auth'],
+            'accessToken': ''
+          }
+        }))
+      }
+    };
+  }),
+  En = 'glass-indicator',
+  Un = 'glass-indicator__blob',
+  $m = 'theme-glass',
+  Qm = [{
+    'container': '[data-slot=\x22tabs-list\x22]',
+    'active': '[data-state=\x22active\x22]'
+  }, {
+    'container': '[data-glass-nav]',
+    'active': '[data-status=\x22active\x22]'
+  }],
+  an = new WeakSet(),
+  xt = new WeakMap(),
+  gt = new WeakMap();
+
+function Vm(_0x50dc9a) {
+  for (let _0x13910b = _0x50dc9a; _0x13910b; _0x13910b = _0x13910b['parentElement']) {
+    const _0x2ad312 = getComputedStyle(_0x13910b);
+    if (_0x2ad312['overflowX'] !== 'visible' || _0x2ad312['overflowY'] !== 'visible') return _0x13910b;
+  }
+  return null;
+}
+
+function Xm() {
+  return window['matchMedia']?.('(prefers-reduced-motion:\x20reduce)')['matches'] ?? !0x1;
+}
+
+function Jm(_0x1c55f2, _0xdc1ac6, _0x5b62ab, _0x4a1a5a) {
+  if (Xm() || typeof _0x1c55f2['animate'] != 'function') return;
+  const _0x41e2bc = _0x5b62ab['x'] - _0xdc1ac6['x'],
+    _0x2c8dff = _0x5b62ab['y'] - _0xdc1ac6['y'],
+    _0x462458 = Math['hypot'](_0x41e2bc, _0x2c8dff);
+  if (_0x462458 < 0x2) return;
+  const _0x100c53 = Math['abs'](_0x41e2bc) >= Math['abs'](_0x2c8dff);
+  let _0x4e085a = 0x1 + Math['min'](_0x462458 / 0xb4, 0x1) * 0.3;
+  const _0x214208 = _0x100c53 ? _0x5b62ab['w'] : _0x5b62ab['h'],
+    _0x20001f = _0x100c53 ? _0x4a1a5a['left'] : _0x4a1a5a['top'],
+    _0x26451a = _0x100c53 ? _0x4a1a5a['right'] : _0x4a1a5a['bottom'];
+  let _0x5229ef = 0.5;
+  const _0x41479b = _0x214208 * (_0x4e085a - 0x1);
+  if (_0x41479b > 0x0) {
+    if (_0x20001f + _0x26451a < _0x41479b) _0x4e085a = 0x1 + Math['max'](0x0, _0x20001f + _0x26451a) / _0x214208, _0x5229ef = _0x20001f + _0x26451a > 0x0 ? _0x20001f / (_0x20001f + _0x26451a) : 0.5;
+    else {
+      const _0x2851b8 = Math['max'](0x0, 0x1 - _0x26451a / _0x41479b),
+        _0x33b20c = Math['min'](0x1, _0x20001f / _0x41479b);
+      _0x5229ef = Math['min'](Math['max'](0.5, _0x2851b8), _0x33b20c);
+    }
+  }
+  if (_0x4e085a <= 1.001) return;
+  const _0x5b21fb = 0x1 / Math['pow'](_0x4e085a, 0.8),
+    _0x5a8734 = _0x100c53 ? 'scale(' + _0x4e085a + ',\x20' + _0x5b21fb + ')' : 'scale(' + _0x5b21fb + ',\x20' + _0x4e085a + ')';
+  _0x1c55f2['style']['transformOrigin'] = _0x100c53 ? (_0x5229ef * 0x64)['toFixed'](0x1) + '%\x20center' : 'center\x20' + (_0x5229ef * 0x64)['toFixed'](0x1) + '%', _0x1c55f2['animate']([{
+    'transform': 'scale(1,\x201)'
+  }, {
+    'transform': _0x5a8734,
+    'offset': 0.42
+  }, {
+    'transform': 'scale(1,\x201)'
+  }], {
+    'duration': 0x17c,
+    'easing': 'ease-in-out'
+  });
+}
+
+function Ym() {
+  return document['documentElement']['classList']['contains']($m);
+}
+
+function Zm(_0x5d81d6, _0x16726b) {
+  _0x5d81d6['style']['width'] = _0x16726b['w'] + 'px', _0x5d81d6['style']['height'] = _0x16726b['h'] + 'px', _0x5d81d6['style']['transform'] = 'translate3d(' + _0x16726b['x'] + 'px,\x20' + _0x16726b['y'] + 'px,\x200)', _0x5d81d6['style']['opacity'] = '1';
+}
+
+function ef(_0x510fd5, _0x2aac31) {
+  const _0x119c3e = _0x510fd5['querySelector']('.' + En);
+  if (!_0x119c3e) return;
+  const _0x116054 = _0x510fd5['querySelector'](_0x2aac31);
+  if (!_0x116054) {
+    _0x119c3e['style']['opacity'] = '0', xt['delete'](_0x119c3e);
+    return;
+  }
+  const _0x7c9276 = _0x510fd5['getBoundingClientRect'](),
+    _0x587448 = _0x116054['getBoundingClientRect'](),
+    _0x66a72a = {
+      'x': _0x587448['left'] - _0x7c9276['left'] + _0x510fd5['scrollLeft'],
+      'y': _0x587448['top'] - _0x7c9276['top'] + _0x510fd5['scrollTop'],
+      'w': _0x587448['width'],
+      'h': _0x587448['height']
+    },
+    _0x2c41e3 = xt['get'](_0x119c3e),
+    _0x2dde2e = _0x119c3e['querySelector']('.' + Un);
+  gt['has'](_0x510fd5) || gt['set'](_0x510fd5, Vm(_0x510fd5));
+  const _0x2f4724 = gt['get'](_0x510fd5) ?? null,
+    _0x357089 = _0x2f4724 ? _0x2f4724['getBoundingClientRect']() : null,
+    _0x38bc72 = _0x357089 ? {
+      'left': _0x587448['left'] - _0x357089['left'],
+      'right': _0x357089['right'] - _0x587448['right'],
+      'top': _0x587448['top'] - _0x357089['top'],
+      'bottom': _0x357089['bottom'] - _0x587448['bottom']
+    } : {
+      'left': 0x1 / 0x0,
+      'right': 0x1 / 0x0,
+      'top': 0x1 / 0x0,
+      'bottom': 0x1 / 0x0
+    };
+  if (_0x2c41e3) {
+    const _0x3a94bd = _0x66a72a['x'] - _0x2c41e3['x'],
+      _0x35c9d3 = _0x66a72a['y'] - _0x2c41e3['y'],
+      _0x1391d4 = Math['abs'](_0x3a94bd) >= Math['abs'](_0x35c9d3) ? _0x3a94bd < 0x0 ? _0x38bc72['left'] : _0x38bc72['right'] : _0x35c9d3 < 0x0 ? _0x38bc72['top'] : _0x38bc72['bottom'];
+    _0x119c3e['style']['transitionTimingFunction'] = _0x1391d4 < Math['hypot'](_0x3a94bd, _0x35c9d3) * 0.05 ? 'cubic-bezier(0.22,\x200.9,\x200.24,\x201)' : '';
+  }
+  Zm(_0x119c3e, _0x66a72a), xt['set'](_0x119c3e, _0x66a72a), _0x2c41e3 && _0x2dde2e && Jm(_0x2dde2e, _0x2c41e3, _0x66a72a, _0x38bc72);
+}
+
+function tf(_0x39d670, _0x89c314) {
+  if (an['has'](_0x39d670)) return;
+  an['add'](_0x39d670);
+  const _0x1af8b3 = document['createElement']('span');
+  _0x1af8b3['className'] = En, _0x1af8b3['setAttribute']('aria-hidden', 'true'), _0x1af8b3['style']['transition'] = 'none';
+  const _0x1819f2 = document['createElement']('span');
+  _0x1819f2['className'] = Un, _0x1af8b3['appendChild'](_0x1819f2), _0x39d670['prepend'](_0x1af8b3);
+  const _0x208288 = () => ef(_0x39d670, _0x89c314);
+  _0x208288(), requestAnimationFrame(() => {
+    _0x1af8b3['style']['transition'] = '';
+  }), new MutationObserver(_0x208288)['observe'](_0x39d670, {
+    'subtree': !0x0,
+    'childList': !0x0,
+    'attributes': !0x0,
+    'attributeFilter': ['data-state', 'data-status', 'aria-selected', 'class']
+  }), typeof ResizeObserver < 'u' && new ResizeObserver(_0x208288)['observe'](_0x39d670), _0x39d670['addEventListener']('scroll', _0x208288, {
+    'passive': !0x0
+  });
+}
+
+function ht() {
+  if (Ym()) {
+    for (const _0x48ce65 of Qm) document['querySelectorAll'](_0x48ce65['container'])['forEach'](_0x24517c => tf(_0x24517c, _0x48ce65['active']));
+  }
+}
+
+function nf() {
+  typeof document > 'u' || (ht(), new MutationObserver(ht)['observe'](document['body'], {
+    'subtree': !0x0,
+    'childList': !0x0
+  }), new MutationObserver(ht)['observe'](document['documentElement'], {
+    'attributes': !0x0,
+    'attributeFilter': ['class']
+  }));
+}
+const jn = {
+    'loading': 'Loading...',
+    'checkingStatus': 'Checking\x20system\x20status',
+    'success': 'Login\x20successful',
+    'failed': 'Login\x20failed,\x20please\x20check\x20your\x20credentials',
+    'title': 'Sign\x20in\x20to\x20MiaomiaowuX',
+    'description': 'Enter\x20your\x20admin\x20credentials\x20to\x20access\x20the\x20console.',
+    'username': 'Username',
+    'usernamePlaceholder': 'Enter\x20username',
+    'password': 'Password',
+    'passwordPlaceholder': 'Enter\x20password',
+    'rememberMe': 'Remember\x20me',
+    'loggingIn': 'Signing\x20in...',
+    'loginButton': 'Sign\x20In',
+    'captchaRequired': 'Please\x20complete\x20the\x20captcha\x20first',
+    'back': 'Back'
+  },
+  Hn = {
+    'title': 'Two-Factor\x20Authentication',
+    'codeDesc': 'Enter\x20the\x206-digit\x20code\x20from\x20your\x20authenticator\x20app',
+    'recoveryDesc': 'Enter\x20your\x20recovery\x20code',
+    'recoveryPlaceholder': 'Enter\x208-digit\x20recovery\x20code',
+    'invalidCode': 'Invalid\x20verification\x20code',
+    'recoverySuccess': 'Recovery\x20code\x20verified,\x202FA\x20has\x20been\x20reset',
+    'invalidRecovery': 'Invalid\x20recovery\x20code',
+    'verify': 'Verify',
+    'useRecoveryCode': 'Use\x20recovery\x20code',
+    'useVerificationCode': 'Use\x20verification\x20code',
+    'useRecoveryLogin': 'Sign\x20in\x20with\x20recovery\x20code',
+    'verifying': 'Verifying...',
+    'back': 'Back'
+  },
+  Bn = {
+    'welcome': 'Welcome\x20to\x20MiaomiaowuX',
+    'firstAdminDesc': 'This\x20is\x20the\x20first\x20launch.\x20Please\x20create\x20an\x20admin\x20account.\x20The\x20first\x20registered\x20user\x20will\x20automatically\x20become\x20admin.',
+    'username': 'Username',
+    'usernamePlaceholder': 'Enter\x20username',
+    'password': 'Password',
+    'passwordPlaceholder': 'Enter\x20password',
+    'nickname': 'Nickname',
+    'nicknamePlaceholder': 'Leave\x20empty\x20to\x20use\x20username',
+    'email': 'Email',
+    'emailPlaceholder': 'Optional',
+    'avatarUrl': 'Avatar\x20URL',
+    'avatarPlaceholder': 'Optional,\x20enter\x20avatar\x20image\x20URL',
+    'createAdmin': 'Create\x20Admin\x20Account',
+    'domainLabel': 'Domain\x20(optional)',
+    'domainVerified': 'Domain\x20verified',
+    'domainMismatch': 'Domain\x20IP\x20does\x20not\x20match\x20server\x20IP,\x20please\x20check\x20DNS\x20settings',
+    'domainCorrect': 'Domain\x20resolves\x20correctly\x20to\x20{{serverIp}}',
+    'domainMismatchDetailed': 'Domain\x20IP\x20({{domainIp}})\x20does\x20not\x20match\x20server\x20IP\x20({{serverIp}}),\x20please\x20add\x20a\x20DNS\x20A\x20record',
+    'success': 'Initial\x20setup\x20complete!\x20Please\x20sign\x20in\x20with\x20the\x20account\x20you\x20just\x20created.',
+    'nginxConfigured': 'Nginx\x20reverse\x20proxy\x20has\x20been\x20auto-configured.',
+    'failed': 'Setup\x20failed,\x20please\x20try\x20again',
+    'restoreFromBackup': 'Restore\x20from\x20Backup',
+    'restoreSuccess': 'Backup\x20restored!\x20Please\x20refresh\x20the\x20page\x20and\x20sign\x20in.',
+    'restoreFailed': 'Backup\x20restore\x20failed',
+    'restoring': 'Restoring...',
+    'backupHint': 'If\x20you\x20have\x20a\x20previous\x20backup\x20file,\x20you\x20can\x20restore\x20data\x20here',
+    'legacyBackupPassphrasePlaceholder': 'Legacy\x20encrypted\x20backup\x20password\x20(leave\x20blank\x20for\x20ZIP)',
+    'legacyBackupPassphraseHint': 'Only\x20required\x20for\x20historical\x20.enc\x20backups;\x20current\x20ZIP\x20backups\x20have\x20no\x20password.',
+    'domainPlaceholder': 'e.g.\x20mmwx.example.com',
+    'verifyButton': 'Verify',
+    'creating': 'Creating...',
+    'or': 'OR',
+    'none': 'None',
+    'unknown': 'Unknown'
+  },
+  of = {
+    'login': jn,
+    'twoFactor': Hn,
+    'setup': Bn
+  },
+  af = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'default': of,
+    'login': jn,
+    'setup': Bn,
+    'twoFactor': Hn
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Gn = {
+    'title': 'SSL/TLS\x20Certificate\x20Management',
+    'description': 'Manage\x20ACME\x20certificates\x20with\x20wildcard,\x20DNS\x20validation,\x20multi-CA\x20and\x20auto-deploy\x20support'
+  },
+  qn = {
+    'detected': 'Certificate\x20for\x20master\x20domain\x20{{domain}}\x20has\x20been\x20issued',
+    'deployDesc': 'After\x20deployment,\x20Nginx\x20will\x20be\x20auto-installed\x20with\x20SSL\x20configured\x20and\x20HTTPS\x20enabled',
+    'deploying': 'Deploying...',
+    'deployToMaster': 'Deploy\x20to\x20Master',
+    'deploySuccess': 'Master\x20certificate\x20deployed,\x20redirecting\x20to\x20HTTPS',
+    'deployFailed': 'Deployment\x20failed'
+  },
+  zn = {
+    'enable': 'Enable\x20HTTPS',
+    'enableTitle': 'Enable\x20HTTPS\x20Access',
+    'enableDesc': 'This\x20will\x20install\x20Nginx\x20and\x20set\x20up\x20a\x20reverse\x20proxy\x20for\x20MiaomiaowuX,\x20enabling\x20HTTPS\x20access\x20for\x20domain\x20{{domain}}.\x20Continue?',
+    'enableSuccess': 'HTTPS\x20enabled,\x20redirecting',
+    'enableFailed': 'Failed\x20to\x20enable',
+    'configuring': 'Configuring...',
+    'confirmEnable': 'Confirm\x20Enable',
+    'externalLabel': 'HTTPS/proxy\x20handled\x20externally'
+  },
+  Kn = {
+    'applyCert': 'Apply\x20Certificate',
+    'uploadCert': 'Upload\x20Certificate'
+  },
+  $n = {
+    'certList': 'Certificates',
+    'dnsProviders': 'DNS\x20Providers'
+  },
+  Qn = {
+    'title': 'Certificate\x20List',
+    'description': 'All\x20applied\x20SSL/TLS\x20certificates',
+    'empty': 'No\x20certificates\x20yet,\x20click\x20\x22Apply\x20Certificate\x22\x20to\x20start',
+    'columns': {
+      'domain': 'Domain',
+      'ca': 'CA',
+      'server': 'Server',
+      'challenge': 'Challenge',
+      'status': 'Status',
+      'expiry': 'Expiry',
+      'deploy': 'Deploy',
+      'autoRenew': 'Auto\x20Renew',
+      'autoDeploy': 'Auto\x20Deploy',
+      'actions': 'Actions'
+    }
+  },
+  Vn = {
+    'valid': 'Valid',
+    'pending': 'Pending',
+    'expired': 'Expired',
+    'failed': 'Failed'
+  },
+  Xn = {
+    'expired': 'Expired',
+    'daysLeft': '{{days}}\x20days\x20left'
+  },
+  Jn = {
+    'reapply': 'Re-apply',
+    'manualRenew': 'Manual\x20Renew',
+    'deployCert': 'Deploy\x20Certificate'
+  },
+  Yn = {
+    'title': 'Apply\x20SSL/TLS\x20Certificate',
+    'description': 'Supports\x20wildcard\x20certificates\x20(*.example.com),\x20DNS\x20validation\x20and\x20multi-CA',
+    'domain': 'Domain\x20*',
+    'domainWildcardTip': 'Wildcard\x20certificate\x20recommended',
+    'domainHint': 'Wildcard\x20certificates\x20(*.example.com)\x20require\x20DNS\x20validation',
+    'email': 'Email\x20*',
+    'caProvider': 'CA\x20Provider',
+    'targetServer': 'Target\x20Server',
+    'selectServer': 'Select\x20Server',
+    'masterLocal': 'Master\x20(Local)',
+    'challengeMode': 'Challenge\x20Mode',
+    'challengeDns': 'DNS-01\x20(Supports\x20wildcard\x20certificates)',
+    'challengeStandalone': 'Standalone\x20(Requires\x20stopping\x20port\x2080\x20service)',
+    'challengeWebroot': 'Webroot\x20(Write\x20to\x20Nginx\x20directory)',
+    'webrootPath': 'Webroot\x20Path',
+    'dnsProvider': 'DNS\x20Provider',
+    'selectDnsProvider': 'Select\x20DNS\x20Provider',
+    'dnsProviderHint': 'Please\x20add\x20DNS\x20API\x20credentials\x20in\x20the\x20\x22DNS\x20Providers\x22\x20tab\x20first',
+    'certFilePath': 'Certificate\x20File\x20Path',
+    'keyFilePath': 'Private\x20Key\x20File\x20Path',
+    'autoRenew': 'Auto\x20Renew',
+    'autoDeploy': 'Auto\x20Deploy',
+    'autoDeployDesc': 'Auto-deploy\x20and\x20reload\x20service\x20after\x20renewal\x20or\x20new\x20server\x20installation',
+    'applying': 'Applying...',
+    'apply': 'Apply\x20Certificate'
+  },
+  Zn = {
+    'title': 'DNS\x20Providers',
+    'description': 'Manage\x20DNS\x20API\x20credentials\x20for\x20DNS-01\x20validation\x20of\x20wildcard\x20certificates',
+    'addProvider': 'Add\x20Provider',
+    'empty': 'No\x20DNS\x20providers\x20yet,\x20please\x20add\x20one\x20to\x20support\x20wildcard\x20certificate\x20applications',
+    'columns': {
+      'name': 'Name',
+      'type': 'Type',
+      'createdAt': 'Created',
+      'actions': 'Actions'
+    }
+  },
+  eo = {
+    'title': 'Add\x20DNS\x20Provider',
+    'description': 'Configure\x20DNS\x20API\x20credentials\x20for\x20DNS-01\x20validation',
+    'name': 'Name',
+    'namePlaceholder': 'My\x20API\x20Credentials',
+    'providerType': 'Provider\x20Type',
+    'apiCredentials': 'API\x20Credentials',
+    'formHint': 'Fill\x20in\x20every\x20field\x20required\x20by\x20the\x20selected\x20provider.\x20The\x20configuration\x20is\x20generated\x20and\x20validated\x20automatically.',
+    'requiredFields': 'Required\x20fields:\x20{{fields}}',
+    'adding': 'Adding...'
+  },
+  to = {
+    'apiToken': 'API\x20Token',
+    'accessKeyId': 'AccessKey\x20ID',
+    'accessKeySecret': 'AccessKey\x20Secret',
+    'secretId': 'SecretId',
+    'secretKey': 'SecretKey',
+    'apiKey': 'API\x20Key',
+    'apiSecret': 'API\x20Secret',
+    'inputPlaceholder': 'Enter\x20{{field}}'
+  },
+  no = {
+    'title': 'Confirm\x20Delete\x20Certificate',
+    'description': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20the\x20certificate\x20for\x20domain\x20<strong>{{domain}}</strong>?\x20This\x20action\x20cannot\x20be\x20undone.'
+  },
+  oo = {
+    'title': 'Deploy\x20Certificate',
+    'description': 'Deploy\x20certificate\x20<strong>{{domain}}</strong>\x20to\x20master\x20server\x20and\x20all\x20remote\x20servers',
+    'certFilePath': 'Certificate\x20File\x20Path',
+    'keyFilePath': 'Private\x20Key\x20File\x20Path',
+    'deploying': 'Deploying...',
+    'confirmDeploy': 'Confirm\x20Deploy',
+    'targetServers': 'Deploy\x20to\x20servers',
+    'targetServersHint': 'With\x20nothing\x20selected\x20the\x20certificate\x20goes\x20to\x20all\x20servers.\x20Machines\x20behind\x20NAT,\x20or\x20running\x20an\x20agent\x20too\x20old\x20for\x20reverse\x20RPC,\x20cannot\x20be\x20reached\x20directly\x20by\x20the\x20master\x20—\x20exclude\x20them\x20here.',
+    'selectAll': 'Select\x20all',
+    'selectNone': 'Clear',
+    'offline': 'offline',
+    'noServerSelected': 'Select\x20at\x20least\x20one\x20server'
+  },
+  ao = {
+    'title': 'Upload\x20Certificate',
+    'description': 'Manually\x20upload\x20SSL/TLS\x20certificate,\x20paste\x20PEM\x20format\x20certificate\x20and\x20private\x20key\x20content',
+    'apiUploadTitle': 'API\x20Upload',
+    'apiUploadDesc': 'You\x20can\x20also\x20upload\x20certificates\x20via\x20API\x20Token:\x20POST\x20/api/admin/certificates/upload,\x20add\x20Authorization:\x20Bearer\x20<API\x20Token>\x20header,\x20Body\x20is\x20JSON:\x20{\x22domain\x22:\x20\x22example.com\x22,\x20\x22cert_pem\x22:\x20\x22<base64>\x22,\x20\x22key_pem\x22:\x20\x22<base64>\x22}.\x20API\x20Token\x20can\x20be\x20obtained\x20in\x20system\x20settings.',
+    'domain': 'Domain\x20*',
+    'certContent': 'Certificate\x20Content\x20(PEM)\x20*',
+    'keyContent': 'Private\x20Key\x20Content\x20(PEM)\x20*',
+    'uploading': 'Uploading...',
+    'uploadCert': 'Upload\x20Certificate'
+  },
+  ro = {
+    'certSubmitted': 'Certificate\x20application\x20submitted',
+    'certRenewSubmitted': 'Certificate\x20renewal\x20submitted',
+    'certDeleted': 'Certificate\x20deleted',
+    'certDeployed': 'Certificate\x20deployed\x20to\x20master\x20server\x20and\x20all\x20remote\x20servers',
+    'certUploaded': 'Certificate\x20uploaded\x20successfully',
+    'dnsProviderAdded': 'DNS\x20provider\x20added',
+    'dnsProviderDeleted': 'DNS\x20provider\x20deleted',
+    'fillDomainEmail': 'Please\x20fill\x20in\x20domain\x20and\x20email',
+    'dnsProviderRequired': 'DNS\x20validation\x20mode\x20requires\x20selecting\x20a\x20DNS\x20provider',
+    'fillNameCredentials': 'Please\x20fill\x20in\x20name\x20and\x20credentials',
+    'invalidJson': 'Invalid\x20credentials\x20format,\x20please\x20enter\x20valid\x20JSON',
+    'missingCredential': 'Please\x20enter\x20{{field}}',
+    'fillDomainCertKey': 'Please\x20fill\x20in\x20domain,\x20certificate\x20and\x20private\x20key'
+  },
+  so = {
+    'alidns': 'Alibaba\x20Cloud\x20DNS',
+    'tencentcloud': 'Tencent\x20Cloud\x20DNS'
+  },
+  rf = {
+    'page': Gn,
+    'masterCert': qn,
+    'https': zn,
+    'buttons': Kn,
+    'tabs': $n,
+    'certTable': Qn,
+    'status': Vn,
+    'expiry': Xn,
+    'tooltips': Jn,
+    'createDialog': Yn,
+    'dnsProviderTable': Zn,
+    'dnsProviderDialog': eo,
+    'credentialFields': to,
+    'deleteDialog': no,
+    'deployDialog': oo,
+    'uploadDialog': ao,
+    'toast': ro,
+    'dnsProviderTypes': so
+  },
+  sf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'buttons': Kn,
+    'certTable': Qn,
+    'createDialog': Yn,
+    'credentialFields': to,
+    'default': rf,
+    'deleteDialog': no,
+    'deployDialog': oo,
+    'dnsProviderDialog': eo,
+    'dnsProviderTable': Zn,
+    'dnsProviderTypes': so,
+    'expiry': Xn,
+    'https': zn,
+    'masterCert': qn,
+    'page': Gn,
+    'status': Vn,
+    'tabs': $n,
+    'toast': ro,
+    'tooltips': Jn,
+    'uploadDialog': ao
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  io = {
+    'justNow': 'just\x20now',
+    'minutesAgo': '{{n}}m\x20ago',
+    'hoursAgo': '{{n}}h\x20ago',
+    'daysAgo': '{{n}}d\x20ago'
+  },
+  lo = {
+    'trafficInfo': 'Traffic',
+    'nodeManagement': 'Nodes',
+    'routedOutbounds': 'Routed\x20Outbounds',
+    'serviceManagement': 'Services',
+    'userManagement': 'Users',
+    'packageManagement': 'Packages',
+    'certificateManagement': 'Certificates',
+    'forwardManagement': 'Forwarding',
+    'ruleProviders': 'Rule\x20Providers',
+    'myForward': 'My\x20Forwarding',
+    'templateManagement': 'Templates',
+    'subscriptionGenerator': 'Subscriptions',
+    'subscriptionManagement': 'Sub\x20Files',
+    'subscriptionLinks': 'Sub\x20Links',
+    'customRulesManagement': 'Custom\x20Rules',
+    'logManagement': 'Logs',
+    'systemSettings': 'System\x20Settings'
+  },
+  co = {
+    'save': 'Save',
+    'create': 'Create',
+    'cancel': 'Cancel',
+    'confirm': 'Confirm',
+    'delete': 'Delete',
+    'copy': 'Copy',
+    'reset': 'Reset',
+    'close': 'Close',
+    'back': 'Back',
+    'next': 'Next',
+    'edit': 'Edit',
+    'add': 'Add',
+    'search': 'Search',
+    'enable': 'Enable',
+    'disable': 'Disable',
+    'refresh': 'Refresh',
+    'download': 'Download',
+    'upload': 'Upload',
+    'import': 'Import',
+    'export': 'Export',
+    'view': 'View',
+    'confirmDelete': 'Confirm\x20Delete',
+    'loading': 'Loading...',
+    'saving': 'Saving...',
+    'creating': 'Creating...',
+    'verifying': 'Verifying...',
+    'resetting': 'Resetting...',
+    'sending': 'Sending...',
+    'disabling': 'Disabling...',
+    'deleting': 'Deleting...',
+    'or': 'or',
+    'optional': 'Optional',
+    'required': 'Required',
+    'copySuccess': 'Copied\x20to\x20clipboard',
+    'copyFailed': 'Copy\x20failed\x20(HTTPS\x20required),\x20please\x20copy\x20manually'
+  },
+  uo = {
+    'light': 'Light',
+    'dark': 'Dark',
+    'system': 'System'
+  },
+  po = 'MiaomiaowuX',
+  mo = {
+    'title': 'Sign\x20Out',
+    'description': 'Are\x20you\x20sure\x20you\x20want\x20to\x20sign\x20out?\x20You\x20will\x20need\x20to\x20log\x20in\x20again\x20to\x20access\x20the\x20console.',
+    'confirm': 'Sign\x20Out',
+    'cancel': 'Cancel'
+  },
+  fo = {
+    'ariaLabel': 'Report\x20Issue',
+    'title': 'Report\x20Issue',
+    'telegram': 'Telegram\x20Group',
+    'github': 'GitHub\x20Issues'
+  },
+  xo = {
+    'notFoundTitle': 'Page\x20Not\x20Found',
+    'notFoundDesc': 'Please\x20check\x20the\x20URL\x20or\x20return\x20to\x20home.',
+    'errorTitle': 'Something\x20Went\x20Wrong',
+    'errorDesc': 'Please\x20try\x20again\x20later.'
+  },
+  go = {
+    'expand': 'Expand\x20Sidebar',
+    'collapse': 'Collapse\x20Sidebar',
+    'switchToSidebar': 'Switch\x20to\x20Sidebar',
+    'switchToTopMenu': 'Switch\x20to\x20Top\x20Menu',
+    'moreMenu': 'More\x20Menu',
+    'openMenu': 'Open\x20Menu'
+  },
+  ho = {
+    'title': 'Data\x20Backup',
+    'description': 'Backup\x20includes\x20configuration,\x20certificates,\x20and\x20subscriptions.\x20PostgreSQL\x20data\x20is\x20optional.\x20The\x20page\x20refreshes\x20after\x20restore.',
+    'downloadLabel': 'Download\x20Backup',
+    'includeDatabase': 'Back\x20up\x20PostgreSQL\x20database',
+    'includeDatabaseHint': 'When\x20selected,\x20pg_dump\x20exports\x20the\x20database.\x20Otherwise\x20only\x20configuration,\x20certificates,\x20and\x20subscription\x20files\x20are\x20included.',
+    'detectingDatabase': 'Detecting\x20the\x20active\x20database\x20type…',
+    'databaseStatusFailed': 'Compatibility\x20mode\x20is\x20active.\x20A\x20full\x20backup\x20including\x20database\x20data\x20will\x20be\x20requested;\x20SQLite\x20data\x20remains\x20included.',
+    'downloading': 'Generating\x20backup...',
+    'downloadButton': 'Download\x20Current\x20Backup',
+    'downloadSuccess': 'Backup\x20downloaded',
+    'downloadFailed': 'Backup\x20download\x20failed',
+    'restoreLabel': 'Restore\x20Backup',
+    'restoreButton': 'Restore\x20Backup',
+    'restoring': 'Restoring...',
+    'restoreSuccess': 'Backup\x20restored,\x20please\x20refresh\x20the\x20page',
+    'restoreFailed': 'Backup\x20restore\x20failed',
+    'restoreWarning': 'Restoring\x20will\x20overwrite\x20all\x20current\x20data.\x20Please\x20proceed\x20with\x20caution.',
+    'legacyPassphrasePlaceholder': 'Legacy\x20encrypted\x20backup\x20password\x20(leave\x20blank\x20for\x20ZIP)',
+    'legacyPassphraseHint': 'Only\x20required\x20for\x20historical\x20.enc\x20backups;\x20current\x20ZIP\x20backups\x20have\x20no\x20password.'
+  },
+  bo = {
+    'title': 'Check\x20for\x20Updates',
+    'description': 'Check\x20if\x20a\x20new\x20version\x20is\x20available',
+    'channel': 'Update\x20channel',
+    'stableChannel': 'Stable',
+    'prereleaseChannel': 'Pre-release',
+    'prereleaseBadge': 'Pre-release',
+    'prereleaseWarning': 'Pre-release\x20builds\x20may\x20be\x20unstable\x20and\x20are\x20intended\x20for\x20testing.\x20Switching\x20channels\x20never\x20installs\x20an\x20update\x20automatically.',
+    'checking': 'Checking\x20for\x20updates...',
+    'newVersion': 'New\x20version\x20available!',
+    'currentVersion': 'Current\x20Version',
+    'latestVersion': 'Latest\x20Version',
+    'releaseNotes': 'Release\x20Notes:',
+    'updateNow': 'Update\x20Now',
+    'noDownload': 'No\x20download\x20found\x20for\x20your\x20system',
+    'viewRelease': 'View\x20GitHub\x20Release',
+    'upToDate': 'Up\x20to\x20Date',
+    'currentVersionLabel': 'Current\x20version:\x20v{{version}}',
+    'forceReinstall': 'Force\x20Reinstall',
+    'recheck': 'Check\x20Again',
+    'preparing': 'Preparing\x20update...',
+    'updateSuccess': 'Update\x20successful,\x20page\x20will\x20refresh\x20in\x203\x20seconds',
+    'updateFailed': 'Update\x20failed:\x20{{error}}',
+    'unknownError': 'Unknown\x20error',
+    'connectionClosed': 'Connection\x20closed\x20unexpectedly',
+    'cannotReadStream': 'Cannot\x20read\x20response\x20stream',
+    'steps': {
+      'checking': 'Checking\x20version',
+      'downloading': 'Downloading\x20update',
+      'backingUp': 'Backing\x20up\x20current\x20version',
+      'replacing': 'Replacing\x20files',
+      'restarting': 'Restarting\x20service'
+    }
+  },
+  yo = {
+    'settings': 'Settings',
+    'debugLog': 'Debug\x20Log',
+    'help': 'Help',
+    'tgBotApp': 'TG\x20Bot\x20&\x20APP',
+    'backup': 'Backup\x20Data',
+    'migrateFromMmw': 'Migrate\x20from\x20MMW',
+    'checkUpdate': 'Check\x20Update',
+    'version': 'Version',
+    'signOut': 'Sign\x20Out',
+    'notLoggedIn': 'Not\x20Logged\x20In',
+    'noEmail': 'No\x20Email',
+    'user': 'User',
+    'themeStyle': 'Theme\x20Style',
+    'themeMiaomiaowu': 'Miaomiaowu',
+    'themeFlat': 'Flat',
+    'themeAnime': 'Fantasy',
+    'themePremium': 'Premium\x20Black\x20Gold',
+    'themeGlass': 'Liquid\x20Glass',
+    'language': 'Language',
+    'debugEnabled': 'Debug\x20log\x20enabled',
+    'debugDisabled': 'Debug\x20log\x20disabled',
+    'debugEnableFailed': 'Failed\x20to\x20enable\x20debug\x20log',
+    'debugDisableFailed': 'Failed\x20to\x20disable\x20debug\x20log',
+    'logDownloaded': 'Log\x20file\x20downloaded',
+    'logDownloadFailed': 'Failed\x20to\x20download\x20log\x20file',
+    'about': 'About',
+    'licenseStatus': 'License\x20Status',
+    'licenseValid': 'Valid',
+    'licenseInvalid': 'Invalid',
+    'licensePlan': 'Plan',
+    'licensePlanDesc': 'Description',
+    'maxServers': 'Max\x20Servers',
+    'maxNodes': 'Max\x20Nodes',
+    'maxUsers': 'Max\x20Users',
+    'expiresAt': 'Expires',
+    'trialHint': 'You\x20are\x20on\x20a\x20trial\x20license.\x20PRO\x20features\x20are\x20not\x20available.\x20Register\x20for\x20a\x20license\x20at:'
+  },
+  vo = 'No\x20data',
+  So = 'Card\x20View',
+  Co = 'List\x20View',
+  Wo = {
+    'noData': 'No\x20data'
+  },
+  wo = {
+    'card': 'Card\x20View',
+    'list': 'List\x20View'
+  },
+  Po = {
+    'selectServer': 'Select\x20Server',
+    'noServers': 'No\x20Remote\x20Servers',
+    'pending': 'Pending',
+    'offline': 'Offline'
+  },
+  ko = {
+    'autoDetect': 'Auto\x20Detect\x20Region'
+  },
+  To = {
+    'proFeatureTooltip': 'This\x20feature\x20requires\x20a\x20Pro\x20license.\x20Please\x20upgrade\x20in\x20license\x20settings.',
+    'proFeatureActive': 'Pro\x20feature\x20active',
+    'serverLimitReached': 'Server\x20limit\x20reached\x20({{current}}/{{max}})',
+    'nodeLimitReached': 'Node\x20limit\x20reached\x20({{current}}/{{max}})',
+    'userLimitReached': 'User\x20limit\x20reached\x20({{current}}/{{max}})'
+  },
+  Ro = {
+    'summary': '{{ips}}\x20IPs\x20·\x20{{conns}}\x20connections',
+    'more': '{{count}}\x20more\x20IPs'
+  },
+  lf = {
+    'time': io,
+    'nav': lo,
+    'actions': co,
+    'theme': uo,
+    'brand': po,
+    'signOut': mo,
+    'feedback': fo,
+    'error': xo,
+    'sidebar': go,
+    'backup': ho,
+    'update': bo,
+    'userMenu': yo,
+    'noData': vo,
+    'cardView': So,
+    'listView': Co,
+    'dataTable': Wo,
+    'viewToggle': wo,
+    'serverSelector': Po,
+    'flagPicker': ko,
+    'license': To,
+    'connectionIPs': Ro
+  },
+  df = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'actions': co,
+    'backup': ho,
+    'brand': po,
+    'cardView': So,
+    'connectionIPs': Ro,
+    'dataTable': Wo,
+    'default': lf,
+    'error': xo,
+    'feedback': fo,
+    'flagPicker': ko,
+    'license': To,
+    'listView': Co,
+    'nav': lo,
+    'noData': vo,
+    'serverSelector': Po,
+    'sidebar': go,
+    'signOut': mo,
+    'theme': uo,
+    'time': io,
+    'update': bo,
+    'userMenu': yo,
+    'viewToggle': wo
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Do = 'Override\x20Management',
+  No = 'Manage\x20custom\x20DNS,\x20rules,\x20rule\x20providers\x20and\x20override\x20scripts',
+  Ao = 'Add\x20Override',
+  Lo = 'Override\x20List',
+  _o = '{{count}}\x20overrides',
+  Oo = 'All',
+  Fo = 'DNS',
+  Io = 'Rules',
+  Mo = 'Rule\x20Providers',
+  Eo = 'Scripts',
+  Uo = 'No\x20overrides',
+  jo = {
+    'name': 'Name',
+    'type': 'Type',
+    'mode': 'Mode/Hook',
+    'status': 'Status',
+    'createdAt': 'Created',
+    'actions': 'Actions'
+  },
+  Ho = {
+    'mode': 'Mode:',
+    'status': 'Status:',
+    'createdAt': 'Created:'
+  },
+  Bo = {
+    'dns': 'DNS',
+    'rules': 'Rules',
+    'ruleProviders': 'Rule\x20Providers',
+    'script': 'Script'
+  },
+  Go = {
+    'post_fetch': 'Before\x20client\x20conversion',
+    'pre_save_nodes': 'Before\x20saving\x20external\x20nodes'
+  },
+  qo = {
+    'replace': 'Replace',
+    'prepend': 'Prepend',
+    'append': 'Append'
+  },
+  zo = {
+    'createTitle': 'Add\x20Override',
+    'editTitle': 'Edit\x20Override',
+    'createDesc': 'Create\x20a\x20new\x20custom\x20rule',
+    'editDesc': 'Modify\x20custom\x20rule\x20configuration',
+    'scriptCreateDesc': 'Script\x20must\x20define\x20a\x20main\x20function\x20that\x20receives\x20a\x20config\x20object\x20and\x20returns\x20the\x20modified\x20result',
+    'enableRule': 'Enable',
+    'nameLabel': 'Name',
+    'namePlaceholder': 'Override\x20name',
+    'typeLabel': 'Type',
+    'modeLabel': 'Mode',
+    'hookLabel': 'Hook',
+    'templateLabel': 'Template\x20(optional)',
+    'templatePlaceholder': 'Select\x20a\x20template\x20or\x20enter\x20manually',
+    'scriptTemplatePlaceholder': 'Select\x20a\x20template\x20to\x20fill\x20content',
+    'noTemplate': 'No\x20template',
+    'contentLabel': 'Rule\x20Content\x20(YAML)',
+    'scriptContentLabel': 'Script\x20Content',
+    'contentPlaceholder': 'Enter\x20YAML\x20rule\x20content...',
+    'contentHint': 'Ensure\x20content\x20is\x20valid\x20YAML\x20format',
+    'scriptContentHint': 'Script\x20must\x20define\x20a\x20main\x20function\x20that\x20receives\x20a\x20config\x20object\x20and\x20returns\x20the\x20modified\x20result'
+  },
+  Ko = {
+    'title': 'Confirm\x20Delete',
+    'description': 'This\x20action\x20cannot\x20be\x20undone.\x20Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this\x20override?',
+    'deleting': 'Deleting...',
+    'confirm': 'Delete'
+  },
+  $o = {
+    'title': 'Create\x20Rule\x20Config',
+    'description': 'A\x20rule\x20provider\x20template\x20was\x20detected.\x20Create\x20the\x20corresponding\x20rule\x20config\x20as\x20well?',
+    'descriptionDetail': 'The\x20rule\x20config\x20will\x20be\x20appended\x20to\x20existing\x20rules.\x20Duplicate\x20rules\x20will\x20be\x20automatically\x20removed\x20(case-insensitive).',
+    'onlyRuleProvider': 'Create\x20Rule\x20Provider\x20Only',
+    'withRuleConfig': 'Create\x20Rule\x20Provider\x20and\x20Config'
+  },
+  Qo = {
+    'title': 'Custom\x20Rules',
+    'description': 'Add\x20custom\x20routing\x20rules,\x20supporting\x20domain,\x20IP,\x20protocol\x20and\x20other\x20matching\x20methods',
+    'emptyHint': 'No\x20custom\x20rules\x20yet,\x20click\x20the\x20button\x20below\x20to\x20add',
+    'addRule': 'Add\x20Rule',
+    'ruleIndex': 'Rule\x20#{{index}}',
+    'outboundName': 'Outbound\x20Name',
+    'outboundPlaceholder': 'e.g.,\x20Netflix,\x20OpenAI',
+    'willCreateGroup': 'Will\x20create\x20corresponding\x20policy\x20group',
+    'geositePlaceholder': 'e.g.,\x20netflix,\x20openai',
+    'multipleCommaSeparated': 'Multiple\x20separated\x20by\x20commas',
+    'domainSuffix': 'Domain\x20Suffix',
+    'domainSuffixPlaceholder': 'e.g.,\x20netflix.com,\x20openai.com',
+    'domainKeyword': 'Domain\x20Keyword',
+    'domainKeywordPlaceholder': 'e.g.,\x20google,\x20youtube',
+    'geoipPlaceholder': 'e.g.,\x20us,\x20jp,\x20hk',
+    'ipCidrPlaceholder': 'e.g.,\x201.1.1.1/24',
+    'protocol': 'Protocol',
+    'protocolPlaceholder': 'e.g.,\x20http,\x20https,\x20quic',
+    'helpTitle': 'Rule\x20Guide',
+    'helpOutbound': 'Outbound\x20Name:\x20required,\x20creates\x20corresponding\x20policy\x20group',
+    'helpGeosite': 'GeoSite:\x20match\x20domain\x20sets\x20using\x20GeoSite\x20database',
+    'helpDomainSuffix': 'Domain\x20Suffix:\x20match\x20full\x20domain\x20suffix,\x20e.g.,\x20google.com',
+    'helpDomainKeyword': 'Domain\x20Keyword:\x20match\x20keywords\x20contained\x20in\x20domain',
+    'helpGeoip': 'GeoIP:\x20match\x20IP\x20address\x20country/region\x20using\x20GeoIP\x20database',
+    'helpIpCidr': 'IP-CIDR:\x20match\x20IP\x20address\x20ranges',
+    'helpProtocol': 'Protocol:\x20match\x20network\x20protocol\x20types'
+  },
+  Vo = {
+    'created': 'Override\x20rule\x20created',
+    'scriptCreated': 'Override\x20script\x20created',
+    'scriptUpdated': 'Override\x20script\x20updated',
+    'scriptDeleted': 'Override\x20script\x20deleted',
+    'scriptCreateError': 'Error\x20creating\x20script',
+    'scriptUpdateError': 'Error\x20updating\x20script',
+    'scriptDeleteError': 'Error\x20deleting\x20script',
+    'createdWithGroups': 'Custom\x20rule\x20created.\x20Added\x20{{groups}}\x20proxy\x20groups\x20with\x20default\x20nodes:\x20🚀\x20Node\x20Select,\x20DIRECT.\x20Edit\x20subscription\x20to\x20modify.',
+    'updated': 'Override\x20rule\x20updated',
+    'updatedWithGroups': 'Custom\x20rule\x20updated.\x20Added\x20{{groups}}\x20proxy\x20groups\x20with\x20default\x20nodes:\x20🚀\x20Node\x20Select,\x20DIRECT.\x20Edit\x20subscription\x20to\x20modify.',
+    'deleted': 'Override\x20rule\x20deleted',
+    'statusUpdated': 'Status\x20updated',
+    'createError': 'Error\x20creating\x20rule',
+    'updateError': 'Error\x20updating\x20rule',
+    'deleteError': 'Error\x20deleting\x20rule',
+    'statusError': 'Error\x20updating\x20status',
+    'nameRequired': 'Please\x20enter\x20a\x20name',
+    'contentRequired': 'Please\x20enter\x20content',
+    'ruleNotFound': 'Rule\x20not\x20found',
+    'ruleProviderCreated': 'Rule\x20provider\x20and\x20rule\x20config\x20created',
+    'ruleProviderOnlyCreated': 'Rule\x20provider\x20created',
+    'ruleProviderError': 'Error\x20creating\x20rule\x20config,\x20check\x20console',
+    'routeRuleName': 'Route\x20Rule\x20-\x20{{name}}'
+  },
+  cf = {
+    'title': Do,
+    'subtitle': No,
+    'createRule': Ao,
+    'ruleList': Lo,
+    'ruleCount': _o,
+    'filterAll': Oo,
+    'filterDns': Fo,
+    'filterRules': Io,
+    'filterRuleProviders': Mo,
+    'filterScript': Eo,
+    'emptyText': Uo,
+    'columns': jo,
+    'mobileLabels': Ho,
+    'type': Bo,
+    'hook': Go,
+    'mode': qo,
+    'dialog': zo,
+    'deleteConfirm': Ko,
+    'ruleProviderConfirm': $o,
+    'editor': Qo,
+    'toast': Vo
+  },
+  uf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'columns': jo,
+    'createRule': Ao,
+    'default': cf,
+    'deleteConfirm': Ko,
+    'dialog': zo,
+    'editor': Qo,
+    'emptyText': Uo,
+    'filterAll': Oo,
+    'filterDns': Fo,
+    'filterRuleProviders': Mo,
+    'filterRules': Io,
+    'filterScript': Eo,
+    'hook': Go,
+    'mobileLabels': Ho,
+    'mode': qo,
+    'ruleCount': _o,
+    'ruleList': Lo,
+    'ruleProviderConfirm': $o,
+    'subtitle': No,
+    'title': Do,
+    'toast': Vo,
+    'type': Bo
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Xo = {
+    'stats': {
+      'totalQuota': 'Total\x20Quota',
+      'totalQuotaDesc': 'Your\x20available\x20quota',
+      'usedTraffic': 'Used\x20Traffic',
+      'usedTrafficDesc': 'Your\x20accumulated\x20usage',
+      'remainingTraffic': 'Remaining',
+      'remainingTrafficDesc': 'Available\x20balance',
+      'usageRate': 'Usage\x20Rate',
+      'usageRateDesc': 'Accumulated\x20usage\x20ratio',
+      'usedPercent': 'Used\x20{{percent}}%'
+    },
+    'subscribe': {
+      'title': 'Subscription\x20Links',
+      'noSubscriptions': 'No\x20subscriptions\x20available',
+      'noSubscriptionsTitle': 'No\x20subscriptions\x20available',
+      'noSubscriptionsDesc': 'The\x20administrator\x20has\x20not\x20assigned\x20any\x20packages\x20or\x20subscription\x20links\x20to\x20you.\x20Please\x20contact\x20the\x20admin.',
+      'showQrCode': 'Click\x20to\x20show\x20QR\x20code',
+      'showQR': 'Click\x20to\x20show\x20QR\x20code',
+      'copy': 'Copy',
+      'import': 'Import',
+      'importClash': 'Import\x20Clash',
+      'expired': 'Expired',
+      'expireAt': 'Expires:\x20{{date}}',
+      'expiresAt': 'Expires',
+      'permanent': 'Permanent',
+      'linkCopied': '{{client}}\x20subscription\x20link\x20copied',
+      'copyFailed': 'Copy\x20failed\x20(HTTPS\x20required),\x20please\x20copy\x20manually',
+      'qrTitle': 'Subscription\x20QR\x20Code',
+      'description': 'Scan\x20the\x20QR\x20code\x20with\x20your\x20phone\x20to\x20quickly\x20import\x20the\x20subscription\x20link.'
+    },
+    'renewal': {
+      'button': 'Request\x20renewal',
+      'pending': 'Renewal\x20pending',
+      'title': 'Request\x20package\x20renewal',
+      'description': 'Enter\x20the\x20renewal\x20passphrase\x20for\x20an\x20administrator\x20to\x20verify.',
+      'expiredHint': 'If\x20your\x20package\x20expired,\x20submit\x20a\x20passphrase\x20to\x20restore\x20the\x20most\x20recent\x20package\x20after\x20approval.',
+      'placeholder': 'Renewal\x20passphrase',
+      'submit': 'Submit\x20renewal\x20request',
+      'submitting': 'Submitting...',
+      'submitted': 'Sent\x20to\x20an\x20administrator\x20for\x20review',
+      'failed': 'Failed\x20to\x20submit\x20renewal\x20request'
+    },
+    'qrDialog': {
+      'title': 'Subscription\x20QR\x20Code',
+      'description': 'Scan\x20the\x20QR\x20code\x20with\x20your\x20phone\x20to\x20quickly\x20import\x20the\x20subscription\x20link.'
+    }
+  },
+  Jo = {
+    'stats': {
+      'totalQuota': 'Total\x20Quota',
+      'totalQuotaDesc': 'Total\x20quota\x20across\x20all\x20nodes',
+      'usedTraffic': 'Used\x20Traffic',
+      'usedTrafficDesc': 'Accumulated\x20usage\x20across\x20all\x20nodes',
+      'unlimitedUsedHint': 'Unlimited-traffic\x20servers\x20used\x20{{value}}\x20(not\x20counted\x20above)',
+      'remainingTraffic': 'Remaining',
+      'remainingTrafficDesc': 'Available\x20balance',
+      'realtimeSpeed': 'Realtime\x20Speed',
+      'realtimeSpeedDesc': 'All\x20servers\x20aggregated'
+    },
+    'timeRange': {
+      'today': 'Today',
+      'week': 'This\x20Week',
+      'month': 'This\x20Month',
+      'todayHint': 'since\x20today\x2000:00',
+      'weekHint': 'since\x20Mon\x2000:00',
+      'monthHint': 'since\x201st\x2000:00'
+    },
+    'nodeView': {
+      'title': 'Node\x20View',
+      'sortDesc': 'Sorted\x20by\x20cycle\x20traffic',
+      'noData': 'No\x20data',
+      'totalNodes': '{{count}}\x20nodes\x20total,\x20click\x20top-right\x20to\x20view\x20all',
+      'serverTooltip': 'Server:\x20{{servers}}'
+    },
+    'userView': {
+      'title': 'User\x20View',
+      'sortDesc': 'Sorted\x20by\x20cycle\x20traffic',
+      'noData': 'No\x20data',
+      'totalUsers': '{{count}}\x20users\x20total,\x20click\x20top-right\x20to\x20view\x20all',
+      'currentConnections': 'Current\x20concurrent\x20connections',
+      'partialConnections': 'Currently\x20observed\x20connections;\x20some\x20servers\x20are\x20not\x20ready,\x20so\x20the\x20actual\x20total\x20may\x20be\x20higher',
+      'connectionStatsIncomplete': 'Connection\x20statistics\x20are\x20incomplete\x20on\x20some\x20servers;\x20values\x20marked\x20with\x20+\x20are\x20currently\x20observed\x20counts',
+      'connectionStatsExcluded': 'Servers\x20running\x20external\x20Xray\x20({{servers}})\x20are\x20outside\x20the\x20connection-statistics\x20scope'
+    },
+    'serverOverview': {
+      'title': 'Server\x20Overview',
+      'description': 'Usage\x20within\x20the\x20selected\x20time\x20range,\x20excluding\x20the\x20manual\x20usage\x20offset.\x20Server\x20Management\x20shows\x20the\x20cumulative\x20billing-cycle\x20total,\x20so\x20the\x20two\x20can\x20differ.',
+      'noServers': 'No\x20servers',
+      'columns': {
+        'server': 'Server',
+        'speed': 'Speed',
+        'used': 'Used',
+        'total': 'Total',
+        'remaining': 'Remaining',
+        'usageRate': 'Usage'
+      },
+      'unlimited': 'Unlimited',
+      'usedTooltip': 'Range\x20usage\x20=\x20current\x20counter\x20−\x20snapshot\x20at\x20the\x20selected\x20date.\x20The\x20manual\x20usage\x20offset\x20from\x20Server\x20Management\x20is\x20excluded:\x20it\x20covers\x20traffic\x20from\x20before\x20tracking\x20started,\x20which\x20is\x20outside\x20this\x20range.'
+    },
+    'dialog': {
+      'nodeTraffic': 'Node\x20Traffic',
+      'userTraffic': 'User\x20Traffic',
+      'nodeUserTraffic': 'User\x20traffic\x20for\x20{{name}}',
+      'userNodeTraffic': 'Node\x20traffic\x20for\x20{{name}}'
+    }
+  },
+  Yo = {
+    'title': 'Daily\x20Traffic\x20Usage',
+    'description': 'Recent\x20daily\x20traffic\x20trends',
+    'loadFailed': 'Failed\x20to\x20load\x20data,\x20please\x20try\x20again\x20later.',
+    'noHistory': 'No\x20history\x20available.',
+    'tooltipDate': 'Date:\x20{{date}}',
+    'dailyUsage': 'Daily\x20Usage'
+  },
+  Zo = {
+    'page': 'Page\x20{{current}}/{{total}}'
+  },
+  pf = {
+    'user': Xo,
+    'admin': Jo,
+    'chart': Yo,
+    'pagination': Zo
+  },
+  mf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'admin': Jo,
+    'chart': Yo,
+    'default': pf,
+    'pagination': Zo,
+    'user': Xo
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  ea = {
+    'required': 'This\x20field\x20is\x20required',
+    'passwordMinLength': 'Password\x20must\x20be\x20at\x20least\x208\x20characters',
+    'passwordMismatch': 'Passwords\x20do\x20not\x20match',
+    'usernameEmpty': 'Username\x20cannot\x20be\x20empty',
+    'invalidFormat': 'Invalid\x20format'
+  },
+  ta = {
+    'proxyNotObject': 'Proxy\x20#{{index}}\x20is\x20not\x20a\x20valid\x20object',
+    'proxyMissingName': 'Proxy\x20#{{index}}\x20is\x20missing\x20the\x20name\x20field\x20or\x20name\x20is\x20empty',
+    'proxyDuplicateName': 'Duplicate\x20proxy\x20name:\x20\x22{{name}}\x22,\x20auto-removed',
+    'proxyNameNotFirst': 'Proxy\x20\x22{{name}}\x22\x20name\x20field\x20is\x20not\x20the\x20first\x20field,\x20auto-adjusted',
+    'groupNotObject': 'Proxy\x20group\x20#{{index}}\x20is\x20not\x20a\x20valid\x20object',
+    'groupMissingName': 'Proxy\x20group\x20#{{index}}\x20is\x20missing\x20the\x20name\x20field\x20or\x20name\x20is\x20empty',
+    'groupDuplicateName': 'Duplicate\x20proxy\x20group\x20name:\x20\x22{{name}}\x22',
+    'groupNameNotFirst': 'Proxy\x20group\x20\x22{{name}}\x22\x20name\x20field\x20is\x20not\x20the\x20first\x20field,\x20auto-adjusted',
+    'groupEmpty': 'Proxy\x20group\x20\x22{{name}}\x22\x20has\x20no\x20usable\x20node;\x20DIRECT\x20was\x20added\x20automatically',
+    'groupAutoCorrect': 'Proxy\x20group\x20\x22{{name}}\x22\x20node\x20reference\x20\x22{{proxy}}\x22\x20auto-corrected\x20to\x20\x22{{corrected}}\x22',
+    'groupMissingNode': 'Proxy\x20group\x20\x22{{name}}\x22\x20referenced\x20missing\x20node\x20\x22{{node}}\x22;\x20it\x20was\x20removed\x20automatically',
+    'groupDuplicateProxies': 'Proxy\x20group\x20\x22{{name}}\x22\x20has\x20duplicate\x20proxy\x20references,\x20auto-deduplicated',
+    'circularReference': 'Circular\x20proxy-group\x20reference\x20was\x20removed\x20automatically:\x20{{cycle}}',
+    'validationPassed': '✅\x20Config\x20validation\x20passed',
+    'location': 'Location:\x20{{location}}',
+    'itemCount': '{{count}}\x20items',
+    'nameNotFirst': 'name\x20field\x20is\x20not\x20the\x20first\x20field',
+    'nameFieldAdjust': '{{count}}\x20proxy\x20groups\x20need\x20name\x20field\x20position\x20adjustment',
+    'affected': 'Affected:\x20{{items}}',
+    'andMore': 'and\x20{{count}}\x20more',
+    'errorsFound': '❌\x20Found\x20{{count}}\x20errors:\x0a',
+    'warningsFound': '⚠️\x20Found\x20{{count}}\x20warnings:\x0a',
+    'autoFixed': '🔧\x20Auto-fixed\x20{{count}}\x20issues'
+  },
+  na = {
+    'unauthorized': 'Unauthorized,\x20please\x20sign\x20in\x20again',
+    'forbidden': 'Access\x20denied',
+    'notFound': 'Resource\x20not\x20found',
+    'internalError': 'Internal\x20server\x20error',
+    'networkError': 'Network\x20error,\x20please\x20check\x20your\x20connection',
+    'timeout': 'Request\x20timed\x20out',
+    'unknown': 'Unknown\x20error',
+    'somethingWentWrong': 'Something\x20went\x20wrong!',
+    'contentNotFound': 'Content\x20not\x20found.'
+  },
+  ff = {
+    'validation': ea,
+    'clashValidator': ta,
+    'server': na
+  },
+  xf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'clashValidator': ta,
+    'default': ff,
+    'server': na,
+    'validation': ea
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  oa = 'Forward\x20Management',
+  aa = {
+    'title': 'Forward\x20Groups',
+    'create': 'Create\x20Group',
+    'edit': 'Edit\x20Group',
+    'delete': 'Delete',
+    'name': 'Group\x20Name',
+    'namePlaceholder': 'Enter\x20group\x20name',
+    'description': 'Description',
+    'descriptionPlaceholder': 'Enter\x20description',
+    'strategy': 'Load\x20Balance\x20Strategy',
+    'members': 'Members',
+    'empty': 'No\x20groups\x20yet,\x20create\x20one',
+    'nameRequired': 'Group\x20name\x20is\x20required',
+    'createSuccess': 'Group\x20created\x20successfully',
+    'createError': 'Failed\x20to\x20create\x20group',
+    'updateSuccess': 'Group\x20updated\x20successfully',
+    'updateError': 'Failed\x20to\x20update\x20group',
+    'deleteSuccess': 'Group\x20deleted\x20successfully',
+    'deleteError': 'Failed\x20to\x20delete\x20group',
+    'deleteConfirm': 'Are\x20you\x20sure\x20to\x20delete\x20this\x20group?',
+    'manageMembers': 'Manage\x20Members',
+    'currentMembers': 'Current\x20Members',
+    'noMembers': 'No\x20members\x20yet',
+    'addMember': 'Add\x20Member',
+    'selectServer': 'Select\x20Server',
+    'port': 'Port',
+    'dnsOrder': 'DNS\x20Order',
+    'dnsOrderHint': 'DNS\x20order\x20for\x20upstream\x20orchestration,\x20e.g.\x201,2\x20or\x20default',
+    'memberFieldsRequired': 'Please\x20fill\x20in\x20all\x20member\x20fields',
+    'membersUpdated': 'Members\x20updated\x20successfully',
+    'membersUpdateError': 'Failed\x20to\x20update\x20members',
+    'failoverEnabled': 'Enable\x20Failover',
+    'failoverHint': 'Automatically\x20drop\x20unhealthy\x20members\x20and\x20re-add\x20them\x20once\x20recovered',
+    'offlineMsThreshold': 'Offline\x20Threshold\x20(ms)',
+    'offlineMsPlaceholder': '0\x20=\x20only\x20detect\x20disconnection',
+    'offlineMsHint': 'RTT\x20above\x20this\x20is\x20treated\x20as\x20unhealthy\x20and\x20offloaded;\x200\x20means\x20detect\x20disconnection\x20only',
+    'dnsDomain': 'DNS\x20Domain\x20(entry\x20group)',
+    'dnsDomainPlaceholder': 'e.g.\x20entry.example.com,\x20blank\x20=\x20no\x20DNS\x20balancing',
+    'dnsDomainHint': 'Entry\x20group\x20only:\x20add/remove\x20A\x20records\x20for\x20this\x20domain\x20based\x20on\x20member\x20health',
+    'dnsProvider': 'DNS\x20Provider',
+    'dnsProviderPlaceholder': 'Select\x20a\x20DNS\x20provider',
+    'strategies': {
+      'round_robin': 'Round\x20Robin',
+      'weighted': 'Weighted',
+      'least_conn': 'Least\x20Conn',
+      'percentage': 'Percentage\x20(by\x20remaining\x20traffic)',
+      'cycle': 'Cycle\x20(by\x20reset\x20day)',
+      'sticky': 'Sticky\x20(source-IP\x20hash)'
+    },
+    'tab': 'Forward\x20Groups',
+    'membersLabel': 'Servers\x20in\x20Group',
+    'addServerPlaceholder': 'Add\x20a\x20server…',
+    'noMembersYet': 'No\x20servers\x20added\x20yet',
+    'weight': 'Weight',
+    'membersHint': 'Servers\x20+\x20weights\x20in\x20the\x20group;\x20port\x20range\x20and\x20DNS\x20are\x20configured\x20when\x20creating\x20a\x20forward\x20chain',
+    'strategyHints': {
+      'round_robin': 'Cycles\x20through\x20the\x20group\x20members\x20in\x20order,\x20ignoring\x20weight\x20and\x20load.\x20Simplest\x20choice\x20when\x20the\x20machines\x20are\x20comparable.',
+      'weighted': 'Distributes\x20by\x20each\x20member’s\x20manual\x20weight\x20(smooth\x20weighted\x20round-robin).\x20A\x20weight-2\x20machine\x20receives\x20roughly\x20twice\x20the\x20connections\x20of\x20a\x20weight-1\x20one.\x20Use\x20when\x20bandwidth\x20or\x20specs\x20differ\x20noticeably.',
+      'least_conn': 'Sends\x20each\x20new\x20connection\x20to\x20the\x20member\x20with\x20the\x20fewest\x20active\x20ones.\x20Good\x20when\x20connection\x20lifetimes\x20vary\x20a\x20lot\x20(long-lived\x20sessions,\x20big\x20transfers),\x20so\x20one\x20machine\x20does\x20not\x20get\x20stuck\x20behind\x20long\x20tasks.',
+      'percentage': 'Weights\x20members\x20automatically\x20by\x20remaining\x20traffic\x20quota\x20—\x20more\x20remaining\x20means\x20higher\x20weight,\x20steering\x20traffic\x20toward\x20machines\x20with\x20spare\x20quota\x20so\x20usage\x20evens\x20out\x20across\x20different\x20plans.\x20Unlimited\x20members\x20get\x20a\x20fixed\x20high\x20weight.\x20The\x20master\x20recomputes\x20weights\x20every\x205\x20minutes\x20from\x20live\x20traffic.',
+      'cycle': 'Weights\x20members\x20automatically\x20by\x20how\x20close\x20they\x20are\x20to\x20their\x20traffic\x20reset\x20day\x20—\x20the\x20closer\x20the\x20reset,\x20the\x20higher\x20the\x20weight,\x20so\x20quota\x20that\x20would\x20otherwise\x20expire\x20gets\x20used\x20first.\x20Members\x20with\x20no\x20quota\x20left\x20drop\x20to\x20the\x20lowest\x20weight.\x20Also\x20recomputed\x20every\x205\x20minutes.',
+      'sticky': 'Hashes\x20the\x20source\x20IP\x20so\x20a\x20given\x20client\x20always\x20lands\x20on\x20the\x20same\x20member.\x20Use\x20when\x20session\x20continuity\x20matters;\x20the\x20trade-off\x20is\x20that\x20traffic\x20distribution\x20follows\x20client-IP\x20distribution\x20and\x20may\x20be\x20uneven.'
+    }
+  },
+  ra = {
+    'title': 'Forward\x20Chains',
+    'create': 'Create\x20Chain',
+    'delete': 'Delete',
+    'name': 'Chain\x20Name',
+    'namePlaceholder': 'Enter\x20chain\x20name',
+    'hops': 'Hops',
+    'empty': 'No\x20chains\x20yet,\x20create\x20one',
+    'noHops': 'No\x20hops\x20configured',
+    'nameRequired': 'Chain\x20name\x20is\x20required',
+    'createSuccess': 'Chain\x20created\x20successfully',
+    'createError': 'Failed\x20to\x20create\x20chain',
+    'deleteSuccess': 'Chain\x20deleted\x20successfully',
+    'deleteError': 'Failed\x20to\x20delete\x20chain',
+    'deleteConfirm': 'Are\x20you\x20sure\x20to\x20delete\x20this\x20chain?',
+    'manageHops': 'Manage\x20Hops',
+    'currentHops': 'Current\x20Hop\x20Order',
+    'addHop': 'Add\x20Hop',
+    'selectGroup': 'Select\x20Group',
+    'add': 'Add',
+    'hopsHint': 'Chain\x20passes\x20through\x20groups\x20in\x20order,\x20use\x20arrows\x20to\x20adjust',
+    'hopsUpdated': 'Hops\x20updated\x20successfully',
+    'hopsUpdateError': 'Failed\x20to\x20update\x20hops',
+    'bindNode': 'Bind\x20Node',
+    'selectNode': 'Select\x20Node',
+    'selectNodePlaceholder': 'Select\x20a\x20node\x20to\x20bind',
+    'port': 'Listen\x20Port',
+    'portHint': 'Node\x20will\x20listen\x20on\x20this\x20port\x20for\x20forward\x20traffic',
+    'bind': 'Bind',
+    'selectNodeRequired': 'Please\x20select\x20a\x20node',
+    'validPortRequired': 'Please\x20enter\x20a\x20valid\x20port\x20(1-65535)',
+    'bindSuccess': 'Bind\x20successful,\x20forward\x20rules\x20deployed',
+    'bindError': 'Failed\x20to\x20bind',
+    'tab': 'Forward\x20Chains',
+    'needTwoGroups': 'A\x20forward\x20chain\x20needs\x20at\x20least\x202\x20groups\x20(entry\x20+\x20exit)',
+    'portRange': 'Port\x20Range',
+    'portStart': 'Start\x20port',
+    'portEnd': 'End\x20port',
+    'portRangeHint': 'Node\x20ports\x20on\x20this\x20chain\x20must\x20fall\x20within\x20this\x20range;\x20blank\x20(0)\x20=\x20unlimited.',
+    'invalidPortRange': 'Invalid\x20port\x20range\x20(1-65535,\x20start<=end,\x20or\x20blank\x20for\x20unlimited)',
+    'dnsDomain': 'DNS\x20Domain\x20(entry\x20failover)',
+    'dnsDomainPlaceholder': 'e.g.\x20entry.example.com,\x20blank\x20=\x20no\x20DNS',
+    'dnsDomainHint': 'When\x20set,\x20A\x20records\x20for\x20this\x20domain\x20are\x20added/removed\x20by\x20entry-group\x20health',
+    'dnsProvider': 'DNS\x20Provider',
+    'dnsProviderPlaceholder': 'Select\x20a\x20DNS\x20provider',
+    'hopsBuilder': 'Chain\x20hops\x20(drag\x20to\x20order:\x20first\x20=\x20entry,\x20last\x20=\x20exit)',
+    'addGroup': 'Add\x20a\x20group…',
+    'addServer': 'Add\x20a\x20server…',
+    'noHopsYet': 'None\x20yet;\x20at\x20least\x202\x20hops\x20(entry\x20+\x20exit)\x20required',
+    'hopsBuilderHint': 'Add\x20groups\x20or\x20servers;\x20a\x20server\x20becomes\x20a\x20single-server\x20group\x20automatically.\x20Drag\x20the\x20grip\x20to\x20reorder.',
+    'entry': 'Entry',
+    'exit': 'Exit',
+    'middle': 'Relay',
+    'updateSuccess': 'Forward\x20chain\x20updated',
+    'updateError': 'Failed\x20to\x20update\x20forward\x20chain',
+    'edit': 'Edit\x20Forward\x20Chain'
+  },
+  sa = {
+    'title': 'Forward\x20Rule\x20Status',
+    'currentStatus': 'Current\x20Status',
+    'refresh': 'Refresh\x20Status',
+    'tab': 'Status',
+    'loss': 'loss',
+    'jitter': 'jitter'
+  },
+  ia = {
+    'title': 'Historical\x20Latency\x20Monitoring',
+    'selectServer': 'Select\x20Server',
+    'selectRule': 'Select\x20Rule',
+    'timeRange': 'Time\x20Range',
+    'hours': '{{n}}\x20hours',
+    'latency': 'Latency\x20(ms)',
+    'noData': 'Please\x20select\x20server\x20and\x20rule\x20first'
+  },
+  gf = {
+    'title': oa,
+    'groups': aa,
+    'chains': ra,
+    'status': sa,
+    'metrics': ia
+  },
+  hf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'chains': ra,
+    'default': gf,
+    'groups': aa,
+    'metrics': ia,
+    'status': sa,
+    'title': oa
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  la = {
+    'title': 'Node\x20Management',
+    'description': 'Enter\x20proxy\x20node\x20information,\x20one\x20node\x20per\x20line.\x20Supports\x20VMess,\x20VLESS,\x20Trojan,\x20Shadowsocks,\x20Hysteria,\x20Socks,\x20AnyTLS,\x20Snell,TUIC(Only\x20Import),\x20and\x20WireGuard(Only\x20Import)\x20protocols.'
+  },
+  da = {
+    'title': 'Import\x20External\x20Nodes',
+    'tabs': {
+      'manual': 'Manual\x20Input',
+      'subscription': 'Subscription\x20Import',
+      'socks5': 'SOCKS5'
+    },
+    'manual': {
+      'tagLabel': 'Node\x20Tag',
+      'tagPlaceholder': 'Manual\x20Input',
+      'tagDescription': 'Set\x20a\x20tag\x20for\x20these\x20nodes,\x20used\x20for\x20categorization\x20and\x20filtering\x20in\x20node\x20management',
+      'skipCertVerify': 'Skip\x20TLS\x20verify',
+      'relayEnable': 'Enable\x20relay',
+      'relayServerPlaceholder': 'Relay\x20server\x20IP\x20or\x20domain',
+      'relayPortPlaceholder': 'Port\x20(default\x20=\x20node\x20port)',
+      'relayDescription': 'These\x20nodes\x20will\x20connect\x20via\x20this\x20relay\x20server;\x20leave\x20port\x20empty\x20to\x20keep\x20each\x20node\x27s\x20own\x20port.\x20The\x20original\x20server\x20is\x20kept\x20and\x20can\x20be\x20edited\x20or\x20cleared\x20from\x20the\x20node\x20list.',
+      'parseBtn': 'Parse\x20Nodes',
+      'saveBtn': 'Save\x20Nodes',
+      'savingBtn': 'Saving...'
+    },
+    'socks5': {
+      'nameLabel': 'Node\x20name',
+      'namePlaceholder': 'Defaults\x20to\x20\x22server:port\x22\x20when\x20left\x20empty',
+      'usernameLabel': 'Username',
+      'usernamePlaceholder': 'Leave\x20empty\x20for\x20no\x20authentication',
+      'passwordLabel': 'Password',
+      'passwordPlaceholder': 'Leave\x20empty\x20for\x20no\x20authentication',
+      'serverLabel': 'Server',
+      'serverPlaceholder': 'IP\x20or\x20domain',
+      'portLabel': 'Port',
+      'portPlaceholder': '1-65535',
+      'description': 'Same\x20as\x20pasting\x20socks://user:password@server:port\x20under\x20Manual\x20input',
+      'portInvalid': 'Port\x20must\x20be\x20a\x20number\x20between\x201\x20and\x2065535'
+    },
+    'subscription': {
+      'urlPlaceholder': 'https://example.com/api/clash/subscribe?token=xxx',
+      'urlDescription': 'Enter\x20a\x20Clash\x20subscription\x20URL,\x20the\x20system\x20will\x20automatically\x20fetch\x20and\x20parse\x20nodes',
+      'userAgentLabel': 'User-Agent:',
+      'userAgentPlaceholder': 'Select\x20User-Agent',
+      'customUserAgent': 'Custom',
+      'customUserAgentPlaceholder': 'Enter\x20custom\x20User-Agent',
+      'tagLabel': 'Node\x20Tag',
+      'tagPlaceholder': 'Uses\x20server\x20address\x20as\x20tag\x20by\x20default',
+      'tagDescription': 'Set\x20a\x20tag\x20for\x20imported\x20nodes,\x20leave\x20empty\x20to\x20use\x20server\x20address\x20as\x20tag',
+      'defaultTag': 'External\x20Subscription',
+      'importBtn': 'Import\x20Nodes',
+      'importingBtn': 'Importing...',
+      'saveBtn': 'Save\x20Nodes',
+      'savingBtn': 'Saving...'
+    }
+  },
+  ca = {
+    'title': 'Node\x20List',
+    'titleWithCount': 'Node\x20List\x20({{count}})',
+    'forwardedByTunnel': 'Forwarded\x20by\x20tunnel',
+    'forwardedByTunnelTip': 'Forwarded\x20to\x20this\x20node\x20by\x20these\x20tunnel\x20inbounds:',
+    'multiplierHint': 'Traffic\x20on\x20this\x20node\x20counts\x20{{x}}×\x20toward\x20your\x20plan\x20quota',
+    'warning': 'WARNING!\x20Changes\x20and\x20deletions\x20to\x20nodes\x20will\x20be\x20synced\x20to\x20all\x20subscriptions',
+    'iconHints': 'is\x20a\x20draggable\x20element,\x20switch\x20proxy\x20group\x20type,\x20double-click\x20proxy\x20group\x20title\x20to\x20edit\x20name,\x20dragging\x20available\x20node\x20title\x20represents\x20dragging\x20all\x20nodes',
+    'editNodeName': 'Edit\x20node\x20name,\x20',
+    'chainProxy': 'Create\x20chain\x20proxy,\x20',
+    'relayGroup': 'Create\x20relay\x20group',
+    'addRegionEmoji': 'Add\x20region\x20emoji,\x20',
+    'resolveIp': 'Resolve\x20IP\x20address,\x20',
+    'restoreDomain': 'Restore\x20original\x20domain,\x20',
+    'viewEditConfig': 'View/edit\x20config,\x20',
+    'copyUri': 'Copy\x20URI,\x20',
+    'tempSubscription': 'Generate\x20temp\x20subscription,\x20',
+    'tcpingTest': 'TCPing\x20latency\x20test,\x20',
+    'specifyOutbound': 'Specify\x20outbound',
+    'noMatchingNodes': 'No\x20matching\x20nodes\x20found',
+    'parseFailed': 'Parse\x20Failed',
+    'unknown': 'Unknown',
+    'serverUnknown': '—\x20Unrecognized',
+    'externalSource': '📥\x20External:\x20{{source}}'
+  },
+  ua = {
+    'protocol': 'Protocol',
+    'nodeName': 'Node\x20Name',
+    'tag': 'Tag',
+    'serverAddress': 'Server\x20Address',
+    'config': 'Config',
+    'actions': 'Actions'
+  },
+  pa = {
+    'byProtocol': 'Filter\x20by\x20Protocol',
+    'byTag': 'Filter\x20by\x20Tag',
+    'all': 'All',
+    'manualInput': 'Manual\x20Input',
+    'subscriptionImport': 'Subscription\x20Import'
+  },
+  ma = {
+    'addNode': 'Add\x20Node',
+    'tunnelManager': 'Tunnel\x20Manager',
+    'sortMode': 'Sort\x20Mode',
+    'selectedCount': '{{count}}\x20selected',
+    'moveTop': 'Top',
+    'moveUp': 'Up',
+    'moveDown': 'Down',
+    'moveBottom': 'Bottom',
+    'syncExternalSub': 'Sync\x20External\x20Subs',
+    'syncingExternalSub': 'Syncing\x20external\x20subscriptions...',
+    'syncExternalSubSuccess': 'External\x20subscriptions\x20synced',
+    'addEmoji': 'Add\x20Emoji',
+    'addingEmoji': 'Adding...',
+    'addEmojiWithCount': 'Add\x20Emoji\x20({{count}})',
+    'addingEmojiWithCount': 'Adding...',
+    'renameName': 'Rename',
+    'renameNameWithCount': 'Rename\x20({{count}})',
+    'renameTag': 'Change\x20Tag',
+    'renameTagWithCount': 'Manage\x20Tags\x20({{count}})',
+    'tempSub': 'Temp\x20Subscription',
+    'tempSubWithCount': 'Temp\x20Sub\x20({{count}})',
+    'latencyTest': 'Latency\x20Test',
+    'latencyTestWithCount': 'Latency\x20Test\x20({{count}})',
+    'testing': 'Testing...',
+    'batchDelete': 'Batch\x20Delete',
+    'batchDeleteWithCount': 'Batch\x20Delete\x20({{count}})',
+    'clearAll': 'Clear\x20All',
+    'clearingAll': 'Clearing...',
+    'deleteDuplicates': 'Remove\x20Duplicates',
+    'disableSkipCert': 'Disable\x20Skip-Cert-Verify',
+    'utilities': 'Utilities',
+    'snellOptions': 'Snell\x20Options',
+    'showNodeTrafficInName': 'Show\x20Per-Node\x20Traffic\x20in\x20Names',
+    'nodeTrafficNameEnabled': 'Per-node\x20traffic\x20is\x20now\x20shown\x20in\x20subscription\x20node\x20names',
+    'nodeTrafficNameDisabled': 'Per-node\x20traffic\x20is\x20now\x20hidden\x20from\x20subscription\x20node\x20names',
+    'delete': 'Delete',
+    'config': 'Config',
+    'copy': 'Copy',
+    'menu': 'Menu'
+  },
+  fa = {
+    'running': 'Testing\x20{{name}}\x20…',
+    'result': 'Done:\x20down\x20{{mbps}}\x20Mbps,\x20latency\x20{{ms}}\x20ms',
+    'started': 'Speed\x20test\x20started\x20for\x20{{name}};\x20result\x20will\x20show\x20on\x20the\x20node\x20row',
+    'batchStarted': 'Speed\x20test\x20started\x20for\x20{{count}}\x20nodes;\x20results\x20will\x20appear\x20shortly',
+    'batchLatencyStarted': 'Latency\x20test\x20started\x20for\x20{{count}}\x20nodes;\x20results\x20will\x20appear\x20shortly',
+    'latencyStarted': 'Latency\x20test\x20started\x20for\x20{{name}}',
+    'testing': 'Testing',
+    'failedShort': 'Failed',
+    'timeout': 'Timeout',
+    'timeoutHint': 'No\x20result\x20in\x2015s\x20—\x20click\x20to\x20retest',
+    'clickRetest': 'Click\x20to\x20re-test',
+    'batchTest': 'Batch\x20test',
+    'batchLatency': 'Batch\x20latency',
+    'threads': 'Threads',
+    'threadsSingle': 'Single',
+    'threadsMulti': 'Multi',
+    'latencyOnlyTip': 'Probe\x20real\x20latency\x20only\x20(Cloudflare\x20204,\x20multi-sample)',
+    'latencyProbe': 'Probe\x20latency',
+    'latencyRetry': 'Click\x20to\x20re-probe\x20latency',
+    'dialogTitle': 'Node\x20speed\x20test',
+    'dialogDesc': 'Pick\x20a\x20source,\x20then\x20test\x20nodes;\x20results\x20are\x20stored\x20server-side\x20and\x20persist\x20after\x20reopening.',
+    'source': 'Source',
+    'noNodes': 'No\x20nodes\x20to\x20test',
+    'colProtocol': 'Protocol',
+    'colServer': 'Server',
+    'colEgressIP': 'Egress\x20IP',
+    'colActions': 'Actions',
+    'filterByProtocol': 'Filter\x20by\x20protocol',
+    'filterByTag': 'Filter\x20by\x20tag',
+    'clearFilter': 'Clear',
+    'visibleCount': 'Showing\x20{{visible}}\x20/\x20{{total}}',
+    'selectAll': 'Select\x20visible',
+    'unselectAll': 'Unselect\x20all',
+    'clearSelection': 'Clear\x20selection',
+    'srcMaster': 'Master',
+    'srcTester': 'Home',
+    'history': 'Speed\x20test\x20history',
+    'historyAll': 'Speed\x20test\x20results',
+    'historyOf': 'History\x20·\x20{{name}}',
+    'historyDesc': 'Results\x20are\x20stored\x20server-side\x20and\x20remain\x20visible\x20after\x20refresh\x20or\x20navigation;\x20auto-refreshes\x20while\x20testing.',
+    'historyEmpty': 'No\x20speed\x20test\x20records\x20yet',
+    'sortTime': 'By\x20time',
+    'sortSpeed': 'By\x20speed',
+    'sortLatency': 'By\x20latency',
+    'colNode': 'Node',
+    'colSpeed': 'Download',
+    'colLatency': 'Latency',
+    'colSource': 'Source',
+    'colTime': 'Time',
+    'failed': 'Speed\x20test\x20failed\x20{{err}}',
+    'proRequired': 'Speed\x20test\x20is\x20a\x20PRO\x20feature,\x20please\x20upgrade\x20your\x20license',
+    'fromMaster': 'Test\x20from\x20master',
+    'fromTester': 'Test\x20via\x20\x22{{name}}\x22',
+    'testerManage': 'Manage\x20testers',
+    'testerManageDesc': 'A\x20home\x20tester\x20runs\x20on\x20your\x20home\x20server/PC,\x20connects\x20back\x20to\x20the\x20master,\x20and\x20tests\x20node\x20speed\x20from\x20your\x20home\x20network\x27s\x20perspective.',
+    'testerName': 'Name',
+    'testerCreate': 'Create',
+    'testerCreated': 'Created,\x20copy\x20the\x20token\x20(shown\x20once)',
+    'testerCreateFailed': 'Create\x20failed',
+    'testerTokenOnce': 'Pairing\x20token\x20(shown\x20once,\x20copy\x20now)',
+    'testerRunCmd': 'Run\x20on\x20your\x20home\x20machine',
+    'testerLinuxCmd': 'Linux\x20/\x20macOS\x20one-liner',
+    'testerWindowsCmd': 'Windows\x20PowerShell\x20one-liner',
+    'testerDockerCmd': 'Docker\x20one-liner',
+    'testerDownload': 'Download\x20the\x20tester\x20binary',
+    'testerRunHint': 'Copy\x20the\x20command\x20into\x20your\x20home\x20server/PC\x20terminal\x20—\x20auto-downloads\x20the\x20right\x20binary\x20and\x20reverse-connects\x20to\x20the\x20master.',
+    'testerList': 'Paired\x20testers',
+    'updateAll': 'Update\x20all',
+    'updateDialogTitle': 'Update\x20all\x20speed\x20testers',
+    'updateDialogDesc': 'Update\x20{{count}}\x20testers\x20to\x20v{{version}}.\x20Offline\x20and\x20legacy\x20testers\x20without\x20remote\x20update\x20support\x20will\x20be\x20skipped.',
+    'confirmUpdateAll': 'Start\x20update',
+    'updating': 'Updating',
+    'updateCompleted': 'Speed\x20tester\x20update\x20completed',
+    'updatePartialFailed': '{{count}}\x20speed\x20testers\x20failed\x20to\x20update',
+    'updateFailed': 'Speed\x20tester\x20update\x20failed',
+    'updateStatus': {
+      'pending': 'Pending',
+      'success': 'Updated',
+      'failed': 'Failed',
+      'offline': 'Offline,\x20skipped',
+      'unsupported': 'Manual\x20update\x20required',
+      'latest': 'Up\x20to\x20date'
+    },
+    'testerNone': 'No\x20testers\x20yet.',
+    'testerRevoked': 'Revoked',
+    'testerRevokeFailed': 'Revoke\x20failed',
+    'online': 'Online',
+    'offline': 'Offline',
+    'offlineClickHint': 'Tester\x20offline\x20—\x20click\x20to\x20reinstall',
+    'resendInstall': 'Reinstall',
+    'rotateHint': 'Rotate\x20token\x20and\x20show\x20install\x20command\x20(old\x20token\x20immediately\x20invalidated)',
+    'tokenRotated': 'New\x20token\x20issued\x20—\x20redeploy\x20the\x20tester',
+    'tokenRotateFailed': 'Token\x20rotation\x20failed',
+    'copied': 'Copied'
+  },
+  xa = {
+    'viaLabel': 'Relay\x20origin',
+    'editTitle': 'Click\x20to\x20edit\x20/\x20cancel\x20relay',
+    'dialogTitle': 'Relay\x20configuration',
+    'dialogDesc': 'Node\x20connects\x20via\x20a\x20relay\x20server;\x20clash\x20server/port\x20point\x20to\x20the\x20relay.\x20Cancel\x20restores\x20the\x20original\x20server\x20below.',
+    'origServer': 'Original\x20server',
+    'serverLabel': 'Relay\x20server\x20(IP\x20/\x20domain)',
+    'portLabel': 'Relay\x20port',
+    'cancelRelayBtn': 'Cancel\x20relay'
+  },
+  ga = {
+    'openTitle': 'Click\x20to\x20manage\x20this\x20tunnel\x20forward',
+    'title': 'Tunnel\x20Relay',
+    'desc': 'Switch\x20the\x20node\x20address\x20to\x20the\x20tunnel\x20entry,\x20revert\x20to\x20the\x20original,\x20or\x20delete\x20this\x20tunnel\x20port-forward.',
+    'nodeLabel': 'Node',
+    'entryLabel': 'Tunnel\x20entry',
+    'targetLabel': 'Forward\x20target',
+    'origLabel': 'Original\x20server',
+    'switchBtn': 'Switch\x20node\x20address\x20to\x20tunnel\x20entry',
+    'revertBtn': 'Revert\x20to\x20original\x20address',
+    'deleteBtn': 'Delete\x20this\x20tunnel',
+    'deleteConfirm': 'Delete\x20this\x20tunnel\x20port-forward?',
+    'deleteYes': 'Confirm\x20delete',
+    'deleteSuccess': 'Tunnel\x20port-forward\x20deleted',
+    'deleteFailed': 'Failed\x20to\x20delete\x20tunnel'
+  },
+  ha = {
+    'title': 'URI\x20Manager',
+    'desc': 'Per-user\x20share\x20URIs\x20for\x20each\x20accessible\x20node\x20(filled\x20with\x20each\x20user\x27s\x20sub-account\x20credentials)',
+    'searchUserLabel': 'Username',
+    'searchNodeLabel': 'Node\x20name',
+    'searchUser': 'Search\x20user…',
+    'searchNode': 'Search\x20node…',
+    'copyAll': 'Copy\x20All',
+    'copy': 'Copy',
+    'copied': 'Copied',
+    'colUser': 'User',
+    'colNode': 'Node',
+    'colProtocol': 'Protocol',
+    'colUri': 'URI',
+    'empty': 'No\x20data'
+  },
+  ba = {
+    'saveOrderFailed': 'Failed\x20to\x20save\x20order:\x20{{error}}',
+    'nodeNameUpdated': 'Node\x20name\x20updated',
+    'nodeNameUpdateFailed': 'Failed\x20to\x20update\x20node\x20name',
+    'nodeNotFound': 'Node\x20not\x20found',
+    'ipResolveFailed': 'IP\x20resolution\x20failed',
+    'noIpResolved': 'No\x20IP\x20addresses\x20resolved',
+    'serverAddressUpdated': 'Server\x20address\x20updated',
+    'serverAddressUpdateFailed': 'Failed\x20to\x20update\x20server\x20address',
+    'domainRestored': 'Original\x20domain\x20restored',
+    'domainRestoreFailed': 'Failed\x20to\x20restore\x20original\x20domain',
+    'clashConfigUpdated': 'Clash\x20config\x20updated',
+    'clashConfigUpdateFailed': 'Failed\x20to\x20update\x20Clash\x20config',
+    'uriCopied': 'URI\x20copied\x20to\x20clipboard',
+    'uriGenerateFailed': 'Failed\x20to\x20generate\x20URI:\x20{{error}}',
+    'nodesSaved': 'Nodes\x20saved\x20successfully',
+    'relayUpdated': 'Relay\x20updated',
+    'relayCanceled': 'Relay\x20canceled',
+    'relayFailed': 'Relay\x20operation\x20failed',
+    'saveFailed': 'Save\x20failed',
+    'updateFailed': 'Update\x20failed',
+    'nodeDeleted': 'Node\x20deleted',
+    'deleteFailed': 'Delete\x20failed',
+    'allNodesCleared': 'All\x20nodes\x20cleared',
+    'clearFailed': 'Clear\x20failed',
+    'batchTagUpdated': 'Successfully\x20updated\x20tags\x20for\x20{{count}}\x20nodes',
+    'batchTagFailed': 'Failed\x20to\x20batch\x20update\x20tags',
+    'batchTagAction': {
+      'add': 'Added\x20tag\x20to\x20{{count}}\x20nodes',
+      'rename': 'Renamed\x20tag\x20on\x20{{count}}\x20nodes',
+      'delete': 'Deleted\x20tag\x20from\x20{{count}}\x20nodes'
+    },
+    'batchRenameSuccess': 'Successfully\x20renamed\x20{{count}}\x20nodes',
+    'batchRenameFailed': 'Failed\x20to\x20batch\x20rename',
+    'noSkipCertNodes': 'No\x20nodes\x20have\x20skip-cert-verify\x20enabled',
+    'disableSkipCertSuccess': 'Disabled\x20skip-cert-verify\x20on\x20{{count}}\x20nodes',
+    'disableSkipCertFailed': 'Failed\x20to\x20disable\x20skip-cert-verify',
+    'noSnellNodes': 'No\x20Snell\x20nodes\x20found',
+    'snellOptionsSuccess': 'Updated\x20{{count}}\x20Snell\x20nodes',
+    'snellOptionsFailed': 'Failed\x20to\x20update\x20Snell\x20options',
+    'noNodes': 'No\x20nodes',
+    'noDuplicates': 'No\x20duplicate\x20nodes\x20found',
+    'duplicatesDeleted': 'Successfully\x20deleted\x20{{count}}\x20duplicate\x20nodes',
+    'nothingToDelete': 'No\x20nodes\x20to\x20delete',
+    'selectNodeFirst': 'Please\x20select\x20nodes\x20first',
+    'addRegionEmojiSuccess': 'Successfully\x20added\x20region\x20emoji\x20to\x20{{count}}\x20nodes',
+    'addRegionEmojiResult': 'Success\x20{{success}},\x20skipped\x20{{skip}}\x20(already\x20has\x20emoji),\x20failed\x20{{fail}}',
+    'alreadyHasEmoji': 'This\x20node\x20already\x20has\x20an\x20emoji\x20prefix',
+    'cannotParseConfig': 'Cannot\x20parse\x20node\x20config',
+    'noServerAddress': 'No\x20server\x20address\x20in\x20node\x20config',
+    'dnsResolveFailed': 'DNS\x20resolution\x20failed',
+    'geoLocationFailed': 'Failed\x20to\x20get\x20geolocation',
+    'flagEmojiFailed': 'Cannot\x20generate\x20flag\x20emoji',
+    'emojiAdded': 'Region\x20emoji\x20added',
+    'addEmojiFailed': 'Failed\x20to\x20add\x20emoji',
+    'tempNodeRemoved': 'Temp\x20node\x20removed',
+    'nodeNameEmpty': 'Node\x20name\x20cannot\x20be\x20empty',
+    'tempNodeNameUpdated': 'Temp\x20node\x20name\x20updated',
+    'noSavableNodes': 'No\x20nodes\x20to\x20save',
+    'enterSubUrl': 'Please\x20enter\x20subscription\x20URL',
+    'enterCustomUserAgent': 'Please\x20enter\x20custom\x20User-Agent',
+    'importSuccess': 'Successfully\x20imported\x20{{count}}\x20nodes',
+    'subFetchFailed': 'Failed\x20to\x20fetch\x20subscription',
+    'serverRestoredAddress': 'Original\x20server\x20address\x20restored',
+    'noAvailableServer': 'No\x20available\x20servers',
+    'xrayNotReady': 'Xray\x20is\x20not\x20ready\x20on\x20this\x20server.\x20Please\x20install\x20and\x20start\x20Xray\x20first.',
+    'enterTag': 'Please\x20enter\x20a\x20tag',
+    'selectServer': 'Please\x20select\x20at\x20least\x20one\x20server',
+    'serverInboundFailed': 'Server\x20{{name}}\x20inbound\x20creation\x20failed:\x20{{error}}',
+    'allServersFailed': 'All\x20servers\x20failed\x20to\x20create',
+    'serversCreated': '{{count}}\x20server\x20nodes\x20created\x20successfully',
+    'serversPartialCreated': '{{success}}/{{total}}\x20server\x20nodes\x20created\x20successfully',
+    'createFailed': 'Creation\x20failed',
+    'landingConfigSuccess': 'Landing\x20node\x20configured\x20(outbound\x20+\x20route\x20added)',
+    'landingConfigFailed': 'Failed\x20to\x20configure\x20landing\x20node',
+    'landingBalancerSuccess': 'Balancer\x20route\x20bound\x20to\x20inbound',
+    'landingBalancerFailed': 'Failed\x20to\x20bind\x20balancer\x20route',
+    'balancerTagRequired': 'Select\x20a\x20balancer',
+    'sourceNodeNoServer': 'Source\x20node\x20not\x20linked\x20to\x20remote\x20server,\x20cannot\x20configure\x20outbound\x20routing',
+    'sourceNodeNoInboundTag': 'Source\x20node\x20missing\x20inbound_tag,\x20cannot\x20configure\x20routing',
+    'landingTargetParseError': 'Failed\x20to\x20parse\x20landing\x20node\x20config',
+    'landingTargetDuplicate': 'Landing\x20node\x20({{name}})\x20already\x20configured,\x20please\x20do\x20not\x20add\x20again',
+    'addOutboundFailed': 'Failed\x20to\x20add\x20outbound',
+    'addRoutingRuleFailed': 'Failed\x20to\x20add\x20routing\x20rule',
+    'inboundCreatedNoNode': 'Inbound\x20created\x20but\x20synced\x20node\x20not\x20found,\x20please\x20configure\x20landing\x20manually',
+    'createLandingFailed': 'Failed\x20to\x20create\x20landing\x20node',
+    'chainProxySourceParseError': 'Failed\x20to\x20parse\x20source\x20node\x20config',
+    'chainProxyCreateSuccess': 'Chain\x20proxy\x20node\x20created\x20successfully',
+    'chainProxyCreateFailed': 'Failed\x20to\x20create\x20chain\x20proxy\x20node',
+    'relayGroupCreateSuccess': 'Relay\x20group\x20node\x20created\x20successfully',
+    'relayGroupCreateFailed': 'Failed\x20to\x20create\x20relay\x20group\x20node',
+    'relayGroupRemoveSuccess': 'Relay\x20group\x20removed\x20successfully',
+    'relayGroupRemoveFailed': 'Failed\x20to\x20remove\x20relay\x20group',
+    'remoteServerNotFound': 'Associated\x20remote\x20server\x20not\x20found',
+    'configMissingFields': 'Config\x20missing\x20required\x20fields:\x20name,\x20type,\x20server,\x20port',
+    'jsonFormatError': 'JSON\x20format\x20error:\x20{{error}}',
+    'replaceDone': 'Replacement\x20complete',
+    'enterFindContent': 'Please\x20enter\x20search\x20content',
+    'appliedPrefixSuffix': 'Applied\x20successfully',
+    'enterPrefixOrSuffix': 'Please\x20enter\x20prefix\x20or\x20suffix',
+    'enterNodeNames': 'Please\x20enter\x20node\x20names',
+    'nameCountMismatch': 'Name\x20count\x20({{nameCount}})\x20does\x20not\x20match\x20selected\x20node\x20count\x20({{nodeCount}})',
+    'enterTagName': 'Please\x20enter\x20a\x20tag\x20name',
+    'batchDeleteSuccess': 'Successfully\x20deleted\x20{{count}}\x20nodes',
+    'batchDeletePartial': 'Successfully\x20deleted\x20{{deleted}}/{{total}}\x20nodes',
+    'batchDeleteFailed': 'Batch\x20delete\x20failed',
+    'linkCopied': 'Link\x20copied',
+    'copyFailed': 'Copy\x20failed,\x20please\x20copy\x20manually',
+    'noValidServerAddress': 'Selected\x20nodes\x20have\x20no\x20valid\x20server\x20address',
+    'allTestSuccess': 'All\x20{{count}}\x20nodes\x20tested\x20successfully',
+    'testResult': '{{success}}\x20succeeded,\x20{{fail}}\x20failed',
+    'batchTestFailed': 'Batch\x20test\x20failed',
+    'testFailed': 'Test\x20failed',
+    'noNodesToParse': 'Cannot\x20parse\x20node\x20configs',
+    'tempSubGenerateFailed': 'Failed\x20to\x20generate\x20temp\x20subscription',
+    'routingRuleAdded': 'Routing\x20rule\x20added\x20and\x20Xray\x20restarted',
+    'routingRuleAddFailed': 'Failed\x20to\x20add\x20rule',
+    'routingRuleDeleted': 'Routing\x20rule\x20deleted\x20and\x20Xray\x20restarted',
+    'routingRuleDeleteFailed': 'Failed\x20to\x20delete\x20rule',
+    'enterMatchCondition': 'Please\x20enter\x20match\x20condition',
+    'selectOutbound': 'Please\x20select\x20outbound',
+    'connectionTimeout': 'Connection\x20timeout',
+    'inboundCreateFailed': 'Inbound\x20creation\x20failed',
+    'creatingInboundOutbound': 'Creating\x20inbound\x20and\x20outbound...'
+  },
+  ya = {
+    'selectServer': 'Select\x20Server',
+    'noRemoteServers': 'No\x20remote\x20servers',
+    'pending': 'Pending',
+    'offline': 'Offline'
+  },
+  va = {
+    'autoDetect': 'Auto\x20detect\x20region'
+  },
+  Sa = {
+    'confirmDelete': 'Confirm\x20Delete',
+    'confirmDeleteNode': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20node\x20\x22{{name}}\x22?',
+    'cannotUndo': 'This\x20action\x20cannot\x20be\x20undone.',
+    'confirmBatchDelete': 'Confirm\x20Batch\x20Delete',
+    'confirmBatchDeleteDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20{{count}}\x20selected\x20nodes?\x20This\x20action\x20cannot\x20be\x20undone.',
+    'confirmClearAll': 'Confirm\x20Clear\x20All\x20Nodes',
+    'confirmClearAllDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20clear\x20all\x20saved\x20nodes?\x20This\x20action\x20cannot\x20be\x20undone\x20and\x20will\x20delete\x20{{count}}\x20nodes.',
+    'clearAll': 'Clear\x20All',
+    'confirmDeleteAction': 'Confirm\x20Delete',
+    'externalSync': {
+      'title': 'Select\x20New\x20Nodes\x20to\x20Save',
+      'description': 'This\x20sync\x20found\x20{{count}}\x20new\x20nodes.\x20Existing\x20nodes\x20were\x20updated;\x20select\x20the\x20new\x20nodes\x20you\x20want\x20to\x20save.',
+      'importTitle': 'Select\x20Nodes\x20to\x20Import',
+      'importDescription': 'The\x20subscription\x20contains\x20{{count}}\x20nodes.\x20Select\x20the\x20nodes\x20you\x20want\x20to\x20save.',
+      'importChooseNodes': 'Subscription\x20parsed.\x20Select\x20the\x20nodes\x20you\x20want\x20to\x20save.',
+      'noNodesSaved': 'No\x20nodes\x20selected;\x20nothing\x20was\x20saved',
+      'selectAll': 'Select\x20all',
+      'selectedCount': '{{count}}\x20selected',
+      'chooseNodes': 'Sync\x20complete.\x20Select\x20the\x20new\x20nodes\x20to\x20save.',
+      'cancel': 'Do\x20not\x20save',
+      'saving': 'Saving...',
+      'confirm': 'Save\x20selected\x20nodes\x20({{count}})'
+    },
+    'clashConfig': {
+      'title': 'Clash\x20Config\x20Details',
+      'titleReadonly': 'Clash\x20Config\x20Details\x20(Read\x20Only)',
+      'saveAfterCreate': 'Save\x20node\x20first\x20to\x20edit\x20config',
+      'inputPlaceholder': 'Enter\x20JSON\x20config...',
+      'close': 'Close'
+    },
+    'uriCopy': {
+      'title': 'Copy\x20URI\x20Manually',
+      'description': 'Auto\x20copy\x20failed,\x20please\x20manually\x20copy\x20the\x20URI\x20below',
+      'retryBtn': 'Try\x20Again',
+      'copyFailedRetry': 'Copy\x20failed,\x20please\x20select\x20and\x20copy\x20text\x20manually'
+    },
+    'chainProxy': {
+      'title': 'Select\x20Relay\x20Node',
+      'description': 'Select\x20a\x20target\x20node\x20to\x20create\x20chain\x20proxy\x20with\x20\x22{{name}}\x22',
+      'searchPlaceholder': 'Search\x20node\x20name,\x20protocol,\x20or\x20tag...',
+      'excludeHint': 'Chain\x20proxy\x20nodes\x20are\x20automatically\x20excluded',
+      'externalOnlyWarning': '⚠️\x20The\x20relay\x20node\x20must\x20be\x20an\x20external\x20node.\x20In\x20MiaomiaowuX\x20you\x20must\x20add\x20the\x20outbound\x20on\x20the\x20relay\x20node\x20yourself;\x20chain\x20proxy\x20cannot\x20bill\x20package\x20users\x27\x20traffic.',
+      'noMatch': 'No\x20matching\x20nodes\x20found',
+      'noNodes': 'No\x20nodes\x20available'
+    },
+    'relayGroup': {
+      'title': 'Create\x20Relay\x20Group',
+      'description': 'Select\x20multiple\x20relay\x20nodes\x20for\x20landing\x20node\x20\x22{{name}}\x22\x20to\x20form\x20a\x20url-test\x20group.\x20The\x20landing\x20node\x27s\x20dialer-proxy\x20will\x20point\x20to\x20this\x20group.',
+      'groupNamePlaceholder': 'Relay\x20group\x20name\x20(e.g.\x20Hong\x20Kong\x20Relay\x20Group)',
+      'selectedHint': '{{count}}\x20relay\x20node(s)\x20selected',
+      'externalOnlyWarning': 'Relay\x20members\x20may\x20be\x20external\x20or\x20MiaomiaowuX\x20managed\x20nodes.\x20A\x20managed\x20landing\x20node\x20stores\x20the\x20relay\x20group\x20directly\x20without\x20duplicating\x20its\x20inbound.',
+      'confirm': 'Create\x20Relay\x20Group',
+      'cancel': 'Cancel'
+    },
+    'batchTag': {
+      'title': 'Batch\x20Update\x20Tags',
+      'description': 'Update\x20tags\x20for\x20{{count}}\x20selected\x20nodes',
+      'quickSelect': 'Quick\x20Select\x20Tag',
+      'tagNameLabel': 'Tag\x20Name',
+      'tagNamePlaceholder': 'Enter\x20tag\x20name',
+      'selectExisting': 'Select\x20a\x20tag\x20to\x20update',
+      'noExistingTags': 'Selected\x20nodes\x20have\x20no\x20tags',
+      'newTag': 'New\x20tag\x20name',
+      'mode': {
+        'add': 'Add\x20Tag',
+        'rename': 'Rename\x20Tag',
+        'delete': 'Delete\x20Tag'
+      },
+      'action': {
+        'add': 'Add',
+        'rename': 'Save',
+        'delete': 'Delete'
+      }
+    },
+    'batchRename': {
+      'title': 'Batch\x20Rename\x20Nodes',
+      'description': 'Rename\x20{{count}}\x20selected\x20nodes',
+      'findLabel': 'Find',
+      'findPlaceholder': 'Enter\x20text\x20to\x20find',
+      'replaceLabel': 'Replace\x20With',
+      'replacePlaceholder': 'Enter\x20replacement\x20text',
+      'replaceBtn': 'Replace',
+      'prefixLabel': 'Prefix',
+      'prefixPlaceholder': 'Add\x20before\x20name',
+      'suffixLabel': 'Suffix',
+      'suffixPlaceholder': 'Add\x20after\x20name',
+      'applyBtn': 'Apply',
+      'nodeNamesLabel': 'Node\x20Names\x20(one\x20per\x20line,\x20{{count}}\x20lines\x20total)',
+      'nodeNamesPlaceholder': 'One\x20node\x20name\x20per\x20line',
+      'confirmBtn': 'Confirm\x20Changes'
+    },
+    'disableSkipCert': {
+      'title': 'Disable\x20Skip-Cert-Verify',
+      'description': 'The\x20following\x20{{count}}\x20nodes\x20have\x20skip-cert-verify\x20enabled.\x20For\x20compatibility,\x20their\x20skip-cert-verify\x20will\x20be\x20set\x20to\x20false\x20(certificate\x20verification\x20restored).\x20Confirm\x20the\x20nodes\x20to\x20process:',
+      'selectAll': 'Select\x20All',
+      'deselectAll': 'Deselect\x20All',
+      'confirmBtn': 'Disable\x20({{count}})'
+    },
+    'snellOptions': {
+      'title': 'Snell\x20Options',
+      'description': 'Select\x20the\x20Snell\x20nodes\x20and\x20options\x20to\x20update.\x20Unchecked\x20options\x20keep\x20their\x20current\x20values.',
+      'modifyTfo': 'Update\x20TFO',
+      'tfoHint': 'Output\x20the\x20tfo\x20option',
+      'modifyUdp': 'Update\x20UDP\x20Relay',
+      'udpHint': 'Output\x20the\x20udp-relay\x20option',
+      'unchanged': 'No\x20change',
+      'selectAll': 'Select\x20All',
+      'deselectAll': 'Deselect\x20All',
+      'unset': 'Not\x20set',
+      'enabled': 'On',
+      'disabled': 'Off',
+      'saveBtn': 'Save\x20{{count}}\x20Nodes'
+    },
+    'duplicates': {
+      'title': 'Remove\x20Duplicate\x20Nodes',
+      'description': 'Found\x20{{groupCount}}\x20groups\x20of\x20duplicates,\x20{{deleteCount}}\x20duplicate\x20nodes\x20will\x20be\x20deleted\x20(keeping\x20the\x20earliest\x20created\x20node\x20per\x20group)',
+      'groupTitle': 'Duplicate\x20Group\x20{{index}}\x20({{count}}\x20nodes)',
+      'willDelete': 'Will\x20delete\x20{{count}}',
+      'keep': 'Keep',
+      'deleteLabel': 'Delete',
+      'deletingBtn': 'Deleting...',
+      'confirmDeleteBtn': 'Confirm\x20Delete\x20{{count}}\x20Duplicates'
+    },
+    'tempSub': {
+      'title': 'Generate\x20Temp\x20Subscription',
+      'descriptionSingle': 'Generate\x20temp\x20subscription\x20link\x20for\x20node\x20\x22{{name}}\x22',
+      'descriptionBatch': 'Generate\x20temp\x20subscription\x20link\x20for\x20{{count}}\x20selected\x20nodes',
+      'maxAccessLabel': 'Max\x20Access\x20Count',
+      'expireLabel': 'Expiration\x20(seconds)',
+      'linkLabel': 'Temp\x20Subscription\x20Link',
+      'generatingLink': 'Generating...',
+      'linkPlaceholder': 'Auto\x20generating...',
+      'linkExpireHint': 'Link\x20will\x20expire\x20after\x20{{seconds}}\x20seconds\x20or\x20{{count}}\x20accesses'
+    },
+    'serverSelect': {
+      'title': 'Select\x20Server',
+      'description': 'Select\x20a\x20server\x20to\x20continue\x20creating\x20node',
+      'xrayNotReady': 'Xray\x20not\x20ready',
+      'xrayReady': 'Xray\x20ready',
+      'scan': 'Scan\x20Xray\x20status',
+      'scanning': 'Scanning...',
+      'ipv4Label': 'IPv4',
+      'ipv6Label': 'IPv6',
+      'selectAtLeastOneIp': 'Select\x20at\x20least\x20one\x20IP',
+      'v6IgnoresDomain': 'IPv6\x20node\x20connects\x20directly,\x20bypassing\x20the\x20domain',
+      'tabServer': 'Select\x20Server',
+      'tabForwardChain': 'Forward\x20Chain',
+      'forwardChain': {
+        'selectChainFirst': 'Please\x20select\x20a\x20forward\x20chain\x20first',
+        'invalidPort': 'Invalid\x20port\x20(1-65535)',
+        'selectNodeFirst': 'Please\x20select\x20an\x20existing\x20node',
+        'created': 'Forward\x20chain\x20node\x20created',
+        'createFailed': 'Failed\x20to\x20create',
+        'empty': 'No\x20forward\x20chains\x20yet.\x20Create\x20one\x20in\x20Forward\x20Management\x20first.',
+        'chainLabel': 'Forward\x20Chain',
+        'chainPlaceholder': 'Select\x20a\x20forward\x20chain',
+        'hopsUnit': 'hops',
+        'modeLabel': 'Exit\x20Mode',
+        'modeNew': 'New\x20Node',
+        'modeExisting': 'Existing\x20Node',
+        'modeNewHint': 'Create\x20a\x20new\x20landing\x20node\x20with\x20the\x20chosen\x20protocol\x20on\x20every\x20exit-group\x20server\x20(all\x20share\x20one\x20credential).',
+        'modeExistingHint': 'Use\x20the\x20whole\x20chain\x20as\x20a\x20relay\x20forwarding\x20to\x20an\x20existing\x20node\x20(no\x20exit\x20provisioning).',
+        'existingNodeLabel': 'Target\x20Node',
+        'existingNodePlaceholder': 'Select\x20an\x20existing\x20node',
+        'portLabel': 'Port',
+        'portPlaceholder': 'e.g.\x2020000\x20(listened\x20across\x20the\x20chain)',
+        'nameLabel': 'Node\x20Name',
+        'namePlaceholder': 'Leave\x20blank\x20to\x20auto-name',
+        'creating': 'Creating…',
+        'create': 'Create\x20Node',
+        'relayProtoLabel': 'Transport',
+        'relayProtoHint': 'Pick\x20TCP\x20for\x20TCP-transport\x20proxies\x20(VLESS/VMess/SS/Trojan);\x20pick\x20UDP\x20/\x20TCP+UDP\x20for\x20UDP-transport\x20(Hysteria2/TUIC)\x20or\x20full-cone\x20UDP'
+      }
+    },
+    'quickCreate': {
+      'addNodeTitle': 'Add\x20Node',
+      'doneTitle': 'Creation\x20Complete',
+      'configInbound': 'Configure\x20inbound\x20parameters',
+      'doneDescription': 'Inbound\x20and\x20outbound\x20created,\x20nodes\x20auto-synced',
+      'inboundCreated': 'Created\x20inbound\x20on\x20{{count}}\x20servers',
+      'outboundPrefix': 'Outbound',
+      'outboundSuffix': 'created',
+      'nodesSynced': 'Nodes\x20auto-synced\x20to\x20list',
+      'doneBtn': 'Done'
+    },
+    'landing': {
+      'createInboundTitle': 'Create\x20Landing\x20Inbound',
+      'addLandingTitle': 'Add\x20Landing\x20Node',
+      'createInboundDesc': 'Create\x20inbound\x20on\x20{{serverName}},\x20auto-configure\x20outbound\x20and\x20routing\x20for\x20\x22{{nodeName}}\x22',
+      'addLandingDesc': 'Select\x20landing\x20node\x20or\x20server\x20for\x20\x22{{name}}\x22',
+      'tabNodes': 'Select\x20Landing\x20Node',
+      'tabServers': 'Select\x20Server',
+      'tabBalancer': 'Select\x20Balancer',
+      'balancerHint': 'Adds\x20one\x20routing\x20rule\x20on\x20the\x20source\x20server:\x20inbound\x20→\x20balancer\x20(no\x20outbound,\x20no\x20node)',
+      'noBalancers': 'No\x20balancers\x20on\x20source\x20server.\x20Create\x20one\x20in\x20\x27Xray\x20Management\x20→\x20Routing\x20→\x20Balancers\x27\x20first.',
+      'confirmBalancerLanding': 'Confirm\x20Bind',
+      'landingBalancerSelected': 'Selected\x20LB',
+      'searchPlaceholder': 'Search\x20node\x20name,\x20protocol,\x20or\x20tag...',
+      'excludeHint': 'Automatically\x20excludes\x20chain\x20proxy\x20nodes\x20and\x20the\x20source\x20node\x20itself',
+      'noMatchingNodes': 'No\x20matching\x20nodes\x20found',
+      'noAvailableNodes': 'No\x20available\x20nodes',
+      'serverHint': 'After\x20selecting\x20a\x20server,\x20a\x20new\x20inbound\x20will\x20be\x20created\x20with\x20auto-configured\x20outbound\x20and\x20routing\x20rules',
+      'noOtherServers': 'No\x20other\x20servers\x20available',
+      'configuringLanding': 'Configuring\x20landing\x20node...'
+    }
+  },
+  Ca = {
+    'timeout': 'Timeout',
+    'retest': 'Click\x20to\x20retest',
+    'testBtn': 'Latency\x20Test',
+    'tcpingTest': 'TCPing\x20Latency\x20Test'
+  },
+  Wa = {
+    'nodeRouting': 'Node\x20Routing',
+    'speedtest': 'Speed\x20Test',
+    'tempSubscription': 'Generate\x20Temp\x20Subscription',
+    'copyUri': 'Copy\x20URI',
+    'resolveIp': 'Resolve\x20IP\x20Address',
+    'selectIp': 'Select\x20IP\x20Address',
+    'restoreDomain': 'Restore\x20Original\x20Domain',
+    'landingNode': 'Landing\x20Node',
+    'chainProxy': 'Create\x20Chain\x20Proxy',
+    'relayGroup': 'Relay\x20Group'
+  },
+  wa = {
+    'address': 'Address:',
+    'tag': 'Tag:',
+    'nodeCount': '{{count}}\x20nodes',
+    'batchAdd': 'Batch\x20add\x20{{count}}\x20nodes',
+    'moreNodes': '{{count}}\x20more\x20nodes...',
+    'noNodes': 'No\x20nodes'
+  },
+  Pa = {
+    'defaultDescription': 'Drag\x20nodes\x20to\x20different\x20proxy\x20groups\x20to\x20customize\x20each\x20group\x27s\x20node\x20list',
+    'dragHint': 'is\x20a\x20draggable\x20element,\x20',
+    'switchGroupType': 'switch\x20proxy\x20group\x20type,\x20double-click\x20proxy\x20group\x20title\x20to\x20edit\x20name,\x20dragging\x20available\x20node\x20title\x20represents\x20dragging\x20all\x20nodes',
+    'addToAllGroups': 'Add\x20to\x20All\x20Groups',
+    'columns': 'Columns',
+    'removeFromAllGroups': 'Remove\x20from\x20All\x20Groups',
+    'dragNodeHere': 'Drag\x20nodes\x20here',
+    'addProxyGroup': 'Add\x20Proxy\x20Group',
+    'saving': 'Saving...',
+    'showAddedNodes': 'Show\x20Added\x20Nodes',
+    'hideAddedNodes': 'Hide\x20Added\x20Nodes',
+    'configChainProxy': 'Configure\x20Chain\x20Proxy',
+    'filterByName': 'Filter\x20by\x20name...',
+    'allTags': 'All\x20tags',
+    'all': 'All',
+    'specialNodes': 'Special\x20Nodes',
+    'proxyProviders': 'Proxy\x20Providers',
+    'availableNodes': 'Available\x20Nodes',
+    'nodesCount': '{{filtered}}\x20/\x20{{total}}\x20nodes',
+    'editNamePlaceholder': 'Enter\x20new\x20name...',
+    'clickToEditName': 'Click\x20to\x20edit\x20name',
+    'nodesAndCollections': '{{nodeCount}}\x20nodes,\x20{{collectionCount}}\x20collections',
+    'nodeCountOnly': '{{count}}\x20nodes',
+    'switchGroupTypeBtn': 'Switch\x20proxy\x20group\x20type',
+    'proxyType': {
+      'select': 'Manual\x20Select',
+      'urlTest': 'Auto\x20Select',
+      'fallback': 'Auto\x20Fallback',
+      'loadBalance': 'Load\x20Balance'
+    },
+    'strategy': 'Strategy',
+    'strategyOptions': {
+      'roundRobin': 'Round\x20Robin',
+      'consistentHashing': 'Consistent\x20Hashing',
+      'stickySessions': 'Sticky\x20Sessions'
+    },
+    'dialerProxyGroup': 'Transit\x20proxy\x20group',
+    'dialerProxyGroupNone': 'None',
+    'dialerProxyGroupBadge': 'Transit:\x20{{name}}',
+    'addGroupDialog': {
+      'title': 'Add\x20Proxy\x20Group',
+      'description': 'Enter\x20a\x20custom\x20name\x20or\x20quickly\x20select\x20from\x20predefined\x20options',
+      'namePlaceholder': 'Enter\x20proxy\x20group\x20name...',
+      'duplicateName': 'A\x20proxy\x20group\x20with\x20this\x20name\x20already\x20exists',
+      'quickSelect': 'Quick\x20Select:',
+      'clearSelection': 'Clear\x20Selection'
+    },
+    'emojiLabels': {
+      'nodeSelect': 'Node\x20Select',
+      'autoSelect': 'Auto\x20Select',
+      'missedFish': 'Missed',
+      'direct': 'Direct',
+      'reject': 'Reject'
+    }
+  },
+  ka = {
+    'title': 'Manual\x20Group\x20Nodes',
+    'description': 'Tap\x20a\x20group\x20to\x20expand\x20and\x20view\x20nodes,\x20tap\x20edit\x20button\x20to\x20add\x20or\x20remove\x20nodes',
+    'noNodes': 'No\x20nodes,\x20tap\x20\x22Add\x20Nodes\x22\x20to\x20add',
+    'addProxyGroup': 'Add\x20Proxy\x20Group',
+    'rename': 'Rename',
+    'type': 'Type',
+    'addNodes': 'Add\x20Nodes',
+    'editGroupTitle': 'Edit\x20Group:\x20{{name}}',
+    'editGroupDescription': 'Select\x20nodes\x20to\x20add\x20to\x20this\x20group',
+    'searchNodes': 'Search\x20nodes...',
+    'allTags': 'All',
+    'noMatchingNodes': 'No\x20matching\x20nodes\x20found',
+    'noAvailableNodes': 'No\x20available\x20nodes',
+    'proxyProviders': 'Proxy\x20Providers',
+    'specialNodes': 'Special\x20Nodes',
+    'selectedNodes': '{{count}}\x20nodes\x20selected',
+    'selectedCollections': '\x20+\x20{{count}}\x20collections',
+    'done': 'Done',
+    'newGroupName': 'New\x20Group\x20{{index}}'
+  },
+  Ta = {
+    'title': 'Missing\x20Nodes\x20Found',
+    'description': 'The\x20following\x20nodes\x20are\x20referenced\x20in\x20rules\x20but\x20do\x20not\x20exist\x20in\x20proxy-groups',
+    'replaceLabel': 'Replace\x20with:',
+    'replaceHint': 'The\x20missing\x20nodes\x20above\x20will\x20be\x20replaced\x20with',
+    'confirmReplace': 'Confirm\x20Replace'
+  },
+  Ra = {
+    'realityGuardRule': 'Reality\x20anti-theft',
+    'title': 'Node\x20Routing',
+    'serverLabel': 'Server:',
+    'inboundLabel': 'Inbound:',
+    'loadingConfig': 'Loading\x20routing\x20config...',
+    'dedicatedRules': 'Dedicated\x20Routing\x20Rules',
+    'dedicatedRulesHint': 'For\x20this\x20inbound',
+    'noDedicatedRules': 'No\x20dedicated\x20rules,\x20traffic\x20will\x20follow\x20global\x20rules',
+    'catchAllWarning': 'All\x20traffic\x20has\x20been\x20routed\x20to',
+    'catchAllSuffix': ',\x20subsequent\x20global\x20rules\x20and\x20default\x20outbound\x20will\x20not\x20take\x20effect',
+    'globalRules': 'Global\x20Routing\x20Rules',
+    'globalRulesHint': 'Applies\x20to\x20all\x20inbounds',
+    'noGlobalRules': 'No\x20global\x20rules',
+    'defaultOutbound': 'Default\x20Outbound',
+    'defaultOutboundHint': 'When\x20no\x20rule\x20matches',
+    'noOutbound': 'No\x20outbound\x20config',
+    'noTag': '(no\x20tag)',
+    'notSet': 'Not\x20set',
+    'quickAdd': 'Quick\x20Add',
+    'customRule': 'Custom\x20Rule',
+    'ruleDetail': 'Routing\x20Rule\x20Details',
+    'confirmDeleteRule': 'Confirm\x20Delete\x20Rule',
+    'confirmDeleteRuleDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this\x20routing\x20rule?\x20Xray\x20will\x20be\x20automatically\x20restarted\x20after\x20deletion.',
+    'selectOutbound': 'Select\x20Outbound',
+    'selectOutboundPlaceholder': 'Select\x20outbound',
+    'addCustomRule': 'Add\x20Custom\x20Rule',
+    'addCustomRuleDesc': 'Add\x20routing\x20rule\x20for\x20inbound\x20{{tag}}',
+    'scope': 'Scope',
+    'scopeDedicated': 'This\x20inbound\x20only\x20({{tag}})',
+    'scopeGlobal': 'Global\x20(all\x20inbounds)',
+    'ruleType': 'Rule\x20Type',
+    'ruleTypeDomain': 'Domain',
+    'ruleTypeIp': 'IP\x20Address',
+    'ruleTypeProtocol': 'Protocol',
+    'matchCondition': 'Match\x20Condition',
+    'matchConditionPlaceholder': 'Multiple\x20conditions\x20separated\x20by\x20comma',
+    'outbound': 'Outbound',
+    'balancer': 'Balancer',
+    'markTag': 'Mark\x20(optional)',
+    'markTagPlaceholder': 'Rule\x20mark',
+    'addBtn': 'Add',
+    'quickRules': {
+      'banBt': 'Ban\x20BT',
+      'banGeoCn': 'Ban\x20China\x20IP',
+      'fixOpenai': 'OpenAI\x20Direct',
+      'banPrivate': 'Ban\x20Private\x20Network',
+      'rfcEmby': 'RFC\x20EMBY\x20(select\x20outbound)',
+      'tiktokUnlock': 'TikTok\x20Unlock\x20(select\x20outbound)',
+      'warpAntiChina': 'Anti-CN\x20Routing\x20(via\x20WARP)'
+    },
+    'ruleTypeLabels': {
+      'protocol': 'protocol',
+      'domain': 'domain',
+      'ip': 'ip',
+      'port': 'port',
+      'inbound': 'Inbound\x20Match',
+      'unknown': 'Unknown',
+      'allTraffic': 'All\x20Traffic'
+    },
+    'itemsCount': 'and\x20{{count}}\x20more'
+  },
+  Da = {
+    'revertTitle': 'Click\x20to\x20revert\x20to\x20source\x20address',
+    'tipTitle': 'Chain\x20tunnel\x20path'
+  },
+  Na = {
+    'clickToManage': 'Click\x20to\x20manage\x20the\x20whole-node\x20outbound',
+    'switchTarget': 'Switch\x20outbound\x20target',
+    'cancel': 'Cancel\x20whole-node\x20outbound',
+    'cancelConfirmTitle': 'Cancel\x20the\x20whole-node\x20outbound?',
+    'cancelConfirmDescription': 'This\x20removes\x20the\x20whole-node\x20routing\x20rule\x20and\x20its\x20dedicated\x20outbound\x20for\x20“{{name}}”.\x20The\x20node\x20itself\x20is\x20not\x20deleted.',
+    'cancelling': 'Cancelling...',
+    'confirmCancel': 'Confirm\x20cancellation'
+  },
+  Aa = {
+    'title': 'External\x20Node\x20Probe',
+    'description': 'Dials\x20each\x20node\x20for\x20real\x20over\x20the\x20full\x20protocol\x20with\x20mihomo\x20to\x20measure\x20reachability\x20and\x20true\x20latency.\x20Applies\x20only\x20to\x20externally\x20imported\x20nodes,\x20once\x20every\x20{{minutes}}\x20minutes.',
+    'enableLabel': 'Enable\x20scheduled\x20probing',
+    'enableHint': 'Turning\x20this\x20off\x20keeps\x20your\x20selection;\x20it\x20just\x20stops\x20running\x20the\x20probes',
+    'sourceLabel': 'Probe\x20source',
+    'sourceMaster': 'Master\x20(local)',
+    'sourceHint': 'A\x20residential\x20speed\x20tester\x20gives\x20latency\x20closer\x20to\x20what\x20users\x20see;\x20probing\x20falls\x20back\x20to\x20the\x20master\x20when\x20the\x20tester\x20is\x20unavailable.',
+    'testerOffline': '\x20(offline)',
+    'testerOfflineHint': 'This\x20speed\x20tester\x20is\x20offline;\x20probing\x20falls\x20back\x20to\x20the\x20master',
+    'listTitle': 'Probeable\x20external\x20nodes',
+    'listCount': '{{selected}}\x20of\x20{{total}}\x20selected',
+    'emptyHint': 'No\x20externally\x20imported\x20nodes\x20yet.\x20Nodes\x20on\x20your\x20own\x20servers\x20are\x20covered\x20by\x20agent\x20heartbeats,\x20so\x20they\x20neither\x20need\x20nor\x20appear\x20in\x20this\x20list.',
+    'nodeDisabled': 'Disabled',
+    'nodeDown': 'Down',
+    'waitingFirst': 'Awaiting\x20first\x20probe',
+    'notProbed': 'Not\x20probed',
+    'timeout': 'Timed\x20out',
+    'sourceOf': 'Source\x20{{source}}',
+    'availability': '{{percent}}%\x20available',
+    'saveFailed': 'Save\x20failed',
+    'toggleFailed': 'Action\x20failed',
+    'resyncLabel': 'Auto\x20re-sync\x20external\x20subscriptions\x20when\x20down',
+    'resyncUnit': 'minutes\x20(0\x20=\x20off)',
+    'resyncHint': 'After\x20a\x20node\x20has\x20been\x20continuously\x20down\x20for\x20this\x20many\x20minutes,\x20its\x20owner\x27s\x20external\x20subscriptions\x20are\x20re-fetched\x20automatically.\x20Providers\x20often\x20rotate\x20servers,\x20so\x20a\x20fresh\x20sync\x20usually\x20fixes\x20it\x20on\x20its\x20own.\x20Re-syncs\x20for\x20the\x20same\x20user\x20are\x20spaced\x20at\x20least\x2015\x20minutes\x20apart\x20to\x20avoid\x20hammering\x20the\x20provider.',
+    'settingsTitle': 'External\x20Node\x20Probe'
+  },
+  bf = {
+    'page': la,
+    'importCard': da,
+    'nodeList': ca,
+    'columns': ua,
+    'filter': pa,
+    'actions': ma,
+    'speedtest': fa,
+    'relay': xa,
+    'tunnelAction': ga,
+    'uriManager': ha,
+    'toast': ba,
+    'serverSelector': ya,
+    'flagPicker': va,
+    'dialog': Sa,
+    'tcping': Ca,
+    'tooltip': Wa,
+    'label': wa,
+    'editNodesDialog': Pa,
+    'mobileEditDialog': ka,
+    'missingNodesDialog': Ta,
+    'nodeRoutingDialog': Ra,
+    'chainTunnel': Da,
+    'wholeOutbound': Na,
+    'nodeProbe': Aa
+  },
+  yf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'actions': ma,
+    'chainTunnel': Da,
+    'columns': ua,
+    'default': bf,
+    'dialog': Sa,
+    'editNodesDialog': Pa,
+    'filter': pa,
+    'flagPicker': va,
+    'importCard': da,
+    'label': wa,
+    'missingNodesDialog': Ta,
+    'mobileEditDialog': ka,
+    'nodeList': ca,
+    'nodeProbe': Aa,
+    'nodeRoutingDialog': Ra,
+    'page': la,
+    'relay': xa,
+    'serverSelector': ya,
+    'speedtest': fa,
+    'tcping': Ca,
+    'toast': ba,
+    'tooltip': Wa,
+    'tunnelAction': ga,
+    'uriManager': ha,
+    'wholeOutbound': Na
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  La = {
+    'title': 'Package\x20Template\x20Management',
+    'description': 'Manage\x20traffic\x20package\x20templates,\x20assign\x20packages\x20to\x20users\x20in\x20user\x20management'
+  },
+  _a = {
+    'createTemplate': 'Create\x20Template'
+  },
+  Oa = {
+    'title': 'No\x20Package\x20Templates',
+    'createFirst': 'Create\x20First\x20Template'
+  },
+  Fa = {
+    'trafficQuota': 'Traffic\x20Quota',
+    'cycleDays': 'Billing\x20Cycle',
+    'cycleDaysValue': '{{days}}\x20days',
+    'resetDay': 'Default\x20reset\x20date',
+    'resetDayValue': 'Day\x20{{day}}\x20monthly',
+    'resetDisabled': 'Disabled',
+    'speedLimit': 'Speed\x20Limit',
+    'deviceLimit': 'Connections',
+    'twoway': 'Two-way',
+    'trafficMode': 'Counting',
+    'twowayLabel': 'Two-way\x20×2',
+    'onewayLabel': 'One-way',
+    'template': 'Subscription\x20template',
+    'templateDefault': 'System\x20default',
+    'limits': 'Rate\x20limits',
+    'unlimited': 'unlimited',
+    'deviceN_one': '{{count}}\x20connection',
+    'deviceN_other': '{{count}}\x20connections',
+    'deviceUnlimited': 'no\x20connection\x20cap',
+    'perNodeOverride_one': '{{count}}\x20per-node\x20override',
+    'perNodeOverride_other': '{{count}}\x20per-node\x20overrides',
+    'nodeCount': 'Bound\x20nodes',
+    'allNodes': 'all\x20nodes',
+    'noNodes': 'No\x20nodes',
+    'noNodesHint': 'No\x20nodes\x20selected\x20—\x20package\x20has\x20no\x20usable\x20nodes.\x20Tick\x20some\x20nodes\x20or\x20click\x20Select\x20All\x20in\x20the\x20editor.'
+  },
+  Ia = {
+    'createTitle': 'Create\x20Package\x20Template',
+    'editTitle': 'Edit\x20Package\x20Template',
+    'createDesc': 'Create\x20a\x20new\x20traffic\x20package\x20template',
+    'editDesc': 'Modify\x20package\x20template\x20configuration',
+    'name': 'Package\x20Name\x20*',
+    'namePlaceholder': 'e.g.\x20Basic\x20Plan',
+    'description': 'Description',
+    'descriptionPlaceholder': 'Package\x20description\x20(optional)',
+    'trafficLimit': 'Traffic\x20Quota\x20(GB)\x20*',
+    'trafficMode': 'Traffic\x20Counting\x20Mode',
+    'trafficModeOneway': 'One-way\x20(Default)',
+    'trafficModeTwoway': 'Two-way\x20(x2)',
+    'trafficModeDesc': 'In\x20two-way\x20mode,\x20user\x20traffic\x20is\x20counted\x20at\x202x',
+    'templateFilename': 'Package\x20Template',
+    'templateFilenameDefault': 'Use\x20system\x20default\x20template',
+    'templateFilenameDesc': 'Template\x20used\x20when\x20generating\x20package\x20subscription;\x20falls\x20back\x20to\x20system\x20default\x20when\x20this\x20is\x20unset',
+    'clashTemplateFilename': 'Clash\x20Template',
+    'clashTemplateFilenameDesc': 'Used\x20for\x20Clash\x20clients;\x20falls\x20back\x20to\x20the\x20system\x20default\x20Clash\x20template\x20when\x20unset',
+    'surgeTemplateFilename': 'Surge\x20Template',
+    'surgeTemplateFilenameDesc': 'Used\x20for\x20Surge\x20clients;\x20falls\x20back\x20to\x20the\x20system\x20default\x20Surge\x20template\x20when\x20unset',
+    'loonTemplateFilename': 'Loon\x20Template',
+    'loonTemplateFilenameDesc': 'Used\x20when\x20generating\x20subscriptions\x20for\x20Loon\x20clients;\x20leave\x20empty\x20to\x20use\x20the\x20system\x20default\x20Loon\x20template',
+    'cycleDays': 'Billing\x20Cycle\x20(Days)\x20*',
+    'monthlyReset': 'Reset\x20package\x20traffic\x20monthly',
+    'monthlyResetDesc': 'Users\x20assigned\x20to\x20this\x20package\x20start\x20a\x20new\x20traffic\x20cycle\x20on\x20the\x20selected\x20day.',
+    'resetDay': 'Default\x20Reset\x20Day\x20(Monthly)',
+    'resetDayDesc': 'Valid\x20range:\x201–31.\x20Shorter\x20months\x20reset\x20on\x20their\x20last\x20day.',
+    'resetDayFromServer': 'Using\x20the\x20traffic\x20reset\x20date\x20from\x20the\x20first\x20node\x27s\x20server,\x20“{{server}}”:\x20day\x20{{day}}\x20of\x20each\x20month.',
+    'relatedNodes': 'Related\x20Nodes',
+    'selectAll': 'Select\x20All',
+    'deselectAll': 'Deselect\x20All',
+    'selectTag': 'Select\x20Tag',
+    'tagAll': 'All',
+    'noNodes': 'No\x20available\x20nodes',
+    'nodeInternal': 'Internal',
+    'nodeExternal': 'External',
+    'speedLimit': 'Speed\x20Limit\x20(Mbps)',
+    'speedLimitPlaceholder': '0\x20for\x20unlimited',
+    'speedLimitDesc': 'Max\x20download\x20speed\x20per\x20user.\x20Unit:\x20Mbps\x20(megabits/sec).\x20Conversion:\x208\x20Mbps\x20≈\x201\x20MB/s,\x20100\x20Mbps\x20≈\x2012.5\x20MB/s.\x200\x20=\x20unlimited.\x20Per-user\x20\x22Speed\x20Limit\x20Override\x22\x20takes\x20precedence\x20over\x20this\x20field.',
+    'deviceLimit': 'Connection\x20Limit',
+    'deviceLimitPlaceholder': '0\x20for\x20unlimited',
+    'deviceLimitDesc': 'Max\x20concurrent\x20connections\x20per\x20user,\x200\x20for\x20unlimited\x20(connection\x20counts\x20are\x20far\x20larger\x20than\x20device\x20counts\x20—\x20re-evaluate\x20values)',
+    'nodesHint': 'Select\x20nodes\x20this\x20package\x20can\x20use\x20(none\x20selected\x20means\x20all\x20nodes)',
+    'nodeMultiplier': 'Traffic\x20multiplier\x20(default\x201,\x20routed\x20children\x20inherit\x20parent)',
+    'nodeColumnName': 'Original\x20node\x20name',
+    'nodePackageNameHeader': 'Package\x20name',
+    'nodePackageNameEnabled': 'Custom\x20package\x20node\x20names',
+    'nodePackageName': 'Node\x20name\x20in\x20package',
+    'nodeOriginalName': 'Original:\x20{{name}}',
+    'nodeMultiplierHeader': 'Multiplier',
+    'saving': 'Saving...',
+    'confirmDelete': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20package\x20template\x20\x22{{name}}\x22?',
+    'nodeSpeedLimitHeader': 'Speed\x20Mbps',
+    'nodeDeviceLimitHeader': 'Connections',
+    'nodeSpeedLimit': 'Node\x20speed\x20cap\x20(Mbps);\x20empty\x20=\x20inherit\x20package;\x200\x20=\x20unlimited\x20on\x20this\x20node',
+    'nodeDeviceLimit': 'Node\x20device\x20limit;\x20empty\x20=\x20inherit\x20package;\x200\x20=\x20unlimited',
+    'deviceLimitTip': '\x22Connections\x22\x20means\x20concurrent\x20network\x20connections\x20at\x20one\x20moment,\x20not\x20devices.\x20A\x20single\x20device\x20browsing\x20normally\x20opens\x20tens\x20to\x20hundreds\x20of\x20concurrent\x20connections;\x20setting\x20it\x20too\x20low\x20(e.g.\x203,\x205)\x20breaks\x20page/image\x20loading.\x0aSuggested:\x20single\x20device\x20100–150\x20·\x20multi-device\x20200–400\x20·\x20household\x20of\x204–6\x20500–800\x20·\x20carpool\x20≈\x20people×150\x20·\x20unsure\x20→\x200\x20(unlimited).\x0aPrefer\x20setting\x20it\x20higher\x20rather\x20than\x20locking\x20out\x20normal\x20users;\x20after\x20binding\x20a\x20package,\x20watch\x20real\x20peaks\x20in\x20the\x20Connections\x20view\x20and\x20adjust\x20up.',
+    'forwardQuota': 'Forwarding\x20Quota',
+    'forwardQuotaDesc': 'When\x20enabled,\x20users\x20on\x20this\x20package\x20can\x20create\x20their\x20own\x20forwards.\x20Pick\x20the\x20usable\x20entry\x20chains\x20below\x20the\x20node\x20list\x20on\x20the\x20right.',
+    'forwardRuleLimit': 'Forward\x20rules\x20(0\x20=\x20disabled)',
+    'forwardPortLimit': 'Entry\x20ports\x20(0\x20=\x20unlimited)',
+    'forwardSpeedMbps': 'Forward\x20speed\x20limit,\x20Mbps\x20(0\x20=\x20unlimited)',
+    'forwardConnLimit': 'Forward\x20connections\x20(0\x20=\x20unlimited)',
+    'forwardChains': 'Allowed\x20forward\x20chains',
+    'forwardChainsEmpty': 'No\x20forward\x20chains\x20yet.\x20Create\x20one\x20under\x20“Forwarding”\x20first,\x20then\x20come\x20back\x20to\x20assign\x20it.',
+    'forwardChainsDesc': 'Selecting\x20none\x20grants\x20none\x20—\x20unlike\x20“Related\x20nodes”,\x20where\x20empty\x20means\x20all.\x20Users\x20can\x20only\x20create\x20forwards\x20on\x20the\x20chains\x20you\x20tick.',
+    'noNodesTitle': 'No\x20nodes\x20selected',
+    'noNodesConfirm': 'This\x20package\x20has\x20no\x20linked\x20nodes\x20selected.\x20Leaving\x20it\x20empty\x20means\x20\x22include\x20all\x20nodes\x22\x20—\x20users\x20on\x20this\x20package\x20will\x20be\x20able\x20to\x20use\x20every\x20node,\x20not\x20none.\x20Save\x20it\x20this\x20way?'
+  },
+  Ma = {
+    'createSuccess': 'Package\x20template\x20created',
+    'updateSuccess': 'Package\x20template\x20updated',
+    'deleteSuccess': 'Package\x20template\x20deleted',
+    'nameRequired': 'Please\x20enter\x20a\x20package\x20name',
+    'trafficPositive': 'Traffic\x20quota\x20cannot\x20be\x20negative\x20(0\x20=\x20unlimited)',
+    'nodeTrafficExceedsPackage': 'A\x20node\x20traffic\x20quota\x20cannot\x20exceed\x20the\x20package\x20traffic\x20quota',
+    'cyclePositive': 'Billing\x20cycle\x20must\x20be\x20greater\x20than\x200',
+    'externalNodeWarning': 'Note:\x20External\x20node\x20traffic\x20is\x20not\x20counted\x20in\x20package\x20traffic!'
+  },
+  Ea = {
+    'name': 'Package',
+    'traffic': 'Traffic',
+    'cycle': 'Cycle',
+    'resetDay': 'Reset\x20day',
+    'mode': 'Mode',
+    'template': 'Template',
+    'limits': 'Limits',
+    'nodes': 'Nodes',
+    'actions': 'Actions',
+    'daysUnit': 'd',
+    'unlimitedTraffic': 'Unlimited'
+  },
+  vf = {
+    'page': La,
+    'buttons': _a,
+    'empty': Oa,
+    'card': Fa,
+    'dialog': Ia,
+    'toast': Ma,
+    'list': Ea
+  },
+  Sf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'buttons': _a,
+    'card': Fa,
+    'default': vf,
+    'dialog': Ia,
+    'empty': Oa,
+    'list': Ea,
+    'page': La,
+    'toast': Ma
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Ua = 'Rule\x20Configuration',
+  ja = 'View,\x20edit\x20and\x20save\x20subscription\x20rules\x20with\x20version\x20history.',
+  Ha = 'Access\x20Denied',
+  Ba = 'Only\x20administrators\x20can\x20access\x20the\x20rule\x20configuration\x20page.',
+  Ga = {
+    'title': 'Rule\x20Files',
+    'description': 'Select\x20a\x20YAML\x20file\x20to\x20edit',
+    'empty': 'No\x20YAML\x20files\x20found.'
+  },
+  qa = {
+    'noFile': 'No\x20file\x20selected',
+    'latestVersion': 'Latest\x20v{{version}}',
+    'autoValidate': 'YAML\x20format\x20is\x20auto-validated\x20while\x20editing',
+    'saving': 'Saving...',
+    'save': 'Save\x20Changes',
+    'revert': 'Revert\x20Changes',
+    'saveHint': 'A\x20new\x20version\x20will\x20be\x20created\x20after\x20saving',
+    'saveFailed': 'Save\x20failed,\x20invalid\x20YAML\x20format',
+    'saveSuccess': 'Rules\x20saved',
+    'contentEmpty': 'Content\x20cannot\x20be\x20empty',
+    'yamlParseFailed': 'YAML\x20parse\x20failed'
+  },
+  za = {
+    'title': 'Version\x20History',
+    'description': 'Recently\x20saved\x20versions\x20are\x20shown\x20here',
+    'empty': 'No\x20history\x20yet.\x20Versions\x20are\x20created\x20automatically\x20after\x20saving.',
+    'version': 'Version\x20v{{version}}',
+    'unknownTime': 'Unknown\x20time'
+  },
+  Cf = {
+    'title': Ua,
+    'subtitle': ja,
+    'noPermission': Ha,
+    'noPermissionDesc': Ba,
+    'fileList': Ga,
+    'editor': qa,
+    'history': za
+  },
+  Wf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'default': Cf,
+    'editor': qa,
+    'fileList': Ga,
+    'history': za,
+    'noPermission': Ha,
+    'noPermissionDesc': Ba,
+    'subtitle': ja,
+    'title': Ua
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Ka = 'Settings',
+  $a = {
+    'title': 'Profile',
+    'description': 'Update\x20your\x20username,\x20nickname,\x20email,\x20and\x20avatar\x20URL.',
+    'adminAvatarHint': 'Admin\x20avatar\x20defaults\x20by\x20role.\x20Setting\x20a\x20custom\x20URL\x20will\x20override\x20the\x20default.',
+    'avatarHint': 'Any\x20publicly\x20accessible\x20image\x20URL\x20is\x20supported.',
+    'username': 'Username',
+    'usernamePlaceholder': 'Username\x20for\x20login',
+    'adminUsernameDisabled': 'Admin\x20username\x20cannot\x20be\x20changed.',
+    'nickname': 'Nickname',
+    'nicknamePlaceholder': 'Display\x20name',
+    'email': 'Email\x20(unavailable)',
+    'emailPlaceholder': 'For\x20notifications\x20(optional)',
+    'avatarUrl': 'Avatar\x20URL',
+    'updated': 'Profile\x20updated',
+    'updateFailed': 'Failed\x20to\x20update\x20profile',
+    'usernameEmpty': 'Username\x20cannot\x20be\x20empty',
+    'adminUsernameImmutable': 'Admin\x20username\x20cannot\x20be\x20changed',
+    'saveButton': 'Save\x20Changes'
+  },
+  Qa = {
+    'title': 'Theme\x20Style',
+    'description': 'Select\x20interface\x20style.\x20Page\x20will\x20refresh\x20after\x20switching.',
+    'miaomiaowu': 'Miaomiaowu',
+    'flat': 'Flat',
+    'anime': 'Anime',
+    'premium': 'Premium\x20Black\x20Gold',
+    'glass': 'Liquid\x20Glass'
+  },
+  Va = {
+    'title': 'Change\x20Password',
+    'description': 'You\x20will\x20need\x20to\x20sign\x20in\x20again\x20with\x20the\x20new\x20password.',
+    'currentPassword': 'Current\x20Password',
+    'currentPasswordPlaceholder': 'Enter\x20current\x20password',
+    'newPassword': 'New\x20Password',
+    'newPasswordHint': 'At\x20least\x208\x20characters,\x20symbols\x20recommended',
+    'confirmPassword': 'Confirm\x20New\x20Password',
+    'confirmPasswordPlaceholder': 'Re-enter\x20new\x20password',
+    'updateButton': 'Update\x20Password',
+    'changing': 'Updating...',
+    'updated': 'Password\x20updated,\x20please\x20sign\x20in\x20again',
+    'changeFailed': 'Failed\x20to\x20change\x20password',
+    'minLength': 'New\x20password\x20must\x20be\x20at\x20least\x208\x20characters',
+    'mismatch': 'Passwords\x20do\x20not\x20match'
+  },
+  Xa = {
+    'title': 'Subscription\x20Credentials',
+    'warning': 'If\x20a\x20subscription\x20link\x20is\x20leaked,\x20reset\x20it\x20here\x20immediately.\x20This\x20rotates\x20the\x20token,\x20every\x20short\x20link,\x20and\x20this\x20account\x27s\x20Xray\x20credentials\x20on\x20all\x20associated\x20nodes.',
+    'notGenerated': 'Not\x20generated',
+    'copied': 'Token\x20copied',
+    'copyButton': 'Copy\x20Token',
+    'resetButton': 'Reset\x20Subscription\x20Credentials',
+    'reset': 'Subscription\x20credentials\x20reset;\x20{{count}}\x20Xray\x20credentials\x20rotated',
+    'resetFailed': 'Failed\x20to\x20reset\x20subscription\x20credentials',
+    'confirmTitle': 'Reset\x20all\x20subscription\x20credentials?',
+    'confirmDescription': 'Old\x20subscription\x20links\x20and\x20node\x20credentials\x20already\x20imported\x20into\x20clients\x20will\x20stop\x20working\x20immediately.\x20Copy\x20the\x20new\x20link\x20and\x20refresh\x20the\x20subscription\x20in\x20each\x20client\x20afterwards.\x20The\x20operation\x20may\x20take\x20a\x20moment\x20while\x20all\x20associated\x20servers\x20are\x20updated.',
+    'confirmButton': 'Reset\x20now',
+    'resetting': 'Updating\x20all\x20nodes...'
+  },
+  Ja = {
+    'title': 'API\x20Tokens',
+    'description': 'For\x20MCP\x20/\x20programmatic\x20access\x20(e.g.\x20OpenClaw).\x20A\x20token\x20has\x20the\x20exact\x20same\x20permissions\x20as\x20your\x20account;\x20the\x20plaintext\x20is\x20shown\x20only\x20once\x20at\x20creation\x20—\x20save\x20it\x20now.',
+    'nameLabel': 'Name',
+    'namePlaceholder': 'e.g.\x20openclaw',
+    'createButton': 'Generate',
+    'created': 'Created\x20—\x20copy\x20the\x20plaintext\x20now',
+    'createFailed': 'Failed\x20to\x20create',
+    'tokenOnce': 'Token\x20plaintext\x20(shown\x20once\x20—\x20copy\x20it\x20now)',
+    'openclawSnippet': 'OpenClaw\x20config\x20snippet\x20(openclaw.json)',
+    'copySnippet': 'Copy\x20snippet',
+    'listTitle': 'Your\x20tokens',
+    'empty': 'No\x20tokens\x20yet',
+    'lastUsed': 'last\x20used',
+    'neverUsed': 'never\x20used',
+    'revoke': 'Delete',
+    'revoked': 'Token\x20deleted',
+    'revokeFailed': 'Failed\x20to\x20delete'
+  },
+  Ya = {
+    'title': 'Two-Factor\x20Authentication',
+    'enabledDesc': '2FA\x20is\x20enabled.\x20A\x20verification\x20code\x20is\x20required\x20on\x20each\x20login.',
+    'disabledDesc': 'Once\x20enabled,\x20a\x20code\x20from\x20your\x20authenticator\x20app\x20will\x20be\x20required\x20on\x20each\x20login.',
+    'enableButton': 'Enable\x202FA',
+    'disableButton': 'Disable\x202FA',
+    'steps': {
+      'password': 'Verify\x20Password',
+      'qrcode': 'Scan\x20QR\x20Code',
+      'verify': 'Verify\x20Setup',
+      'recovery': 'Save\x20Recovery\x20Codes'
+    },
+    'passwordDesc': 'Enter\x20your\x20current\x20password\x20to\x20begin\x202FA\x20setup.',
+    'passwordPlaceholder': 'Enter\x20current\x20password',
+    'qrcodeDesc': 'Scan\x20the\x20QR\x20code\x20below\x20with\x20your\x20authenticator\x20app.',
+    'manualKey': 'Manual\x20entry\x20key',
+    'verifyDesc': 'Enter\x20the\x206-digit\x20code\x20shown\x20in\x20your\x20authenticator\x20app.',
+    'verifyAndEnable': 'Verify\x20&\x20Enable',
+    'recoveryDesc': 'Save\x20these\x20recovery\x20codes\x20securely.\x20Use\x20them\x20to\x20sign\x20in\x20if\x20you\x20lose\x20access\x20to\x20your\x20authenticator.',
+    'copyRecoveryCodes': 'Copy\x20Recovery\x20Codes',
+    'recoveryCodesCopied': 'Recovery\x20codes\x20copied',
+    'recoveryCodesCopyFailed': 'Copy\x20failed,\x20please\x20copy\x20manually',
+    'downloadRecoveryCodes': 'Download\x20Recovery\x20Codes',
+    'recoveryCodesSaved': 'I\x20have\x20saved\x20the\x20recovery\x20codes',
+    'disableTitle': 'Disable\x202FA',
+    'disableDesc': 'Enter\x20the\x206-digit\x20code\x20from\x20your\x20authenticator\x20app\x20to\x20disable\x202FA.',
+    'confirmDisable': 'Confirm\x20Disable',
+    'passwordFailed': 'Password\x20verification\x20failed',
+    'invalidCode': 'Invalid\x20verification\x20code',
+    'disabled': '2FA\x20has\x20been\x20disabled'
+  },
+  Za = {
+    'title': 'Language',
+    'description': 'Select\x20interface\x20language'
+  },
+  er = 'User',
+  wf = {
+    'title': Ka,
+    'profile': $a,
+    'themeStyle': Qa,
+    'password': Va,
+    'token': Xa,
+    'apiToken': Ja,
+    'twoFactor': Ya,
+    'language': Za,
+    'defaultUser': er
+  },
+  Pf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'apiToken': Ja,
+    'default': wf,
+    'defaultUser': er,
+    'language': Za,
+    'password': Va,
+    'profile': $a,
+    'themeStyle': Qa,
+    'title': Ka,
+    'token': Xa,
+    'twoFactor': Ya
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  tr = {
+    'title': 'Custom\x20Proxy\x20Groups',
+    'description': 'Create\x20and\x20manage\x20custom\x20proxy\x20group\x20configurations',
+    'wip': 'Under\x20Development',
+    'wipDesc': 'Custom\x20proxy\x20group\x20feature\x20is\x20under\x20development,\x20stay\x20tuned',
+    'wipDetail': 'This\x20feature\x20will\x20allow\x20you\x20to\x20create\x20custom\x20proxy\x20group\x20configurations,\x20including\x20policy\x20groups,\x20rule\x20settings,\x20etc.'
+  },
+  nr = {
+    'title': 'Subscription\x20Management',
+    'description': 'Click\x20Generate\x20Subscription\x20to\x20create\x20a\x20subscription\x20file',
+    'importSubscription': 'Import\x20Subscription',
+    'importDescription': 'Import\x20from\x20Clash\x20subscription\x20link,\x20the\x20system\x20will\x20automatically\x20download\x20and\x20save\x20the\x20file',
+    'uploadFile': 'Upload\x20File',
+    'uploadLocalFile': 'Upload\x20local\x20YAML\x20Clash\x20subscription\x20file',
+    'noFiles': 'No\x20subscription\x20files',
+    'noFilesHint': 'No\x20subscriptions\x20yet,\x20click\x20buttons\x20above\x20to\x20add',
+    'generateSubscription': 'Generate\x20Subscription',
+    'customProxyGroup': 'Custom\x20Proxy\x20Group',
+    'fileList': {
+      'title': 'Subscription\x20List',
+      'description': 'Added\x20subscription\x20files',
+      'creator': 'Created\x20By',
+      'creatorFilter': 'Filter\x20by\x20creator',
+      'allCreators': 'All\x20creators',
+      'legacyCreator': 'Unassigned\x20legacy\x20data',
+      'subscriptionName': 'Subscription\x20Name',
+      'descriptionCol': 'Description',
+      'lastUpdated': 'Last\x20Updated',
+      'expireDate': 'Expiry\x20Date',
+      'ruleSync': 'Rule\x20Sync',
+      'actions': 'Actions',
+      'todayExpire': 'Expires\x20today',
+      'expired': 'Expired',
+      'daysRemaining': 'Expires\x20in\x20{{days}}\x20days',
+      'notSet': 'Not\x20set',
+      'extend30Days': 'Extend\x2030\x20days',
+      'markExpired': 'Mark\x20expired',
+      'selectTime': 'Select\x20time',
+      'expireUpdated': 'Expiry\x20date\x20updated',
+      'clearExpireTime': 'Clear\x20expiry\x20date',
+      'expireCleared': 'Expiry\x20date\x20cleared',
+      'deleteConfirmTitle': 'Confirm\x20Delete',
+      'deleteConfirmDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20subscription\x20\x22{{name}}\x22?\x20This\x20will\x20also\x20delete\x20the\x20corresponding\x20file\x20and\x20cannot\x20be\x20undone.',
+      'mobileDescriptionLabel': 'Description',
+      'mobileFileLabel': 'File',
+      'mobileUpdateTimeLabel': 'Updated',
+      'mobileRuleSyncLabel': 'Rule\x20Sync',
+      'ruleSyncEnabled': 'Enabled',
+      'ruleSyncDisabled': 'Disabled',
+      'overrideConfigDisabled': 'Disabled',
+      'overrideConfigAll': 'All\x20({{count}})',
+      'overrideConfigSelected': '{{count}}\x20selected',
+      'overrideOptionDisable': 'Disabled',
+      'overrideOptionEnableAll': 'Enable\x20all',
+      'overrideGroupCustomRules': 'Custom\x20rules',
+      'overrideGroupScripts': 'Override\x20scripts',
+      'overrideHookPostFetch': 'post-fetch',
+      'overrideHookPreSaveNodes': 'pre-save',
+      'editInfo': 'Edit\x20Info',
+      'editConfig': 'Edit\x20Config'
+    },
+    'importDialog': {
+      'namePlaceholder': 'e.g.,\x20Provider\x20A',
+      'urlLabel': 'Subscription\x20URL',
+      'filenamePlaceholder': 'Leave\x20empty\x20to\x20auto-detect',
+      'descriptionPlaceholder': 'Subscription\x20description',
+      'importing': 'Importing...'
+    },
+    'uploadDialog': {
+      'selectFile': 'Select\x20File',
+      'namePlaceholder': 'Leave\x20empty\x20to\x20use\x20filename',
+      'filenamePlaceholder': 'Leave\x20empty\x20to\x20use\x20original\x20filename',
+      'descriptionPlaceholder': 'Subscription\x20description',
+      'uploading': 'Uploading...'
+    }
+  },
+  or = {
+    'subscriptionName': 'Subscription\x20Name',
+    'url': 'Subscription\x20URL',
+    'filename': 'Filename',
+    'description': 'Description',
+    'expireDate': 'Expiry\x20Date'
+  },
+  ar = {
+    'importSuccess': 'Subscription\x20imported\x20successfully',
+    'importFailed': 'Import\x20failed',
+    'uploadSuccess': 'File\x20uploaded\x20successfully',
+    'uploadFailed': 'Upload\x20failed',
+    'deleteSuccess': 'Subscription\x20deleted',
+    'deleteFailed': 'Delete\x20failed',
+    'updateSuccess': 'Subscription\x20info\x20updated',
+    'updateFailed': 'Update\x20failed',
+    'ruleSaved': 'Rules\x20saved',
+    'configSaved': 'Config\x20saved',
+    'syncSettingUpdated': 'Rule\x20sync\x20settings\x20updated',
+    'parseConfigFailed': 'Failed\x20to\x20parse\x20config\x20file',
+    'saveFailed': 'Save\x20failed,\x20YAML\x20format\x20error',
+    'saveFailed2': 'Save\x20failed,\x20YAML\x20format\x20error:\x20',
+    'fillNameAndUrl': 'Please\x20fill\x20in\x20subscription\x20name\x20and\x20URL',
+    'selectFile': 'Please\x20select\x20a\x20file',
+    'fillName': 'Please\x20fill\x20in\x20subscription\x20name',
+    'fillFilename': 'Please\x20fill\x20in\x20filename',
+    'nodesApplied': 'Node\x20config\x20applied',
+    'applyFailed': 'Failed\x20to\x20apply\x20config',
+    'replacementApplied': 'Replaced\x20missing\x20nodes\x20with\x20{{choice}}',
+    'validationEmpty': 'Content\x20cannot\x20be\x20empty',
+    'configValidationFailed': 'Config\x20validation\x20failed',
+    'configAutoFixed': 'Config\x20auto-fixed',
+    'externalSubDeleted': 'External\x20subscription\x20deleted',
+    'externalSubUpdated': 'External\x20subscription\x20updated',
+    'externalSubSynced': 'External\x20subscription\x20synced',
+    'subscriptionSynced': 'Subscription\x20synced',
+    'syncFailed': 'Sync\x20failed',
+    'proxyProviderCreated': 'Proxy\x20provider\x20config\x20created',
+    'proxyProviderUpdated': 'Proxy\x20provider\x20config\x20updated',
+    'proxyProviderDeleted': 'Proxy\x20provider\x20config\x20deleted',
+    'createFailed': 'Create\x20failed',
+    'batchDeleteSuccess': 'Batch\x20delete\x20successful',
+    'batchDeleteFailed': 'Batch\x20delete\x20failed',
+    'switchedToMmw': 'Switched\x20to\x20MMW\x20processing',
+    'switchedToClient': 'Switched\x20to\x20client\x20processing',
+    'switchFailed': 'Switch\x20failed',
+    'selectExternalSub': 'Please\x20select\x20an\x20external\x20subscription\x20first',
+    'enterNamePrefix': 'Please\x20enter\x20a\x20name\x20prefix',
+    'getNodeListFailed': 'Failed\x20to\x20get\x20node\x20list:\x20',
+    'noNodesInSub': 'No\x20nodes\x20in\x20subscription',
+    'creationComplete': 'Creation\x20complete:\x20{{success}}\x20succeeded,\x20{{skipped}}\x20skipped\x20(no\x20nodes),\x20{{failed}}\x20failed',
+    'creationCompleteSimple': 'Creation\x20complete:\x20{{success}}/{{total}}\x20proxy\x20providers',
+    'onlyMmwPreview': 'Preview\x20only\x20supported\x20for\x20MMW\x20processing\x20mode',
+    'previewFailed': 'Preview\x20failed',
+    'configDeleteFailed': '{{count}}\x20config(s)\x20failed\x20to\x20delete'
+  },
+  rr = {
+    'title': 'External\x20Subscriptions',
+    'description': 'Manage\x20external\x20subscription\x20sources\x20imported\x20from\x20node\x20management\x20for\x20syncing\x20nodes\x20from\x20third-party\x20subscriptions',
+    'syncAll': 'Sync\x20All\x20Subscriptions',
+    'syncing': 'Syncing...',
+    'noSubs': 'No\x20external\x20subscriptions,\x20add\x20them\x20in\x20the\x20\x22Generate\x20Subscription\x22\x20page',
+    'noSubsShort': 'No\x20external\x20subscriptions',
+    'columns': {
+      'name': 'Name',
+      'subscriptionUrl': 'Subscription\x20URL',
+      'nodeCount': 'Nodes',
+      'trafficUsage': 'Traffic\x20Usage',
+      'expireTime': 'Expiry',
+      'lastSync': 'Last\x20Sync',
+      'actions': 'Actions',
+      'owner': 'Owner'
+    },
+    'nodesOf': 'Nodes\x20of\x20{{name}}',
+    'noNodes': 'No\x20nodes',
+    'nodeCountLabel': '{{count}}\x20nodes',
+    'downloadOnly': 'Download\x20only',
+    'uploadOnly': 'Upload\x20only',
+    'uploadAndDownload': 'Upload\x20&\x20Download',
+    'upload': 'Upload',
+    'download': 'Download',
+    'total': 'Total',
+    'remaining': 'Remaining',
+    'statsMode': 'Stats\x20mode',
+    'switchStatsMode': 'Switch\x20stats\x20mode',
+    'deleteConfirmTitle': 'Confirm\x20Delete',
+    'deleteConfirmDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20external\x20subscription\x20\x22{{name}}\x22?\x20This\x20will\x20not\x20delete\x20synced\x20nodes\x20but\x20will\x20stop\x20future\x20syncing.',
+    'mobileUrlLabel': 'URL',
+    'mobileTrafficLabel': 'Traffic',
+    'mobileExpireLabel': 'Expiry',
+    'mobileLastSyncLabel': 'Last\x20Sync',
+    'editTitle': 'Edit\x20External\x20Subscription',
+    'editDescription': 'Modify\x20subscription\x20URL\x20and\x20traffic\x20statistics\x20mode',
+    'addressLabel': 'Subscription\x20URL',
+    'trafficStatsMode': 'Traffic\x20Statistics\x20Mode',
+    'trafficStatsModeDownloadUpload': 'Upload\x20&\x20Download\x20(download\x20+\x20upload)',
+    'trafficStatsModeDownload': 'Download\x20only\x20(download)',
+    'trafficStatsModeUpload': 'Upload\x20only\x20(upload)',
+    'trafficStatsModeHint': 'Choose\x20how\x20to\x20calculate\x20used\x20traffic:\x20Upload\x20&\x20Download\x20adds\x20both,\x20Download/Upload\x20only\x20counts\x20the\x20respective\x20traffic'
+  },
+  sr = {
+    'title': 'Proxy\x20Provider\x20Config',
+    'description': 'Manage\x20Clash\x20Meta\x20proxy-providers\x20configuration\x20for\x20on-demand\x20proxy\x20node\x20loading',
+    'configCount': '{{count}}\x20configs',
+    'selectedCount': '{{count}}\x20selected',
+    'batchDelete': 'Batch\x20Delete',
+    'createBasic': 'Create\x20Proxy\x20Provider\x20(Basic)',
+    'createAdvanced': 'Create\x20Proxy\x20Provider\x20(Advanced)',
+    'allFilter': 'All',
+    'noConfigs': 'No\x20proxy\x20provider\x20configs',
+    'noConfigsHint': 'Click\x20the\x20button\x20above\x20to\x20create\x20your\x20first\x20proxy\x20provider',
+    'selectAll': 'Select\x20all',
+    'selectItem': 'Select\x20{{name}}',
+    'columns': {
+      'name': 'Name',
+      'linkedSub': 'Linked\x20Subscription',
+      'processMode': 'Process\x20Mode',
+      'filterRule': 'Filter\x20Rule',
+      'actions': 'Actions'
+    },
+    'unknown': 'Unknown',
+    'mmwProcess': 'MMW\x20Processing',
+    'clientProcess': 'Client\x20Processing',
+    'mmwShort': 'MMW',
+    'clientShort': 'Client',
+    'switchTo': 'Click\x20to\x20switch\x20to',
+    'filterKeep': 'Keep:\x20{{filter}}',
+    'filterExclude': 'Exclude:\x20{{filter}}',
+    'filterExcludeType': 'Type:\x20{{filter}}',
+    'previewResult': 'Preview\x20Result',
+    'editConfig': 'Edit\x20Config',
+    'copyConfig': 'Copy\x20Config',
+    'configCopied': 'Config\x20copied\x20to\x20clipboard',
+    'deleteConfirmTitle': 'Confirm\x20Delete',
+    'deleteConfirmDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20proxy\x20provider\x20config\x20\x22{{name}}\x22?\x20This\x20action\x20cannot\x20be\x20undone.',
+    'mobileLinkedSubLabel': 'Linked\x20Subscription',
+    'mobileFilterLabel': 'Filter\x20Rule',
+    'batchDeleteConfirmTitle': 'Confirm\x20Batch\x20Delete',
+    'batchDeleteConfirmDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20{{count}}\x20selected\x20proxy\x20provider\x20configs?\x20This\x20action\x20cannot\x20be\x20undone.',
+    'deleting': 'Deleting...',
+    'confirmDelete': 'Confirm\x20Delete',
+    'dialog': {
+      'createTitle': 'Create\x20Proxy\x20Provider\x20Config',
+      'editTitle': 'Edit\x20Proxy\x20Provider\x20Config',
+      'editDesc': 'Edit\x20proxy\x20provider\x20\x22{{name}}\x22\x20configuration',
+      'createForSubDesc': 'Create\x20proxy-provider\x20config\x20for\x20external\x20subscription\x20\x22{{name}}\x22',
+      'createNewDesc': 'Create\x20a\x20new\x20proxy-provider\x20config',
+      'basicConfig': 'Basic\x20Config',
+      'externalSubLabel': 'External\x20Subscription',
+      'selectExternalSub': 'Select\x20external\x20subscription',
+      'providerName': 'Provider\x20Name',
+      'providerNamePlaceholder': 'e.g.,\x20Provider\x20A',
+      'subscriptionUrl': 'Subscription\x20URL',
+      'urlCopied': 'URL\x20copied',
+      'configIdHint': 'Actual\x20config_id\x20will\x20be\x20generated\x20after\x20saving',
+      'type': 'Type',
+      'updateInterval': 'Update\x20Interval\x20(seconds)',
+      'downloadProxy': 'Download\x20Proxy',
+      'fileSizeLimit': 'File\x20Size\x20Limit',
+      'requestHeaders': 'Request\x20Headers',
+      'authTokenPlaceholder': 'Auth\x20token,\x20required\x20if\x20applicable',
+      'healthCheck': 'Health\x20Check',
+      'healthCheckUrl': 'Check\x20URL',
+      'healthCheckInterval': 'Check\x20Interval\x20(seconds)',
+      'healthCheckTimeout': 'Timeout\x20(ms)',
+      'healthCheckExpectedStatus': 'Expected\x20Status\x20Code',
+      'lazyMode': 'Lazy\x20Mode',
+      'advancedProcessMode': 'Advanced\x20Config\x20Processing',
+      'clientProcessLabel': 'Client\x20Processing',
+      'clientProcessDesc': 'Advanced\x20config\x20output\x20to\x20subscription\x20config',
+      'mmwProcessLabel': 'MMW\x20Processing',
+      'mmwProcessDesc': 'URL\x20points\x20to\x20MMW\x20API',
+      'advancedConfig': 'Advanced\x20Config',
+      'advancedConfigOutput': '(Output\x20to\x20config)',
+      'advancedConfigMmw': '(MMW\x20processing)',
+      'nodeFilter': 'Node\x20Filter\x20(regex)',
+      'nodeFilterPlaceholder': 'e.g.,\x20Hong\x20Kong|Japan',
+      'nodeFilterHint': 'Keep\x20matching\x20nodes',
+      'nodeExclude': 'Node\x20Exclude\x20(regex)',
+      'nodeExcludePlaceholder': 'e.g.,\x20expired|remaining',
+      'nodeExcludeHint': 'Exclude\x20matching\x20nodes',
+      'excludeProtocolType': 'Exclude\x20Protocol\x20Type',
+      'overrideConfig': 'Override\x20Config',
+      'connectionSettings': 'Connection\x20Settings',
+      'enableUdp': 'Enable\x20UDP',
+      'skipCertVerify': 'Skip\x20Certificate\x20Verification',
+      'proxySettings': 'Proxy\x20Settings',
+      'chainProxy': 'Chain\x20Proxy\x20(dialer-proxy)',
+      'chainProxyPlaceholder': 'e.g.,\x20Node\x20Select',
+      'networkSettings': 'Network\x20Settings',
+      'outboundInterface': 'Outbound\x20Interface',
+      'outboundInterfacePlaceholder': 'e.g.,\x20eth0',
+      'routingMark': 'Routing\x20Mark',
+      'routingMarkPlaceholder': 'e.g.,\x20255',
+      'ipVersionLabel': 'IP\x20Version',
+      'ipVersionPlaceholder': 'Select\x20IP\x20version',
+      'nodeNameModify': 'Node\x20Name\x20Modification',
+      'namePrefix': 'Name\x20Prefix',
+      'namePrefixPlaceholder': 'e.g.,\x20[Provider\x20A]',
+      'nameSuffix': 'Name\x20Suffix',
+      'nameSuffixPlaceholder': 'e.g.,\x20-Premium',
+      'configPreview': 'Generated\x20Config\x20Preview',
+      'copyBtn': 'Copy',
+      'selectExternalSubFirst': 'Please\x20select\x20an\x20external\x20subscription\x20first',
+      'updateConfig': 'Update\x20Config',
+      'saveConfig': 'Save\x20Config'
+    },
+    'basicDialog': {
+      'title': 'Create\x20Proxy\x20Provider\x20(Basic)',
+      'description': 'Batch\x20create\x20proxy\x20providers,\x20supports\x20splitting\x20by\x20region\x20or\x20protocol',
+      'selectExternalSub': 'Select\x20External\x20Subscription',
+      'selectExternalSubPlaceholder': 'Select\x20external\x20subscription',
+      'namePrefix': 'Name\x20Prefix',
+      'namePrefixPlaceholder': 'Enter\x20name\x20prefix',
+      'namePrefixHint': 'Generated\x20proxy\x20provider\x20name\x20format:\x20prefix-region/protocol',
+      'groupByIp': 'Group\x20by\x20IP\x20Location',
+      'groupByIpHint': 'When\x20enabled,\x20if\x20node\x20name\x20doesn\x27t\x20match,\x20it\x20will\x20match\x20based\x20on\x20server\x20IP\x20location',
+      'splitByRegion': 'Split\x20by\x20Region',
+      'splitByProtocol': 'Split\x20by\x20Protocol',
+      'creationResults': 'Creation\x20Results',
+      'success': 'Success',
+      'failed': 'Failed',
+      'noMatchNodes': 'No\x20matching\x20nodes'
+    },
+    'previewTitle': 'Preview\x20Result\x20-\x20{{name}}',
+    'previewDesc': 'Proxy\x20node\x20config\x20after\x20MMW\x20processing',
+    'copiedToClipboard': 'Copied\x20to\x20clipboard'
+  },
+  ir = {
+    'label': 'Rule\x20Selection',
+    'tooltip': 'This\x20feature\x20is\x20copied\x20from\x20https://github.com/7Sageer/sublink-worker',
+    'custom': 'Custom',
+    'minimal': 'Minimal\x20Rules',
+    'balanced': 'Balanced\x20Rules\x20(Recommended)',
+    'comprehensive': 'Comprehensive\x20Rules',
+    'customDesc': 'Customize\x20and\x20select\x20the\x20rule\x20categories\x20you\x20need',
+    'minimalDesc': 'Basic\x20rules\x20auto-selected,\x20you\x20can\x20adjust\x20manually',
+    'balancedDesc': 'Common\x20rules\x20auto-selected,\x20you\x20can\x20adjust\x20manually',
+    'comprehensiveDesc': 'All\x20rules\x20auto-selected,\x20you\x20can\x20adjust\x20manually',
+    'selectedCount': '{{count}}\x20categories\x20selected',
+    'loadingCategories': 'Loading\x20rule\x20categories...',
+    'loadError': 'Failed\x20to\x20load\x20rule\x20categories.\x20Please\x20try\x20again\x20later\x20or\x20contact\x20admin.',
+    'noCategories': 'No\x20available\x20rule\x20categories'
+  },
+  lr = {
+    'title': 'Edit\x20File',
+    'editFilename': 'Edit\x20contents\x20of\x20{{filename}},\x20YAML\x20format\x20will\x20be\x20auto-validated',
+    'saveChanges': 'Save\x20Changes',
+    'saving': 'Saving...',
+    'revertChanges': 'Revert\x20Changes',
+    'version': 'Version\x20v{{version}}'
+  },
+  dr = {
+    'title': 'Edit\x20Subscription\x20Info',
+    'description': 'Modify\x20subscription\x20name,\x20description,\x20and\x20filename',
+    'namePlaceholder': 'e.g.,\x20Provider\x20A',
+    'descriptionPlaceholder': 'Subscription\x20description',
+    'filenamePlaceholder': 'e.g.,\x20subscription.yaml',
+    'filenameHint': 'After\x20changing\x20filename,\x20ensure\x20the\x20file\x20exists\x20in\x20the\x20subscribes\x20directory',
+    'expireDateLabel': 'Expiry\x20Date\x20(optional)',
+    'noExpireDate': 'No\x20expiry\x20date',
+    'expireDateHint': 'Set\x20subscription\x20link\x20expiry\x20date;\x20the\x20link\x20will\x20be\x20invalid\x20after\x20expiry'
+  },
+  cr = {
+    'title': 'Edit\x20Config\x20-\x20{{name}}',
+    'editNodes': 'Edit\x20Nodes',
+    'loadingConfig': 'Loading\x20config...',
+    'usageTitle': 'Usage\x20Guide',
+    'usageStep1': 'Click\x20\x22Save\x22\x20to\x20save\x20changes\x20to\x20the\x20config\x20file',
+    'usageStep2': 'Supports\x20direct\x20YAML\x20content\x20editing',
+    'usageStep3': 'YAML\x20format\x20will\x20be\x20auto-validated\x20before\x20saving',
+    'usageStep4': 'Supports\x20Clash,\x20Clash\x20Meta,\x20Mihomo\x20and\x20other\x20clients',
+    'editNodesTitle': 'Edit\x20Nodes\x20-\x20{{name}}',
+    'applyAndSave': 'Apply\x20&\x20Save',
+    'applyReplace': 'Apply\x20Replacement'
+  },
+  ur = {
+    'default': 'Default',
+    'dual': 'dual\x20(Dual\x20Stack)',
+    'ipv4': 'ipv4',
+    'ipv6': 'ipv6',
+    'ipv4-prefer': 'ipv4-prefer',
+    'ipv6-prefer': 'ipv6-prefer'
+  },
+  pr = {
+    'title': 'Subscription\x20Generator',
+    'description': 'Select\x20nodes\x20from\x20node\x20management\x20to\x20quickly\x20generate\x20Clash\x20subscription\x20configs',
+    'selectNodes': 'Select\x20Nodes',
+    'selectNodesDesc': 'Select\x20nodes\x20from\x20saved\x20nodes\x20to\x20add\x20to\x20subscription\x20({{count}}\x20selected)',
+    'noNodes': 'No\x20available\x20nodes,\x20please\x20add\x20nodes\x20in\x20node\x20management\x20first',
+    'noMatchingNodes': 'No\x20matching\x20nodes\x20found',
+    'allNodes': 'All',
+    'allTags': 'All\x20Tags',
+    'columns': {
+      'nodeName': 'Node\x20Name',
+      'protocol': 'Protocol',
+      'serverAddress': 'Server\x20Address',
+      'tag': 'Tag'
+    },
+    'ruleMode': 'Rule\x20Mode',
+    'customRules': 'Custom\x20Rules',
+    'useTemplate': 'Use\x20Template',
+    'templateDesc': 'Use\x20ACL4SSR\x20rule\x20templates\x20to\x20generate\x20configs,\x20automatically\x20parsing\x20proxy\x20groups\x20and\x20rules.',
+    'selectTemplate': 'Select\x20Template',
+    'selectTemplatePlaceholder': 'Please\x20select\x20a\x20template',
+    'viewSource': 'View\x20Source',
+    'templateManagement': 'Template\x20Management',
+    'load': 'Load',
+    'selectNodeFirst': 'Please\x20select\x20nodes\x20first',
+    'selectTemplateFirst': 'Please\x20select\x20a\x20template\x20first',
+    'generating': 'Generating...',
+    'generateSubscription': 'Generate\x20Subscription',
+    'clear': 'Clear',
+    'generatedConfig': 'Generated\x20Clash\x20Config',
+    'previewYaml': 'Preview\x20generated\x20YAML\x20config\x20file',
+    'regionGroup': 'Region\x20Group',
+    'manualGroup': 'Manual\x20Group',
+    'saveSubscription': 'Save\x20Subscription',
+    'configPlaceholder': 'Generated\x20config\x20will\x20appear\x20here...',
+    'usageTitle': 'Usage\x20Guide',
+    'usageStep1': 'Click\x20\x22Save\x20as\x20Subscription\x22\x20to\x20save\x20as\x20Clash\x20YAML\x20config\x20file',
+    'usageStep2': 'Import\x20the\x20subscription\x20URL\x20into\x20your\x20Clash\x20client',
+    'usageStep3': 'Supports\x20Clash,\x20Clash\x20Meta,\x20Mihomo\x20and\x20other\x20clients',
+    'saveDialog': {
+      'title': 'Save\x20as\x20Subscription',
+      'description': 'Save\x20the\x20generated\x20config\x20as\x20a\x20subscription\x20file,\x20available\x20in\x20subscription\x20management\x20after\x20saving',
+      'nameLabel': 'Subscription\x20Name',
+      'namePlaceholder': 'e.g.,\x20My\x20Subscription',
+      'filenameLabel': 'Filename\x20(optional)',
+      'filenamePlaceholder': 'Defaults\x20to\x20subscription\x20name',
+      'filenameHint': 'File\x20will\x20be\x20saved\x20to\x20subscribes\x20directory,\x20.yaml\x20extension\x20added\x20automatically',
+      'descriptionLabel': 'Description\x20(optional)',
+      'descriptionPlaceholder': 'Subscription\x20description...'
+    },
+    'manualGroupTitle': 'Manual\x20Node\x20Grouping',
+    'confirmBtn': 'OK',
+    'confirmReplace': 'Confirm\x20Replace',
+    'toast': {
+      'selectAtLeastOneNode': 'Please\x20select\x20at\x20least\x20one\x20node',
+      'selectTemplate': 'Please\x20select\x20a\x20template',
+      'noValidNodes': 'Failed\x20to\x20parse\x20any\x20valid\x20nodes',
+      'templateLoadSuccess': 'Template\x20loaded\x20with\x20{{count}}\x20nodes',
+      'templateLoadFailed': 'Failed\x20to\x20load\x20template',
+      'nodesLoadSuccess': 'Loaded\x20{{count}}\x20nodes',
+      'applyingCustomRules': 'Applying\x20{{count}}\x20custom\x20rules',
+      'applyingCategories': 'Applying\x20{{count}}\x20rule\x20categories',
+      'configValidationFailed': 'Config\x20validation\x20failed',
+      'configAutoFixed': 'Config\x20auto-fixed',
+      'validationError': 'Validation\x20error:\x20',
+      'generateSuccessWithGroups': 'Clash\x20config\x20generated!\x20Applied\x20custom\x20rules,\x20added\x20proxy\x20groups:\x20{{groups}},\x20default\x20nodes:\x20🚀\x20Node\x20Select,\x20DIRECT',
+      'generateSuccess': 'Clash\x20config\x20generated!',
+      'generateFailed': 'Failed\x20to\x20generate\x20subscription',
+      'cleared': 'All\x20content\x20cleared',
+      'saveSuccess': 'Subscription\x20saved!',
+      'saveSuccessHint': 'Go\x20to\x20\x22Subscription\x20Files\x22\x20page\x20to\x20view',
+      'saveFailed': 'Failed\x20to\x20save\x20subscription',
+      'generateConfigFirst': 'Please\x20generate\x20config\x20first',
+      'manualGroupFirst': 'Please\x20group\x20nodes\x20manually\x20first',
+      'enterSubscribeName': 'Please\x20enter\x20subscription\x20name',
+      'noProxyGroups': 'No\x20proxy\x20groups\x20found\x20in\x20config',
+      'parseConfigFailed': 'Failed\x20to\x20parse\x20config,\x20please\x20check\x20format',
+      'groupApplied': 'Grouping\x20applied\x20to\x20config',
+      'applyGroupFailed': 'Failed\x20to\x20apply\x20grouping',
+      'replacementApplied': 'Replaced\x20missing\x20nodes\x20with\x20{{choice}}',
+      'applyReplaceFailed': 'Failed\x20to\x20apply\x20replacement',
+      'autoGroupComplete': 'Auto-grouping\x20complete,\x20new\x20proxy\x20groups:\x20{{groups}}',
+      'autoGroupCompleteStats': 'Auto-grouping\x20complete:\x20{{stats}}',
+      'autoGroupFailed': 'Auto-grouping\x20failed',
+      'chainProxyAdded': 'Added\x20{{groups}}',
+      'chainProxyExists': 'Chain\x20proxy\x20nodes\x20already\x20exist'
+    }
+  },
+  mr = {
+    'title': 'Template\x20Management',
+    'description': 'Manage\x20ACL4SSR\x20rule\x20templates',
+    'createTemplate': 'New\x20Template',
+    'columns': {
+      'name': 'Name',
+      'ruleSource': 'Rule\x20Source',
+      'actions': 'Actions',
+      'notConfigured': 'Not\x20configured'
+    },
+    'viewSource': 'View\x20Source',
+    'previewResult': 'Preview\x20Result',
+    'edit': 'Edit',
+    'delete': 'Delete',
+    'noTemplates': 'No\x20templates,\x20click\x20button\x20above\x20to\x20create',
+    'formTitle': 'New\x20Template',
+    'editFormTitle': 'Edit\x20Template',
+    'formDescription': 'Configure\x20template\x20name\x20and\x20rule\x20source\x20URL',
+    'templateName': 'Template\x20Name',
+    'templateNamePlaceholder': 'Enter\x20template\x20name',
+    'selectPreset': 'Select\x20Preset',
+    'ruleSourceLabel': 'Rule\x20Source\x20URL',
+    'ruleSourcePlaceholder': 'ACL4SSR\x20config\x20URL',
+    'ruleSourceHint': 'ACL4SSR\x20format\x20rule\x20config\x20URL',
+    'useProxy': 'Use\x20Proxy\x20Download',
+    'useProxyHint': 'Auto-proxy\x20via\x201ms.cc\x20when\x20enabled',
+    'create': 'Create',
+    'save': 'Save',
+    'deleteConfirmTitle': 'Confirm\x20Delete',
+    'deleteConfirmDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this\x20template?\x20This\x20action\x20cannot\x20be\x20undone.',
+    'previewTitle': 'Config\x20Preview',
+    'previewDesc': 'Generated\x20config\x20file\x20preview',
+    'generatingPreview': 'Generating\x20preview...',
+    'sourcePreviewTitle': 'Source\x20Preview\x20-\x20{{name}}',
+    'fetchingSource': 'Fetching\x20source\x20file...',
+    'toast': {
+      'created': 'Template\x20created',
+      'createError': 'Error\x20creating\x20template',
+      'updated': 'Template\x20updated',
+      'updateError': 'Error\x20updating\x20template',
+      'deleted': 'Template\x20deleted',
+      'deleteError': 'Error\x20deleting\x20template',
+      'saved': 'Template\x20saved',
+      'saveError': 'Error\x20saving\x20template',
+      'uploaded': 'Template\x20{{name}}\x20uploaded',
+      'uploadError': 'Error\x20uploading\x20template',
+      'renamed': 'Template\x20renamed\x20to\x20{{name}}',
+      'renameError': 'Error\x20renaming\x20template',
+      'configureRuleSource': 'Please\x20configure\x20rule\x20source\x20first',
+      'previewError': 'Error\x20generating\x20preview',
+      'fetchSourceError': 'Error\x20fetching\x20source\x20file',
+      'selectTemplateFirst': 'Please\x20select\x20a\x20template\x20first',
+      'getContentFailed': 'Failed\x20to\x20get\x20template\x20content',
+      'enterName': 'Please\x20enter\x20template\x20name',
+      'enterRuleSource': 'Please\x20enter\x20rule\x20source\x20URL'
+    }
+  },
+  fr = {
+    'title': 'Template\x20Management',
+    'description': 'Manage\x20YAML\x20template\x20files\x20in\x20rule_templates\x20directory',
+    'uploading': 'Uploading...',
+    'uploadTemplate': 'Upload\x20Template',
+    'columns': {
+      'filename': 'Filename',
+      'actions': 'Actions'
+    },
+    'rename': 'Rename',
+    'noTemplateFiles': 'No\x20template\x20files',
+    'editTitle': 'Edit\x20Template\x20-\x20{{name}}',
+    'editDescription': 'Edit\x20YAML\x20template\x20file\x20content',
+    'loadingContent': 'Loading\x20template\x20content...',
+    'templateContent': 'Template\x20content',
+    'saving': 'Saving...',
+    'deleteConfirmTitle': 'Confirm\x20Delete',
+    'deleteConfirmDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20template\x20file\x20\x22{{name}}\x22?\x20This\x20action\x20cannot\x20be\x20undone.',
+    'renameTitle': 'Rename\x20Template',
+    'renameDesc': 'Rename\x20\x22{{name}}\x22\x20to\x20a\x20new\x20filename',
+    'newFilename': 'New\x20Filename',
+    'newFilenamePlaceholder': 'Enter\x20new\x20template\x20name',
+    'renaming': 'Renaming...',
+    'sourceFile': 'Template\x20source\x20file'
+  },
+  xr = {
+    'ads': 'Ad\x20Blocking',
+    'ai': 'AI\x20Services',
+    'bilibili': 'Bilibili',
+    'youtube': 'YouTube',
+    'google': 'Google\x20Services',
+    'private': 'Private\x20Network',
+    'domestic': 'Domestic\x20Services',
+    'telegram': 'Telegram',
+    'github': 'GitHub',
+    'microsoft': 'Microsoft\x20Services',
+    'apple': 'Apple\x20Services',
+    'social': 'Social\x20Media',
+    'streaming': 'Streaming',
+    'gaming': 'Gaming',
+    'education': 'Education',
+    'finance': 'Financial\x20Services',
+    'cloud': 'Cloud\x20Services',
+    'overseas': 'Non-China'
+  },
+  kf = {
+    'customProxyGroup': tr,
+    'management': nr,
+    'form': or,
+    'toast': ar,
+    'externalSub': rr,
+    'proxyProvider': sr,
+    'ruleSelector': ir,
+    'editFile': lr,
+    'editMetadata': dr,
+    'editConfig': cr,
+    'ipVersion': ur,
+    'generator': pr,
+    'templateManage': mr,
+    'oldTemplate': fr,
+    'ruleCategories': xr
+  },
+  Tf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'customProxyGroup': tr,
+    'default': kf,
+    'editConfig': cr,
+    'editFile': lr,
+    'editMetadata': dr,
+    'externalSub': rr,
+    'form': or,
+    'generator': pr,
+    'ipVersion': ur,
+    'management': nr,
+    'oldTemplate': fr,
+    'proxyProvider': sr,
+    'ruleCategories': xr,
+    'ruleSelector': ir,
+    'templateManage': mr,
+    'toast': ar
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  gr = 'System\x20Settings',
+  hr = 'Manage\x20subscription\x20sync\x20and\x20feature\x20toggles',
+  br = {
+    'subscription': 'Subscriptions',
+    'features': 'Features',
+    'users': 'Users',
+    'notifications': 'Notifications',
+    'security': 'Security',
+    'probe': 'Probe',
+    'appearance': 'Appearance',
+    'announcements': 'Announcements',
+    'tgbot': 'TG\x20Bot',
+    'verification': 'Verification',
+    'system': 'System',
+    'database': 'Database',
+    'license': 'License'
+  },
+  yr = {
+    'title': 'Short\x20Links',
+    'description': 'When\x20enabled,\x20subscription\x20links\x20will\x20use\x20short\x20codes\x20to\x20hide\x20token\x20info',
+    'enableLabel': 'Enable\x20Short\x20Links',
+    'updated': 'Short\x20link\x20settings\x20updated'
+  },
+  vr = {
+    'title': 'Cloudflare\x20Turnstile',
+    'description': 'Captcha\x20protection\x20for\x20the\x20login\x20page.\x20Both\x20keys\x20must\x20be\x20set\x20to\x20enable;\x20either\x20empty\x20falls\x20back\x20to\x20no\x20verification.',
+    'siteKey': 'Site\x20Key',
+    'siteKeyPlaceholder': '0x4AAAAAAA...\x20(public,\x20used\x20by\x20the\x20frontend\x20widget)',
+    'secretKey': 'Secret\x20Key',
+    'secretKeyPlaceholder': '0x4AAAAAAA...\x20(private,\x20used\x20by\x20backend\x20siteverify)',
+    'secretKeyConfigured': 'Configured\x20(type\x20a\x20new\x20value\x20to\x20replace)',
+    'hint': 'Apply\x20for\x20Site\x20Key\x20&\x20Secret\x20Key\x20at\x20Cloudflare\x20Dashboard\x20→\x20Turnstile.',
+    'docLinkLabel': 'Read\x20the\x20full\x20setup\x20guide\x20→',
+    'saved': 'Captcha\x20settings\x20saved',
+    'testTitle': 'Config\x20self-test',
+    'testButton': 'Test',
+    'testWaitingUser': 'complete\x20the\x20challenge\x20below,\x20then\x20click\x20Test',
+    'testRequiresSecret': 'Fill\x20in\x20and\x20save\x20Secret\x20Key\x20before\x20running\x20the\x20test.',
+    'testSuccess': 'Verification\x20passed!\x20Cloudflare\x20recognized\x20hostname\x20{{hostname}}.',
+    'testFailed': 'Cloudflare\x20rejected\x20the\x20verification.\x20Check\x20the\x20error\x20code(s)\x20below:',
+    'testRetry': 'Test\x20again',
+    'errInvalidSecret': 'Secret\x20Key\x20doesn\x27t\x20match\x20Cloudflare\x27s\x20record.\x20Re-copy\x20from\x20the\x20dashboard.',
+    'errMissingSecret': 'Backend\x20didn\x27t\x20pick\x20up\x20Secret\x20Key\x20—\x20confirm\x20it\x27s\x20saved.',
+    'errTimeoutOrDup': 'Token\x20already\x20consumed\x20or\x20expired.\x20Click\x20Test\x20again.',
+    'errInvalidResponse': 'Token\x20is\x20invalid;\x20site_key\x20and\x20secret_key\x20may\x20belong\x20to\x20different\x20Turnstile\x20apps.'
+  },
+  Sr = {
+    'title': 'Scheduled\x20Tasks',
+    'description': 'Configure\x20task\x20intervals.\x20Speed/report\x20intervals\x20apply\x20instantly;\x20others\x20need\x20a\x20restart.',
+    'speedCollect': 'Speed\x20Collection\x20Interval\x20(s)',
+    'reportInterval': 'Report\x20Interval\x20(s)',
+    'trafficCheck': 'Traffic\x20Quota\x20Check\x20Interval\x20(s)',
+    'heartbeat': 'Heartbeat\x20Interval\x20(s)',
+    'updated': 'Task\x20intervals\x20updated;\x20report\x20interval\x20synced\x20to\x20all\x20agents\x20instantly'
+  },
+  Cr = {
+    'title': 'Master\x20Server\x20URL',
+    'description': 'Install\x20commands\x20for\x20remote\x20servers\x20will\x20use\x20this\x20URL',
+    'label': 'Server\x20URL',
+    'placeholder': 'https://example.com\x20or\x20http://1.2.3.4:12889',
+    'hint': 'Format:\x20protocol\x20+\x20domain\x20or\x20IP\x20(with\x20port),\x20e.g.\x20https://panel.example.com\x20or\x20http://1.2.3.4:12889.\x20Leave\x20empty\x20to\x20use\x20current\x20URL.',
+    'updated': 'Master\x20server\x20URL\x20updated',
+    'subscriptionTitle': 'Subscription\x20URL',
+    'subscriptionPlaceholder': 'https://subscribe.example.com',
+    'subscriptionHint': 'When\x20configured,\x20all\x20subscription\x20links\x20copied\x20or\x20sent\x20from\x20the\x20web\x20UI,\x20the\x20TG\x20bot\x20and\x20the\x20TG\x20Mini\x20App\x20use\x20this\x20URL.\x20Leave\x20empty\x20to\x20use\x20the\x20master\x20or\x20current\x20URL.',
+    'subscriptionUpdated': 'Subscription\x20URL\x20updated',
+    'localOnly': 'Disable\x20public\x20access',
+    'localOnlyHint': 'When\x20enabled,\x20the\x20master\x20listens\x20only\x20on\x20127.0.0.1\x20after\x20restart.\x20Use\x20this\x20only\x20with\x20a\x20same-host\x20reverse\x20proxy.\x20If\x20access\x20is\x20lost,\x20set\x20MMWX_FORCE_PUBLIC_ACCESS=1\x20and\x20restart\x20the\x20master\x20to\x20recover\x20public\x20listening.',
+    'localOnlyEnabled': 'Public\x20listening\x20disabled;\x20restart\x20the\x20master\x20to\x20apply',
+    'localOnlyDisabled': 'Public\x20listening\x20restored;\x20restart\x20the\x20master\x20to\x20apply'
+  },
+  Wr = {
+    'title': 'Custom\x20proxy\x20group\x20configuration',
+    'description': 'Configure\x20the\x20preset\x20proxy\x20groups\x20used\x20when\x20generating\x20subscriptions\x20and\x20editing\x20nodes.\x20Both\x20views\x20use\x20the\x20new\x20configuration\x20immediately\x20after\x20synchronization.',
+    'sourceUrl': 'Proxy\x20group\x20source\x20URL',
+    'sourceHint': 'Leave\x20empty\x20to\x20use\x20the\x20project\x27s\x20default\x20proxy-groups-lite.json;\x20HTTP\x20and\x20HTTPS\x20URLs\x20are\x20supported.',
+    'sync': 'Sync\x20proxy\x20groups',
+    'syncing': 'Syncing...',
+    'synced': 'Proxy\x20group\x20configuration\x20synchronized'
+  },
+  wr = {
+    'title': 'Master\x20Domain\x20Mismatch',
+    'description': 'You\x20are\x20visiting\x20over\x20HTTPS\x20at\x20\x22{{currentDomain}}\x22,\x20but\x20the\x20configured\x20master\x20domain\x20is\x20\x22{{masterDomain}}\x22.\x20An\x20incorrect\x20master\x20domain\x20breaks\x20agent\x20install/callback\x20URLs\x20and\x20certificate\x20settings.\x20Update\x20it\x20to\x20the\x20current\x20domain?',
+    'empty': '(not\x20set)',
+    'inputLabel': 'Master\x20domain',
+    'later': 'Later',
+    'confirm': 'Update\x20master\x20domain',
+    'updated': 'Master\x20domain\x20updated'
+  },
+  Pr = {
+    'title': 'Telegram\x20Notifications',
+    'description': 'Configure\x20Telegram\x20Bot\x20for\x20system\x20event\x20notifications',
+    'enableLabel': 'Enable\x20Notifications',
+    'botToken': 'Bot\x20Token',
+    'botTokenPlaceholder': 'Enter\x20Telegram\x20Bot\x20Token',
+    'chatId': 'Chat\x20ID',
+    'chatIdPlaceholder': 'Enter\x20Telegram\x20Chat\x20ID',
+    'sendTest': 'Send\x20Test\x20Notification',
+    'testSent': 'Test\x20notification\x20sent',
+    'configUpdated': 'Notification\x20settings\x20updated',
+    'events': {
+      'title': 'Notification\x20Events',
+      'login': 'User\x20Login',
+      'subscribe': 'Subscription\x20Fetch',
+      'serverOnline': 'Server\x20Online',
+      'serverOffline': 'Server\x20Offline',
+      'dailyTraffic': 'Daily\x20Traffic\x20&\x20Increment\x20Report',
+      'dailyTrafficTime': 'Report\x20Time',
+      'trafficThreshold': 'Traffic\x20Threshold\x20Alert',
+      'thresholdPercent': 'Alert\x20Threshold\x20(%)',
+      'nodeProbeOffline': 'Node\x20probe\x20offline',
+      'nodeProbeOnline': 'Node\x20probe\x20recovered'
+    }
+  },
+  kr = {
+    'title': 'API\x20Token',
+    'description': 'Access\x20all\x20backend\x20APIs\x20without\x20login',
+    'currentLabel': 'Current\x20API\x20Token',
+    'regenerateConfirm': 'Are\x20you\x20sure\x20you\x20want\x20to\x20regenerate\x20the\x20API\x20Token?\x20The\x20old\x20token\x20will\x20be\x20invalidated.',
+    'regenerated': 'API\x20Token\x20has\x20been\x20regenerated',
+    'copied': 'API\x20Token\x20copied\x20to\x20clipboard',
+    'usageHint': 'Use\x20this\x20Token\x20in\x20the\x20MM-Authorization\x20header\x20to\x20access\x20APIs',
+    'warning': '•\x20This\x20Token\x20grants\x20full\x20access\x20to\x20all\x20backend\x20APIs\x20without\x20login\x0a•\x20Keep\x20this\x20Token\x20secure\x20—\x20leaks\x20may\x20cause\x20data\x20security\x20issues\x0a•\x20The\x20Token\x20is\x20printed\x20in\x20logs\x20on\x20server\x20startup\x0a•\x20Click\x20refresh\x20to\x20regenerate\x20—\x20the\x20old\x20Token\x20is\x20immediately\x20invalidated'
+  },
+  Tr = {
+    'title': 'Override\x20Scripts',
+    'description': 'When\x20enabled,\x20scripts\x20in\x20Override\x20Management\x20will\x20execute\x20during\x20subscription\x20generation',
+    'enableLabel': 'Enable\x20Override\x20Scripts',
+    'updated': 'Override\x20scripts\x20settings\x20updated'
+  },
+  Rr = {
+    'enableLabel': 'Update\x20via\x20CDN',
+    'description': 'When\x20enabled,\x20panel\x20self-update\x20and\x20agent\x20version\x20check/download\x20prefer\x20the\x20built-in\x20CDN\x20(dl.miaomiaowux.com)\x20to\x20bypass\x20GitHub\x20rate\x20limits;\x20disable\x20to\x20go\x20direct\x20to\x20GitHub.\x20Falls\x20back\x20to\x20GitHub\x20automatically\x20if\x20the\x20CDN\x20fails.',
+    'updated': 'CDN\x20acceleration\x20setting\x20updated'
+  },
+  Dr = {
+    'label': 'Subscription\x20Output\x20Format',
+    'description': 'Choose\x20the\x20output\x20format\x20for\x20Clash\x20subscriptions.\x20Default\x20is\x20YAML;\x20selecting\x20JSON\x20outputs\x20subscriptions\x20in\x20JSON.\x20Only\x20affects\x20Clash\x20format\x20—\x20other\x20clients\x20(Surge,\x20Sing-Box,\x20etc.)\x20are\x20unchanged.',
+    'updated': 'Subscription\x20output\x20format\x20updated'
+  },
+  Nr = {
+    'title': 'Miaomiaowu\x20Features',
+    'description': 'When\x20enabled,\x20shows\x20Templates,\x20Sub\x20Files,\x20Subscriptions,\x20Sub\x20Links,\x20and\x20Custom\x20Rules\x20menus',
+    'enableLabel': 'Enable\x20Miaomiaowu\x20Features',
+    'updated': 'Miaomiaowu\x20features\x20settings\x20updated'
+  },
+  Ar = {
+    'title': 'Silent\x20Mode',
+    'description': 'When\x20enabled,\x20all\x20requests\x20return\x20404\x20except\x20subscription\x20endpoints.\x20Access\x20is\x20temporarily\x20restored\x20after\x20fetching\x20a\x20subscription.',
+    'enableLabel': 'Enable\x20Silent\x20Mode',
+    'timeout': 'Recovery\x20Duration',
+    'minutes': 'minutes',
+    'hint': 'Access\x20is\x20restored\x20for\x20{{timeout}}\x20minutes\x20after\x20fetching\x20a\x20subscription,\x20then\x20returns\x20to\x20silent\x20mode',
+    'updated': 'Silent\x20mode\x20settings\x20updated',
+    'enableConfirm': 'Enable\x20Silent\x20Mode?'
+  },
+  Lr = {
+    'title': 'Require\x20Encrypted\x20Communication',
+    'description': 'When\x20enabled,\x20all\x20agents\x20must\x20use\x20encrypted\x20communication.\x20Unencrypted\x20connections\x20will\x20be\x20rejected.',
+    'enableLabel': 'Require\x20Encryption',
+    'warning': 'Ensure\x20all\x20agents\x20are\x20updated\x20and\x20configured\x20with\x20the\x20public\x20key,\x20or\x20they\x20will\x20be\x20unable\x20to\x20connect',
+    'updated': 'Encryption\x20settings\x20updated'
+  },
+  _r = {
+    'title': 'External\x20Subscription\x20Sync',
+    'description': 'Configure\x20external\x20subscription\x20sync\x20behavior',
+    'syncTraffic': 'Sync\x20External\x20Subscription\x20Traffic',
+    'syncTrafficHint': 'When\x20enabled,\x20traffic\x20data\x20will\x20include\x20traffic\x20info\x20from\x20external\x20subscriptions',
+    'nodeNameFilter': 'Node\x20Name\x20Filter',
+    'nodeNameFilterHint': 'Use\x20regex\x20to\x20filter\x20node\x20names.\x20Matching\x20nodes\x20will\x20be\x20excluded.\x20Leave\x20empty\x20to\x20skip\x20filtering.',
+    'nodeNameFilterDesc': 'Regex\x20pattern\x20—\x20matching\x20nodes\x20will\x20be\x20filtered\x20out\x20during\x20sync',
+    'forceSyncExternal': 'External\x20Subscription\x20Sync',
+    'forceSyncExternalHint': 'When\x20enabled,\x20fetching\x20subscriptions\x20will\x20re-fetch\x20the\x20latest\x20nodes\x20from\x20external\x20subscription\x20links',
+    'matchRule': 'Match\x20Rule',
+    'matchRuleNodeName': 'Node\x20Name',
+    'matchRuleServerPort': 'Server:Port',
+    'matchRuleTypeServerPort': 'Type:Server:Port',
+    'syncScope': 'Sync\x20Scope',
+    'syncScopeSavedOnly': 'Saved\x20Nodes\x20Only',
+    'syncScopeAll': 'All\x20Nodes',
+    'keepNodeName': 'Keep\x20Current\x20Node\x20Names',
+    'keepNodeNameHint': 'When\x20enabled,\x20node\x20names\x20in\x20the\x20database\x20are\x20preserved\x20during\x20sync\x20instead\x20of\x20using\x20names\x20from\x20external\x20subscriptions',
+    'cacheExpireMinutes': 'Cache\x20Expiry\x20(minutes)',
+    'cacheExpireMinutesHint': 'Set\x20to\x200\x20to\x20re-fetch\x20on\x20every\x20subscription\x20request.\x20When\x20greater\x20than\x200,\x20re-fetch\x20only\x20after\x20the\x20specified\x20minutes',
+    'cacheExpireWarning': 'Note:\x20Fetching\x20every\x20time\x20will\x20affect\x20subscription\x20API\x20response\x20speed'
+  },
+  Or = {
+    'title': 'License',
+    'description': 'Manage\x20license\x20status',
+    'licenseKey': 'License\x20Key',
+    'licenseKeyPlaceholder': 'Enter\x20license\x20key',
+    'status': 'Current\x20Status',
+    'valid': 'Valid',
+    'invalid': 'Invalid',
+    'plan': 'Plan',
+    'expiresAt': 'Expires',
+    'maxServers': 'Max\x20Servers',
+    'maxNodes': 'Max\x20Nodes',
+    'maxUsers': 'Max\x20Users',
+    'servers': 'Servers',
+    'nodes': 'Nodes',
+    'users': 'Users',
+    'remaining': 'Remaining',
+    'unlimited': 'Unlimited',
+    'showKey': 'Show\x20full\x20key',
+    'hideKey': 'Hide\x20key',
+    'permanent': 'Permanent',
+    'trial': 'Trial',
+    'updated': 'License\x20updated;\x20online\x20Agent\x20leases\x20are\x20refreshing\x20in\x20the\x20background,\x20and\x20offline\x20Agents\x20will\x20refresh\x20after\x20reconnecting',
+    'trialHint': 'You\x20are\x20on\x20a\x20trial\x20license.\x20PRO\x20features\x20(rate\x20limiter,\x20node\x20speed\x20test,\x20etc.)\x20are\x20not\x20available.\x20Register\x20and\x20claim\x20your\x20license\x20(includes\x20PRO\x20features,\x20with\x20more\x20coming...)\x20at:'
+  },
+  Fr = 'Settings\x20updated',
+  Ir = 'Failed\x20to\x20update\x20settings',
+  Mr = 'Auto-saved',
+  Er = {
+    'title': 'TG\x20Redeem-code\x20Copy\x20Text',
+    'placeholder': 'Registration\x20guide\x20template…',
+    'hint': 'Copied\x20when\x20clicking\x20“Copy\x20text”\x20on\x20a\x20redeem\x20code.\x20Placeholders:\x20{兑换码}\x20(code),\x20{机器人地址}\x20(bot\x20link,\x20injected\x20by\x20mini-app),\x20{主控域名}\x20(the\x20subscription\x20domain\x20when\x20one\x20is\x20configured,\x20otherwise\x20the\x20master\x20URL).\x20Empty\x20=\x20copy\x20the\x20bare\x20code\x20only.',
+    'updated': 'Redeem-code\x20text\x20updated'
+  },
+  Ur = {
+    'title': 'REALITY\x20Domain\x20Sharing',
+    'description': 'Share\x20the\x20public\x20site\x20domains\x20you\x20use\x20as\x20REALITY\x20targets,\x20and\x20use\x20domains\x20shared\x20by\x20others.\x20Only\x20public\x20sites\x20are\x20shared\x20—\x20your\x20own\x20domains\x20are\x20never\x20uploaded.',
+    'enableLabel': 'Share\x20my\x20REALITY\x20domains',
+    'proRequired': 'Requires\x20a\x20PRO\x20license',
+    'poolSize': '{{count}}\x20domains\x20currently\x20available\x20in\x20the\x20pool',
+    'sharedList': 'Shared\x20({{count}})',
+    'withdraw': 'Withdraw',
+    'withdrawn': 'Withdrawn',
+    'withdrawFailed': 'Failed\x20to\x20withdraw',
+    'toggleFailed': 'Operation\x20failed',
+    'shared': 'Shared\x20{{count}}\x20domains',
+    'disabled': 'Sharing\x20disabled',
+    'previewTitle': 'Confirm\x20domains\x20to\x20share',
+    'previewDesc': 'Your\x20master\x20domain,\x20server\x20domains,\x20certificate\x20domains\x20and\x20steal-self\x20targets\x20have\x20already\x20been\x20excluded.\x20Please\x20review\x20once\x20more\x20and\x20uncheck\x20anything\x20you\x20don\x27t\x20want\x20to\x20share.',
+    'nothingToShare': 'Nothing\x20to\x20share',
+    'cancel': 'Cancel',
+    'confirmShare': 'Share\x20{{count}}\x20domains'
+  },
+  Rf = {
+    'title': gr,
+    'description': hr,
+    'tabs': br,
+    'shortLink': yr,
+    'turnstile': vr,
+    'intervals': Sr,
+    'masterUrl': Cr,
+    'proxyGroups': Wr,
+    'domainMismatch': wr,
+    'telegram': Pr,
+    'apiToken': kr,
+    'overrideScripts': Tr,
+    'updateCDN': Rr,
+    'subscriptionOutputFormat': Dr,
+    'miaomiaowuFeatures': Nr,
+    'silentMode': Ar,
+    'encryption': Lr,
+    'sync': _r,
+    'license': Or,
+    'configUpdated': Fr,
+    'configUpdateFailed': Ir,
+    'autoSaved': Mr,
+    'redeemTemplate': Er,
+    'realityShare': Ur
+  },
+  Df = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'apiToken': kr,
+    'autoSaved': Mr,
+    'configUpdateFailed': Ir,
+    'configUpdated': Fr,
+    'default': Rf,
+    'description': hr,
+    'domainMismatch': wr,
+    'encryption': Lr,
+    'intervals': Sr,
+    'license': Or,
+    'masterUrl': Cr,
+    'miaomiaowuFeatures': Nr,
+    'overrideScripts': Tr,
+    'proxyGroups': Wr,
+    'realityShare': Ur,
+    'redeemTemplate': Er,
+    'shortLink': yr,
+    'silentMode': Ar,
+    'subscriptionOutputFormat': Dr,
+    'sync': _r,
+    'tabs': br,
+    'telegram': Pr,
+    'title': gr,
+    'turnstile': vr,
+    'updateCDN': Rr
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  jr = 'Template\x20Management',
+  Hr = 'Manage\x20mihomo-style\x20rule\x20templates\x20with\x20include-all,\x20filter\x20and\x20other\x20advanced\x20features',
+  Br = 'Unsaved',
+  Gr = 'Reset\x20to\x20default\x20template',
+  qr = 'Collapse\x20Preview',
+  zr = 'Expand\x20Preview',
+  Kr = 'Config\x20Preview',
+  $r = 'Visual\x20Editor',
+  Qr = 'YAML\x20Code',
+  Vr = 'Config\x20Code',
+  Xr = 'Enable\x20Region\x20Proxy\x20Groups',
+  Jr = 'Automatically\x20add\x20region-based\x20proxy\x20groups',
+  Yr = 'Add\x20Proxy\x20Group',
+  Zr = 'New\x20Group\x20{{index}}',
+  es = 'YAML\x20content...',
+  ts = 'Config\x20content...',
+  ns = 'No\x20template\x20found.\x20Click\x20the\x20button\x20below\x20to\x20create\x20a\x20default\x20template.',
+  os = 'Create\x20Default\x20Template',
+  as = {
+    'templateName': 'Template\x20Name',
+    'actions': 'Actions',
+    'edit': 'Edit',
+    'preview': 'Preview',
+    'delete': 'Delete',
+    'newTemplate': 'New\x20Template',
+    'filterAll': 'All',
+    'empty': 'No\x20templates\x20yet.\x20Click\x20the\x20button\x20above\x20to\x20create\x20one.'
+  },
+  rs = {
+    'label': 'Default',
+    'set': 'Set\x20as\x20Default',
+    'unset': 'Unset\x20Default',
+    'updated': 'Default\x20template\x20updated',
+    'failed': 'Failed\x20to\x20set\x20default\x20template',
+    'userLabel': 'My\x20Default',
+    'userSet': 'Set\x20as\x20my\x20default\x20template',
+    'userUnset': 'Unset\x20my\x20default\x20template'
+  },
+  ss = {
+    'editTemplate': 'Edit\x20template\x20configuration',
+    'close': 'Close'
+  },
+  is = {
+    'title': 'Preview',
+    'description': 'Left:\x20template\x20config,\x20Right:\x20final\x20subscription\x20config',
+    'generating': 'Generating\x20preview...',
+    'templateConfig': 'Template\x20Config',
+    'finalConfig': 'Final\x20Subscription\x20Config'
+  },
+  ls = {
+    'title': 'Confirm\x20Delete',
+    'description': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20template\x20\x22{{name}}\x22?\x20This\x20action\x20cannot\x20be\x20undone.'
+  },
+  ds = {
+    'button': 'User\x20Visibility',
+    'title': 'Configure\x20User-Visible\x20Templates',
+    'description': 'Configure\x20whether\x20each\x20template\x20is\x20shared\x20with\x20regular\x20users.\x20Template\x20owners\x20can\x20always\x20see\x20their\x20own\x20templates.',
+    'empty': 'No\x20templates',
+    'saved': 'Template\x20visibility\x20saved',
+    'failed': 'Save\x20failed'
+  },
+  cs = {
+    'title': 'Rename\x20Template',
+    'description': 'Enter\x20a\x20new\x20template\x20name',
+    'placeholder': 'New\x20template\x20name'
+  },
+  us = {
+    'title': 'Confirm\x20Close',
+    'description': 'You\x20have\x20unsaved\x20changes.\x20Are\x20you\x20sure\x20you\x20want\x20to\x20close?',
+    'confirm': 'Close\x20Anyway'
+  },
+  ps = {
+    'title': 'Recover\x20Local\x20Cache',
+    'description': 'Unsaved\x20local\x20cache\x20detected.\x20Recover\x20it?',
+    'discard': 'Discard',
+    'recover': 'Recover'
+  },
+  ms = {
+    'title': 'Switch\x20DNS\x20Mode',
+    'description': 'You\x20have\x20unsaved\x20changes.\x20Switching\x20mode\x20will\x20discard\x20them.\x20Continue?',
+    'confirm': 'Confirm\x20Switch'
+  },
+  fs = {
+    'title': 'Reset\x20Template',
+    'description': 'This\x20will\x20restore\x20the\x20default\x20template\x20for\x20the\x20current\x20DNS\x20mode.\x20All\x20unsaved\x20changes\x20will\x20be\x20lost.\x20Continue?',
+    'confirm': 'Confirm\x20Reset'
+  },
+  xs = {
+    'title': 'Create\x20Template',
+    'description': 'Upload\x20YAML\x20file,\x20paste\x20content,\x20create\x20blank,\x20import\x20from\x20URL,\x20convert\x20from\x20V2\x20or\x20generate\x20from\x20subscription',
+    'tabs': {
+      'upload': 'Upload',
+      'paste': 'Paste',
+      'blank': 'Blank',
+      'fromUrl': 'URL',
+      'v2import': 'V2\x20Import',
+      'fromSub': 'From\x20Sub'
+    },
+    'selectYamlFile': 'Select\x20YAML\x20file',
+    'selected': 'Selected',
+    'templateName': 'Template\x20Name',
+    'yamlContent': 'YAML\x20Content',
+    'pasteYamlPlaceholder': 'Paste\x20YAML\x20content...',
+    'blankDesc': 'Creates\x20a\x20blank\x20v3\x20template\x20with\x20basic\x20structure\x20including\x20node\x20selection,\x20auto-select,\x20and\x20global\x20direct\x20proxy\x20groups.',
+    'templateUrl': 'Template\x20URL',
+    'previewContent': 'Preview\x20Content',
+    'contentPreview': 'Content\x20Preview',
+    'fromUrlDesc': 'Import\x20V3\x20template\x20YAML\x20from\x20external\x20URL.\x20Supports\x20http/https.',
+    'selectV2': 'Select\x20V2\x20Template',
+    'selectTemplate': 'Select\x20template',
+    'myTemplates': 'My\x20Templates',
+    'presetTemplates': 'Preset\x20Templates',
+    'newTemplateName': 'New\x20Template\x20Name',
+    'dnsConfig': 'DNS\x20Config',
+    'selectDns': 'Select\x20DNS\x20config',
+    'v2importDesc': 'Automatically\x20converts\x20custom_proxy_group\x20and\x20ruleset\x20to\x20v3\x20format.\x0a•\x20.*\x20converts\x20to\x20include-all:\x20true\x0a•\x20Regex\x20converts\x20to\x20filter\x20field',
+    'selectSubscriptionFile': 'Select\x20Subscription\x20File',
+    'selectSub': 'Select\x20subscription',
+    'previewAnalysis': 'Preview\x20Analysis',
+    'analysisPreview': 'Analysis\x20Preview',
+    'fromSubDesc': 'Analyze\x20proxy\x20group\x20config\x20from\x20existing\x20subscription\x20files,\x20smart\x20inference\x20of\x20filter,\x20include-all\x20settings.\x0a•\x20Auto-detect\x20regional\x20nodes\x20and\x20generate\x20corresponding\x20filters\x0a•\x20Supports\x20include-all-proxies,\x20include-region-proxy-groups',
+    'create': 'Create',
+    'convertAndCreate': 'Convert\x20&\x20Create',
+    'generateAndCreate': 'Generate\x20&\x20Create',
+    'importAndCreate': 'Import\x20&\x20Create',
+    'processing': 'Processing...',
+    'fetching': 'Fetching...',
+    'analyzing': 'Analyzing...',
+    'yamlOnly': 'Please\x20select\x20a\x20YAML\x20file',
+    'selectFile': 'Please\x20select\x20a\x20file',
+    'enterContent': 'Please\x20enter\x20template\x20content',
+    'enterName': 'Please\x20enter\x20a\x20template\x20name',
+    'enterUrl': 'Please\x20enter\x20template\x20URL',
+    'selectSubscription': 'Please\x20select\x20a\x20subscription\x20file',
+    'selectV2Template': 'Please\x20select\x20a\x20V2\x20template',
+    'templateNotFound': 'Selected\x20template\x20not\x20found',
+    'presetNotFound': 'Selected\x20preset\x20template\x20not\x20found',
+    'invalidSelection': 'Invalid\x20template\x20selection',
+    'fetchTemplatesFailed': 'Failed\x20to\x20fetch\x20template\x20list',
+    'fetchSubscriptionsFailed': 'Failed\x20to\x20fetch\x20subscription\x20list',
+    'analyzeFailed': 'Failed\x20to\x20analyze\x20subscription',
+    'fetchUrlFailed': 'Failed\x20to\x20fetch\x20template\x20content',
+    'convertFailed': 'Conversion\x20failed',
+    'templateType': 'Template\x20type',
+    'surgePreset': 'Preset\x20config\x20(optional)',
+    'surgePresetPlaceholder': 'Pick\x20a\x20preset\x20Surge\x20config,\x20or\x20enter\x20a\x20URL\x20below'
+  },
+  gs = {
+    'groupTypes': {
+      'select': 'Manual\x20Select',
+      'url-test': 'URL\x20Test',
+      'fallback': 'Fallback',
+      'load-balance': 'Load\x20Balance',
+      'relay': 'Relay'
+    },
+    'hidden': 'Hidden',
+    'hasFilter': 'Filtered',
+    'relayPrefix': 'Relay:\x20{{name}}',
+    'setRelayGroup': 'Set\x20relay\x20proxy\x20group',
+    'selectRelayGroup': 'Select\x20relay\x20proxy\x20group',
+    'clear': 'Clear',
+    'groupName': 'Group\x20Name',
+    'groupNamePlaceholder': 'Proxy\x20group\x20name',
+    'groupType': 'Group\x20Type',
+    'nodeSource': 'Node\x20Source',
+    'providersAndNodes': 'Providers\x20+\x20Nodes',
+    'proxyNodes': 'Proxy\x20Nodes',
+    'proxyProviders': 'Proxy\x20Providers',
+    'regionProxyGroups': 'Region\x20Proxy\x20Groups',
+    'defaultOutbound': 'Default\x20Outbound',
+    'proxyOrder': 'Proxy\x20Order\x20(drag\x20to\x20sort)',
+    'selectRefGroups': 'Select\x20proxy\x20groups\x20to\x20reference',
+    'templateVariables': 'Template\x20Variables\x20({{count}})',
+    'filterKeywords': 'Filter\x20Keywords\x20(filter)',
+    'filterPlaceholder': 'HK,\x20JP,\x20US',
+    'filterDescription': 'Match\x20node\x20names,\x20separated\x20by\x20commas',
+    'excludeKeywords': 'Exclude\x20Keywords\x20(exclude-filter)',
+    'excludePlaceholder': 'Game,\x20IPLC',
+    'excludeDescription': 'Exclude\x20matching\x20nodes',
+    'includeType': 'Include\x20Type\x20(include-type)',
+    'includeTypePlaceholder': 'Select\x20proxy\x20types\x20to\x20include',
+    'excludeType': 'Exclude\x20Type\x20(exclude-type)',
+    'excludeTypePlaceholder': 'Select\x20proxy\x20types\x20to\x20exclude',
+    'testUrl': 'Test\x20URL',
+    'testInterval': 'Test\x20Interval\x20(seconds)',
+    'tolerance': 'Tolerance\x20(ms)',
+    'icon': 'Icon',
+    'iconPlaceholder': 'URL\x20or\x20emoji',
+    'hideGroup': 'Hide\x20this\x20group\x20(hidden)'
+  },
+  hs = {
+    'defaultPlaceholder': 'Enter\x20keywords,\x20separated\x20by\x20commas',
+    'variable': 'Variable:\x20{{name}}',
+    'regex': 'Regex:'
+  },
+  bs = {
+    'defaultPlaceholder': 'Select\x20proxy\x20group',
+    'searchPlaceholder': 'Search\x20proxy\x20groups...',
+    'noResults': 'No\x20proxy\x20groups\x20found'
+  },
+  ys = {
+    'defaultPlaceholder': 'Select\x20proxy\x20type',
+    'deselectAll': 'Deselect\x20All',
+    'selectAll': 'Select\x20All'
+  },
+  vs = {
+    'defaultTitle': 'Preview',
+    'copiedToClipboard': 'Copied\x20to\x20clipboard',
+    'copyFailed': 'Copy\x20failed',
+    'generating': 'Generating\x20preview...',
+    'clickRefresh': 'Click\x20refresh\x20to\x20generate\x20preview'
+  },
+  Ss = {
+    'proxyNodesDisplay': '⛓️‍💥\x20Proxy\x20Nodes',
+    'proxyProvidersDisplay': '📦\x20Proxy\x20Providers',
+    'regionProxyGroupsDisplay': '🌏\x20Region\x20Proxy\x20Groups',
+    'directDisplay': '🎯\x20Direct\x20(DIRECT)',
+    'rejectDisplay': '🚫\x20Reject\x20(REJECT)',
+    'defaultGroupName': 'New\x20Group'
+  },
+  Cs = {
+    'saveSuccess': 'Template\x20saved',
+    'saveFailed': 'Save\x20failed',
+    'defaultCreated': 'Default\x20template\x20created',
+    'createSuccess': 'Template\x20created',
+    'createFailed': 'Create\x20failed',
+    'loadFailed': 'Failed\x20to\x20load\x20template',
+    'resetFailed': 'Reset\x20failed',
+    'previewFailed': 'Preview\x20generation\x20failed',
+    'deleteSuccess': 'Template\x20deleted',
+    'deleteFailed': 'Delete\x20failed',
+    'uploadSuccess': 'Template\x20uploaded',
+    'uploadFailed': 'Upload\x20failed',
+    'renameSuccess': 'Template\x20renamed',
+    'renameFailed': 'Rename\x20failed'
+  },
+  Nf = {
+    'title': jr,
+    'subtitle': Hr,
+    'unsaved': Br,
+    'resetTooltip': Gr,
+    'collapsePreview': qr,
+    'expandPreview': zr,
+    'previewTitle': Kr,
+    'visualEdit': $r,
+    'yamlCode': Qr,
+    'configCode': Vr,
+    'enableRegionGroups': Xr,
+    'enableRegionGroupsDesc': Jr,
+    'addProxyGroup': Yr,
+    'newProxyGroup': Zr,
+    'yamlPlaceholder': es,
+    'configPlaceholder': ts,
+    'emptyDesc': ns,
+    'createDefault': os,
+    'list': as,
+    'defaultTemplate': rs,
+    'editor': ss,
+    'listPreview': is,
+    'deleteConfirm': ls,
+    'visibility': ds,
+    'renameDialog': cs,
+    'closeConfirm': us,
+    'draftRecovery': ps,
+    'dnsSwitchConfirm': ms,
+    'resetConfirm': fs,
+    'upload': xs,
+    'proxyGroupEditor': gs,
+    'keywordFilter': hs,
+    'proxyGroupSelect': bs,
+    'proxyTypeSelect': ys,
+    'preview': vs,
+    'v3': Ss,
+    'toast': Cs
+  },
+  Af = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'addProxyGroup': Yr,
+    'closeConfirm': us,
+    'collapsePreview': qr,
+    'configCode': Vr,
+    'configPlaceholder': ts,
+    'createDefault': os,
+    'default': Nf,
+    'defaultTemplate': rs,
+    'deleteConfirm': ls,
+    'dnsSwitchConfirm': ms,
+    'draftRecovery': ps,
+    'editor': ss,
+    'emptyDesc': ns,
+    'enableRegionGroups': Xr,
+    'enableRegionGroupsDesc': Jr,
+    'expandPreview': zr,
+    'keywordFilter': hs,
+    'list': as,
+    'listPreview': is,
+    'newProxyGroup': Zr,
+    'preview': vs,
+    'previewTitle': Kr,
+    'proxyGroupEditor': gs,
+    'proxyGroupSelect': bs,
+    'proxyTypeSelect': ys,
+    'renameDialog': cs,
+    'resetConfirm': fs,
+    'resetTooltip': Gr,
+    'subtitle': Hr,
+    'title': jr,
+    'toast': Cs,
+    'unsaved': Br,
+    'upload': xs,
+    'v3': Ss,
+    'visibility': ds,
+    'visualEdit': $r,
+    'yamlCode': Qr,
+    'yamlPlaceholder': es
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Ws = {
+    'title': 'User\x20Management',
+    'description': 'View\x20system\x20users,\x20manage\x20activation\x20status\x20and\x20reset\x20passwords.'
+  },
+  ws = {
+    'title': 'Loading...',
+    'description': 'Fetching\x20admin\x20information,\x20please\x20wait.'
+  },
+  Ps = {
+    'title': 'Access\x20Denied',
+    'description': 'Only\x20administrators\x20can\x20access\x20the\x20user\x20management\x20page.'
+  },
+  ks = {
+    'title': 'Account\x20List',
+    'description': 'Only\x20administrators\x20can\x20change\x20user\x20status\x20or\x20reset\x20passwords.',
+    'addUser': 'Add\x20User',
+    'empty': 'No\x20users\x20to\x20display'
+  },
+  Ts = {
+    'username': 'Username',
+    'nickname': 'Nickname',
+    'remark': 'Remark',
+    'userShortCode': 'Short\x20Code',
+    'userSubscribe': 'Subscription',
+    'packageTraffic': 'Package\x20/\x20Traffic',
+    'role': 'Role',
+    'status': 'Status',
+    'actions': 'Actions',
+    'email': 'Email'
+  },
+  Rs = {
+    'copy': 'Copy',
+    'copied': 'Subscription\x20URL\x20copied',
+    'pickClient': 'Choose\x20a\x20client\x20and\x20copy\x20the\x20subscription',
+    'copiedClient': '{{name}}\x20subscription\x20URL\x20copied',
+    'dialogTitle': 'Copy\x20subscription\x20URL',
+    'dialogDescription': 'Choose\x20a\x20client,\x20then\x20copy\x20the\x20URL\x20or\x20scan\x20the\x20QR\x20code.',
+    'client': 'Client',
+    'copyButton': 'Copy\x20URL',
+    'copyFailed': 'Copy\x20failed.\x20Please\x20copy\x20the\x20URL\x20manually.'
+  },
+  Ds = {
+    'admin': 'Admin',
+    'user': 'User'
+  },
+  Ns = {
+    'enabled': 'Enabled',
+    'disabled': 'Disabled'
+  },
+  As = {
+    'title': 'Edit\x20Limit\x20Overrides',
+    'edit': 'Limits',
+    'override': 'Override',
+    'speedLimit': 'Speed\x20Limit\x20Override\x20(Mbps)',
+    'speedPlaceholder': 'Leave\x20empty\x20to\x20use\x20package\x20default',
+    'speedDesc': 'Overrides\x20package\x20speed\x20limit\x20(user\x20override\x20>\x20package).\x20Unit:\x20Mbps\x20(megabits/sec).\x20Conversion:\x208\x20Mbps\x20≈\x201\x20MB/s,\x20100\x20Mbps\x20≈\x2012.5\x20MB/s.\x20Enter\x200\x20=\x20explicit\x20unlimited;\x20leave\x20empty\x20=\x20inherit\x20package\x20default.',
+    'deviceLimit': 'Connection\x20Limit\x20Override',
+    'devicePlaceholder': 'Leave\x20empty\x20to\x20use\x20package\x20default',
+    'deviceDesc': 'Override\x20package\x20connection\x20limit\x20(uniform\x20across\x20nodes;\x20routed\x20outbounds\x20inherit\x20parent),\x20leave\x20empty\x20for\x20package\x20default',
+    'trafficLimit': 'Traffic\x20Override\x20(GB)',
+    'trafficPlaceholder': 'Leave\x20empty\x20to\x20use\x20package\x20default',
+    'trafficDesc': 'Overrides\x20package\x20traffic\x20limit\x20(user\x20override\x20>\x20package).\x20Enter\x200\x20=\x20explicit\x20unlimited;\x20leave\x20empty\x20=\x20inherit\x20package\x20default.\x20The\x20override\x20is\x20cleared\x20when\x20the\x20package\x20is\x20switched\x20or\x20unassigned.\x20Takes\x20effect\x20within\x20one\x20enforcement\x20cycle.'
+  },
+  Ls = {
+    'resetPassword': 'Reset\x20Password',
+    'resetTraffic': 'Reset\x20Traffic',
+    'deleteUser': 'Delete',
+    'disableUser': 'Disable',
+    'enableUser': 'Enable'
+  },
+  _s = {
+    'title': 'Confirm\x20Traffic\x20Reset',
+    'description': 'Reset\x20the\x20current\x20package-cycle\x20traffic\x20for\x20{{username}}\x20to\x20zero?\x20Historical\x20totals\x20will\x20be\x20preserved.',
+    'resetting': 'Resetting...',
+    'confirm': 'Reset\x20Traffic'
+  },
+  Os = {
+    'title': 'Add\x20User',
+    'username': 'Username',
+    'email': 'Email',
+    'nickname': 'Nickname',
+    'password': 'Initial\x20Password',
+    'passwordHint': 'A\x20random\x20password\x20is\x20generated\x20by\x20default,\x20you\x20can\x20modify\x20it\x20before\x20creating.',
+    'remark': 'Remark\x20(Optional)',
+    'remarkPlaceholder': 'Enter\x20remark',
+    'creating': 'Creating...',
+    'confirmCreate': 'Confirm\x20Create'
+  },
+  Fs = {
+    'title': 'Reset\x20Password',
+    'username': 'Username',
+    'newPassword': 'New\x20Password',
+    'passwordHint': 'A\x20random\x20password\x20is\x20generated\x20by\x20default,\x20you\x20can\x20modify\x20it\x20before\x20confirming.',
+    'resetting': 'Resetting...',
+    'confirmReset': 'Confirm\x20Reset'
+  },
+  Is = {
+    'title': 'Confirm\x20Delete\x20User',
+    'description': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20user\x20<strong>{{username}}</strong>?\x20This\x20will\x20delete\x20all\x20user\x20data,\x20including:',
+    'dataAccount': 'User\x20account\x20information',
+    'dataSubscription': 'Subscription\x20bindings',
+    'dataNodes': 'Saved\x20nodes',
+    'dataExternalSub': 'External\x20subscriptions',
+    'dataSettings': 'User\x20settings',
+    'irreversible': 'This\x20action\x20cannot\x20be\x20undone!',
+    'deleting': 'Deleting...',
+    'confirmDelete': 'Confirm\x20Delete'
+  },
+  Ms = {
+    'title': 'Manage\x20Package',
+    'username': 'Username',
+    'selectPackage': 'Select\x20Package',
+    'loadingPackages': 'Loading\x20packages...',
+    'noPackage': 'No\x20Package',
+    'noAvailablePackages': 'No\x20available\x20packages',
+    'expireDate': 'Expiration\x20Date',
+    'expireDateHint': 'After\x20expiration,\x20all\x20inbound\x20configurations\x20will\x20be\x20removed\x20and\x20package\x20unbound\x20automatically',
+    'switchOptions': 'Package\x20switch\x20inheritance',
+    'inheritExpireDate': 'Keep\x20current\x20expiration\x20date',
+    'inheritExpireDateHint': 'Ignore\x20the\x20date\x20above\x20and\x20retain\x20the\x20user\x27s\x20current\x20expiration\x20date.',
+    'inheritTraffic': 'Keep\x20current-cycle\x20usage',
+    'inheritTrafficHint': 'Carry\x20total\x20usage\x20into\x20the\x20new\x20package\x20and\x20reset\x20it\x20on\x20the\x20new\x20package\x27s\x20next\x20reset\x20date.',
+    'enableMonthlyReset': 'Enable\x20monthly\x20traffic\x20reset',
+    'monthlyResetDay': 'Monthly\x20Reset\x20Day',
+    'monthlyResetDayHint': 'Traffic\x20will\x20be\x20reset\x20on\x20this\x20day\x20each\x20month\x20(1-31)',
+    'monthlyResetDayWarning': '.\x20Note:\x20February\x20only\x20has\x2028/29\x20days,\x20reset\x20will\x20occur\x20on\x20the\x20last\x20day\x20of\x20the\x20month',
+    'saving': 'Saving...',
+    'confirmSave': 'Confirm\x20Save'
+  },
+  Es = {
+    'title': 'Edit\x20Remark',
+    'username': 'Username',
+    'remark': 'Remark',
+    'remarkPlaceholder': 'Enter\x20remark',
+    'saving': 'Saving...',
+    'confirmSave': 'Confirm\x20Save'
+  },
+  Us = {
+    'label': 'User\x20Short\x20Code',
+    'placeholderAuto': 'Leave\x20empty\x20to\x20revert\x20to\x20auto\x20({{code}})',
+    'placeholderEmpty': 'Leave\x20empty\x20for\x20auto-generated\x20code',
+    'hint': 'Press\x20Enter\x20to\x20save.\x20Leave\x20empty\x20to\x20revert\x20to\x20auto.\x20Allowed:\x20letters\x20/\x20digits\x20/\x20underscore\x20/\x20hyphen,\x20length\x202-16.',
+    'editTooltip': 'Click\x20to\x20edit\x20short\x20code'
+  },
+  js = {
+    'button': 'Renew',
+    'daysUnit': 'd',
+    'custom': 'Custom',
+    'customDaysLabel': 'Extend\x20days',
+    'customDaysPlaceholder': 'Enter\x20days\x20then\x20press\x20Enter',
+    'customHint': 'Press\x20Enter\x20to\x20confirm;\x20extends\x20from\x20current\x20expiry.',
+    'success': 'Renewed\x20until\x20{{date}}'
+  },
+  Hs = {
+    'full': 'Full\x20view',
+    'package': 'Renewal\x20view',
+    'expired': 'Expired',
+    'noExpiry': 'No\x20expiry',
+    'daysLeft': '{{count}}d\x20left',
+    'noPackage': 'No\x20package',
+    'noSpeedLimit': 'Unlimited',
+    'searchPlaceholder': 'Search\x20username\x20/\x20nickname\x20/\x20package',
+    'currentConnections': 'Current\x20connections',
+    'partialConnections': 'Currently\x20observed\x20connections;\x20some\x20servers\x20are\x20not\x20ready,\x20so\x20the\x20actual\x20total\x20may\x20be\x20higher',
+    'connectionStatsIncomplete': 'Connection\x20statistics\x20are\x20incomplete\x20on\x20some\x20servers;\x20values\x20marked\x20with\x20+\x20are\x20currently\x20observed\x20counts',
+    'connectionStatsExcluded': 'Servers\x20running\x20external\x20Xray\x20({{servers}})\x20are\x20outside\x20the\x20connection-statistics\x20scope'
+  },
+  Bs = {
+    'statusUpdated': 'User\x20status\x20updated',
+    'passwordReset': 'Password\x20has\x20been\x20reset',
+    'trafficReset': 'Traffic\x20for\x20{{username}}\x20has\x20been\x20reset',
+    'userDeleted': 'User\x20deleted',
+    'userCreated': 'User\x20created,\x20initial\x20password\x20copied',
+    'packageUpdated': 'Package\x20updated',
+    'packageWarning': 'Package\x20bound,\x20but\x20some\x20node\x20configurations\x20failed:\x20{{warnings}}',
+    'remarkUpdated': 'Remark\x20updated',
+    'limitsUpdated': 'Limits\x20updated',
+    'trafficLimitInvalid': 'Traffic\x20override\x20must\x20be\x20a\x20number\x20no\x20less\x20than\x200',
+    'shortCodeUpdated': 'Short\x20code\x20updated',
+    'shortCodeInvalid': 'Short\x20code\x20must\x20be\x20letters\x20/\x20digits\x20/\x20underscore\x20/\x20hyphen,\x20length\x202-16'
+  },
+  Lf = {
+    'page': Ws,
+    'loading': ws,
+    'noPermission': Ps,
+    'accountList': ks,
+    'columns': Ts,
+    'subscribe': Rs,
+    'roles': Ds,
+    'status': Ns,
+    'package': {
+      'bind': 'Bind\x20Package',
+      'manage': 'Manage\x20Package',
+      'adminNoNeedBind': 'Admins\x20don\x27t\x20need\x20a\x20package\x20—\x20just\x20generate\x20a\x20subscription\x20directly',
+      'overLimit': 'Over\x20Limit',
+      'tooltipPackage': 'Package:\x20{{name}}',
+      'tooltipUsed': 'Used:\x20{{used}}',
+      'tooltipLimit': 'Limit:\x20{{limit}}\x20GB',
+      'tooltipPercent': 'Usage:\x20{{percent}}%',
+      'tooltipSpeed': 'Speed\x20Limit:\x20{{speed}}\x20Mbps',
+      'tooltipDevice': 'Connection\x20Limit:\x20{{count}}'
+    },
+    'limits': As,
+    'actions': Ls,
+    'trafficResetDialog': _s,
+    'createDialog': Os,
+    'resetDialog': Fs,
+    'deleteDialog': Is,
+    'packageDialog': Ms,
+    'remarkDialog': Es,
+    'shortCode': Us,
+    'renew': js,
+    'view': Hs,
+    'toast': Bs
+  },
+  _f = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'accountList': ks,
+    'actions': Ls,
+    'columns': Ts,
+    'createDialog': Os,
+    'default': Lf,
+    'deleteDialog': Is,
+    'limits': As,
+    'loading': ws,
+    'noPermission': Ps,
+    'packageDialog': Ms,
+    'page': Ws,
+    'remarkDialog': Es,
+    'renew': js,
+    'resetDialog': Fs,
+    'roles': Ds,
+    'shortCode': Us,
+    'status': Ns,
+    'subscribe': Rs,
+    'toast': Bs,
+    'trafficResetDialog': _s,
+    'view': Hs
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Gs = {
+    'port': 'Port',
+    'portDesc': 'Listening\x20port\x20number',
+    'listen': 'Listen\x20Address',
+    'listenDesc': 'Listen\x20address,\x200.0.0.0\x20means\x20listen\x20on\x20all\x20interfaces',
+    'tag': 'Inbound\x20Tag',
+    'tagDesc': 'Inbound\x20tag\x20for\x20routing\x20rules.\x20Auto-generated\x20from\x20protocol-transport-security-port',
+    'sniffing': 'Enable\x20Traffic\x20Sniffing',
+    'sniffingDesc': 'Detect\x20domains\x20for\x20routing\x20without\x20rewriting\x20the\x20original\x20destination',
+    'serverAddress': 'Server\x20Address',
+    'serverAddressDesc': 'Remote\x20server\x20address\x20(domain\x20or\x20IP)',
+    'serverPort': 'Server\x20Port',
+    'serverPortDesc': 'Remote\x20server\x20port\x20number',
+    'outboundTag': 'Outbound\x20Tag',
+    'outboundTagDesc': 'Outbound\x20tag\x20for\x20routing\x20rules',
+    'path': 'Path',
+    'pathDesc_http': 'HTTP\x20path',
+    'pathDesc_http2': 'HTTP/2\x20path',
+    'pathDesc_ws': 'WebSocket\x20connection\x20path',
+    'pathDesc_wss': 'WebSocket\x20Secure\x20path',
+    'pathDesc_xhttp': 'XHTTP\x20connection\x20path',
+    'host': 'Hostname',
+    'hostDesc': 'Hostname,\x20separate\x20multiple\x20with\x20commas',
+    'hostCustomDesc': 'Custom\x20Host\x20header,\x20leave\x20empty\x20for\x20default',
+    'serviceName': 'Service\x20Name',
+    'serviceNameDesc': 'gRPC\x20service\x20name',
+    'transportMode': 'Transport\x20Mode',
+    'transportModeDesc': 'XHTTP\x20transport\x20mode',
+    'serverName_sni': 'Server\x20Name\x20(SNI)',
+    'serverNameDesc_tls': 'TLS\x20server\x20name',
+    'certFilePath': 'Certificate\x20File\x20Path',
+    'certFilePathDesc': 'Absolute\x20path\x20to\x20certificate\x20file',
+    'keyFilePath': 'Key\x20File\x20Path',
+    'keyFilePathDesc': 'Absolute\x20path\x20to\x20private\x20key\x20file',
+    'alpn': 'ALPN',
+    'alpnDesc': 'ALPN\x20protocol\x20list,\x20comma\x20separated',
+    'minTlsVersion': 'Minimum\x20TLS\x20Version',
+    'dest': 'Target\x20Website',
+    'destDesc': 'Target\x20website\x20supporting\x20TLS\x201.3\x20and\x20H2',
+    'serverNames': 'Server\x20Name\x20List',
+    'serverNamesDesc': 'Server\x20names\x20in\x20target\x20website\x20certificate,\x20comma\x20separated',
+    'realityGuard': 'Prevent\x20Reality\x20relay\x20abuse',
+    'realityGuardDesc': 'Creates\x20a\x20dedicated\x20loopback\x20tunnel\x20that\x20only\x20forwards\x20TLS\x20domains\x20listed\x20in\x20serverNames\x20and\x20blocks\x20everything\x20else.',
+    'privateKey': 'Private\x20Key',
+    'privateKeyDesc': 'Private\x20key\x20generated\x20by\x20xray\x20x25519\x20command',
+    'shortIds': 'Short\x20IDs',
+    'shortIdsDesc': 'Short\x20ID\x20list,\x20comma\x20separated,\x20empty\x20means\x20client\x20can\x20be\x20empty',
+    'encryptionMethod': 'Encryption\x20Method',
+    'serverPassword': 'Server\x20Password\x20(PSK)',
+    'serverPasswordDesc': 'Password\x20will\x20be\x20Base64\x20encoded\x20automatically',
+    'networkType': 'Network\x20Type',
+    'authMethod': 'Auth\x20Method',
+    'authPassword': 'Password\x20Auth',
+    'authNone': 'No\x20Auth',
+    'enableUdp': 'Enable\x20UDP',
+    'enableUdpDesc': 'Whether\x20to\x20support\x20UDP\x20proxy',
+    'decryption': 'Decryption',
+    'decryptionDesc': 'VLESS\x20decryption\x20mode,\x20supports\x20post-quantum\x20encryption',
+    'encryption': 'Encryption',
+    'encryptionDesc': 'Client\x20encryption\x20method',
+    'obfsType': 'Obfuscation\x20Type',
+    'obfsNone': 'No\x20Obfuscation',
+    'obfsDesc': 'Optional\x20traffic\x20obfuscation,\x20requires\x20obfuscation\x20password\x20when\x20enabled',
+    'obfsPassword': 'Obfuscation\x20Password',
+    'obfsPasswordDesc': 'Required\x20when\x20obfuscation\x20is\x20enabled',
+    'httpAuthDesc': 'HTTP\x20proxy\x20authentication\x20method',
+    'allowTransparent': 'Allow\x20Transparent\x20Proxy',
+    'allowTransparentDesc': 'When\x20true,\x20forwards\x20all\x20HTTP\x20requests,\x20not\x20just\x20proxy\x20requests',
+    'forwardAddress': 'Forward\x20Address',
+    'forwardAddressDesc': 'Target\x20address\x20to\x20forward\x20to\x20(domain\x20or\x20IP)',
+    'forwardPort': 'Forward\x20Port',
+    'forwardPortDesc': 'Target\x20port\x20to\x20forward\x20to',
+    'protocolType': 'Protocol\x20Type',
+    'followRedirect': 'Follow\x20Redirect',
+    'followRedirectDesc': 'When\x20true,\x20tunnel\x20will\x20recognize\x20data\x20forwarded\x20by\x20iptables',
+    'userLevel': 'User\x20Level',
+    'userLevelDesc': 'User\x20level,\x20default\x20is\x200',
+    'userLevelAllDesc': 'User\x20level,\x20all\x20connections\x20use\x20this\x20level',
+    'domainStrategy': 'Domain\x20Strategy',
+    'domainStrategyDesc': 'Use\x20AsIs\x20to\x20pass\x20domain\x20to\x20sockopt\x20module\x20for\x20processing',
+    'uuid': 'UUID',
+    'uuidDesc': 'User\x20UUID,\x20generate\x20using\x20xray\x20uuid\x20command',
+    'email': 'Email\x20(for\x20traffic\x20stats)',
+    'emailDesc': 'Used\x20to\x20identify\x20user',
+    'username': 'Username',
+    'password': 'Password',
+    'userPassword_psk': 'User\x20Password\x20(PSK)',
+    'userPasswordDesc_psk': 'Password\x20will\x20be\x20Base64\x20encoded\x20automatically',
+    'authPasswordField': 'Auth\x20Password',
+    'authPasswordFieldDesc': 'Password\x20used\x20for\x20client\x20connection',
+    'paddingScheme': 'Padding\x20Scheme\x20(traffic\x20shaping)',
+    'paddingSchemeDesc': 'Optional.\x20One\x20AnyTLS\x20padding\x20rule\x20per\x20line;\x20leave\x20empty\x20to\x20use\x20server\x20default.\x20Example:\x20stop=8\x20/\x200=1200-1400\x20/\x201=900-1200',
+    'snellVersion': 'Snell\x20Version',
+    'snellVersionDesc': 'v4/v5\x20use\x20per-user\x20PSK;\x20v6\x20uses\x20a\x20shared\x20PSK\x20+\x20client\x20ID\x20and\x20traffic\x20shaping.\x20Note:\x20v6\x20is\x20only\x20supported\x20by\x20Surge\x206.7+\x20and\x20recent\x20sing-box;\x20mihomo/Clash\x20cannot\x20use\x20it\x20(the\x20panel\x20automatically\x20hides\x20v6\x20nodes\x20from\x20Clash\x20subscriptions\x20and\x20uses\x20the\x20sing-box\x20core\x20for\x20speed\x20tests).',
+    'snellObfsMode': 'Obfuscation\x20(v4/v5)',
+    'snellObfsModeDesc': 'HTTP/TLS\x20obfuscation\x20for\x20Snell\x20v4/v5.\x20Ignored\x20for\x20v6.',
+    'snellObfsNone': 'None',
+    'snellObfsHost': 'Obfs\x20Host\x20(v4/v5)',
+    'snellObfsHostDesc': 'Camouflage\x20host\x20for\x20HTTP/TLS\x20obfs,\x20e.g.\x20bing.com.',
+    'snellV6Mode': 'Shaping\x20Mode\x20(v6)',
+    'snellV6ModeDesc': 'Snell\x20v6\x20traffic\x20shaping:\x20default\x20(shaped)\x20/\x20unshaped\x20/\x20unsafe-raw.',
+    'snellPsk': 'PSK',
+    'snellPskDesc': 'Pre-shared\x20key,\x20per\x20user\x20for\x20all\x20versions\x20(v4/v5/v6).\x20The\x20server\x20identifies\x20each\x20user\x20by\x20trial-decrypting\x20with\x20their\x20PSK.',
+    'flow': 'Flow\x20Control',
+    'flowDesc': 'XTLS\x20flow\x20control\x20mode',
+    'labelField': 'Tag',
+    'outboundUniqueId': 'Unique\x20identifier\x20for\x20outbound',
+    'mieruUsername': 'Username',
+    'mieruUsernameDesc': 'Mieru\x20username\x20(unique\x20per\x20user);\x20the\x20server\x20distinguishes\x20users\x20by\x20it.',
+    'mieruPassword': 'Password',
+    'mieruPasswordDesc': 'Mieru\x20password;\x20combined\x20with\x20the\x20username\x20to\x20derive\x20the\x20encryption\x20key.',
+    'mieruTransport': 'Transport',
+    'mieruTransportDesc': 'The\x20server\x20listens\x20on\x20both\x20TCP\x20and\x20UDP;\x20this\x20picks\x20which\x20underlay\x20the\x20subscription\x20tells\x20the\x20client\x20to\x20use.\x20TCP\x20is\x20faster/more\x20stable\x20(recommended);\x20UDP\x20is\x20more\x20censorship-resistant.',
+    'salamanderPassword': 'Salamander\x20obfuscation\x20password',
+    'salamanderPasswordDesc': 'Optional.\x20Adds\x20a\x20salamander\x20UDP\x20obfuscation\x20layer\x20to\x20HY2\x20(wire-compatible\x20with\x20official\x20hysteria2);\x20clients\x20get\x20obfs=salamander\x20automatically.\x20Leave\x20empty\x20to\x20disable.\x20Minimum\x204\x20characters.'
+  },
+  qs = {
+    'selectServer': 'Select\x20Server',
+    'inboundProtocol': 'Inbound\x20Protocol',
+    'transportProtocol': 'Transport\x20Protocol',
+    'securityProtocol': 'Security\x20Protocol',
+    'templateVariant': 'Template\x20Variant',
+    'currentTemplate': 'Current\x20Template',
+    'inboundTag': 'Inbound\x20Tag',
+    'inboundTagPlaceholder': 'e.g.:\x20vless-main',
+    'listenAddress': 'Listen\x20Address',
+    'listenPort': 'Listen\x20Port',
+    'saveInbound': 'Save\x20Inbound\x20Config',
+    'livePreview': 'Live\x20Preview',
+    'selectProtocolPrompt': 'Select\x20a\x20protocol\x20and\x20fill\x20in\x20the\x20configuration\x20based\x20on\x20the\x20template',
+    'templateHint': 'Template\x20Hint',
+    'needsNginx': 'Requires\x20additional\x20Nginx\x20reverse\x20proxy\x20configuration.',
+    'needsCaddy': 'Requires\x20additional\x20Caddy\x20configuration\x20for\x20inbound.',
+    'jsonInvalid': 'Invalid\x20JSON\x20format',
+    'settingsDesc': 'Fill\x20or\x20modify\x20core\x20protocol\x20fields\x20based\x20on\x20the\x20example.',
+    'streamSettings': 'Stream\x20Settings',
+    'streamSettingsDesc': 'Adjust\x20transport\x20layer\x20configuration\x20as\x20needed,\x20such\x20as\x20TLS\x20certificates,\x20paths,\x20or\x20transport\x20parameters.',
+    'sniffingSettings': 'Traffic\x20Sniffing',
+    'sniffingSettingsDesc': 'Optional\x20configuration,\x20clear\x20if\x20sniffing\x20is\x20not\x20needed.',
+    'protocolSettings': 'Protocol\x20Settings',
+    'defaultHints': ['Adjust\x20settings\x20and\x20streamSettings\x20content\x20based\x20on\x20example\x20templates.', 'Real-time\x20preview\x20on\x20the\x20right\x20shows\x20the\x20complete\x20JSON\x20configuration.'],
+    'vlessHints': ['clients:\x20Configure\x20user\x20list,\x20id\x20is\x20UUID.', 'decryption\x20is\x20usually\x20kept\x20as\x20none.', 'fallbacks\x20are\x20optional,\x20used\x20for\x20falling\x20back\x20to\x20other\x20services.'],
+    'vmessHints': ['clients:\x20User\x20list,\x20contains\x20id,\x20level,\x20email\x20and\x20other\x20fields.', 'Default\x20template\x20includes\x20default\x20node,\x20adjust\x20as\x20needed.'],
+    'trojanHints': ['clients:\x20Configure\x20password\x20and\x20user\x20info.', 'Optional\x20fallbacks\x20for\x20custom\x20fallback.'],
+    'anytlsHints': ['users:\x20Configure\x20password\x20and\x20email;\x20supports\x20multiple\x20users.', 'TLS\x20only\x20—\x20cannot\x20combine\x20with\x20REALITY;\x20clients\x20require\x20sing-box\x20>=1.10\x20/\x20mihomo\x20/\x20shadowrocket.', 'Optional\x20padding_scheme\x20controls\x20traffic\x20shaping;\x20idle_session_timeout\x20controls\x20idle\x20session\x20reclamation.'],
+    'shadowsocksHints': ['Supports\x20aes-128/256-gcm,\x20chacha20-poly1305,\x20xchacha20-poly1305,\x20and\x20their\x20ietf\x20aliases.', 'Multi-user\x20mode\x20has\x20no\x20parent\x20password;\x20every\x20client\x20has\x20its\x20own\x20method/password.'],
+    'shadowsocks2022Hints': ['key\x20field\x20is\x20Base64\x20encoded\x20key.', 'The\x20client\x20password\x20is\x20ServerPassword:UserPassword.'],
+    'socksHints': ['auth\x20can\x20be\x20noauth\x20or\x20password.', 'accounts\x20field\x20is\x20used\x20when\x20password\x20auth\x20is\x20enabled.'],
+    'httpHints': ['accounts\x20field\x20for\x20configuring\x20accounts\x20(optional).', 'allowTransparent\x20controls\x20whether\x20transparent\x20proxy\x20is\x20allowed.'],
+    'tunnelHints': ['address\x20and\x20port\x20point\x20to\x20target\x20service.', 'network\x20field\x20determines\x20the\x20proxy\x20network\x20type.'],
+    'default': 'Default',
+    'notRequired': 'Not\x20Required',
+    'freedomDomainStrategyDesc': 'AsIs\x20keeps\x20as-is;\x20UseIP/ForceIP\x20families\x20force\x20resolve\x20via\x20the\x20chosen\x20IP\x20family',
+    'freedomRedirect': 'Redirect\x20target',
+    'freedomRedirectDesc': 'Rewrite\x20destination\x20to\x20a\x20specific\x20host:port;\x20leave\x20blank\x20to\x20disable',
+    'freedomProxyProtocol': 'PROXY\x20protocol',
+    'freedomProxyProtocolDesc': 'haproxy\x20PROXY\x20protocol\x20version,\x200\x20=\x20disabled',
+    'fragmentPackets': 'fragment.packets',
+    'fragmentPacketsDesc': 'tlshello\x20or\x20a\x20range\x20like\x201-3',
+    'fragmentLength': 'fragment.length',
+    'fragmentLengthDesc': 'Bytes\x20per\x20fragment\x20(range)',
+    'fragmentInterval': 'fragment.interval',
+    'fragmentIntervalDesc': 'Send\x20interval\x20ms\x20(range)',
+    'noises': 'noises',
+    'noisesDesc': 'Send\x20a\x20noise\x20burst\x20before\x20TLS\x20handshake\x20(anti-probing)',
+    'noiseType': 'type',
+    'noisePacket': 'packet',
+    'noisePacketDesc': 'rand:\x20length\x20range;\x20str:\x20text;\x20base64/hex:\x20encoded\x20bytes',
+    'noiseDelay': 'delay',
+    'noiseDelayDesc': 'Delay\x20ms\x20before\x20sending\x20(range)',
+    'blackholeResponseType': 'response.type',
+    'blackholeResponseTypeDesc': 'http\x20returns\x20403;\x20none\x20drops\x20the\x20connection',
+    'dnsNetwork': 'network',
+    'dnsNetworkDesc': 'passthrough\x20=\x20inherit\x20original\x20query\x20protocol',
+    'dnsAddress': 'address',
+    'dnsAddressDesc': 'Target\x20DNS\x20server\x20address\x20that\x20takes\x20over\x20queries',
+    'dnsPort': 'port',
+    'dnsNonIPQuery': 'nonIPQuery',
+    'dnsNonIPQueryDesc': 'drop\x20=\x20non-IP\x20queries\x20(TXT/MX\x20etc)\x20return\x20NXDOMAIN;\x20skip\x20=\x20pass\x20through',
+    'dnsBlockTypes': 'blockTypes',
+    'dnsBlockTypesDesc': 'DNS\x20type\x20codes\x20to\x20block,\x20CSV\x20(65=HTTPS,\x2028=AAAA)',
+    'loopbackInboundTag': 'inboundTag',
+    'loopbackInboundTagDesc': 'Loop\x20traffic\x20back\x20to\x20target\x20inbound;\x20common\x20after\x20DNS\x20hijack\x20to\x20re-route'
+  },
+  zs = {
+    'title': 'Xray\x20Inbound\x20Management',
+    'remoteServerConfig': 'Remote\x20server\x20{{name}}\x20inbound\x20config\x20({{count}}\x20total)',
+    'selectServerFirst': 'Please\x20select\x20a\x20remote\x20server\x20first',
+    'addInbound': 'Add\x20Inbound',
+    'noInbounds': 'No\x20Inbound\x20Configurations',
+    'noInboundsDesc': 'Click\x20\x22Add\x20Inbound\x22\x20button\x20to\x20add\x20inbound\x20configuration',
+    'noInboundsDescShort': 'Click\x20\x22Add\x20Inbound\x22\x20button\x20to\x20add',
+    'portLabel': 'Port',
+    'userCount': 'Users',
+    'listenAddress': 'Listen\x20Address',
+    'editInbound': 'Edit\x20Inbound',
+    'editInboundUsers': 'Edit\x20inbound\x20user\x20configuration',
+    'viewInbound': 'View\x20Inbound\x20Config',
+    'viewInboundJson': 'Complete\x20inbound\x20configuration\x20JSON',
+    'addInboundWizard': 'Add\x20Inbound\x20-\x20Wizard\x20Mode',
+    'addInboundWizardDesc': 'Based\x20on\x20Xray\x20official\x20example\x20configs,\x20quickly\x20generate\x20inbound\x20configuration\x20via\x20wizard',
+    'addInboundWizardDescShort': 'Quickly\x20generate\x20inbound\x20configuration\x20via\x20wizard',
+    'addInboundDeprecatedTitle': 'This\x20entry\x20will\x20be\x20removed\x20in\x20a\x20future\x20release',
+    'addInboundDeprecatedBody': 'Please\x20use\x20Node\x20Management\x20→\x20Add\x20Node\x20instead.\x20The\x20new\x20entry\x20auto-detects\x20the\x20country\x20emoji\x20flag,\x20protocol\x20multiplier\x20and\x20other\x20metadata\x20from\x20the\x20node\x20name,\x20and\x20creates\x20the\x20corresponding\x20Xray\x20inbound\x20at\x20the\x20same\x20time.',
+    'addInboundDeprecatedGo': 'Go\x20to\x20Node\x20Management',
+    'confirmDeleteTitle': 'Confirm\x20Delete\x20Inbound',
+    'confirmDeleteDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20inbound\x20\x22{{tag}}\x22?\x20This\x20action\x20cannot\x20be\x20undone.',
+    'deleteInboundNodesWarn': 'The\x20following\x20{{count}}\x20associated\x20node(s)\x20will\x20also\x20be\x20deleted:',
+    'inboundUpdated': 'Inbound\x20updated',
+    'inboundDeleted': 'Inbound\x20deleted',
+    'inboundDeleteFailed': 'Failed\x20to\x20delete\x20inbound',
+    'inboundAdded': 'Inbound\x20added',
+    'inboundAddFailed': 'Failed\x20to\x20add\x20inbound',
+    'inboundAddedToRemote': 'Inbound\x20added\x20to\x20remote\x20server',
+    'fillTag': 'Please\x20fill\x20in\x20the\x20tag',
+    'serverLabel': 'Server',
+    'protocolLabel': 'Protocol',
+    'accounts': 'Accounts',
+    'users': 'Users',
+    'addAccount': 'Add\x20Account',
+    'addUser': 'Add\x20User',
+    'configCount': '{{name}}\x20inbound\x20config\x20({{count}}\x20total)'
+  },
+  Ks = {
+    'title': 'Xray\x20Outbound\x20Management',
+    'remoteServerConfig': 'Remote\x20server\x20{{name}}\x20outbound\x20config\x20({{count}}\x20total)',
+    'selectServerFirst': 'Please\x20select\x20a\x20remote\x20server\x20first',
+    'addOutbound': 'Add\x20Outbound',
+    'noOutbounds': 'No\x20Outbound\x20Configurations',
+    'noOutboundsDesc': 'Click\x20button\x20above\x20to\x20add\x20outbound\x20configuration',
+    'noOutboundsDescShort': 'Click\x20\x22Add\x20Outbound\x22\x20button\x20to\x20add',
+    'hideDefault': 'Hide\x20Default',
+    'showDefault': 'Show\x20Default',
+    'hideDefaultOutbounds': 'Hide\x20Default\x20Outbounds',
+    'showDefaultOutbounds': 'Show\x20Default\x20Outbounds',
+    'domainStrategy': 'Domain\x20Strategy',
+    'type': 'Type',
+    'directOutbound': 'Direct\x20Outbound',
+    'blockOutbound': 'Block\x20Outbound',
+    'address': 'Address',
+    'serverAddress': 'Server\x20Address',
+    'serverPort': 'Server\x20Port',
+    'portLabel': 'Port',
+    'userCount': 'Users',
+    'editFreedomOutbound': 'Edit\x20Freedom\x20Outbound',
+    'configDomainStrategy': 'Configure\x20Domain\x20Strategy\x20(domainStrategy)',
+    'viewOutbound': 'View\x20Outbound\x20Config',
+    'viewOutboundJson': 'Complete\x20outbound\x20configuration\x20JSON',
+    'addOutboundWizard': 'Add\x20Outbound\x20-\x20Wizard\x20Mode',
+    'addOutboundWizardDesc': 'Based\x20on\x20Xray\x20official\x20example\x20configs,\x20quickly\x20generate\x20outbound\x20configuration\x20via\x20wizard',
+    'addOutboundWizardDescShort': 'Quickly\x20generate\x20outbound\x20configuration\x20via\x20wizard',
+    'outboundUpdated': 'Outbound\x20updated',
+    'outboundDeleted': 'Outbound\x20deleted',
+    'outboundAdded': 'Outbound\x20added',
+    'outboundAddFailed': 'Failed\x20to\x20add\x20outbound',
+    'outboundAddedToRemote': 'Outbound\x20added\x20to\x20remote\x20server',
+    'reorderSuccess': 'Outbound\x20order\x20updated',
+    'reorderNotSupported': 'Current\x20agent\x20does\x20not\x20support\x20outbound\x20reordering,\x20please\x20upgrade\x20agent',
+    'editJson': 'Edit\x20JSON',
+    'editJsonDesc': 'Edit\x20the\x20entire\x20outbound\x20JSON.\x20If\x20you\x20change\x20tag,\x20review\x20routing\x20rules\x20that\x20reference\x20it.',
+    'editOutbound': 'Edit\x20outbound',
+    'createOutbound': 'Create\x20outbound',
+    'createOutboundDesc': 'tag\x20is\x20required\x20and\x20must\x20be\x20globally\x20unique\x20on\x20this\x20server;\x20fields\x20are\x20optional',
+    'tagRequired': 'tag\x20is\x20required',
+    'tagRenameWarning': 'Tag\x20changed\x20—\x20please\x20review\x20routing\x20rules\x20referencing\x20the\x20old\x20tag',
+    'protocolReadonly': 'Protocol\x20is\x20read-only;\x20delete\x20and\x20recreate\x20to\x20switch\x20protocol',
+    'unsupportedProtocolHint': 'No\x20structured\x20form\x20for\x20this\x20protocol;\x20use\x20Edit\x20JSON\x20instead',
+    'httpMultiWarning': 'Multiple\x20server/user\x20entries\x20detected\x20—\x20only\x20the\x20first\x20is\x20editable;\x20the\x20rest\x20will\x20be\x20preserved',
+    'dnsOutbound': 'DNS\x20hijack',
+    'httpOutbound': 'HTTP\x20proxy\x20outbound',
+    'loopbackOutbound': 'Loop\x20back\x20to\x20inbound',
+    'jsonMustBeObject': 'Must\x20be\x20a\x20JSON\x20object',
+    'jsonTagRequired': 'tag\x20field\x20required',
+    'jsonProtocolRequired': 'protocol\x20field\x20required',
+    'selectToView': 'Select\x20an\x20outbound\x20from\x20the\x20list',
+    'confirmDelete': 'Delete\x20outbound',
+    'fillTag': 'Please\x20fill\x20in\x20the\x20tag',
+    'confirmDeletePrompt': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20outbound\x20\x22{{tag}}\x22?',
+    'domainStrategyNotSpecial': 'No\x20special\x20domain\x20handling',
+    'useIpSeries': 'UseIP\x20Series',
+    'forceIpSeries': 'ForceIP\x20Series',
+    'domainStrategyWhenTarget': 'When\x20target\x20address\x20is\x20a\x20domain,\x20configure\x20Xray\x20behavior\x20for\x20connecting\x20to\x20remote\x20server',
+    'asIsDefault': 'AsIs\x20(Default)',
+    'asIsDesc': 'No\x20special\x20domain\x20handling,\x20uses\x20Go\x27s\x20built-in\x20Dial,\x20priority\x20fixed\x20to\x20RFC6724\x20defaults\x20(usually\x20IPv6\x20first)',
+    'useIpDesc': 'Uses\x20built-in\x20DNS\x20to\x20resolve\x20domains.\x20Falls\x20back\x20to\x20AsIs\x20when\x20resolution\x20doesn\x27t\x20meet\x20requirements.',
+    'forceIpDesc': 'Forces\x20built-in\x20DNS\x20to\x20resolve\x20domains.\x20Connection\x20fails\x20when\x20resolution\x20doesn\x27t\x20meet\x20requirements.',
+    'useIpFallbackDesc': 'Falls\x20back\x20to\x20AsIs\x20on\x20resolution\x20failure',
+    'forceIpFailDesc': 'Connection\x20fails\x20on\x20resolution\x20failure',
+    'currentSelection': 'Current\x20Selection',
+    'createFromNode': 'Create\x20Outbound\x20from\x20Node',
+    'orCreateSpecial': 'Or\x20Create\x20Special\x20Outbound',
+    'warp': {
+      'button': 'Cloudflare\x20WARP',
+      'title': 'Cloudflare\x20WARP\x20Setup',
+      'subtitle': 'Register\x20a\x20Cloudflare\x20WARP\x20account\x20for\x20this\x20server\x20and\x20auto-create\x20warp-v4\x20/\x20warp-v6\x20outbounds.',
+      'checking': 'Checking\x20WARP\x20status…',
+      'installed': 'Installed',
+      'notInstalled': 'Not\x20installed',
+      'install': 'Install\x20WARP',
+      'installing': 'Installing…',
+      'outboundsInjected': 'Outbounds\x20injected',
+      'licenseLabel': 'WARP+\x20License\x20Key\x20(optional)',
+      'licenseHint': 'Paste\x20the\x20License\x20Key\x20from\x20the\x201.1.1.1\x20app\x20to\x20upgrade\x20to\x20WARP+\x20(higher\x20data\x20cap).',
+      'upgradeLicense': 'Upgrade',
+      'licenseUpdated': 'License\x20updated',
+      'refresh': 'Refresh',
+      'synced': 'WARP\x20outbounds\x20re-synced\x20into\x20xray\x20(warp-v4\x20/\x20warp-v6\x20injected)',
+      'remove': 'Uninstall',
+      'removeConfirm': 'Uninstall\x20WARP?\x20This\x20unregisters\x20from\x20Cloudflare\x20and\x20removes\x20warp-v4\x20/\x20warp-v6\x20outbounds.',
+      'removed': 'WARP\x20uninstalled',
+      'close': 'Close'
+    },
+    'importedNodeConfig': 'Imported\x20Node\x20Configuration',
+    'basicConfig': 'Basic\x20Configuration',
+    'directOutboundConfig': 'Direct\x20outbound\x20configuration',
+    'blockOutboundConfig': 'Block\x20outbound\x20configuration',
+    'protocolConfig': 'Protocol\x20Configuration',
+    'jsonPreview': 'JSON\x20Preview',
+    'realtimeOutboundConfig': 'Real-time\x20generated\x20outbound\x20configuration',
+    'submitConfig': 'Submit\x20Config',
+    'serverInfo': 'Server'
+  },
+  $s = {
+    'selectTargetServer': 'Select\x20Target\x20Server',
+    'selectTargetServerDesc': 'Select\x20server\x20to\x20add\x20inbound\x20(single\x20selection)',
+    'selectServer': 'Please\x20select\x20a\x20server',
+    'selectProtocol': 'Select\x20Protocol',
+    'transportProtocol': 'Transport\x20Protocol',
+    'securityProtocol': 'Security\x20Protocol',
+    'configMode': 'Configuration\x20Mode',
+    'simpleMode': 'Simple\x20Mode',
+    'expertMode': 'Expert\x20Mode',
+    'nodeName': 'Node\x20Name',
+    'nodeNameDesc': 'Custom\x20node\x20display\x20name,\x20flag\x20auto-selected\x20based\x20on\x20server\x20IP',
+    'nodeNamePlaceholder': 'Enter\x20node\x20name',
+    'relayLabel': 'Relay\x20(optional)',
+    'relayServerPlaceholder': 'Relay\x20server\x20IP\x20or\x20domain',
+    'relayPortPlaceholder': 'Port\x20(default\x20=\x20node\x20port)',
+    'relayDesc': 'If\x20set,\x20this\x20node\x27s\x20clash\x20server/port\x20use\x20the\x20relay;\x20the\x20original\x20server\x20is\x20recorded\x20and\x20can\x20be\x20edited\x20or\x20canceled\x20from\x20the\x20node\x20list.',
+    'realityDomain': 'REALITY\x20Domain',
+    'realityDomainProbing': 'Probing\x20domain\x20latency...',
+    'realityDomainAutoSelected': 'Lowest\x20latency\x20domain\x20auto-selected',
+    'realityDomainAllFailed': 'All\x20domain\x20probes\x20failed,\x20please\x20enter\x20manually',
+    'realityDomainFetching': 'Fetching\x20available\x20domains...',
+    'realityDomainSelectFirst': 'Please\x20select\x20a\x20server\x20first',
+    'probing': 'Probing...',
+    'selectDomainSorted': 'Select\x20domain\x20(sorted\x20by\x20latency)',
+    'reprobeBtn': 'Re-probe',
+    'targetDomain': 'Target\x20Domain',
+    'reprobeDomain': 'Re-probe\x20Domains',
+    'customDomain': 'Custom\x20Domain',
+    'customDomainPlaceholder': 'Enter\x20domain,\x20e.g.\x20www.lovelive-anime.jp',
+    'probe': 'Probe',
+    'userManagement': 'User\x20Management',
+    'accountConfig': 'Account\x20Configuration',
+    'clientConfig': 'Client\x20Configuration',
+    'frequentUsers': 'Frequent\x20Users',
+    'userAlreadyAdded': 'User\x20already\x20added',
+    'simpleModeTitle': 'Simple\x20Mode',
+    'simpleModeDesc': 'Current\x20protocol\x20requires\x20no\x20user\x20configuration,\x20submit\x20with\x20default\x20parameters',
+    'forwardNodeTitle': 'Forward\x20Existing\x20Node',
+    'forwardNodeCardDesc': 'Pick\x20an\x20existing\x20node\x20to\x20auto-configure\x20a\x20Tunnel\x20forwarding\x20to\x20it',
+    'forwardExistingNode': 'Forward\x20Existing\x20Node',
+    'forwardNodePlaceholder': 'Select\x20a\x20node\x20to\x20forward\x20(optional)',
+    'forwardNodeDesc': 'Auto-fills\x20listen\x20port,\x20forward\x20address/port,\x20network\x20type,\x20etc.\x20You\x20can\x20still\x20edit\x20them.',
+    'forwardPortConflict': 'Listen\x20port\x20{{port}}\x20is\x20already\x20used\x20by\x20another\x20inbound\x20on\x20this\x20server,\x20please\x20change\x20it',
+    'jsonPreview': 'JSON\x20Preview',
+    'realtimeInboundConfig': 'Real-time\x20generated\x20inbound\x20configuration',
+    'commonConfig': 'Common\x20Configuration',
+    'commonConfigDesc': 'Basic\x20configuration\x20applicable\x20to\x20all\x20inbounds',
+    'securityConfig': 'Security\x20Protocol\x20Config',
+    'securitySettings': 'Security\x20Settings',
+    'stealSelf': 'Steal\x20Self',
+    'stealSelfDesc': 'Read\x20all\x20server\x20configured\x20domains\x20and\x20probe\x20latency\x20from\x20current\x20server',
+    'selectLowLatencyDomain': 'Select\x20low-latency\x20domain\x20(sorted\x20by\x20latency)',
+    'protocolSpecificConfig': 'Protocol\x20Specific\x20Config',
+    'protocolSettings': 'Protocol\x20Settings',
+    'transportConfig': 'Transport\x20Protocol\x20Config',
+    'transportSettings': 'Transport\x20Settings',
+    'submitConfig': 'Submit\x20Config',
+    'sslConfig': 'SSL\x20Configuration',
+    'sslConfigDesc': 'The\x20following\x20servers\x27\x20port\x20443\x20is\x20unavailable,\x20SSL\x20certificate\x20and\x20Nginx\x20port\x20443\x20configuration\x20required',
+    'configure': 'Configure',
+    'configuring': 'Configuring',
+    'done': 'Done',
+    'failed': 'Failed',
+    'oneClickSetup': 'One-Click\x20Setup\x20All',
+    'reprobeAfterSetup': 'Re-probe',
+    'selectTemplate': 'Please\x20select\x20a\x20complete\x20template\x20first',
+    'selectAtLeastOneServer': 'Please\x20select\x20at\x20least\x20one\x20server',
+    'validPort': 'Please\x20enter\x20a\x20valid\x20port\x20number\x20(1-65535)',
+    'portOccupied': 'Port\x20{{port}}\x20is\x20already\x20occupied\x20by\x20another\x20inbound,\x20please\x20change\x20the\x20port',
+    'needsCertSwitch': 'This\x20security\x20protocol\x20requires\x20certificate\x20files,\x20please\x20switch\x20to\x20expert\x20mode',
+    'selectAtLeastOneUser': 'Please\x20select\x20at\x20least\x20one\x20user',
+    'autoGenRealityFailed': 'Auto-generating\x20REALITY\x20key\x20pair\x20failed,\x20please\x20click\x20generate\x20button\x20manually',
+    'autoGenRealityKeyFailed': 'Auto-generating\x20REALITY\x20private\x20key\x20failed,\x20please\x20switch\x20to\x20expert\x20mode',
+    'selectServerFirst': 'Please\x20select\x20a\x20server\x20first',
+    'noDomainsFound': 'No\x20available\x20domains\x20found',
+    'allDomainsFailed': 'All\x20{{count}}\x20domain\x20probes\x20failed:\x20{{errors}}',
+    'domainsLoaded': 'Loaded\x20{{total}}\x20domains,\x20{{available}}\x20available',
+    'loadDomainsFailed': 'Failed\x20to\x20load\x20domain\x20latency',
+    'probeRequestFailed': 'Probe\x20request\x20failed',
+    'tunnelAnyDoor': 'Tunnel\x20(Dokodemo)',
+    'securityNone': 'None',
+    'postQuantum': 'Post-Quantum',
+    'encGenFailed': 'Failed\x20to\x20generate\x20VLESS\x20Encryption\x20keys,\x20please\x20retry',
+    'anytlsNeedEmbedded': 'anytls\x20requires\x20embedded\x20xray;\x20please\x20switch\x20this\x20server\x20to\x20embedded\x20mode\x20first',
+    'probeFailed': 'Probe\x20failed',
+    'anytlsServerHasNoDomain': 'AnyTLS+TLS\x20requires\x20a\x20server\x20domain;\x20current\x20server\x20has\x20no\x20domain\x20configured.\x20Set\x20one\x20in\x20Server\x20Management\x20first.',
+    'anytlsNoCertsExpert': 'No\x20valid\x20certificates\x20available.\x20Issue\x20one\x20in\x20Certificate\x20Management,\x20or\x20switch\x20to\x20Expert\x20mode\x20to\x20fill\x20cert\x20paths\x20manually.',
+    'anytlsNoMatchingCert': 'No\x20certificate\x20found\x20matching\x20{{domain}}.\x20Switch\x20to\x20Expert\x20mode\x20to\x20fill\x20paths\x20manually,\x20or\x20issue\x20a\x20matching\x20certificate.',
+    'tlsServerHasNoDomain': '{{protocol}}+TLS\x20requires\x20a\x20server\x20domain;\x20current\x20server\x20has\x20no\x20domain\x20configured.\x20Set\x20one\x20in\x20Server\x20Management\x20first.',
+    'tlsNoCertsExpert': 'No\x20valid\x20certificates\x20available.\x20Issue\x20one\x20in\x20Certificate\x20Management,\x20or\x20switch\x20to\x20Expert\x20mode\x20to\x20fill\x20cert\x20paths\x20manually.',
+    'tlsNoMatchingCert': 'No\x20certificate\x20found\x20matching\x20{{domain}}.\x20Switch\x20to\x20Expert\x20mode\x20to\x20fill\x20paths\x20manually,\x20or\x20issue\x20a\x20matching\x20certificate.',
+    'anytlsRealityTitle': 'AnyTLS\x20+\x20REALITY\x20client\x20compatibility\x20notice',
+    'anytlsRealityDesc': 'Clash\x20does\x20not\x20support\x20AnyTLS-REALITY;\x20Mihomo\x20docs\x20explicitly\x20state\x20it\x20will\x20not\x20be\x20supported.',
+    'viewDocs': 'View\x20Docs',
+    'manageDomains': 'Manage\x20Domains',
+    'manageDomainsDesc': 'Remove\x20domains\x20you\x20don\x27t\x20want.\x20Deleted\x20domains\x20won\x27t\x20reappear\x20on\x20the\x20next\x20probe\x20and\x20can\x20be\x20restored\x20at\x20any\x20time.',
+    'domainDeleted': 'Deleted\x20{{domain}}',
+    'domainDeleteFailed': 'Failed\x20to\x20delete\x20domain',
+    'domainRestored': 'Restored\x20{{domain}}',
+    'domainRestoreFailed': 'Failed\x20to\x20restore\x20domain',
+    'restoreDomain': 'Restore',
+    'blockedDomains': 'Blocked\x20({{count}})',
+    'domainSource': {
+      'master': 'Master\x20domain',
+      'custom': 'Manually\x20added',
+      'server': 'Server\x20domain',
+      'reality_dest': 'Steal\x20target',
+      'tls_sni': 'Certificate\x20domain',
+      'shared_pool': 'Shared\x20pool',
+      'unknown': 'Unknown\x20source'
+    }
+  },
+  Qs = {
+    'title': 'Tunnel\x20Manager',
+    'desc': 'Manage\x20tunnel\x20(dokodemo)\x20inbounds\x20across\x20all\x20servers.\x20Tunnels\x20are\x20not\x20listed\x20as\x20nodes;\x20delete\x20them\x20here.',
+    'loading': 'Loading...',
+    'empty': 'No\x20tunnel\x20inbounds\x20found',
+    'federated': 'Shared',
+    'deleteTitle': 'Delete\x20Tunnel',
+    'deleteConfirm': 'Delete\x20tunnel\x20\x22{{tag}}\x22?\x20This\x20cannot\x20be\x20undone.',
+    'cancel': 'Cancel',
+    'delete': 'Delete',
+    'deleteSuccess': 'Tunnel\x20deleted',
+    'deleteFailed': 'Delete\x20failed',
+    'routedKind': 'Port\x20Forward\x20(Reused)',
+    'totalCount': '{{count}}\x20tunnel(s)',
+    'portForward': 'Port\x20Forward',
+    'backToList': 'Back\x20to\x20list',
+    'pfServer': 'Select\x20entry\x20server',
+    'pfServerPlaceholder': 'Choose\x20an\x20entry\x20server',
+    'pfNoServer': 'No\x20remote\x20servers',
+    'pfMode': 'Mode',
+    'pfReuse': 'Reuse\x20tunnel',
+    'pfNew': 'New\x20tunnel',
+    'pfSelectTunnel': 'Select\x20existing\x20tunnel',
+    'pfNoTunnelHint': 'No\x20reusable\x20tunnel\x20inbound\x20on\x20this\x20server\x20—\x20port\x20forward\x20can\x20only\x20be\x20set\x20up\x20by\x20adding\x20a\x20new\x20tunnel',
+    'pfNewOutboundTag': 'Outbound\x20tag\x20(prefix\x20tunnel-\x20added)',
+    'pfNewInboundTag': 'Inbound\x20tag\x20(prefix\x20tunnel-\x20added)',
+    'pfNewInboundPort': 'Listen\x20port',
+    'pfTagPlaceholder': 'e.g.\x20jp\x20→\x20tunnel-jp',
+    'pfTarget': 'Target\x20server\x20address\x20+\x20port',
+    'pfTargetAddressPlaceholder': 'IP\x20or\x20domain',
+    'applyPortForward': 'Apply',
+    'applyPortForwardLoading': 'Applying...',
+    'portForwardApplied': 'Port\x20forward\x20applied',
+    'createRelayNode': 'Create\x20new\x20node',
+    'createRelayNodeHint': 'Keep\x20the\x20original\x20node\x20and\x20create\x20a\x20new\x20node\x20using\x20this\x20tunnel\x20entry.\x20Turn\x20this\x20off\x20to\x20modify\x20the\x20selected\x20node\x20instead.',
+    'createRelayNodeNeedsTarget': 'Select\x20an\x20existing\x20target\x20node\x20first;\x20credentials\x20cannot\x20be\x20copied\x20from\x20a\x20manually\x20entered\x20address.',
+    'tunnelCreatedNodeFailed': 'The\x20tunnel\x20was\x20created,\x20but\x20the\x20node\x20operation\x20failed:\x20{{error}}',
+    'pfErrServer': 'Server\x20required',
+    'pfErrAddress': 'Target\x20server\x20address\x20required',
+    'pfErrTargetPort': 'Valid\x20target\x20port\x20required\x20(1-65535)',
+    'pfErrTag': 'Tag\x20suffix\x20required',
+    'pfErrSelectTunnel': 'Select\x20a\x20tunnel',
+    'pfErrListenPort': 'Valid\x20listen\x20port\x20required\x20(1-65535)',
+    'pfErrApply': 'Apply\x20failed',
+    'configTabTunnel': 'Tunnel',
+    'configTabRelay': 'Relay',
+    'relayExternalNotice': 'This\x20relay\x20option\x20is\x20for\x20an\x20externally\x20configured\x20relay;\x20MiaomiaowuX\x20only\x20replaces\x20the\x20entry\x20IP.\x20To\x20create\x20a\x20relay\x20with\x20MiaomiaowuX,\x20use\x20Tunnel\x20configuration.',
+    'relayTotalCount': '{{count}}\x20relayed\x20node(s)',
+    'relayEmpty': 'No\x20nodes\x20with\x20relay\x20configured',
+    'relayAddBtn': 'Add\x20relay',
+    'relaySelectNode': 'Select\x20node',
+    'relaySelectNodePlaceholder': 'Choose\x20a\x20node\x20to\x20add\x20relay',
+    'relayNoCandidate': 'No\x20node\x20available\x20to\x20add\x20relay',
+    'relayServerLabel': 'Relay\x20server\x20address\x20+\x20port',
+    'relayCreateNodeHint': 'By\x20default,\x20keep\x20the\x20original\x20node\x20and\x20add\x20a\x20new\x20node\x20using\x20this\x20external\x20relay\x20entry.\x20Clear\x20this\x20option\x20to\x20modify\x20the\x20original\x20node\x20instead.',
+    'relayServerPlaceholder': 'Relay\x20server\x20IP\x20or\x20domain',
+    'relayPortPlaceholder': 'Port\x20(default\x20=\x20node\x20port)',
+    'relayViaLabel': 'Relay',
+    'relayOrigLabel': 'Origin',
+    'relayConfirm': 'Confirm',
+    'relayCancelBtn': 'Cancel',
+    'relayDeleteBtn': 'Cancel\x20relay',
+    'relayDeleteConfirm': 'Cancel\x20relay\x20for\x20node\x20\x22{{name}}\x22?\x20It\x20will\x20be\x20restored\x20to\x20the\x20original\x20server\x20address.',
+    'relayErrNode': 'Please\x20select\x20a\x20node',
+    'relayErrServer': 'Relay\x20server\x20address\x20required',
+    'relayAdded': 'Relay\x20added',
+    'relayRemoved': 'Relay\x20canceled',
+    'relayFailed': 'Relay\x20operation\x20failed',
+    'chainForward': 'Chained\x20Forward',
+    'chainHops': '{{count}}\x20hops',
+    'chainLabel': 'Chain\x20Label\x20(optional)',
+    'chainLabelPlaceholder': 'Leave\x20blank\x20to\x20auto-generate;\x20letters,\x20digits,\x20dashes\x20only',
+    'chainServers': 'Chain\x20Servers\x20(ordered)',
+    'chainServersHint': 'First\x20=\x20entry,\x20last\x20=\x20exit;\x20each\x20hop\x20forwards\x20to\x20the\x20next,\x20the\x20exit\x20forwards\x20to\x20the\x20final\x20target.',
+    'chainEntry': 'Entry',
+    'chainExit': 'Exit',
+    'chainAddServer': 'Add',
+    'chainAddServerPlaceholder': 'Select\x20a\x20server\x20to\x20add\x20to\x20the\x20chain',
+    'chainEntryPort': 'Entry\x20Port\x20(optional)',
+    'chainEntryPortPlaceholder': 'Leave\x20blank\x20for\x20a\x20random\x20port',
+    'chainTarget': 'Final\x20Target',
+    'chainCreate': 'Create\x20Chained\x20Forward',
+    'chainCreating': 'Creating…',
+    'chainCreated': 'Chained\x20forward\x20created',
+    'chainErrServers': 'A\x20chain\x20needs\x20at\x20least\x202\x20servers',
+    'chainErrApply': 'Failed\x20to\x20create\x20chained\x20forward',
+    'chainDeleteTitle': 'Delete\x20Entire\x20Chain',
+    'chainDeleteConfirm': 'Delete\x20chain\x20\x22{{label}}\x22?\x20This\x20removes\x20all\x20{{count}}\x20hops.',
+    'chainDeleteSuccess': 'Chained\x20forward\x20deleted',
+    'chainTargetNodePlaceholder': 'Pick\x20an\x20existing\x20node\x20as\x20exit\x20(optional;\x20fills\x20address\x20below)',
+    'pfTargetNodePlaceholder': 'Pick\x20an\x20existing\x20node\x20as\x20target\x20(optional;\x20fills\x20address\x20below)',
+    'pfTargetTagAll': 'All\x20tags',
+    'chainTargetNoNode': 'No\x20selectable\x20nodes',
+    'pingFailed': 'probe\x20failed',
+    'probeLatency': 'Probe\x20latency\x20(per-hop)',
+    'pingUnreachable': 'unreachable',
+    'pingFromEntry': 'Entry\x20server\x20→\x20target:',
+    'pingFromExit': 'Exit\x20server\x20→\x20target:',
+    'pingTesting': 'testing…',
+    'pingProbed': 'probed:',
+    'pingInconclusive': 'cannot\x20verify',
+    'pingViaICMPHint': 'ICMP\x20only:\x20host\x20reachable,\x20port\x20not\x20verified'
+  },
+  Vs = {
+    'importFromNode': 'Import\x20from\x20Node',
+    'importDesc': 'Select\x20a\x20node\x20to\x20import\x20its\x20configuration\x20to\x20outbound',
+    'searchNode': 'Search\x20Nodes',
+    'searchPlaceholder': 'Search\x20by\x20node\x20name,\x20protocol\x20or\x20tag',
+    'all': 'All',
+    'loading': 'Loading...',
+    'noMatch': 'No\x20matching\x20nodes\x20found',
+    'noNodes': 'No\x20available\x20nodes',
+    'selected': '1\x20node\x20selected',
+    'selectNode': 'Please\x20select\x20a\x20node',
+    'loadFailed': 'Failed\x20to\x20load\x20nodes',
+    'parseFailed': 'Failed\x20to\x20parse\x20node\x20configuration',
+    'confirmImport': 'Confirm\x20Import'
+  },
+  Xs = {
+    'title': 'Select\x20Users',
+    'desc': 'Select\x20users\x20to\x20add\x20from\x20the\x20user\x20list',
+    'searchUser': 'Search\x20Users',
+    'searchPlaceholder': 'Search\x20by\x20email\x20or\x20username',
+    'loading': 'Loading...',
+    'noMatch': 'No\x20matching\x20users\x20found',
+    'noUsers': 'No\x20users',
+    'selectedCount': '{{count}}\x20user(s)\x20selected',
+    'loadFailed': 'Failed\x20to\x20load\x20users',
+    'updateEmailFailed': 'Failed\x20to\x20update\x20email\x20for\x20user\x20{{username}}',
+    'confirmAdd': 'Confirm\x20Add',
+    'selectUser': 'Select\x20Users'
+  },
+  Js = {
+    'add': 'Add',
+    'selectUser': 'Select\x20User',
+    'empty': 'No\x20{{label}}\x20yet,\x20click\x20button\x20above\x20to\x20add'
+  },
+  Ys = {
+    'generatePsk': 'Generate\x20Base64\x20PSK\x20Key',
+    'generatePassword': 'Generate\x20Random\x20Password',
+    'pleaseSelect': 'Please\x20select'
+  },
+  Zs = {
+    'keyGenSuccess': 'Key\x20generated\x20successfully',
+    'keyGenSuccessDescBoth': 'Private\x20key\x20and\x20public\x20key\x20auto-filled',
+    'keyGenSuccessDescKey': 'Private\x20key\x20auto-filled',
+    'keyGenFailed': 'Generation\x20failed',
+    'keyGenFailedDesc': 'Unable\x20to\x20generate\x20key,\x20please\x20ensure\x20Xray\x20is\x20installed\x20on\x20the\x20server'
+  },
+  ei = {
+    'selectCert': 'Select\x20Certificate',
+    'loading': 'Loading...',
+    'selectAppliedCert': 'Select\x20an\x20applied\x20certificate',
+    'noManagedCert': 'Don\x27t\x20use\x20managed\x20certificate',
+    'noCerts': 'No\x20available\x20certificates',
+    'noCertsDesc': 'Please\x20apply\x20for\x20a\x20certificate\x20in\x20Certificate\x20Management\x20first',
+    'daysExpiry': '{{days}}\x20days\x20until\x20expiry',
+    'certPath': 'Certificate\x20Path',
+    'keyPath': 'Key\x20Path',
+    'matchExact': 'Match',
+    'matchWildcard': 'Wildcard'
+  },
+  ti = {
+    'decryptionMode': 'Decryption\x20Mode',
+    'noneMode': 'none\x20(No\x20Encryption)',
+    'encryptedMode': 'Encrypted',
+    'supportPostQuantum': 'VLESS\x20decryption\x20mode,\x20supports\x20post-quantum\x20encryption',
+    'encryptionType': 'Encryption\x20Type',
+    'x25519Desc': 'Authentication:\x20X25519,\x20not\x20Post-Quantum\x20(Traditional)',
+    'mlkemDesc': 'Authentication:\x20ML-KEM-768,\x20Post-Quantum\x20(Post-Quantum\x20Safe)',
+    'appearance': 'Traffic\x20Appearance',
+    'nativeDesc': 'Public\x20key\x20visible\x20in\x20header,\x20identifiable\x20in\x20TLSv1.3\x20AEAD\x20mode',
+    'xorpubDesc': 'XOR\x20obfuscation\x20of\x20public\x20key\x20features',
+    'randomDesc': 'Fully\x20randomized\x20traffic\x20appearance\x20(6/10,000\x20overhead)',
+    'ticketLifetime': 'Ticket\x20Lifetime',
+    'ticketLifetimeDesc': '0-RTT\x20ticket\x20reuse\x20time\x20setting',
+    'padding': 'Padding\x20Configuration',
+    'paddingDesc': 'Anti-fingerprint\x20padding\x20config,\x20format:\x20probability-length-interval\x20sequence',
+    'generateConfig': 'Generate\x20Decryption\x20Config',
+    'generating': 'Generating\x20keys...',
+    'configValue': 'Decryption\x20Config\x20Value',
+    'configValueDescEncrypted': 'Click\x20generate\x20button\x20to\x20auto-generate\x20post-quantum\x20encryption\x20config',
+    'configValueDescNone': 'No\x20encryption\x20configuration',
+    'genSuccess': 'Key\x20generated\x20successfully',
+    'genSuccessDesc': 'Configuration\x20string\x20auto-filled',
+    'genFailed': 'Generation\x20failed',
+    'genFailedDesc': 'Unable\x20to\x20generate\x20key,\x20please\x20ensure\x20Xray\x20is\x20installed\x20on\x20the\x20server'
+  },
+  ni = {
+    'realityGuardRule': 'Reality\x20anti-theft',
+    'routingRules': 'Routing\x20Rules\x20({{count}}\x20total)',
+    'canDragSort': 'Drag\x20to\x20reorder',
+    'quickAdd': 'Quick\x20Add',
+    'customRule': 'Custom\x20Rule',
+    'banBt': 'Ban\x20BT',
+    'banGeoipCn': 'Ban\x20China\x20IP',
+    'fixOpenai': 'OpenAI\x20Direct',
+    'banPrivate': 'Ban\x20Private\x20Network',
+    'rfcEmby': 'RFC\x20EMBY\x20(select\x20outbound)',
+    'tiktokUnlock': 'TikTok\x20Unlock\x20(select\x20outbound)',
+    'warpAntiChina': 'Anti-CN\x20Routing\x20(via\x20WARP)',
+    'homeBroadbandWarp': 'Home\x20Broadband\x20Bypass\x20(via\x20WARP)',
+    'speedtestWarp': 'Speedtest\x20Bypass\x20(via\x20WARP)',
+    'warpNotInstalled': 'Install\x20WARP\x20outbound\x20from\x20\x22Outbound\x20Manager\x22\x20before\x20adding\x20this\x20rule',
+    'warpRequiresEmbedded': 'External\x20Xray\x20doesn\x27t\x20support\x20embedded\x20WARP\x20—\x20switch\x20the\x20server\x20to\x20\x22Embedded\x20Xray\x22\x20mode',
+    'noRules': 'No\x20Routing\x20Rules',
+    'noRulesDesc': 'Click\x20\x22Quick\x20Add\x22\x20or\x20\x22Custom\x20Rule\x22\x20to\x20add',
+    'clickToView': 'Click\x20a\x20rule\x20on\x20the\x20left\x20to\x20view\x20details',
+    'rule': 'Rule\x20{{index}}',
+    'unknown': 'Unknown',
+    'notSet': 'Not\x20Set',
+    'selectOutbound': 'Select\x20Outbound',
+    'selectOutboundPlaceholder': 'Select\x20outbound',
+    'selectInbound': 'Pick\x20an\x20inbound…',
+    'noInbounds': 'No\x20inbounds\x20available',
+    'selectUser': 'Pick\x20a\x20user…',
+    'noUsers': 'No\x20sub-accounts\x20on\x20this\x20server',
+    'customInboundTagPlaceholder': 'Custom\x20tag\x20(comma-separated)',
+    'groupServerOutbounds': 'Server\x20outbounds',
+    'groupBalancers': 'Balancers',
+    'groupNodes': 'Nodes\x20(auto-create\x20outbound)',
+    'nodeOutboundRemoteOnly': 'Node\x20outbound\x20only\x20available\x20for\x20remote-server\x20routing',
+    'nodeNotFound': 'Node\x20not\x20found',
+    'addOutboundFailed': 'Failed\x20to\x20auto-add\x20outbound',
+    'outboundAutoAdded': 'Outbound\x20{{tag}}\x20auto-added',
+    'addCustomRule': 'Add\x20Custom\x20Rule',
+    'customRuleDesc': 'Supports\x20all\x20Xray\x20routing\x20fields,\x20empty\x20fields\x20are\x20not\x20submitted',
+    'outbound': 'Outbound',
+    'mark': 'Mark\x20(optional)',
+    'noLimit': 'No\x20Limit',
+    'addBtn': 'Add',
+    'balancer': 'Balancer',
+    'balancerTitle': 'Load\x20Balancers',
+    'balancerDesc': 'Group\x20multiple\x20outbounds\x20into\x20a\x20balancer;\x20routing\x20rules\x20can\x20target\x20it\x20and\x20traffic\x20is\x20distributed\x20by\x20strategy.',
+    'balancerExisting': 'Existing\x20balancers\x20({{count}})',
+    'balancerNone': 'No\x20balancers\x20yet.',
+    'balancerAdd': 'Add\x20balancer',
+    'balancerStrategy': 'Strategy',
+    'balancerStrategyRandom': 'random\x20·\x20pick\x20randomly',
+    'balancerStrategyRoundRobin': 'roundRobin\x20·\x20in\x20order',
+    'balancerStrategyLeastPing': 'leastPing\x20·\x20lowest\x20latency\x20(observatory)',
+    'balancerStrategyLeastLoad': 'leastLoad\x20·\x20most\x20stable\x20(observatory)',
+    'balancerSelector': 'Outbounds',
+    'balancerSelectorHint': 'Select\x20at\x20least\x201\x20outbound;\x20matched\x20by\x20exact\x20outbound\x20tag.',
+    'balancerNoOutbound': 'No\x20outbounds\x20available,\x20add\x20an\x20outbound\x20first.',
+    'balancerFallback': 'Fallback\x20outbound\x20(optional)',
+    'balancerObservatoryHint': 'leastPing\x20uses\x20the\x20background\x20observatory;\x20on\x20save\x20it\x20probes\x20each\x20outbound\x27s\x20latency\x20per\x20the\x20probe\x20settings\x20above.',
+    'balancerBurstHint': 'leastLoad\x20uses\x20burstObservatory\x20(stealthier).\x20Each\x20interval×sampling\x20is\x20one\x20probe\x20cycle;\x20probes\x20fire\x20at\x20a\x20random\x20time\x20within\x20it.\x20Minimum\x20interval\x20is\x2010s.',
+    'balancerConnectivityPlaceholder': 'Empty\x20=\x20skip\x20local\x20connectivity\x20check',
+    'balancerEdit': 'Edit\x20balancer\x20{{tag}}',
+    'balancerEditHint': 'Click\x20to\x20edit\x20this\x20balancer',
+    'balancerSaved': 'Balancer\x20saved,\x20restarting\x20Xray\x20to\x20apply',
+    'balancerSaveFailed': 'Save\x20failed',
+    'balancerTagRequired': 'Balancer\x20tag\x20is\x20required',
+    'balancerTagDup': 'This\x20tag\x20already\x20exists',
+    'balancerSelectorMin': 'Select\x20at\x20least\x201\x20outbound',
+    'localBalancerNotSupported': 'Load\x20balancer\x20is\x20not\x20supported\x20on\x20local\x20server\x20yet',
+    'confirmDeleteRule': 'Confirm\x20Delete\x20Rule',
+    'confirmDeleteRuleDesc': 'Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this\x20routing\x20rule?',
+    'deleteAutoRestart': 'Xray\x20will\x20be\x20restarted\x20automatically\x20after\x20deletion.',
+    'deleteIrreversible': 'This\x20action\x20cannot\x20be\x20undone.',
+    'confirmDelete': 'Confirm\x20Delete',
+    'ruleAdded': 'Routing\x20rule\x20added\x20and\x20Xray\x20restarted',
+    'ruleAddedLocal': 'Routing\x20rule\x20added',
+    'addFailed': 'Add\x20failed',
+    'ruleDeleted': 'Routing\x20rule\x20deleted\x20and\x20Xray\x20restarted',
+    'ruleDeletedLocal': 'Routing\x20rule\x20deleted',
+    'deleteFailed': 'Delete\x20failed',
+    'editRule': 'Edit\x20Routing\x20Rule',
+    'ruleUpdated': 'Routing\x20rule\x20updated\x20and\x20Xray\x20restarted',
+    'updateFailed': 'Update\x20failed',
+    'ruleNotFound': 'Rule\x20not\x20found',
+    'orderUpdated': 'Rule\x20order\x20updated\x20and\x20Xray\x20restarted',
+    'orderFailed': 'Sort\x20failed',
+    'selectOutboundRequired': 'Please\x20select\x20an\x20outbound',
+    'fillAtLeastOne': 'Please\x20fill\x20in\x20at\x20least\x20one\x20match\x20condition',
+    'localSortNotSupported': 'Local\x20server\x20sorting\x20not\x20supported\x20yet',
+    'sourcePort': 'Source\x20Port',
+    'inboundTag': 'Inbound\x20Tag',
+    'attrMatch': 'Attribute\x20Match'
+  },
+  oi = JSON['parse']('{\x22title\x22:\x22Service\x20Management\x22,\x22desc\x22:\x22Manage\x20remote\x20servers\x22,\x22federated\x22:\x22Shared\x20server\x22,\x22addServer\x22:\x22Add\x20Server\x22,\x22noServers\x22:\x22No\x20Servers\x22,\x22noServersDesc\x22:\x22Click\x20\x5c\x22Add\x20Server\x5c\x22\x20button\x20to\x20add\x20a\x20remote\x20server\x22,\x22addRemoteServer\x22:\x22Add\x20Remote\x20Server\x22,\x22addRemoteServerDesc\x22:\x22Add\x20a\x20remote\x20MMWX\x20server\x20for\x20management.\x20Enter\x20name\x20to\x20generate\x20Token,\x20then\x20execute\x20the\x20install\x20command\x20on\x20the\x20remote\x20server.\x22,\x22serverName\x22:\x22Server\x20Name\x22,\x22serverNamePlaceholder\x22:\x22e.g.:\x20US\x20Node\x201\x22,\x22generateToken\x22:\x22Generate\x20Token\x22,\x22generating\x22:\x22Generating...\x22,\x22serverAddress\x22:\x22Server\x20Address\x22,\x22serverAddressPlaceholder\x22:\x22e.g.:\x20example.com\x22,\x22serverAddressHint\x22:\x22Domain:\x20nodes\x20always\x20use\x20this\x20domain.\x20IP:\x20nodes\x20auto-follow\x20the\x20latest\x20IP\x20reported\x20by\x20the\x20agent\x20(handy\x20when\x20the\x20box\x27s\x20IP\x20changes)\x22,\x22ddns\x22:{\x22label\x22:\x22DDNS\x22,\x22providerSelect\x22:\x22DDNS\x20Provider\x22,\x22providerAuto\x22:\x22Auto\x20(by\x20cert\x20&\x20DNS\x20provider)\x22,\x22providerNotFound\x22:\x22No\x20wildcard\x20certificate\x20matches\x20this\x20domain.\x20Please\x20pick\x20a\x20DNS\x20provider\x20explicitly.\x22,\x22lastSyncedAt\x22:\x22Last\x20synced\x22,\x22lastError\x22:\x22Last\x20error\x22,\x22syncing\x22:\x22Syncing…\x22,\x22retryNow\x22:\x22Retry\x20now\x22,\x22requireDomain\x22:\x22DDNS\x20requires\x20a\x20domain\x20name\x22,\x22disabled\x22:\x22Disabled\x22},\x22agentPort\x22:\x22Agent\x20Port\x22,\x22agentAuthToken\x22:\x22Agent\x20Auth\x20Token\x20(optional)\x22,\x22autoGenerated\x22:\x22Auto-generated\x22,\x22trafficLimit\x22:\x22Traffic\x20Limit\x20(GB)\x22,\x22trafficLimitPlaceholder\x22:\x22Leave\x20empty\x20for\x20unlimited\x22,\x22usedTraffic\x22:\x22Used\x20Traffic\x20(GB)\x22,\x22usedTrafficPlaceholder\x22:\x22For\x20calibration\x22,\x22resetDay\x22:\x22Reset\x20Day\x20(monthly)\x22,\x22resetDayPlaceholder\x22:\x221-31,\x20leave\x20empty\x20for\x20no\x20reset\x22,\x22stealSelf\x22:\x22Steal\x20Self\x22,\x22frontSelect\x22:\x22Front\x20Select\x22,\x22frontSelectNginxUnavailable\x22:\x22nginx\x20(not\x20supported\x20yet)\x22,\x22stealSelfDesc\x22:\x22After\x20enabling\x20\x5c\x22Steal\x20Self\x5c\x22,\x20Xray\x20+\x20Nginx\x20will\x20be\x20auto-installed\x20after\x20mmw-agent\x20installation\x22,\x22masterHttpsStealBlocked\x22:\x22This\x20address\x20is\x20the\x20HTTPS\x20master\x20host.\x20Steal\x20Self\x20is\x20disabled\x20to\x20prevent\x20taking\x20port\x20443\x20and\x20making\x20the\x20panel\x20unreachable.\x22,\x22deployMode\x22:\x22Deploy\x20Mode\x22,\x22tunnelMode\x22:\x22Tunnel\x20Mode\x22,\x22fallbackMode\x22:\x22Fallback\x20Mode\x22,\x22tunnelModeDesc\x22:\x22Xray\x20listens\x20on\x20port\x20443,\x20forwards\x20to\x20Nginx\x20via\x20tunnel\x22,\x22fallbackModeDesc\x22:\x22Xray\x20listens\x20on\x20port\x20443,\x20falls\x20back\x20to\x20Nginx\x22,\x22use443\x22:\x22Deploy\x20on\x20Port\x20443\x22,\x22domain\x22:\x22Domain\x22,\x22domainAutoFilled\x22:\x22Master\x20domain\x20auto-filled\x20(server\x20IP\x20matches\x20master)\x22,\x22domainDesc\x22:\x22After\x20Agent\x20connects,\x20Nginx\x20+\x20Xray\x20port\x20443\x20config\x20and\x20certificates\x20will\x20be\x20auto-deployed.\x20Recommended\x20to\x20add\x20one\x20steal-self\x20server\x20per\x20region.\x22,\x22siteType\x22:\x22Site\x20Type\x22,\x22staticPage\x22:\x22Static\x20Page\x22,\x22reverseProxy\x22:\x22Reverse\x20Proxy\x22,\x22staticPath\x22:\x22Static\x20Page\x20Path\x22,\x22staticPathPlaceholder\x22:\x22e.g.:\x20/var/www/html\x22,\x22reverseProxyAddress\x22:\x22Reverse\x20Proxy\x20Address\x22,\x22reverseProxyPlaceholder\x22:\x22e.g.:\x20http://127.0.0.1:8080\x22,\x22masterToken\x22:\x22Master\x20Token\x22,\x22childToken\x22:\x22Child\x20Token\x22,\x22installCommand\x22:\x22Install\x20Command\x22,\x22copyInstallCommand\x22:\x22Copy\x20install\x20command\x22,\x22copyToken\x22:\x22Copy\x20token\x22,\x22tokenDesc\x22:\x22Master\x20Token\x20for\x20Agent\x20to\x20authenticate\x20with\x20master\x20server;\x20Child\x20Token\x20for\x20master\x20to\x20pull\x20data\x20from\x20Agent.\x20Master\x20will\x20auto-switch\x20to\x20pull\x20mode\x20when\x20Agent\x20cannot\x20report\x20actively.\x22,\x22complete\x22:\x22Done\x22,\x22online\x22:\x22Online\x22,\x22pending\x22:\x22Pending\x22,\x22offline\x22:\x22Offline\x22,\x22encrypted\x22:\x22Encrypted\x22,\x22unencrypted\x22:\x22Unencrypted\x22,\x22degraded\x22:\x22Degraded\x22,\x22realtimeSpeed\x22:\x22Real-time\x20Speed\x22,\x22upload\x22:\x22Upload\x22,\x22download\x22:\x22Download\x22,\x22waitingData\x22:\x22Waiting\x20for\x20data...\x22,\x22trafficStats\x22:\x22Traffic\x20Stats\x22,\x22trafficStatsServers\x22:\x22Traffic\x20Summary\x20Servers\x22,\x22trafficStatsServersDesc\x22:\x22Select\x20the\x20servers\x20included\x20in\x20admin\x20traffic\x20statistics.\x20Total,\x20used,\x20remaining\x20traffic,\x20real-time\x20speed,\x20and\x20the\x20daily\x20traffic\x20trend\x20include\x20only\x20the\x20selected\x20servers;\x20server\x20details\x20are\x20unchanged.\x22,\x22trafficStatsServersSelected\x22:\x22{{selected}}\x20of\x20{{total}}\x20servers\x20selected\x22,\x22trafficStatsServersSaved\x22:\x22Traffic\x20summary\x20servers\x20saved\x22,\x22trafficStatsServersSaveFailed\x22:\x22Failed\x20to\x20save\x20traffic\x20summary\x20servers\x22,\x22usedTotal\x22:\x22Used/Total\x22,\x22resetLabel\x22:\x22Reset\x22,\x22monthlyReset\x22:\x22Monthly\x20{{day}}\x22,\x22monthlyResetFull\x22:\x22Reset\x20on\x20{{day}}th\x20monthly\x22,\x22used\x22:\x22Used\x22,\x22unlimited\x22:\x22Unlimited\x22,\x22noLimit\x22:\x22No\x20Limit\x22,\x22lastHeartbeat\x22:\x22Last\x20Heartbeat\x22,\x22install\x22:\x22Install\x22,\x22installService\x22:\x22Install\x20Service\x22,\x22serviceManagement\x22:\x22Service\x20Management\x22,\x22iWantStealSelf\x22:\x22Steal\x20Self\x22,\x22xrayOnly\x22:\x22Xray\x20Only\x22,\x22willInstallBoth\x22:\x22Will\x20install\x20Xray\x20+\x20Nginx\x22,\x22willInstallNginx\x22:\x22Will\x20install\x20Nginx\x22,\x22willInstallXray\x22:\x22Will\x20install\x20Xray\x22,\x22bothInstalled\x22:\x22Both\x20installed\x22,\x22xrayInstalled\x22:\x22Xray\x20installed\x22,\x22uninstall\x22:\x22Uninstall\x22,\x22xrayConfig\x22:\x22Xray\x20Config\x22,\x22agentManagement\x22:\x22Agent\x20Management\x22,\x22syncNodes\x22:\x22Sync\x20Nodes\x22,\x22syncNodeAddress\x22:\x22Sync\x20Node\x20Address\x22,\x22nodeAddressSynced\x22:\x22Node\x20addresses\x20synced\x22,\x22nodeAddressSyncFailed\x22:\x22Failed\x20to\x20sync\x20node\x20addresses\x22,\x22deployConfig\x22:\x22Deploy\x20Config\x22,\x22deploying\x22:\x22Deploying...\x22,\x22addWebsite\x22:\x22Website\x20Management\x22,\x22upgradeAgent\x22:\x22Upgrade\x20Agent\x22,\x22uninstallAgent\x22:\x22Uninstall\x20Agent\x22,\x22nameCol\x22:\x22Name\x22,\x22connectionMode\x22:\x22Connection\x22,\x22ipAddress\x22:\x22IP\x20Address\x22,\x22speedCol\x22:\x22Speed\x22,\x22trafficCol\x22:\x22Traffic\x22,\x22serviceCol\x22:\x22Services\x22,\x22actionsCol\x22:\x22Actions\x22,\x22notConnected\x22:\x22Not\x20Connected\x22,\x22waitConnection\x22:\x22Waiting...\x22,\x22heartbeatLabel\x22:\x22Heartbeat\x22,\x22viewXrayConfig\x22:\x22View\x20Xray\x20Config\x22,\x22scan\x22:\x22Scan\x20Remote\x20Services\x22,\x22editServer\x22:\x22Edit\x20Server\x22,\x22deleteServer\x22:\x22Delete\x20Remote\x20Server\x22,\x22xrayManagement\x22:\x22Xray\x20Management\x22,\x22xrayManagementDesc\x22:\x22Manage\x20remote\x20server\x20Xray\x20service\x20control,\x20configuration,\x20inbounds,\x20outbounds\x20and\x20routing\x22,\x22terminalTitle\x22:\x22Terminal\x22,\x22executing\x22:\x22Executing,\x20please\x20wait...\x22,\x22executionDone\x22:\x22Execution\x20complete\x22,\x22executingBtn\x22:\x22Executing...\x22,\x22confirmDeleteServer\x22:\x22Confirm\x20Delete\x22,\x22confirmDeleteServerDesc\x22:\x22Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20remote\x20server\x20\x5c\x22{{name}}\x5c\x22?\x20This\x20action\x20cannot\x20be\x20undone.\x22,\x22uninstallAgentBeforeDelete\x22:\x22Uninstall\x20Agent\x20before\x20deletion\x22,\x22uninstallAgentBeforeDeleteHint\x22:\x22Enabled\x20by\x20default.\x20The\x20remote\x20Agent\x20is\x20asked\x20to\x20uninstall\x20first,\x20and\x20the\x20server\x20is\x20deleted\x20only\x20after\x20acceptance.\x20If\x20the\x20server\x20is\x20offline,\x20clear\x20this\x20option\x20and\x20retry.\x22,\x22uninstallAgentFederatedHint\x22:\x22A\x20shared\x20server\x20cannot\x20uninstall\x20its\x20owner\x27s\x20Agent;\x20only\x20the\x20local\x20server\x20record\x20will\x20be\x20deleted.\x22,\x22deleting\x22:\x22Deleting...\x22,\x22serverDeleted\x22:\x22Server\x20deleted\x22,\x22serverCreated\x22:\x22Server\x20created\x20successfully\x22,\x22localServerDetected\x22:\x22Local\x20server\x20detected,\x20Nginx\x20reverse\x20proxy\x20auto-configured\x22,\x22createFailed\x22:\x22Creation\x20failed\x22,\x22deleteFailed\x22:\x22Delete\x20failed\x22,\x22serverUpdated\x22:\x22Server\x20information\x20updated\x22,\x22connectionModeUpdated\x22:\x22Connection\x20mode\x20updated\x22,\x22xrayConfigSaved\x22:\x22Xray\x20config\x20saved\x20and\x20restarted\x22,\x22saveFailed\x22:\x22Save\x20failed\x22,\x22remoteXrayConfigUpdated\x22:\x22Remote\x20server\x20Xray\x20config\x20updated,\x20service\x20restarted\x22,\x22configUpdateFailed\x22:\x22Config\x20update\x20failed\x22,\x22serverNotFound\x22:\x22Server\x20not\x20found\x22,\x22enterServerName\x22:\x22Please\x20enter\x20server\x20name\x22,\x22use443NeedsDomain\x22:\x22Domain\x20is\x20required\x20when\x20deploying\x20on\x20port\x20443\x22,\x22copied\x22:\x22{{label}}\x20copied\x20to\x20clipboard\x22,\x22copyFailed\x22:\x22Copy\x20failed\x22,\x22copyBlocked\x22:\x22Copy\x20failed:\x20browser\x20security\x20restrictions\x20block\x20clipboard\x20access\x20over\x20HTTP.\x20Select\x20and\x20copy\x20the\x20text\x20manually.\x22,\x22installCommandLoading\x22:\x22Generating\x20installation\x20command…\x22,\x22installCommandLoadFailed\x22:\x22Failed\x20to\x20load\x20the\x20installation\x20command.\x20Close\x20and\x20try\x20again.\x22,\x22configLoadFailed\x22:\x22Failed\x20to\x20load\x20config\x22,\x22scanComplete\x22:\x22Scan\x20complete\x22,\x22scanSynced\x22:\x22Scan\x20complete,\x20synced\x20{{count}}\x20inbound(s):\x20{{tags}}\x22,\x22scanSyncedWithClaim\x22:\x22Scan\x20complete,\x20auto-linked\x20{{claimed}}\x20existing\x20node(s),\x20created\x20{{created}}\x20new\x20node(s)\x22,\x22scanSkipped\x22:\x22Scan\x20complete,\x20skipped\x20{{count}}\x20existing\x20inbound(s)\x22,\x22noSyncableInbound\x22:\x22No\x20syncable\x20inbound\x20configurations\x20found\x22,\x22modeSwitch\x22:\x22Mode\x20switch\x20successful\x22,\x22configDeployed\x22:\x22Config\x20deployed\x20successfully\x22,\x22websiteAdded\x22:\x22Website\x20added\x20successfully\x22,\x22websiteAddFailed\x22:\x22Add\x20failed\x22,\x22validateFailed\x22:\x22Validation\x20request\x20failed\x22,\x22fillComplete\x22:\x22Please\x20fill\x20in\x20all\x20required\x20fields\x22,\x22serviceStarted\x22:\x22{{service}}\x20{{action}}\x20successful\x22,\x22actionStart\x22:\x22start\x22,\x22actionStop\x22:\x22stop\x22,\x22actionRestart\x22:\x22restart\x22,\x22nodeSyncSuccess\x22:\x22Node\x20sync\x20successful\x22,\x22nodeSyncNoNew\x22:\x22No\x20new\x20nodes\x20to\x20sync\x22,\x22syncedTags\x22:\x22Synced:\x20{{tags}}\x22,\x22editRemoteServer\x22:\x22Edit\x20Remote\x20Server\x22,\x22editRemoteServerDesc\x22:\x22Modify\x20remote\x20server\x20name,\x20domain,\x20traffic\x20limit\x20and\x20other\x20information\x22,\x22stealMode\x22:\x22Steal\x20Self\x20Mode\x22,\x22restartBtn\x22:\x22Restart\x22,\x22stopBtn\x22:\x22Stop\x22,\x22startBtn\x22:\x22Start\x22,\x22tryStartXray\x22:\x22Try\x20to\x20Start\x20Xray\x22,\x22serviceControlFailed\x22:\x22Operation\x20failed\x22,\x22installXray\x22:\x22Install\x20Remote\x20Xray\x22,\x22removeXray\x22:\x22Remove\x20Remote\x20Xray\x22,\x22installNginx\x22:\x22Install\x20Remote\x20Nginx\x22,\x22proxyMaster\x22:\x22Reverse-proxy\x20Master\x22,\x22proxyMasterOk\x22:\x22Master\x20reverse-proxy\x20deployed\x20on\x20this\x20agent;\x20the\x20master\x20domain\x20is\x20now\x20reachable\x20over\x20HTTPS\x20via\x20this\x20agent\x27s\x20nginx\x22,\x22proxyMasterFailed\x22:\x22Failed\x20to\x20deploy\x20master\x20reverse-proxy\x22,\x22removeNginx\x22:\x22Remove\x20Remote\x20Nginx\x22,\x22upgradeAgentAction\x22:\x22Upgrade\x20Remote\x20Agent\x22,\x22uninstallAgentAction\x22:\x22Uninstall\x20Remote\x20Agent\x22,\x22upgradeAllAgents\x22:\x22Upgrade\x20All\x20Agents\x22,\x22upgradeAllAgentsTip\x22:\x22Sequentially\x20upgrade\x20every\x20connected\x20server\x27s\x20agent\x20to\x20the\x20latest\x20version\x22,\x22upgradeAllAgentsProgressDesc\x22:\x22Upgrading\x20one\x20by\x20one.\x20Click\x20a\x20row\x20to\x20expand\x20its\x20log.\x20Do\x20not\x20close\x20while\x20running.\x22,\x22upgradeAllRunning\x22:\x22Upgrading…\x22,\x22upgradeAllDone\x22:\x22All\x20{{count}}\x20agents\x20upgraded\x22,\x22upgradeAllPartial\x22:\x22{{failed}}/{{total}}\x20failed,\x20see\x20progress\x22,\x22upgradeStatusPending\x22:\x22Pending\x22,\x22upgradeCanaryHealthy\x22:\x22Canary\x20verified;\x20rolling\x20upgrade\x20started\x22,\x22upgradeCanaryFailed\x22:\x22Canary\x20upgrade\x20or\x20health\x20check\x20failed;\x20remaining\x20upgrades\x20stopped\x22,\x22upgradeCanaryFailedDecision\x22:\x22Canary\x20upgrade\x20or\x20health\x20check\x20failed.\x20Retry,\x20skip,\x20or\x20stop\x20the\x20rollout.\x22,\x22upgradeResultMissing\x22:\x22The\x20upgrade\x20stream\x20ended\x20before\x20the\x20master\x20returned\x20its\x20final\x20verification\x20result\x22,\x22upgradeRetryServer\x22:\x22Retry\x20server\x22,\x22upgradeSkipServer\x22:\x22Skip\x20server\x22,\x22upgradeStopRemaining\x22:\x22Stop\x20remaining\x22,\x22upgradeRetrying\x22:\x22Retry\x20requested\x22,\x22upgradeStatusRunning\x22:\x22Upgrading\x22,\x22upgradeStatusSuccess\x22:\x22Success\x22,\x22upgradeStatusError\x22:\x22Failed\x22,\x22timeOffsetWarning\x22:\x22Server\x20time\x20offset\x20detected,\x20may\x20cause\x20issues\x20with\x20time-sensitive\x20protocols\x20like\x20vmess\x20and\x20ss\x22,\x22syncNodesDialog\x22:\x22Sync\x20Nodes\x22,\x22serverHost\x22:\x22Server\x20Host\x22,\x22forceOverride\x22:\x22Force\x20override\x20existing\x20nodes\x22,\x22addWebsiteDialog\x22:\x22Website\x20Management\x22,\x22websiteDomain\x22:\x22Domain\x22,\x22validate\x22:\x22Validate\x22,\x22remoteServerDetail\x22:\x22Remote\x20Server\x20Detail\x22,\x22autoMode\x22:\x22Auto\x22,\x22websocketMode\x22:\x22WebSocket\x22,\x22httpMode\x22:\x22HTTP\x22,\x22pullMode\x22:\x22Pull\x22,\x22xrayRawConfig\x22:\x22Xray\x20Raw\x20Config\x22,\x22loadingConfig\x22:\x22Loading\x20config...\x22,\x22requestFailed\x22:\x22Request\x20failed:\x20{{error}}\x22,\x22unknownError\x22:\x22Unknown\x20error\x22,\x22failedSuffix\x22:\x22{{title}}\x20failed\x22,\x22moreErrors\x22:\x22{{count}}\x20more\x20error(s)...\x22,\x22serverOffline\x22:\x22Server\x20Offline\x22,\x22serverInstallInfo\x22:\x22Remote\x20Server\x20Install\x20Info\x22,\x22serverOfflineDesc\x22:\x22Server\x20is\x20offline,\x20please\x20check\x20service\x20status\x20or\x20reinstall.\x22,\x22serverOfflineDescDetailed\x22:\x22Execute\x20the\x20following\x20command\x20on\x20the\x20remote\x20server\x20to\x20complete\x20installation,\x20or\x20manually\x20configure\x20the\x20Token.\x22,\x22lastHeartbeatTime\x22:\x22Last\x20heartbeat:\x20{{time}}\x22,\x22neverConnected\x22:\x22Never\x20connected\x22,\x22startService\x22:\x22Start\x20Service\x22,\x22copyStartCommand\x22:\x22Copy\x20start\x20command\x22,\x22reinstallCommand\x22:\x22Reinstall\x20Command\x22,\x22oneClickInstall\x22:\x22One-click\x20Install\x20Command\x22,\x22offlineReinstallHint\x22:\x22If\x20the\x20service\x20cannot\x20start,\x20try\x20reinstalling.\x22,\x22onlineInstallHint\x22:\x22Execute\x20this\x20command\x20on\x20the\x20remote\x20server\x20to\x20auto-download\x20and\x20configure\x20the\x20MMWX\x20client.\x22,\x22manualConfig\x22:\x22Manual\x20Config\x22,\x22copyConfig\x22:\x22Copy\x20Config\x22,\x22serviceControl\x22:\x22Service\x20Control:\x22,\x22running\x22:\x22Running\x22,\x22stopped\x22:\x22Stopped\x22,\x22notInstalled\x22:\x22Not\x20Installed\x22,\x22metricsStats\x22:\x22Metrics\x22,\x22trafficStatsConfig\x22:\x22Traffic\x20Stats\x22,\x22configManagement\x22:\x22Config\x22,\x22inboundManagement\x22:\x22Inbounds\x22,\x22outboundManagement\x22:\x22Outbounds\x22,\x22routingManagement\x22:\x22Routing\x22,\x22xrayConfigPlaceholder\x22:\x22Xray\x20config\x20file\x20content...\x22,\x22jsonFormatError\x22:\x22Invalid\x20JSON\x20format,\x20please\x20check\x20the\x20config\x22,\x22saving\x22:\x22Saving...\x22,\x22saveConfig\x22:\x22Save\x20Config\x22,\x22remoteServerManagement\x22:\x22Remote\x20Server\x20Management\x22,\x22manageRemoteService\x22:\x22{{name}}\x20-\x20Manage\x20remote\x20services\x22,\x22serverInfo\x22:\x22Server\x20Info\x22,\x22unknown\x22:\x22Unknown\x22,\x22refreshStatus\x22:\x22Refresh\x20Status\x22,\x22domainOptional\x22:\x22Server\x20Domain\x20(optional)\x22,\x22domainHint\x22:\x22If\x20domain\x20is\x20provided,\x20node\x20server\x20address\x20will\x20use\x20domain\x20instead\x20of\x20IP\x22,\x22stealModeDefault\x22:\x22Default\x22,\x22stealModeDefaultDesc\x22:\x22No\x20steal-self,\x20Xray\x20listens\x20directly\x20on\x20protocol\x20port\x22,\x22stealModeSwitchWarning\x22:\x22Switching\x20mode\x20will\x20redeploy\x20config,\x20existing\x20inbounds\x20will\x20be\x20preserved\x22,\x22fallbackLabel\x22:\x22Fallback\x22,\x22tunnelLabel\x22:\x22Tunnel\x22,\x22syncToNodes\x22:\x22Sync\x20Inbounds\x20to\x20Nodes\x22,\x22syncToNodesDesc\x22:\x22Sync\x20remote\x20server\x20inbound\x20configurations\x20to\x20node\x20management\x20for\x20subscription\x20link\x20generation.\x22,\x22syncServerHostPlaceholder\x22:\x22Enter\x20the\x20remote\x20server\x27s\x20public\x20address\x20(domain\x20or\x20IP)\x22,\x22syncServerHostHint\x22:\x22Used\x20for\x20node\x20config\x20generation,\x20enter\x20an\x20address\x20accessible\x20by\x20clients.\x22,\x22forceOverrideLabel\x22:\x22Force\x20Override\x22,\x22forceOverrideDesc\x22:\x22Override\x20existing\x20nodes\x20with\x20same\x20name\x22,\x22syncing\x22:\x22Syncing...\x22,\x22startSync\x22:\x22Start\x20Sync\x22,\x22addWebsiteDesc\x22:\x22Add\x20a\x20new\x20website\x20domain\x20for\x20the\x20remote\x20server\x22,\x22domainPlaceholder\x22:\x22e.g.:\x20blog.example.com\x22,\x22validating\x22:\x22Validating\x22,\x22adding\x22:\x22Adding...\x22,\x22pendingShort\x22:\x22Pending\x22,\x22deleteServerTokenWarning\x22:\x22Are\x20you\x20sure\x20you\x20want\x20to\x20delete\x20this\x20remote\x20server?\x20Its\x20Token\x20will\x20be\x20revoked\x20and\x20the\x20remote\x20server\x20will\x20no\x20longer\x20be\x20able\x20to\x20communicate\x20with\x20this\x20server.\x22,\x22loadingStatus\x22:\x22Loading...\x22,\x22xrayMode\x22:\x22Xray\x20Mode\x22,\x22xrayModeExternal\x22:\x22External\x20Xray\x22,\x22xrayModeEmbedded\x22:\x22Embedded\x20Xray\x22,\x22xrayModeExternalDesc\x22:\x22Uses\x20a\x20standalone\x20Xray\x20process,\x20Agent\x20communicates\x20via\x20gRPC\x22,\x22xrayModeEmbeddedDesc\x22:\x22Agent\x20embeds\x20Xray-core,\x20supports\x20auto\x20speed\x20limiting\x20and\x20device\x20limiting;\x20can\x20create\x20Snell\x20&\x20AnyTLS\x20nodes\x22,\x22xrayModeEmbeddedProHint\x22:\x22Pro\x20supports\x20speed\x20limiting\x20and\x20connection\x20limiting\x22,\x22xrayModeEmbeddedWarpHint\x22:\x22Cloudflare\x20WARP\x20outbound\x20supported\x20(not\x20available\x20in\x20external\x20Xray)\x22,\x22ipv6DomainPlaceholder\x22:\x22IPv6\x20domain\x20(AAAA;\x20blank\x20=\x20same\x20as\x20above)\x22,\x22domainV6\x22:\x22IPv6\x20Domain\x20(optional)\x22,\x22domainV6Hint\x22:\x22Used\x20by\x20IPv6\x20nodes\x20by\x20default;\x20leave\x20empty\x20to\x20use\x20the\x20IPv6\x20address\x22,\x22upgradeConfirmTitle\x22:\x22Upgrade\x20the\x20Agent\x20on\x20\x5c\x22{{name}}\x5c\x22?\x22,\x22upgradeConfirmCurrent\x22:\x22Current\x20version:\x20{{version}}\x22,\x22upgradeConfirmLatest\x22:\x22Latest\x20version:\x20{{version}}\x22,\x22upgradeConfirmUnknown\x22:\x22unknown\x20(not\x20reported\x20by\x20older\x20Agent)\x22,\x22upgradeConfirmAlreadyLatest\x22:\x22Already\x20up\x20to\x20date;\x20continuing\x20will\x20re-download\x20and\x20replace\x20the\x20same\x20binary.\x22,\x22upgradeConfirmRestartWarn\x22:\x22The\x20Agent\x20will\x20restart\x20during\x20the\x20upgrade,\x20causing\x20a\x20brief\x20service\x20interruption.\x22,\x22upgradeAllConfirmTitle\x22:\x22Upgrade\x20the\x20Agent\x20on\x20all\x20{{count}}\x20server(s)?\x22,\x22upgradeAllConfirmOutdated\x22:\x22{{outdated}}\x20of\x20{{total}}\x20have\x20a\x20newer\x20version\x20available.\x22,\x22manualCopyHint\x22:\x22Your\x20browser\x20blocks\x20automatic\x20copying\x20on\x20non-HTTPS\x20pages.\x20Please\x20select\x20and\x20copy\x20the\x20text\x20below\x20manually.\x22,\x22confirmDeleteSharedServer\x22:\x22Delete\x20Shared\x20Server\x22,\x22deleteSharedServerWarning\x22:\x22Remove\x20this\x20shared\x20server?\x20This\x20only\x20deletes\x20the\x20local\x20shared\x20record\x20and\x20selected\x20nodes;\x20the\x20owner\x20Agent\x20is\x20not\x20uninstalled\x20or\x20affected.\x22,\x22trafficStatsRule\x22:\x22Traffic\x20Stats\x20Rule\x22,\x22statsBoth\x22:\x22Upload\x20+\x20Download\x22,\x22statsUpload\x22:\x22Upload\x20Only\x22,\x22statsDownload\x22:\x22Download\x20Only\x22,\x22statsMax\x22:\x22Max\x20(Up/Down)\x22,\x22trafficStatsDesc\x22:\x22Controls\x20the\x20traffic\x20accounting\x20direction\x20for\x20this\x20server\x27s\x20nodes.\x20User\x20traffic\x20is\x20counted\x20separately\x20per\x20the\x20plan\x27s\x20one-way/two-way\x20rule\x20and\x20is\x20unaffected\x20by\x20this\x20setting.\x22,\x22trafficSourceLabel\x22:\x22Server\x20Traffic\x20Source\x22,\x22sourceXray\x22:\x22Xray\x20Protocol\x20Traffic\x20(default)\x22,\x22sourceSystem\x22:\x22System\x20NIC\x20Traffic\x22,\x22enableIPv6Label\x22:\x22Enable\x20IPv6\x22,\x22ipv6OffDescCreate\x22:\x22When\x20off:\x20this\x20server\x27s\x20IPv6\x20is\x20hidden\x20in\x20service\x20management\x20and\x20unavailable\x20when\x20adding\x20nodes.\x22,\x22ipv6OffDescEdit\x22:\x22When\x20off:\x20this\x20server\x27s\x20IPv6\x20address\x20is\x20no\x20longer\x20shown\x20in\x20service\x20management\x20and\x20cannot\x20be\x20selected\x20when\x20adding\x20nodes.\x20Useful\x20when\x20the\x20server\x20has\x20disabled\x20IPv6\x20but\x20a\x20stale\x20v6\x20address\x20lingers\x20on\x20the\x20master.\x22,\x22listenPortChangeTitle\x22:\x22Change\x20agent\x20listen\x20port\x22,\x22upgradeAllUpToDate\x22:\x22All\x20online\x20agents\x20are\x20already\x20up\x20to\x20date\x22,\x22dockerEnvLabel\x22:\x22Docker\x20environment\x20variables\x22,\x22copyDockerEnv\x22:\x22Copy\x20variables\x22,\x22dockerEnvHint\x22:\x22When\x20deploying\x20the\x20agent\x20with\x20Docker,\x20put\x20these\x20lines\x20into\x20the\x20compose\x20environment.\x20MMWX_MASTER_PUBLIC_KEY\x20is\x20required\x20—\x20without\x20it\x20the\x20agent\x20never\x20starts\x20a\x20key\x20exchange,\x20and\x20a\x20master\x20with\x20\x5c\x22force\x20encryption\x5c\x22\x20on\x20will\x20reject\x20it\x20with\x20Encryption\x20required.\x22}'),
+  ai = {
+    'defaultLabel': 'Default'
+  },
+  Of = {
+    'fields': Gs,
+    'composer': qs,
+    'inbounds': zs,
+    'outbounds': Ks,
+    'wizard': $s,
+    'tunnelManager': Qs,
+    'nodeSelect': Vs,
+    'userSelect': Xs,
+    'arrayField': Js,
+    'formField': Ys,
+    'keyGenerator': Zs,
+    'certSelect': ei,
+    'vlessDecryption': ti,
+    'routing': ni,
+    'servers': oi,
+    'presets': ai
+  },
+  Ff = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'arrayField': Js,
+    'certSelect': ei,
+    'composer': qs,
+    'default': Of,
+    'fields': Gs,
+    'formField': Ys,
+    'inbounds': zs,
+    'keyGenerator': Zs,
+    'nodeSelect': Vs,
+    'outbounds': Ks,
+    'presets': ai,
+    'routing': ni,
+    'servers': oi,
+    'tunnelManager': Qs,
+    'userSelect': Xs,
+    'vlessDecryption': ti,
+    'wizard': $s
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  ri = {
+    'loading': '加载中...',
+    'checkingStatus': '正在检查系统状态',
+    'success': '登录成功',
+    'failed': '登录失败，请检查账号或密码',
+    'title': '登录妙妙屋',
+    'description': '请输入管理员账号以访问控制台。',
+    'username': '用户名',
+    'usernamePlaceholder': '请输入用户名',
+    'password': '密码',
+    'passwordPlaceholder': '请输入密码',
+    'rememberMe': '记住我',
+    'loggingIn': '登录中...',
+    'loginButton': '登录',
+    'captchaRequired': '请先完成人机验证',
+    'back': '返回'
+  },
+  si = {
+    'title': '两步验证',
+    'codeDesc': '请输入验证器应用中的\x206\x20位验证码',
+    'recoveryDesc': '请输入恢复码',
+    'recoveryPlaceholder': '输入\x208\x20位恢复码',
+    'invalidCode': '验证码无效',
+    'recoverySuccess': '恢复码验证成功，两步验证已重设',
+    'invalidRecovery': '恢复码无效',
+    'verify': '验证',
+    'useRecoveryCode': '使用恢复码',
+    'useVerificationCode': '使用验证码',
+    'useRecoveryLogin': '使用恢复码登录',
+    'verifying': '验证中...',
+    'back': '返回'
+  },
+  ii = {
+    'welcome': '欢迎使用妙妙屋',
+    'firstAdminDesc': '这是首次启动，请创建管理员账号。首次注册的用户将自动成为管理员。',
+    'username': '用户名',
+    'usernamePlaceholder': '请输入用户名',
+    'password': '密码',
+    'passwordPlaceholder': '请输入密码',
+    'nickname': '昵称',
+    'nicknamePlaceholder': '留空则使用用户名',
+    'email': '邮箱',
+    'emailPlaceholder': '可选',
+    'avatarUrl': '头像地址',
+    'avatarPlaceholder': '可选，填写头像图片URL',
+    'createAdmin': '创建管理员账号',
+    'domainLabel': '域名（可选）',
+    'domainVerified': '域名验证通过',
+    'domainMismatch': '域名解析IP与服务器IP不一致，请检查DNS设置',
+    'domainCorrect': '域名解析正确，指向\x20{{serverIp}}',
+    'domainMismatchDetailed': '域名解析IP({{domainIp}})\x20与服务器IP({{serverIp}})\x20不一致，请添加DNS\x20A记录',
+    'success': '首次初始化成功！请使用刚才创建的账号登录。',
+    'nginxConfigured': 'Nginx\x20反代已自动配置。',
+    'failed': '初始化失败，请重试',
+    'restoreFromBackup': '从备份恢复',
+    'restoreSuccess': '备份恢复成功！请刷新页面后登录。',
+    'restoreFailed': '备份恢复失败',
+    'restoring': '恢复中...',
+    'backupHint': '如果您有之前的备份文件，可以在这里恢复数据',
+    'legacyBackupPassphrasePlaceholder': '旧版加密备份密码（普通\x20ZIP\x20留空）',
+    'legacyBackupPassphraseHint': '仅恢复历史\x20.enc\x20加密备份时填写；当前版本\x20ZIP\x20不需要密码。',
+    'domainPlaceholder': '例如：mmwx.example.com',
+    'verifyButton': '验证',
+    'creating': '创建中...',
+    'or': '或',
+    'none': '无',
+    'unknown': '未知'
+  },
+  If = {
+    'login': ri,
+    'twoFactor': si,
+    'setup': ii
+  },
+  Mf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'default': If,
+    'login': ri,
+    'setup': ii,
+    'twoFactor': si
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  li = {
+    'title': 'SSL/TLS\x20证书管理',
+    'description': '管理\x20ACME\x20证书，支持通配符、DNS\x20验证、多\x20CA\x20和自动部署'
+  },
+  di = {
+    'detected': '检测到主控域名\x20{{domain}}\x20的证书已签发',
+    'deployDesc': '部署后将自动安装\x20Nginx、配置\x20SSL\x20并开启\x20HTTPS\x20访问',
+    'deploying': '部署中...',
+    'deployToMaster': '部署到主控',
+    'deploySuccess': '主控证书部署成功，即将跳转到\x20HTTPS',
+    'deployFailed': '部署失败'
+  },
+  ci = {
+    'enable': '开启\x20HTTPS',
+    'enableTitle': '开启\x20HTTPS\x20访问',
+    'enableDesc': '该操作将安装\x20Nginx\x20并反向代理妙妙屋X，为域名\x20{{domain}}\x20开启\x20HTTPS\x20访问。确认继续？',
+    'enableSuccess': 'HTTPS\x20已开启，即将跳转',
+    'enableFailed': '开启失败',
+    'configuring': '配置中...',
+    'confirmEnable': '确认开启',
+    'externalLabel': '外部已配\x20HTTPS/反代'
+  },
+  ui = {
+    'applyCert': '申请证书',
+    'uploadCert': '上传证书'
+  },
+  pi = {
+    'certList': '证书列表',
+    'dnsProviders': 'DNS\x20提供商'
+  },
+  mi = {
+    'title': '证书列表',
+    'description': '所有已申请的\x20SSL/TLS\x20证书',
+    'empty': '暂无证书，点击\x22申请证书\x22开始',
+    'columns': {
+      'domain': '域名',
+      'ca': 'CA',
+      'server': '服务器',
+      'challenge': '验证',
+      'status': '状态',
+      'expiry': '过期时间',
+      'deploy': '部署',
+      'autoRenew': '自动续期',
+      'autoDeploy': '自动部署',
+      'actions': '操作'
+    }
+  },
+  fi = {
+    'valid': '有效',
+    'pending': '申请中',
+    'expired': '已过期',
+    'failed': '失败'
+  },
+  xi = {
+    'expired': '已过期',
+    'daysLeft': '{{days}}\x20天后过期'
+  },
+  gi = {
+    'reapply': '重新申请',
+    'manualRenew': '手动续期',
+    'deployCert': '部署证书'
+  },
+  hi = {
+    'title': '申请\x20SSL/TLS\x20证书',
+    'description': '支持通配符证书\x20(*.example.com)、DNS\x20验证和多\x20CA',
+    'domain': '域名\x20*',
+    'domainWildcardTip': '建议申请通配符证书',
+    'domainHint': '通配符证书\x20(*.example.com)\x20需使用\x20DNS\x20验证',
+    'email': '邮箱\x20*',
+    'caProvider': 'CA\x20提供商',
+    'targetServer': '目标服务器',
+    'selectServer': '选择服务器',
+    'masterLocal': 'Master\x20(本地)',
+    'challengeMode': '验证方式',
+    'challengeDns': 'DNS-01\x20(支持通配符证书)',
+    'challengeStandalone': 'Standalone\x20(需停止\x2080\x20端口服务)',
+    'challengeWebroot': 'Webroot\x20(写入\x20Nginx\x20目录)',
+    'webrootPath': 'Webroot\x20路径',
+    'dnsProvider': 'DNS\x20提供商',
+    'selectDnsProvider': '选择\x20DNS\x20提供商',
+    'dnsProviderHint': '请先在\x22DNS\x20提供商\x22标签页添加\x20DNS\x20API\x20凭证',
+    'certFilePath': '证书文件路径',
+    'keyFilePath': '私钥文件路径',
+    'autoRenew': '自动续期',
+    'autoDeploy': '自动部署',
+    'autoDeployDesc': '续期或新服务器安装后自动部署并重载服务',
+    'applying': '申请中...',
+    'apply': '申请证书'
+  },
+  bi = {
+    'title': 'DNS\x20提供商',
+    'description': '管理\x20DNS\x20API\x20凭证，用于\x20DNS-01\x20验证申请通配符证书',
+    'addProvider': '添加提供商',
+    'empty': '暂无\x20DNS\x20提供商，请添加以支持通配符证书申请',
+    'columns': {
+      'name': '名称',
+      'type': '类型',
+      'createdAt': '创建时间',
+      'actions': '操作'
+    }
+  },
+  yi = {
+    'title': '添加\x20DNS\x20提供商',
+    'description': '配置\x20DNS\x20API\x20凭证，用于\x20DNS-01\x20验证',
+    'name': '名称',
+    'namePlaceholder': '我的API凭证',
+    'providerType': '提供商类型',
+    'apiCredentials': 'API\x20凭证',
+    'formHint': '请填写当前服务商要求的全部字段，系统会自动生成并校验配置。',
+    'requiredFields': '需要的字段:\x20{{fields}}',
+    'adding': '添加中...'
+  },
+  vi = {
+    'apiToken': 'API\x20Token',
+    'accessKeyId': 'AccessKey\x20ID',
+    'accessKeySecret': 'AccessKey\x20Secret',
+    'secretId': 'SecretId',
+    'secretKey': 'SecretKey',
+    'apiKey': 'API\x20Key',
+    'apiSecret': 'API\x20Secret',
+    'inputPlaceholder': '请输入{{field}}'
+  },
+  Si = {
+    'title': '确认删除证书',
+    'description': '确定要删除域名\x20<strong>{{domain}}</strong>\x20的证书吗？此操作不可恢复。'
+  },
+  Ci = {
+    'title': '部署证书',
+    'description': '将证书\x20<strong>{{domain}}</strong>\x20部署到主服务器和所有远程服务器',
+    'certFilePath': '证书文件路径',
+    'keyFilePath': '私钥文件路径',
+    'deploying': '部署中...',
+    'confirmDeploy': '确认部署',
+    'targetServers': '部署到哪些服务器',
+    'targetServersHint': '不勾选任何服务器时按「全部」下发。NAT\x20或\x20agent\x20版本过旧(不支持反向\x20RPC)的机器无法由主控直连下发,可在此排除。',
+    'selectAll': '全选',
+    'selectNone': '全不选',
+    'offline': '未连接',
+    'noServerSelected': '请至少勾选一台服务器'
+  },
+  Wi = {
+    'title': '上传证书',
+    'description': '手动上传\x20SSL/TLS\x20证书，粘贴\x20PEM\x20格式的证书和私钥内容',
+    'apiUploadTitle': 'API\x20上传',
+    'apiUploadDesc': '也可通过\x20API\x20Token\x20上传证书：POST\x20/api/admin/certificates/upload，Header\x20添加\x20Authorization:\x20Bearer\x20<API\x20Token>，Body\x20为\x20JSON：{\x22domain\x22:\x20\x22example.com\x22,\x20\x22cert_pem\x22:\x20\x22<base64>\x22,\x20\x22key_pem\x22:\x20\x22<base64>\x22}。API\x20Token\x20可在系统设置中获取。',
+    'domain': '域名\x20*',
+    'certContent': '证书内容\x20(PEM)\x20*',
+    'keyContent': '私钥内容\x20(PEM)\x20*',
+    'uploading': '上传中...',
+    'uploadCert': '上传证书'
+  },
+  wi = {
+    'certSubmitted': '证书申请已提交',
+    'certRenewSubmitted': '证书续期已提交',
+    'certDeleted': '证书已删除',
+    'certDeployed': '证书已部署到主服务器和所有远程服务器',
+    'certUploaded': '证书上传成功',
+    'dnsProviderAdded': 'DNS\x20提供商已添加',
+    'dnsProviderDeleted': 'DNS\x20提供商已删除',
+    'fillDomainEmail': '请填写域名和邮箱',
+    'dnsProviderRequired': 'DNS\x20验证模式需要选择\x20DNS\x20提供商',
+    'fillNameCredentials': '请填写名称和凭证',
+    'invalidJson': '凭证格式无效，请输入有效的\x20JSON',
+    'missingCredential': '请填写{{field}}',
+    'fillDomainCertKey': '请填写域名、证书和私钥'
+  },
+  Pi = {
+    'alidns': '阿里云\x20DNS',
+    'tencentcloud': '腾讯云\x20DNS'
+  },
+  Ef = {
+    'page': li,
+    'masterCert': di,
+    'https': ci,
+    'buttons': ui,
+    'tabs': pi,
+    'certTable': mi,
+    'status': fi,
+    'expiry': xi,
+    'tooltips': gi,
+    'createDialog': hi,
+    'dnsProviderTable': bi,
+    'dnsProviderDialog': yi,
+    'credentialFields': vi,
+    'deleteDialog': Si,
+    'deployDialog': Ci,
+    'uploadDialog': Wi,
+    'toast': wi,
+    'dnsProviderTypes': Pi
+  },
+  Uf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'buttons': ui,
+    'certTable': mi,
+    'createDialog': hi,
+    'credentialFields': vi,
+    'default': Ef,
+    'deleteDialog': Si,
+    'deployDialog': Ci,
+    'dnsProviderDialog': yi,
+    'dnsProviderTable': bi,
+    'dnsProviderTypes': Pi,
+    'expiry': xi,
+    'https': ci,
+    'masterCert': di,
+    'page': li,
+    'status': fi,
+    'tabs': pi,
+    'toast': wi,
+    'tooltips': gi,
+    'uploadDialog': Wi
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  ki = {
+    'justNow': '刚刚',
+    'minutesAgo': '{{n}}分钟前',
+    'hoursAgo': '{{n}}小时前',
+    'daysAgo': '{{n}}天前'
+  },
+  Ti = {
+    'trafficInfo': '流量信息',
+    'nodeManagement': '节点管理',
+    'routedOutbounds': '路由出站',
+    'serviceManagement': '服务管理',
+    'userManagement': '用户管理',
+    'packageManagement': '套餐管理',
+    'certificateManagement': '证书管理',
+    'forwardManagement': '转发管理',
+    'ruleProviders': '规则集',
+    'myForward': '我的转发',
+    'templateManagement': '模板管理',
+    'subscriptionGenerator': '生成订阅',
+    'subscriptionManagement': '订阅管理',
+    'subscriptionLinks': '订阅链接',
+    'customRulesManagement': '覆写管理',
+    'logManagement': '日志管理',
+    'systemSettings': '系统设置'
+  },
+  Ri = {
+    'save': '保存',
+    'create': '创建',
+    'cancel': '取消',
+    'confirm': '确认',
+    'delete': '删除',
+    'copy': '复制',
+    'reset': '重置',
+    'close': '关闭',
+    'back': '返回',
+    'next': '下一步',
+    'edit': '编辑',
+    'add': '添加',
+    'search': '搜索',
+    'enable': '启用',
+    'disable': '禁用',
+    'refresh': '刷新',
+    'download': '下载',
+    'upload': '上传',
+    'import': '导入',
+    'export': '导出',
+    'view': '查看',
+    'confirmDelete': '确认删除',
+    'loading': '加载中...',
+    'saving': '保存中…',
+    'creating': '创建中...',
+    'verifying': '验证中...',
+    'resetting': '重置中…',
+    'sending': '发送中...',
+    'disabling': '禁用中...',
+    'deleting': '删除中...',
+    'or': '或',
+    'optional': '可选',
+    'required': '必填',
+    'copySuccess': '已复制到剪贴板',
+    'copyFailed': '复制失败(需要https)，请手动复制'
+  },
+  Di = {
+    'light': '浅色模式',
+    'dark': '深色模式',
+    'system': '跟随系统'
+  },
+  Ni = '妙妙屋X',
+  Ai = {
+    'title': '退出登录',
+    'description': '确定要退出登录吗？退出后需要重新登录才能访问控制台。',
+    'confirm': '确认退出',
+    'cancel': '取消'
+  },
+  Li = {
+    'ariaLabel': '反馈问题',
+    'title': '反馈问题',
+    'telegram': 'Telegram\x20群组',
+    'github': 'GitHub\x20Issues'
+  },
+  _i = {
+    'notFoundTitle': '页面不存在',
+    'notFoundDesc': '请检查链接或返回首页。',
+    'errorTitle': '发生错误',
+    'errorDesc': '请稍后重试。'
+  },
+  Oi = {
+    'expand': '展开侧边栏',
+    'collapse': '收起侧边栏',
+    'switchToSidebar': '切换到侧边栏',
+    'switchToTopMenu': '切换到顶部菜单',
+    'moreMenu': '更多菜单',
+    'openMenu': '打开菜单'
+  },
+  Fi = {
+    'title': '数据备份',
+    'description': '备份包含配置、证书和订阅文件；PostgreSQL\x20数据可按需勾选，恢复后页面会自动刷新',
+    'downloadLabel': '下载备份',
+    'includeDatabase': '备份\x20PostgreSQL\x20数据库',
+    'includeDatabaseHint': '勾选后使用\x20pg_dump\x20导出数据库；不勾选时仅备份配置、证书和订阅文件。',
+    'detectingDatabase': '正在检测当前数据库类型…',
+    'databaseStatusFailed': '已启用兼容备份模式，将请求包含数据库的完整备份；SQLite\x20数据会正常包含。',
+    'downloading': '正在生成备份...',
+    'downloadButton': '下载当前数据备份',
+    'downloadSuccess': '备份下载成功',
+    'downloadFailed': '备份下载失败',
+    'restoreLabel': '恢复备份',
+    'restoreButton': '恢复备份',
+    'restoring': '恢复中...',
+    'restoreSuccess': '备份恢复成功，请刷新页面',
+    'restoreFailed': '备份恢复失败',
+    'restoreWarning': '恢复备份将覆盖当前所有数据，请谨慎操作',
+    'legacyPassphrasePlaceholder': '旧版加密备份密码（普通\x20ZIP\x20留空）',
+    'legacyPassphraseHint': '仅恢复历史\x20.enc\x20加密备份时填写；当前版本导出的\x20ZIP\x20不需要密码。'
+  },
+  Ii = {
+    'title': '检查更新',
+    'description': '检查是否有新版本可用',
+    'channel': '更新通道',
+    'stableChannel': '稳定版',
+    'prereleaseChannel': '预发布版',
+    'prereleaseBadge': '测试版',
+    'prereleaseWarning': '预发布版可能不稳定，仅建议用于测试环境；切换通道不会自动安装更新。',
+    'checking': '正在检查更新...',
+    'newVersion': '发现新版本！',
+    'currentVersion': '当前版本',
+    'latestVersion': '最新版本',
+    'releaseNotes': '更新内容：',
+    'updateNow': '立即更新',
+    'noDownload': '未找到适合当前系统的下载文件',
+    'viewRelease': '查看\x20GitHub\x20Release',
+    'upToDate': '已是最新版本',
+    'currentVersionLabel': '当前版本：v{{version}}',
+    'forceReinstall': '强制重新安装',
+    'recheck': '重新检查',
+    'preparing': '正在准备更新...',
+    'updateSuccess': '更新成功，页面将在\x203\x20秒后刷新',
+    'updateFailed': '更新失败:\x20{{error}}',
+    'unknownError': '未知错误',
+    'connectionClosed': '连接意外关闭',
+    'cannotReadStream': '无法读取响应流',
+    'steps': {
+      'checking': '检查版本',
+      'downloading': '下载更新',
+      'backingUp': '备份当前版本',
+      'replacing': '替换文件',
+      'restarting': '重启服务'
+    }
+  },
+  Mi = {
+    'settings': '个人设置',
+    'debugLog': 'Debug\x20日志',
+    'help': '使用帮助',
+    'tgBotApp': 'TG\x20Bot\x20&\x20APP',
+    'backup': '备份数据',
+    'migrateFromMmw': '从妙妙屋迁移',
+    'checkUpdate': '检查更新',
+    'version': '版本',
+    'signOut': '退出登录',
+    'notLoggedIn': '未登录',
+    'noEmail': '未填写邮箱',
+    'user': '用户',
+    'themeStyle': '界面风格',
+    'themeMiaomiaowu': '妙妙屋',
+    'themeFlat': '扁平',
+    'themeAnime': '幻想',
+    'themePremium': '高级黑金',
+    'themeGlass': '液态玻璃',
+    'language': '语言',
+    'debugEnabled': 'Debug日志已开启',
+    'debugDisabled': 'Debug日志已关闭',
+    'debugEnableFailed': '开启Debug日志失败',
+    'debugDisableFailed': '关闭Debug日志失败',
+    'logDownloaded': '日志文件已下载',
+    'logDownloadFailed': '下载日志文件失败',
+    'about': '关于',
+    'licenseStatus': '许可证状态',
+    'licenseValid': '有效',
+    'licenseInvalid': '无效',
+    'licensePlan': '套餐',
+    'licensePlanDesc': '简介',
+    'maxServers': '最大服务器数',
+    'maxNodes': '最大节点数',
+    'maxUsers': '最大用户数',
+    'expiresAt': '到期时间',
+    'trialHint': '当前为试用许可证，PRO\x20功能不可用。注册获取许可证：'
+  },
+  Ei = '暂无数据',
+  Ui = '卡片视图',
+  ji = '列表视图',
+  Hi = {
+    'noData': '暂无数据'
+  },
+  Bi = {
+    'card': '卡片视图',
+    'list': '列表视图'
+  },
+  Gi = {
+    'selectServer': '选择服务器',
+    'noServers': '无远程服务器',
+    'pending': '待连接',
+    'offline': '离线'
+  },
+  qi = {
+    'autoDetect': '自动检测地区'
+  },
+  zi = {
+    'proFeatureTooltip': '此功能需要\x20Pro\x20许可证，请前往许可证设置升级',
+    'proFeatureActive': 'Pro\x20功能已激活',
+    'serverLimitReached': '服务器已达上限\x20({{current}}/{{max}})',
+    'nodeLimitReached': '节点已达上限\x20({{current}}/{{max}})',
+    'userLimitReached': '用户已达上限\x20({{current}}/{{max}})'
+  },
+  Ki = {
+    'summary': '{{ips}}\x20个\x20IP\x20·\x20{{conns}}\x20条连接',
+    'more': '还有\x20{{count}}\x20个\x20IP'
+  },
+  jf = {
+    'time': ki,
+    'nav': Ti,
+    'actions': Ri,
+    'theme': Di,
+    'brand': Ni,
+    'signOut': Ai,
+    'feedback': Li,
+    'error': _i,
+    'sidebar': Oi,
+    'backup': Fi,
+    'update': Ii,
+    'userMenu': Mi,
+    'noData': Ei,
+    'cardView': Ui,
+    'listView': ji,
+    'dataTable': Hi,
+    'viewToggle': Bi,
+    'serverSelector': Gi,
+    'flagPicker': qi,
+    'license': zi,
+    'connectionIPs': Ki
+  },
+  Hf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'actions': Ri,
+    'backup': Fi,
+    'brand': Ni,
+    'cardView': Ui,
+    'connectionIPs': Ki,
+    'dataTable': Hi,
+    'default': jf,
+    'error': _i,
+    'feedback': Li,
+    'flagPicker': qi,
+    'license': zi,
+    'listView': ji,
+    'nav': Ti,
+    'noData': Ei,
+    'serverSelector': Gi,
+    'sidebar': Oi,
+    'signOut': Ai,
+    'theme': Di,
+    'time': ki,
+    'update': Ii,
+    'userMenu': Mi,
+    'viewToggle': Bi
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  $i = '覆写管理',
+  Qi = '管理\x20DNS、规则、规则集和覆写脚本的自定义配置',
+  Vi = '添加覆写设置',
+  Xi = '覆写列表',
+  Ji = '{{count}}\x20条覆写设置',
+  Yi = '全部',
+  Zi = 'DNS',
+  el = '规则',
+  tl = '规则集',
+  nl = '脚本',
+  ol = '暂无覆写设置',
+  al = {
+    'name': '名称',
+    'type': '类型',
+    'mode': '模式/钩子',
+    'status': '状态',
+    'createdAt': '创建时间',
+    'actions': '操作'
+  },
+  rl = {
+    'mode': '模式:',
+    'status': '状态:',
+    'createdAt': '创建时间:'
+  },
+  sl = {
+    'dns': 'DNS',
+    'rules': '规则',
+    'ruleProviders': '规则集',
+    'script': '脚本'
+  },
+  il = {
+    'post_fetch': '转换为客户端配置前',
+    'pre_save_nodes': '保存外部订阅节点前'
+  },
+  ll = {
+    'replace': '替换',
+    'prepend': '添加至头部',
+    'append': '添加至尾部'
+  },
+  dl = {
+    'createTitle': '添加覆写设置',
+    'editTitle': '编辑覆写设置',
+    'createDesc': '创建新的自定义规则',
+    'editDesc': '修改自定义规则配置',
+    'scriptCreateDesc': '脚本需要定义\x20main\x20函数，接收配置对象并返回修改后的结果',
+    'enableRule': '启用',
+    'nameLabel': '名称',
+    'namePlaceholder': '覆写设置名称',
+    'typeLabel': '类型',
+    'modeLabel': '模式',
+    'hookLabel': '钩子',
+    'templateLabel': '模板（可选）',
+    'templatePlaceholder': '选择模板或手动输入',
+    'scriptTemplatePlaceholder': '选择模板填充内容',
+    'noTemplate': '不使用模板',
+    'contentLabel': '规则内容（YAML\x20格式）',
+    'scriptContentLabel': '脚本内容',
+    'contentPlaceholder': '输入\x20YAML\x20格式的规则内容...',
+    'contentHint': '请确保内容符合\x20YAML\x20格式规范',
+    'scriptContentHint': '脚本需要定义\x20main\x20函数，接收配置对象并返回修改后的结果'
+  },
+  cl = {
+    'title': '确认删除',
+    'description': '此操作无法撤销。确定要删除这条覆写设置吗？',
+    'deleting': '删除中...',
+    'confirm': '删除'
+  },
+  ul = {
+    'title': '创建规则配置',
+    'description': '检测到您使用了规则集模板，是否同时创建对应的规则配置？',
+    'descriptionDetail': '规则配置将会追加到现有规则的末尾，系统会自动去除重复的规则（忽略大小写）。',
+    'onlyRuleProvider': '仅创建规则集',
+    'withRuleConfig': '创建规则集和规则配置'
+  },
+  pl = {
+    'title': '自定义规则',
+    'description': '添加自定义分流规则，支持域名、IP、协议等多种匹配方式',
+    'emptyHint': '还没有自定义规则，点击下方按钮添加',
+    'addRule': '添加规则',
+    'ruleIndex': '规则\x20#{{index}}',
+    'outboundName': '出站名称',
+    'outboundPlaceholder': '例如:\x20Netflix,\x20OpenAI',
+    'willCreateGroup': '将创建对应的策略组',
+    'geositePlaceholder': '例如:\x20netflix,\x20openai',
+    'multipleCommaSeparated': '多个用逗号分隔',
+    'domainSuffix': '域名后缀',
+    'domainSuffixPlaceholder': '例如:\x20netflix.com,\x20openai.com',
+    'domainKeyword': '域名关键词',
+    'domainKeywordPlaceholder': '例如:\x20google,\x20youtube',
+    'geoipPlaceholder': '例如:\x20us,\x20jp,\x20hk',
+    'ipCidrPlaceholder': '例如:\x201.1.1.1/24',
+    'protocol': '协议',
+    'protocolPlaceholder': '例如:\x20http,\x20https,\x20quic',
+    'helpTitle': '规则说明',
+    'helpOutbound': '出站名称：必填，将创建对应的策略组',
+    'helpGeosite': 'GeoSite：使用\x20GeoSite\x20数据库匹配域名集合',
+    'helpDomainSuffix': '域名后缀：匹配完整域名后缀，如\x20google.com',
+    'helpDomainKeyword': '域名关键词：匹配域名中包含的关键词',
+    'helpGeoip': 'GeoIP：使用\x20GeoIP\x20数据库匹配\x20IP\x20地址归属国家/地区',
+    'helpIpCidr': 'IP-CIDR：匹配\x20IP\x20地址段',
+    'helpProtocol': '协议：匹配网络协议类型'
+  },
+  ml = {
+    'created': '覆写规则已创建',
+    'scriptCreated': '覆写脚本已创建',
+    'scriptUpdated': '覆写脚本已更新',
+    'scriptDeleted': '覆写脚本已删除',
+    'scriptCreateError': '创建脚本时出错',
+    'scriptUpdateError': '更新脚本时出错',
+    'scriptDeleteError': '删除脚本时出错',
+    'createdWithGroups': '自定义规则已创建。已新增\x20{{groups}}\x20代理组，默认节点：🚀\x20节点选择、DIRECT，如需修改请编辑订阅',
+    'updated': '覆写规则已更新',
+    'updatedWithGroups': '自定义规则已更新。已新增\x20{{groups}}\x20代理组，默认节点：🚀\x20节点选择、DIRECT，如需修改请编辑订阅',
+    'deleted': '覆写规则已删除',
+    'statusUpdated': '状态已更新',
+    'createError': '创建规则时出错',
+    'updateError': '更新规则时出错',
+    'deleteError': '删除规则时出错',
+    'statusError': '更新状态时出错',
+    'nameRequired': '请输入规则名称',
+    'contentRequired': '请输入规则内容',
+    'ruleNotFound': '规则不存在',
+    'ruleProviderCreated': '规则集和规则配置已创建',
+    'ruleProviderOnlyCreated': '规则集已创建',
+    'ruleProviderError': '创建规则配置时出错，请检查控制台',
+    'routeRuleName': '路由规则\x20-\x20{{name}}'
+  },
+  Bf = {
+    'title': $i,
+    'subtitle': Qi,
+    'createRule': Vi,
+    'ruleList': Xi,
+    'ruleCount': Ji,
+    'filterAll': Yi,
+    'filterDns': Zi,
+    'filterRules': el,
+    'filterRuleProviders': tl,
+    'filterScript': nl,
+    'emptyText': ol,
+    'columns': al,
+    'mobileLabels': rl,
+    'type': sl,
+    'hook': il,
+    'mode': ll,
+    'dialog': dl,
+    'deleteConfirm': cl,
+    'ruleProviderConfirm': ul,
+    'editor': pl,
+    'toast': ml
+  },
+  Gf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'columns': al,
+    'createRule': Vi,
+    'default': Bf,
+    'deleteConfirm': cl,
+    'dialog': dl,
+    'editor': pl,
+    'emptyText': ol,
+    'filterAll': Yi,
+    'filterDns': Zi,
+    'filterRuleProviders': tl,
+    'filterRules': el,
+    'filterScript': nl,
+    'hook': il,
+    'mobileLabels': rl,
+    'mode': ll,
+    'ruleCount': Ji,
+    'ruleList': Xi,
+    'ruleProviderConfirm': ul,
+    'subtitle': Qi,
+    'title': $i,
+    'toast': ml,
+    'type': sl
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  fl = {
+    'stats': {
+      'totalQuota': '总流量配额',
+      'totalQuotaDesc': '您的可用总配额',
+      'usedTraffic': '已用流量',
+      'usedTrafficDesc': '您的累计消耗',
+      'remainingTraffic': '剩余流量',
+      'remainingTrafficDesc': '仍可分配的余量',
+      'usageRate': '使用率',
+      'usageRateDesc': '累计使用占比',
+      'usedPercent': '已使用\x20{{percent}}%'
+    },
+    'subscribe': {
+      'title': '订阅链接',
+      'noSubscriptions': '暂无可用订阅',
+      'noSubscriptionsTitle': '暂无可用订阅',
+      'noSubscriptionsDesc': '管理员尚未为您分配套餐或订阅链接，请联系管理员。',
+      'showQrCode': '点击显示二维码',
+      'showQR': '点击显示二维码',
+      'copy': '复制',
+      'import': '导入',
+      'importClash': '导入\x20Clash',
+      'expired': '已过期',
+      'expireAt': '到期:\x20{{date}}',
+      'expiresAt': '到期',
+      'permanent': '永久',
+      'linkCopied': '{{client}}\x20订阅链接已复制',
+      'copyFailed': '复制失败(需要https)，请手动复制',
+      'qrTitle': '订阅二维码',
+      'description': '使用手机扫描二维码快速导入订阅链接。'
+    },
+    'renewal': {
+      'button': '申请续费',
+      'pending': '续费审核中',
+      'title': '申请套餐续费',
+      'description': '输入续费口令，系统会发送给管理员人工确认。',
+      'expiredHint': '套餐已过期时，可提交口令请管理员恢复最近的套餐。',
+      'placeholder': '输入续费口令',
+      'submit': '提交续费申请',
+      'submitting': '提交中...',
+      'submitted': '已发送给管理员审核',
+      'failed': '续费申请提交失败'
+    },
+    'qrDialog': {
+      'title': '订阅二维码',
+      'description': '使用手机扫描二维码快速导入订阅链接。'
+    }
+  },
+  xl = {
+    'stats': {
+      'totalQuota': '总流量配额',
+      'totalQuotaDesc': '所有节点的总配额',
+      'usedTraffic': '已用流量',
+      'usedTrafficDesc': '所有节点累计消耗',
+      'unlimitedUsedHint': '不限流量的服务器已用\x20{{value}}（不计入上方统计）',
+      'remainingTraffic': '剩余流量',
+      'remainingTrafficDesc': '仍可分配的余量',
+      'realtimeSpeed': '实时网速',
+      'realtimeSpeedDesc': '所有服务器汇总'
+    },
+    'timeRange': {
+      'today': '今天',
+      'week': '本周',
+      'month': '本月',
+      'todayHint': '自今日\x2000:00\x20起',
+      'weekHint': '自本周一\x2000:00\x20起',
+      'monthHint': '自本月\x201\x20日\x2000:00\x20起'
+    },
+    'nodeView': {
+      'title': '节点视图',
+      'sortDesc': '按周期流量排序',
+      'noData': '暂无数据',
+      'totalNodes': '共\x20{{count}}\x20个节点，点击右上角查看全部',
+      'serverTooltip': '服务器:\x20{{servers}}'
+    },
+    'userView': {
+      'title': '用户视图',
+      'sortDesc': '按周期流量排序',
+      'noData': '暂无数据',
+      'totalUsers': '共\x20{{count}}\x20个用户，点击右上角查看全部',
+      'currentConnections': '当前并发连接数',
+      'partialConnections': '当前已统计连接数；部分服务器未就绪，实际总数可能更高',
+      'connectionStatsIncomplete': '部分服务器的连接统计尚未完整，带\x20+\x20的数字为当前已统计值',
+      'connectionStatsExcluded': '外置\x20xray\x20的服务器（{{servers}}）不在连接统计范围内'
+    },
+    'serverOverview': {
+      'title': '服务器概览',
+      'description': '所选时间范围内的增量,不含「已用流量修正」;服务管理显示的是计费周期累计,两者可能不同',
+      'noServers': '暂无服务器',
+      'columns': {
+        'server': '服务器',
+        'speed': '网速',
+        'used': '已用',
+        'total': '总量',
+        'remaining': '剩余',
+        'usageRate': '使用率'
+      },
+      'unlimited': '无限',
+      'usedTooltip': '区间用量\x20=\x20当前计数\x20−\x20所选日期的快照。不含服务管理里的「已用流量修正」,因为那部分是统计开始之前的流量,不属于本区间。'
+    },
+    'dialog': {
+      'nodeTraffic': '节点流量',
+      'userTraffic': '用户流量',
+      'nodeUserTraffic': '{{name}}\x20的用户流量',
+      'userNodeTraffic': '{{name}}\x20的节点流量'
+    }
+  },
+  gl = {
+    'title': '每日流量消耗',
+    'description': '最近记录的日度流量趋势',
+    'loadFailed': '数据加载失败，请稍后重试。',
+    'noHistory': '暂无历史记录。',
+    'tooltipDate': '日期：{{date}}',
+    'dailyUsage': '日消耗'
+  },
+  hl = {
+    'page': '第\x20{{current}}/{{total}}\x20页'
+  },
+  qf = {
+    'user': fl,
+    'admin': xl,
+    'chart': gl,
+    'pagination': hl
+  },
+  zf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'admin': xl,
+    'chart': gl,
+    'default': qf,
+    'pagination': hl,
+    'user': fl
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  bl = {
+    'required': '此项为必填',
+    'passwordMinLength': '密码至少\x208\x20位',
+    'passwordMismatch': '两次输入的密码不一致',
+    'usernameEmpty': '用户名不能为空',
+    'invalidFormat': '格式无效'
+  },
+  yl = {
+    'proxyNotObject': '代理节点\x20#{{index}}\x20不是有效的对象',
+    'proxyMissingName': '代理节点\x20#{{index}}\x20缺少name字段或name为空',
+    'proxyDuplicateName': '代理节点名称重复:\x20\x22{{name}}\x22，已自动移除',
+    'proxyNameNotFirst': '代理节点\x20\x22{{name}}\x22\x20的name字段不是第一个字段，已自动调整',
+    'groupNotObject': '代理组\x20#{{index}}\x20不是有效的对象',
+    'groupMissingName': '代理组\x20#{{index}}\x20缺少name字段或name为空',
+    'groupDuplicateName': '代理组名称重复:\x20\x22{{name}}\x22',
+    'groupNameNotFirst': '代理组\x20\x22{{name}}\x22\x20的name字段不是第一个字段，已自动调整',
+    'groupEmpty': '代理组\x20\x22{{name}}\x22\x20没有可用节点，已自动添加\x20DIRECT',
+    'groupAutoCorrect': '代理组\x20\x22{{name}}\x22\x20中的节点引用\x20\x22{{proxy}}\x22\x20已自动修正为\x20\x22{{corrected}}\x22',
+    'groupMissingNode': '代理组\x20\x22{{name}}\x22\x20引用了不存在的节点:\x20\x22{{node}}\x22，已自动移除',
+    'groupDuplicateProxies': '代理组\x20\x22{{name}}\x22\x20的proxies字段包含重复引用，已自动去重',
+    'circularReference': '代理组循环引用已自动断开:\x20{{cycle}}',
+    'validationPassed': '✅\x20配置校验通过',
+    'location': '位置:\x20{{location}}',
+    'itemCount': '{{count}}\x20个项目',
+    'nameNotFirst': 'name字段不是第一个字段',
+    'nameFieldAdjust': '{{count}}\x20个代理组的\x20name\x20字段位置需要调整',
+    'affected': '受影响:\x20{{items}}',
+    'andMore': '等\x20{{count}}\x20个',
+    'errorsFound': '❌\x20发现\x20{{count}}\x20个错误:\x0a',
+    'warningsFound': '⚠️\x20发现\x20{{count}}\x20个警告:\x0a',
+    'autoFixed': '🔧\x20已自动修复\x20{{count}}\x20个问题'
+  },
+  vl = {
+    'unauthorized': '未授权，请重新登录',
+    'forbidden': '无权访问',
+    'notFound': '资源不存在',
+    'internalError': '服务器内部错误',
+    'networkError': '网络连接失败，请检查网络',
+    'timeout': '请求超时',
+    'unknown': '未知错误',
+    'somethingWentWrong': '出错了！',
+    'contentNotFound': '未找到内容'
+  },
+  Kf = {
+    'validation': bl,
+    'clashValidator': yl,
+    'server': vl
+  },
+  $f = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'clashValidator': yl,
+    'default': Kf,
+    'server': vl,
+    'validation': bl
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Sl = '转发管理',
+  Cl = {
+    'title': '转发组',
+    'create': '创建转发组',
+    'edit': '编辑转发组',
+    'delete': '删除',
+    'name': '组名',
+    'namePlaceholder': '请输入转发组名称',
+    'description': '描述',
+    'descriptionPlaceholder': '请输入描述信息',
+    'strategy': '负载均衡策略',
+    'members': '成员数量',
+    'empty': '暂无转发组，请创建',
+    'nameRequired': '组名不能为空',
+    'createSuccess': '创建成功',
+    'createError': '创建失败',
+    'updateSuccess': '更新成功',
+    'updateError': '更新失败',
+    'deleteSuccess': '删除成功',
+    'deleteError': '删除失败',
+    'deleteConfirm': '确定要删除该转发组吗？',
+    'manageMembers': '管理成员',
+    'currentMembers': '当前成员',
+    'noMembers': '暂无成员',
+    'addMember': '添加成员',
+    'selectServer': '选择服务器',
+    'port': '端口',
+    'dnsOrder': 'DNS\x20顺序',
+    'dnsOrderHint': 'DNS\x20顺序用于编排多个上游地址，如\x201,2\x20或\x20default',
+    'memberFieldsRequired': '请填写完整的成员信息',
+    'membersUpdated': '成员更新成功',
+    'membersUpdateError': '成员更新失败',
+    'failoverEnabled': '启用故障转移',
+    'failoverHint': '成员不健康时自动摘除、恢复后自动加回',
+    'offlineMsThreshold': '掉线判定阈值\x20(ms)',
+    'offlineMsPlaceholder': '0\x20=\x20只看是否掉线',
+    'offlineMsHint': 'RTT\x20超过此值即视为不健康并卸载；0\x20表示只按掉线判定',
+    'dnsDomain': 'DNS\x20域名（入口组）',
+    'dnsDomainPlaceholder': '如\x20entry.example.com，留空=不做\x20DNS\x20均衡',
+    'dnsDomainHint': '仅入口组需要：按成员健康态自动增删该域名的\x20A\x20记录',
+    'dnsProvider': 'DNS\x20Provider',
+    'dnsProviderPlaceholder': '选择一个\x20DNS\x20Provider',
+    'strategies': {
+      'round_robin': '轮询\x20(Round\x20Robin)',
+      'weighted': '加权\x20(Weighted)',
+      'least_conn': '最少连接\x20(Least\x20Conn)',
+      'percentage': '按剩余流量\x20(Percentage)',
+      'cycle': '按周期\x20(Cycle)',
+      'sticky': '链接保持\x20(源IP哈希)'
+    },
+    'tab': '转发组',
+    'membersLabel': '组内服务器',
+    'addServerPlaceholder': '添加服务器…',
+    'noMembersYet': '尚未添加服务器',
+    'weight': '权重',
+    'membersHint': '组内服务器\x20+\x20权重;端口范围与\x20DNS\x20在创建转发链时指定',
+    'strategyHints': {
+      'round_robin': '按顺序轮流分给组内每台服务器,不看权重、不看负载。组内机器配置相近时最省心。',
+      'weighted': '按各成员手工设置的权重分配(平滑加权轮询)。权重\x202\x20的机器拿到的连接约为权重\x201\x20的两倍。适合机器配置/带宽差异明显时手工调配。',
+      'least_conn': '优先分给当前活跃连接数最少的服务器。适合单连接耗时差异大的场景(如长连接、大文件),能避免某台被长任务堆住。',
+      'percentage': '按各成员的【剩余流量】自动分配\x20——\x20剩余越多权重越高,把流量导向配额富余的机器,让不同套餐的机器用量趋于平衡。不限流量的机器给固定较高权重。权重由主控每\x205\x20分钟按实时流量重算。',
+      'cycle': '按各成员【距流量重置日的远近】自动分配\x20——\x20越接近重置日权重越高,优先用掉快到期、否则就浪费的配额;配额已耗尽的机器降到最低权重。权重同样由主控每\x205\x20分钟重算。',
+      'sticky': '按来源\x20IP\x20做哈希,同一个客户端\x20IP\x20恒定落到同一台服务器。适合对会话连续性敏感的应用;代价是流量分布取决于客户端\x20IP\x20分布,可能不均。'
+    }
+  },
+  Wl = {
+    'title': '转发链',
+    'create': '创建转发链',
+    'delete': '删除',
+    'name': '链名',
+    'namePlaceholder': '请输入转发链名称',
+    'hops': '跳数',
+    'empty': '暂无转发链，请创建',
+    'noHops': '暂未配置跳数',
+    'nameRequired': '链名不能为空',
+    'createSuccess': '创建成功',
+    'createError': '创建失败',
+    'deleteSuccess': '删除成功',
+    'deleteError': '删除失败',
+    'deleteConfirm': '确定要删除该转发链吗？',
+    'manageHops': '管理跳数',
+    'currentHops': '当前跳数顺序',
+    'addHop': '添加跳数',
+    'selectGroup': '选择转发组',
+    'add': '添加',
+    'hopsHint': '转发链按顺序经过多个转发组，点击箭头调整顺序',
+    'hopsUpdated': '跳数更新成功',
+    'hopsUpdateError': '跳数更新失败',
+    'bindNode': '绑定节点',
+    'selectNode': '选择节点',
+    'selectNodePlaceholder': '请选择要绑定的节点',
+    'port': '监听端口',
+    'portHint': '节点将在此端口监听转发流量',
+    'bind': '绑定',
+    'selectNodeRequired': '请选择节点',
+    'validPortRequired': '请输入有效的端口号\x20(1-65535)',
+    'bindSuccess': '绑定成功，转发规则已下发',
+    'bindError': '绑定失败',
+    'tab': '转发链',
+    'needTwoGroups': '转发链至少需要\x202\x20个转发组（入口\x20+\x20出口）',
+    'portRange': '端口范围',
+    'portStart': '起始端口',
+    'portEnd': '结束端口',
+    'portRangeHint': '链上可建的节点端口须落在此范围内;留空(0)=不限。',
+    'invalidPortRange': '非法端口范围(1-65535\x20且起<=止,或留空不限)',
+    'dnsDomain': 'DNS\x20域名(入口故障转移)',
+    'dnsDomainPlaceholder': '如\x20entry.example.com,留空=不做\x20DNS',
+    'dnsDomainHint': '设了则按入口组健康态自动增删该域名\x20A\x20记录',
+    'dnsProvider': 'DNS\x20Provider',
+    'dnsProviderPlaceholder': '选择一个\x20DNS\x20Provider',
+    'hopsBuilder': '链跳序列(拖动排序:首=入口,末=出口)',
+    'addGroup': '添加转发组…',
+    'addServer': '添加服务器…',
+    'noHopsYet': '尚未添加;至少需要\x202\x20跳(入口+出口)',
+    'hopsBuilderHint': '可加转发组或服务器;服务器会自动作为单服务器组。拖动\x20grip\x20调整顺序。',
+    'entry': '入口',
+    'exit': '出口',
+    'middle': '中转',
+    'updateSuccess': '转发链已更新',
+    'updateError': '更新转发链失败',
+    'edit': '编辑转发链'
+  },
+  wl = {
+    'title': '转发规则状态',
+    'currentStatus': '当前运行状态',
+    'refresh': '刷新状态',
+    'tab': '状态监控',
+    'loss': '丢包',
+    'jitter': '抖动'
+  },
+  Pl = {
+    'title': '历史延迟监控',
+    'selectServer': '选择服务器',
+    'selectRule': '选择规则',
+    'timeRange': '时间范围',
+    'hours': '{{n}}\x20小时',
+    'latency': '延迟\x20(ms)',
+    'noData': '请先选择服务器和规则'
+  },
+  Qf = {
+    'title': Sl,
+    'groups': Cl,
+    'chains': Wl,
+    'status': wl,
+    'metrics': Pl
+  },
+  Vf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'chains': Wl,
+    'default': Qf,
+    'groups': Cl,
+    'metrics': Pl,
+    'status': wl,
+    'title': Sl
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  kl = {
+    'title': '节点管理',
+    'description': '输入代理节点信息，每行一个节点，支持\x20VMess、VLESS、Trojan、Shadowsocks、Hysteria、Socks、AnyTLS、Snell、TUIC(仅导入)、WireGuard(仅导入)协议。'
+  },
+  Tl = {
+    'title': '导入外部节点',
+    'tabs': {
+      'manual': '手动输入',
+      'subscription': '订阅导入',
+      'socks5': 'SOCKS5'
+    },
+    'manual': {
+      'tagLabel': '节点标签',
+      'tagPlaceholder': '手动输入',
+      'tagDescription': '为这些节点设置标签，用于节点管理中的分类和筛选',
+      'skipCertVerify': '跳过证书验证',
+      'relayEnable': '启用中转',
+      'relayServerPlaceholder': '中转服务器\x20IP\x20或域名',
+      'relayPortPlaceholder': '端口(默认=节点端口)',
+      'relayDescription': '本批节点将通过该中转服务器连接;端口留空则各自沿用原端口。原服务器地址会保留,可在节点列表里修改或取消中转。',
+      'parseBtn': '解析节点',
+      'saveBtn': '保存节点',
+      'savingBtn': '保存中...'
+    },
+    'socks5': {
+      'nameLabel': '节点名称',
+      'namePlaceholder': '留空则自动使用「服务器:端口」',
+      'usernameLabel': '用户名',
+      'usernamePlaceholder': '免认证可留空',
+      'passwordLabel': '密码',
+      'passwordPlaceholder': '免认证可留空',
+      'serverLabel': '服务器',
+      'serverPlaceholder': 'IP\x20或域名',
+      'portLabel': '端口',
+      'portPlaceholder': '1-65535',
+      'description': '等价于在「手动输入」里粘贴\x20socks://用户名:密码@服务器:端口',
+      'portInvalid': '端口需为\x201-65535\x20之间的数字'
+    },
+    'subscription': {
+      'urlPlaceholder': 'https://example.com/api/clash/subscribe?token=xxx',
+      'urlDescription': '请输入\x20Clash\x20订阅链接，系统将自动获取并解析节点',
+      'userAgentLabel': 'User-Agent:',
+      'userAgentPlaceholder': '选择\x20User-Agent',
+      'customUserAgent': '手动输入',
+      'customUserAgentPlaceholder': '输入自定义\x20User-Agent',
+      'tagLabel': '节点标签',
+      'tagPlaceholder': '默认使用服务器地址作为标签',
+      'tagDescription': '为订阅导入的节点设置标签，留空将使用服务器地址作为标签',
+      'defaultTag': '外部订阅',
+      'importBtn': '导入节点',
+      'importingBtn': '导入中...',
+      'saveBtn': '保存节点',
+      'savingBtn': '保存中...'
+    }
+  },
+  Rl = {
+    'title': '节点列表',
+    'titleWithCount': '节点列表\x20({{count}})',
+    'forwardedByTunnel': '被\x20tunnel\x20转发',
+    'forwardedByTunnelTip': '以下\x20tunnel\x20入站转发到此节点:',
+    'multiplierHint': '此节点流量按\x20{{x}}×\x20计入套餐配额',
+    'warning': '注意!!!\x20节点的修改与删除均会同步更新所有订阅\x20',
+    'iconHints': '为可拖动元素，切换代理组类型、双击代理组标题编辑代理组名称，拖动可用节点标题时，代表拖动可用节点内的所有节点',
+    'editNodeName': '编辑节点名称，',
+    'chainProxy': '创建链式出站',
+    'relayGroup': '创建中转组',
+    'addRegionEmoji': '添加地区emoji，',
+    'resolveIp': '解析IP地址，',
+    'restoreDomain': '恢复原始域名，',
+    'viewEditConfig': '查看修改配置，',
+    'copyUri': '复制URI，',
+    'tempSubscription': '生成临时订阅，',
+    'tcpingTest': 'TCPing\x20延迟测试，',
+    'specifyOutbound': '指定出站',
+    'noMatchingNodes': '没有找到匹配的节点',
+    'parseFailed': '解析失败',
+    'unknown': '未知',
+    'serverUnknown': '—\x20未识别',
+    'externalSource': '📥\x20外部:{{source}}'
+  },
+  Dl = {
+    'protocol': '协议',
+    'nodeName': '节点名称',
+    'tag': '标签',
+    'serverAddress': '服务器地址',
+    'config': '配置',
+    'actions': '操作'
+  },
+  Nl = {
+    'byProtocol': '按协议筛选',
+    'byTag': '按标签筛选',
+    'all': '全部',
+    'manualInput': '手动输入',
+    'subscriptionImport': '订阅导入'
+  },
+  Al = {
+    'addNode': '添加节点',
+    'tunnelManager': 'Tunnel\x20管理',
+    'sortMode': '排序模式',
+    'selectedCount': '已选\x20{{count}}\x20项',
+    'moveTop': '置顶',
+    'moveUp': '上移',
+    'moveDown': '下移',
+    'moveBottom': '置底',
+    'syncExternalSub': '同步外部订阅',
+    'syncingExternalSub': '正在同步外部订阅...',
+    'syncExternalSubSuccess': '外部订阅同步成功',
+    'addEmoji': '添加emoji',
+    'addingEmoji': '添加中...',
+    'addEmojiWithCount': '添加emoji\x20({{count}})',
+    'addingEmojiWithCount': '添加中...',
+    'renameName': '修改名称',
+    'renameNameWithCount': '修改名称\x20({{count}})',
+    'renameTag': '修改标签',
+    'renameTagWithCount': '管理标签\x20({{count}})',
+    'tempSub': '生成临时订阅',
+    'tempSubWithCount': '生成临时订阅\x20({{count}})',
+    'latencyTest': '延迟测试',
+    'latencyTestWithCount': '延迟测试\x20({{count}})',
+    'testing': '测试中...',
+    'batchDelete': '批量删除',
+    'batchDeleteWithCount': '批量删除\x20({{count}})',
+    'clearAll': '清空所有',
+    'clearingAll': '清空中...',
+    'deleteDuplicates': '删除重复',
+    'disableSkipCert': '关闭跳过证书验证',
+    'utilities': '辅助功能',
+    'snellOptions': 'Snell\x20参数配置',
+    'showNodeTrafficInName': '节点名称显示独立流量',
+    'nodeTrafficNameEnabled': '已在订阅节点名称显示独立流量',
+    'nodeTrafficNameDisabled': '已隐藏订阅节点名称独立流量',
+    'delete': '删除',
+    'config': '配置',
+    'copy': '复制',
+    'menu': '菜单'
+  },
+  Ll = {
+    'running': '正在测速\x20{{name}}\x20…',
+    'result': '测速完成:下行\x20{{mbps}}\x20Mbps,延迟\x20{{ms}}\x20ms',
+    'started': '已开始测速\x20{{name}},结果稍后在节点行显示',
+    'batchStarted': '已开始测速\x20{{count}}\x20个节点,结果将陆续显示',
+    'batchLatencyStarted': '已开始测试\x20{{count}}\x20个节点的延迟,结果将陆续显示',
+    'latencyStarted': '已开始测试\x20{{name}}\x20的延迟',
+    'testing': '测速中',
+    'failedShort': '失败',
+    'timeout': '超时',
+    'timeoutHint': '15\x20秒未返回结果,点击重测',
+    'clickRetest': '点击重新测速',
+    'batchTest': '批量测速',
+    'batchLatency': '批量测试延迟',
+    'threads': '线程',
+    'threadsSingle': '单线程',
+    'threadsMulti': '多线程',
+    'latencyOnlyTip': '只测真连接延迟(Cloudflare\x20204\x20多采样)',
+    'latencyProbe': '测延迟',
+    'latencyRetry': '点击重测延迟',
+    'dialogTitle': '节点测速',
+    'dialogDesc': '选择测速来源后,对节点进行测速;结果保存在服务端,关闭后重开仍可见。',
+    'source': '测速来源',
+    'noNodes': '暂无可测速的节点',
+    'colProtocol': '协议',
+    'colServer': '服务器地址',
+    'colEgressIP': '出口\x20IP',
+    'colActions': '操作',
+    'filterByProtocol': '按协议筛选',
+    'filterByTag': '按标签筛选',
+    'clearFilter': '清除',
+    'visibleCount': '可见\x20{{visible}}\x20/\x20{{total}}\x20条',
+    'selectAll': '全选可见',
+    'unselectAll': '取消全选',
+    'clearSelection': '清空选择',
+    'srcMaster': '主控',
+    'srcTester': '家用',
+    'history': '测速历史',
+    'historyAll': '测速结果',
+    'historyOf': '测速历史\x20·\x20{{name}}',
+    'historyDesc': '结果保存在服务端,刷新或切页后仍可查看;测速进行中会自动刷新。',
+    'historyEmpty': '暂无测速记录',
+    'sortTime': '按时间',
+    'sortSpeed': '按速度',
+    'sortLatency': '按延迟',
+    'colNode': '节点',
+    'colSpeed': '下行速度',
+    'colLatency': '延迟',
+    'colSource': '来源',
+    'colTime': '时间',
+    'failed': '测速失败\x20{{err}}',
+    'proRequired': '节点测速是\x20PRO\x20功能,请升级许可证',
+    'fromMaster': '主控本机测速',
+    'fromTester': '经「{{name}}」测速',
+    'testerManage': '管理测速端',
+    'testerManageDesc': '家用测速端部署在你家里的服务器/电脑,反向连入主控,从家庭网络视角测节点速度。',
+    'testerName': '名称',
+    'testerCreate': '新建',
+    'testerCreated': '已创建,请复制令牌(仅显示一次)',
+    'testerCreateFailed': '创建失败',
+    'testerTokenOnce': '配对令牌(仅显示一次,请立即复制)',
+    'testerRunCmd': '在家用机器上运行',
+    'testerLinuxCmd': 'Linux\x20/\x20macOS\x20一键运行',
+    'testerWindowsCmd': 'Windows\x20PowerShell\x20一键运行',
+    'testerDockerCmd': 'Docker\x20一键启动',
+    'testerDownload': '在此下载测速端程序',
+    'testerRunHint': '复制命令到家里的服务器/电脑终端执行,自动下载对应平台测速端并反向连入主控。',
+    'testerList': '已配对测速端',
+    'updateAll': '一键更新',
+    'updateDialogTitle': '更新所有测速端',
+    'updateDialogDesc': '将\x20{{count}}\x20个测速端更新到\x20v{{version}}。离线或不支持远程更新的旧版测速端会跳过。',
+    'confirmUpdateAll': '开始更新',
+    'updating': '更新中',
+    'updateCompleted': '测速端更新完成',
+    'updatePartialFailed': '有\x20{{count}}\x20个测速端更新失败',
+    'updateFailed': '测速端更新失败',
+    'updateStatus': {
+      'pending': '等待更新',
+      'success': '更新成功',
+      'failed': '更新失败',
+      'offline': '离线，已跳过',
+      'unsupported': '需手动升级',
+      'latest': '已是最新'
+    },
+    'testerNone': '暂无测速端。',
+    'testerRevoked': '已吊销',
+    'testerRevokeFailed': '吊销失败',
+    'online': '在线',
+    'offline': '离线',
+    'offlineClickHint': '测速端离线,点击重装',
+    'resendInstall': '重装',
+    'rotateHint': '重新生成令牌并展示安装命令(原令牌立即失效)',
+    'tokenRotated': '已生成新令牌,请重新部署测速端',
+    'tokenRotateFailed': '轮换令牌失败',
+    'copied': '已复制'
+  },
+  _l = {
+    'viaLabel': '中转原服务器',
+    'editTitle': '点击修改\x20/\x20取消中转',
+    'dialogTitle': '中转配置',
+    'dialogDesc': '节点通过中转服务器连接;clash\x20的\x20server/port\x20走中转地址。取消后还原为下方原服务器。',
+    'origServer': '原服务器',
+    'serverLabel': '中转服务器\x20(IP\x20/\x20域名)',
+    'portLabel': '中转端口',
+    'cancelRelayBtn': '取消中转'
+  },
+  Ol = {
+    'openTitle': '点击管理此\x20tunnel\x20转发',
+    'title': 'Tunnel\x20中转',
+    'desc': '把节点地址切换为\x20tunnel\x20入口地址,或切回原地址,或删除此\x20tunnel\x20端口转发。',
+    'nodeLabel': '节点',
+    'entryLabel': 'tunnel\x20入口',
+    'targetLabel': '转发目标',
+    'origLabel': '原服务器',
+    'switchBtn': '切换节点地址为\x20tunnel\x20入口',
+    'revertBtn': '切回原服务器地址',
+    'deleteBtn': '删除此\x20tunnel',
+    'deleteConfirm': '确定删除此\x20tunnel\x20端口转发?',
+    'deleteYes': '确认删除',
+    'deleteSuccess': 'tunnel\x20端口转发已删除',
+    'deleteFailed': '删除\x20tunnel\x20失败'
+  },
+  Fl = {
+    'title': 'URI\x20管理',
+    'desc': '每个用户在各自可用节点上的分享\x20URI(用各自子账户凭据生成)',
+    'searchUserLabel': '用户名',
+    'searchNodeLabel': '节点名称',
+    'searchUser': '搜索用户…',
+    'searchNode': '搜索节点…',
+    'copyAll': '复制全部',
+    'copy': '复制',
+    'copied': '已复制',
+    'colUser': '用户',
+    'colNode': '节点',
+    'colProtocol': '协议',
+    'colUri': 'URI',
+    'empty': '暂无数据'
+  },
+  Il = {
+    'saveOrderFailed': '保存排序失败:\x20{{error}}',
+    'nodeNameUpdated': '节点名称已更新',
+    'nodeNameUpdateFailed': '节点名称更新失败',
+    'nodeNotFound': '未找到节点?',
+    'ipResolveFailed': 'IP解析失败',
+    'noIpResolved': '未解析到IP地址',
+    'serverAddressUpdated': '服务器地址已更新',
+    'serverAddressUpdateFailed': '服务器地址更新失败',
+    'domainRestored': '已恢复原始域名',
+    'domainRestoreFailed': '恢复原始域名失败',
+    'clashConfigUpdated': 'Clash\x20配置已更新',
+    'clashConfigUpdateFailed': 'Clash\x20配置更新失败',
+    'uriCopied': 'URI\x20已复制到剪贴板',
+    'uriGenerateFailed': '生成\x20URI\x20失败:\x20{{error}}',
+    'nodesSaved': '节点保存成功',
+    'relayUpdated': '中转已更新',
+    'relayCanceled': '已取消中转',
+    'relayFailed': '中转操作失败',
+    'saveFailed': '保存失败',
+    'updateFailed': '更新失败',
+    'nodeDeleted': '节点已删除',
+    'deleteFailed': '删除失败',
+    'allNodesCleared': '所有节点已清空',
+    'clearFailed': '清空失败',
+    'batchTagUpdated': '成功更新\x20{{count}}\x20个节点的标签',
+    'batchTagFailed': '批量更新标签失败',
+    'batchTagAction': {
+      'add': '成功为\x20{{count}}\x20个节点添加标签',
+      'rename': '成功修改\x20{{count}}\x20个节点的标签',
+      'delete': '成功删除\x20{{count}}\x20个节点的标签'
+    },
+    'batchRenameSuccess': '成功修改\x20{{count}}\x20个节点名称',
+    'batchRenameFailed': '批量修改名称失败',
+    'noSkipCertNodes': '没有节点开启跳过证书验证',
+    'disableSkipCertSuccess': '已关闭\x20{{count}}\x20个节点的跳过证书验证',
+    'disableSkipCertFailed': '关闭跳过证书验证失败',
+    'noSnellNodes': '当前没有\x20Snell\x20节点',
+    'snellOptionsSuccess': '已更新\x20{{count}}\x20个\x20Snell\x20节点',
+    'snellOptionsFailed': 'Snell\x20参数修改失败',
+    'noNodes': '没有节点',
+    'noDuplicates': '没有发现重复节点',
+    'duplicatesDeleted': '成功删除\x20{{count}}\x20个重复节点',
+    'nothingToDelete': '没有需要删除的节点',
+    'selectNodeFirst': '请先选择节点',
+    'addRegionEmojiSuccess': '成功为\x20{{count}}\x20个节点添加地区\x20emoji',
+    'addRegionEmojiResult': '成功\x20{{success}}，跳过\x20{{skip}}\x20(已有emoji)，失败\x20{{fail}}',
+    'alreadyHasEmoji': '该节点已有\x20emoji\x20前缀',
+    'cannotParseConfig': '无法解析节点配置',
+    'noServerAddress': '节点配置中没有\x20server\x20地址',
+    'dnsResolveFailed': 'DNS\x20解析失败',
+    'geoLocationFailed': '获取地理位置失败',
+    'flagEmojiFailed': '无法生成旗帜\x20emoji',
+    'emojiAdded': '已添加地区\x20emoji',
+    'addEmojiFailed': '添加\x20emoji\x20失败',
+    'tempNodeRemoved': '已移除临时节点',
+    'nodeNameEmpty': '节点名称不能为空',
+    'tempNodeNameUpdated': '已更新临时节点名称',
+    'noSavableNodes': '没有可保存的节点',
+    'enterSubUrl': '请输入订阅链接',
+    'enterCustomUserAgent': '请输入自定义\x20User-Agent',
+    'importSuccess': '成功导入\x20{{count}}\x20个节点',
+    'subFetchFailed': '获取订阅失败',
+    'serverRestoredAddress': '已恢复原始服务器地址',
+    'noAvailableServer': '没有可用的服务器',
+    'xrayNotReady': '该服务器\x20Xray\x20未就绪，请先安装并启动\x20Xray',
+    'enterTag': '请填写标签',
+    'selectServer': '请选择至少一台服务器',
+    'serverInboundFailed': '服务器\x20{{name}}\x20入站创建失败:\x20{{error}}',
+    'allServersFailed': '所有服务器创建失败',
+    'serversCreated': '{{count}}\x20台服务器节点创建成功',
+    'serversPartialCreated': '{{success}}/{{total}}\x20台服务器节点创建成功',
+    'createFailed': '创建失败',
+    'landingConfigSuccess': '落地节点配置成功（出站+路由已添加）',
+    'landingConfigFailed': '配置落地节点失败',
+    'landingBalancerSuccess': '负载均衡器路由已绑定到入站',
+    'landingBalancerFailed': '负载均衡器路由绑定失败',
+    'balancerTagRequired': '请选择负载均衡器',
+    'sourceNodeNoServer': '源节点未关联远程服务器，无法配置出站路由',
+    'sourceNodeNoInboundTag': '源节点缺少\x20inbound_tag，无法配置路由',
+    'landingTargetParseError': '落地节点配置解析失败',
+    'landingTargetDuplicate': '该落地节点\x20({{name}})\x20已配置过，请勿重复添加',
+    'addOutboundFailed': '添加出站失败',
+    'addRoutingRuleFailed': '添加路由规则失败',
+    'inboundCreatedNoNode': '入站已创建，但未找到同步的节点，请手动配置落地',
+    'createLandingFailed': '创建落地节点失败',
+    'chainProxySourceParseError': '源节点配置解析失败',
+    'chainProxyCreateSuccess': '链式代理节点创建成功',
+    'chainProxyCreateFailed': '创建链式代理节点失败',
+    'relayGroupCreateSuccess': '中转组节点创建成功',
+    'relayGroupCreateFailed': '创建中转组节点失败',
+    'relayGroupRemoveSuccess': '解除中转组成功',
+    'relayGroupRemoveFailed': '解除中转组失败',
+    'remoteServerNotFound': '未找到关联的远程服务器',
+    'configMissingFields': '配置缺少必需字段:\x20name,\x20type,\x20server,\x20port',
+    'jsonFormatError': 'JSON\x20格式错误:\x20{{error}}',
+    'replaceDone': '替换完成',
+    'enterFindContent': '请输入要查找的内容',
+    'appliedPrefixSuffix': '应用完成',
+    'enterPrefixOrSuffix': '请输入前缀或后缀',
+    'enterNodeNames': '请输入节点名称',
+    'nameCountMismatch': '名称数量\x20({{nameCount}})\x20与选中节点数量\x20({{nodeCount}})\x20不匹配',
+    'enterTagName': '请输入标签名称',
+    'batchDeleteSuccess': '成功删除\x20{{count}}\x20个节点',
+    'batchDeletePartial': '成功删除\x20{{deleted}}/{{total}}\x20个节点',
+    'batchDeleteFailed': '批量删除失败',
+    'linkCopied': '链接已复制',
+    'copyFailed': '复制失败，请手动复制',
+    'noValidServerAddress': '选中的节点没有有效的服务器地址',
+    'allTestSuccess': '全部\x20{{count}}\x20个节点测试成功',
+    'testResult': '成功\x20{{success}}\x20个，失败\x20{{fail}}\x20个',
+    'batchTestFailed': '批量测试失败',
+    'testFailed': '测试失败',
+    'noNodesToParse': '无法解析节点的配置',
+    'tempSubGenerateFailed': '生成临时订阅失败',
+    'routingRuleAdded': '路由规则已添加并重启\x20Xray',
+    'routingRuleAddFailed': '添加失败',
+    'routingRuleDeleted': '路由规则已删除并重启\x20Xray',
+    'routingRuleDeleteFailed': '删除失败',
+    'enterMatchCondition': '请输入匹配条件',
+    'selectOutbound': '请选择出站',
+    'connectionTimeout': '连接超时',
+    'inboundCreateFailed': '入站创建失败',
+    'creatingInboundOutbound': '正在创建入站和出站...'
+  },
+  Ml = {
+    'selectServer': '选择服务器',
+    'noRemoteServers': '无远程服务器',
+    'pending': '待连接',
+    'offline': '离线'
+  },
+  El = {
+    'autoDetect': '自动检测地区'
+  },
+  Ul = {
+    'confirmDelete': '确认删除',
+    'confirmDeleteNode': '确定要删除节点\x20\x22{{name}}\x22\x20吗？',
+    'cannotUndo': '此操作不可撤销。',
+    'confirmBatchDelete': '确认批量删除节点',
+    'confirmBatchDeleteDesc': '确定要删除选中的\x20{{count}}\x20个节点吗？此操作不可撤销。',
+    'confirmClearAll': '确认清空所有节点',
+    'confirmClearAllDesc': '确定要清空所有已保存的节点吗？此操作不可撤销，将删除\x20{{count}}\x20个节点。',
+    'clearAll': '清空所有',
+    'confirmDeleteAction': '确认删除',
+    'externalSync': {
+      'title': '选择要保存的新增节点',
+      'description': '本次同步发现\x20{{count}}\x20个新增节点。已有节点已完成更新，请选择需要保存的新增节点。',
+      'importTitle': '选择要导入的节点',
+      'importDescription': '订阅解析出\x20{{count}}\x20个节点，请选择需要保存的节点。',
+      'importChooseNodes': '订阅解析完成，请选择需要保存的节点',
+      'noNodesSaved': '未选择节点，本次没有保存节点',
+      'selectAll': '全选',
+      'selectedCount': '已选择\x20{{count}}\x20个',
+      'chooseNodes': '同步完成，请选择需要保存的新增节点',
+      'cancel': '暂不保存',
+      'saving': '保存中...',
+      'confirm': '保存所选节点（{{count}}）'
+    },
+    'clashConfig': {
+      'title': 'Clash\x20配置详情',
+      'titleReadonly': 'Clash\x20配置详情（仅查看）',
+      'saveAfterCreate': '保存节点后可编辑配置',
+      'inputPlaceholder': '输入\x20JSON\x20配置...',
+      'close': '关闭'
+    },
+    'uriCopy': {
+      'title': '手动复制\x20URI',
+      'description': '自动复制失败，请手动复制下方的\x20URI',
+      'retryBtn': '再试一次',
+      'copyFailedRetry': '复制失败，请手动选择文本复制'
+    },
+    'chainProxy': {
+      'title': '选择中转节点',
+      'description': '选择目标节点与\x20\x22{{name}}\x22\x20创建链式代理',
+      'searchPlaceholder': '搜索节点名称、协议或标签...',
+      'excludeHint': '自动排除链式代理节点',
+      'externalOnlyWarning': '⚠️\x20中转节点只能选择外部节点。妙妙屋X\x20中需在中转节点自行添加出站，链式代理无法计费套餐用户流量。',
+      'noMatch': '未找到匹配的节点',
+      'noNodes': '暂无可用的节点'
+    },
+    'relayGroup': {
+      'title': '创建中转组',
+      'description': '为落地节点\x20\x22{{name}}\x22\x20选择多个中转节点组成\x20url-test\x20中转组，该落地节点的\x20dialer-proxy\x20将指向此组',
+      'groupNamePlaceholder': '中转组名称(如:\x20香港中转组)',
+      'selectedHint': '已选\x20{{count}}\x20个中转节点',
+      'externalOnlyWarning': '中转节点支持外部节点和妙妙屋X内部节点；内部落地节点会直接保存中转组配置，不会复制入站。',
+      'confirm': '创建中转组',
+      'cancel': '取消'
+    },
+    'batchTag': {
+      'title': '批量修改标签',
+      'description': '将为选中的\x20{{count}}\x20个节点修改标签',
+      'quickSelect': '快速选择标签',
+      'tagNameLabel': '标签名称',
+      'tagNamePlaceholder': '输入标签名称',
+      'selectExisting': '选择要操作的标签',
+      'noExistingTags': '选中的节点暂无标签',
+      'newTag': '新标签名称',
+      'mode': {
+        'add': '添加标签',
+        'rename': '修改标签',
+        'delete': '删除标签'
+      },
+      'action': {
+        'add': '添加',
+        'rename': '保存',
+        'delete': '删除'
+      }
+    },
+    'batchRename': {
+      'title': '批量修改节点名称',
+      'description': '修改选中的\x20{{count}}\x20个节点名称',
+      'findLabel': '查找内容',
+      'findPlaceholder': '输入要查找的文本',
+      'replaceLabel': '替换为',
+      'replacePlaceholder': '输入替换后的文本',
+      'replaceBtn': '替换',
+      'prefixLabel': '前缀',
+      'prefixPlaceholder': '添加到名称前面',
+      'suffixLabel': '后缀',
+      'suffixPlaceholder': '添加到名称后面',
+      'applyBtn': '应用',
+      'nodeNamesLabel': '节点名称\x20(每行一个，共\x20{{count}}\x20行)',
+      'nodeNamesPlaceholder': '每行一个节点名称',
+      'confirmBtn': '确认修改'
+    },
+    'disableSkipCert': {
+      'title': '关闭跳过证书验证',
+      'description': '以下\x20{{count}}\x20个节点开启了跳过证书验证（skip-cert-verify）。为保持兼容,将把这些节点的该属性设为\x20false（恢复校验证书）。请确认要处理的节点:',
+      'selectAll': '全选',
+      'deselectAll': '取消全选',
+      'confirmBtn': '确认关闭\x20({{count}})'
+    },
+    'snellOptions': {
+      'title': 'Snell\x20参数配置',
+      'description': '选择需要修改的\x20Snell\x20节点和参数。未勾选的参数会保持原值。',
+      'modifyTfo': '修改\x20TFO',
+      'tfoHint': '输出\x20tfo\x20参数',
+      'modifyUdp': '修改\x20UDP\x20Relay',
+      'udpHint': '输出\x20udp-relay\x20参数',
+      'unchanged': '不修改',
+      'selectAll': '全选',
+      'deselectAll': '取消全选',
+      'unset': '未配置',
+      'enabled': '开启',
+      'disabled': '关闭',
+      'saveBtn': '保存\x20{{count}}\x20个节点'
+    },
+    'duplicates': {
+      'title': '删除重复节点',
+      'description': '发现\x20{{groupCount}}\x20组重复节点，共\x20{{deleteCount}}\x20个重复节点将被删除（每组保留最早创建的节点）',
+      'groupTitle': '重复组\x20{{index}}（{{count}}\x20个节点）',
+      'willDelete': '将删除\x20{{count}}\x20个',
+      'keep': '保留',
+      'deleteLabel': '删除',
+      'deletingBtn': '删除中...',
+      'confirmDeleteBtn': '确认删除\x20{{count}}\x20个重复节点'
+    },
+    'tempSub': {
+      'title': '生成临时订阅',
+      'descriptionSingle': '为节点\x20\x22{{name}}\x22\x20生成临时订阅链接',
+      'descriptionBatch': '为选中的\x20{{count}}\x20个节点生成临时订阅链接',
+      'maxAccessLabel': '访问次数',
+      'expireLabel': '过期时间（秒）',
+      'linkLabel': '临时订阅链接',
+      'generatingLink': '生成中...',
+      'linkPlaceholder': '自动生成中...',
+      'linkExpireHint': '链接将在\x20{{seconds}}\x20秒后或访问\x20{{count}}\x20次后失效'
+    },
+    'serverSelect': {
+      'title': '选择服务器',
+      'description': '请选择一台服务器后继续创建节点',
+      'xrayNotReady': 'Xray\x20未就绪',
+      'xrayReady': 'Xray\x20就绪',
+      'scan': '扫描\x20Xray\x20状态',
+      'scanning': '扫描中...',
+      'ipv4Label': 'IPv4',
+      'ipv6Label': 'IPv6',
+      'selectAtLeastOneIp': '请至少选择一个\x20IP',
+      'v6IgnoresDomain': 'IPv6\x20节点将直连\x20IPv6\x20地址,不经过域名',
+      'tabServer': '选择服务器',
+      'tabForwardChain': '转发链',
+      'forwardChain': {
+        'selectChainFirst': '请先选择转发链',
+        'invalidPort': '端口不合法（1-65535）',
+        'selectNodeFirst': '请选择已有节点',
+        'created': '转发链节点已创建',
+        'createFailed': '创建失败',
+        'empty': '暂无转发链，请先在「转发管理」中创建转发链',
+        'chainLabel': '转发链',
+        'chainPlaceholder': '选择一条转发链',
+        'hopsUnit': '跳',
+        'modeLabel': '出口方式',
+        'modeNew': '新建节点',
+        'modeExisting': '已有节点',
+        'modeNewHint': '在出口组每台服务器按所选协议新建落地节点（全链共用同一凭据）',
+        'modeExistingHint': '整条链作为中继，转发到一个已有节点（出口组不建站）',
+        'existingNodeLabel': '目标节点',
+        'existingNodePlaceholder': '选择一个已有节点',
+        'portLabel': '端口',
+        'portPlaceholder': '如\x2020000（全链监听此端口）',
+        'nameLabel': '节点名称',
+        'namePlaceholder': '留空则自动命名',
+        'creating': '创建中…',
+        'create': '创建节点',
+        'relayProtoLabel': '传输协议',
+        'relayProtoHint': 'TCP\x20传输协议(VLESS/VMess/SS/Trojan)选\x20TCP；UDP\x20传输协议(Hysteria2/TUIC)或需\x20full-cone\x20UDP\x20选\x20UDP\x20/\x20TCP+UDP'
+      }
+    },
+    'quickCreate': {
+      'addNodeTitle': '添加节点',
+      'doneTitle': '创建完成',
+      'configInbound': '配置入站参数',
+      'doneDescription': '入站和出站已创建，节点已自动同步',
+      'inboundCreated': '在\x20{{count}}\x20台服务器上创建入站',
+      'outboundPrefix': '出站',
+      'outboundSuffix': '已创建',
+      'nodesSynced': '节点已自动同步到列表',
+      'doneBtn': '完成'
+    },
+    'landing': {
+      'createInboundTitle': '创建落地入站',
+      'addLandingTitle': '新增落地节点',
+      'createInboundDesc': '在\x20{{serverName}}\x20上创建入站，自动配置到\x20\x22{{nodeName}}\x22\x20的出站和路由',
+      'addLandingDesc': '为\x20\x22{{name}}\x22\x20选择落地节点或服务器',
+      'tabNodes': '选择落地节点',
+      'tabServers': '选择服务器',
+      'tabBalancer': '选择负载均衡器',
+      'balancerHint': '在源服务器添加一条路由规则:入站\x20→\x20负载均衡器(不创建出站,不创建节点)',
+      'noBalancers': '源服务器未配置负载均衡器,请先在「Xray\x20管理\x20→\x20路由\x20→\x20负载均衡器」中创建',
+      'confirmBalancerLanding': '确认绑定',
+      'landingBalancerSelected': '已选\x20LB',
+      'searchPlaceholder': '搜索节点名称、协议或标签...',
+      'excludeHint': '自动排除链式代理节点和源节点自身',
+      'noMatchingNodes': '未找到匹配的节点',
+      'noAvailableNodes': '暂无可用的节点',
+      'serverHint': '选择服务器后将创建新入站，并自动配置出站和路由规则',
+      'noOtherServers': '无可用的其他服务器',
+      'configuringLanding': '正在配置落地节点...'
+    }
+  },
+  jl = {
+    'timeout': '超时',
+    'retest': '点击重新测试',
+    'testBtn': '延迟测试',
+    'tcpingTest': 'TCPing\x20延迟测试'
+  },
+  Hl = {
+    'nodeRouting': '节点路由',
+    'speedtest': '测速',
+    'tempSubscription': '生成临时订阅',
+    'copyUri': '复制\x20URI',
+    'resolveIp': '解析IP地址',
+    'selectIp': '选择IP地址',
+    'restoreDomain': '恢复原始域名',
+    'landingNode': '落地节点',
+    'chainProxy': '创建链式代理',
+    'relayGroup': '中转组'
+  },
+  Bl = {
+    'address': '地址:',
+    'tag': '标签:',
+    'nodeCount': '{{count}}\x20个节点',
+    'batchAdd': '批量添加\x20{{count}}\x20个节点',
+    'moreNodes': '还有\x20{{count}}\x20个节点...',
+    'noNodes': '暂无节点'
+  },
+  Gl = {
+    'defaultDescription': '拖拽节点到不同的代理组，自定义每个组的节点列表',
+    'dragHint': '为可拖动元素，',
+    'switchGroupType': '切换代理组类型、双击代理组标题编辑代理组名称，拖动可用节点标题时，代表拖动可用节点内的所有节点',
+    'addToAllGroups': '添加到所有代理组',
+    'columns': '列数',
+    'removeFromAllGroups': '从所有代理组移除',
+    'dragNodeHere': '将节点拖拽到这里',
+    'addProxyGroup': '添加代理组',
+    'saving': '保存中...',
+    'showAddedNodes': '显示已添加节点',
+    'hideAddedNodes': '隐藏已添加节点',
+    'configChainProxy': '配置链式代理',
+    'filterByName': '按名称筛选...',
+    'allTags': '所有标签',
+    'all': '所有',
+    'specialNodes': '特殊节点',
+    'proxyProviders': '代理集合',
+    'availableNodes': '可用节点',
+    'nodesCount': '{{filtered}}\x20/\x20{{total}}\x20个节点',
+    'editNamePlaceholder': '输入新名称...',
+    'clickToEditName': '点击编辑名称',
+    'nodesAndCollections': '{{nodeCount}}\x20个节点，{{collectionCount}}\x20个集合',
+    'nodeCountOnly': '{{count}}\x20个节点',
+    'switchGroupTypeBtn': '切换代理组类型',
+    'proxyType': {
+      'select': '手动选择',
+      'urlTest': '自动选择',
+      'fallback': '自动回退',
+      'loadBalance': '负载均衡'
+    },
+    'strategy': '策略',
+    'strategyOptions': {
+      'roundRobin': '轮询',
+      'consistentHashing': '一致性哈希',
+      'stickySessions': '粘性会话'
+    },
+    'dialerProxyGroup': '中转代理组',
+    'dialerProxyGroupNone': '无',
+    'dialerProxyGroupBadge': '中转:\x20{{name}}',
+    'addGroupDialog': {
+      'title': '添加代理组',
+      'description': '输入自定义名称或从预定义选项中快速选择',
+      'namePlaceholder': '输入代理组名称...',
+      'duplicateName': '已存在同名代理组',
+      'quickSelect': '快速选择：',
+      'clearSelection': '清除选择'
+    },
+    'emojiLabels': {
+      'nodeSelect': '节点选择',
+      'autoSelect': '自动选择',
+      'missedFish': '漏网之鱼',
+      'direct': '直连',
+      'reject': '拒绝'
+    }
+  },
+  ql = {
+    'title': '手动分组节点',
+    'description': '点击分组展开查看节点，点击编辑按钮添加或移除节点',
+    'noNodes': '暂无节点，点击\x22添加节点\x22按钮添加',
+    'addProxyGroup': '添加代理组',
+    'rename': '重命名',
+    'type': '类型',
+    'addNodes': '添加节点',
+    'editGroupTitle': '编辑分组:\x20{{name}}',
+    'editGroupDescription': '选择要添加到此分组的节点',
+    'searchNodes': '搜索节点...',
+    'allTags': '全部',
+    'noMatchingNodes': '没有找到匹配的节点',
+    'noAvailableNodes': '暂无可用节点',
+    'proxyProviders': '代理集合',
+    'specialNodes': '特殊节点',
+    'selectedNodes': '已选择\x20{{count}}\x20个节点',
+    'selectedCollections': '\x20+\x20{{count}}\x20个集合',
+    'done': '完成',
+    'newGroupName': '新分组\x20{{index}}'
+  },
+  zl = {
+    'title': '发现缺失节点',
+    'description': '以下节点在\x20rules\x20中被引用，但不存在于\x20proxy-groups\x20中',
+    'replaceLabel': '选择替换为：',
+    'replaceHint': '将把上述缺失的节点替换为',
+    'confirmReplace': '确认替换'
+  },
+  Kl = {
+    'realityGuardRule': 'Reality\x20防盗',
+    'title': '节点路由',
+    'serverLabel': '服务器:',
+    'inboundLabel': '入站:',
+    'loadingConfig': '加载路由配置...',
+    'dedicatedRules': '专属路由规则',
+    'dedicatedRulesHint': '针对此入站',
+    'noDedicatedRules': '无专属规则，流量将按全局规则处理',
+    'catchAllWarning': '全部流量已被路由到',
+    'catchAllSuffix': '，后续全局规则和默认出站不再生效',
+    'globalRules': '全局路由规则',
+    'globalRulesHint': '对所有入站生效',
+    'noGlobalRules': '无全局规则',
+    'defaultOutbound': '默认出站',
+    'defaultOutboundHint': '无规则匹配时',
+    'noOutbound': '无出站配置',
+    'noTag': '(无tag)',
+    'notSet': '未设置',
+    'quickAdd': '快捷添加',
+    'customRule': '自定义规则',
+    'ruleDetail': '路由规则详情',
+    'confirmDeleteRule': '确认删除规则',
+    'confirmDeleteRuleDesc': '确定要删除此路由规则吗？删除后将自动重启\x20Xray\x20生效。',
+    'selectOutbound': '选择出站',
+    'selectOutboundPlaceholder': '选择出站',
+    'addCustomRule': '添加自定义规则',
+    'addCustomRuleDesc': '为入站\x20{{tag}}\x20添加路由规则',
+    'scope': '作用范围',
+    'scopeDedicated': '仅此入站\x20({{tag}})',
+    'scopeGlobal': '全局\x20(所有入站)',
+    'ruleType': '规则类型',
+    'ruleTypeDomain': '域名\x20(domain)',
+    'ruleTypeIp': 'IP\x20地址\x20(ip)',
+    'ruleTypeProtocol': '协议\x20(protocol)',
+    'matchCondition': '匹配条件',
+    'matchConditionPlaceholder': '多个条件用逗号分隔',
+    'outbound': '出站',
+    'balancer': '负载均衡',
+    'markTag': '标记\x20(可选)',
+    'markTagPlaceholder': '规则标记',
+    'addBtn': '添加',
+    'quickRules': {
+      'banBt': '禁止\x20BT',
+      'banGeoCn': '禁止访问大陆\x20IP',
+      'fixOpenai': 'OpenAI\x20直连',
+      'banPrivate': '禁止内网访问',
+      'rfcEmby': 'RFC\x20EMBY\x20(需选择出站)',
+      'tiktokUnlock': '抖音解锁\x20(需选择出站)',
+      'warpAntiChina': '防止送中\x20(走\x20WARP)'
+    },
+    'ruleTypeLabels': {
+      'protocol': 'protocol',
+      'domain': 'domain',
+      'ip': 'ip',
+      'port': 'port',
+      'inbound': '入站匹配',
+      'unknown': '未知',
+      'allTraffic': '全部流量'
+    },
+    'itemsCount': '等\x20{{count}}\x20项'
+  },
+  $l = {
+    'revertTitle': '点击切回源节点地址',
+    'tipTitle': '链式隧道路径'
+  },
+  Ql = {
+    'clickToManage': '点击管理整个节点出站',
+    'switchTarget': '切换出站节点',
+    'cancel': '取消整个节点出站',
+    'cancelConfirmTitle': '取消整个节点出站？',
+    'cancelConfirmDescription': '将删除“{{name}}”的整个节点路由规则及其专用出站配置，但不会删除节点本身。',
+    'cancelling': '取消中...',
+    'confirmCancel': '确认取消'
+  },
+  Vl = {
+    'title': '外部节点探测',
+    'description': '用\x20mihomo\x20走完整协议定时真连一次,测出连通性与真实延迟。只对外部导入的节点生效,每\x20{{minutes}}\x20分钟一轮。',
+    'enableLabel': '启用定时探测',
+    'enableHint': '关闭后已勾选的节点会保留,只是不再执行探测',
+    'sourceLabel': '探测源',
+    'sourceMaster': '主控本机',
+    'sourceHint': '选家宽测速端能测出更贴近用户的延迟;测速端不可用时自动回退到主控本机。',
+    'testerOffline': '(离线)',
+    'testerOfflineHint': '该测速端当前离线,探测会自动回退到主控',
+    'listTitle': '可探测的外部节点',
+    'listCount': '已勾选\x20{{selected}}\x20/\x20{{total}}',
+    'emptyHint': '还没有外部导入的节点。自建服务器上的节点由\x20agent\x20心跳监控,不需要也不会在这里出现。',
+    'nodeDisabled': '已禁用',
+    'nodeDown': '不可用',
+    'waitingFirst': '等待首次探测',
+    'notProbed': '未探测',
+    'timeout': '超时',
+    'sourceOf': '探测源\x20{{source}}',
+    'availability': '可用率\x20{{percent}}%',
+    'saveFailed': '保存失败',
+    'toggleFailed': '操作失败',
+    'resyncLabel': '掉线自动重新同步外部订阅',
+    'resyncUnit': '分钟(0\x20=\x20关闭)',
+    'resyncHint': '节点连续掉线满设定分钟数后,自动重新拉取该节点所属用户的外部订阅。机场换服务器时订阅里的地址会变,重新同步一次往往就自愈了。同一用户最短\x2015\x20分钟才会重同步一次,避免频繁请求机场接口。',
+    'settingsTitle': '外部节点探测'
+  },
+  Xf = {
+    'page': kl,
+    'importCard': Tl,
+    'nodeList': Rl,
+    'columns': Dl,
+    'filter': Nl,
+    'actions': Al,
+    'speedtest': Ll,
+    'relay': _l,
+    'tunnelAction': Ol,
+    'uriManager': Fl,
+    'toast': Il,
+    'serverSelector': Ml,
+    'flagPicker': El,
+    'dialog': Ul,
+    'tcping': jl,
+    'tooltip': Hl,
+    'label': Bl,
+    'editNodesDialog': Gl,
+    'mobileEditDialog': ql,
+    'missingNodesDialog': zl,
+    'nodeRoutingDialog': Kl,
+    'chainTunnel': $l,
+    'wholeOutbound': Ql,
+    'nodeProbe': Vl
+  },
+  Jf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'actions': Al,
+    'chainTunnel': $l,
+    'columns': Dl,
+    'default': Xf,
+    'dialog': Ul,
+    'editNodesDialog': Gl,
+    'filter': Nl,
+    'flagPicker': El,
+    'importCard': Tl,
+    'label': Bl,
+    'missingNodesDialog': zl,
+    'mobileEditDialog': ql,
+    'nodeList': Rl,
+    'nodeProbe': Vl,
+    'nodeRoutingDialog': Kl,
+    'page': kl,
+    'relay': _l,
+    'serverSelector': Ml,
+    'speedtest': Ll,
+    'tcping': jl,
+    'toast': Il,
+    'tooltip': Hl,
+    'tunnelAction': Ol,
+    'uriManager': Fl,
+    'wholeOutbound': Ql
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Xl = {
+    'title': '套餐模板管理',
+    'description': '管理流量套餐模板,可在用户管理中为用户分配套餐'
+  },
+  Jl = {
+    'createTemplate': '创建套餐模板'
+  },
+  Yl = {
+    'title': '暂无套餐模板',
+    'createFirst': '创建第一个套餐模板'
+  },
+  Zl = {
+    'trafficQuota': '流量额度',
+    'cycleDays': '计量周期',
+    'cycleDaysValue': '{{days}}\x20天',
+    'resetDay': '默认重置日期',
+    'resetDayValue': '每月\x20{{day}}\x20日',
+    'resetDisabled': '不重置',
+    'speedLimit': '限速',
+    'deviceLimit': '连接数',
+    'twoway': '双向',
+    'trafficMode': '流量统计',
+    'twowayLabel': '双向\x20×2',
+    'onewayLabel': '单向',
+    'template': '订阅模板',
+    'templateDefault': '系统默认',
+    'limits': '限速配置',
+    'unlimited': '不限速',
+    'deviceN_one': '{{count}}\x20连接',
+    'deviceN_other': '{{count}}\x20连接',
+    'deviceUnlimited': '连接数不限',
+    'perNodeOverride_one': '{{count}}\x20节点单独配置',
+    'perNodeOverride_other': '{{count}}\x20节点单独配置',
+    'nodeCount': '关联节点',
+    'allNodes': '全部节点',
+    'noNodes': '未选节点',
+    'noNodesHint': '未选择节点\x20—\x20套餐无可用节点,请在编辑里勾选或点「全选」'
+  },
+  ed = {
+    'createTitle': '创建套餐模板',
+    'editTitle': '编辑套餐模板',
+    'createDesc': '创建新的流量套餐模板',
+    'editDesc': '修改套餐模板配置',
+    'name': '套餐名称\x20*',
+    'namePlaceholder': '例如:\x20基础套餐',
+    'description': '描述',
+    'descriptionPlaceholder': '套餐说明（可选）',
+    'trafficLimit': '流量额度\x20(GB)\x20*',
+    'trafficMode': '流量统计方式',
+    'trafficModeOneway': '单向（默认）',
+    'trafficModeTwoway': '双向（×2）',
+    'trafficModeDesc': '双向模式下用户流量按2倍计算',
+    'templateFilename': '套餐模板',
+    'templateFilenameDefault': '使用系统默认模板',
+    'templateFilenameDesc': '套餐订阅使用的模板;选择系统默认时,回退到系统设置中的默认模板',
+    'clashTemplateFilename': 'Clash\x20模板',
+    'clashTemplateFilenameDesc': 'Clash\x20系客户端生成订阅时使用；留空则使用系统默认\x20Clash\x20模板',
+    'surgeTemplateFilename': 'Surge\x20模板',
+    'surgeTemplateFilenameDesc': 'Surge\x20系客户端生成订阅时使用；留空则使用系统默认\x20Surge\x20模板',
+    'loonTemplateFilename': 'Loon\x20模板',
+    'loonTemplateFilenameDesc': 'Loon\x20系客户端生成订阅时使用；留空则使用系统默认\x20Loon\x20模板',
+    'cycleDays': '计量周期\x20(天)\x20*',
+    'monthlyReset': '按月重置套餐流量',
+    'monthlyResetDesc': '绑定此套餐的用户会在指定日期自动开始新的流量周期。',
+    'resetDay': '默认重置日期\x20(每月)',
+    'resetDayDesc': '范围\x201–31；当月没有该日期时，在当月最后一天重置。',
+    'resetDayFromServer': '已采用首个节点所属服务器“{{server}}”的流量重置日期：每月\x20{{day}}\x20日。',
+    'relatedNodes': '关联节点',
+    'selectAll': '全选',
+    'deselectAll': '全不选',
+    'selectTag': '选中本标签',
+    'tagAll': '全部',
+    'noNodes': '暂无可用节点',
+    'nodeInternal': '内部',
+    'nodeExternal': '外部',
+    'speedLimit': '限速\x20(Mbps)',
+    'speedLimitPlaceholder': '0\x20表示不限速',
+    'speedLimitDesc': '每用户最大下载速度。单位\x20Mbps（兆比特/秒）。换算:\x208\x20Mbps\x20≈\x201\x20MB/s,\x20100\x20Mbps\x20≈\x2012.5\x20MB/s。0\x20表示不限速。用户级\x22限速覆写\x22会覆盖本字段。',
+    'deviceLimit': '连接数限制',
+    'deviceLimitPlaceholder': '0\x20表示不限制',
+    'deviceLimitDesc': '每用户最大并发连接数，0\x20表示不限制（连接数远大于设备数，请重新评估数值）',
+    'nodesHint': '选择该套餐可以使用的节点（不选择表示可以使用所有节点）',
+    'nodeMultiplier': '流量倍率（默认\x201，路由出站子节点继承父节点倍率）',
+    'nodeColumnName': '原节点名称',
+    'nodePackageNameHeader': '套餐内名称',
+    'nodePackageNameEnabled': '套餐内节点名称',
+    'nodePackageName': '套餐内节点名称',
+    'nodeOriginalName': '原节点：{{name}}',
+    'nodeMultiplierHeader': '倍率',
+    'saving': '保存中...',
+    'confirmDelete': '确定要删除套餐模板\x20\x22{{name}}\x22\x20吗？',
+    'nodeSpeedLimitHeader': '限速\x20Mbps',
+    'nodeDeviceLimitHeader': '连接数',
+    'nodeSpeedLimit': '节点限速\x20(Mbps);留空\x20=\x20沿用套餐通用值;0\x20=\x20该节点不限速',
+    'nodeDeviceLimit': '节点连接数;留空\x20=\x20沿用套餐通用值;0\x20=\x20不限;路由出站节点继承父节点、不单独配置',
+    'deviceLimitTip': '「连接数」是同一时刻并发的网络连接数,不是设备数。一台设备正常上网就有几十到上百条并发,设太小(如\x203、5)会导致网页打不开、图片加载失败。\x0a建议值:单设备\x20100–150\x20·\x20多设备(手机+电脑+平板)200–400\x20·\x20家庭共享\x204–6\x20台\x20500–800\x20·\x20拼车约「人数×150」·\x20不确定就填\x200(不限)。\x0a宁可设高一点,也不要因设太低把正常用户挡在门外;绑套餐后可在「连接数」视图看实时峰值再上调。',
+    'forwardQuota': '转发配额',
+    'forwardQuotaDesc': '开启后本套餐用户可自助创建转发。可用的入口链在右侧节点列表下方勾选。',
+    'forwardRuleLimit': '转发规则数(0=不开放)',
+    'forwardPortLimit': '入口端口数(0=不限)',
+    'forwardSpeedMbps': '转发限速\x20Mbps(0=不限)',
+    'forwardConnLimit': '转发连接数(0=不限)',
+    'forwardChains': '允许使用的转发链',
+    'forwardChainsEmpty': '还没有转发链。先到「转发管理」建一条,再回来分配给套餐。',
+    'forwardChainsDesc': '不勾选\x20=\x20一条都不给(与「关联节点」留空表示全部不同)。用户只能在勾选的链上创建转发。',
+    'noNodesTitle': '未选择任何节点',
+    'noNodesConfirm': '这个套餐没有勾选任何关联节点。留空表示「包含全部节点」——\x20绑定该套餐的用户将可以使用所有节点,而不是拿不到节点。确认要这样保存吗?'
+  },
+  td = {
+    'createSuccess': '套餐模板创建成功',
+    'updateSuccess': '套餐模板更新成功',
+    'deleteSuccess': '套餐模板删除成功',
+    'nameRequired': '请输入套餐名称',
+    'trafficPositive': '流量额度不能为负数（0\x20=\x20不限）',
+    'nodeTrafficExceedsPackage': '单个节点的流量额度不能大于套餐流量额度',
+    'cyclePositive': '计量周期必须大于0',
+    'externalNodeWarning': '请注意，外部节点流量不在套餐流量统计内！！！'
+  },
+  nd = {
+    'name': '套餐名',
+    'traffic': '流量',
+    'cycle': '周期',
+    'resetDay': '重置日',
+    'mode': '统计',
+    'template': '模板',
+    'limits': '限速',
+    'nodes': '节点',
+    'actions': '操作',
+    'daysUnit': '天',
+    'unlimitedTraffic': '不限'
+  },
+  Yf = {
+    'page': Xl,
+    'buttons': Jl,
+    'empty': Yl,
+    'card': Zl,
+    'dialog': ed,
+    'toast': td,
+    'list': nd
+  },
+  Zf = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'buttons': Jl,
+    'card': Zl,
+    'default': Yf,
+    'dialog': ed,
+    'empty': Yl,
+    'list': nd,
+    'page': Xl,
+    'toast': td
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  od = '规则配置',
+  ad = '查看、编辑并保存订阅规则，支持版本历史留存。',
+  rd = '权限不足',
+  sd = '只有管理员可以访问规则配置页面。',
+  id = {
+    'title': '规则文件',
+    'description': '选择需要编辑的\x20YAML\x20文件',
+    'empty': '未找到任何\x20YAML\x20文件。'
+  },
+  ld = {
+    'noFile': '未选择文件',
+    'latestVersion': '最新版本\x20v{{version}}',
+    'autoValidate': '编辑内容时会自动校验\x20YAML\x20格式',
+    'saving': '保存中...',
+    'save': '保存修改',
+    'revert': '还原修改',
+    'saveHint': '保存后会生成新的历史版本',
+    'saveFailed': '保存失败，YAML\x20格式错误',
+    'saveSuccess': '规则已保存',
+    'contentEmpty': '内容不能为空',
+    'yamlParseFailed': 'YAML\x20解析失败'
+  },
+  dd = {
+    'title': '历史版本',
+    'description': '最近保存的版本会在此展示',
+    'empty': '暂无历史记录，保存后会自动生成版本。',
+    'version': '版本\x20v{{version}}',
+    'unknownTime': '时间未知'
+  },
+  ex = {
+    'title': od,
+    'subtitle': ad,
+    'noPermission': rd,
+    'noPermissionDesc': sd,
+    'fileList': id,
+    'editor': ld,
+    'history': dd
+  },
+  tx = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'default': ex,
+    'editor': ld,
+    'fileList': id,
+    'history': dd,
+    'noPermission': rd,
+    'noPermissionDesc': sd,
+    'subtitle': ad,
+    'title': od
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  cd = '个人设置',
+  ud = {
+    'title': '个人资料',
+    'description': '修改用户名、昵称、邮箱和头像链接。',
+    'adminAvatarHint': '管理员头像默认根据角色区分，设置自定义链接将覆盖默认头像。',
+    'avatarHint': '支持使用任意公开可访问的图片链接。',
+    'username': '用户名',
+    'usernamePlaceholder': '用于登录的用户名',
+    'adminUsernameDisabled': '管理员用户名暂不支持修改。',
+    'nickname': '昵称',
+    'nicknamePlaceholder': '用于展示的昵称',
+    'email': '邮箱\x20(暂不可用)',
+    'emailPlaceholder': '用于接收通知\x20(可选)',
+    'avatarUrl': '头像链接',
+    'updated': '个人信息已更新',
+    'updateFailed': '更新个人信息失败',
+    'usernameEmpty': '用户名不能为空',
+    'adminUsernameImmutable': '管理员用户名不可修改',
+    'saveButton': '保存变更'
+  },
+  pd = {
+    'title': '界面风格',
+    'description': '选择界面显示风格，切换后页面将刷新',
+    'miaomiaowu': '妙妙屋',
+    'flat': '扁平',
+    'anime': '二次元',
+    'premium': '高级黑金',
+    'glass': '液态玻璃'
+  },
+  md = {
+    'title': '修改密码',
+    'description': '修改后需要使用新密码重新登录系统。',
+    'currentPassword': '当前密码',
+    'currentPasswordPlaceholder': '请输入当前密码',
+    'newPassword': '新密码',
+    'newPasswordHint': '至少\x208\x20位，建议包含符号',
+    'confirmPassword': '确认新密码',
+    'confirmPasswordPlaceholder': '再次输入新密码',
+    'updateButton': '更新密码',
+    'changing': '修改中…',
+    'updated': '密码已更新，请重新登录',
+    'changeFailed': '修改密码失败',
+    'minLength': '新密码至少\x208\x20位',
+    'mismatch': '两次输入的新密码不一致'
+  },
+  fd = {
+    'title': '订阅凭据',
+    'warning': '订阅链接泄露后可在此立即重置。系统会同时更换订阅\x20Token、所有短链接及该账户在\x20Xray\x20节点上的鉴权凭据。',
+    'notGenerated': '尚未生成',
+    'copied': 'Token\x20已复制',
+    'copyButton': '复制\x20Token',
+    'resetButton': '重置订阅凭据',
+    'reset': '订阅凭据已重置，共更换\x20{{count}}\x20个\x20Xray\x20凭据',
+    'resetFailed': '重置订阅凭据失败',
+    'confirmTitle': '确认重置全部订阅凭据？',
+    'confirmDescription': '旧订阅链接和已导入客户端中的旧节点凭据将立即失效。完成后需要重新复制订阅链接，并在客户端更新订阅。此操作可能需要等待所有关联服务器完成配置更新。',
+    'confirmButton': '确认重置',
+    'resetting': '正在同步所有节点…'
+  },
+  xd = {
+    'title': 'API\x20令牌',
+    'description': '供\x20MCP\x20/\x20程序化访问(如接入\x20OpenClaw)。令牌权限与你的登录账号完全一致;明文仅创建时显示一次,请妥善保存。',
+    'nameLabel': '名称',
+    'namePlaceholder': '例如:openclaw',
+    'createButton': '生成令牌',
+    'created': '已生成,请立即复制明文',
+    'createFailed': '生成失败',
+    'tokenOnce': '令牌明文(仅显示一次,请立即复制)',
+    'openclawSnippet': 'OpenClaw\x20配置片段(openclaw.json)',
+    'copySnippet': '复制配置片段',
+    'listTitle': '已生成的令牌',
+    'empty': '暂无令牌',
+    'lastUsed': '最近使用',
+    'neverUsed': '从未使用',
+    'revoke': '删除',
+    'revoked': '令牌已删除',
+    'revokeFailed': '删除失败'
+  },
+  gd = {
+    'title': '两步验证',
+    'enabledDesc': '两步验证已启用，每次登录需要输入验证码。',
+    'disabledDesc': '启用后每次登录需要输入验证器应用中的验证码。',
+    'enableButton': '启用两步验证',
+    'disableButton': '禁用两步验证',
+    'steps': {
+      'password': '验证密码',
+      'qrcode': '扫描二维码',
+      'verify': '验证设置',
+      'recovery': '保存恢复码'
+    },
+    'passwordDesc': '请输入当前密码以开始设置两步验证。',
+    'passwordPlaceholder': '输入当前密码',
+    'qrcodeDesc': '使用验证器应用扫描下方二维码。',
+    'manualKey': '手动输入密钥',
+    'verifyDesc': '输入验证器应用显示的\x206\x20位验证码。',
+    'verifyAndEnable': '验证并启用',
+    'recoveryDesc': '请妥善保存以下恢复码，用于在无法访问验证器时登录。',
+    'copyRecoveryCodes': '复制恢复码',
+    'recoveryCodesCopied': '恢复码已复制',
+    'recoveryCodesCopyFailed': '复制失败，请手动复制',
+    'downloadRecoveryCodes': '下载恢复码',
+    'recoveryCodesSaved': '我已保存恢复码',
+    'disableTitle': '禁用两步验证',
+    'disableDesc': '请输入验证器应用中的\x206\x20位验证码以禁用两步验证。',
+    'confirmDisable': '确认禁用',
+    'passwordFailed': '密码验证失败',
+    'invalidCode': '验证码无效',
+    'disabled': '两步验证已禁用'
+  },
+  hd = {
+    'title': '语言',
+    'description': '选择界面显示语言'
+  },
+  bd = '用户',
+  nx = {
+    'title': cd,
+    'profile': ud,
+    'themeStyle': pd,
+    'password': md,
+    'token': fd,
+    'apiToken': xd,
+    'twoFactor': gd,
+    'language': hd,
+    'defaultUser': bd
+  },
+  ox = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'apiToken': xd,
+    'default': nx,
+    'defaultUser': bd,
+    'language': hd,
+    'password': md,
+    'profile': ud,
+    'themeStyle': pd,
+    'title': cd,
+    'token': fd,
+    'twoFactor': gd
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  yd = {
+    'title': '自定义代理组',
+    'description': '创建和管理自定义代理组配置',
+    'wip': '功能开发中',
+    'wipDesc': '自定义代理组功能正在规划中，敬请期待',
+    'wipDetail': '此功能将允许您创建自定义的代理组配置，包括策略组、规则设置等。'
+  },
+  vd = {
+    'title': '订阅管理',
+    'description': '点击生成订阅创建订阅文件',
+    'importSubscription': '导入订阅',
+    'importDescription': '从\x20Clash\x20订阅链接导入，系统会自动下载并保存文件',
+    'uploadFile': '上传文件',
+    'uploadLocalFile': '上传本地\x20YAML\x20格式的\x20Clash\x20订阅文件',
+    'noFiles': '暂无订阅文件',
+    'noFilesHint': '暂无订阅，点击上方按钮添加',
+    'generateSubscription': '生成订阅',
+    'customProxyGroup': '自定义代理组',
+    'fileList': {
+      'title': '订阅列表',
+      'description': '已添加的订阅文件',
+      'creator': '创建用户',
+      'creatorFilter': '按创建用户筛选',
+      'allCreators': '全部创建用户',
+      'legacyCreator': '历史未标记',
+      'subscriptionName': '订阅名称',
+      'descriptionCol': '说明',
+      'lastUpdated': '最后更新',
+      'expireDate': '过期时间',
+      'ruleSync': '规则同步',
+      'actions': '操作',
+      'todayExpire': '今天过期',
+      'expired': '已过期',
+      'daysRemaining': '{{days}}天后过期',
+      'notSet': '未设置',
+      'extend30Days': '延长30天',
+      'markExpired': '标记过期',
+      'selectTime': '选择时间',
+      'expireUpdated': '过期时间已更新',
+      'clearExpireTime': '清除过期时间',
+      'expireCleared': '已清除过期时间',
+      'deleteConfirmTitle': '确认删除',
+      'deleteConfirmDesc': '确定要删除订阅\x20\x22{{name}}\x22\x20吗？此操作将同时删除对应的文件，不可撤销。',
+      'mobileDescriptionLabel': '描述',
+      'mobileFileLabel': '文件',
+      'mobileUpdateTimeLabel': '更新时间',
+      'mobileRuleSyncLabel': '规则同步',
+      'ruleSyncEnabled': '已启用',
+      'ruleSyncDisabled': '未启用',
+      'overrideConfigDisabled': '未启用',
+      'overrideConfigAll': '全部({{count}})',
+      'overrideConfigSelected': '{{count}}\x20项',
+      'overrideOptionDisable': '不启用',
+      'overrideOptionEnableAll': '全部启用',
+      'overrideGroupCustomRules': '自定义规则',
+      'overrideGroupScripts': '覆写脚本',
+      'overrideHookPostFetch': '获取后',
+      'overrideHookPreSaveNodes': '保存前',
+      'editInfo': '编辑信息',
+      'editConfig': '编辑配置'
+    },
+    'importDialog': {
+      'namePlaceholder': '例如：机场A',
+      'urlLabel': '订阅链接',
+      'filenamePlaceholder': '留空则自动获取',
+      'descriptionPlaceholder': '订阅说明信息',
+      'importing': '导入中...'
+    },
+    'uploadDialog': {
+      'selectFile': '选择文件',
+      'namePlaceholder': '留空则使用文件名',
+      'filenamePlaceholder': '留空则使用原文件名',
+      'descriptionPlaceholder': '订阅说明信息',
+      'uploading': '上传中...'
+    }
+  },
+  Sd = {
+    'subscriptionName': '订阅名称',
+    'url': '订阅链接',
+    'filename': '文件名',
+    'description': '说明',
+    'expireDate': '过期时间'
+  },
+  Cd = {
+    'importSuccess': '订阅导入成功',
+    'importFailed': '导入失败',
+    'uploadSuccess': '文件上传成功',
+    'uploadFailed': '上传失败',
+    'deleteSuccess': '订阅已删除',
+    'deleteFailed': '删除失败',
+    'updateSuccess': '订阅信息已更新',
+    'updateFailed': '更新失败',
+    'ruleSaved': '规则已保存',
+    'configSaved': '配置已保存',
+    'syncSettingUpdated': '规则同步设置已更新',
+    'parseConfigFailed': '解析配置文件失败',
+    'saveFailed': '保存失败，YAML\x20格式错误',
+    'saveFailed2': '保存失败，YAML\x20格式错误：',
+    'fillNameAndUrl': '请填写订阅名称和链接',
+    'selectFile': '请选择文件',
+    'fillName': '请填写订阅名称',
+    'fillFilename': '请填写文件名',
+    'nodesApplied': '已应用节点配置',
+    'applyFailed': '应用配置失败',
+    'replacementApplied': '已将缺失节点替换为\x20{{choice}}',
+    'validationEmpty': '内容不能为空',
+    'configValidationFailed': '配置校验失败',
+    'configAutoFixed': '配置已自动修复',
+    'externalSubDeleted': '外部订阅已删除',
+    'externalSubUpdated': '外部订阅已更新',
+    'externalSubSynced': '外部订阅同步成功',
+    'subscriptionSynced': '订阅同步成功',
+    'syncFailed': '同步失败',
+    'proxyProviderCreated': '代理集合配置创建成功',
+    'proxyProviderUpdated': '代理集合配置更新成功',
+    'proxyProviderDeleted': '代理集合配置已删除',
+    'createFailed': '创建失败',
+    'batchDeleteSuccess': '批量删除成功',
+    'batchDeleteFailed': '批量删除失败',
+    'switchedToMmw': '已切换为妙妙屋处理',
+    'switchedToClient': '已切换为客户端处理',
+    'switchFailed': '切换失败',
+    'selectExternalSub': '请先选择外部订阅',
+    'enterNamePrefix': '请输入名称前缀',
+    'getNodeListFailed': '获取节点列表失败:\x20',
+    'noNodesInSub': '订阅中没有节点',
+    'creationComplete': '创建完成:\x20{{success}}\x20个成功,\x20{{skipped}}\x20个跳过(无节点),\x20{{failed}}\x20个失败',
+    'creationCompleteSimple': '创建完成:\x20{{success}}/{{total}}\x20个代理集合',
+    'onlyMmwPreview': '仅妙妙屋处理模式支持预览',
+    'previewFailed': '预览失败',
+    'configDeleteFailed': '{{count}}\x20个配置删除失败'
+  },
+  Wd = {
+    'title': '外部订阅',
+    'description': '管理从节点管理导入的外部订阅源，用于从第三方订阅同步节点',
+    'syncAll': '同步所有订阅',
+    'syncing': '同步中...',
+    'noSubs': '暂无外部订阅，请在\x22生成订阅\x22页面添加',
+    'noSubsShort': '暂无外部订阅',
+    'columns': {
+      'name': '名称',
+      'subscriptionUrl': '订阅链接',
+      'nodeCount': '节点数',
+      'trafficUsage': '流量使用',
+      'expireTime': '到期时间',
+      'lastSync': '最后同步',
+      'actions': '操作',
+      'owner': '归属用户'
+    },
+    'nodesOf': '{{name}}\x20的节点',
+    'noNodes': '暂无节点',
+    'nodeCountLabel': '{{count}}\x20节点',
+    'downloadOnly': '仅下行',
+    'uploadOnly': '仅上行',
+    'uploadAndDownload': '上下行',
+    'upload': '上传',
+    'download': '下载',
+    'total': '总量',
+    'remaining': '剩余',
+    'statsMode': '统计方式',
+    'switchStatsMode': '切换统计方式',
+    'deleteConfirmTitle': '确认删除',
+    'deleteConfirmDesc': '确定要删除外部订阅\x20\x22{{name}}\x22\x20吗？此操作不会删除已同步的节点，但会停止后续同步。',
+    'mobileUrlLabel': '链接',
+    'mobileTrafficLabel': '流量',
+    'mobileExpireLabel': '到期',
+    'mobileLastSyncLabel': '最后同步',
+    'editTitle': '编辑外部订阅',
+    'editDescription': '修改外部订阅的地址和流量统计方式',
+    'addressLabel': '订阅地址',
+    'trafficStatsMode': '流量统计方式',
+    'trafficStatsModeDownloadUpload': '上下行\x20(download\x20+\x20upload)',
+    'trafficStatsModeDownload': '仅下行\x20(download)',
+    'trafficStatsModeUpload': '仅上行\x20(upload)',
+    'trafficStatsModeHint': '选择如何计算已用流量：上下行为两者相加，仅下行或仅上行则只计算对应流量'
+  },
+  wd = {
+    'title': '代理集合配置',
+    'description': '管理\x20Clash\x20Meta\x20proxy-providers\x20配置，用于按需加载代理节点',
+    'configCount': '{{count}}\x20个配置',
+    'selectedCount': '{{count}}\x20项已选',
+    'batchDelete': '批量删除',
+    'createBasic': '创建代理集合(初级)',
+    'createAdvanced': '创建代理集合(高级)',
+    'allFilter': '全部',
+    'noConfigs': '暂无代理集合配置',
+    'noConfigsHint': '点击上方按钮创建你的第一个代理集合',
+    'selectAll': '全选',
+    'selectItem': '选择\x20{{name}}',
+    'columns': {
+      'name': '名称',
+      'linkedSub': '关联订阅',
+      'processMode': '处理模式',
+      'filterRule': '过滤规则',
+      'actions': '操作'
+    },
+    'unknown': '未知',
+    'mmwProcess': '妙妙屋处理',
+    'clientProcess': '客户端处理',
+    'mmwShort': '妙妙屋',
+    'clientShort': '客户端',
+    'switchTo': '点击切换为',
+    'filterKeep': '保留:\x20{{filter}}',
+    'filterExclude': '排除:\x20{{filter}}',
+    'filterExcludeType': '类型:\x20{{filter}}',
+    'previewResult': '预览处理结果',
+    'editConfig': '编辑配置',
+    'copyConfig': '复制配置',
+    'configCopied': '配置已复制到剪贴板',
+    'deleteConfirmTitle': '确认删除',
+    'deleteConfirmDesc': '确定要删除代理集合配置\x20\x22{{name}}\x22\x20吗？此操作无法撤销。',
+    'mobileLinkedSubLabel': '关联订阅',
+    'mobileFilterLabel': '过滤规则',
+    'batchDeleteConfirmTitle': '确认批量删除',
+    'batchDeleteConfirmDesc': '确定要删除选中的\x20{{count}}\x20个代理集合配置吗？此操作无法撤销。',
+    'deleting': '删除中...',
+    'confirmDelete': '确认删除',
+    'dialog': {
+      'createTitle': '创建代理集合配置',
+      'editTitle': '编辑代理集合配置',
+      'editDesc': '编辑代理集合\x20\x22{{name}}\x22\x20的配置',
+      'createForSubDesc': '为外部订阅\x20\x22{{name}}\x22\x20创建\x20proxy-provider\x20配置',
+      'createNewDesc': '创建新的\x20proxy-provider\x20配置',
+      'basicConfig': '基础配置',
+      'externalSubLabel': '外部订阅',
+      'selectExternalSub': '请选择外部订阅',
+      'providerName': '代理集合名称',
+      'providerNamePlaceholder': '例如:\x20机场A',
+      'subscriptionUrl': '订阅\x20URL',
+      'urlCopied': 'URL\x20已复制',
+      'configIdHint': '保存后将生成实际的\x20config_id',
+      'type': '类型',
+      'updateInterval': '更新间隔(秒)',
+      'downloadProxy': '下载代理',
+      'fileSizeLimit': '文件大小限制',
+      'requestHeaders': '请求头',
+      'authTokenPlaceholder': '鉴权token，如有则必填',
+      'healthCheck': '健康检查',
+      'healthCheckUrl': '检查URL',
+      'healthCheckInterval': '检查间隔(秒)',
+      'healthCheckTimeout': '超时(ms)',
+      'healthCheckExpectedStatus': '期望状态码',
+      'lazyMode': '懒惰模式',
+      'advancedProcessMode': '高级配置处理方式',
+      'clientProcessLabel': '由客户端处理',
+      'clientProcessDesc': '高级配置输出到订阅配置中',
+      'mmwProcessLabel': '由妙妙屋处理',
+      'mmwProcessDesc': 'URL\x20指向妙妙屋接口',
+      'advancedConfig': '高级配置',
+      'advancedConfigOutput': '(输出到配置)',
+      'advancedConfigMmw': '(由妙妙屋处理)',
+      'nodeFilter': '节点过滤(正则)',
+      'nodeFilterPlaceholder': '例如:\x20香港|日本',
+      'nodeFilterHint': '保留匹配的节点',
+      'nodeExclude': '节点排除(正则)',
+      'nodeExcludePlaceholder': '例如:\x20过期|剩余',
+      'nodeExcludeHint': '排除匹配的节点',
+      'excludeProtocolType': '排除协议类型',
+      'overrideConfig': '覆写配置',
+      'connectionSettings': '连接设置',
+      'enableUdp': '启用\x20UDP',
+      'skipCertVerify': '跳过证书验证',
+      'proxySettings': '代理设置',
+      'chainProxy': '链式代理\x20(dialer-proxy)',
+      'chainProxyPlaceholder': '例如:\x20节点选择',
+      'networkSettings': '网络设置',
+      'outboundInterface': '出站接口',
+      'outboundInterfacePlaceholder': '例如:\x20eth0',
+      'routingMark': '路由标记',
+      'routingMarkPlaceholder': '例如:\x20255',
+      'ipVersionLabel': 'IP\x20版本',
+      'ipVersionPlaceholder': '选择\x20IP\x20版本',
+      'nodeNameModify': '节点名称修改',
+      'namePrefix': '名称前缀',
+      'namePrefixPlaceholder': '例如:\x20[机场A]',
+      'nameSuffix': '名称后缀',
+      'nameSuffixPlaceholder': '例如:\x20-Premium',
+      'configPreview': '生成的配置预览',
+      'copyBtn': '复制',
+      'selectExternalSubFirst': '请选择外部订阅',
+      'updateConfig': '更新配置',
+      'saveConfig': '保存配置'
+    },
+    'basicDialog': {
+      'title': '创建代理集合(初级)',
+      'description': '批量创建代理集合，支持按地域或协议分裂',
+      'selectExternalSub': '选择外部订阅',
+      'selectExternalSubPlaceholder': '请选择外部订阅',
+      'namePrefix': '名称前缀',
+      'namePrefixPlaceholder': '输入名称前缀',
+      'namePrefixHint': '生成的代理集合名称格式:\x20前缀-地域/协议',
+      'groupByIp': '根据IP位置分组',
+      'groupByIpHint': '开启后，节点名称匹配不到时会根据服务器IP位置匹配',
+      'splitByRegion': '按地域分裂',
+      'splitByProtocol': '按代理协议分裂',
+      'creationResults': '创建结果',
+      'success': '成功',
+      'failed': '失败',
+      'noMatchNodes': '无匹配节点'
+    },
+    'previewTitle': '预览处理结果\x20-\x20{{name}}',
+    'previewDesc': '妙妙屋处理后的代理节点配置',
+    'copiedToClipboard': '已复制到剪贴板'
+  },
+  Pd = {
+    'label': '规则选择',
+    'tooltip': '这个功能是从https://github.com/7Sageer/sublink-worker复制粘贴过来的',
+    'custom': '自定义',
+    'minimal': '极简规则',
+    'balanced': '均衡规则（推荐）',
+    'comprehensive': '完整规则',
+    'customDesc': '自定义选择需要的规则类别',
+    'minimalDesc': '已自动选择基础规则，可以手动调整',
+    'balancedDesc': '已自动选择常用规则，可以手动调整',
+    'comprehensiveDesc': '已自动选择所有规则，可以手动调整',
+    'selectedCount': '已选择\x20{{count}}\x20个类别',
+    'loadingCategories': '正在加载规则分类...',
+    'loadError': '无法加载规则分类，请稍后重试或联系管理员。',
+    'noCategories': '暂无可用的规则分类'
+  },
+  kd = {
+    'title': '编辑文件',
+    'editFilename': '编辑\x20{{filename}}\x20的内容，会自动验证\x20YAML\x20格式',
+    'saveChanges': '保存修改',
+    'saving': '保存中...',
+    'revertChanges': '还原修改',
+    'version': '版本\x20v{{version}}'
+  },
+  Td = {
+    'title': '编辑订阅信息',
+    'description': '修改订阅名称、说明和文件名',
+    'namePlaceholder': '例如：机场A',
+    'descriptionPlaceholder': '订阅说明信息',
+    'filenamePlaceholder': '例如：subscription.yaml',
+    'filenameHint': '修改文件名后需确保该文件在\x20subscribes\x20目录中存在',
+    'expireDateLabel': '过期时间（可选）',
+    'noExpireDate': '无过期时间',
+    'expireDateHint': '设置订阅链接的过期时间，过期后链接将失效'
+  },
+  Rd = {
+    'title': '编辑配置\x20-\x20{{name}}',
+    'editNodes': '编辑节点',
+    'loadingConfig': '加载配置中...',
+    'usageTitle': '使用说明',
+    'usageStep1': '点击\x22保存\x22按钮将修改保存到配置文件',
+    'usageStep2': '支持直接编辑\x20YAML\x20内容',
+    'usageStep3': '保存前会自动验证\x20YAML\x20格式',
+    'usageStep4': '支持\x20Clash、Clash\x20Meta、Mihomo\x20等客户端',
+    'editNodesTitle': '编辑节点\x20-\x20{{name}}',
+    'applyAndSave': '应用并保存',
+    'applyReplace': '应用替换'
+  },
+  Dd = {
+    'default': '默认',
+    'dual': 'dual\x20(双栈)',
+    'ipv4': 'ipv4',
+    'ipv6': 'ipv6',
+    'ipv4-prefer': 'ipv4-prefer',
+    'ipv6-prefer': 'ipv6-prefer'
+  },
+  Nd = {
+    'title': '订阅链接生成器',
+    'description': '从节点管理中选择节点，快速生成\x20Clash\x20订阅配置',
+    'selectNodes': '选择节点',
+    'selectNodesDesc': '从已保存的节点中选择需要添加到订阅的节点（已选择\x20{{count}}\x20个）',
+    'noNodes': '暂无可用节点，请先在节点管理中添加节点',
+    'noMatchingNodes': '没有找到匹配的节点',
+    'allNodes': '全部',
+    'allTags': '全部标签',
+    'columns': {
+      'nodeName': '节点名称',
+      'protocol': '协议',
+      'serverAddress': '服务器地址',
+      'tag': '标签'
+    },
+    'ruleMode': '规则模式',
+    'customRules': '自定义规则',
+    'useTemplate': '使用模板',
+    'templateDesc': '使用\x20ACL4SSR\x20规则模板生成配置，自动解析代理组和规则。',
+    'selectTemplate': '选择模板',
+    'selectTemplatePlaceholder': '请选择模板',
+    'viewSource': '查看源文件',
+    'templateManagement': '模板管理',
+    'load': '加载',
+    'selectNodeFirst': '请先选择节点',
+    'selectTemplateFirst': '请先选择模板',
+    'generating': '生成中...',
+    'generateSubscription': '生成订阅文件',
+    'clear': '清空',
+    'generatedConfig': '生成的\x20Clash\x20配置',
+    'previewYaml': '预览生成的\x20YAML\x20配置文件',
+    'regionGroup': '地域分组',
+    'manualGroup': '手动分组',
+    'saveSubscription': '保存订阅',
+    'configPlaceholder': '生成配置后显示在这里...',
+    'usageTitle': '使用说明',
+    'usageStep1': '点击\x22保存为订阅\x22按钮保存为clash\x20yaml格式配置文件',
+    'usageStep2': '在订阅链接将订阅地址导入\x20Clash\x20客户端即可使用',
+    'usageStep3': '支持\x20Clash、Clash\x20Meta、Mihomo\x20等客户端',
+    'saveDialog': {
+      'title': '保存为订阅',
+      'description': '将生成的配置保存为订阅文件，保存后可以在订阅管理中查看和使用',
+      'nameLabel': '订阅名称',
+      'namePlaceholder': '例如：我的订阅',
+      'filenameLabel': '文件名（可选）',
+      'filenamePlaceholder': '默认使用订阅名称',
+      'filenameHint': '文件将保存到\x20subscribes\x20目录，自动添加\x20.yaml\x20扩展名',
+      'descriptionLabel': '说明（可选）',
+      'descriptionPlaceholder': '订阅说明...'
+    },
+    'manualGroupTitle': '手动分组节点',
+    'confirmBtn': '确定',
+    'confirmReplace': '确认替换',
+    'toast': {
+      'selectAtLeastOneNode': '请选择至少一个节点',
+      'selectTemplate': '请选择一个模板',
+      'noValidNodes': '未能解析到任何有效节点',
+      'templateLoadSuccess': '成功加载模板并插入\x20{{count}}\x20个节点',
+      'templateLoadFailed': '加载模板失败',
+      'nodesLoadSuccess': '成功加载\x20{{count}}\x20个节点',
+      'applyingCustomRules': '应用\x20{{count}}\x20条自定义规则',
+      'applyingCategories': '应用\x20{{count}}\x20个规则类别',
+      'configValidationFailed': '配置校验失败',
+      'configAutoFixed': '配置已自动修复',
+      'validationError': '配置校验时发生错误:\x20',
+      'generateSuccessWithGroups': 'Clash\x20配置生成成功！已应用自定义规则，新增了以下代理组：{{groups}}，默认节点：🚀\x20节点选择、DIRECT',
+      'generateSuccess': 'Clash\x20配置生成成功！',
+      'generateFailed': '生成订阅链接失败',
+      'cleared': '已清空所有内容',
+      'saveSuccess': '订阅保存成功！',
+      'saveSuccessHint': '请前往\x22订阅文件\x22页面查看',
+      'saveFailed': '保存订阅失败',
+      'generateConfigFirst': '请先生成配置',
+      'manualGroupFirst': '请先手动分组节点',
+      'enterSubscribeName': '请输入订阅名称',
+      'noProxyGroups': '配置中没有找到代理组',
+      'parseConfigFailed': '解析配置失败，请检查配置格式',
+      'groupApplied': '分组已应用到配置',
+      'applyGroupFailed': '应用分组失败，请检查配置',
+      'replacementApplied': '已将缺失节点替换为\x20{{choice}}',
+      'applyReplaceFailed': '应用替换失败，请检查配置',
+      'autoGroupComplete': '自动分组完成，新建代理组：{{groups}}',
+      'autoGroupCompleteStats': '自动分组完成：{{stats}}',
+      'autoGroupFailed': '自动分组失败',
+      'chainProxyAdded': '已添加\x20{{groups}}',
+      'chainProxyExists': '链式代理节点已存在'
+    }
+  },
+  Ad = {
+    'title': '模板管理',
+    'description': '管理\x20ACL4SSR\x20规则模板',
+    'createTemplate': '新建模板',
+    'columns': {
+      'name': '名称',
+      'ruleSource': '规则源',
+      'actions': '操作',
+      'notConfigured': '未配置'
+    },
+    'viewSource': '查看源文件',
+    'previewResult': '预览生成结果',
+    'edit': '编辑',
+    'delete': '删除',
+    'noTemplates': '暂无模板，点击上方按钮创建',
+    'formTitle': '新建模板',
+    'editFormTitle': '编辑模板',
+    'formDescription': '配置模板名称和规则源地址',
+    'templateName': '模板名称',
+    'templateNamePlaceholder': '输入模板名称',
+    'selectPreset': '选择预设',
+    'ruleSourceLabel': '规则源地址',
+    'ruleSourcePlaceholder': 'ACL4SSR\x20配置\x20URL',
+    'ruleSourceHint': 'ACL4SSR\x20格式的规则配置\x20URL',
+    'useProxy': '使用代理下载',
+    'useProxyHint': '启用后自动通过\x201ms.cc\x20代理下载',
+    'create': '创建',
+    'save': '保存',
+    'deleteConfirmTitle': '确认删除',
+    'deleteConfirmDesc': '确定要删除这个模板吗？此操作无法撤销。',
+    'previewTitle': '配置预览',
+    'previewDesc': '生成的配置文件预览',
+    'generatingPreview': '正在生成预览...',
+    'sourcePreviewTitle': '源文件预览\x20-\x20{{name}}',
+    'fetchingSource': '正在获取源文件...',
+    'toast': {
+      'created': '模板已创建',
+      'createError': '创建模板时出错',
+      'updated': '模板已更新',
+      'updateError': '更新模板时出错',
+      'deleted': '模板已删除',
+      'deleteError': '删除模板时出错',
+      'saved': '模板已保存',
+      'saveError': '保存模板时出错',
+      'uploaded': '模板\x20{{name}}\x20上传成功',
+      'uploadError': '上传模板时出错',
+      'renamed': '模板已重命名为\x20{{name}}',
+      'renameError': '重命名模板时出错',
+      'configureRuleSource': '请先配置规则源',
+      'previewError': '生成预览时出错',
+      'fetchSourceError': '获取源文件时出错',
+      'selectTemplateFirst': '请先选择模板',
+      'getContentFailed': '获取模板内容失败',
+      'enterName': '请输入模板名称',
+      'enterRuleSource': '请输入规则源地址'
+    }
+  },
+  Ld = {
+    'title': '模板管理',
+    'description': '管理\x20rule_templates\x20目录下的\x20YAML\x20模板文件',
+    'uploading': '上传中...',
+    'uploadTemplate': '上传模板',
+    'columns': {
+      'filename': '文件名',
+      'actions': '操作'
+    },
+    'rename': '重命名',
+    'noTemplateFiles': '暂无模板文件',
+    'editTitle': '编辑模板\x20-\x20{{name}}',
+    'editDescription': '编辑\x20YAML\x20模板文件内容',
+    'loadingContent': '正在加载模板内容...',
+    'templateContent': '模板内容',
+    'saving': '保存中...',
+    'deleteConfirmTitle': '确认删除',
+    'deleteConfirmDesc': '确定要删除模板文件\x20\x22{{name}}\x22\x20吗？此操作不可恢复。',
+    'renameTitle': '重命名模板',
+    'renameDesc': '将\x20\x22{{name}}\x22\x20重命名为新文件名',
+    'newFilename': '新文件名',
+    'newFilenamePlaceholder': '输入新的模板名称',
+    'renaming': '重命名中...',
+    'sourceFile': '模板源文件'
+  },
+  _d = {
+    'ads': '广告拦截',
+    'ai': 'AI\x20服务',
+    'bilibili': '哔哩哔哩',
+    'youtube': '油管视频',
+    'google': '谷歌服务',
+    'private': '私有网络',
+    'domestic': '国内服务',
+    'telegram': '电报消息',
+    'github': 'Github',
+    'microsoft': '微软服务',
+    'apple': '苹果服务',
+    'social': '社交媒体',
+    'streaming': '流媒体',
+    'gaming': '游戏平台',
+    'education': '教育资源',
+    'finance': '金融服务',
+    'cloud': '云服务',
+    'overseas': '非中国'
+  },
+  ax = {
+    'customProxyGroup': yd,
+    'management': vd,
+    'form': Sd,
+    'toast': Cd,
+    'externalSub': Wd,
+    'proxyProvider': wd,
+    'ruleSelector': Pd,
+    'editFile': kd,
+    'editMetadata': Td,
+    'editConfig': Rd,
+    'ipVersion': Dd,
+    'generator': Nd,
+    'templateManage': Ad,
+    'oldTemplate': Ld,
+    'ruleCategories': _d
+  },
+  rx = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'customProxyGroup': yd,
+    'default': ax,
+    'editConfig': Rd,
+    'editFile': kd,
+    'editMetadata': Td,
+    'externalSub': Wd,
+    'form': Sd,
+    'generator': Nd,
+    'ipVersion': Dd,
+    'management': vd,
+    'oldTemplate': Ld,
+    'proxyProvider': wd,
+    'ruleCategories': _d,
+    'ruleSelector': Pd,
+    'templateManage': Ad,
+    'toast': Cd
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Od = '系统设置',
+  Fd = '管理订阅同步和功能开关',
+  Id = {
+    'subscription': '订阅',
+    'features': '功能',
+    'users': '用户',
+    'notifications': '推送',
+    'security': '安全',
+    'probe': '探针',
+    'appearance': '外观',
+    'announcements': '公告',
+    'tgbot': 'TG\x20Bot',
+    'verification': '验证',
+    'system': '系统',
+    'database': '数据库',
+    'license': '许可证'
+  },
+  Md = {
+    'title': '短链接',
+    'description': '开启后，订阅链接将使用短码格式，隐藏\x20token\x20信息',
+    'enableLabel': '启用短链接',
+    'updated': '短链接设置已更新'
+  },
+  Ed = {
+    'title': 'Cloudflare\x20人机验证',
+    'description': '登录页接入\x20Cloudflare\x20Turnstile,防爆破登录。两\x20key\x20都填才启用,任一空自动降级跳过验证。',
+    'siteKey': 'Site\x20Key',
+    'siteKeyPlaceholder': '0x4AAAAAAA...\x20(公开,前端\x20widget\x20用)',
+    'secretKey': 'Secret\x20Key',
+    'secretKeyPlaceholder': '0x4AAAAAAA...\x20(保密,后端\x20siteverify\x20用)',
+    'secretKeyConfigured': '已配置(填入新值替换)',
+    'hint': '前往\x20Cloudflare\x20Dashboard\x20→\x20Turnstile\x20申请\x20Site\x20Key\x20与\x20Secret\x20Key。',
+    'docLinkLabel': '查看完整配置教程\x20→',
+    'saved': '验证码配置已保存',
+    'testTitle': '配置自测',
+    'testButton': '测试',
+    'testWaitingUser': '完成下方验证后点击测试',
+    'testRequiresSecret': '请先填写并保存\x20Secret\x20Key,再开始测试',
+    'testSuccess': '验证通过!Cloudflare\x20已识别本站域名为\x20{{hostname}},配置无误。',
+    'testFailed': 'Cloudflare\x20拒绝验证,请检查下方错误码并修正配置:',
+    'testRetry': '重新测试',
+    'errInvalidSecret': 'Secret\x20Key\x20与\x20Cloudflare\x20控制台不一致,请重新复制粘贴。',
+    'errMissingSecret': '后端未读取到\x20Secret\x20Key,请确认填写并保存。',
+    'errTimeoutOrDup': 'Token\x20已被消费\x20/\x20已过期,请点重新测试。',
+    'errInvalidResponse': 'Token\x20非法,可能是\x20site_key\x20与\x20secret_key\x20不属于同一个\x20Turnstile\x20应用。'
+  },
+  Ud = {
+    'title': '定时配置',
+    'description': '配置各项定时任务的执行间隔；网速/上报间隔即时生效，其余修改后需重启服务',
+    'speedCollect': '网速采集间隔（秒）',
+    'reportInterval': '上报间隔（秒）',
+    'trafficCheck': '流量限额检查间隔（秒）',
+    'heartbeat': '心跳间隔（秒）',
+    'updated': '定时配置已更新；上报间隔已同步至所有\x20agent\x20并即时生效'
+  },
+  jd = {
+    'title': '主服务器地址',
+    'description': '设置后，添加远程服务器时生成的安装命令将使用此地址',
+    'label': '服务器地址',
+    'placeholder': 'https://example.com\x20或\x20http://1.2.3.4:12889',
+    'hint': '格式：协议\x20+\x20域名或\x20IP（含端口），例如\x20https://panel.example.com\x20或\x20http://1.2.3.4:12889。留空则自动使用当前访问地址。',
+    'updated': '主服务器地址已更新',
+    'subscriptionTitle': '订阅域名',
+    'subscriptionPlaceholder': 'https://subscribe.example.com',
+    'subscriptionHint': '配置后，网页、TG\x20Bot\x20与\x20TG\x20Mini\x20App\x20中复制或推送的所有订阅地址都使用此地址；留空则使用主服务器地址或当前访问地址。',
+    'subscriptionUpdated': '订阅域名已更新',
+    'localOnly': '关闭公网访问',
+    'localOnlyHint': '开启后主控仅监听\x20127.0.0.1，重启主控后生效。仅适用于同机反向代理；若意外无法访问，请设置\x20MMWX_FORCE_PUBLIC_ACCESS=1\x20并重启主控恢复公网监听。',
+    'localOnlyEnabled': '已关闭公网监听，重启主控后生效',
+    'localOnlyDisabled': '已恢复公网监听，重启主控后生效'
+  },
+  Hd = {
+    'title': '自定义代理组配置',
+    'description': '配置生成订阅和编辑节点时使用的预设代理组来源。同步后两个入口会立即使用新配置。',
+    'sourceUrl': '代理组来源地址',
+    'sourceHint': '留空时使用项目默认的\x20proxy-groups-lite.json；支持\x20HTTP\x20和\x20HTTPS\x20地址。',
+    'sync': '同步代理组配置',
+    'syncing': '同步中...',
+    'synced': '代理组配置已同步'
+  },
+  Bd = {
+    'title': '主控域名不一致',
+    'description': '当前正通过\x20HTTPS\x20访问“{{currentDomain}}”，但系统配置的主控域名是“{{masterDomain}}”。主控域名不正确会导致\x20agent\x20安装/回连地址、证书等配置出错。是否更新为当前域名？',
+    'empty': '（未配置）',
+    'inputLabel': '主控域名',
+    'later': '稍后',
+    'confirm': '确认修改',
+    'updated': '主控域名已更新'
+  },
+  Gd = {
+    'title': 'Telegram\x20通知',
+    'description': '配置\x20Telegram\x20Bot\x20推送系统事件通知',
+    'enableLabel': '启用通知',
+    'botToken': 'Bot\x20Token',
+    'botTokenPlaceholder': '输入\x20Telegram\x20Bot\x20Token',
+    'chatId': 'Chat\x20ID',
+    'chatIdPlaceholder': '输入\x20Telegram\x20Chat\x20ID',
+    'sendTest': '发送测试通知',
+    'testSent': '测试通知已发送',
+    'configUpdated': '通知配置已更新',
+    'events': {
+      'title': '通知事件',
+      'login': '用户登录',
+      'subscribe': '订阅获取',
+      'serverOnline': '服务器上线',
+      'serverOffline': '服务器离线',
+      'dailyTraffic': '每日流量及增量统计',
+      'dailyTrafficTime': '统计时间',
+      'trafficThreshold': '流量超限告警',
+      'thresholdPercent': '告警阈值（%）',
+      'nodeProbeOffline': '节点探测离线',
+      'nodeProbeOnline': '节点探测恢复'
+    }
+  },
+  qd = {
+    'title': 'API\x20Token',
+    'description': '用于无需登录直接访问所有后台\x20API\x20接口',
+    'currentLabel': '当前\x20API\x20Token',
+    'regenerateConfirm': '确定要重新生成\x20API\x20Token\x20吗？旧的\x20Token\x20将失效。',
+    'regenerated': 'API\x20Token\x20已重新生成',
+    'copied': 'API\x20Token\x20已复制到剪贴板',
+    'usageHint': '使用此\x20Token\x20在请求头\x20MM-Authorization\x20中访问\x20API',
+    'warning': '•\x20携带此\x20Token\x20可以不需要登录直接访问所有后台\x20API\x0a•\x20请妥善保管此\x20Token，泄露可能导致数据安全问题\x0a•\x20服务启动时会在日志中打印此\x20Token\x0a•\x20点击刷新按钮可重新生成\x20Token，旧\x20Token\x20立即失效'
+  },
+  zd = {
+    'title': '覆写脚本',
+    'description': '开启后，覆写管理页面的脚本功能将在订阅生成时执行',
+    'enableLabel': '启用覆写脚本',
+    'updated': '覆写脚本设置已更新'
+  },
+  Kd = {
+    'enableLabel': '更新走\x20CDN\x20加速',
+    'description': '开启后，面板自更新和\x20agent\x20版本检查/下载优先走内置\x20CDN（dl.miaomiaowux.com），绕开\x20GitHub\x20限流；关闭则直连\x20GitHub。CDN\x20故障会自动回退\x20GitHub，不影响可用。',
+    'updated': 'CDN\x20加速设置已更新'
+  },
+  $d = {
+    'label': '订阅序列化格式',
+    'description': '选择\x20Clash\x20订阅的输出格式。默认\x20YAML，选择\x20JSON\x20后订阅将以\x20JSON\x20格式输出。仅影响\x20Clash\x20格式订阅，不影响其他客户端格式（Surge、Sing-Box\x20等）。',
+    'updated': '订阅序列化格式已更新'
+  },
+  Qd = {
+    'title': '妙妙屋功能',
+    'description': '开启后显示模板管理、订阅管理、生成订阅、订阅链接、覆写管理菜单',
+    'enableLabel': '启用妙妙屋功能',
+    'updated': '妙妙屋功能设置已更新'
+  },
+  Vd = {
+    'title': '静默模式',
+    'description': '开启后，所有请求返回\x20404，仅订阅相关接口可用。用户获取一次订阅后临时恢复访问。',
+    'enableLabel': '启用静默模式',
+    'timeout': '恢复时长',
+    'minutes': '分钟',
+    'hint': '获取订阅后恢复访问\x20{{timeout}}\x20分钟，之后再次进入静默状态',
+    'updated': '静默模式设置已更新',
+    'enableConfirm': '确定启用静默模式吗？'
+  },
+  Xd = {
+    'title': '强制加密通信',
+    'description': '开启后，所有\x20Agent\x20必须使用加密通信连接主控，未加密连接将被拒绝',
+    'enableLabel': '强制加密',
+    'warning': '请确保所有\x20Agent\x20已更新并配置了公钥，否则旧\x20Agent\x20将无法连接',
+    'updated': '加密设置已更新'
+  },
+  Jd = {
+    'title': '外部订阅同步设置',
+    'description': '配置外部订阅的同步行为',
+    'syncTraffic': '同步外部订阅流量信息',
+    'syncTrafficHint': '开启后，流量信息数据包含外部订阅的流量信息',
+    'nodeNameFilter': '节点名称过滤',
+    'nodeNameFilterHint': '使用正则表达式过滤节点名称，匹配的节点将被排除。留空则不过滤。',
+    'nodeNameFilterDesc': '正则表达式，匹配的节点将在同步时被过滤掉',
+    'forceSyncExternal': '外部订阅同步设置',
+    'forceSyncExternalHint': '开启后，从订阅链接获取订阅时将重新获取外部订阅链接的最新节点',
+    'matchRule': '匹配规则',
+    'matchRuleNodeName': '节点名称',
+    'matchRuleServerPort': '服务器:端口',
+    'matchRuleTypeServerPort': '类型:服务器:端口',
+    'syncScope': '同步范围',
+    'syncScopeSavedOnly': '仅同步已保存节点',
+    'syncScopeAll': '同步所有节点',
+    'keepNodeName': '保留当前节点名称',
+    'keepNodeNameHint': '开启后，同步时保留数据库中的节点名称，不使用外部订阅的节点名称',
+    'cacheExpireMinutes': '缓存过期时间（分钟）',
+    'cacheExpireMinutesHint': '设置为0表示每次获取订阅时都重新拉取。大于0时，只有超过设置的分钟数才会重新拉取',
+    'cacheExpireWarning': '注意：每次都更新订阅会影响获取订阅接口的响应速度'
+  },
+  Yd = {
+    'title': '许可证',
+    'description': '管理许可证状态',
+    'licenseKey': '许可证密钥',
+    'licenseKeyPlaceholder': '输入许可证密钥',
+    'status': '当前状态',
+    'valid': '有效',
+    'invalid': '无效',
+    'plan': '套餐',
+    'expiresAt': '到期时间',
+    'maxServers': '最大服务器数',
+    'maxNodes': '最大节点数',
+    'maxUsers': '最大用户数',
+    'servers': '服务器',
+    'nodes': '节点',
+    'users': '用户',
+    'remaining': '剩余',
+    'unlimited': '无限制',
+    'showKey': '显示完整许可证',
+    'hideKey': '隐藏许可证',
+    'permanent': '永久',
+    'trial': '试用版',
+    'updated': '许可证已更新；在线\x20Agent\x20租约正在后台刷新，离线\x20Agent\x20将在重连后自动刷新',
+    'trialHint': '当前为试用许可证，PRO\x20功能（限速器、节点测速等）不可用。访问以下地址注册并免费获取许可证（包含\x20PRO\x20功能，还会持续新增功能...）：'
+  },
+  Zd = '设置已更新',
+  ec = '更新设置失败',
+  tc = '已自动保存',
+  nc = {
+    'title': 'TG\x20兑换码复制文案',
+    'placeholder': '注册引导文案模板…',
+    'hint': 'TG\x20兑换码列表点「复制文案」时复制此文案。占位符:{兑换码}、{机器人地址}(机器人链接,miniapp\x20自动注入)、{主控域名}(配了订阅域名就用订阅域名,没配才用主控地址)。留空则只复制兑换码。',
+    'updated': '兑换码文案已更新'
+  },
+  oc = {
+    'title': 'REALITY\x20域名共享',
+    'description': '把你正在偷取的公共站点域名共享到域名池，也可以使用其他用户共享的域名。仅共享公共站点，你自己的域名不会上传。',
+    'enableLabel': '共享我使用的\x20REALITY\x20域名',
+    'proRequired': '需要\x20PRO\x20许可证',
+    'poolSize': '共享池当前有\x20{{count}}\x20个可用域名',
+    'sharedList': '已共享（{{count}}）',
+    'withdraw': '撤回',
+    'withdrawn': '已撤回',
+    'withdrawFailed': '撤回失败',
+    'toggleFailed': '操作失败',
+    'shared': '已共享\x20{{count}}\x20个域名',
+    'disabled': '已关闭共享',
+    'previewTitle': '确认要共享的域名',
+    'previewDesc': '以下域名已自动排除你的主控域名、服务器域名、证书域名以及偷自己模式的目标。请再确认一遍，取消勾选不想共享的项。',
+    'nothingToShare': '没有可共享的域名',
+    'cancel': '取消',
+    'confirmShare': '共享\x20{{count}}\x20个域名'
+  },
+  sx = {
+    'title': Od,
+    'description': Fd,
+    'tabs': Id,
+    'shortLink': Md,
+    'turnstile': Ed,
+    'intervals': Ud,
+    'masterUrl': jd,
+    'proxyGroups': Hd,
+    'domainMismatch': Bd,
+    'telegram': Gd,
+    'apiToken': qd,
+    'overrideScripts': zd,
+    'updateCDN': Kd,
+    'subscriptionOutputFormat': $d,
+    'miaomiaowuFeatures': Qd,
+    'silentMode': Vd,
+    'encryption': Xd,
+    'sync': Jd,
+    'license': Yd,
+    'configUpdated': Zd,
+    'configUpdateFailed': ec,
+    'autoSaved': tc,
+    'redeemTemplate': nc,
+    'realityShare': oc
+  },
+  ix = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'apiToken': qd,
+    'autoSaved': tc,
+    'configUpdateFailed': ec,
+    'configUpdated': Zd,
+    'default': sx,
+    'description': Fd,
+    'domainMismatch': Bd,
+    'encryption': Xd,
+    'intervals': Ud,
+    'license': Yd,
+    'masterUrl': jd,
+    'miaomiaowuFeatures': Qd,
+    'overrideScripts': zd,
+    'proxyGroups': Hd,
+    'realityShare': oc,
+    'redeemTemplate': nc,
+    'shortLink': Md,
+    'silentMode': Vd,
+    'subscriptionOutputFormat': $d,
+    'sync': Jd,
+    'tabs': Id,
+    'telegram': Gd,
+    'title': Od,
+    'turnstile': Ed,
+    'updateCDN': Kd
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  ac = '模板管理',
+  rc = '管理\x20mihomo\x20风格的规则模板，支持\x20include-all、filter\x20等高级特性',
+  sc = '未保存',
+  ic = '重置为默认模板',
+  lc = '收起配置预览',
+  dc = '展开配置预览',
+  cc = '配置预览',
+  uc = '可视化编辑',
+  pc = 'YAML\x20代码',
+  mc = '配置代码',
+  fc = '开启区域代理组',
+  xc = '自动添加按地区分类的代理组',
+  gc = '添加代理组',
+  hc = '新代理组\x20{{index}}',
+  bc = 'YAML\x20内容...',
+  yc = '配置内容...',
+  vc = '尚未创建模板，点击下方按钮创建默认模板',
+  Sc = '创建默认模板',
+  Cc = {
+    'templateName': '模板名称',
+    'actions': '操作',
+    'edit': '编辑',
+    'preview': '预览',
+    'delete': '删除',
+    'newTemplate': '新建模板',
+    'filterAll': '全部',
+    'empty': '暂无模板，点击上方按钮创建'
+  },
+  Wc = {
+    'label': '默认',
+    'set': '设为默认',
+    'unset': '取消默认',
+    'updated': '默认模板已更新',
+    'failed': '设置默认模板失败',
+    'userLabel': '我的默认',
+    'userSet': '设为我的默认模板',
+    'userUnset': '取消我的默认模板'
+  },
+  wc = {
+    'editTemplate': '编辑模板配置',
+    'close': '关闭'
+  },
+  Pc = {
+    'title': '预览',
+    'description': '左侧为模板配置，右侧为最终订阅配置',
+    'generating': '正在生成预览...',
+    'templateConfig': '模板配置',
+    'finalConfig': '最终订阅配置'
+  },
+  kc = {
+    'title': '确认删除',
+    'description': '确定要删除模板\x20\x22{{name}}\x22\x20吗？此操作无法撤销。'
+  },
+  Tc = {
+    'button': '用户可见性',
+    'title': '配置用户可见的模板',
+    'description': '可配置所有模板是否对普通用户公开。模板所有者始终可以看到自己的模板。',
+    'empty': '暂无模板',
+    'saved': '模板可见性已保存',
+    'failed': '保存失败'
+  },
+  Rc = {
+    'title': '重命名模板',
+    'description': '输入新的模板名称',
+    'placeholder': '新模板名称'
+  },
+  Dc = {
+    'title': '确认关闭',
+    'description': '有未保存的更改，确定要关闭吗？',
+    'confirm': '确定关闭'
+  },
+  Nc = {
+    'title': '恢复本地缓存',
+    'description': '检测到未保存的本地缓存，是否恢复？',
+    'discard': '放弃',
+    'recover': '恢复'
+  },
+  Ac = {
+    'title': '切换\x20DNS\x20模式',
+    'description': '当前有未保存的更改，切换模式将丢失这些更改。是否继续？',
+    'confirm': '确认切换'
+  },
+  Lc = {
+    'title': '重置模板',
+    'description': '将恢复为当前\x20DNS\x20模式的默认模板，所有未保存的更改将丢失。是否继续？',
+    'confirm': '确认重置'
+  },
+  _c = {
+    'title': '创建模板',
+    'description': '上传\x20YAML\x20文件、粘贴内容、创建空白模板、从链接导入、从\x20V2\x20模板导入或从订阅生成',
+    'tabs': {
+      'upload': '上传',
+      'paste': '粘贴',
+      'blank': '空白',
+      'fromUrl': '链接',
+      'v2import': 'V2导入',
+      'fromSub': '从订阅'
+    },
+    'selectYamlFile': '选择\x20YAML\x20文件',
+    'selected': '已选择',
+    'templateName': '模板名称',
+    'yamlContent': 'YAML\x20内容',
+    'pasteYamlPlaceholder': '粘贴\x20YAML\x20内容...',
+    'blankDesc': '将创建包含基础结构的空白\x20v3\x20模板，包含节点选择、自动选择和全球直连三个代理组。',
+    'templateUrl': '模板链接',
+    'previewContent': '预览内容',
+    'contentPreview': '模板内容预览',
+    'fromUrlDesc': '从外部链接导入\x20V3\x20模板\x20YAML\x20文件，支持\x20http/https\x20协议。',
+    'selectV2': '选择\x20V2\x20模板',
+    'selectTemplate': '选择模板',
+    'myTemplates': '我的模板',
+    'presetTemplates': '预设模板',
+    'newTemplateName': '新模板名称',
+    'dnsConfig': 'DNS\x20配置',
+    'selectDns': '选择\x20DNS\x20配置',
+    'v2importDesc': '将自动转换\x20custom_proxy_group\x20和\x20ruleset\x20配置为\x20v3\x20格式。\x0a•\x20.*\x20会转换为\x20include-all:\x20true\x0a•\x20正则表达式会转换为\x20filter\x20字段',
+    'selectSubscriptionFile': '选择订阅文件',
+    'selectSub': '选择订阅',
+    'previewAnalysis': '预览分析结果',
+    'analysisPreview': '分析结果预览',
+    'fromSubDesc': '从已有订阅文件分析代理组配置，智能推断\x20filter、include-all\x20等配置。\x0a•\x20自动识别区域节点并生成对应的\x20filter\x0a•\x20支持\x20include-all-proxies、include-region-proxy-groups\x20等配置',
+    'create': '创建',
+    'convertAndCreate': '转换并创建',
+    'generateAndCreate': '生成并创建',
+    'importAndCreate': '导入并创建',
+    'processing': '处理中...',
+    'fetching': '获取中...',
+    'analyzing': '分析中...',
+    'yamlOnly': '请选择\x20YAML\x20文件',
+    'selectFile': '请选择文件',
+    'enterContent': '请输入模板内容',
+    'enterName': '请输入模板名称',
+    'enterUrl': '请输入模板链接',
+    'selectSubscription': '请选择订阅文件',
+    'selectV2Template': '请选择\x20V2\x20模板',
+    'templateNotFound': '未找到选中的模板',
+    'presetNotFound': '未找到选中的预设模板',
+    'invalidSelection': '无效的模板选择',
+    'fetchTemplatesFailed': '获取模板列表失败',
+    'fetchSubscriptionsFailed': '获取订阅列表失败',
+    'analyzeFailed': '分析订阅失败',
+    'fetchUrlFailed': '获取模板内容失败',
+    'convertFailed': '转换失败',
+    'templateType': '模板类型',
+    'surgePreset': '预置配置（可选）',
+    'surgePresetPlaceholder': '选择一个预置\x20Surge\x20配置，或在下方自行填写链接'
+  },
+  Oc = {
+    'groupTypes': {
+      'select': '手动选择',
+      'url-test': '自动测速',
+      'fallback': '故障转移',
+      'load-balance': '负载均衡',
+      'relay': '链式代理'
+    },
+    'hidden': '隐藏',
+    'hasFilter': '有过滤',
+    'relayPrefix': '中转:\x20{{name}}',
+    'setRelayGroup': '设置中转代理组',
+    'selectRelayGroup': '选择中转代理组',
+    'clear': '清除',
+    'groupName': '组名称',
+    'groupNamePlaceholder': '代理组名称',
+    'groupType': '组类型',
+    'nodeSource': '节点来源',
+    'providersAndNodes': '代理集合+节点',
+    'proxyNodes': '代理节点',
+    'proxyProviders': '代理集合',
+    'regionProxyGroups': '区域代理组',
+    'defaultOutbound': '默认出站',
+    'proxyOrder': '代理顺序\x20(拖拽排序)',
+    'selectRefGroups': '选择要引用的代理组',
+    'templateVariables': '模板变量\x20({{count}})',
+    'filterKeywords': '筛选关键词\x20(filter)',
+    'filterPlaceholder': '香港,\x20HK,\x20港',
+    'filterDescription': '匹配节点名称，用逗号分隔',
+    'excludeKeywords': '排除关键词\x20(exclude-filter)',
+    'excludePlaceholder': '游戏,\x20IPLC',
+    'excludeDescription': '排除匹配的节点',
+    'includeType': '包含类型\x20(include-type)',
+    'includeTypePlaceholder': '选择要包含的代理类型',
+    'excludeType': '排除类型\x20(exclude-type)',
+    'excludeTypePlaceholder': '选择要排除的代理类型',
+    'testUrl': '测试\x20URL',
+    'testInterval': '测试间隔\x20(秒)',
+    'tolerance': '容差\x20(ms)',
+    'icon': '图标\x20(icon)',
+    'iconPlaceholder': 'URL\x20或\x20emoji',
+    'hideGroup': '隐藏此组\x20(hidden)'
+  },
+  Fc = {
+    'defaultPlaceholder': '输入关键词，用逗号分隔',
+    'variable': '变量:\x20{{name}}',
+    'regex': '正则:'
+  },
+  Ic = {
+    'defaultPlaceholder': '选择代理组',
+    'searchPlaceholder': '搜索代理组...',
+    'noResults': '没有找到代理组'
+  },
+  Mc = {
+    'defaultPlaceholder': '选择代理类型',
+    'deselectAll': '取消全选',
+    'selectAll': '全选'
+  },
+  Ec = {
+    'defaultTitle': '预览',
+    'copiedToClipboard': '已复制到剪贴板',
+    'copyFailed': '复制失败',
+    'generating': '正在生成预览...',
+    'clickRefresh': '点击刷新按钮生成预览'
+  },
+  Uc = {
+    'proxyNodesDisplay': '⛓️‍💥\x20代理节点',
+    'proxyProvidersDisplay': '📦\x20代理集合',
+    'regionProxyGroupsDisplay': '🌏\x20区域代理组',
+    'directDisplay': '🎯\x20直连\x20(DIRECT)',
+    'rejectDisplay': '🚫\x20拒绝\x20(REJECT)',
+    'defaultGroupName': '新代理组'
+  },
+  jc = {
+    'saveSuccess': '模板保存成功',
+    'saveFailed': '保存失败',
+    'defaultCreated': '默认模板已创建',
+    'createSuccess': '模板创建成功',
+    'createFailed': '创建失败',
+    'loadFailed': '加载模板失败',
+    'resetFailed': '重置失败',
+    'previewFailed': '预览生成失败',
+    'deleteSuccess': '模板已删除',
+    'deleteFailed': '删除失败',
+    'uploadSuccess': '模板上传成功',
+    'uploadFailed': '上传失败',
+    'renameSuccess': '模板重命名成功',
+    'renameFailed': '重命名失败'
+  },
+  lx = {
+    'title': ac,
+    'subtitle': rc,
+    'unsaved': sc,
+    'resetTooltip': ic,
+    'collapsePreview': lc,
+    'expandPreview': dc,
+    'previewTitle': cc,
+    'visualEdit': uc,
+    'yamlCode': pc,
+    'configCode': mc,
+    'enableRegionGroups': fc,
+    'enableRegionGroupsDesc': xc,
+    'addProxyGroup': gc,
+    'newProxyGroup': hc,
+    'yamlPlaceholder': bc,
+    'configPlaceholder': yc,
+    'emptyDesc': vc,
+    'createDefault': Sc,
+    'list': Cc,
+    'defaultTemplate': Wc,
+    'editor': wc,
+    'listPreview': Pc,
+    'deleteConfirm': kc,
+    'visibility': Tc,
+    'renameDialog': Rc,
+    'closeConfirm': Dc,
+    'draftRecovery': Nc,
+    'dnsSwitchConfirm': Ac,
+    'resetConfirm': Lc,
+    'upload': _c,
+    'proxyGroupEditor': Oc,
+    'keywordFilter': Fc,
+    'proxyGroupSelect': Ic,
+    'proxyTypeSelect': Mc,
+    'preview': Ec,
+    'v3': Uc,
+    'toast': jc
+  },
+  dx = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'addProxyGroup': gc,
+    'closeConfirm': Dc,
+    'collapsePreview': lc,
+    'configCode': mc,
+    'configPlaceholder': yc,
+    'createDefault': Sc,
+    'default': lx,
+    'defaultTemplate': Wc,
+    'deleteConfirm': kc,
+    'dnsSwitchConfirm': Ac,
+    'draftRecovery': Nc,
+    'editor': wc,
+    'emptyDesc': vc,
+    'enableRegionGroups': fc,
+    'enableRegionGroupsDesc': xc,
+    'expandPreview': dc,
+    'keywordFilter': Fc,
+    'list': Cc,
+    'listPreview': Pc,
+    'newProxyGroup': hc,
+    'preview': Ec,
+    'previewTitle': cc,
+    'proxyGroupEditor': Oc,
+    'proxyGroupSelect': Ic,
+    'proxyTypeSelect': Mc,
+    'renameDialog': Rc,
+    'resetConfirm': Lc,
+    'resetTooltip': ic,
+    'subtitle': rc,
+    'title': ac,
+    'toast': jc,
+    'unsaved': sc,
+    'upload': _c,
+    'v3': Uc,
+    'visibility': Tc,
+    'visualEdit': uc,
+    'yamlCode': pc,
+    'yamlPlaceholder': bc
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  Hc = {
+    'title': '用户管理',
+    'description': '查看系统用户，调整启用状态并重置密码。'
+  },
+  Bc = {
+    'title': '加载中…',
+    'description': '正在获取管理员信息，请稍候。'
+  },
+  Gc = {
+    'title': '权限不足',
+    'description': '只有管理员可以访问用户管理页面。'
+  },
+  qc = {
+    'title': '账号列表',
+    'description': '仅管理员可更改用户状态或重置密码。',
+    'addUser': '新增用户',
+    'empty': '当前没有可显示的用户'
+  },
+  zc = {
+    'username': '用户名',
+    'nickname': '昵称',
+    'remark': '备注',
+    'userShortCode': '用户短码',
+    'userSubscribe': '用户订阅',
+    'packageTraffic': '套餐/流量',
+    'role': '角色',
+    'status': '状态',
+    'actions': '操作',
+    'email': '邮箱'
+  },
+  Kc = {
+    'copy': '复制订阅',
+    'copied': '订阅地址已复制',
+    'pickClient': '选择客户端复制订阅',
+    'copiedClient': '{{name}}\x20订阅地址已复制',
+    'dialogTitle': '复制订阅链接',
+    'dialogDescription': '选择客户端后复制链接，或扫描二维码导入。',
+    'client': '客户端',
+    'copyButton': '复制链接',
+    'copyFailed': '复制失败，请手动复制'
+  },
+  $c = {
+    'admin': '管理员',
+    'user': '普通用户'
+  },
+  Qc = {
+    'enabled': '启用',
+    'disabled': '禁用'
+  },
+  Vc = {
+    'title': '编辑限速覆写',
+    'edit': '限速',
+    'override': '覆写',
+    'speedLimit': '限速覆写\x20(Mbps)',
+    'speedPlaceholder': '留空使用套餐默认值',
+    'speedDesc': '覆盖套餐限速设置（用户覆写\x20>\x20套餐限速）。单位\x20Mbps（兆比特/秒）。换算:\x208\x20Mbps\x20≈\x201\x20MB/s,\x20100\x20Mbps\x20≈\x2012.5\x20MB/s。填\x200\x20=\x20显式不限速；留空\x20=\x20沿用套餐默认。',
+    'deviceLimit': '连接数覆写',
+    'devicePlaceholder': '留空使用套餐默认值',
+    'deviceDesc': '覆写套餐的连接数限制（对所有节点统一，路由出站继承父节点），留空则使用套餐默认值',
+    'trafficLimit': '流量覆写\x20(GB)',
+    'trafficPlaceholder': '留空使用套餐默认值',
+    'trafficDesc': '覆盖套餐流量限制（用户覆写\x20>\x20套餐流量）。填\x200\x20=\x20显式不限流量；留空\x20=\x20沿用套餐默认。换套餐或解绑套餐时覆写会被清除。生效有延迟（最长一个巡检周期）。'
+  },
+  Xc = {
+    'resetPassword': '重置密码',
+    'resetTraffic': '重置流量',
+    'deleteUser': '删除',
+    'disableUser': '禁用',
+    'enableUser': '启用'
+  },
+  Jc = {
+    'title': '确认重置用户流量',
+    'description': '确定要将用户\x20{{username}}\x20当前套餐周期的已用流量归零吗？历史累计流量仍会保留。',
+    'resetting': '重置中…',
+    'confirm': '确认重置'
+  },
+  Yc = {
+    'title': '新增用户',
+    'username': '用户名',
+    'email': '邮箱',
+    'nickname': '昵称',
+    'password': '初始密码',
+    'passwordHint': '默认生成随机密码，可在创建前自行调整。',
+    'remark': '备注（可选）',
+    'remarkPlaceholder': '输入备注信息',
+    'creating': '创建中…',
+    'confirmCreate': '确认创建'
+  },
+  Zc = {
+    'title': '重置密码',
+    'username': '用户名',
+    'newPassword': '新密码',
+    'passwordHint': '默认生成随机密码，可自行修改后确认。',
+    'resetting': '重置中…',
+    'confirmReset': '确认重置'
+  },
+  eu = {
+    'title': '确认删除用户',
+    'description': '确定要删除用户\x20<strong>{{username}}</strong>\x20吗？此操作将删除该用户的所有数据，包括：',
+    'dataAccount': '用户账号信息',
+    'dataSubscription': '订阅绑定关系',
+    'dataNodes': '保存的节点',
+    'dataExternalSub': '外部订阅',
+    'dataSettings': '用户设置',
+    'irreversible': '此操作不可撤销！',
+    'deleting': '删除中…',
+    'confirmDelete': '确认删除'
+  },
+  tu = {
+    'title': '管理套餐',
+    'username': '用户名',
+    'selectPackage': '选择套餐',
+    'loadingPackages': '加载套餐列表...',
+    'noPackage': '无套餐',
+    'noAvailablePackages': '暂无可用套餐',
+    'expireDate': '到期时间',
+    'expireDateHint': '到期后将自动移除用户的所有入站配置并解绑套餐',
+    'switchOptions': '换套餐继承设置',
+    'inheritExpireDate': '继承原套餐到期时间',
+    'inheritExpireDateHint': '开启后忽略上方日期，沿用用户当前到期时间。',
+    'inheritTraffic': '继承本周期已用流量',
+    'inheritTrafficHint': '已用总流量计入新套餐，到新套餐的下一个重置日再归零。',
+    'enableMonthlyReset': '启用每月流量重置',
+    'monthlyResetDay': '每月重置日期',
+    'monthlyResetDayHint': '流量将在每月的这一天重置（1-31）',
+    'monthlyResetDayWarning': '，注意：2月仅有28/29天，届时将在月末最后一天重置',
+    'saving': '保存中…',
+    'confirmSave': '确认保存'
+  },
+  nu = {
+    'title': '编辑备注',
+    'username': '用户名',
+    'remark': '备注',
+    'remarkPlaceholder': '输入备注信息',
+    'saving': '保存中…',
+    'confirmSave': '确认保存'
+  },
+  ou = {
+    'label': '用户短码',
+    'placeholderAuto': '留空恢复自动\x20({{code}})',
+    'placeholderEmpty': '留空使用自动短码',
+    'hint': '回车保存。留空恢复自动短码。允许字母\x20/\x20数字\x20/\x20下划线\x20/\x20横杠，长度\x202-16。',
+    'editTooltip': '点击编辑短码'
+  },
+  au = {
+    'button': '续期',
+    'daysUnit': '天',
+    'custom': '自定义',
+    'customDaysLabel': '延长天数',
+    'customDaysPlaceholder': '输入天数后回车',
+    'customHint': '回车确认，从当前到期日起延长。',
+    'success': '已续期至\x20{{date}}'
+  },
+  ru = {
+    'full': '完整视图',
+    'package': '续费视图',
+    'expired': '已过期',
+    'noExpiry': '无到期',
+    'daysLeft': '剩\x20{{count}}\x20天',
+    'noPackage': '未绑定套餐',
+    'noSpeedLimit': '不限速',
+    'searchPlaceholder': '搜索用户名\x20/\x20昵称\x20/\x20套餐',
+    'currentConnections': '当前连接数',
+    'partialConnections': '当前已统计连接数；部分服务器未就绪，实际总数可能更高',
+    'connectionStatsIncomplete': '部分服务器的连接统计尚未完整，带\x20+\x20的数字为当前已统计值',
+    'connectionStatsExcluded': '外置\x20xray\x20的服务器（{{servers}}）不在连接统计范围内'
+  },
+  su = {
+    'statusUpdated': '用户状态已更新',
+    'passwordReset': '密码已重置',
+    'trafficReset': '用户\x20{{username}}\x20的流量已重置',
+    'userDeleted': '用户已删除',
+    'userCreated': '用户已创建，初始密码已复制',
+    'packageUpdated': '套餐已更新',
+    'packageWarning': '套餐已绑定，但部分节点配置失败：{{warnings}}',
+    'remarkUpdated': '备注已更新',
+    'limitsUpdated': '限速设置已更新',
+    'trafficLimitInvalid': '流量覆写必须是不小于\x200\x20的数字',
+    'shortCodeUpdated': '短码已更新',
+    'shortCodeInvalid': '短码只能含字母\x20/\x20数字\x20/\x20下划线\x20/\x20横杠，长度\x202-16'
+  },
+  cx = {
+    'page': Hc,
+    'loading': Bc,
+    'noPermission': Gc,
+    'accountList': qc,
+    'columns': zc,
+    'subscribe': Kc,
+    'roles': $c,
+    'status': Qc,
+    'package': {
+      'bind': '绑定套餐',
+      'manage': '管理套餐',
+      'adminNoNeedBind': '管理员无需绑定套餐，直接生成订阅使用即可',
+      'overLimit': '超限',
+      'tooltipPackage': '套餐：{{name}}',
+      'tooltipUsed': '已用：{{used}}',
+      'tooltipLimit': '限额：{{limit}}\x20GB',
+      'tooltipPercent': '使用率：{{percent}}%',
+      'tooltipSpeed': '限速：{{speed}}\x20Mbps',
+      'tooltipDevice': '连接数：{{count}}'
+    },
+    'limits': Vc,
+    'actions': Xc,
+    'trafficResetDialog': Jc,
+    'createDialog': Yc,
+    'resetDialog': Zc,
+    'deleteDialog': eu,
+    'packageDialog': tu,
+    'remarkDialog': nu,
+    'shortCode': ou,
+    'renew': au,
+    'view': ru,
+    'toast': su
+  },
+  ux = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'accountList': qc,
+    'actions': Xc,
+    'columns': zc,
+    'createDialog': Yc,
+    'default': cx,
+    'deleteDialog': eu,
+    'limits': Vc,
+    'loading': Bc,
+    'noPermission': Gc,
+    'packageDialog': tu,
+    'page': Hc,
+    'remarkDialog': nu,
+    'renew': au,
+    'resetDialog': Zc,
+    'roles': $c,
+    'shortCode': ou,
+    'status': Qc,
+    'subscribe': Kc,
+    'toast': su,
+    'trafficResetDialog': Jc,
+    'view': ru
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  iu = {
+    'port': '端口',
+    'portDesc': '监听端口号',
+    'listen': '监听地址',
+    'listenDesc': '监听地址，0.0.0.0\x20表示监听所有网卡',
+    'tag': '入站标识',
+    'tagDesc': '入站标识，用于路由规则。会根据协议-传输-安全-端口自动生成',
+    'sniffing': '启用流量嗅探',
+    'sniffingDesc': '自动识别域名用于分流，不改写原始连接目标',
+    'serverAddress': '服务器地址',
+    'serverAddressDesc': '远程服务器地址（域名或IP）',
+    'serverPort': '服务器端口',
+    'serverPortDesc': '远程服务器端口号',
+    'outboundTag': '出站标识',
+    'outboundTagDesc': '出站标识，用于路由规则',
+    'path': '路径',
+    'pathDesc_http': 'HTTP路径',
+    'pathDesc_http2': 'HTTP/2路径',
+    'pathDesc_ws': 'WebSocket连接路径',
+    'pathDesc_wss': 'WebSocket\x20Secure路径',
+    'pathDesc_xhttp': 'XHTTP连接路径',
+    'host': '主机名',
+    'hostDesc': '主机名，多个用逗号分隔',
+    'hostCustomDesc': '自定义Host头，留空使用默认',
+    'serviceName': '服务名称',
+    'serviceNameDesc': 'gRPC服务名称',
+    'transportMode': '传输模式',
+    'transportModeDesc': 'XHTTP传输模式',
+    'serverName_sni': '服务器名称(SNI)',
+    'serverNameDesc_tls': 'TLS服务器名称',
+    'certFilePath': '证书文件路径',
+    'certFilePathDesc': '证书文件的绝对路径',
+    'keyFilePath': '密钥文件路径',
+    'keyFilePathDesc': '私钥文件的绝对路径',
+    'alpn': 'ALPN',
+    'alpnDesc': 'ALPN协议列表，逗号分隔',
+    'minTlsVersion': '最低TLS版本',
+    'dest': '目标网站',
+    'destDesc': '支持TLS\x201.3和H2的目标网站',
+    'serverNames': '服务器名称列表',
+    'serverNamesDesc': '目标网站证书中的服务器名称，逗号分隔',
+    'realityGuard': '防止\x20Reality\x20被盗用',
+    'realityGuardDesc': '创建仅监听本机的专用\x20Tunnel，仅允许\x20serverNames\x20中的\x20TLS\x20域名通过，其余流量直接阻断。',
+    'privateKey': '私钥',
+    'privateKeyDesc': '使用\x20xray\x20x25519\x20命令生成的私钥',
+    'shortIds': 'Short\x20IDs',
+    'shortIdsDesc': '短ID列表，逗号分隔，留空表示客户端可为空',
+    'encryptionMethod': '加密方法',
+    'serverPassword': '服务器密码\x20(PSK)',
+    'serverPasswordDesc': '输入密码后会自动进行\x20Base64\x20编码',
+    'networkType': '网络类型',
+    'authMethod': '认证方式',
+    'authPassword': '密码认证',
+    'authNone': '无认证',
+    'enableUdp': '启用UDP',
+    'enableUdpDesc': '是否支持UDP代理',
+    'decryption': '解密方式',
+    'decryptionDesc': 'VLESS解密方式，支持后量子加密',
+    'encryption': '加密方式',
+    'encryptionDesc': '客户端加密方式',
+    'obfsType': '混淆类型',
+    'obfsNone': '无混淆',
+    'obfsDesc': '可选的流量混淆，启用后需设置混淆密码',
+    'obfsPassword': '混淆密码',
+    'obfsPasswordDesc': '启用混淆时必填',
+    'httpAuthDesc': 'HTTP代理认证方式',
+    'allowTransparent': '允许透明代理',
+    'allowTransparentDesc': '当为true时，会转发所有HTTP请求，而非只是代理请求',
+    'forwardAddress': '转发地址',
+    'forwardAddressDesc': '转发到的目标地址(域名或IP)',
+    'forwardPort': '转发端口',
+    'forwardPortDesc': '转发到的目标端口',
+    'protocolType': '协议类型',
+    'followRedirect': '跟随重定向',
+    'followRedirectDesc': '当值为\x20true\x20时，tunnel\x20会识别出由\x20iptables\x20转发而来的数据',
+    'userLevel': '用户等级',
+    'userLevelDesc': '用户等级，默认为0',
+    'userLevelAllDesc': '用户等级，所有连接使用这一等级',
+    'domainStrategy': '域名策略',
+    'domainStrategyDesc': '使用\x20AsIs\x20才可以把域名交给后面的\x20sockopt\x20模块处理',
+    'uuid': 'UUID',
+    'uuidDesc': '用户UUID，使用\x20xray\x20uuid\x20命令生成',
+    'email': '邮箱（用于流量统计）',
+    'emailDesc': '用于标识用户',
+    'username': '用户名',
+    'password': '密码',
+    'userPassword_psk': '用户密码\x20(PSK)',
+    'userPasswordDesc_psk': '输入密码后会自动进行\x20Base64\x20编码',
+    'authPasswordField': '认证密码',
+    'authPasswordFieldDesc': '客户端连接时使用的密码',
+    'paddingScheme': 'Padding\x20Scheme（流量整形规则）',
+    'paddingSchemeDesc': '可选。每行一条\x20AnyTLS\x20填充规则，留空则使用服务端默认方案。示例：stop=8\x20/\x200=1200-1400\x20/\x201=900-1200',
+    'snellVersion': 'Snell\x20版本',
+    'snellVersionDesc': 'v4/v5\x20每用户独立\x20PSK；v6\x20使用共享\x20PSK\x20+\x20客户端\x20ID\x20与流量整形。注意：v6\x20仅\x20Surge\x206.7+\x20与新版\x20sing-box\x20支持，mihomo/Clash\x20系无法使用（面板已自动将\x20v6\x20节点从\x20Clash\x20订阅中隐藏，测速改用\x20sing-box\x20内核）。',
+    'snellObfsMode': '混淆\x20(v4/v5)',
+    'snellObfsModeDesc': 'Snell\x20v4/v5\x20的\x20HTTP/TLS\x20混淆；v6\x20忽略此项。',
+    'snellObfsNone': '无',
+    'snellObfsHost': '混淆域名\x20(v4/v5)',
+    'snellObfsHostDesc': 'HTTP/TLS\x20混淆的伪装域名，如\x20bing.com。',
+    'snellV6Mode': '整形模式\x20(v6)',
+    'snellV6ModeDesc': 'Snell\x20v6\x20流量整形：default(整形)\x20/\x20unshaped\x20/\x20unsafe-raw。',
+    'snellPsk': 'PSK',
+    'snellPskDesc': '预共享密钥,各版本(v4/v5/v6)均每用户独立;服务端用各自\x20PSK\x20逐一试解定位用户。',
+    'flow': '流控',
+    'flowDesc': 'XTLS流控模式',
+    'labelField': '标签',
+    'outboundUniqueId': '出站的唯一标识符',
+    'mieruUsername': '用户名',
+    'mieruUsernameDesc': 'Mieru\x20用户名(每用户唯一);服务端据此区分多用户。',
+    'mieruPassword': '密码',
+    'mieruPasswordDesc': 'Mieru\x20密码;与用户名一起派生加密密钥。',
+    'mieruTransport': '传输层',
+    'mieruTransportDesc': '服务端\x20TCP+UDP\x20都监听;此项决定订阅下发给客户端用哪个\x20underlay。TCP\x20更快更稳(推荐),UDP\x20抗封锁更强。',
+    'salamanderPassword': 'Salamander\x20混淆密码',
+    'salamanderPasswordDesc': '可选。填了就给\x20HY2\x20加一层\x20salamander\x20UDP\x20混淆(与\x20hysteria2\x20官方实现互通),客户端会自动带上\x20obfs=salamander。留空\x20=\x20不混淆。至少\x204\x20个字符。'
+  },
+  lu = {
+    'selectServer': '选择服务器',
+    'inboundProtocol': '入站协议',
+    'transportProtocol': '传输协议',
+    'securityProtocol': '安全协议',
+    'templateVariant': '模板变体',
+    'currentTemplate': '当前模板',
+    'inboundTag': '入站标签',
+    'inboundTagPlaceholder': '例如:\x20vless-main',
+    'listenAddress': '监听地址',
+    'listenPort': '监听端口',
+    'saveInbound': '保存入站配置',
+    'livePreview': '实时预览',
+    'selectProtocolPrompt': '请选择协议并根据模板填写配置',
+    'templateHint': '模板提示',
+    'needsNginx': '需要额外配置\x20Nginx\x20反向代理。',
+    'needsCaddy': '需要额外配置\x20Caddy\x20以对接入站。',
+    'jsonInvalid': 'JSON\x20格式不正确',
+    'settingsDesc': '根据示例填写或修改协议核心字段。',
+    'streamSettings': '传输设置',
+    'streamSettingsDesc': '根据需要调整传输层配置，例如\x20TLS\x20证书、路径或传输参数。',
+    'sniffingSettings': '流量嗅探',
+    'sniffingSettingsDesc': '可选配置，如无需嗅探可清空。',
+    'protocolSettings': '协议设置',
+    'defaultHints': ['根据示例模板调整\x20settings\x20和\x20streamSettings\x20内容。', '右侧实时预览会同步展示完整\x20JSON\x20配置。'],
+    'vlessHints': ['clients:\x20配置用户列表，id\x20为\x20UUID。', 'decryption\x20一般保持为\x20none。', 'fallbacks\x20可选，用于回落到其他服务。'],
+    'vmessHints': ['clients:\x20用户列表，包含\x20id、level、email\x20等字段。', '默认模板包含\x20default\x20节点，可按需调整。'],
+    'trojanHints': ['clients:\x20配置密码及用户信息。', '可选的\x20fallbacks\x20用于自定义回落。'],
+    'anytlsHints': ['users:\x20配置密码与\x20email，支持多用户。', 'TLS\x20only\x20—\x20不能与\x20REALITY\x20组合；客户端需要\x20sing-box\x20≥1.10\x20/\x20mihomo\x20/\x20shadowrocket。', '可选\x20padding_scheme\x20控制流量整形，idle_session_timeout\x20控制空闲会话回收。'],
+    'shadowsocksHints': ['支持\x20aes-128/256-gcm、chacha20-poly1305\x20与\x20xchacha20-poly1305（含\x20ietf\x20别名）。', '多用户模式不使用父级密码，每个\x20clients\x20项独立配置\x20method/password。'],
+    'shadowsocks2022Hints': ['key\x20字段为\x20Base64\x20编码的密钥。', '客户端密码按\x20ServerPassword:UserPassword\x20组合。'],
+    'socksHints': ['auth\x20可选择\x20noauth\x20或\x20password。', 'accounts\x20字段在启用密码认证时使用。'],
+    'httpHints': ['accounts\x20字段用于配置账户（可选）。', 'allowTransparent\x20控制是否允许透明代理。'],
+    'tunnelHints': ['address\x20与\x20port\x20指向目标服务。', 'network\x20字段决定代理的网络类型。'],
+    'default': '默认',
+    'notRequired': '不需要',
+    'freedomDomainStrategyDesc': 'AsIs\x20保持原样;UseIP/ForceIP\x20系列强制按指定\x20IP\x20协议族解析',
+    'freedomRedirect': '重定向目标',
+    'freedomRedirectDesc': '把目标地址改写为指定\x20host:port,留空\x20=\x20不重定向',
+    'freedomProxyProtocol': 'PROXY\x20协议',
+    'freedomProxyProtocolDesc': 'haproxy\x20PROXY\x20协议版本,0=禁用',
+    'fragmentPackets': 'fragment.packets',
+    'fragmentPacketsDesc': 'tlshello\x20或形如\x201-3\x20的范围',
+    'fragmentLength': 'fragment.length',
+    'fragmentLengthDesc': '每片字节数范围',
+    'fragmentInterval': 'fragment.interval',
+    'fragmentIntervalDesc': '发包间隔毫秒范围',
+    'noises': 'noises',
+    'noisesDesc': 'TLS\x20握手前发送一段噪声数据(防探测)',
+    'noiseType': 'type',
+    'noisePacket': 'packet',
+    'noisePacketDesc': 'rand\x20用长度范围;str\x20用文本;base64/hex\x20为编码后字节',
+    'noiseDelay': 'delay',
+    'noiseDelayDesc': '发送前延迟毫秒范围',
+    'blackholeResponseType': 'response.type',
+    'blackholeResponseTypeDesc': 'http\x20返回\x20403;none\x20直接断连',
+    'dnsNetwork': 'network',
+    'dnsNetworkDesc': 'passthrough\x20=\x20透传原查询协议',
+    'dnsAddress': 'address',
+    'dnsAddressDesc': '接管的目标\x20DNS\x20服务器地址',
+    'dnsPort': 'port',
+    'dnsNonIPQuery': 'nonIPQuery',
+    'dnsNonIPQueryDesc': 'drop\x20=\x20非\x20IP\x20查询(TXT/MX\x20等)直接\x20NXDOMAIN;skip\x20=\x20放过给系统',
+    'dnsBlockTypes': 'blockTypes',
+    'dnsBlockTypesDesc': '禁查的\x20DNS\x20类型代码,CSV\x20列出(65=HTTPS,28=AAAA)',
+    'loopbackInboundTag': 'inboundTag',
+    'loopbackInboundTagDesc': '把流量回环投递到目标入站,常用于\x20DNS\x20截流后再走\x20routing'
+  },
+  du = {
+    'title': 'Xray\x20入站管理',
+    'remoteServerConfig': '远程服务器\x20{{name}}\x20的入站配置（共\x20{{count}}\x20个）',
+    'selectServerFirst': '请先选择一个远程服务器',
+    'addInbound': '添加入站',
+    'noInbounds': '暂无入站配置',
+    'noInboundsDesc': '点击\x22添加入站\x22按钮添加入站配置',
+    'noInboundsDescShort': '点击\x22添加入站\x22按钮添加',
+    'portLabel': '端口',
+    'userCount': '用户数',
+    'listenAddress': '监听地址',
+    'editInbound': '编辑入站',
+    'editInboundUsers': '编辑入站的用户配置',
+    'viewInbound': '查看入站配置',
+    'viewInboundJson': '完整的入站配置\x20JSON',
+    'addInboundWizard': '添加入站\x20-\x20向导模式',
+    'addInboundWizardDesc': '基于\x20Xray\x20官方示例配置，通过向导快速生成入站配置',
+    'addInboundWizardDescShort': '通过向导快速生成入站配置',
+    'addInboundDeprecatedTitle': '此入口将在未来版本移除',
+    'addInboundDeprecatedBody': '请改用「节点管理\x20→\x20添加节点」创建入站，新入口会自动识别节点名称中的国家\x20emoji\x20国旗、协议倍率等信息，并同步生成对应的\x20Xray\x20入站。',
+    'addInboundDeprecatedGo': '前往节点管理',
+    'confirmDeleteTitle': '确认删除入站',
+    'confirmDeleteDesc': '确定要删除入站\x20\x22{{tag}}\x22\x20吗？此操作无法撤销。',
+    'deleteInboundNodesWarn': '将同时删除以下\x20{{count}}\x20个关联节点：',
+    'inboundUpdated': '入站已更新',
+    'inboundDeleted': '入站已删除',
+    'inboundDeleteFailed': '删除入站失败',
+    'inboundAdded': '入站已添加',
+    'inboundAddFailed': '添加入站失败',
+    'inboundAddedToRemote': '入站已添加到远程服务器',
+    'fillTag': '请填写标签',
+    'serverLabel': '服务器',
+    'protocolLabel': '协议',
+    'accounts': '账户',
+    'users': '用户',
+    'addAccount': '添加账户',
+    'addUser': '添加用户',
+    'configCount': '{{name}}\x20的入站配置（共\x20{{count}}\x20个）'
+  },
+  cu = {
+    'title': 'Xray\x20出站管理',
+    'remoteServerConfig': '远程服务器\x20{{name}}\x20的出站配置（共\x20{{count}}\x20个）',
+    'selectServerFirst': '请先选择一个远程服务器',
+    'addOutbound': '添加出站',
+    'noOutbounds': '暂无出站配置',
+    'noOutboundsDesc': '点击上方按钮添加出站配置',
+    'noOutboundsDescShort': '点击\x22添加出站\x22按钮添加',
+    'hideDefault': '隐藏默认',
+    'showDefault': '显示默认',
+    'hideDefaultOutbounds': '隐藏默认出站',
+    'showDefaultOutbounds': '显示默认出站',
+    'domainStrategy': '域名策略',
+    'type': '类型',
+    'directOutbound': '直连出站',
+    'blockOutbound': '阻止出站',
+    'address': '地址',
+    'serverAddress': '服务器地址',
+    'serverPort': '服务器端口',
+    'portLabel': '端口',
+    'userCount': '用户数',
+    'editFreedomOutbound': '编辑\x20Freedom\x20出站',
+    'configDomainStrategy': '配置域名策略\x20(domainStrategy)',
+    'viewOutbound': '查看出站配置',
+    'viewOutboundJson': '完整的出站配置\x20JSON',
+    'addOutboundWizard': '添加出站\x20-\x20向导模式',
+    'addOutboundWizardDesc': '基于\x20Xray\x20官方示例配置，通过向导快速生成出站配置',
+    'addOutboundWizardDescShort': '通过向导快速生成出站配置',
+    'outboundUpdated': '出站已更新',
+    'outboundDeleted': '出站已删除',
+    'outboundAdded': '出站已添加',
+    'outboundAddFailed': '添加出站失败',
+    'reorderSuccess': '出站顺序已更新',
+    'reorderNotSupported': '当前\x20agent\x20版本不支持出站排序,请先升级\x20agent',
+    'editJson': '编辑\x20JSON',
+    'editJsonDesc': '直接编辑整个出站\x20JSON\x20配置;tag\x20改名后请同步检查路由规则中对该\x20tag\x20的引用',
+    'editOutbound': '编辑出站',
+    'createOutbound': '新增出站',
+    'createOutboundDesc': 'tag\x20必填且服务器内全局唯一;字段可选,保存后生效',
+    'tagRequired': 'tag\x20必填',
+    'tagRenameWarning': 'tag\x20已改,请同步检查路由规则中对原\x20tag\x20的引用',
+    'protocolReadonly': '协议不可改;要换协议请删除后新建',
+    'unsupportedProtocolHint': '该协议暂无结构化表单,请用「编辑\x20JSON」编辑',
+    'httpMultiWarning': '检测到多\x20server\x20或多\x20user\x20配置,仅编辑首条,其余将追加保留',
+    'dnsOutbound': 'DNS\x20接管',
+    'httpOutbound': 'HTTP\x20代理出站',
+    'loopbackOutbound': '回环到入站',
+    'jsonMustBeObject': '必须是\x20JSON\x20对象',
+    'jsonTagRequired': 'tag\x20字段必填',
+    'jsonProtocolRequired': 'protocol\x20字段必填',
+    'selectToView': '从左侧选择一条出站查看详情',
+    'confirmDelete': '删除出站',
+    'outboundAddedToRemote': '出站已添加到远程服务器',
+    'fillTag': '请填写标签',
+    'confirmDeletePrompt': '确定要删除出站\x20\x22{{tag}}\x22\x20吗？',
+    'domainStrategyNotSpecial': '不对域名进行特殊处理',
+    'useIpSeries': 'UseIP\x20系列',
+    'forceIpSeries': 'ForceIP\x20系列',
+    'domainStrategyWhenTarget': '当目标地址为域名时，配置\x20Xray\x20连接远端服务器的行为模式',
+    'asIsDefault': 'AsIs\x20(默认)',
+    'asIsDesc': '不对域名进行特殊处理，直接使用\x20Go\x20自带的\x20Dial\x20发起连接，优先级固定为\x20RFC6724\x20默认值（通常\x20IPv6\x20优先）',
+    'useIpDesc': '使用内置\x20DNS\x20解析域名。解析不符合要求时回落到\x20AsIs。',
+    'forceIpDesc': '强制使用内置\x20DNS\x20解析域名。解析结果不符合要求时，连接将无法建立。',
+    'useIpFallbackDesc': '解析失败回落到\x20AsIs',
+    'forceIpFailDesc': '解析失败连接失败',
+    'currentSelection': '当前选择',
+    'createFromNode': '从节点创建出站',
+    'orCreateSpecial': '或创建特殊出站',
+    'warp': {
+      'button': 'Cloudflare\x20WARP',
+      'title': 'Cloudflare\x20WARP\x20配置',
+      'subtitle': '为本服务器注册\x20Cloudflare\x20WARP\x20账号,自动创建\x20warp-v4\x20/\x20warp-v6\x20出站',
+      'checking': '正在查询\x20WARP\x20状态…',
+      'installed': '已安装',
+      'notInstalled': '尚未安装',
+      'install': '安装\x20WARP',
+      'installing': '正在安装…',
+      'outboundsInjected': '已注入出站',
+      'licenseLabel': 'WARP+\x20License\x20Key(可选)',
+      'licenseHint': '把\x201.1.1.1\x20客户端里的\x20License\x20Key\x20填进来可升级到\x20WARP+,提升流量上限',
+      'upgradeLicense': '升级',
+      'licenseUpdated': 'License\x20已更新',
+      'refresh': '刷新配置',
+      'synced': 'WARP\x20配置已重新同步到\x20xray\x20(warp-v4\x20/\x20warp-v6\x20已注入)',
+      'remove': '卸载',
+      'removeConfirm': '确定卸载?会从\x20Cloudflare\x20注销账号\x20+\x20删除本机\x20warp-v4\x20/\x20warp-v6\x20出站。',
+      'removed': 'WARP\x20已卸载',
+      'close': '关闭'
+    },
+    'importedNodeConfig': '已导入节点配置',
+    'basicConfig': '基础配置',
+    'directOutboundConfig': '直连出站配置',
+    'blockOutboundConfig': '阻止出站配置',
+    'protocolConfig': '协议配置',
+    'jsonPreview': 'JSON\x20预览',
+    'realtimeOutboundConfig': '实时生成的出站配置',
+    'submitConfig': '提交配置',
+    'serverInfo': '服务器'
+  },
+  uu = {
+    'selectTargetServer': '选择目标服务器',
+    'selectTargetServerDesc': '请选择要添加入站的服务器（单选）',
+    'selectServer': '请选择一台服务器',
+    'selectProtocol': '选择协议',
+    'transportProtocol': '传输协议',
+    'securityProtocol': '安全协议',
+    'configMode': '配置模式',
+    'simpleMode': '简易模式',
+    'expertMode': '专家模式',
+    'nodeName': '节点名称',
+    'nodeNameDesc': '自定义节点显示名称，国旗根据服务器\x20IP\x20自动选择',
+    'nodeNamePlaceholder': '输入节点名称',
+    'relayLabel': '中转\x20(可选)',
+    'relayServerPlaceholder': '中转服务器\x20IP\x20或域名',
+    'relayPortPlaceholder': '端口(默认=节点端口)',
+    'relayDesc': '填了则该节点\x20clash\x20的\x20server/port\x20走中转地址；原服务器地址会记下，可在节点列表里修改或取消中转。',
+    'realityDomain': 'REALITY\x20域名',
+    'realityDomainProbing': '正在探测域名延迟...',
+    'realityDomainAutoSelected': '已自动选择延迟最低的域名',
+    'realityDomainAllFailed': '所有域名探测失败，请手动输入',
+    'realityDomainFetching': '正在获取可用域名...',
+    'realityDomainSelectFirst': '请先选择服务器',
+    'probing': '探测中...',
+    'selectDomainSorted': '选择域名（已按延迟排序）',
+    'reprobeBtn': '重新探测',
+    'targetDomain': '目标域名',
+    'reprobeDomain': '重新探测域名',
+    'customDomain': '自定义域名',
+    'customDomainPlaceholder': '输入域名，如\x20www.lovelive-anime.jp',
+    'probe': '探测',
+    'userManagement': '用户管理',
+    'accountConfig': '账户配置',
+    'clientConfig': '客户端配置',
+    'frequentUsers': '常用用户',
+    'userAlreadyAdded': '该用户已添加',
+    'simpleModeTitle': '简易模式',
+    'simpleModeDesc': '当前协议无需用户配置，使用默认参数即可提交',
+    'forwardNodeTitle': '转发已有节点',
+    'forwardNodeCardDesc': '选择一个已有节点，自动配置\x20Tunnel\x20转发到该节点',
+    'forwardExistingNode': '转发已有节点',
+    'forwardNodePlaceholder': '选择要转发的节点（可选）',
+    'forwardNodeDesc': '选中后将自动填充监听端口、转发地址/端口、网络类型等，可手动修改',
+    'forwardPortConflict': '监听端口\x20{{port}}\x20已被本服务器其它入站占用，请修改监听端口',
+    'jsonPreview': 'JSON\x20预览',
+    'realtimeInboundConfig': '实时生成的入站配置',
+    'commonConfig': '通用配置',
+    'commonConfigDesc': '适用于所有入站的基础配置',
+    'securityConfig': '安全协议配置',
+    'securitySettings': '安全设置',
+    'stealSelf': '我要偷自己',
+    'stealSelfDesc': '读取所有服务器配置域名，并由当前服务器探测延迟',
+    'selectLowLatencyDomain': '选择低延迟域名（已按延迟排序）',
+    'protocolSpecificConfig': '协议特定配置',
+    'protocolSettings': '协议设置',
+    'transportConfig': '传输协议配置',
+    'transportSettings': '传输协议设置',
+    'submitConfig': '提交配置',
+    'sslConfig': 'SSL\x20配置',
+    'sslConfigDesc': '以下服务器\x20443\x20端口不可用，需要配置\x20SSL\x20证书与\x20Nginx\x20443\x20端口',
+    'configure': '配置',
+    'configuring': '配置中',
+    'done': '完成',
+    'failed': '失败',
+    'oneClickSetup': '一键配置全部',
+    'reprobeAfterSetup': '重新探测',
+    'selectTemplate': '请先选择完整的模板',
+    'selectAtLeastOneServer': '请选择至少一个服务器',
+    'validPort': '请输入有效的端口号\x20(1-65535)',
+    'portOccupied': '端口\x20{{port}}\x20已被其他入站占用，请更换端口',
+    'needsCertSwitch': '该安全协议需要证书文件，请切换到专家模式配置',
+    'selectAtLeastOneUser': '请至少选择一个用户',
+    'autoGenRealityFailed': '自动生成\x20REALITY\x20公私钥失败，请点击生成按钮手动生成',
+    'autoGenRealityKeyFailed': '自动生成\x20REALITY\x20私钥失败，请切换到专家模式手动填写',
+    'selectServerFirst': '请先选择服务器',
+    'noDomainsFound': '未找到可用域名',
+    'allDomainsFailed': '所有\x20{{count}}\x20个域名探测失败:\x20{{errors}}',
+    'domainsLoaded': '已获取\x20{{total}}\x20个域名，{{available}}\x20个可用',
+    'loadDomainsFailed': '读取域名延迟失败',
+    'probeRequestFailed': '探测请求失败',
+    'tunnelAnyDoor': 'Tunnel\x20(任意门)',
+    'securityNone': '无',
+    'postQuantum': '后量子加密',
+    'encGenFailed': '生成\x20VLESS\x20加密密钥失败,请重试',
+    'anytlsNeedEmbedded': 'anytls\x20协议需要内嵌\x20xray,请先将该服务器切换为内嵌模式',
+    'probeFailed': '探测失败',
+    'anytlsServerHasNoDomain': 'AnyTLS+TLS\x20需要服务器域名;当前服务器未配置域名，请先在服务管理设置域名',
+    'anytlsNoCertsExpert': '暂无可用证书。请在证书管理签发，或切到专家模式手填证书路径',
+    'anytlsNoMatchingCert': '未找到与\x20{{domain}}\x20匹配的证书。请切到专家模式手填证书路径，或在证书管理签发匹配证书',
+    'tlsServerHasNoDomain': '{{protocol}}+TLS\x20需要服务器域名；当前服务器未配置域名，请先在服务管理设置域名',
+    'tlsNoCertsExpert': '暂无可用证书。请在证书管理签发，或切到专家模式手填证书路径',
+    'tlsNoMatchingCert': '未找到与\x20{{domain}}\x20匹配的证书。请切到专家模式手填证书路径，或在证书管理签发匹配证书',
+    'anytlsRealityTitle': 'AnyTLS\x20+\x20REALITY\x20客户端兼容性提示',
+    'anytlsRealityDesc': 'Clash\x20不支持\x20AnyTLS-REALITY，Mihomo\x20文档已明确不会支持。',
+    'viewDocs': '查看文档',
+    'manageDomains': '管理域名',
+    'manageDomainsDesc': '删除不想使用的域名。删除后不会在下次探测时重新出现，可随时恢复。',
+    'domainDeleted': '已删除\x20{{domain}}',
+    'domainDeleteFailed': '删除域名失败',
+    'domainRestored': '已恢复\x20{{domain}}',
+    'domainRestoreFailed': '恢复域名失败',
+    'restoreDomain': '恢复',
+    'blockedDomains': '已屏蔽（{{count}}）',
+    'domainSource': {
+      'master': '主控域名',
+      'custom': '手动添加',
+      'server': '服务器域名',
+      'reality_dest': '偷取目标',
+      'tls_sni': '证书域名',
+      'shared_pool': '共享池',
+      'unknown': '来源未知'
+    }
+  },
+  pu = {
+    'title': 'Tunnel\x20管理',
+    'desc': '管理所有服务器上的\x20tunnel(任意门转发)入站。tunnel\x20不进节点列表,在这里删除。',
+    'loading': '加载中...',
+    'empty': '没有找到\x20tunnel\x20入站',
+    'federated': '分享',
+    'deleteTitle': '删除\x20Tunnel',
+    'deleteConfirm': '确定删除\x20tunnel「{{tag}}」吗?此操作不可恢复。',
+    'cancel': '取消',
+    'delete': '删除',
+    'deleteSuccess': 'Tunnel\x20已删除',
+    'deleteFailed': '删除失败',
+    'routedKind': '端口转发(复用)',
+    'totalCount': '共\x20{{count}}\x20条\x20tunnel',
+    'portForward': '端口转发',
+    'backToList': '返回列表',
+    'pfServer': '选择入口服务器',
+    'pfServerPlaceholder': '选择入口服务器',
+    'pfNoServer': '暂无远程服务器',
+    'pfMode': '模式',
+    'pfReuse': '复用\x20tunnel',
+    'pfNew': '新增\x20tunnel',
+    'pfSelectTunnel': '选择已有\x20tunnel',
+    'pfNoTunnelHint': '当前服务器暂无可复用的\x20tunnel\x20入站,只能新增\x20tunnel\x20完成端口转发',
+    'pfNewOutboundTag': '出站\x20tag(自动加\x20tunnel-\x20前缀)',
+    'pfNewInboundTag': '入站\x20tag(自动加\x20tunnel-\x20前缀)',
+    'pfNewInboundPort': '监听端口',
+    'pfTagPlaceholder': '如\x20jp,生成\x20tunnel-jp',
+    'pfTarget': '目标服务器地址\x20+\x20端口',
+    'pfTargetAddressPlaceholder': 'IP\x20或\x20域名',
+    'applyPortForward': '应用',
+    'applyPortForwardLoading': '应用中...',
+    'portForwardApplied': '端口转发已配置',
+    'createRelayNode': '新增节点',
+    'createRelayNodeHint': '保留原节点,创建一个使用当前隧道入口的新节点。关闭后将直接修改所选原节点。',
+    'createRelayNodeNeedsTarget': '请先从已有节点中选择目标;手动填写地址时无法复制节点凭据。',
+    'tunnelCreatedNodeFailed': '隧道已创建,但节点操作失败:{{error}}',
+    'pfErrServer': '请选择服务器',
+    'pfErrAddress': '请填写目标服务器地址',
+    'pfErrTargetPort': '请填写有效目标端口\x20(1-65535)',
+    'pfErrTag': '请填写\x20tag\x20后缀',
+    'pfErrSelectTunnel': '请选择一个\x20tunnel',
+    'pfErrListenPort': '请填写有效监听端口\x20(1-65535)',
+    'pfErrApply': '应用失败',
+    'configTabTunnel': '隧道配置',
+    'configTabRelay': '中转配置',
+    'relayExternalNotice': '这里的中转是指外部配置的中转，妙妙屋X只做入口\x20IP\x20更换；如需使用妙妙屋X中转，请使用隧道创建中转。',
+    'relayTotalCount': '共\x20{{count}}\x20个中转节点',
+    'relayEmpty': '暂无配置中转的节点',
+    'relayAddBtn': '添加中转',
+    'relaySelectNode': '选择节点',
+    'relaySelectNodePlaceholder': '选择要添加中转的节点',
+    'relayNoCandidate': '没有可添加中转的节点',
+    'relayServerLabel': '中转服务器地址\x20+\x20端口',
+    'relayCreateNodeHint': '默认保留原节点，并在节点列表新增一个使用此外部中转入口的节点；取消勾选后将直接修改原节点。',
+    'relayServerPlaceholder': '中转服务器\x20IP\x20或域名',
+    'relayPortPlaceholder': '端口(默认=节点端口)',
+    'relayViaLabel': '中转地址',
+    'relayOrigLabel': '原服务器',
+    'relayConfirm': '确认',
+    'relayCancelBtn': '取消',
+    'relayDeleteBtn': '取消中转',
+    'relayDeleteConfirm': '确定取消节点「{{name}}」的中转吗?将还原为原始服务器地址。',
+    'relayErrNode': '请选择节点',
+    'relayErrServer': '请填写中转服务器地址',
+    'relayAdded': '中转已添加',
+    'relayRemoved': '已取消中转',
+    'relayFailed': '中转操作失败',
+    'chainForward': '链式转发',
+    'chainHops': '{{count}}\x20跳',
+    'chainLabel': '链标识(可选)',
+    'chainLabelPlaceholder': '留空自动生成,仅限字母数字和短横线',
+    'chainServers': '链路服务器(按顺序)',
+    'chainServersHint': '第一台为入口、最后一台为出口;每跳把流量转给下一跳,出口转给最终目标。',
+    'chainEntry': '入口',
+    'chainExit': '出口',
+    'chainAddServer': '添加',
+    'chainAddServerPlaceholder': '选择要加入链路的服务器',
+    'chainEntryPort': '入口端口(可选)',
+    'chainEntryPortPlaceholder': '留空随机分配',
+    'chainTarget': '最终目标',
+    'chainCreate': '创建链式转发',
+    'chainCreating': '创建中…',
+    'chainCreated': '链式转发已创建',
+    'chainErrServers': '链式转发至少需要\x202\x20台服务器',
+    'chainErrApply': '创建链式转发失败',
+    'chainDeleteTitle': '删除整条链',
+    'chainDeleteConfirm': '确定删除链「{{label}}」吗?将移除全部\x20{{count}}\x20跳。',
+    'chainDeleteSuccess': '链式转发已删除',
+    'chainTargetNodePlaceholder': '从已有节点选出口目标(可选,会回填下方地址)',
+    'pfTargetNodePlaceholder': '从已有节点选目标(可选,会回填下方地址)',
+    'pfTargetTagAll': '全部标签',
+    'chainTargetNoNode': '暂无可选节点',
+    'pingFailed': '探测失败',
+    'probeLatency': '延迟探测(逐跳)',
+    'pingUnreachable': '不通',
+    'pingFromEntry': '入口服务器\x20→\x20目标:',
+    'pingFromExit': '出口服务器\x20→\x20目标:',
+    'pingTesting': '检测中…',
+    'pingProbed': '实测目标:',
+    'pingInconclusive': '无法预检',
+    'pingViaICMPHint': '仅\x20ICMP\x20可达:主机通,端口是否放行未验证'
+  },
+  mu = {
+    'importFromNode': '从节点导入',
+    'importDesc': '选择一个节点，将其配置导入到出站',
+    'searchNode': '搜索节点',
+    'searchPlaceholder': '输入节点名称、协议或标签搜索',
+    'all': '全部',
+    'loading': '加载中...',
+    'noMatch': '未找到匹配的节点',
+    'noNodes': '暂无可用节点',
+    'selected': '已选择\x201\x20个节点',
+    'selectNode': '请选择一个节点',
+    'loadFailed': '加载节点失败',
+    'parseFailed': '解析节点配置失败',
+    'confirmImport': '确认导入'
+  },
+  fu = {
+    'title': '选择用户',
+    'desc': '从用户列表中选择要添加的用户',
+    'searchUser': '搜索用户',
+    'searchPlaceholder': '输入邮箱或用户名搜索',
+    'loading': '加载中...',
+    'noMatch': '未找到匹配的用户',
+    'noUsers': '暂无用户',
+    'selectedCount': '已选择\x20{{count}}\x20个用户',
+    'loadFailed': '加载用户失败',
+    'updateEmailFailed': '无法为用户\x20{{username}}\x20更新邮箱',
+    'confirmAdd': '确认添加',
+    'selectUser': '选择用户'
+  },
+  xu = {
+    'add': '添加',
+    'selectUser': '选择用户',
+    'empty': '暂无{{label}}，点击上方按钮添加'
+  },
+  gu = {
+    'generatePsk': '生成\x20Base64\x20PSK\x20密钥',
+    'generatePassword': '生成随机密码',
+    'pleaseSelect': '请选择'
+  },
+  hu = {
+    'keyGenSuccess': '密钥生成成功',
+    'keyGenSuccessDescBoth': '已自动填入私钥和公钥',
+    'keyGenSuccessDescKey': '已自动填入私钥',
+    'keyGenFailed': '生成失败',
+    'keyGenFailedDesc': '无法生成密钥，请确保服务器已安装\x20Xray'
+  },
+  bu = {
+    'selectCert': '选择证书',
+    'loading': '加载中...',
+    'selectAppliedCert': '选择已申请的证书',
+    'noManagedCert': '不使用托管证书',
+    'noCerts': '暂无可用证书',
+    'noCertsDesc': '请先在证书管理中申请证书',
+    'daysExpiry': '{{days}}天后过期',
+    'certPath': '证书路径',
+    'keyPath': '密钥路径',
+    'matchExact': '匹配',
+    'matchWildcard': '泛域名'
+  },
+  yu = {
+    'decryptionMode': '解密方式',
+    'noneMode': 'none\x20(无加密)',
+    'encryptedMode': '加密',
+    'supportPostQuantum': 'VLESS解密方式，支持后量子加密',
+    'encryptionType': '加密类型',
+    'x25519Desc': 'Authentication:\x20X25519,\x20not\x20Post-Quantum\x20(传统加密)',
+    'mlkemDesc': 'Authentication:\x20ML-KEM-768,\x20Post-Quantum\x20(后量子安全)',
+    'appearance': '流量外观\x20(Appearance)',
+    'nativeDesc': '公钥特征在头部可见，TLSv1.3\x20AEAD模式可识别',
+    'xorpubDesc': 'XOR混淆公钥特征',
+    'randomDesc': '完全随机化流量外观\x20(6/10,000开销)',
+    'ticketLifetime': 'Ticket生命周期',
+    'ticketLifetimeDesc': '0-RTT\x20ticket重用时间设置',
+    'padding': '填充配置\x20(Padding)',
+    'paddingDesc': '防指纹填充配置，格式:\x20概率-长度-间隔序列',
+    'generateConfig': '生成解密配置',
+    'generating': '正在生成密钥...',
+    'configValue': 'Decryption\x20配置值',
+    'configValueDescEncrypted': '点击生成按钮自动生成后量子加密配置',
+    'configValueDescNone': '无加密配置',
+    'genSuccess': '密钥生成成功',
+    'genSuccessDesc': '已自动填入配置字符串',
+    'genFailed': '生成失败',
+    'genFailedDesc': '无法生成密钥，请确保服务器已安装\x20Xray'
+  },
+  vu = {
+    'realityGuardRule': 'Reality\x20防盗',
+    'routingRules': '路由规则（共\x20{{count}}\x20个）',
+    'canDragSort': '可拖拽排序',
+    'quickAdd': '快捷添加',
+    'customRule': '自定义规则',
+    'banBt': '禁止\x20BT',
+    'banGeoipCn': '禁止访问大陆\x20IP',
+    'fixOpenai': 'OpenAI\x20直连',
+    'banPrivate': '禁止内网访问',
+    'rfcEmby': 'RFC\x20EMBY\x20(需选择出站)',
+    'tiktokUnlock': '抖音解锁\x20(需选择出站)',
+    'warpAntiChina': '防止送中\x20(走\x20WARP)',
+    'homeBroadbandWarp': '家宽常用\x20(走\x20WARP)',
+    'speedtestWarp': '测速分流\x20(走\x20WARP)',
+    'warpNotInstalled': '请先在「出站管理」安装\x20WARP\x20出站后再添加此规则',
+    'warpRequiresEmbedded': '外置\x20Xray\x20不支持嵌入式\x20WARP,请将服务器切换为「内置\x20Xray」模式',
+    'noRules': '暂无路由规则',
+    'noRulesDesc': '点击\x22快捷添加\x22或\x22自定义规则\x22添加',
+    'clickToView': '点击左侧规则查看详情',
+    'rule': '规则\x20{{index}}',
+    'unknown': '未知',
+    'notSet': '未设置',
+    'selectOutbound': '选择出站',
+    'selectOutboundPlaceholder': '选择出站',
+    'selectInbound': '从入站选择…',
+    'noInbounds': '暂无可选入站',
+    'selectUser': '选择用户…',
+    'noUsers': '该服务器无可选子账户',
+    'customInboundTagPlaceholder': '自定义\x20tag(逗号分隔)',
+    'groupServerOutbounds': '服务器出站',
+    'groupBalancers': '负载均衡器',
+    'groupNodes': '节点(自动建出站)',
+    'nodeOutboundRemoteOnly': '节点出站仅在远程服务器路由中可用',
+    'nodeNotFound': '节点不存在',
+    'addOutboundFailed': '自动添加出站失败',
+    'outboundAutoAdded': '已自动添加出站\x20{{tag}}',
+    'addCustomRule': '添加自定义规则',
+    'customRuleDesc': '支持\x20Xray\x20所有路由字段，空字段不提交',
+    'outbound': '出站',
+    'mark': '标记\x20(可选)',
+    'noLimit': '不限',
+    'addBtn': '添加',
+    'balancer': '负载均衡',
+    'balancerTitle': '负载均衡器',
+    'balancerDesc': '把多个出站组成一个均衡器，路由规则可指向它，按策略自动分流。',
+    'balancerExisting': '已有均衡器（{{count}}）',
+    'balancerNone': '暂无均衡器。',
+    'balancerAdd': '新增均衡器',
+    'balancerStrategy': '策略',
+    'balancerStrategyRandom': 'random\x20·\x20随机选择',
+    'balancerStrategyRoundRobin': 'roundRobin\x20·\x20顺序轮询',
+    'balancerStrategyLeastPing': 'leastPing\x20·\x20延迟最低（观测）',
+    'balancerStrategyLeastLoad': 'leastLoad\x20·\x20最稳定（观测）',
+    'balancerSelector': '纳入的出站',
+    'balancerSelectorHint': '至少勾选\x201\x20个出站；按完整出站标签精确匹配。',
+    'balancerNoOutbound': '暂无可用出站，请先添加出站。',
+    'balancerFallback': '兜底出站\x20(可选)',
+    'balancerObservatoryHint': 'leastPing\x20用后台连接观测(observatory)，保存时按上面\x20probe\x20设置探测各出站延迟。',
+    'balancerBurstHint': 'leastLoad\x20用突发连接观测(burstObservatory)，特征更不明显。每\x20interval×sampling\x20为一个探测周期，周期内随机时间探测；interval\x20最小\x2010s。',
+    'balancerConnectivityPlaceholder': '留空=不检测本地连通性',
+    'balancerEdit': '编辑均衡器\x20{{tag}}',
+    'balancerEditHint': '点击编辑此均衡器',
+    'balancerSaved': '负载均衡器已保存，正在重启\x20Xray\x20生效',
+    'balancerSaveFailed': '保存失败',
+    'balancerTagRequired': '请填写均衡器\x20tag',
+    'balancerTagDup': '该\x20tag\x20已存在',
+    'balancerSelectorMin': '至少勾选\x201\x20个出站',
+    'localBalancerNotSupported': '本地服务器暂不支持负载均衡器',
+    'confirmDeleteRule': '确认删除规则',
+    'confirmDeleteRuleDesc': '确定要删除此路由规则吗？',
+    'deleteAutoRestart': '删除后将自动重启\x20Xray\x20生效。',
+    'deleteIrreversible': '此操作无法撤销。',
+    'confirmDelete': '确认删除',
+    'ruleAdded': '路由规则已添加并重启\x20Xray',
+    'ruleAddedLocal': '路由规则已添加',
+    'addFailed': '添加失败',
+    'ruleDeleted': '路由规则已删除并重启\x20Xray',
+    'ruleDeletedLocal': '路由规则已删除',
+    'deleteFailed': '删除失败',
+    'editRule': '编辑路由规则',
+    'ruleUpdated': '路由规则已更新并重启\x20Xray',
+    'updateFailed': '更新失败',
+    'ruleNotFound': '规则不存在',
+    'orderUpdated': '规则顺序已更新并重启\x20Xray',
+    'orderFailed': '排序失败',
+    'selectOutboundRequired': '请选择出站',
+    'fillAtLeastOne': '请至少填写一个匹配条件',
+    'localSortNotSupported': '本地服务器暂不支持排序',
+    'sourcePort': '来源端口',
+    'inboundTag': '入站标签',
+    'attrMatch': '属性匹配'
+  },
+  Su = JSON['parse']('{\x22title\x22:\x22服务管理\x22,\x22desc\x22:\x22管理远程服务器\x22,\x22federated\x22:\x22共享服务器\x22,\x22addServer\x22:\x22添加服务器\x22,\x22noServers\x22:\x22暂无服务器\x22,\x22noServersDesc\x22:\x22点击\x5c\x22添加服务器\x5c\x22按钮添加远程服务器\x22,\x22addRemoteServer\x22:\x22添加远程服务器\x22,\x22addRemoteServerDesc\x22:\x22添加一个远程\x20MMWX\x20服务器进行管理。输入名称后生成\x20Token，然后在远程服务器上执行安装命令。\x22,\x22serverName\x22:\x22服务器名称\x22,\x22serverNamePlaceholder\x22:\x22例如：美国节点1\x22,\x22generateToken\x22:\x22生成\x20Token\x22,\x22generating\x22:\x22生成中...\x22,\x22serverAddress\x22:\x22服务器地址\x22,\x22serverAddressPlaceholder\x22:\x22例如：example.com\x22,\x22serverAddressHint\x22:\x22填域名:节点配置始终用此域名;填\x20IP:节点配置自动跟随\x20agent\x20上报的最新\x20IP(适合小鸡换\x20IP\x20场景)\x22,\x22ddns\x22:{\x22label\x22:\x22DDNS\x22,\x22providerSelect\x22:\x22DDNS\x20服务商\x22,\x22providerAuto\x22:\x22自动(按证书和\x20DNS\x20服务商识别)\x22,\x22providerNotFound\x22:\x22未找到匹配该域名的通配符证书,请显式选择\x20DNS\x20服务商\x22,\x22lastSyncedAt\x22:\x22上次同步\x22,\x22lastError\x22:\x22上次失败\x22,\x22syncing\x22:\x22正在同步…\x22,\x22retryNow\x22:\x22立即重试\x22,\x22requireDomain\x22:\x22DDNS\x20开启时必须填域名\x22,\x22disabled\x22:\x22未启用\x22},\x22agentPort\x22:\x22Agent\x20端口\x22,\x22agentAuthToken\x22:\x22Agent\x20认证\x20Token\x20(可选)\x22,\x22autoGenerated\x22:\x22自动生成\x22,\x22trafficLimit\x22:\x22流量限制\x20(GB)\x22,\x22trafficLimitPlaceholder\x22:\x22留空表示不限制\x22,\x22usedTraffic\x22:\x22已用流量\x20(GB)\x22,\x22usedTrafficPlaceholder\x22:\x22用于校准\x22,\x22resetDay\x22:\x22重置日期\x20(每月)\x22,\x22resetDayPlaceholder\x22:\x221-31，留空不重置\x22,\x22stealSelf\x22:\x22我要偷自己\x22,\x22frontSelect\x22:\x22前置选择\x22,\x22frontSelectNginxUnavailable\x22:\x22nginx（暂不支持）\x22,\x22stealSelfDesc\x22:\x22开启\x5c\x22我要偷自己\x5c\x22后，安装\x20mmw-agent\x20完成后会自动安装\x20Xray\x20+\x20Nginx\x22,\x22masterHttpsStealBlocked\x22:\x22该地址与\x20HTTPS\x20主控相同，禁止开启偷自己，避免抢占\x20443\x20导致主控无法访问\x22,\x22deployMode\x22:\x22部署模式\x22,\x22tunnelMode\x22:\x22Tunnel\x20模式\x22,\x22fallbackMode\x22:\x22回落模式\x22,\x22tunnelModeDesc\x22:\x22Xray\x20监听\x20443\x20端口，通过\x20tunnel\x20转发到\x20Nginx\x22,\x22fallbackModeDesc\x22:\x22Xray\x20监听443端口，通过fallback回落到Nginx\x22,\x22use443\x22:\x22使用443端口部署\x22,\x22domain\x22:\x22域名\x22,\x22domainAutoFilled\x22:\x22已自动填充主控域名（服务器\x20IP\x20与主控一致）\x22,\x22domainDesc\x22:\x22Agent\x20连接后将自动下发\x20Nginx\x20+\x20Xray\x20443端口配置和证书。建议为每个地区增加一个偷自己的服务器。\x22,\x22siteType\x22:\x22网站类型\x22,\x22staticPage\x22:\x22静态页面\x22,\x22reverseProxy\x22:\x22反向代理\x22,\x22staticPath\x22:\x22静态页面路径\x22,\x22staticPathPlaceholder\x22:\x22例如：/var/www/html\x22,\x22reverseProxyAddress\x22:\x22反向代理地址\x22,\x22reverseProxyPlaceholder\x22:\x22例如：http://127.0.0.1:8080\x22,\x22masterToken\x22:\x22主服务器\x20Token\x22,\x22childToken\x22:\x22子服务器\x20Token\x22,\x22installCommand\x22:\x22安装命令\x22,\x22copyInstallCommand\x22:\x22复制安装命令\x22,\x22copyToken\x22:\x22复制\x20Token\x22,\x22tokenDesc\x22:\x22主服务器\x20Token\x20用于\x20Agent\x20连接主服务器认证；子服务器\x20Token\x20用于主服务器拉取\x20Agent\x20数据时认证。当\x20Agent\x20无法主动上报时，主服务器将自动切换为拉取模式。\x22,\x22complete\x22:\x22完成\x22,\x22online\x22:\x22在线\x22,\x22pending\x22:\x22等待连接\x22,\x22offline\x22:\x22离线\x22,\x22encrypted\x22:\x22加密连接\x22,\x22unencrypted\x22:\x22未加密\x22,\x22degraded\x22:\x22已降级\x22,\x22realtimeSpeed\x22:\x22实时网速\x22,\x22upload\x22:\x22上传\x22,\x22download\x22:\x22下载\x22,\x22waitingData\x22:\x22等待数据...\x22,\x22trafficStats\x22:\x22流量统计\x22,\x22trafficStatsServers\x22:\x22流量统计服务器\x22,\x22trafficStatsServersDesc\x22:\x22选择参与管理员流量信息统计的服务器。顶部总流量、已用流量、剩余流量、实时网速和每日流量趋势仅汇总所选服务器；服务器明细不受影响。\x22,\x22trafficStatsServersSelected\x22:\x22已选择\x20{{selected}}\x20/\x20{{total}}\x20台服务器\x22,\x22trafficStatsServersSaved\x22:\x22流量统计服务器已保存\x22,\x22trafficStatsServersSaveFailed\x22:\x22保存流量统计服务器失败\x22,\x22usedTotal\x22:\x22已用/总量\x22,\x22resetLabel\x22:\x22重置\x22,\x22monthlyReset\x22:\x22每月\x20{{day}}\x20日\x22,\x22monthlyResetFull\x22:\x22每月\x20{{day}}\x20日重置\x22,\x22used\x22:\x22已使用\x22,\x22unlimited\x22:\x22不限流量\x22,\x22noLimit\x22:\x22不限制\x22,\x22lastHeartbeat\x22:\x22最后心跳\x22,\x22install\x22:\x22安装\x22,\x22installService\x22:\x22安装服务\x22,\x22serviceManagement\x22:\x22服务管理\x22,\x22iWantStealSelf\x22:\x22我要偷自己\x22,\x22xrayOnly\x22:\x22仅\x20Xray\x22,\x22willInstallBoth\x22:\x22将安装\x20Xray\x20+\x20Nginx\x22,\x22willInstallNginx\x22:\x22将安装\x20Nginx\x22,\x22willInstallXray\x22:\x22将安装\x20Xray\x22,\x22bothInstalled\x22:\x22均已安装\x22,\x22xrayInstalled\x22:\x22Xray\x20已安装\x22,\x22uninstall\x22:\x22卸载\x22,\x22xrayConfig\x22:\x22Xray配置\x22,\x22agentManagement\x22:\x22Agent\x20管理\x22,\x22syncNodes\x22:\x22同步节点\x22,\x22syncNodeAddress\x22:\x22同步节点地址\x22,\x22nodeAddressSynced\x22:\x22节点地址已同步\x22,\x22nodeAddressSyncFailed\x22:\x22同步节点地址失败\x22,\x22deployConfig\x22:\x22下发配置\x22,\x22deploying\x22:\x22下发中...\x22,\x22addWebsite\x22:\x22网站管理\x22,\x22upgradeAgent\x22:\x22升级\x20Agent\x22,\x22uninstallAgent\x22:\x22卸载\x20Agent\x22,\x22nameCol\x22:\x22名称\x22,\x22connectionMode\x22:\x22连接模式\x22,\x22ipAddress\x22:\x22IP地址\x22,\x22speedCol\x22:\x22网速\x22,\x22trafficCol\x22:\x22流量\x22,\x22serviceCol\x22:\x22服务\x22,\x22actionsCol\x22:\x22操作\x22,\x22notConnected\x22:\x22未连接\x22,\x22waitConnection\x22:\x22等待连接...\x22,\x22heartbeatLabel\x22:\x22心跳\x22,\x22viewXrayConfig\x22:\x22查看\x20Xray\x20配置\x22,\x22scan\x22:\x22扫描远程服务\x22,\x22editServer\x22:\x22编辑服务器\x22,\x22deleteServer\x22:\x22删除远程服务器\x22,\x22xrayManagement\x22:\x22Xray\x20管理\x22,\x22xrayManagementDesc\x22:\x22管理远程服务器的\x20Xray\x20服务控制、配置、入站、出站和路由\x22,\x22terminalTitle\x22:\x22终端\x22,\x22executing\x22:\x22正在执行，请稍候...\x22,\x22executionDone\x22:\x22执行完成\x22,\x22executingBtn\x22:\x22执行中...\x22,\x22confirmDeleteServer\x22:\x22确认删除\x22,\x22confirmDeleteServerDesc\x22:\x22确定要删除远程服务器\x20\x5c\x22{{name}}\x5c\x22\x20吗？此操作无法撤销。\x22,\x22uninstallAgentBeforeDelete\x22:\x22删除前卸载\x20Agent\x22,\x22uninstallAgentBeforeDeleteHint\x22:\x22默认开启。将先通知远程服务器卸载\x20Agent，成功受理后再删除服务器；服务器离线时请取消勾选后重试。\x22,\x22uninstallAgentFederatedHint\x22:\x22分享服务器不能卸载拥有方的\x20Agent，只会删除本地主控中的服务器记录。\x22,\x22deleting\x22:\x22正在删除...\x22,\x22serverDeleted\x22:\x22服务器已删除\x22,\x22serverCreated\x22:\x22服务器创建成功\x22,\x22localServerDetected\x22:\x22检测到本机服务器，已自动配置\x20Nginx\x20反代\x22,\x22createFailed\x22:\x22创建失败\x22,\x22deleteFailed\x22:\x22删除失败\x22,\x22serverUpdated\x22:\x22服务器信息已更新\x22,\x22connectionModeUpdated\x22:\x22连接模式已更新\x22,\x22xrayConfigSaved\x22:\x22Xray\x20配置已保存并重启\x22,\x22saveFailed\x22:\x22保存失败\x22,\x22remoteXrayConfigUpdated\x22:\x22远程服务器\x20Xray\x20配置已更新，服务已重启\x22,\x22configUpdateFailed\x22:\x22配置更新失败\x22,\x22serverNotFound\x22:\x22服务器不存在\x22,\x22enterServerName\x22:\x22请输入服务器名称\x22,\x22use443NeedsDomain\x22:\x22使用443端口部署时必须输入域名\x22,\x22copied\x22:\x22{{label}}已复制到剪贴板\x22,\x22copyFailed\x22:\x22复制失败\x22,\x22copyBlocked\x22:\x22复制失败：当前通过\x20HTTP\x20访问，受浏览器安全限制，请手动选择文本复制。\x22,\x22installCommandLoading\x22:\x22正在生成安装命令…\x22,\x22installCommandLoadFailed\x22:\x22安装命令加载失败，请关闭后重试。\x22,\x22configLoadFailed\x22:\x22加载配置失败\x22,\x22scanComplete\x22:\x22扫描完成\x22,\x22scanSynced\x22:\x22扫描完成，同步了\x20{{count}}\x20个入站:\x20{{tags}}\x22,\x22scanSyncedWithClaim\x22:\x22扫描完成，自动绑定\x20{{claimed}}\x20个已有节点，新增\x20{{created}}\x20个节点\x22,\x22scanSkipped\x22:\x22扫描完成，跳过\x20{{count}}\x20个已存在的入站\x22,\x22noSyncableInbound\x22:\x22没有找到可同步的入站配置\x22,\x22modeSwitch\x22:\x22模式切换成功\x22,\x22configDeployed\x22:\x22配置下发成功\x22,\x22websiteAdded\x22:\x22网站添加成功\x22,\x22websiteAddFailed\x22:\x22添加失败\x22,\x22validateFailed\x22:\x22验证请求失败\x22,\x22fillComplete\x22:\x22请填写完整信息\x22,\x22serviceStarted\x22:\x22{{service}}\x20{{action}}成功\x22,\x22actionStart\x22:\x22启动\x22,\x22actionStop\x22:\x22停止\x22,\x22actionRestart\x22:\x22重启\x22,\x22nodeSyncSuccess\x22:\x22节点同步成功\x22,\x22nodeSyncNoNew\x22:\x22没有新节点需要同步\x22,\x22syncedTags\x22:\x22已同步:\x20{{tags}}\x22,\x22editRemoteServer\x22:\x22编辑远程服务器\x22,\x22editRemoteServerDesc\x22:\x22修改远程服务器的名称、域名、流量限制等信息\x22,\x22stealMode\x22:\x22偷自己模式\x22,\x22restartBtn\x22:\x22重启\x22,\x22stopBtn\x22:\x22停止\x22,\x22startBtn\x22:\x22启动\x22,\x22tryStartXray\x22:\x22尝试启动\x20Xray\x22,\x22serviceControlFailed\x22:\x22操作失败\x22,\x22installXray\x22:\x22安装远程\x20Xray\x22,\x22removeXray\x22:\x22卸载远程\x20Xray\x22,\x22installNginx\x22:\x22安装远程\x20Nginx\x22,\x22proxyMaster\x22:\x22反代主控\x22,\x22proxyMasterOk\x22:\x22已在该\x20agent\x20上部署主控反代，主控域名现在可经此\x20agent\x20的\x20nginx\x20走\x20HTTPS\x20访问\x22,\x22proxyMasterFailed\x22:\x22部署主控反代失败\x22,\x22removeNginx\x22:\x22卸载远程\x20Nginx\x22,\x22upgradeAgentAction\x22:\x22升级远程\x20Agent\x22,\x22uninstallAgentAction\x22:\x22卸载远程\x20Agent\x22,\x22upgradeAllAgents\x22:\x22一键升级\x20Agent\x22,\x22upgradeAllAgentsTip\x22:\x22顺序升级所有已接入服务器的\x20Agent\x20到最新版本\x22,\x22upgradeAllAgentsProgressDesc\x22:\x22逐台升级中,点击每行可展开查看详细日志。升级期间请勿关闭。\x22,\x22upgradeAllRunning\x22:\x22升级中…\x22,\x22upgradeAllDone\x22:\x22全部\x20{{count}}\x20台\x20Agent\x20升级完成\x22,\x22upgradeAllPartial\x22:\x22{{failed}}/{{total}}\x20台升级失败,详见进度\x22,\x22upgradeStatusPending\x22:\x22等待中\x22,\x22upgradeCanaryHealthy\x22:\x22测试节点验证通过，开始滚动升级\x22,\x22upgradeCanaryFailed\x22:\x22测试节点升级或健康检查失败，后续升级已停止\x22,\x22upgradeCanaryFailedDecision\x22:\x22测试节点升级或健康检查失败，请选择重试、跳过或停止\x22,\x22upgradeResultMissing\x22:\x22升级连接提前结束，未收到主控最终校验结果\x22,\x22upgradeRetryServer\x22:\x22重试此服务器\x22,\x22upgradeSkipServer\x22:\x22跳过此服务器\x22,\x22upgradeStopRemaining\x22:\x22停止剩余升级\x22,\x22upgradeRetrying\x22:\x22用户选择重试\x22,\x22upgradeStatusRunning\x22:\x22升级中\x22,\x22upgradeStatusSuccess\x22:\x22成功\x22,\x22upgradeStatusError\x22:\x22失败\x22,\x22timeOffsetWarning\x22:\x22服务器时间有误差，可能导致vmess、ss等时间敏感协议无法使用\x22,\x22syncNodesDialog\x22:\x22同步节点\x22,\x22serverHost\x22:\x22服务器地址\x22,\x22forceOverride\x22:\x22强制覆盖已有节点\x22,\x22addWebsiteDialog\x22:\x22网站管理\x22,\x22websiteDomain\x22:\x22域名\x22,\x22validate\x22:\x22验证\x22,\x22remoteServerDetail\x22:\x22远程服务器详情\x22,\x22autoMode\x22:\x22自动\x22,\x22websocketMode\x22:\x22WebSocket\x22,\x22httpMode\x22:\x22HTTP\x22,\x22pullMode\x22:\x22轮询\x22,\x22xrayRawConfig\x22:\x22Xray\x20原始配置\x22,\x22loadingConfig\x22:\x22加载配置中...\x22,\x22requestFailed\x22:\x22请求失败:\x20{{error}}\x22,\x22unknownError\x22:\x22未知错误\x22,\x22failedSuffix\x22:\x22{{title}}失败\x22,\x22moreErrors\x22:\x22还有\x20{{count}}\x20个错误...\x22,\x22serverOffline\x22:\x22服务器离线\x22,\x22serverInstallInfo\x22:\x22远程服务器安装信息\x22,\x22serverOfflineDesc\x22:\x22服务器已离线，请检查服务状态或重新安装。\x22,\x22serverOfflineDescDetailed\x22:\x22在远程服务器上执行以下命令完成安装，或手动配置\x20Token。\x22,\x22lastHeartbeatTime\x22:\x22上次心跳:\x20{{time}}\x22,\x22neverConnected\x22:\x22从未连接\x22,\x22startService\x22:\x22启动服务\x22,\x22copyStartCommand\x22:\x22复制启动命令\x22,\x22reinstallCommand\x22:\x22重新安装命令\x22,\x22oneClickInstall\x22:\x22一键安装命令\x22,\x22offlineReinstallHint\x22:\x22如果服务无法启动，可以尝试重新安装。\x22,\x22onlineInstallHint\x22:\x22在远程服务器上执行此命令，将自动下载并配置\x20MMWX\x20客户端。\x22,\x22manualConfig\x22:\x22手动配置\x22,\x22copyConfig\x22:\x22复制配置\x22,\x22serviceControl\x22:\x22服务控制:\x22,\x22running\x22:\x22运行中\x22,\x22stopped\x22:\x22已停止\x22,\x22notInstalled\x22:\x22未安装\x22,\x22metricsStats\x22:\x22指标统计\x22,\x22trafficStatsConfig\x22:\x22流量统计\x22,\x22configManagement\x22:\x22配置管理\x22,\x22inboundManagement\x22:\x22入站管理\x22,\x22outboundManagement\x22:\x22出站管理\x22,\x22routingManagement\x22:\x22路由管理\x22,\x22xrayConfigPlaceholder\x22:\x22Xray\x20配置文件内容...\x22,\x22jsonFormatError\x22:\x22JSON\x20格式错误，请检查配置\x22,\x22saving\x22:\x22保存中...\x22,\x22saveConfig\x22:\x22保存配置\x22,\x22remoteServerManagement\x22:\x22远程服务器管理\x22,\x22manageRemoteService\x22:\x22{{name}}\x20-\x20管理远程服务\x22,\x22serverInfo\x22:\x22服务器信息\x22,\x22unknown\x22:\x22未知\x22,\x22refreshStatus\x22:\x22刷新状态\x22,\x22domainOptional\x22:\x22服务器域名（可选）\x22,\x22domainHint\x22:\x22如果填写域名，节点的服务器地址将使用域名而非\x20IP\x22,\x22stealModeDefault\x22:\x22默认\x22,\x22stealModeDefaultDesc\x22:\x22无偷自己，Xray\x20直接监听协议端口\x22,\x22stealModeSwitchWarning\x22:\x22切换模式将重新部署配置，已有入站会自动保留\x22,\x22fallbackLabel\x22:\x22回落\x22,\x22tunnelLabel\x22:\x22Tunnel\x22,\x22syncToNodes\x22:\x22同步入站到节点\x22,\x22syncToNodesDesc\x22:\x22将远程服务器的入站配置同步到节点管理中，以便生成订阅链接。\x22,\x22syncServerHostPlaceholder\x22:\x22请输入远程服务器的对外访问地址（域名或IP）\x22,\x22syncServerHostHint\x22:\x22用于生成节点配置，请输入客户端可以访问的地址。\x22,\x22forceOverrideLabel\x22:\x22强制覆盖\x22,\x22forceOverrideDesc\x22:\x22覆盖已存在的同名节点\x22,\x22syncing\x22:\x22同步中...\x22,\x22startSync\x22:\x22开始同步\x22,\x22addWebsiteDesc\x22:\x22为远程服务器添加新的网站域名\x22,\x22domainPlaceholder\x22:\x22例如：blog.example.com\x22,\x22validating\x22:\x22验证中\x22,\x22adding\x22:\x22添加中...\x22,\x22pendingShort\x22:\x22待连接\x22,\x22deleteServerTokenWarning\x22:\x22确定要删除这个远程服务器吗？删除后将撤销其\x20Token，远程服务器将无法再与本服务器通信。\x22,\x22loadingStatus\x22:\x22加载中...\x22,\x22xrayMode\x22:\x22Xray\x20模式\x22,\x22xrayModeExternal\x22:\x22外置\x20Xray\x22,\x22xrayModeEmbedded\x22:\x22内联\x20Xray\x22,\x22xrayModeExternalDesc\x22:\x22使用独立安装的\x20Xray\x20进程，Agent\x20通过\x20gRPC\x20与其通信\x22,\x22xrayModeEmbeddedDesc\x22:\x22Agent\x20内联\x20Xray-core，支持自动限速和设备数限制，可创建\x20Snell、AnyTLS\x20节点\x22,\x22xrayModeEmbeddedProHint\x22:\x22Pro\x20支持限速与限制连接数\x22,\x22xrayModeEmbeddedWarpHint\x22:\x22支持\x20Cloudflare\x20WARP\x20出站(外置\x20Xray\x20不支持)\x22,\x22ipv6DomainPlaceholder\x22:\x22IPv6\x20域名(AAAA,留空则与上面同域名)\x22,\x22domainV6\x22:\x22IPv6\x20域名\x20(可选)\x22,\x22domainV6Hint\x22:\x22创建\x20IPv6\x20节点时默认用它,留空则用\x20IPv6\x20地址\x22,\x22upgradeConfirmTitle\x22:\x22确定升级「{{name}}」的\x20Agent\x20吗？\x22,\x22upgradeConfirmCurrent\x22:\x22当前版本：{{version}}\x22,\x22upgradeConfirmLatest\x22:\x22最新版本：{{version}}\x22,\x22upgradeConfirmUnknown\x22:\x22未知（老版本\x20Agent\x20未上报）\x22,\x22upgradeConfirmAlreadyLatest\x22:\x22已是最新版本，继续将重新下载并替换相同的二进制。\x22,\x22upgradeConfirmRestartWarn\x22:\x22升级过程中\x20Agent\x20会重启，服务将短暂中断。\x22,\x22upgradeAllConfirmTitle\x22:\x22确定升级全部\x20{{count}}\x20台服务器的\x20Agent\x20吗？\x22,\x22upgradeAllConfirmOutdated\x22:\x22其中\x20{{outdated}}/{{total}}\x20台有新版本可用。\x22,\x22manualCopyHint\x22:\x22当前环境（非\x20HTTPS）浏览器不允许自动复制，请手动选中下方内容复制。\x22,\x22confirmDeleteSharedServer\x22:\x22删除共享服务器\x22,\x22deleteSharedServerWarning\x22:\x22确定要移除此共享服务器吗？只会删除当前主控中的共享记录和所选节点，不会卸载或影响拥有方的\x20Agent。\x22,\x22trafficStatsRule\x22:\x22流量统计规则\x22,\x22statsBoth\x22:\x22上行\x20+\x20下行\x22,\x22statsUpload\x22:\x22仅上行\x22,\x22statsDownload\x22:\x22仅下行\x22,\x22statsMax\x22:\x22取最大(上/下行)\x22,\x22trafficStatsDesc\x22:\x22控制该服务器节点流量的统计方向。用户流量按套餐配置的单向/双向规则单独计算,不受此设置影响。\x22,\x22trafficSourceLabel\x22:\x22服务器流量数据源\x22,\x22sourceXray\x22:\x22Xray\x20协议流量(默认)\x22,\x22sourceSystem\x22:\x22系统网卡流量\x22,\x22enableIPv6Label\x22:\x22启用\x20IPv6\x22,\x22ipv6OffDescCreate\x22:\x22关闭后:服务管理不显示该服务器\x20v6、添加节点不可选\x20v6。\x22,\x22ipv6OffDescEdit\x22:\x22关闭后:服务管理不再显示该服务器的\x20IPv6\x20地址,添加节点时也不可选\x20IPv6。适用于服务器已关闭\x20IPv6、但主控残留旧\x20v6\x20地址清不掉的情况。\x22,\x22listenPortChangeTitle\x22:\x22修改\x20Agent\x20监听端口\x22,\x22upgradeAllUpToDate\x22:\x22所有在线\x20Agent\x20都已是最新版本\x22,\x22dockerEnvLabel\x22:\x22Docker\x20部署环境变量\x22,\x22copyDockerEnv\x22:\x22复制环境变量\x22,\x22dockerEnvHint\x22:\x22用\x20Docker\x20部署\x20agent\x20时把这几行填进\x20compose\x20的\x20environment。其中\x20MMWX_MASTER_PUBLIC_KEY\x20必须带上\x20——\x20少了它\x20agent\x20不会发起密钥交换,主控开启「强制加密」后会拒绝连接并提示\x20Encryption\x20required。\x22}'),
+  Cu = {
+    'defaultLabel': '默认'
+  },
+  px = {
+    'fields': iu,
+    'composer': lu,
+    'inbounds': du,
+    'outbounds': cu,
+    'wizard': uu,
+    'tunnelManager': pu,
+    'nodeSelect': mu,
+    'userSelect': fu,
+    'arrayField': xu,
+    'formField': gu,
+    'keyGenerator': hu,
+    'certSelect': bu,
+    'vlessDecryption': yu,
+    'routing': vu,
+    'servers': Su,
+    'presets': Cu
+  },
+  mx = Object['freeze'](Object['defineProperty']({
+    '__proto__': null,
+    'arrayField': xu,
+    'certSelect': bu,
+    'composer': lu,
+    'default': px,
+    'fields': iu,
+    'formField': gu,
+    'inbounds': du,
+    'keyGenerator': hu,
+    'nodeSelect': mu,
+    'outbounds': cu,
+    'presets': Cu,
+    'routing': vu,
+    'servers': Su,
+    'tunnelManager': pu,
+    'userSelect': fu,
+    'vlessDecryption': yu,
+    'wizard': uu
+  }, Symbol['toStringTag'], {
+    'value': 'Module'
+  })),
+  fx = {
+    'common': {
+      'actions.clear': 'Clear',
+      'actions.selectAll': 'Select\x20all'
+    },
+    'auth': {
+      'setup.usernameInvalid': 'Username\x20may\x20contain\x20letters,\x20numbers,\x20and\x20hyphens\x20only;\x20it\x20must\x20be\x203–20\x20characters\x20and\x20cannot\x20contain\x20underscores.'
+    },
+    'certificates': {
+      'toast.deployFailed': 'Certificate\x20deployment\x20failed'
+    },
+    'nodes': {
+      'chainTunnel.revertConfirmTitle': 'Switch\x20back\x20to\x20the\x20source\x20server?',
+      'chainTunnel.revertConfirmDesc': 'Node\x20“{{node}}”\x20currently\x20connects\x20through\x20chained\x20tunnel\x20entry\x20{{entry}}.\x20Switching\x20back\x20removes\x20the\x20relay\x20configuration\x20and\x20restores\x20the\x20source\x20server\x20address.',
+      'dialog.editNode.confirmDescription': 'Changes\x20to\x20ports,\x20domains,\x20transport\x20settings,\x20and\x20Reality\x20protection\x20keep\x20existing\x20credentials.\x20Credentials\x20are\x20regenerated\x20only\x20when\x20the\x20protocol,\x20security\x20type,\x20or\x20Shadowsocks\x20cipher\x20changes.',
+      'dialog.editNode.confirmTitle': 'Confirm\x20inbound\x20changes?',
+      'dialog.editNode.description': 'The\x20tag,\x20node\x20ID,\x20and\x20original\x20node\x20name\x20remain\x20unchanged.\x20Changes\x20to\x20ports,\x20domains,\x20transport\x20settings,\x20and\x20Reality\x20protection\x20do\x20not\x20replace\x20user\x20credentials.',
+      'dialog.editNode.title': 'Edit\x20node',
+      'dialog.editTag.description': 'Update\x20the\x20tag\x20for\x20the\x20selected\x20nodes.',
+      'dialog.editTag.title': 'Edit\x20tag',
+      'dialog.relayGroup.remove': 'Remove\x20relay\x20group',
+      'editNodesDialog.dialerProxyLabel': 'Relay',
+      'speedtest.bufSize': 'Packet\x20size',
+      'speedtest.bufSizeHint': 'Packet\x20size\x20sent\x20and\x20received\x20each\x20time;\x20additional\x20threads\x20fill\x20bandwidth\x20more\x20effectively\x20than\x20larger\x20packets.',
+      'toast.editNodeFailed': 'Failed\x20to\x20update\x20node',
+      'toast.editNodeFetchFailed': 'Failed\x20to\x20load\x20inbound\x20configuration',
+      'toast.editNodeInboundMissing': 'The\x20inbound\x20was\x20not\x20found\x20on\x20the\x20server\x20and\x20may\x20have\x20been\x20deleted',
+      'toast.editNodeNoInbound': 'This\x20node\x20has\x20no\x20editable\x20inbound',
+      'toast.editNodeSaving': 'Saving...',
+      'toast.editNodeServerNotFound': 'The\x20server\x20for\x20this\x20node\x20was\x20not\x20found',
+      'toast.editNodeSuccess': 'Node\x20updated',
+      'toast.wholeOutboundCancelled': 'Whole-node\x20outbound\x20cancelled',
+      'toast.wholeOutboundCancelFailed': 'Failed\x20to\x20cancel\x20whole-node\x20outbound',
+      'tooltip.editNode': 'Edit\x20node\x20(port,\x20SNI,\x20and\x20more)',
+      'uriManager.allServers': 'All\x20servers',
+      'uriManager.allUsers': 'All\x20users',
+      'uriManager.colServer': 'Server',
+      'uriManager.serverLabel': 'Server'
+    },
+    'packages': {
+      'card.deletedNode': 'Deleted\x20node',
+      'card.deviceN_one': '{{count}}\x20connection',
+      'card.deviceN_other': '{{count}}\x20connections',
+      'card.deviceN': '{{count}}\x20connections',
+      'card.perNodeOverride_one': '{{count}}\x20per-node\x20override',
+      'card.perNodeOverride_other': '{{count}}\x20per-node\x20overrides',
+      'card.perNodeOverride': '{{count}}\x20per-node\x20overrides',
+      'dialog.nodeSelected': 'Selected',
+      'dialog.nodeTrafficLimit': 'Per-user\x20node\x20traffic\x20in\x20this\x20package\x20(GB)',
+      'dialog.nodeTrafficLimitHeader': 'Node\x20traffic\x20(GB)'
+    },
+    'settings': {
+      'profile.usernameInvalid': 'Username\x20may\x20contain\x20letters,\x20numbers,\x20and\x20hyphens\x20only;\x20it\x20must\x20be\x203–20\x20characters\x20and\x20cannot\x20contain\x20underscores.'
+    },
+    'system': {
+      'apiToken.regenerate': 'Regenerate',
+      'telegram.events.serverToleranceHint': 'Send\x20an\x20offline\x20alert\x20only\x20after\x20this\x20many\x20seconds.\x20If\x20the\x20server\x20returns\x20within\x20the\x20threshold,\x20no\x20alert\x20is\x20sent.\x20Use\x200\x20to\x20disable.',
+      'telegram.events.serverToleranceSeconds': 'Online/offline\x20tolerance\x20(seconds)'
+    },
+    'users': {
+      'createDialog.usernameInvalid': 'Username\x20may\x20contain\x20letters,\x20numbers,\x20and\x20hyphens\x20only;\x20it\x20must\x20be\x203–20\x20characters\x20and\x20cannot\x20contain\x20underscores.',
+      'limits.colDeviceOverride': 'Connections',
+      'limits.colNode': 'Node',
+      'limits.colSpeedOverride': 'Speed\x20(Mbps)',
+      'limits.empty': 'This\x20user\x20has\x20no\x20visible\x20nodes',
+      'limits.fallbackHint': 'The\x20package\x20value\x20is\x20inherited\x20by\x20default.\x20A\x20custom\x20value\x20overrides\x20it.\x20Use\x200\x20for\x20explicitly\x20unlimited\x20or\x20leave\x20blank\x20to\x20inherit.',
+      'limits.globalHeader': 'Global\x20override\x20(applies\x20to\x20every\x20node)',
+      'limits.loading': 'Loading...',
+      'limits.perNodeHeader': 'Per-node\x20override\x20(highest\x20priority)',
+      'subscribe.copiedClient': '{{name}}\x20subscription\x20URL\x20copied',
+      'subscribe.copiedPackageClient': '{{package}}\x20({{client}})\x20subscription\x20URL\x20copied',
+      'subscribe.independentPackage': 'Independent\x20package',
+      'subscribe.noPackages': 'This\x20user\x20has\x20no\x20available\x20package\x20subscription',
+      'subscribe.packagesLoading': 'Loading\x20packages…',
+      'subscribe.pickClient': 'Choose\x20a\x20client\x20and\x20copy\x20its\x20subscription',
+      'subscribe.primaryPackage': 'Primary\x20package',
+      'subscribe.qrClientHint': 'Choose\x20the\x20client\x20for\x20this\x20QR\x20code',
+      'subscribe.qrCode': 'QR\x20code',
+      'view.currentConnections': 'Current\x20connections',
+      'view.filterAll': 'All'
+    },
+    'xray': {
+      'nodeList.forwardedByTunnel': 'Forwarded\x20by\x20tunnel',
+      'nodeSelect.clearSelection': 'Clear\x20selection',
+      'nodeSelect.itemUnit': '\x20nodes',
+      'nodeSelect.selectAll': 'Select\x20all\x20visible',
+      'nodeSelect.selectedCount': 'Selected',
+      'outbounds.bulkImportFailed': 'Bulk\x20import\x20failed',
+      'outbounds.bulkImportPartial': '{{ok}}\x20succeeded\x20/\x20{{fail}}\x20failed',
+      'outbounds.bulkImportSuccess': 'Successfully\x20imported\x20{{count}}\x20outbounds',
+      'routing.backToList': 'Back\x20to\x20list',
+      'routing.managedBadge': 'Routed\x20outbound',
+      'routing.managedHint': 'This\x20rule\x20is\x20managed\x20automatically\x20by\x20routed\x20outbounds.\x20Do\x20not\x20edit\x20or\x20delete\x20it\x20manually.',
+      'routing.portForwardBadge': 'Port\x20forward',
+      'routing.portForwardHint': 'This\x20rule\x20was\x20created\x20by\x20Tunnel\x20Manager\x20port\x20forwarding\x20in\x20reuse\x20mode.\x20Delete\x20it\x20from\x20the\x20Tunnel\x20Manager\x20list.',
+      'routing.savedRules': 'Saved\x20custom\x20rules',
+      'routing.resizeSavedRules': 'Drag\x20the\x20lower-right\x20corner\x20to\x20resize',
+      'routing.deleteSavedRule': 'Delete\x20saved\x20rule',
+      'routing.deleteSavedRuleFailed': 'Failed\x20to\x20delete\x20saved\x20rule',
+      'routing.title': 'Routing\x20rules',
+      'servers.agentPortEditHint': 'The\x20Agent\x20will\x20update\x20its\x20configuration\x20and\x20restart.\x20A\x20brief\x20disconnect\x20is\x20expected.\x20Leave\x20blank\x20to\x20restore\x20port\x2023889.',
+      'servers.dragToReorder': 'Drag\x20to\x20reorder',
+      'servers.failed': 'Failed',
+      'servers.keepNodesOnDelete': 'Keep\x20this\x20server’s\x20nodes\x20(delete\x20them\x20by\x20default)',
+      'servers.keepNodesOnDeleteHint': 'Unchecked:\x20deleting\x20the\x20server\x20also\x20removes\x20its\x20nodes\x20from\x20subscriptions.\x20Checked:\x20delete\x20only\x20the\x20server\x20record\x20and\x20keep\x20its\x20nodes.',
+      'servers.listenPortChangeConfirm': 'Change\x20the\x20Agent\x20listening\x20port\x20to\x20{{port}}?\x20The\x20Agent\x20will\x20restart\x20and\x20briefly\x20disconnect.',
+      'servers.listenPortRestoreConfirm': 'Clear\x20the\x20Agent\x20port\x20setting\x20and\x20restore\x20port\x2023889?\x20The\x20Agent\x20will\x20restart\x20and\x20briefly\x20disconnect.',
+      'servers.lockEntryIp': 'Lock\x20node\x20entry\x20IP',
+      'servers.lockEntryIpHint': 'Ignore\x20domain\x20and\x20DDNS\x20values\x20for\x20this\x20server’s\x20nodes\x20and\x20use\x20the\x20IP\x20in\x20Server\x20Address.\x20Useful\x20for\x20NAT\x20servers\x20with\x20a\x20fixed\x20entry\x20IP\x20and\x20dynamic\x20exit\x20IP.',
+      'servers.noResetNeeded': 'No\x20reset\x20required',
+      'servers.portRange': 'Random\x20port\x20range\x20(optional)',
+      'servers.portRangeHint': 'Automatically\x20allocated\x20ports\x20for\x20this\x20server\x20must\x20fall\x20within\x20this\x20range.\x20Leave\x20both\x20ends\x20blank\x20or\x20set\x20them\x20to\x200\x20for\x20no\x20limit.',
+      'servers.uninstallAgentOfflineHint': 'The\x20server\x20is\x20disconnected.\x20Agent\x20uninstall\x20will\x20be\x20skipped\x20and\x20only\x20the\x20controller\x20record\x20will\x20be\x20deleted.',
+      'servers.xrayConfigTestFailed': 'Xray\x20configuration\x20test\x20failed',
+      'wizard.credentialsLocked': 'Xray\x20user\x20credentials\x20(UUID,\x20password,\x20and\x20others)\x20are\x20preserved\x20and\x20cannot\x20be\x20changed\x20while\x20editing\x20a\x20node.',
+      'wizard.wssAutoPortPathHint': 'WSS\x20uses\x20an\x20Nginx\x20reverse\x20proxy.\x20The\x20local\x20port\x20and\x20random\x20/ws/\x20path\x20are\x20generated\x20after\x20submission\x20and\x20can\x20be\x20viewed\x20in\x20node\x20details.'
+    }
+  },
+  xx = {
+    'common': {
+      'actions.clear': '清除',
+      'actions.selectAll': '全选'
+    },
+    'auth': {
+      'setup.usernameInvalid': '用户名只能包含字母、数字和连字符，长度为\x203–20\x20个字符，且不能包含下划线。'
+    },
+    'certificates': {
+      'toast.deployFailed': '证书部署失败'
+    },
+    'nodes': {
+      'chainTunnel.revertConfirmTitle': '切回源服务器地址？',
+      'chainTunnel.revertConfirmDesc': '节点「{{node}}」当前经链式隧道入口\x20{{entry}}\x20连接。切回后将移除中转配置并恢复源服务器地址。',
+      'dialog.editNode.confirmDescription': '端口、域名、传输参数和\x20Reality\x20防偷等普通修改会保留现有凭据；仅切换协议、安全类型或\x20Shadowsocks\x20加密方式时重新生成凭据。',
+      'dialog.editNode.confirmTitle': '确认修改入站？',
+      'dialog.editNode.description': 'TAG、节点\x20ID\x20与原节点名称保持不变；修改端口、域名、传输参数和\x20Reality\x20防偷不会更换用户凭据。',
+      'dialog.editNode.title': '修改节点',
+      'dialog.editTag.description': '修改所选节点的标签。',
+      'dialog.editTag.title': '修改标签',
+      'dialog.relayGroup.remove': '移除中转组',
+      'editNodesDialog.dialerProxyLabel': '中转',
+      'speedtest.bufSize': '数据包大小',
+      'speedtest.bufSizeHint': '每次收发的数据包大小；增加线程数通常比增大数据包更容易跑满带宽。',
+      'toast.editNodeFailed': '修改节点失败',
+      'toast.editNodeFetchFailed': '加载入站配置失败',
+      'toast.editNodeInboundMissing': '服务器上未找到该入站，可能已被删除',
+      'toast.editNodeNoInbound': '该节点没有可编辑的入站',
+      'toast.editNodeSaving': '保存中…',
+      'toast.editNodeServerNotFound': '未找到该节点所属的服务器',
+      'toast.editNodeSuccess': '节点修改成功',
+      'toast.wholeOutboundCancelled': '已取消整个节点出站',
+      'toast.wholeOutboundCancelFailed': '取消整个节点出站失败',
+      'tooltip.editNode': '修改节点（端口、SNI\x20等）',
+      'uriManager.allServers': '全部服务器',
+      'uriManager.allUsers': '全部用户',
+      'uriManager.colServer': '服务器',
+      'uriManager.serverLabel': '服务器'
+    },
+    'packages': {
+      'card.deletedNode': '已删除节点',
+      'card.deviceN': '{{count}}\x20个连接',
+      'card.perNodeOverride': '{{count}}\x20个节点单独配置',
+      'dialog.nodeSelected': '已选择',
+      'dialog.nodeTrafficLimit': '套餐内每位用户的节点流量（GB）',
+      'dialog.nodeTrafficLimitHeader': '节点流量（GB）'
+    },
+    'settings': {
+      'profile.usernameInvalid': '用户名只能包含字母、数字和连字符，长度为\x203–20\x20个字符，且不能包含下划线。'
+    },
+    'system': {
+      'apiToken.regenerate': '重新生成',
+      'telegram.events.serverToleranceHint': '服务器离线达到此秒数后才发送通知；在阈值内恢复则不通知。填写\x200\x20表示禁用。',
+      'telegram.events.serverToleranceSeconds': '上下线容忍时间（秒）'
+    },
+    'users': {
+      'createDialog.usernameInvalid': '用户名只能包含字母、数字和连字符，长度为\x203–20\x20个字符，且不能包含下划线。',
+      'limits.colDeviceOverride': '连接数',
+      'limits.colNode': '节点',
+      'limits.colSpeedOverride': '速度（Mbps）',
+      'limits.empty': '该用户没有可见节点',
+      'limits.fallbackHint': '默认继承套餐值；自定义值会覆盖套餐。填写\x200\x20表示明确不限，留空表示继承。',
+      'limits.globalHeader': '全局覆盖（应用于所有节点）',
+      'limits.loading': '加载中…',
+      'limits.perNodeHeader': '节点单独覆盖（优先级最高）',
+      'view.currentConnections': '当前连接数',
+      'view.filterAll': '全部'
+    },
+    'xray': {
+      'nodeList.forwardedByTunnel': '经隧道转发',
+      'nodeSelect.clearSelection': '清除选择',
+      'nodeSelect.itemUnit': '\x20个节点',
+      'nodeSelect.selectAll': '全选当前可见节点',
+      'nodeSelect.selectedCount': '已选择',
+      'outbounds.bulkImportFailed': '批量导入失败',
+      'outbounds.bulkImportPartial': '成功\x20{{ok}}\x20个\x20/\x20失败\x20{{fail}}\x20个',
+      'outbounds.bulkImportSuccess': '成功导入\x20{{count}}\x20个出站',
+      'routing.backToList': '返回列表',
+      'routing.managedBadge': '路由出站',
+      'routing.managedHint': '此规则由路由出站功能自动添加和管理，请勿在此手动编辑或删除。',
+      'routing.portForwardBadge': '端口转发',
+      'routing.portForwardHint': '此规则由「Tunnel\x20管理\x20→\x20端口转发」复用模式添加，请前往\x20Tunnel\x20管理列表删除。',
+      'routing.savedRules': '已保存的自定义规则',
+      'routing.resizeSavedRules': '拖动右下角调整宽度',
+      'routing.deleteSavedRule': '删除快捷规则',
+      'routing.deleteSavedRuleFailed': '删除快捷规则失败',
+      'routing.title': '路由规则',
+      'servers.agentPortEditHint': 'Agent\x20将更新配置并重启，期间会短暂断开。留空可恢复端口\x2023889。',
+      'servers.dragToReorder': '拖动排序',
+      'servers.failed': '失败',
+      'servers.keepNodesOnDelete': '保留该服务器的节点（默认同时删除）',
+      'servers.keepNodesOnDeleteHint': '未勾选：删除服务器时同时从订阅中移除其节点；勾选：仅删除服务器记录并保留节点。',
+      'servers.listenPortChangeConfirm': '将\x20Agent\x20监听端口修改为\x20{{port}}？Agent\x20会重启并短暂断开。',
+      'servers.listenPortRestoreConfirm': '清除\x20Agent\x20端口设置并恢复为\x2023889？Agent\x20会重启并短暂断开。',
+      'servers.lockEntryIp': '锁定节点入口\x20IP',
+      'servers.lockEntryIpHint': '忽略该服务器节点的域名和\x20DDNS，固定使用服务器地址中的\x20IP。适用于入口固定、出口动态的\x20NAT\x20服务器。',
+      'servers.noResetNeeded': '无需重置',
+      'servers.portRange': '随机端口范围（可选）',
+      'servers.portRangeHint': '自动分配的端口必须位于此范围内。两项留空或都填写\x200\x20表示不限制。',
+      'servers.uninstallAgentOfflineHint': '服务器当前离线，将跳过卸载\x20Agent，仅删除主控中的服务器记录。',
+      'servers.xrayConfigTestFailed': 'Xray\x20配置测试失败',
+      'wizard.credentialsLocked': '修改节点时会保留\x20Xray\x20用户凭据（UUID、密码等），且不可编辑。',
+      'wizard.wssAutoPortPathHint': 'WSS\x20使用\x20Nginx\x20反向代理；提交后会自动生成本地端口和随机\x20/ws/\x20路径，可在节点详情中查看。'
+    }
+  },
+  bt = Object['assign']({
+    '../locales/en/auth.json': af,
+    '../locales/en/certificates.json': sf,
+    '../locales/en/common.json': df,
+    '../locales/en/customRules.json': uf,
+    '../locales/en/dashboard.json': mf,
+    '../locales/en/errors.json': xf,
+    '../locales/en/forward.json': hf,
+    '../locales/en/nodes.json': yf,
+    '../locales/en/packages.json': Sf,
+    '../locales/en/rules.json': Wf,
+    '../locales/en/settings.json': Pf,
+    '../locales/en/subscribe.json': Tf,
+    '../locales/en/system.json': Df,
+    '../locales/en/templates.json': Af,
+    '../locales/en/users.json': _f,
+    '../locales/en/xray.json': Ff,
+    '../locales/zh-CN/auth.json': Mf,
+    '../locales/zh-CN/certificates.json': Uf,
+    '../locales/zh-CN/common.json': Hf,
+    '../locales/zh-CN/customRules.json': Gf,
+    '../locales/zh-CN/dashboard.json': zf,
+    '../locales/zh-CN/errors.json': $f,
+    '../locales/zh-CN/forward.json': Vf,
+    '../locales/zh-CN/nodes.json': Jf,
+    '../locales/zh-CN/packages.json': Zf,
+    '../locales/zh-CN/rules.json': tx,
+    '../locales/zh-CN/settings.json': ox,
+    '../locales/zh-CN/subscribe.json': rx,
+    '../locales/zh-CN/system.json': ix,
+    '../locales/zh-CN/templates.json': dx,
+    '../locales/zh-CN/users.json': ux,
+    '../locales/zh-CN/xray.json': mx
+  }),
+  We = {};
+for (const t in bt) {
+  const e = t['match'](/\.\.\/locales\/([^/]+)\/([^/]+)\.json$/);
+  if (e) {
+    const [, n, a] = e;
+    We[n] ??= {}, We[n][a] = bt[t]['default'] ?? bt[t];
+  }
+}
+const gx = (_0x249d6d, _0x48d42c, _0x43a52c) => {
+  const _0x433054 = _0x48d42c['split']('.'),
+    _0x5b22b2 = _0x433054['pop']();
+  if (!_0x5b22b2) return;
+  let _0x2b12b3 = _0x249d6d;
+  for (const _0x365b7a of _0x433054) {
+    const _0x4c12f6 = _0x2b12b3[_0x365b7a];
+    (!_0x4c12f6 || typeof _0x4c12f6 != 'object' || Array['isArray'](_0x4c12f6)) && (_0x2b12b3[_0x365b7a] = {}), _0x2b12b3 = _0x2b12b3[_0x365b7a];
+  }
+  _0x2b12b3[_0x5b22b2] = _0x43a52c;
+};
+for (const [t, e] of Object['entries']({
+    'en': fx,
+    'zh-CN': xx
+  })) {
+  We[t] ??= {};
+  for (const [n, a] of Object['entries'](e)) {
+    We[t][n] ??= {};
+    for (const [o, r] of Object['entries'](a)) gx(We[t][n], o, r);
+  }
+}
+_0x1981a4['use'](_0x36f3c3)['use'](_0x5a77e4)['init']({
+  'resources': We,
+  'fallbackLng': 'en',
+  'fallbackNS': 'common',
+  'supportedLngs': ['zh-CN', 'en'],
+  'defaultNS': 'common',
+  'interpolation': {
+    'escapeValue': !0x1
+  },
+  'detection': {
+    'order': ['cookie', 'navigator'],
+    'lookupCookie': 'mmw-language',
+    'caches': ['cookie'],
+    'cookieOptions': {
+      'path': '/',
+      'sameSite': 'lax'
+    },
+    'convertDetectedLanguage': _0x30848a => _0x30848a['startsWith']('zh') ? 'zh-CN' : 'en'
+  }
+});
+
+function Wu(_0x4bad65) {
+  console['log'](_0x4bad65);
+  let _0x565732 = _0x1981a4['t']('errors:server.somethingWentWrong');
+  const _0x12e681 = [];
+  if (_0x4bad65 && typeof _0x4bad65 == 'object' && 'status' in _0x4bad65 && Number(_0x4bad65['status']) === 0xcc && (_0x565732 = _0x1981a4['t']('errors:server.contentNotFound')), _0x4bad65 instanceof _0x5183b7) {
+    const _0x2174db = _0x4bad65['response']?.['data'];
+    if (typeof _0x2174db == 'string') _0x565732 = _0x2174db;
+    else {
+      if (_0x2174db) {
+        const _0x10408e = _0x2174db,
+          _0x16e515 = ['msg', 'message', 'error', 'title'];
+        for (const _0x34d920 of _0x16e515) {
+          const _0x1da345 = _0x10408e[_0x34d920];
+          if (typeof _0x1da345 == 'string' && _0x1da345['trim']()) {
+            _0x565732 = _0x1da345;
+            break;
+          }
+        }
+        const _0x5a6ee2 = (_0x5a100d, _0x43495d = '') => {
+          if (Array['isArray'](_0x5a100d)) {
+            for (const _0xcb20bf of _0x5a100d) typeof _0xcb20bf != 'string' || !_0xcb20bf['trim']() || _0x12e681['push']('' + _0x43495d + _0xcb20bf['trim']());
+          }
+        };
+        _0x5a6ee2(_0x10408e['failures']), _0x5a6ee2(_0x10408e['rollback_failures'], '回滚失败：'), _0x10408e['recovery_required'] === !0x0 && _0x12e681['push']('自动回滚未完全成功，请立即检查相关服务器配置。');
+      }
+    }
+  } else _0x4bad65 instanceof Error && _0x4bad65['message']['trim']() && (_0x565732 = _0x4bad65['message']);
+  _0x5e6a09['error'](_0x565732, {
+    'id': 'server-error:' + _0x565732,
+    'description': _0x12e681['length'] > 0x0 ? _0x12e681['join']('；') : void 0x0,
+    'duration': _0x12e681['length'] > 0x0 ? 0x3a98 : void 0x0
+  });
+}
+
+function D(..._0x17d101) {
+  return _0x15465f(_0x1b4905(_0x17d101));
+}
+const Xt = _0x592b48('pixel-button\x20inline-flex\x20items-center\x20justify-center\x20gap-2\x20whitespace-nowrap\x20rounded-none\x20text-sm\x20font-medium\x20disabled:pointer-events-none\x20disabled:opacity-50\x20[&_svg]:pointer-events-none\x20[&_svg:not([class*=\x27size-\x27])]:size-4\x20shrink-0\x20[&_svg]:shrink-0\x20outline-none\x20focus-visible:ring-ring/60\x20focus-visible:ring-4\x20focus-visible:ring-offset-2\x20focus-visible:ring-offset-[color:var(--background)]\x20transition-all', {
+  'variants': {
+    'variant': {
+      'default': 'bg-primary\x20text-primary-foreground\x20border-[color:rgba(217,119,87,0.5)]\x20hover:bg-primary/85\x20hover:border-[color:rgba(217,119,87,0.7)]',
+      'destructive': 'bg-destructive\x20text-white\x20border-[color:rgba(239,68,68,0.65)]\x20hover:bg-destructive/85\x20hover:border-[color:rgba(239,68,68,0.85)]\x20focus-visible:ring-destructive/30\x20dark:bg-destructive/70',
+      'outline': 'bg-background/75\x20text-foreground\x20border-[color:rgba(137,110,96,0.45)]\x20hover:bg-accent/35\x20hover:text-accent-foreground\x20dark:bg-input/30\x20dark:border-[color:rgba(255,255,255,0.18)]\x20dark:hover:bg-accent/45\x20dark:hover:text-accent-foreground',
+      'secondary': 'bg-secondary\x20text-secondary-foreground\x20border-[color:rgba(241,140,110,0.38)]\x20hover:bg-secondary/80',
+      'ghost': 'border-transparent\x20bg-transparent\x20hover:bg-accent/40\x20hover:text-accent-foreground\x20dark:hover:bg-accent/30',
+      'link': 'border-transparent\x20bg-transparent\x20text-primary\x20underline-offset-4\x20hover:underline'
+    },
+    'size': {
+      'default': 'h-10\x20px-5\x20has-[>svg]:px-4',
+      'sm': 'h-9\x20gap-1.5\x20px-4\x20has-[>svg]:px-3',
+      'lg': 'h-11\x20px-7\x20has-[>svg]:px-5',
+      'icon': 'size-10'
+    }
+  },
+  'defaultVariants': {
+    'variant': 'default',
+    'size': 'default'
+  }
+});
+
+function j({
+  className: _0x11dbf4,
+  variant: _0x5b8911,
+  size: _0x3edefa,
+  asChild: _0x2f3e68 = !0x1,
+  ..._0x5a6716
+}) {
+  const _0x1401da = _0x2f3e68 ? _0xac6b7 : 'button';
+  return _0x2c4709['jsx'](_0x1401da, {
+    'data-slot': 'button',
+    'className': D(Xt({
+      'variant': _0x5b8911,
+      'size': _0x3edefa,
+      'className': _0x11dbf4
+    })),
+    ..._0x5a6716
+  });
+}
+
+function hx({
+  ..._0x226a2d
+}) {
+  return _0x2c4709['jsx'](_0x131517, {
+    'data-slot': 'alert-dialog',
+    ..._0x226a2d
+  });
+}
+
+function Dy({
+  ..._0x1bc3b1
+}) {
+  return _0x2c4709['jsx'](_0x14c81b, {
+    'data-slot': 'alert-dialog-trigger',
+    ..._0x1bc3b1
+  });
+}
+
+function bx({
+  ..._0x5ba818
+}) {
+  return _0x2c4709['jsx'](_0x291d2c, {
+    'data-slot': 'alert-dialog-portal',
+    ..._0x5ba818
+  });
+}
+
+function yx({
+  className: _0x1ef32f,
+  ..._0x4513cb
+}) {
+  return _0x2c4709['jsx'](_0x3eb54b, {
+    'data-slot': 'alert-dialog-overlay',
+    'className': D('data-[state=open]:animate-in\x20data-[state=closed]:animate-out\x20data-[state=closed]:fade-out-0\x20data-[state=open]:fade-in-0\x20fixed\x20inset-0\x20z-50\x20bg-black/50', _0x1ef32f),
+    ..._0x4513cb
+  });
+}
+
+function vx({
+  className: _0x12fe85,
+  ..._0x435340
+}) {
+  return _0x2c4709['jsxs'](bx, {
+    'children': [_0x2c4709['jsx'](yx, {}), _0x2c4709['jsx'](_0x30976e, {
+      'data-slot': 'alert-dialog-content',
+      'className': D('bg-background\x20data-[state=open]:animate-in\x20data-[state=closed]:animate-out\x20data-[state=closed]:fade-out-0\x20data-[state=open]:fade-in-0\x20data-[state=closed]:zoom-out-95\x20data-[state=open]:zoom-in-95\x20fixed\x20top-[50%]\x20left-[50%]\x20z-50\x20grid\x20w-full\x20max-w-[calc(100%-2rem)]\x20translate-x-[-50%]\x20translate-y-[-50%]\x20gap-4\x20rounded-lg\x20border\x20p-6\x20shadow-lg\x20duration-200\x20sm:max-w-lg', _0x12fe85),
+      ..._0x435340
+    })]
+  });
+}
+
+function Sx({
+  className: _0x348740,
+  ..._0x3ebbd1
+}) {
+  return _0x2c4709['jsx']('div', {
+    'data-slot': 'alert-dialog-header',
+    'className': D('flex\x20flex-col\x20gap-2\x20text-center\x20sm:text-start', _0x348740),
+    ..._0x3ebbd1
+  });
+}
+
+function Cx({
+  className: _0x4095f4,
+  ..._0x2e3d50
+}) {
+  return _0x2c4709['jsx']('div', {
+    'data-slot': 'alert-dialog-footer',
+    'className': D('flex\x20flex-col-reverse\x20gap-2\x20sm:flex-row\x20sm:justify-end', _0x4095f4),
+    ..._0x2e3d50
+  });
+}
+
+function Wx({
+  className: _0x36f3de,
+  ..._0x1b8845
+}) {
+  return _0x2c4709['jsx'](_0x303ba7, {
+    'data-slot': 'alert-dialog-title',
+    'className': D('text-lg\x20font-semibold', _0x36f3de),
+    ..._0x1b8845
+  });
+}
+
+function wx({
+  className: _0x275245,
+  ..._0x168546
+}) {
+  return _0x2c4709['jsx'](_0x4b6aa9, {
+    'data-slot': 'alert-dialog-description',
+    'className': D('text-muted-foreground\x20text-sm', _0x275245),
+    ..._0x168546
+  });
+}
+
+function Ny({
+  className: _0x5f3114,
+  ..._0x312b54
+}) {
+  return _0x2c4709['jsx'](_0x1e3ba9, {
+    'className': D(Xt(), _0x5f3114),
+    ..._0x312b54
+  });
+}
+
+function Px({
+  className: _0x65c33,
+  ..._0x15ced
+}) {
+  return _0x2c4709['jsx'](_0x5f033b, {
+    'className': D(Xt({
+      'variant': 'outline'
+    }), _0x65c33),
+    ..._0x15ced
+  });
+}
+
+function wu(_0x15140e) {
+  const {
+    title: _0x1d2a50,
+    desc: _0x33c312,
+    children: _0x368ce5,
+    className: _0x526ffc,
+    confirmText: _0x4e4305,
+    cancelBtnText: _0x2af9a1,
+    destructive: _0x2d6792,
+    isLoading: _0x40a73f,
+    disabled: _0x4be7fb = !0x1,
+    handleConfirm: _0x208f4b,
+    ..._0xa84504
+  } = _0x15140e;
+  return _0x2c4709['jsx'](hx, {
+    ..._0xa84504,
+    'children': _0x2c4709['jsxs'](vx, {
+      'className': D(_0x526ffc && _0x526ffc),
+      'children': [_0x2c4709['jsxs'](Sx, {
+        'className': 'text-start',
+        'children': [_0x2c4709['jsx'](Wx, {
+          'children': _0x1d2a50
+        }), _0x2c4709['jsx'](wx, {
+          'asChild': !0x0,
+          'children': _0x2c4709['jsx']('div', {
+            'children': _0x33c312
+          })
+        })]
+      }), _0x368ce5, _0x2c4709['jsxs'](Cx, {
+        'children': [_0x2c4709['jsx'](Px, {
+          'disabled': _0x40a73f,
+          'children': _0x2af9a1 ?? 'Cancel'
+        }), _0x2c4709['jsx'](j, {
+          'variant': _0x2d6792 ? 'destructive' : 'default',
+          'onClick': _0x208f4b,
+          'disabled': _0x4be7fb || _0x40a73f,
+          'children': _0x4e4305 ?? 'Continue'
+        })]
+      })]
+    })
+  });
+}
+const Pu = _0x4eb10f['createContext'](async () => !0x1);
+
+function kx({
+  children: _0x5b2aa2
+}) {
+  const {
+    t: _0x4f18de
+  } = _0x4c4113('common'), [_0x2e16ad, _0x19df9a] = _0x4eb10f['useState'](null), _0x9dcdbd = _0x4eb10f['useRef'](null), _0x3efb90 = _0x4eb10f['useCallback'](_0x418809 => new Promise(_0x220b3f => {
+    _0x9dcdbd['current'] = _0x220b3f, _0x19df9a(_0x418809);
+  }), []), _0xe571e8 = _0x4eb10f['useCallback'](_0x445ab9 => {
+    _0x19df9a(null);
+    const _0x71a62d = _0x9dcdbd['current'];
+    _0x9dcdbd['current'] = null, _0x71a62d?.(_0x445ab9);
+  }, []);
+  return _0x2c4709['jsxs'](Pu['Provider'], {
+    'value': _0x3efb90,
+    'children': [_0x5b2aa2, _0x2e16ad && _0x2c4709['jsx'](wu, {
+      'open': !0x0,
+      'onOpenChange': _0x551cad => {
+        _0x551cad || _0xe571e8(!0x1);
+      },
+      'title': _0x2e16ad['title'],
+      'desc': _0x2e16ad['desc'],
+      'destructive': _0x2e16ad['destructive'],
+      'confirmText': _0x2e16ad['confirmText'] ?? _0x4f18de('actions.confirm', {
+        'defaultValue': '确认'
+      }),
+      'cancelBtnText': _0x2e16ad['cancelBtnText'] ?? _0x4f18de('actions.cancel', {
+        'defaultValue': '取消'
+      }),
+      'handleConfirm': () => _0xe571e8(!0x0)
+    })]
+  });
+}
+
+function Ay() {
+  return _0x4eb10f['useContext'](Pu);
+}
+const yt = 'ltr',
+  vt = 'dir',
+  Tx = 0xe10 * 0x18 * 0x16d,
+  Rx = _0x4eb10f['createContext'](null);
+
+function Dx({
+  children: _0x26d1cc
+}) {
+  const [_0x4fa552, _0x285d24] = _0x4eb10f['useState'](() => be(vt) || yt);
+  _0x4eb10f['useEffect'](() => {
+    document['documentElement']['setAttribute']('dir', _0x4fa552);
+  }, [_0x4fa552]);
+  const _0x2843d7 = _0x19ff87 => {
+      _0x285d24(_0x19ff87), Pe(vt, _0x19ff87, Tx);
+    },
+    _0x159762 = () => {
+      _0x285d24(yt), je(vt);
+    };
+  return _0x2c4709['jsx'](Rx, {
+    'value': {
+      'defaultDir': yt,
+      'dir': _0x4fa552,
+      'setDir': _0x2843d7,
+      'resetDir': _0x159762
+    },
+    'children': _0x2c4709['jsx'](_0x2c5578, {
+      'dir': _0x4fa552,
+      'children': _0x26d1cc
+    })
+  });
+}
+const St = ['oplusans3', 'jetbrains-mono', 'system'],
+  Ct = 'font',
+  Nx = 0xe10 * 0x18 * 0x16d,
+  Ax = _0x4eb10f['createContext'](null);
+
+function Lx({
+  children: _0x3b6031
+}) {
+  const [_0x109a0e, _0x23279e] = _0x4eb10f['useState'](() => {
+    const _0x1e99b8 = be(Ct);
+    return St['includes'](_0x1e99b8) ? _0x1e99b8 : St[0x0];
+  });
+  _0x4eb10f['useEffect'](() => {
+    (_0x441dd7 => {
+      const _0xd9496d = document['documentElement'];
+      _0xd9496d['classList']['forEach'](_0x195949 => {
+        _0x195949['startsWith']('font-') && _0xd9496d['classList']['remove'](_0x195949);
+      }), _0xd9496d['classList']['add']('font-' + _0x441dd7);
+    })(_0x109a0e);
+  }, [_0x109a0e]);
+  const _0x398ca5 = _0x4360d5 => {
+      Pe(Ct, _0x4360d5, Nx), _0x23279e(_0x4360d5);
+    },
+    _0x321058 = () => {
+      je(Ct), _0x23279e(St[0x0]);
+    };
+  return _0x2c4709['jsx'](Ax, {
+    'value': {
+      'font': _0x109a0e,
+      'setFont': _0x398ca5,
+      'resetFont': _0x321058
+    },
+    'children': _0x3b6031
+  });
+}
+const et = 'system',
+  _x = 'vite-ui-theme',
+  Ox = 0xe10 * 0x18 * 0x16d,
+  Fx = {
+    'defaultTheme': et,
+    'resolvedTheme': 'light',
+    'theme': et,
+    'setTheme': () => null,
+    'resetTheme': () => null
+  },
+  ku = _0x4eb10f['createContext'](Fx);
+
+function Ix({
+  children: _0x10351e,
+  defaultTheme: _0x2a59b0 = et,
+  storageKey: _0x50edd7 = _x,
+  ..._0x2427d5
+}) {
+  const [_0x592f44, _0x2ee70e] = _0x4eb10f['useState'](() => be(_0x50edd7) || _0x2a59b0), _0x19e5b2 = _0x4eb10f['useMemo'](() => _0x592f44 === 'system' ? window['matchMedia']('(prefers-color-scheme:\x20dark)')['matches'] ? 'dark' : 'light' : _0x592f44, [_0x592f44]);
+  _0x4eb10f['useEffect'](() => {
+    const _0xeccd08 = window['document']['documentElement'],
+      _0x33c8c8 = window['matchMedia']('(prefers-color-scheme:\x20dark)'),
+      _0x54a289 = _0x1f3450 => {
+        _0xeccd08['classList']['remove']('light', 'dark'), _0xeccd08['classList']['add'](_0x1f3450);
+      },
+      _0x5bdf4e = () => {
+        if (_0x592f44 === 'system') {
+          const _0x9f1f4b = _0x33c8c8['matches'] ? 'dark' : 'light';
+          _0x54a289(_0x9f1f4b);
+        }
+      };
+    return _0x54a289(_0x19e5b2), _0x33c8c8['addEventListener']('change', _0x5bdf4e), () => _0x33c8c8['removeEventListener']('change', _0x5bdf4e);
+  }, [_0x592f44, _0x19e5b2]);
+  const _0x1eda57 = {
+    'defaultTheme': _0x2a59b0,
+    'resolvedTheme': _0x19e5b2,
+    'resetTheme': () => {
+      je(_0x50edd7), _0x2ee70e(et);
+    },
+    'theme': _0x592f44,
+    'setTheme': _0x4af700 => {
+      Pe(_0x50edd7, _0x4af700, Ox), _0x2ee70e(_0x4af700);
+    }
+  };
+  return _0x2c4709['jsx'](ku, {
+    'value': _0x1eda57,
+    ..._0x2427d5,
+    'children': _0x10351e
+  });
+}
+const Tu = () => {
+    const _0xfe5ab8 = _0x4eb10f['useContext'](ku);
+    if (!_0xfe5ab8) throw new Error('useTheme\x20must\x20be\x20used\x20within\x20a\x20ThemeProvider');
+    return _0xfe5ab8;
+  },
+  Jt = _0x2ac8f5()(_0x1650b7(_0x5d4621 => ({
+    'layoutMode': 'top',
+    'sidebarCollapsed': !0x1,
+    'setLayoutMode': _0x25ad7a => _0x5d4621({
+      'layoutMode': _0x25ad7a
+    }),
+    'setSidebarCollapsed': _0x534421 => _0x5d4621({
+      'sidebarCollapsed': _0x534421
+    }),
+    'toggleSidebar': () => _0x5d4621(_0x5ea9e8 => ({
+      'sidebarCollapsed': !_0x5ea9e8['sidebarCollapsed']
+    }))
+  }), {
+    'name': 'layout-storage'
+  })),
+  Ru = _0x2ac8f5(_0x443d50 => ({
+    'connected': !0x1,
+    'setConnected': _0x16706e => _0x443d50({
+      'connected': _0x16706e
+    }),
+    'serverServices': {},
+    'setServerServices': (_0x1d50b7, _0xd3d860) => _0x443d50(_0x56f40c => ({
+      'serverServices': {
+        ..._0x56f40c['serverServices'],
+        [_0x1d50b7]: _0xd3d860
+      }
+    }))
+  })),
+  Mx = 'action_guard_retry',
+  Ex = 'action_guard_federated_challenge_required';
+
+function Du(_0x3a4667) {
+  const _0x227eb0 = typeof _0x3a4667 == 'number' ? _0x3a4667 : Number(_0x3a4667);
+  return Number['isSafeInteger'](_0x227eb0) && _0x227eb0 > 0x0 ? _0x227eb0 : void 0x0;
+}
+
+function Ux(_0x42ca73) {
+  try {
+    return Du(new URL(_0x42ca73, 'https://mmwx.invalid')['searchParams']['get']('server_id'));
+  } catch {
+    return;
+  }
+}
+
+function jx(_0x4d2958) {
+  try {
+    const _0x148360 = new URL(_0x4d2958, 'https://mmwx.invalid')['pathname'];
+    return _0x148360['startsWith']('/api/') ? _0x148360 : '';
+  } catch {
+    return '';
+  }
+}
+
+function Hx(_0x31b9b2) {
+  if (!_0x31b9b2 || typeof _0x31b9b2 != 'object') return {
+    'retry': !0x1
+  };
+  const _0x3b552a = _0x31b9b2['response'];
+  if (!_0x3b552a?.['data'] || typeof _0x3b552a['data'] != 'object') return {
+    'retry': !0x1
+  };
+  const _0xcb1fd4 = _0x3b552a['data'];
+  if (_0xcb1fd4['code'] === Mx) return {
+    'retry': !0x0
+  };
+  if (_0xcb1fd4['code'] === Ex) {
+    const _0x801552 = Du(_0xcb1fd4['server_id']);
+    return _0x801552 ? {
+      'retry': !0x0,
+      'serverId': _0x801552
+    } : {
+      'retry': !0x1
+    };
+  }
+  return {
+    'retry': !0x1
+  };
+}
+async function Bx(_0x547cee, _0x305a0b) {
+  try {
+    return await _0x547cee(_0x305a0b);
+  } catch (_0x66126c) {
+    const _0x22cc37 = Hx(_0x66126c);
+    if (!_0x22cc37['retry']) throw _0x66126c;
+    return _0x547cee(_0x22cc37['serverId'] ?? _0x305a0b);
+  }
+}
+const W = J;
+(function(_0x18b42b, _0x577270) {
+  const _0x4764e1 = J,
+    _0x289433 = _0x18b42b();
+  for (;;) try {
+    if (-parseInt(_0x4764e1(0x230, 'TWHl')) / 0x1 + -parseInt(_0x4764e1(0x219, 'k3OY')) / 0x2 * (parseInt(_0x4764e1(0x126, 'a#4a')) / 0x3) + -parseInt(_0x4764e1(0x1c5, 'rtEa')) / 0x4 + -parseInt(_0x4764e1(0x20e, 'x5aq')) / 0x5 * (-parseInt(_0x4764e1(0x1c1, 'vXGa')) / 0x6) + parseInt(_0x4764e1(0x151, 'rtEa')) / 0x7 * (parseInt(_0x4764e1(0x1cf, 'WnBG')) / 0x8) + -parseInt(_0x4764e1(0x156, 'rB0e')) / 0x9 * (-parseInt(_0x4764e1(0x13a, 'ag0y')) / 0xa) + -parseInt(_0x4764e1(0x189, 'pWB0')) / 0xb * (-parseInt(_0x4764e1(0x14e, 'Dh0A')) / 0xc) === _0x577270) break;
+    _0x289433['push'](_0x289433['shift']());
+  } catch {
+    _0x289433['push'](_0x289433['shift']());
+  }
+}(tt, 0x181578 + 0xb23 * -0x233 + 0xd8d6b));
+const Gx = (function() {
+    const _0x19a62e = J,
+      _0x5634cf = {};
+    _0x5634cf['jhMPn'] = _0x19a62e(0xeb, 'F*uq') + '无效', _0x5634cf[_0x19a62e(0x223, '0q[n')] = function(_0x949045, _0x5f5405) {
+      return _0x949045 !== _0x5f5405;
+    }, _0x5634cf[_0x19a62e(0x1f4, 'rtEa')] = _0x19a62e(0x125, 'sa7D');
+    const _0x4bd4e5 = _0x5634cf;
+    let _0x11c6cd = !0x0;
+    return function(_0x49b69e, _0x54a0bd) {
+      const _0x33f45e = _0x19a62e,
+        _0x56801e = {
+          'KQEZi': _0x4bd4e5[_0x33f45e(0x16b, 'dFN7')],
+          'AZFbJ': function(_0x140f58, _0x52f86f) {
+            return _0x4bd4e5[_0x33f45e(0x1fb, '$&D)')](_0x140f58, _0x52f86f);
+          },
+          'TnRaX': _0x4bd4e5[_0x33f45e(0x1d4, 'Q]4o')]
+        },
+        _0x31f117 = _0x11c6cd ? function() {
+          const _0x60c554 = _0x33f45e;
+          if (_0x56801e['AZFbJ'](_0x56801e[_0x60c554(0x18c, 'f@(Y')], _0x60c554(0x1fe, '5]ar'))) throw new _0xeada40(_0x56801e[_0x60c554(0x22a, 'B2NX')]);
+          if (_0x54a0bd) {
+            const _0x427923 = _0x54a0bd[_0x60c554(0x205, 'F6@n')](_0x49b69e, arguments);
+            return _0x54a0bd = null, _0x427923;
+          }
+        } : function() {};
+      return _0x11c6cd = !0x1, _0x31f117;
+    };
+  }()),
+  Nt = Gx(void 0x0, function() {
+    const _0x342b8d = J,
+      _0x58f742 = {};
+    _0x58f742[_0x342b8d(0x107, 'P)D%')] = _0x342b8d(0x176, 'RRUf') + _0x342b8d(0x1d2, 'N^nK');
+    const _0x2d71b2 = _0x58f742;
+    return Nt[_0x342b8d(0x152, 'Q]4o')]()[_0x342b8d(0xe4, 'F*uq')](_0x2d71b2[_0x342b8d(0xe0, 'YCD2')])['toString']()[_0x342b8d(0x197, 'B2NX') + _0x342b8d(0xe3, '&s7D')](Nt)['search'](_0x2d71b2[_0x342b8d(0xe0, 'YCD2')]);
+  });
+Nt();
+const qx = [W(0x119, 'RRUf') + W(0xd3, 'Q]4o') + W(0x1a1, 'WnBG') + W(0x1a3, 'k3OY') + W(0x117, '$wAW') + W(0x100, 'uAF9')],
+  zx = W(0x202, 'dFN7') + W(0x161, 'Q]4o') + W(0x11c, 'F6@n') + W(0x1df, 'azD4'),
+  Kx = W(0x1e9, '2zHH') + W(0x137, 'ag0y') + W(0x12e, 'x5aq') + '\x0a',
+  $x = W(0xf9, 'Myo2') + W(0x1c2, 'Ktej') + W(0x1c9, 'c1vG'),
+  Qx = W(0x22d, 'ptGt') + 'time-pro' + W(0x1f3, '2zHH'),
+  Vx = W(0x1fc, 'nldU') + 'gyZmywSj' + W(0xde, '*SW3') + W(0x22f, 'TWHl') + W(0x16a, 'a#4a') + W(0x1e6, 'rtEa');
+W(0x213, '$wAW') + W(0x10b, 'vXGa') + W(0xda, 'mV!y') + W(0x182, 'a#4a') + W(0x129, 'pWB0') + W(0x118, 'azD4');
+class He extends Error {
+  [W(0x10d, 'uAF9') + W(0x1da, 'mV!y') + 'd'] = !0x0;
+  constructor(_0x5a1244) {
+    const _0x2a11b1 = W,
+      _0x2e851c = {};
+    _0x2e851c[_0x2a11b1(0xfe, 'DWzz')] = _0x2a11b1(0x174, 'DWzz') + _0x2a11b1(0x215, '2zHH') + 'rror';
+    const _0x181333 = _0x2e851c;
+    super(_0x5a1244), this[_0x2a11b1(0xe2, 'f@(Y')] = _0x181333[_0x2a11b1(0x134, 'F*uq')];
+  }
+}
+
+function Xx(_0x1e4b85) {
+  const _0x28d45a = W,
+    _0x35f564 = {};
+  _0x35f564[_0x28d45a(0x1e8, 'c1vG')] = function(_0x2ab987, _0xc46827) {
+    return _0x2ab987 === _0xc46827;
+  }, _0x35f564['bzQUx'] = 'object', _0x35f564[_0x28d45a(0x11a, 'x5aq')] = function(_0x4d4c33, _0x569508) {
+    return _0x4d4c33 !== _0x569508;
+  };
+  const _0x5cc2f0 = _0x35f564;
+  return _0x1e4b85 instanceof He || _0x5cc2f0[_0x28d45a(0x21c, 'a#4a')](typeof _0x1e4b85, _0x5cc2f0[_0x28d45a(0x1a7, 'jdAa')]) && _0x5cc2f0[_0x28d45a(0xf7, '^M2r')](_0x1e4b85, null) && _0x5cc2f0['DQPjH'](_0x1e4b85[_0x28d45a(0x150, '[E^J') + _0x28d45a(0xd8, 'B2NX') + 'd'], !0x0);
+}
+
+function tt() {
+  const _0x54ffc4 = ['W7RcNmkFW7ldUSkwjhi', 'WRJcHCk0Emo5', 'kNDkW7NdQsBdPWq', 'taRdSXlcMq', 'W7VcMSotbtG', 'W7xdRJJcKr4', 'W53cG1pdGafwcd8', 'W7FcQu3cOSkTC8oPWR0', 'W6r5D8ot', '6kgz5PAu6k2X5PQW77+955we5l6V6z2v', 'W6bNW4tdHcq', 'a8oLWOTvWRxcI8k4pq', 'W4OUmCkqeCkqWRr7', 'W6JcOCoDksu', 'W4hcQJ3dG28', 'WO7dTI12WRG', 'W7xcICo0mctdPmk4iq', '5yw/5A6l5PEj5PE4', 'W7XBsSohWOW', 'zSkjwHFdTCoNxmkmW7hdKW', 'WQmDW6hcPmos', 'WRbWWOamWQiuW6ZcIa', 'yCo5WO7cUsW', '5zgF56Mv5y645BIJ5RQs5y+W5yAn5A2S', 'qSobWPFcOrm', 'l2fMW7/dPcpcILa', 'WPq1cSk5WRbRWOaz', 'W6XDW7ddMdBcVa1C', 'W77cP1ddHYW', 'W6LEW67dGJa', 'WOWFW7BcH8o4', 'bqldKeXKie8', 'W7BcQLPCW6dcH8kfWR0', 'W7f8WPXpwfDQuq', 'W752WPnpsq', 'WOLxw8ogEdCnW4u', 'drVdR2HB', 'W6b2WOjqtuz6', 'BwCVbGve', 'xWuyW7hcKSokWPe', 'W7f5lSkgpSoiWRLl', '5zcB56Qn6lIB5lMd5AYZ6zgW6k2s5lMT', 'CJaiWRNcVxBcIGCmW73cPZ1J', 'ACkWW5m0dmoXW7pcRW', 'WO8eW4NcUmoT', 'mSk4WOPmWRpdJCkPCa', 'sIFdLmo1W5S', 'W7P5tCojWPrHAs8', '5zgR56Qh6l636ko95Pwu6k6B5PUt56Y2', 'C1PCqWC', 'WPuOdmk1WQf6', 'W4pcHvJcMWDDoG', 'cINdQd3dS8kpF8oZ', 'W7BcNSocjcxdQW', 'AaOKW6pcUG', 'lSorW40nW6q', 'W5FdJqhcItu', 'WR0hc8k/WP8', 'WOenW7NcN8oX', 'W7FcV0VcRSk8yG', 'W7H8WPTs', 'W7b5mCkqnSouWRi', 'kLmMW7a7', 'W4ypBmkdWQC', 'l8kyFCog', '5zcN56Qp572q5Bkt5A2J5PsC5yYU5BIu', 'pmotce/dUSomACk6', 'W7xcICofjdJdRq', 'zdD/WRy6bZ1n', 'kmkLzCo2WP8', 'WRXgWONdQCkgW6Lf', 'tqRdHWVcJH8', 'W5/cVmonccK', '5A2P5PE0t8o1W6xNOkVOPilLKBu', 'W6jsuSolWQu', 'W4hcHCoLWOS5ec4', 'daVdL0ScnutcOW', 'WQJcMCkXDmoJwmkWW5i', '5BEh5AAM5PAu', 'u19rWOFcM2ldRsVcOJpcSCovDq', 'BI8jW6pcOq', 'W6lcVvjCW6BcTSknWR0', 'Bsr2cmo4ehH1', 'W6zAW7ldI8kuW7W', 'W6jZCmoAWPjG', 'CCkchwHT', 'WOSka8k8WQK', 'h8odWRaYe8ksW4zP', 'yxG5eHnt', 'bCkdW58pkmoPWO0', 'W77cTeBcPSkSBW', 'Fg9yvqu', 'W4zbWRpdIa', '5yE/5A+X5PwS5PsM', 'FcCRW4hcQa', 'wCk9g1Lx', 'WPlcS8kiwmoB', 'x1v0xJK', '5zcL56IF6lUK5lUE5yEq6k6V5lU65BYT', 'zGFdG8onWPZcUSo9qG', 'WQ9pWRVdPmkeW6ffsW', 'cq0gW4ldHW', 'W4XwW5BdLry', '5zgF56Mv6lUc5lUD5yw66k2K5yAn5A2S', 'WRGqW4/cLCoU', 'WQn9E8oeW4T+nKi', '5zoC56MB6lIC5lIH5ys86k2+562X5zgw', 'qZuvWQf/', 'WOhcH8o+WOei', 'WPRdSmkxBCortKVcKG', 'W7tcMmoicau', 'W7TGWOfjsufauW', 'pd1tWOW', 'W49PW5NdPqW', 'W41TWO/dL8oT', 'cCk5uqdcNfTEjW', 'WOLDrmov', 'W6BcKCkokmorxG', 'umoVWRNcUWhcPCkvWQ8', 'WQ7cJCk9CSo4wmkoW4a', 'FbhdG8olWPdcSComAG', 'W7TtW7xdKH7cHH8', 'waFdMWBcKHVcJq', 'b8oFW4uxW5n1vZW', 'wCkFW58RkCoa', 'c8kYcW7cGcm', 'mc8MW7ldSq', 'WPxcISoxWPmi', 'W6PAW6/dGJZcJaHM', 'aCodWP8KgSkh', 'FSkA56gD6kEd5zkz56Mk77Yb', '5zgt56Iy5PY75O2Z5l2d5A+D5Pws6l+8', 'wGNdJG8', 'oW8va1W', 'WQSQlSoXWPXfWQSs', 'u8koW5KQkq', 'DZhdKCoYWQm', 'ivNdObjkxa', 'rY3dLJVcMa', 'WOHKWQJdSSkL', 'WOtdUmksy8kzxNRcHa', 'WQpdObddTCoSqmoQWPxdLKBdMa', 'rapdVrNcLrVdM8oK', 'W7BcR05zW7W', 'fG0uW4ldIZxcSXC', 'W7vMWPnosaTYwW', 'pMvodSoea3TI', 'tSktW5SQlmorWRhcPq', 'amokWOyIhG', 'WPy4dSkOWQfaWPmE', 'EapdG8okWPdcP8omEq', 'WPRdSmkwAmoDu3xcRG', 'BSoKjWnFh2tdS8oyWQytkWS', 'WR7cL8k0EmoUC8keW4C', 'fLiPW7ORdq', '5zkz56IW6lQv5lUi5A2d6zgm6kYN5lQ+', 'dgSvW4Gi', 'qZOLWOfbzfFdUq', 'bmoBW5mYW4jMDt0', 'jSk1rrpdLeDFdG', 'W699m8kCmCocWQrG', 'W4LhtSoAWOq', '5BA65AsB5PEB', 'rCk1W48vW6BcISkGp0pcLKO', '5Qon5B2c5PAp5PAs', 'ht3dRrZdO8kXF8oI', 'W4zndCkFhW', 'W5erB8k1WR4', '5zot56U+6lMy5lQf5AYb6zod6k2Y5lQC', 'uvfvWOpcLgpdRsNcOHpcGCofEa', 'WQhdSXq', 'W4BcTGhdUML+WPW', 'Dca2WRbQ', 'W6ZdLa7cIXW', 'CdWlWRxcVIddIb8uW4lcOa', 'WQRdPbn+WOVcL8kwcW', 'W5xcHutdNafCndS', 'rce0WPX0D2lcNG', 'WPOOfSkfWQz6WPmp', 'DG7dMCoBWPVcOComEW', 'W5LcWRDMrq', 'W5rNWRfgAq', 'WOFcK8oKWQSynIhdJW', 'W7/cVf/cUCo1DCo9WRe', 'y09HCW', 'x8khlSk4WRzqW5JdVW', 'c8oyzCk4W54PWOpcQ8ocW7fLW79/', 'scO3WObJDK7cOa', 'W6jYWOTqq0r7', 'W47cUt7dSfO', 'WQlcK8kXCSoSwmkk', 'W5FcUXddPeTYWP0F', 'FIHBW6JcRCoWWRz5', 'W6tcTLLBW6tcNCktWQO', '562w5zgR5Pwc5PsI', 'gKjPW4xdMG', 'jci+h17dQq', 'W7n/WRbDt056xa', 'fCoZWO1cWQtcKmkhjG', 'W71jWPZcSCosW4L6Aa', 'hSohWPW1hSkbWQSU', 'WOLyWOeWWQO', '5Qor5B2N5Pw45PAK', 'yHddRSomW7HrFMi', '5zk656IF6lQl5lMi5A6I6zkx6k6w5lI4', 'BIH2WQCg', 'pK/dOrrgqvK', 'w8o2WRhcVq', 'n2Tl', 'D3e9aqnE', 'W7xdVsxcJr0', 'CZP8WQKR', '5zcB56Qn6lIB5lMd5ysy6kYu576f56ck', 'W53cOaldO215WQyB', 'kXFdKgPf', 'W73cG8kqlSoP', '5zck56U75y6n5BMW5RML5y2J56605zgf', 'zIf7WOOs', 'WPdcK8oNWRuvcGZdGq', 'bw3dPW5z', 'W7JcR1aGWPVcSmkXdCo1W4O', 'xCkvpvbuaCkA', 'vazcWQKQ', 'nmocdepdOSorACk3', 'kv/dTW5kqftcUW', 'WQCaW43cNmoE', 'W5pcSSkWbSoZ', 'WQBcLmk2EmoRsCkCW5y', 'cSkfDCoOWQW', 'd8kXxYFdMe0', 'nNbjh8kBbgLE', 'eSoiW5Gm', 'WQu0hCkPWOG', 'gstdPqVdQCkAxCoY', '5zof56IA5yYj5BIs5RQi5y25566r5zkV', 'AqRdUWZcTa', 'W6f/WPTFsq', 'c37dP1m', 'W6PwW7VdNZtcLXnl', 'EWHJWRKK', 'W7DRWOjvxKbSBq', 'W7tcGCoCo2hdP8oRDW', 'faVdI1Lkn2NcVa', 'iciGe1NdO14d', 'W7zyW6xdIrS', 'omkXFfiIqY0', 'CCosWR/cVbm', 'wCkAoCoEWQy', 'WP7cGSkXWO8wgIJdRq', 'dG0jW5xcJZVcQtW', 'jrFdOWJdOCkhBSoU', 'iCk1sJpdIW', '6kgn5PA56k+o5PUr772a55EZ5l2Y6z2m', 'uw0UnGW', 'mwiRW5ii', 'W6VcH8o+bX8', 'W6/cICozmcxdQSoK', 'W6zoWRBdMSomWPG', 'WPZdT8kjCSoxy3dcGG', 'W5TLWQFdM8oT', 'zZ4dWRbHwMpcLW', 'W4LSt8ka', 'W6hdLCoWWQJcSmkkAa0', 'dCkVCxOD', 'WQ7cMCk9Cmo+sq', 'W7lcRePuW7hcGmkjWRy', 'xSkwW5uHi8orWPtcOG', 'ttWBWOzUCYpdTa', 'uIxdIGlcLq', 'W6/cICozkIRdVa', 'wCkvp09CdCkr', 'WPa4c8kZWQbXWOiE', '5lMK5yEs6k2D', 'WOCOhCkZWQnM', 'W6JcP8kba8oZ', 'WRqLfCkAgCorWQDC', 'cmkbACogWOe', 'l8k/EvGkEt/dTW', 'ACkjigFdNCoHtmk8', 'W7NcLaxdV34', '5zku5Psm5PEJ772l6zYs5AYD5PsZna', 'tHtdJqC', 'ESkFW5mtgq', 'm8k7CeiDcYlcOW', 'qbmzW7FcNSobWQb2', 'qCkWW4OqW6NdJSoBFvdcLf0/WPRdQG', 'f8kXvqVdMezvaG', 'l31bW57dGq', 'zGVdL8oqWPtcOCoMEq', 'rxGffsK', 'dr82W5ZdSq', 'hZddVaFdTCklFSoy', 'fSohWPWKvSkEWPuY', 'WR8aW6RcVmo4', 'W6aazW', 'qSksW58noSk3WP81WQ8', 'W4JdQWBcUZu', 'WPmHbSk5WO56WPG', '5zkC56I+6lQd5lI85ys16k+g5ysn5A2M', 'aXOiW5W', 'W4nxWPnmtW', 'hfDYbSo8', 'WRT9WPWxWRu', 'qcBdLSomW7zaENu', 'W5/cTGJdIwf5', 'r303cG0', 'W756WPhdKSo3', 'W7tcHmo5es8', 'W7NcTfhcNSkXyW', 'W5xcQNldGZW', 'uIhdJGZcKq', 'e08PW7m', 'W6BdTdBcJdVdNCkJwG', 'fSoEWP8OcCkwWOCd', 'uCkzoLvV', 'WOFdIblcJfzqjYtcShar', '5zg656Mv6lIC5lQC5ywB6k+g57Yr56gi', 'W6VcJb7dSg50WPOt', 'vfHuWOlcM23dRN3cOcpcSSokrCkK', 'xq85W7BcIComWPfW', 'WOjeWOddSSkR', 'kgfaW5pdRYFdIHe', 'WQT0WOelWQ4jW50', 'sbf4WQL2jcnmymoDiq', '5PwL5Rgj6kA05P2U', 'h8kDvCoMWQi', 'zWFdGmosWPtcTSo2', 'WPNdL8kHDCoY', 'kSk8Bf0grZa', 'Afaqbsm', 'WRf0WPilWQi', 'nZ88h0RdTuGd', '5zkl56MZ6lU85lId5A6+6zcx6kYg5lMz', 'WRmOBCk5fSoJWRX9W7K', 'qGueW6BdLSoeWOTJ', 'W6OkC8kmWOPVW6/cMG', 'qwH8urO', 'W7TtWRpdMa', 'sCkCjKb2c8kn', 'w8kcieXB', 'kCkhtqJdMa', 'fs/dPYVdHG', 'W6iiBCkbWOu', 'WQLOc8k2B8oTWRXw', 'WOpdVCkOs8oA', 'Fe1zwWW', 'caKuW4xdHYG', 'duuZW6K', 'aN3dUsTo', 'WRtcL8oFWP40', 'W7emA8ktWRK', 'gZ3dQaFdOSkaBSoI', 'W77cM8kZo8oxx8kKW7e', 'zWddHapcNHpcImk9', 'mInQrvKoW7ORW6FcLCkYWPFdGW'];
+  return tt = function() {
+    return _0x54ffc4;
+  }, tt();
+}
+
+function Jx(_0x107a12, _0x68a81f) {
+  const _0x1d17de = W,
+    _0x5ef415 = {
+      'UIMvb': function(_0x30f98c, _0x235057) {
+        return _0x30f98c - _0x235057;
+      },
+      'cvmSI': _0x1d17de(0x14f, 'UbIJ') + '无效',
+      'uKUUJ': function(_0x78c23a, _0x56a83e) {
+        return _0x78c23a !== _0x56a83e;
+      },
+      'qMvji': _0x1d17de(0x18a, 'N^nK'),
+      'mtcKI': function(_0x3c1062, _0x54e079) {
+        return _0x3c1062(_0x54e079);
+      },
+      'VVETY': function(_0x508dfb, _0x13608f) {
+        return _0x508dfb + _0x13608f;
+      },
+      'DEcdg': function(_0x345a1b, _0xd9fbdf) {
+        return _0x345a1b + _0xd9fbdf;
+      },
+      'ZtqPU': function(_0x50e3c8, _0x2a723c) {
+        return _0x50e3c8 + _0x2a723c;
+      },
+      'VfITu': _0x1d17de(0x1a6, 'rtEa') + '名无效（非官方\x20' + _0x1d17de(0x1f8, 'pWB0')
+    };
+  if (!_0x107a12) {
+    if (_0x5ef415[_0x1d17de(0x212, 'rB0e')](_0x1d17de(0x1d7, 'jdAa'), _0x5ef415[_0x1d17de(0x183, ')SBT')])) {
+      const _0x68b704 = _0x7bc982[_0x1d17de(0x1bc, 'mV!y')](/-/g, '+')[_0x1d17de(0x159, '5]ar')](/_/g, '/'),
+        _0x230821 = _0x68b704 + '=' [_0x1d17de(0x1f7, 'ag0y')](_0x5ef415[_0x1d17de(0xf1, 'YCD2')](0x4, _0x68b704[_0x1d17de(0x1eb, 'sa7D')] % 0x4) % (-0x150b + -0x1 * -0x150f));
+      let _0x373de3;
+      try {
+        _0x373de3 = _0x5b1a5e(_0x230821);
+      } catch {
+        throw new _0x4eed84(_0x5ef415[_0x1d17de(0x10a, 'TWHl')]);
+      }
+      return _0x51cd76[_0x1d17de(0x13e, 'rtEa')](_0x373de3, _0x1dc0ce => _0x1dc0ce[_0x1d17de(0x14b, '0q[n') + 'At'](0x1 * -0x98e + 0x260 * 0x8 + -0x972));
+    } else throw new He(_0x1d17de(0x1f9, '^M2r') + _0x1d17de(0x17f, '5]ar') + _0x1d17de(0x1bf, 'nldU') + '端）');
+  }
+  const _0x5766a3 = _0x5ef415[_0x1d17de(0x1e4, ')SBT')](nt, _0x5ef415['VVETY'](_0x5ef415[_0x1d17de(0x1e7, 'P)D%')](_0x5ef415[_0x1d17de(0x109, 'f@(Y')](_0x5ef415[_0x1d17de(0x21d, 'IYqj')](Qx + _0x68a81f[_0x1d17de(0x1d9, '5]ar') + 'd'], '\x0a'), _0x68a81f[_0x1d17de(0xfc, 'uAF9') + _0x1d17de(0x195, 'Ktej')]), '\x0a') + _0x68a81f[_0x1d17de(0x1e3, 'dFN7') + _0x1d17de(0x1ef, 'P)D%')], '\x0a') + _0x68a81f[_0x1d17de(0x196, 'F6@n')]);
+  if (!_0x42154b[_0x1d17de(0x120, ')SBT')](_0x5ef415[_0x1d17de(0x1a4, '*SW3')](Ee, _0x107a12), _0x5766a3, Ee(Vx))) throw new He(_0x5ef415['VfITu']);
+}
+
+function Yx(_0x62bb1d, _0x117aa3, _0x5b5721 = Math[W(0x141, 'enTD')](Date[W(0x220, 'fnE4')]() / 0x3e8), _0x2f3a31 = qx) {
+  const _0x481aa3 = W,
+    _0x1ed847 = {
+      'hwQmS': _0x481aa3(0x1dd, 'pWB0') + '无法解析',
+      'lyxRM': function(_0x1e9f2d, _0x5e026b) {
+        return _0x1e9f2d + _0x5e026b;
+      },
+      'mhRRc': _0x481aa3(0x19f, '5]ar') + _0x481aa3(0x1c4, 'f@(Y'),
+      'BjDEz': _0x481aa3(0x1f9, '^M2r') + _0x481aa3(0x10f, 'YCD2') + '官方\x20/\x20破解后端）',
+      'dlQxd': function(_0x195471, _0x214ea0) {
+        return _0x195471(_0x214ea0);
+      },
+      'rMTzj': function(_0x23a21e, _0x58c949) {
+        return _0x23a21e + _0x58c949;
+      },
+      'ziuvR': function(_0x43b564, _0x4a9908) {
+        return _0x43b564 + _0x4a9908;
+      },
+      'MGtiv': function(_0x131a57, _0x3ef4df) {
+        return _0x131a57(_0x3ef4df);
+      },
+      'Cikym': function(_0x58d3d7, _0x4c80f2) {
+        return _0x58d3d7(_0x4c80f2);
+      },
+      'uRtUG': '后端未提供官方身' + _0x481aa3(0x123, 'P)D%'),
+      'LyiEj': function(_0x346651, _0x276db2) {
+        return _0x346651(_0x276db2);
+      },
+      'MwQEM': function(_0x47a8fa, _0x55c6ea) {
+        return _0x47a8fa(_0x55c6ea);
+      },
+      'FrjBo': function(_0x14bfb5, _0x197897) {
+        return _0x14bfb5(_0x197897);
+      },
+      'GeoWT': function(_0x5a03ad, _0x4db5a9) {
+        return _0x5a03ad + _0x4db5a9;
+      },
+      'VuUMA': 'XXRjS',
+      'zGlfl': function(_0x3968e0, _0x12c111) {
+        return _0x3968e0 !== _0x12c111;
+      },
+      'yJomr': _0x481aa3(0x1b8, 'pWB0') + 'wux.com',
+      'UyrEl': function(_0x1bfebd, _0x45bad3) {
+        return _0x1bfebd !== _0x45bad3;
+      },
+      'rusvc': _0x481aa3(0x104, ')SBT') + _0x481aa3(0x10c, 'rtEa') + _0x481aa3(0xd9, 'k3OY'),
+      'UxWyz': function(_0x3ac269, _0x3976cf) {
+        return _0x3ac269 < _0x3976cf;
+      },
+      'RYxfH': function(_0x46dd86, _0x1cc8f4) {
+        return _0x46dd86 - _0x1cc8f4;
+      },
+      'bvxFt': function(_0x107a5d, _0x1c5928) {
+        return _0x107a5d != _0x1c5928;
+      },
+      'YFPIV': function(_0x4f1ea1, _0x50d233) {
+        return _0x4f1ea1 >= _0x50d233;
+      },
+      'lDLvC': 'WcfvG',
+      'MjrfL': function(_0x41fabf, _0x46bf32) {
+        return _0x41fabf(_0x46bf32);
+      },
+      'RhrPl': function(_0x15a85b, _0x3d15e4) {
+        return _0x15a85b === _0x3d15e4;
+      },
+      'PHqGe': _0x481aa3(0x148, 'Dh0A'),
+      'QDapc': _0x481aa3(0x211, 'F6@n') + _0x481aa3(0x187, 'y)Pc'),
+      'QZegb': _0x481aa3(0x1b7, 'Q]4o') + '清单',
+      'awnkl': function(_0x4349e8, _0x53ebdb) {
+        return _0x4349e8(_0x53ebdb);
+      },
+      'GQPgb': function(_0x3f1169, _0x506d16) {
+        return _0x3f1169 + _0x506d16;
+      },
+      'JWprH': _0x481aa3(0xfd, 'AUCq') + '无效',
+      'CqYYE': function(_0x29d13f, _0x26d888) {
+        return _0x29d13f(_0x26d888);
+      },
+      'blQTy': function(_0x21feff, _0x37773d) {
+        return _0x21feff !== _0x37773d;
+      },
+      'UvxeY': function(_0x26151e, _0x16a95b) {
+        return _0x26151e < _0x16a95b;
+      },
+      'MSkpi': function(_0x359a8b, _0x188f35) {
+        return _0x359a8b - _0x188f35;
+      },
+      'imsdn': 'ogkEA',
+      'nMgHs': function(_0x2cca94, _0x1422d8) {
+        return _0x2cca94 !== _0x1422d8;
+      },
+      'ChlqP': function(_0xc621e6, _0x363696) {
+        return _0xc621e6 !== _0x363696;
+      },
+      'HBkOJ': _0x481aa3(0x16d, 'rtEa'),
+      'yXXuq': function(_0x24985f, _0x2758f4) {
+        return _0x24985f !== _0x2758f4;
+      },
+      'vaxFy': function(_0x584b8b, _0x166e2d) {
+        return _0x584b8b !== _0x166e2d;
+      },
+      'rkUDS': function(_0x30bbbe, _0x232473) {
+        return _0x30bbbe <= _0x232473;
+      },
+      'EalKz': function(_0x39bade, _0x1e502e) {
+        return _0x39bade < _0x1e502e;
+      },
+      'ZcJCG': function(_0x2f25c3, _0x1a100a) {
+        return _0x2f25c3 - _0x1a100a;
+      },
+      'mOUCz': _0x481aa3(0x15a, 'dFN7'),
+      'mmTMs': _0x481aa3(0x1d8, '&7kk') + '前连接不匹配',
+      'TyrsM': _0x481aa3(0x153, 'mV!y')
+    };
+  if (!_0x62bb1d?.[_0x481aa3(0x166, '&7kk')] || !_0x62bb1d[_0x481aa3(0x133, '5]ar') + 'e'] || !_0x62bb1d[_0x481aa3(0x154, '&s7D') + _0x481aa3(0xd1, 'AUCq')]) throw new Error(_0x1ed847[_0x481aa3(0x1bb, '^M2r')]);
+  const [_0x26cb9d, _0x5ab5d0] = _0x1ed847[_0x481aa3(0xe9, 'Ktej')](eg, _0x62bb1d[_0x481aa3(0x228, 'nldU') + _0x481aa3(0xd1, 'AUCq')]), _0xf5f597 = _0x1ed847[_0x481aa3(0x13b, '0q[n')](Oe, _0x26cb9d), _0x3815fe = _0x1ed847['FrjBo'](rn, _0xf5f597), _0x7d1454 = _0x1ed847[_0x481aa3(0xee, 'f]mz')](nt, _0x1ed847[_0x481aa3(0x12d, 'WnBG')](zx, _0x26cb9d)), _0x4a3fa5 = _0x1ed847[_0x481aa3(0x144, 'F*uq')](Oe, _0x5ab5d0);
+  if (!_0x2f3a31[_0x481aa3(0x1ea, 'y)Pc')](_0x3705d3 => _0x42154b[_0x481aa3(0x124, 'nldU')](_0x4a3fa5, _0x7d1454, Ee(_0x3705d3)))) throw _0x1ed847['VuUMA'] === _0x481aa3(0x18e, 'f@(Y') ? new _0x13db43('后端身份密钥证书' + _0x481aa3(0xdd, 'N^nK')) : new Error('后端身份密钥证书' + _0x481aa3(0xd5, 'DWzz'));
+  if (_0x1ed847['zGlfl'](_0x3815fe[_0x481aa3(0xe1, 'f]mz')], -0x1b42 + -0x3 * 0x583 + 0x2bcc) || _0x1ed847[_0x481aa3(0x149, 'DWzz')](_0x3815fe['issuer'], _0x1ed847['yJomr']) || _0x1ed847['UyrEl'](_0x3815fe[_0x481aa3(0x196, 'F6@n')], _0x1ed847[_0x481aa3(0xe6, 'YCD2')]) || !_0x3815fe[_0x481aa3(0x142, '*SW3') + _0x481aa3(0x198, 'B2NX')] || _0x1ed847[_0x481aa3(0x1de, 'N^nK')](_0x5b5721, _0x1ed847[_0x481aa3(0x116, 'c1vG')](_0x3815fe[_0x481aa3(0xe8, '[E^J') + 't'], 0x12c)) || _0x1ed847[_0x481aa3(0x17a, ')SBT')](_0x3815fe[_0x481aa3(0x15e, '$&D)') + 'at'], null) && _0x1ed847[_0x481aa3(0x1d6, 'AUCq')](_0x5b5721, _0x3815fe[_0x481aa3(0x14c, 'ag0y') + 'at'])) {
+    if (_0x1ed847[_0x481aa3(0x1c0, 'azD4')] !== _0x1ed847[_0x481aa3(0x15c, 'F*uq')]) try {
+      return _0x3c0c91[_0x481aa3(0xe5, '0q[n')](new _0x39cd33()[_0x481aa3(0x1f2, 'WnBG')](_0x1272b9));
+    } catch {
+      throw new _0x1e2046(_0x1ed847[_0x481aa3(0x135, 'rtEa')]);
+    } else throw new Error(_0x481aa3(0x15f, '0q[n') + _0x481aa3(0x218, 'f]mz'));
+  }
+  const _0x5da7aa = _0x1ed847['FrjBo'](Ee, _0x3815fe[_0x481aa3(0x22c, 'vXGa') + 'ey']);
+  if (_0x1ed847[_0x481aa3(0x222, '$wAW')](_0x5da7aa[_0x481aa3(0x1d0, 'ptGt')], -0xb78 + -0x1 * 0x14a5 + 0x203d) || _0x1ed847['zGlfl'](_0x1ed847[_0x481aa3(0x1b5, 'IYqj')](tg, _0x5da7aa), _0x3815fe[_0x481aa3(0x143, '[E^J')])) throw _0x1ed847[_0x481aa3(0x138, 'N^nK')](_0x1ed847[_0x481aa3(0x163, 'jdAa')], _0x481aa3(0x184, '[E^J')) ? new _0x5949ab(_0x481aa3(0x21e, 'enTD') + _0x481aa3(0x1d3, 'uAF9')) : new Error(_0x1ed847[_0x481aa3(0x13f, 'B2NX')]);
+  const _0x20c4c2 = _0x62bb1d[_0x481aa3(0x216, 'a#4a')];
+  if (!_0x20c4c2?.[_0x481aa3(0x1f0, 'DWzz')] || !_0x20c4c2[_0x481aa3(0x209, 'WnBG') + 'e']) throw new Error(_0x1ed847['QZegb']);
+  const _0x49d118 = _0x1ed847[_0x481aa3(0x194, 'N^nK')](Ee, _0x3815fe[_0x481aa3(0x106, '$&D)') + _0x481aa3(0xf6, 'AUCq') + '_public_' + _0x481aa3(0x139, 'IYqj')]);
+  if (_0x1ed847['UyrEl'](_0x49d118[_0x481aa3(0x1ca, 'azD4')], 0x20) || !_0x42154b['verify'](Oe(_0x20c4c2[_0x481aa3(0x101, 'P)D%') + 'e']), _0x1ed847['awnkl'](nt, _0x1ed847[_0x481aa3(0x217, 'azD4')](Kx, _0x20c4c2[_0x481aa3(0x232, 'B2NX')])), _0x49d118)) throw new Error(_0x1ed847[_0x481aa3(0x192, 'Dh0A')]);
+  const _0x3431c4 = rn(_0x1ed847[_0x481aa3(0x170, 'vXGa')](Oe, _0x20c4c2[_0x481aa3(0x15b, 'x5aq')]));
+  if (_0x3431c4[_0x481aa3(0xf0, '&7kk')] !== 0xbc0 + 0x1dd * -0xc + 0xa9d || _0x1ed847[_0x481aa3(0x1e1, '$wAW')](_0x3431c4['issuer'], 'miaomiao' + _0x481aa3(0x1a9, 'Dh0A')) || _0x3431c4[_0x481aa3(0x22e, 'jdAa')] !== 'master' || !ng(_0x3431c4[_0x481aa3(0x1ed, 'AUCq') + _0x481aa3(0x18f, '&s7D') + '6']) || _0x1ed847[_0x481aa3(0x127, '^M2r')](_0x5b5721, _0x1ed847[_0x481aa3(0x167, '2zHH')](_0x3431c4[_0x481aa3(0x231, '$wAW') + 't'], 0x3 * 0x989 + 0x416 + -0x1f85)) || _0x3431c4[_0x481aa3(0x208, 'Myo2') + 'at'] != null && _0x1ed847[_0x481aa3(0xd6, '&s7D')](_0x5b5721, _0x3431c4[_0x481aa3(0x103, 'B2NX') + 'at'])) {
+    if (_0x1ed847[_0x481aa3(0x1e1, '$wAW')](_0x481aa3(0x168, 'uAF9'), _0x1ed847[_0x481aa3(0x169, 'IYqj')])) return _0x232fc4(_0x1ed847[_0x481aa3(0x132, '&s7D')](_0x4b189d, [_0x22072e[_0x481aa3(0x113, ')SBT')], _0x110dde['issuer'], _0x318ace[_0x481aa3(0x226, 'Dh0A')], _0x53c27d[_0x481aa3(0x1fa, 'DWzz')], _0x422df7[_0x481aa3(0x21b, 'uAF9') + _0x481aa3(0x15d, 'enTD')], _0x2cad49[_0x481aa3(0x18b, 'enTD') + _0x481aa3(0x1ce, 'F*uq')], _0xe5e533[_0x481aa3(0x17d, 'ptGt') + _0x481aa3(0x1cd, 'ag0y') + '6'], _0x2b7dca['client_p' + _0x481aa3(0x20f, 'AUCq') + 'y'], _0x2c0809[_0x481aa3(0x105, 'Ktej') + _0x481aa3(0x1c7, 'F6@n') + 'y'], _0x3013dc[_0x481aa3(0x206, 'rtEa') + 'id'], _0x54d551[_0x481aa3(0x114, 'c1vG')], _0x37f17d['key_id'], _0x350f36[_0x481aa3(0x178, '&s7D') + 't'], _0x16f75e[_0x481aa3(0x136, 'uAF9') + 'at']]['join']('\x0a')));
+    throw new Error(_0x481aa3(0x18d, 'pWB0') + '无效');
+  }
+  const _0x42ec1e = _0x62bb1d[_0x481aa3(0x17b, '0q[n')];
+  if (_0x1ed847[_0x481aa3(0x1cc, 'nldU')](_0x42ec1e[_0x481aa3(0x155, 'enTD')], -0x2 * -0x43f + 0x1 * 0x14f6 + -0x1d73) || _0x1ed847['nMgHs'](_0x42ec1e[_0x481aa3(0x1ff, 'f]mz')], _0x481aa3(0x207, 'B2NX') + _0x481aa3(0x162, 'IYqj') + 'x.com') || _0x1ed847['ChlqP'](_0x42ec1e[_0x481aa3(0x172, 'uAF9')], 'mmwx-fro' + _0x481aa3(0x1fd, 'WnBG')) || _0x1ed847[_0x481aa3(0x1a2, 'N^nK')](_0x42ec1e[_0x481aa3(0x164, 'c1vG')], _0x1ed847[_0x481aa3(0x111, 'rB0e')]) || _0x1ed847[_0x481aa3(0x1f5, 'vXGa')](_0x42ec1e['guard_release'], _0x3815fe[_0x481aa3(0x20b, 'nldU') + _0x481aa3(0x1b0, 'N^nK')]) || _0x1ed847[_0x481aa3(0x102, 'YCD2')](_0x42ec1e[_0x481aa3(0xdb, 'ag0y') + _0x481aa3(0x1bd, 'DWzz')], _0x3431c4[_0x481aa3(0x1b3, 'a#4a')]) || _0x42ec1e[_0x481aa3(0x1ec, 'f@(Y') + _0x481aa3(0x204, 'DWzz') + '6'] !== _0x3431c4[_0x481aa3(0x190, 'nldU') + _0x481aa3(0x11e, '$wAW') + '6'] || _0x42ec1e[_0x481aa3(0x1c3, 'AUCq') + _0x481aa3(0x191, 'P)D%') + 'y'] !== _0x117aa3[_0x481aa3(0x11d, 'WnBG') + _0x481aa3(0x13c, 'nldU')] || _0x1ed847[_0x481aa3(0x180, 'P)D%')](_0x42ec1e['server_p' + _0x481aa3(0x128, 'x5aq') + 'y'], _0x117aa3[_0x481aa3(0x181, 'k3OY') + 'blicKey']) || _0x42ec1e[_0x481aa3(0x1f6, 'P)D%') + 'id'] !== _0x117aa3[_0x481aa3(0x20d, 'dFN7') + 'd'] || _0x42ec1e['origin'] !== _0x117aa3[_0x481aa3(0x210, 'rB0e')] || _0x1ed847[_0x481aa3(0x1e2, 'vXGa')](_0x42ec1e['key_id'], _0x3815fe[_0x481aa3(0xf8, '2zHH')]) || _0x1ed847[_0x481aa3(0x112, ')SBT')](_0x42ec1e[_0x481aa3(0x1e5, 'B2NX') + 't'], 0x1 * -0x841 + 0x966 + 0x125 * -0x1) || _0x42ec1e[_0x481aa3(0x1ba, 'YCD2') + 'at'] <= _0x42ec1e[_0x481aa3(0x12f, 'Q]4o') + 't'] || _0x1ed847[_0x481aa3(0x10e, '2zHH')](_0x5b5721, _0x1ed847['ZcJCG'](_0x42ec1e[_0x481aa3(0x17c, 'Dh0A') + 't'], -0x13ef + -0x3 * 0x368 + 0x1e9f)) || _0x1ed847[_0x481aa3(0xf5, 'sa7D')](_0x5b5721, _0x42ec1e[_0x481aa3(0x225, 'fnE4') + 'at'])) throw _0x1ed847[_0x481aa3(0x110, 'F*uq')](_0x1ed847[_0x481aa3(0x1d1, 'jdAa')], _0x481aa3(0x1b4, 'rB0e')) ? new Error(_0x1ed847[_0x481aa3(0x16c, 'jdAa')]) : new _0x1ec9f0(_0x1ed847[_0x481aa3(0x146, ')SBT')]);
+  if (!_0x42154b[_0x481aa3(0xd7, '$&D)')](_0x1ed847[_0x481aa3(0x12a, '[E^J')](Oe, _0x62bb1d[_0x481aa3(0xd4, 'F6@n') + 'e']), Zx(_0x42ec1e), _0x5da7aa)) {
+    if (_0x1ed847[_0x481aa3(0xfb, 'nldU')] === _0x1ed847['TyrsM']) throw new Error(_0x481aa3(0x1e0, 'RRUf') + '无效');
+    {
+      if (!_0x28d2e6) throw new _0x15ebdc(byyMtQ[_0x481aa3(0x158, '^M2r')]);
+      const _0xc963f8 = byyMtQ[_0x481aa3(0x179, 'DWzz')](_0xd8eea6, byyMtQ[_0x481aa3(0x1d5, '&7kk')](byyMtQ[_0x481aa3(0x188, 'azD4')](byyMtQ['ziuvR'](byyMtQ[_0x481aa3(0x14d, '&7kk')](byyMtQ['rMTzj'](byyMtQ[_0x481aa3(0x171, 'IYqj')](byyMtQ['rMTzj'](_0xe74af6, _0x5f2354[_0x481aa3(0x131, '2zHH') + 'd']), '\x0a'), _0x1f8da9['clientPu' + _0x481aa3(0x165, '&7kk')]), '\x0a'), _0x59b72b[_0x481aa3(0x1f1, 'UbIJ') + _0x481aa3(0x108, 'x5aq')]), '\x0a'), _0x5bb01d[_0x481aa3(0x122, 'nldU')]));
+      if (!_0x1dde0e['verify'](byyMtQ['MGtiv'](_0x1f5f4d, _0x120d27), _0xc963f8, byyMtQ['Cikym'](_0x335da4, _0x52ade9))) throw new _0x39b021('后端运行时证明签' + _0x481aa3(0x12b, ')SBT') + '/\x20破解后端）');
+    }
+  }
+}
+
+function Zx(_0x506c88) {
+  const _0x3207b0 = W;
+  return {
+    'dTYjH': function(_0x1e908d, _0x5073a9) {
+      return _0x1e908d(_0x5073a9);
+    }
+  } ['dTYjH'](nt, $x + [_0x506c88[_0x3207b0(0x19d, 'Q]4o')], _0x506c88[_0x3207b0(0x19c, 'F*uq')], _0x506c88[_0x3207b0(0xf3, 'f]mz')], _0x506c88[_0x3207b0(0x1b6, '^M2r')], _0x506c88[_0x3207b0(0xed, 'vXGa') + _0x3207b0(0x1db, 'rtEa')], _0x506c88[_0x3207b0(0x20c, '5]ar') + _0x3207b0(0x11b, 'AUCq')], _0x506c88[_0x3207b0(0xf2, 'pWB0') + _0x3207b0(0x186, ')SBT') + '6'], _0x506c88[_0x3207b0(0x229, '5]ar') + 'ublic_key'], _0x506c88[_0x3207b0(0x199, 'y)Pc') + _0x3207b0(0x115, 'dFN7') + 'y'], _0x506c88[_0x3207b0(0x19e, 'a#4a') + 'id'], _0x506c88[_0x3207b0(0x1ab, ')SBT')], _0x506c88[_0x3207b0(0x147, 'ptGt')], _0x506c88[_0x3207b0(0x1ee, '5]ar') + 't'], _0x506c88[_0x3207b0(0x227, '$wAW') + 'at']][_0x3207b0(0x14a, 'rB0e')]('\x0a'));
+}
+
+function eg(_0x828627) {
+  const _0x1944cd = W,
+    _0x275dc7 = {};
+  _0x275dc7[_0x1944cd(0x1c6, 'Q]4o')] = function(_0x2d25bc, _0x18476a) {
+    return _0x2d25bc !== _0x18476a;
+  };
+  const _0x1b9338 = _0x275dc7,
+    _0x14dd8b = _0x828627[_0x1944cd(0x177, 'AUCq')]('.');
+  if (_0x1b9338['GOcaZ'](_0x14dd8b[_0x1944cd(0x1b9, ')SBT')], -0xe * 0x12e + -0x8f1 + 0x1977) || !_0x14dd8b[0x1 * 0xa0d + 0x4 * -0x25d + -0x99] || !_0x14dd8b[-0x1cad + 0xe57 * 0x2]) throw new Error(_0x1944cd(0xdf, 'Dh0A') + _0x1944cd(0x21a, 'nldU'));
+  return [_0x14dd8b[-0x24cf * 0x1 + 0x1297 + 0x1238], _0x14dd8b[-0x3 * -0x1a6 + -0xc9 + -0x428]];
+}
+
+function rn(_0x5e59aa) {
+  const _0x244961 = W,
+    _0x4f211f = {
+      'AjNaA': _0x244961(0x13d, 'ptGt') + _0x244961(0x157, '0q[n'),
+      'gntUZ': function(_0x329d4b, _0x1836dd) {
+        return _0x329d4b(_0x1836dd);
+      },
+      'UyJHq': _0x244961(0x11f, 'DWzz'),
+      'GJLaJ': function(_0xd7e31d, _0x5b8f36) {
+        return _0xd7e31d === _0x5b8f36;
+      },
+      'oKtQe': _0x244961(0x16f, 'f]mz'),
+      'juVGt': _0x244961(0x201, 'mV!y')
+    };
+  try {
+    if (_0x4f211f['UyJHq'] === _0x244961(0x1cb, '&7kk')) throw new _0x3c5aac(_0x4f211f[_0x244961(0x1ac, 'Q]4o')]);
+    return JSON[_0x244961(0x193, 'P)D%')](new TextDecoder()[_0x244961(0x1a8, 'nldU')](_0x5e59aa));
+  } catch {
+    if (_0x4f211f[_0x244961(0x140, 'Myo2')](_0x4f211f[_0x244961(0x200, 'DWzz')], _0x4f211f[_0x244961(0x19a, 'Ktej')])) return _0x61ec65[_0x244961(0xfa, 'UbIJ')](_0x4f211f[_0x244961(0xec, 'YCD2')](_0x48534b, _0x8ab233)[_0x244961(0x20a, 'ag0y')](0x11f2 * 0x1 + 0x12d4 + -0x24c6, -0x1ffa + -0x1e2 * -0x11), _0x513d98 => _0x513d98[_0x244961(0x1a5, 'azD4')](0x10)[_0x244961(0x1aa, 'uAF9')](-0x327 * -0x4 + 0xbba + -0x1854, '0'))[_0x244961(0x17e, 'azD4')]('');
+    throw new Error(_0x4f211f[_0x244961(0x185, 'fnE4')]);
+  }
+}
+
+function tg(_0x16b994) {
+  const _0x32adc3 = W;
+  return Array['from'](_0x18f172(_0x16b994)[_0x32adc3(0xff, 'B2NX')](-0x130c + 0x1 * -0xb07 + -0x1e13 * -0x1, -0xf38 + -0x1 * -0x152b + -0x5eb * 0x1), _0x3a8cf3 => _0x3a8cf3[_0x32adc3(0x173, 'sa7D')](-0x173a + 0x1 * 0x174a)[_0x32adc3(0x214, 'UbIJ')](0x1d0b * 0x1 + 0x1 * -0x1222 + 0x1 * -0xae7, '0'))[_0x32adc3(0x1b2, 'B2NX')]('');
+}
+
+function ng(_0x40bb99) {
+  return /^[0-9a-f]{64}$/ [W(0x16e, 'rB0e')](_0x40bb99);
+}
+
+function nt(_0x507f66) {
+  const _0x13f92a = W;
+  return new TextEncoder()[_0x13f92a(0x1b1, 'ptGt')](_0x507f66);
+}
+
+function J(_0x2131ab, _0xf022f5) {
+  _0x2131ab = _0x2131ab - (0x327c + -0x5 * 0x9ef);
+  const _0x10d2bf = tt();
+  let _0x53430f = _0x10d2bf[_0x2131ab];
+  if (J['EnbJdB'] === void 0x0) {
+    var _0x5687e7 = function(_0x35cf0f) {
+      const _0x20277f = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+      let _0x4d0bbb = '',
+        _0x5d0bc4 = '',
+        _0x1e5d7b = _0x4d0bbb + _0x5687e7,
+        _0x4f1c8b = ('' + function() {
+          return -0x1b * -0x155 + 0x1774 + 0x11f * -0x35;
+        })['indexOf']('\x0a') !== -0x1;
+      for (let _0xacc665 = 0x0, _0x438567, _0x64a064, _0x4d5ef9 = 0x0; _0x64a064 = _0x35cf0f['charAt'](_0x4d5ef9++); ~_0x64a064 && (_0x438567 = _0xacc665 % 0x4 ? _0x438567 * 0x40 + _0x64a064 : _0x64a064, _0xacc665++ % 0x4) ? _0x4d0bbb += _0x4f1c8b || _0x1e5d7b['charCodeAt'](_0x4d5ef9 + 0xa) - 0xa !== 0x0 ? String['fromCharCode'](0xff & _0x438567 >> (-0x2 * _0xacc665 & 0x6)) : _0xacc665 : 0x0) _0x64a064 = _0x20277f['indexOf'](_0x64a064);
+      for (let _0x4627be = 0x0, _0x538836 = _0x4d0bbb['length']; _0x4627be < _0x538836; _0x4627be++) _0x5d0bc4 += '%' + ('00' + _0x4d0bbb['charCodeAt'](_0x4627be)['toString'](0x10))['slice'](-0x2);
+      return decodeURIComponent(_0x5d0bc4);
+    };
+    const _0x1771ee = function(_0xef6448, _0x32da42) {
+      let _0x28f79d = [],
+        _0x3af2be = 0x0,
+        _0x1ab147, _0x2ed993 = '';
+      _0xef6448 = _0x5687e7(_0xef6448);
+      let _0x31061a;
+      for (_0x31061a = 0x0; _0x31061a < 0x100; _0x31061a++) _0x28f79d[_0x31061a] = _0x31061a;
+      for (_0x31061a = 0x0; _0x31061a < 0x100; _0x31061a++) _0x3af2be = (_0x3af2be + _0x28f79d[_0x31061a] + _0x32da42['charCodeAt'](_0x31061a % _0x32da42['length'])) % 0x100, _0x1ab147 = _0x28f79d[_0x31061a], _0x28f79d[_0x31061a] = _0x28f79d[_0x3af2be], _0x28f79d[_0x3af2be] = _0x1ab147;
+      _0x31061a = 0x0, _0x3af2be = 0x0;
+      for (let _0x14f86e = 0x0; _0x14f86e < _0xef6448['length']; _0x14f86e++) _0x31061a = (_0x31061a + 0x1) % 0x100, _0x3af2be = (_0x3af2be + _0x28f79d[_0x31061a]) % 0x100, _0x1ab147 = _0x28f79d[_0x31061a], _0x28f79d[_0x31061a] = _0x28f79d[_0x3af2be], _0x28f79d[_0x3af2be] = _0x1ab147, _0x2ed993 += String['fromCharCode'](_0xef6448['charCodeAt'](_0x14f86e) ^ _0x28f79d[(_0x28f79d[_0x31061a] + _0x28f79d[_0x3af2be]) % 0x100]);
+      return _0x2ed993;
+    };
+    J['wpMuxB'] = _0x1771ee, J['sCKsCP'] = {}, J['EnbJdB'] = !0x0;
+  }
+  const _0xdd170d = _0x10d2bf[0x1536 + -0x712 * 0x3],
+    _0x2810fd = _0x2131ab + _0xdd170d,
+    _0x10f343 = J['sCKsCP'][_0x2810fd];
+  if (_0x10f343) _0x53430f = _0x10f343;
+  else {
+    if (J['AWEgov'] === void 0x0) {
+      const _0x4c0920 = function(_0x31b7bf) {
+        this['FoRRKO'] = _0x31b7bf, this['AzgGgj'] = [0x1, 0x0, 0x0], this['TGEoYE'] = function() {
+          return 'newState';
+        }, this['OCrmmf'] = '\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*', this['qOoyNw'] = '[\x27|\x22].+[\x27|\x22];?\x20*}';
+      };
+      _0x4c0920['prototype']['ronUtX'] = function() {
+        const _0x23e9f8 = new RegExp(this['OCrmmf'] + this['qOoyNw']),
+          _0x349b6e = _0x23e9f8['test'](this['TGEoYE']['toString']()) ? --this['AzgGgj'][0x1 * 0x1bd1 + -0x4ba + -0x1716] : --this['AzgGgj'][-0x1af1 + 0x1a0 * 0x5 + 0x12d1];
+        return this['fheksN'](_0x349b6e);
+      }, _0x4c0920['prototype']['fheksN'] = function(_0xe08a63) {
+        return ~_0xe08a63 ? this['jElOWA'](this['FoRRKO']) : _0xe08a63;
+      }, _0x4c0920['prototype']['jElOWA'] = function(_0x384b50) {
+        for (let _0x1a0a9c = -0x136 * 0x19 + -0x644 + -0x248a * -0x1, _0x5d25e4 = this['AzgGgj']['length']; _0x1a0a9c < _0x5d25e4; _0x1a0a9c++) this['AzgGgj']['push'](Math['round'](Math['random']())), _0x5d25e4 = this['AzgGgj']['length'];
+        return _0x384b50(this['AzgGgj'][-0x3 * 0xcdf + -0x8 * -0x4df + -0x5b]);
+      }, ('' + function() {
+        return 0x10f5 + -0x3 * -0xa0e + -0x2f1f;
+      })['indexOf']('\x0a') === -0x1 && new _0x4c0920(J)['ronUtX'](), J['AWEgov'] = !0x0;
+    }
+    _0x53430f = J['wpMuxB'](_0x53430f, _0xf022f5), J['sCKsCP'][_0x2810fd] = _0x53430f;
+  }
+  return _0x53430f;
+}
+
+function Ee(_0x1fe63f) {
+  const _0x5f581c = W;
+  return {
+    'TIrHm': function(_0x3c796b, _0x3f9a84) {
+      return _0x3c796b(_0x3f9a84);
+    }
+  } [_0x5f581c(0xdc, 'enTD')](Nu, _0x1fe63f[_0x5f581c(0x19b, 'B2NX')](/\+/g, '-')[_0x5f581c(0x221, '[E^J')](/\//g, '_'));
+}
+
+function Oe(_0x5cb966) {
+  return {
+    'LJdeZ': function(_0x5ac45c, _0x4629e8) {
+      return _0x5ac45c(_0x4629e8);
+    }
+  } [W(0x1af, 'nldU')](Nu, _0x5cb966);
+}
+
+function Nu(_0x14b08a) {
+  const _0x40faeb = W,
+    _0x3073bf = {
+      'wwpaL': function(_0x246339, _0x17167e) {
+        return _0x246339(_0x17167e);
+      },
+      'KknKu': function(_0x559771, _0x9022f0) {
+        return _0x559771 + _0x9022f0;
+      },
+      'FPfKe': function(_0xdd253c, _0x2cb002) {
+        return _0xdd253c % _0x2cb002;
+      },
+      'UiJdC': function(_0x533f26, _0xc5b087) {
+        return _0x533f26 - _0xc5b087;
+      },
+      'zjOfR': function(_0x395ca0, _0x264ab8) {
+        return _0x395ca0(_0x264ab8);
+      },
+      'JhUpJ': function(_0x1384b8, _0x5aafe1) {
+        return _0x1384b8 !== _0x5aafe1;
+      },
+      'PKlvU': _0x40faeb(0x1ae, '0q[n'),
+      'wFNoR': _0x40faeb(0x22b, 'B2NX'),
+      'ZkzlR': _0x40faeb(0xe7, '5]ar') + '无效'
+    },
+    _0x35561b = _0x14b08a[_0x40faeb(0x121, '&7kk')](/-/g, '+')['replace'](/_/g, '/'),
+    _0x47ce0b = _0x3073bf['KknKu'](_0x35561b, '=' ['repeat'](_0x3073bf[_0x40faeb(0x1be, ')SBT')](_0x3073bf[_0x40faeb(0x1dc, 'P)D%')](0x13f7 + -0x8e1 * -0x3 + -0x2e96, _0x35561b['length'] % (-0x10e + 0x7 * 0x253 + -0xf33 * 0x1)), -0x11ae + -0xf * -0x12e)));
+  let _0x1b542c;
+  try {
+    _0x1b542c = _0x3073bf[_0x40faeb(0x233, '[E^J')](atob, _0x47ce0b);
+  } catch {
+    if (_0x3073bf[_0x40faeb(0xf4, 'N^nK')](_0x3073bf['PKlvU'], _0x3073bf[_0x40faeb(0x145, 'c1vG')])) throw new Error(_0x3073bf[_0x40faeb(0x1ad, 'UbIJ')]);
+    return mbtDcT[_0x40faeb(0xea, 'sa7D')](_0x2c41a1, _0x1db3f2['replace'](/\+/g, '-')[_0x40faeb(0x121, '&7kk')](/\//g, '_'));
+  }
+  return Uint8Array[_0x40faeb(0x12c, 'DWzz')](_0x1b542c, _0x5a54c3 => _0x5a54c3[_0x40faeb(0xd2, '[E^J') + 'At'](-0xcf3 + -0x611 * -0x4 + -0x1 * 0xb51));
+}
+const og = '§',
+  ag = '¤';
+
+function Ly(_0x474be6, _0x1bb0d2, _0x4c8e46, _0x1fd3d8) {
+  const _0x27852d = _0x1fd3d8 === 'user' ? ag : og;
+  if ((!_0x1bb0d2 || _0x1bb0d2['length'] === 0x0) && !_0x4c8e46) return _0x27852d + _0x474be6;
+  const _0xa78289 = sg(JSON['stringify']([_0x1bb0d2 ?? [], _0x4c8e46 ?? '']));
+  return _0x27852d + _0x474be6 + '!' + _0xa78289;
+}
+
+function rg(_0x303d0d) {
+  if (!_0x303d0d) return null;
+  const _0x5ccb13 = _0x303d0d['charCodeAt'](0x0);
+  if (_0x5ccb13 !== 0xa7 && _0x5ccb13 !== 0xa4) return null;
+  const _0x197a53 = _0x5ccb13 === 0xa4 ? 'user' : 'admin',
+    _0x1b249d = _0x303d0d['slice'](0x1),
+    _0x56ec58 = _0x1b249d['indexOf']('!');
+  if (_0x56ec58 < 0x0) return {
+    'op': _0x1b249d,
+    'params': [],
+    'query': '',
+    'entry': _0x197a53
+  };
+  const _0x6fe6a4 = _0x1b249d['slice'](0x0, _0x56ec58);
+  try {
+    const [_0x1c2249, _0x1e260b] = JSON['parse'](ig(_0x1b249d['slice'](_0x56ec58 + 0x1)));
+    return {
+      'op': _0x6fe6a4,
+      'params': Array['isArray'](_0x1c2249) ? _0x1c2249['map'](String) : [],
+      'query': typeof _0x1e260b == 'string' ? _0x1e260b : '',
+      'entry': _0x197a53
+    };
+  } catch {
+    return {
+      'op': _0x6fe6a4,
+      'params': [],
+      'query': '',
+      'entry': _0x197a53
+    };
+  }
+}
+
+function sg(_0x4a45c0) {
+  const _0x1a78fc = new TextEncoder()['encode'](_0x4a45c0);
+  let _0x2b32f3 = '';
+  for (const _0x550084 of _0x1a78fc) _0x2b32f3 += String['fromCharCode'](_0x550084);
+  return btoa(_0x2b32f3)['replace'](/\+/g, '-')['replace'](/\//g, '_')['replace'](/=+$/, '');
+}
+
+function ig(_0x31b036) {
+  const _0x505215 = atob(_0x31b036['replace'](/-/g, '+')['replace'](/_/g, '/')),
+    _0x4c375f = new Uint8Array(_0x505215['length']);
+  for (let _0x2ac8b5 = 0x0; _0x2ac8b5 < _0x505215['length']; _0x2ac8b5++) _0x4c375f[_0x2ac8b5] = _0x505215['charCodeAt'](_0x2ac8b5);
+  return new TextDecoder()['decode'](_0x4c375f);
+}
+const lg = '/assets/securechan-Sq8A49oB.wasm';
+(function(_0x39bae7, _0x16b747) {
+  const _0x2a9e52 = B,
+    _0x1061e0 = _0x39bae7();
+  for (;;) try {
+    if (-parseInt(_0x2a9e52(0x1b2, 'vYy*')) / 0x1 * (parseInt(_0x2a9e52(0x1d0, 'vKy2')) / 0x2) + parseInt(_0x2a9e52(0x1a3, 'Aged')) / 0x3 * (parseInt(_0x2a9e52(0x1c8, 'Jipp')) / 0x4) + -parseInt(_0x2a9e52(0x17b, 'vKy2')) / 0x5 * (-parseInt(_0x2a9e52(0x1df, 'E8!A')) / 0x6) + parseInt(_0x2a9e52(0x1ca, 'YN]J')) / 0x7 + parseInt(_0x2a9e52(0x1b7, 'aFzv')) / 0x8 + -parseInt(_0x2a9e52(0x1d2, 'X1l0')) / 0x9 * (-parseInt(_0x2a9e52(0x19a, '[H2&')) / 0xa) + parseInt(_0x2a9e52(0x1ea, 'wrJ(')) / 0xb === _0x16b747) break;
+    _0x1061e0['push'](_0x1061e0['shift']());
+  } catch {
+    _0x1061e0['push'](_0x1061e0['shift']());
+  }
+}(ot, -0x1863 * -0x3b + 0x11 * 0x10a65 + -0xdbd31));
+const dg = (function() {
+    const _0x33d34e = B,
+      _0x4befc7 = {};
+    _0x4befc7[_0x33d34e(0x1b8, 'Px1S')] = _0x33d34e(0x18e, 'X1l0'), _0x4befc7[_0x33d34e(0x1aa, 'T4A#')] = _0x33d34e(0x195, 'Px1S'), _0x4befc7[_0x33d34e(0x1bc, 'Px1S')] = function(_0x3deaf2, _0x150499) {
+      return _0x3deaf2 !== _0x150499;
+    };
+    const _0x14074a = _0x4befc7;
+    let _0x29c584 = !0x0;
+    return function(_0x115b58, _0x3f358e) {
+      const _0x44a24d = _0x33d34e,
+        _0x3c3282 = {};
+      _0x3c3282[_0x44a24d(0x1e4, 'S7Je')] = _0x14074a[_0x44a24d(0x17d, 'S7Je')], _0x3c3282[_0x44a24d(0x1e3, 'bspe')] = _0x14074a[_0x44a24d(0x1e2, 'b6Hz')], _0x3c3282[_0x44a24d(0x1db, 'q7zu')] = function(_0x3ea4ff, _0x531d01) {
+        return _0x3ea4ff === _0x531d01;
+      }, _0x3c3282[_0x44a24d(0x1ac, '1[mj')] = _0x44a24d(0x1a0, 'Aged');
+      const _0x32f7a8 = _0x3c3282;
+      if (_0x14074a[_0x44a24d(0x1c6, 'q7zu')](_0x44a24d(0x198, 'Aged'), _0x44a24d(0x1cb, 's4*U'))) throw _0x2dcd60 = null, _0x183e5e;
+      {
+        const _0x58d9d5 = _0x29c584 ? function() {
+          const _0x2ec1fe = _0x44a24d;
+          if (_0x32f7a8[_0x2ec1fe(0x1b1, 'b6Hz')] !== _0x32f7a8[_0x2ec1fe(0x1bb, 'jzgM')]) {
+            if (_0x3f358e) {
+              if (_0x32f7a8[_0x2ec1fe(0x1ba, 'PMMY')](_0x2ec1fe(0x1c9, '4@ED'), _0x32f7a8[_0x2ec1fe(0x183, 'b6Hz')])) {
+                const _0x3bbe17 = _0x3f358e['apply'](_0x115b58, arguments);
+                return _0x3f358e = null, _0x3bbe17;
+              } else return new _0x26fbff(_0x1a04f7[_0x2ec1fe(0x188, 'Yz0(')][_0x2ec1fe(0x190, 'oO8f')]);
+            }
+          } else throw new _0x4c7393(_0x2ec1fe(0x17c, 's71@') + _0x2ec1fe(0x1af, 'cEs1') + '\x20' + _0x168a1e[_0x2ec1fe(0x1a5, 'Fd9q')]);
+        } : function() {};
+        return _0x29c584 = !0x1, _0x58d9d5;
+      }
+    };
+  }()),
+  At = dg(void 0x0, function() {
+    const _0x917bc0 = B;
+    return At['toString']()[_0x917bc0(0x1c3, 'UVy8')](_0x917bc0(0x194, 'b6Hz') + _0x917bc0(0x1e9, 'T4A#'))[_0x917bc0(0x19f, 'ZCgl')]()['construc' + _0x917bc0(0x1c0, '4@ED')](At)['search'](_0x917bc0(0x181, 'E)a[') + _0x917bc0(0x175, 'Yz0('));
+  });
+At();
+const cg = 0x800000;
+let Be = 0x184 + 0x1867 * -0x1 + 0x16e3;
+const sn = (0xa * 0x149 + 0x1 * -0x194d + -0x1 * -0xcb3) * (-0x103 * -0x1d + -0x245c + 0xb05);
+
+function B(_0x4b0fdc, _0x5171e7) {
+  _0x4b0fdc = _0x4b0fdc - (-0x893 + 0x2 * -0xba2 + 0x214b);
+  const _0x401735 = ot();
+  let _0xbc0c65 = _0x401735[_0x4b0fdc];
+  if (B['UcWWsK'] === void 0x0) {
+    var _0x59fd60 = function(_0x34fb9b) {
+      const _0xec292b = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+      let _0x41b91c = '',
+        _0x417fd1 = '',
+        _0x354ebe = _0x41b91c + _0x59fd60,
+        _0x3cb8a9 = ('' + function() {
+          return 0x285 * 0x5 + 0x1af * 0x11 + -0x527 * 0x8;
+        })['indexOf']('\x0a') !== -0x1;
+      for (let _0x2bc2cc = 0x0, _0x53394a, _0x5e5e25, _0x38f527 = 0x0; _0x5e5e25 = _0x34fb9b['charAt'](_0x38f527++); ~_0x5e5e25 && (_0x53394a = _0x2bc2cc % 0x4 ? _0x53394a * 0x40 + _0x5e5e25 : _0x5e5e25, _0x2bc2cc++ % 0x4) ? _0x41b91c += _0x3cb8a9 || _0x354ebe['charCodeAt'](_0x38f527 + 0xa) - 0xa !== 0x0 ? String['fromCharCode'](0xff & _0x53394a >> (-0x2 * _0x2bc2cc & 0x6)) : _0x2bc2cc : 0x0) _0x5e5e25 = _0xec292b['indexOf'](_0x5e5e25);
+      for (let _0x592027 = 0x0, _0x1661cd = _0x41b91c['length']; _0x592027 < _0x1661cd; _0x592027++) _0x417fd1 += '%' + ('00' + _0x41b91c['charCodeAt'](_0x592027)['toString'](0x10))['slice'](-0x2);
+      return decodeURIComponent(_0x417fd1);
+    };
+    const _0x54c482 = function(_0x5defcc, _0x4d6a22) {
+      let _0x964e5a = [],
+        _0x3b8fd7 = 0x0,
+        _0x47dd06, _0x1a1519 = '';
+      _0x5defcc = _0x59fd60(_0x5defcc);
+      let _0x27764c;
+      for (_0x27764c = 0x0; _0x27764c < 0x100; _0x27764c++) _0x964e5a[_0x27764c] = _0x27764c;
+      for (_0x27764c = 0x0; _0x27764c < 0x100; _0x27764c++) _0x3b8fd7 = (_0x3b8fd7 + _0x964e5a[_0x27764c] + _0x4d6a22['charCodeAt'](_0x27764c % _0x4d6a22['length'])) % 0x100, _0x47dd06 = _0x964e5a[_0x27764c], _0x964e5a[_0x27764c] = _0x964e5a[_0x3b8fd7], _0x964e5a[_0x3b8fd7] = _0x47dd06;
+      _0x27764c = 0x0, _0x3b8fd7 = 0x0;
+      for (let _0x56ef87 = 0x0; _0x56ef87 < _0x5defcc['length']; _0x56ef87++) _0x27764c = (_0x27764c + 0x1) % 0x100, _0x3b8fd7 = (_0x3b8fd7 + _0x964e5a[_0x27764c]) % 0x100, _0x47dd06 = _0x964e5a[_0x27764c], _0x964e5a[_0x27764c] = _0x964e5a[_0x3b8fd7], _0x964e5a[_0x3b8fd7] = _0x47dd06, _0x1a1519 += String['fromCharCode'](_0x5defcc['charCodeAt'](_0x56ef87) ^ _0x964e5a[(_0x964e5a[_0x27764c] + _0x964e5a[_0x3b8fd7]) % 0x100]);
+      return _0x1a1519;
+    };
+    B['aUueNJ'] = _0x54c482, B['kwMxmw'] = {}, B['UcWWsK'] = !0x0;
+  }
+  const _0x5e8f3a = _0x401735[-0x1 * -0x1cc9 + 0x2065 + -0x3d2e],
+    _0xf03e96 = _0x4b0fdc + _0x5e8f3a,
+    _0x26da04 = B['kwMxmw'][_0xf03e96];
+  if (_0x26da04) _0xbc0c65 = _0x26da04;
+  else {
+    if (B['abHezI'] === void 0x0) {
+      const _0x5f1091 = function(_0x34bdee) {
+        this['HpksGs'] = _0x34bdee, this['YOOQcL'] = [0x1, 0x0, 0x0], this['VwRlgy'] = function() {
+          return 'newState';
+        }, this['gmlrEZ'] = '\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*', this['OnNoig'] = '[\x27|\x22].+[\x27|\x22];?\x20*}';
+      };
+      _0x5f1091['prototype']['NQZtVZ'] = function() {
+        const _0x387a53 = new RegExp(this['gmlrEZ'] + this['OnNoig']),
+          _0x9c62f = _0x387a53['test'](this['VwRlgy']['toString']()) ? --this['YOOQcL'][0x23f4 + 0x2 * -0xdc1 + -0x871] : --this['YOOQcL'][-0x12d1 * -0x1 + 0xb9 + -0x138a];
+        return this['pFZyCS'](_0x9c62f);
+      }, _0x5f1091['prototype']['pFZyCS'] = function(_0x1107b9) {
+        return ~_0x1107b9 ? this['ujysRp'](this['HpksGs']) : _0x1107b9;
+      }, _0x5f1091['prototype']['ujysRp'] = function(_0x30cc60) {
+        for (let _0x45197f = 0xe3a + -0x6 * 0x25f, _0x208365 = this['YOOQcL']['length']; _0x45197f < _0x208365; _0x45197f++) this['YOOQcL']['push'](Math['round'](Math['random']())), _0x208365 = this['YOOQcL']['length'];
+        return _0x30cc60(this['YOOQcL'][0x1195 * -0x2 + 0x1c35 + 0x6f5]);
+      }, ('' + function() {
+        return -0x1b80 + 0x2 * -0x1273 + -0x2 * -0x2033;
+      })['indexOf']('\x0a') === -0x1 && new _0x5f1091(B)['NQZtVZ'](), B['abHezI'] = !0x0;
+    }
+    _0xbc0c65 = B['aUueNJ'](_0xbc0c65, _0x5171e7), B['kwMxmw'][_0xf03e96] = _0xbc0c65;
+  }
+  return _0xbc0c65;
+}
+let xe = null,
+  Fe = null;
+
+function ot() {
+  const _0x343115 = ['W4xdSLuLWOK', 'WR08W6ixWRjCgZe', 'xmo+exVcJ8k5', 'WOhdNmoKcCoQ', 'WQFdUCkbWODy', 'imoaDvNdVGm', 'WPldH8obn8o7', 'WPCGWQtcUmk7', 'WRaSdvxdOSon', '5A+I5ysa6yg96yo8a+ExNUAjIUs5La', 'z3bVurT/W5GrCCkoqepcRq', 'WQNdICksWOXquW', 'aKdcSW', '5A+x5yA16yk06ygDd+ILMUwUKUwLOW', 'imk0WPldOCoY', '5A6H5yE86ykJ6yc0WRJLR6RPKyJMTl4', 'AHNdS0TeW5C', 'WPbNWOXAW6tcRq', '57+o5yE75y2A6l+95BkFWPW', 'WPxdK0ZdPmoe', 'W4lcPSkKxSkzvmk0va', 'w8kOsZXa', 'tmkyASolcq', 'W7/dSCkBjr0', 'u8oocwtcPW', 'WOlcRZuDy0tcTfVcUa', 'aZqMFXi1WOv3W4TRW4a', '5A+Z5ysv6ycP6yoj5QIu5zY65yYx55AT', '5AY25yAr6ygM6yg3nM7dVSkE', 'WOKpzvJdRSoi', 'sJJcS8oCAW', 'uCk+qCoinmkGESk6', 'F8o4hulcHW', 'cSk7j8o5gq', 'W53dRSozWRRcJa', 'amkJscxdISkiWPVcPSk3WRFdSq', '6lwv5ywY57+J5yE45yYG5lQ26zMd', 'lCkPW496qmok', 'yaNcQa', '6lAlWQlcMa', 'WOtdIvf/xa', 'WR3dNSkrjM/dMwa', 'WQpdHL7dKmoQ', 'WP7JGONORkJPHOZML4VMNk7LU77cLa', 'W743wJTz', 'hrDhW7T5', 'WPNcHmkideVdRMuBW6NcI2q', '5AEx6lwBWPpdRwKaBmoQ', 'WRNcUSkACCkVja', 'WR7dNmoBjSoR', 'su0cWQmgc8koW6jDW6TT', 'oSkYkmoNla', '6lsTtmk9', 'BJ3dVf5l', 'uw8Xpem1WRZJGlK', 'lg7dJSkdmmo9CXHAW7CuWRGi', 'CCkVtZbh', '5A+F5ysP6ygf6yc3e+wlP+wSQowLQW', 'zCkcw8kPWPO', 'W7ldVSohsIK', 'u8kcFILv', 'CsVcMfFdUG', 'dq9cW7j8', 'W483W5ujWQdcTKG7WOy9W7y', 'WONcOuq', 'bW0jW4HnWQK', '5AYY5yEB6ygb6ykO5QQK5zYU5yMF6l6m', 'hSoeuColW7r0', 'yadcTxNdUa', 'WOFcMxfqWRNcNa', 'W4adW6ODbq', 's0uhWQScjCk2W4DuW5zv', 'WPVcPt4BWRyPwXBdUW', 'WRpcRvCxWR0', 'gCkLWOLsWRauW5TlWQ0jW7ixEa', 'dSkmb8o8fq', 'W4FdMNT8BH3cSeu', '55s75AEr6lsCW7pdNa', 'W6NcUmoja0ldK1VcUmk2', 'W7O06lYn6zwg', 'W6JdT8k3q8knj8kEnq', 'jmkHWQddQCoh', 'u8o3W4ddG8oBk8k+W6ej', 'WR3dQSkCmZBMLzZMS4BLUjm', '5B2T5yUO5Rsh6kw45zIP5lQv5PEc5O2C', '5A2z5yEG6yoQ6ycziowrSEw6H+s+UG', 'W4ZdThq', '5A645yEZ6ygM6yghW4FORlFMSPFKVRC', 'gSo5jCo7W4G', '5AAB6lA0pehcLs5yma', 'WQSkcHHfu2yB', 'W60cW7aWeG', 'W53dJgznWOBcRSkOW64', 'WOm5W5VcO0G', 'WRpcHwCuWOa', 'WRfUWPdcINCpteS', 'WOldTw5XxrRcSa', 'WQldQLnFDG', 'WRddNSoRkCoX', 'fCoQyKddNG', 'WOtdMSkNhem', 'WONdVmoyeSoe', 'WPBcLgycWPu', 'wmo1d2dcNmkUWQhcJq', 'fHHDW71bbq', 'W5lcVXlcRq', 'ACknv8kRWPBcRKu3WR7dQYlcJW', 'u0r9i3e', 'kIJcRsCr', 'W5voWPJdTbiYtSoDWQKGWQG', 'DUwSUUIjV2hOHA3LS5ZPNi7OPl8', 'W7zGsX4', 'WPxdP8kCixy', 'W4ZcNb9rFMldS8kq', '5PEg5A+h6zk05Aw66lsh', 'WO9rw2VdPW', 'W4hdI1yIWO8', 'W6JdUSojj8o6l8k6oSoxACk2', '5A215ywQ6yo46ygU5QQX5z6s5yQ86lYk', 'WP7dHSk5bhe', 'ahpcT2lcPW', '56IS5AYe5yw26yce6yg8'];
+  return ot = function() {
+    return _0x343115;
+  }, ot();
+}
+async function ut() {
+  const _0x592a81 = {
+    'EgMAY': function(_0x54d412, _0x4c2dfa) {
+      return _0x54d412 === _0x4c2dfa;
+    },
+    'VkZkc': 'undefined',
+    'ocSDT': function(_0x4fd6b9, _0x4d82e3) {
+      return _0x4fd6b9(_0x4d82e3);
+    },
+    'LOpGp': function(_0x1268ed, _0xa93f51) {
+      return _0x1268ed - _0xa93f51;
+    },
+    'iIxwO': function(_0x41fc20, _0x4e0a7d) {
+      return _0x41fc20 < _0x4e0a7d;
+    }
+  };
+  if (xe) return xe;
+  if (Fe) return Fe;
+  Fe = ((async () => {
+    const _0x38e89c = B;
+    if (_0x592a81[_0x38e89c(0x1e1, 'G^yD')](typeof WebAssembly, _0x592a81[_0x38e89c(0x1b3, 's4*U')])) throw new Error(_0x38e89c(0x1d4, 't49@') + _0x38e89c(0x1cc, 'G^yD') + _0x38e89c(0x1d3, 'S7Je') + _0x38e89c(0x17f, 'G^yD'));
+    const _0x37b533 = await _0x592a81[_0x38e89c(0x180, 'Jipp')](fetch, lg);
+    if (!_0x37b533['ok']) throw new Error(_0x38e89c(0x1c2, 'ztg3') + _0x38e89c(0x1d9, 'Jipp') + '\x20' + _0x37b533['status']);
+    const {
+      instance: _0x566489
+    } = await WebAssembly[_0x38e89c(0x1e7, 'Aged') + 'ate'](await _0x37b533['arrayBuf' + _0x38e89c(0x1d6, 'Jipp')](), {});
+    xe = _0x566489[_0x38e89c(0x1e0, 'G^yD')];
+    const _0x5d7387 = xe['a'](),
+      _0x53c904 = xe[_0x38e89c(0x182, 'Aged')][_0x38e89c(0x1b0, 'vKy2')]['byteLength'],
+      _0x7d261e = Math['min'](cg, _0x592a81['LOpGp'](_0x53c904, _0x5d7387));
+    if (_0x592a81[_0x38e89c(0x196, 'ZCgl')](_0x7d261e, sn)) throw xe = null, Be = -0x3974 + -0x1cba * -0x2, new Error(_0x38e89c(0x19b, 'vYy*') + _0x38e89c(0x192, 'Yz0(') + _0x7d261e + (_0x38e89c(0x174, 'Ojxn') + '\x20') + sn + (_0x38e89c(0x1ab, 'C1zX') + _0x38e89c(0x177, 'r]R%') + _0x38e89c(0x1b6, '[H2&')));
+    return Be = _0x7d261e, xe;
+  })());
+  try {
+    return await Fe;
+  } catch (_0x5e7998) {
+    throw Fe = null, _0x5e7998;
+  }
+}
+
+function ye(_0x17fc59) {
+  const _0x1fb089 = B;
+  return new Uint8Array(_0x17fc59[_0x1fb089(0x185, 'bspe')][_0x1fb089(0x18b, 'miZS')]);
+}
+async function ug() {
+  const _0x2905b1 = B,
+    _0x4d90a3 = {
+      'cDOas': function(_0x13e912) {
+        return _0x13e912();
+      },
+      'kZPCR': function(_0x35e463, _0xc170d6) {
+        return _0x35e463(_0xc170d6);
+      },
+      'Eolkl': function(_0x538c40, _0x54d747) {
+        return _0x538c40 !== _0x54d747;
+      },
+      'ELCcl': _0x2905b1(0x189, 'TTqt') + _0x2905b1(0x178, '[H2&'),
+      'lQagV': function(_0x5510d2, _0x4d6ded) {
+        return _0x5510d2 + _0x4d6ded;
+      }
+    },
+    _0x136130 = await _0x4d90a3[_0x2905b1(0x1a8, 'G^yD')](ut),
+    _0x1960e6 = _0x136130['a']();
+  if (_0x4d90a3[_0x2905b1(0x1e6, '4@ED')](ye, _0x136130)['set'](crypto['getRando' + _0x2905b1(0x1a9, 'S7Je')](new Uint8Array(-0x1 * 0x6c8 + -0x6c6 + 0x2 * 0x6d7)), _0x1960e6), _0x4d90a3[_0x2905b1(0x176, 'S7Je')](_0x136130['b'](), 0x0)) throw new Error(_0x4d90a3[_0x2905b1(0x1d8, 'wrJ(')]);
+  return _0x4d90a3[_0x2905b1(0x17a, 'Jipp')](ye, _0x136130)['slice'](_0x1960e6, _0x4d90a3[_0x2905b1(0x187, 'xSDR')](_0x1960e6, -0x201 + -0x2 * -0x3e5 + -0x5a9));
+}
+async function pg(_0x24c837, _0x171c09, _0x1738d2) {
+  const _0x3ebe96 = B,
+    _0x4d751d = {
+      'XShxI': function(_0xa2f1e3) {
+        return _0xa2f1e3();
+      },
+      'NKQUG': function(_0x786ecf, _0x3a1b07) {
+        return _0x786ecf > _0x3a1b07;
+      },
+      'qVpPS': function(_0x2b88ce, _0x496faa) {
+        return _0x2b88ce + _0x496faa;
+      },
+      'eGrni': function(_0x2f1b60, _0x417e24) {
+        return _0x2f1b60(_0x417e24);
+      },
+      'cElhS': function(_0xda9b48, _0xd7c9e9) {
+        return _0xda9b48 + _0xd7c9e9;
+      }
+    },
+    _0x5713df = await _0x4d751d['XShxI'](ut),
+    _0x535bdf = _0x5713df['a'](),
+    _0x4cadd6 = new TextEncoder()[_0x3ebe96(0x19d, 'f8i%')](_0x171c09);
+  if (_0x4d751d[_0x3ebe96(0x1de, '4@ED')](_0x4d751d[_0x3ebe96(0x17e, '!(]#')](0x37b + -0x7a6 * -0x2 + -0x12a7, _0x4cadd6[_0x3ebe96(0x1c1, 'TTqt')]), Be)) throw new Error(_0x3ebe96(0x19c, 'r]R%') + _0x3ebe96(0x1cf, 'E)a['));
+  const _0x177c4e = _0x4d751d[_0x3ebe96(0x1dd, 'cEs1')](ye, _0x5713df);
+  _0x177c4e['set'](_0x24c837, _0x535bdf), _0x177c4e[_0x3ebe96(0x1a6, 'hJjZ')](_0x4cadd6, _0x4d751d[_0x3ebe96(0x1eb, '[H2&')](_0x535bdf, 0x1 * -0xa14 + -0x1 * -0x1f4e + -0x151a));
+  const _0x4fc2b4 = _0x5713df['c'](_0x4cadd6[_0x3ebe96(0x1e8, 'vYy*')], _0x1738d2 ? -0x3 * 0xa93 + -0xdc4 * -0x1 + 0x11f6 : 0x0);
+  if (_0x4fc2b4 !== -0x243c + 0x349 * 0x2 + 0x1daa) throw new Error(_0x3ebe96(0x18f, 'YN]J') + _0x3ebe96(0x1cd, 'PMMY') + _0x4fc2b4 + ')');
+}
+
+function Au(_0x15cbae) {
+  const _0x55d80a = B,
+    _0xb2b8cf = {
+      'xTasm': function(_0x3025f6, _0x1e67d3) {
+        return _0x3025f6(_0x1e67d3);
+      },
+      'Mqtfw': function(_0x3e793a, _0x50422a) {
+        return _0x3e793a >> _0x50422a;
+      },
+      'TcJjb': function(_0xbb7a2a, _0x1d42e3) {
+        return _0xbb7a2a(_0x1d42e3);
+      },
+      'fbUuV': function(_0x40af66, _0x26f909) {
+        return _0x40af66 & _0x26f909;
+      }
+    };
+  return [_0xb2b8cf[_0x55d80a(0x179, 'NSuc')](Number, _0xb2b8cf['Mqtfw'](_0x15cbae, 0x20n)) >>> 0x1f61 + -0xb * -0x166 + -0x1 * 0x2ec3, _0xb2b8cf[_0x55d80a(0x19e, 'aFzv')](Number, _0xb2b8cf[_0x55d80a(0x1a1, 's4*U')](_0x15cbae, 0xffffffffn)) >>> -0x735 + 0x676 * 0x2 + -0x5b7];
+}
+async function mg(_0x358264, _0x4a6e12) {
+  const _0x32277f = B,
+    _0x1168ba = {
+      'fQisj': function(_0x2a6ae8) {
+        return _0x2a6ae8();
+      },
+      'KnPzJ': function(_0x39c690, _0x2eba10) {
+        return _0x39c690 > _0x2eba10;
+      },
+      'ghTox': function(_0x4b108d, _0x4f8921) {
+        return _0x4b108d + _0x4f8921;
+      },
+      'gjtaL': _0x32277f(0x1d7, 'Aged') + _0x32277f(0x1a4, 'S7Je'),
+      'bGDMg': function(_0x1a9663, _0x3799f7) {
+        return _0x1a9663(_0x3799f7);
+      },
+      'wrqhI': function(_0x2689d6, _0x142fc6) {
+        return _0x2689d6(_0x142fc6);
+      },
+      'xIMGI': function(_0x2626f2, _0x4aba9a) {
+        return _0x2626f2(_0x4aba9a);
+      }
+    },
+    _0x4f8555 = await _0x1168ba[_0x32277f(0x1b5, 'oO8f')](ut),
+    _0x3dc16f = _0x4f8555['a']();
+  if (_0x1168ba['KnPzJ'](_0x1168ba[_0x32277f(0x1ec, 'G9@o')](_0x358264['length'], 0x223e + 0xed7 * -0x1 + 0x1357 * -0x1), Be)) throw new Error(_0x1168ba[_0x32277f(0x1ad, 'vYy*')]);
+  _0x1168ba[_0x32277f(0x1bd, 'hJjZ')](ye, _0x4f8555)[_0x32277f(0x18c, '!(]#')](_0x358264, _0x3dc16f);
+  const [_0x2b3c22, _0x51ef72] = _0x1168ba[_0x32277f(0x1be, 'vYy*')](Au, _0x4a6e12), _0x4e43f0 = _0x4f8555['d'](_0x358264[_0x32277f(0x1c5, 'c3w2')], _0x2b3c22, _0x51ef72);
+  if (_0x4e43f0 < -0x1dfd + -0x1 * -0x1dfd) throw new Error(_0x32277f(0x1b9, '#7o@') + _0x32277f(0x1a7, 'OOz6') + _0x4e43f0 + ')');
+  return _0x1168ba[_0x32277f(0x186, 'b6Hz')](ye, _0x4f8555)[_0x32277f(0x1c4, 'hJjZ')](_0x3dc16f, _0x1168ba['ghTox'](_0x3dc16f, _0x4e43f0));
+}
+async function fg(_0x58b245, _0x10966c) {
+  const _0x154089 = B,
+    _0x4bab19 = {
+      'HzDdf': function(_0x878106) {
+        return _0x878106();
+      },
+      'crTbv': function(_0x17be6e, _0x53e04e) {
+        return _0x17be6e > _0x53e04e;
+      },
+      'EVWNX': _0x154089(0x1d5, 'S7Je') + '超出缓冲区上限',
+      'lEumm': function(_0x157b91, _0x47d446) {
+        return _0x157b91(_0x47d446);
+      },
+      'NfYcD': function(_0x299aac, _0x4da766) {
+        return _0x299aac < _0x4da766;
+      },
+      'WBXKl': function(_0x2a1cce, _0x998eb6) {
+        return _0x2a1cce + _0x998eb6;
+      }
+    },
+    _0x569ea8 = await _0x4bab19[_0x154089(0x197, 'C1zX')](ut),
+    _0x1c8263 = _0x569ea8['a']();
+  if (_0x4bab19[_0x154089(0x1e5, 'b6Hz')](_0x58b245[_0x154089(0x191, 's71@')], Be)) throw new Error(_0x4bab19['EVWNX']);
+  _0x4bab19[_0x154089(0x193, 'T4A#')](ye, _0x569ea8)['set'](_0x58b245, _0x1c8263);
+  const [_0x3688f5, _0xd0a547] = _0x4bab19[_0x154089(0x184, 'miZS')](Au, _0x10966c), _0x17aa83 = _0x569ea8['e'](_0x58b245['length'], _0x3688f5, _0xd0a547);
+  if (_0x4bab19[_0x154089(0x1d1, 'X1l0')](_0x17aa83, -0x1be * 0xd + -0x173a + 0x2de0)) throw new Error(_0x154089(0x18d, 'Fd9q') + _0x154089(0x1b4, 'oO8f') + _0x17aa83 + ')');
+  return ye(_0x569ea8)[_0x154089(0x1a2, 'OOz6')](_0x1c8263, _0x4bab19['WBXKl'](_0x1c8263, _0x17aa83));
+}(function(_0x5a9523, _0x38c260) {
+  const _0x2fbad2 = z,
+    _0x5ddc77 = _0x5a9523();
+  for (;;) try {
+    if (-parseInt(_0x2fbad2(0x1ff, '7729')) / 0x1 * (-parseInt(_0x2fbad2(0x215, '#soL')) / 0x2) + parseInt(_0x2fbad2(0x235, 'kJA9')) / 0x3 + -parseInt(_0x2fbad2(0x1f0, 'vb*c')) / 0x4 + -parseInt(_0x2fbad2(0x1ed, 'vqLr')) / 0x5 * (-parseInt(_0x2fbad2(0x226, 'XAhW')) / 0x6) + -parseInt(_0x2fbad2(0x21e, 'fK*g')) / 0x7 * (parseInt(_0x2fbad2(0x218, 'z(b@')) / 0x8) + parseInt(_0x2fbad2(0x21a, '$DTb')) / 0x9 + parseInt(_0x2fbad2(0x22f, 'kJA9')) / 0xa * (-parseInt(_0x2fbad2(0x1ec, '8*ET')) / 0xb) === _0x38c260) break;
+    _0x5ddc77['push'](_0x5ddc77['shift']());
+  } catch {
+    _0x5ddc77['push'](_0x5ddc77['shift']());
+  }
+}(at, -0x156bae + 0x47 * 0x6ab1));
+const xg = (function() {
+    const _0x238862 = z,
+      _0x44d7db = {};
+    _0x44d7db['IegsL'] = function(_0x2fb78e, _0x4fa8f7) {
+      return _0x2fb78e - _0x4fa8f7;
+    }, _0x44d7db[_0x238862(0x1fc, '2oVA')] = function(_0x3a0041, _0x426ae4) {
+      return _0x3a0041 & _0x426ae4;
+    }, _0x44d7db['zShss'] = function(_0x3d0b98, _0x5b74ae) {
+      return _0x3d0b98 << _0x5b74ae;
+    }, _0x44d7db[_0x238862(0x1e9, 'hPaE')] = _0x238862(0x21b, '8*ET');
+    const _0x565150 = _0x44d7db;
+    let _0x34ea54 = !0x0;
+    return function(_0xaebc5c, _0x58571f) {
+      const _0x5942db = _0x238862,
+        _0x3713d0 = {
+          'QJfFo': function(_0x2dd0f4, _0x4f4e57) {
+            return _0x565150['IegsL'](_0x2dd0f4, _0x4f4e57);
+          },
+          'fRmzN': function(_0x5e647f, _0x543509) {
+            return _0x5e647f >= _0x543509;
+          },
+          'sdlFw': function(_0x5341b2, _0x4b392c) {
+            return _0x565150[z(0x212, 'O50W')](_0x5341b2, _0x4b392c);
+          },
+          'GKTyY': function(_0x2dc914, _0x528f51) {
+            return _0x565150[z(0x20c, 'Qcn1')](_0x2dc914, _0x528f51);
+          },
+          'WRiSU': _0x5942db(0x22b, '8D*u'),
+          'VAlCa': _0x565150[_0x5942db(0x1f5, 'nuh9')]
+        },
+        _0x3ba2ee = _0x34ea54 ? function() {
+          const _0x2f2037 = _0x5942db;
+          if (_0x3713d0['WRiSU'] !== _0x3713d0[_0x2f2037(0x241, 'IA0r')]) {
+            if (_0x58571f) {
+              const _0x16eff1 = _0x58571f[_0x2f2037(0x206, 'fK*g')](_0xaebc5c, arguments);
+              return _0x58571f = null, _0x16eff1;
+            }
+          } else {
+            const _0x3be373 = _0x3713d0[_0x2f2037(0x220, 'IA0r')](_0x46cb87, _0x3f9004[_0x2f2037(0x202, 'Q^0S') + 'eq']);
+            return _0x3713d0[_0x2f2037(0x20b, 'O50W')](_0x3be373, _0xeb7f37) ? _0x1b0e05[_0x2f2037(0x1e7, '&bP@') + 'ap'] = 0x0n : _0x2e47d6['recvBitmap'] = _0x3713d0[_0x2f2037(0x233, 'BT^5')](_0x3713d0[_0x2f2037(0x22c, '3FBJ')](_0x59e2e7[_0x2f2037(0x1f9, '#soL') + 'ap'], _0x3be373), _0x3713d0[_0x2f2037(0x1fd, 'bK(@')](_0x3713d0[_0x2f2037(0x1e8, 'XAhW')](0x1n, 0x40n), 0x1n)), _0x160ac9[_0x2f2037(0x221, '2oVA') + 'eq'] = _0x1e916d, _0x3599ef[_0x2f2037(0x209, 'KgW!') + 'ap'] = _0x22f978[_0x2f2037(0x23c, 'O50W') + 'ap'] | 0x1n, !0x0;
+          }
+        } : function() {};
+      return _0x34ea54 = !0x1, _0x3ba2ee;
+    };
+  }()),
+  Lt = xg(void 0x0, function() {
+    const _0xff1b3e = z,
+      _0x395b06 = {};
+    _0x395b06[_0xff1b3e(0x1f8, 'c!Lr')] = _0xff1b3e(0x23b, '1]7J') + _0xff1b3e(0x200, '3FBJ');
+    const _0x188707 = _0x395b06;
+    return Lt[_0xff1b3e(0x234, 'nuh9')]()[_0xff1b3e(0x1f4, 'q(hy')](_0x188707[_0xff1b3e(0x22d, 'z(b@')])[_0xff1b3e(0x22a, 'Q^0S')]()[_0xff1b3e(0x210, '6@J2') + _0xff1b3e(0x22e, 'wQI!')](Lt)['search'](_0x188707[_0xff1b3e(0x228, 't6Vg')]);
+  });
+
+function at() {
+  const _0x3d045c = ['WPRdH8oZW4lcNa', 'yYu1W4ZcKSopW4JcQW', 'WRPkW4FcU8kk', 'hZ3dSJza', 'WQxdL8o4W7X7', 'vmoFW7ZcICkZW6RcSwu', 'WP5GCConWQ1sFmorW4zEvW', 'W4ipqNhdQwhcKG', 'zCk4WQmvD8ohA8kJ', 'WOu6l8objh9Pi8o1umkZWRddGq', 'CI84W4NcPmouW4NcPq', 'pXpcPYW5W6PtW4tdQ8oqW7ldQZq', 'WOtdTSoyW5L3', 'WQtdLMdcVN4', 'WPfFW5dcOCkh', 'ortdHZhcLK1M', 'a8oewmktW6nuWPldKa', 'WRJdNmoVW6xcVG', 'DdxdVGHmgZNcLW', 'W5KKF1CXixz8fSkWWP3dNai', 'fmoGj8kIWQ3dN8olWOq', 'WOjnW67dU8oM', 'W4uKW7eNAW', 'W5XkfmolW5Xfs0y', 'xeOUW5FcJXddT0NdLSorBvC', 'C8olW67cTSkR', 'EIFdJGhcPW', 'bCooAmkrW5nuWOJdMG', 'W5RdOSo4fcK', 'iCooemkTWRK', 'W6D/Bmk/sG', 'wmkVqq', 'gNFcHSkwfCoAi8oegJ3cHbT2', 'WO7cTCoAdd8AWPBdSq', 'WOCAq2VdLG', 'WPP3kbndFZjK', 'mCokChBcOW', 'w8oYvgqsjXvC', 'gNxcG8kChCovi8oPjqFcHa1T', 'tSoMdsbv', 'WOqXs8kaW6SXrbu', 'kHjtWOxdQq', 'W7yzmmk/va', 'WRjWW67dSSoI', 'yCk4F8ozW7aRECod', 'hcldUdnjWQTQxa', 'k8oEbmkKWPG', 'xSkLumkFWRFcUSo2W7C', 'WRddU8oKW7pcQq', 'D8owDwq1', 'WR/dL8oLW6dcSa', 'rmoFW7zbW489WRVcKW', 'WQWZk8odW70', 'WOfPW61Zba', 'dCkUjCkEyG', 'l1uCfLJdRSo6WQVcQmkkWOhcH8oe', 'W7pcISoDW5P+FSk6W4e', 'jmoUW7rAbSkBA8kyiGvKW7W', 'bXFcSSkxqG', 'WOm+l8ocixbRmSo1DmkfWQtdTq', 'DCoUvSo9h8k4hNaCa3CGWRa', 'WQ7dMxhcMwNdJSkTpG', 'W4eKmmk+EW', 'W50uW5eSDq', 'wsyjWQVdRCov', 'ACo+uKu6', 'l2rnWRv9', 'W5ikhCkwW54', 'WOfcW5lcMSkf', 'W5q9j8kdW5L+zSof', 'ESkwkqJdOSoOWRRdK8kYWQGy', 'FbddTbtcR1XnW58', 'DYRdTa1k', 'CtRcQSoFWOW', 'WPXaeGze', 'uMvEWQjTrcC', 'tCkSB8oW', 'nYRdTHvZ', 'a8oewmktW6XCWP7dRG', 'WOClCvtdN3JcTCoc', 'AqdcJCooWQ8', 'mW1jgSkHWO8If1FcNJP4Da', 'BWxdPW7cMW', 'waePW4VcSW', 'WQtcJCoCiMe', 'W50fW6mtFaCKlW', 'W5L7ECkGW5G', 'cbxdTJ9f', 'yZjgxrO', 'WO7cS8kdsNn5W4pdVSogvmoXWQ5E', 'o8kEWQ9ZhW'];
+  return at = function() {
+    return _0x3d045c;
+  }, at();
+}
+
+function z(_0x20bde9, _0x59b328) {
+  _0x20bde9 = _0x20bde9 - (0x1 * 0x7c5 + 0x1ed2 + 0x24b0 * -0x1);
+  const _0xfe0b3d = at();
+  let _0x410ad3 = _0xfe0b3d[_0x20bde9];
+  if (z['HIzFqF'] === void 0x0) {
+    var _0x5bbcc3 = function(_0x33bba8) {
+      const _0x52117b = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+      let _0x5766ec = '',
+        _0x2f41f1 = '',
+        _0x5b8cb5 = _0x5766ec + _0x5bbcc3,
+        _0x359ff7 = ('' + function() {
+          return 0x2af + 0x1 * -0x2af;
+        })['indexOf']('\x0a') !== -0x1;
+      for (let _0x170005 = 0x0, _0x439442, _0x3e3724, _0x39a70d = 0x0; _0x3e3724 = _0x33bba8['charAt'](_0x39a70d++); ~_0x3e3724 && (_0x439442 = _0x170005 % 0x4 ? _0x439442 * 0x40 + _0x3e3724 : _0x3e3724, _0x170005++ % 0x4) ? _0x5766ec += _0x359ff7 || _0x5b8cb5['charCodeAt'](_0x39a70d + 0xa) - 0xa !== 0x0 ? String['fromCharCode'](0xff & _0x439442 >> (-0x2 * _0x170005 & 0x6)) : _0x170005 : 0x0) _0x3e3724 = _0x52117b['indexOf'](_0x3e3724);
+      for (let _0x43590e = 0x0, _0x3f0691 = _0x5766ec['length']; _0x43590e < _0x3f0691; _0x43590e++) _0x2f41f1 += '%' + ('00' + _0x5766ec['charCodeAt'](_0x43590e)['toString'](0x10))['slice'](-0x2);
+      return decodeURIComponent(_0x2f41f1);
+    };
+    const _0x39cdd6 = function(_0x5bf904, _0x11c7a8) {
+      let _0x480fd0 = [],
+        _0x208043 = 0x0,
+        _0x5ea344, _0x3494e1 = '';
+      _0x5bf904 = _0x5bbcc3(_0x5bf904);
+      let _0x4a23ca;
+      for (_0x4a23ca = 0x0; _0x4a23ca < 0x100; _0x4a23ca++) _0x480fd0[_0x4a23ca] = _0x4a23ca;
+      for (_0x4a23ca = 0x0; _0x4a23ca < 0x100; _0x4a23ca++) _0x208043 = (_0x208043 + _0x480fd0[_0x4a23ca] + _0x11c7a8['charCodeAt'](_0x4a23ca % _0x11c7a8['length'])) % 0x100, _0x5ea344 = _0x480fd0[_0x4a23ca], _0x480fd0[_0x4a23ca] = _0x480fd0[_0x208043], _0x480fd0[_0x208043] = _0x5ea344;
+      _0x4a23ca = 0x0, _0x208043 = 0x0;
+      for (let _0xc6ce80 = 0x0; _0xc6ce80 < _0x5bf904['length']; _0xc6ce80++) _0x4a23ca = (_0x4a23ca + 0x1) % 0x100, _0x208043 = (_0x208043 + _0x480fd0[_0x4a23ca]) % 0x100, _0x5ea344 = _0x480fd0[_0x4a23ca], _0x480fd0[_0x4a23ca] = _0x480fd0[_0x208043], _0x480fd0[_0x208043] = _0x5ea344, _0x3494e1 += String['fromCharCode'](_0x5bf904['charCodeAt'](_0xc6ce80) ^ _0x480fd0[(_0x480fd0[_0x4a23ca] + _0x480fd0[_0x208043]) % 0x100]);
+      return _0x3494e1;
+    };
+    z['BVDycW'] = _0x39cdd6, z['NCyfrA'] = {}, z['HIzFqF'] = !0x0;
+  }
+  const _0x1508cc = _0xfe0b3d[0x3a3d + 0x1 * -0x3a3d],
+    _0x4b01c = _0x20bde9 + _0x1508cc,
+    _0x214ad2 = z['NCyfrA'][_0x4b01c];
+  if (_0x214ad2) _0x410ad3 = _0x214ad2;
+  else {
+    if (z['lnjTlq'] === void 0x0) {
+      const _0xb0a96a = function(_0x176fb2) {
+        this['tqFnQF'] = _0x176fb2, this['sojucT'] = [0x1, 0x0, 0x0], this['RzMtyc'] = function() {
+          return 'newState';
+        }, this['ZdBVCe'] = '\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*', this['LMxYoQ'] = '[\x27|\x22].+[\x27|\x22];?\x20*}';
+      };
+      _0xb0a96a['prototype']['rQZjrD'] = function() {
+        const _0x50660b = new RegExp(this['ZdBVCe'] + this['LMxYoQ']),
+          _0x228b5d = _0x50660b['test'](this['RzMtyc']['toString']()) ? --this['sojucT'][-0xb66 * 0x1 + -0x3 * -0x5b3 + -0x5b2] : --this['sojucT'][-0x5 * 0x54e + -0xb82 + 0x2608];
+        return this['dDNfhk'](_0x228b5d);
+      }, _0xb0a96a['prototype']['dDNfhk'] = function(_0x1c154a) {
+        return ~_0x1c154a ? this['ZSHmLM'](this['tqFnQF']) : _0x1c154a;
+      }, _0xb0a96a['prototype']['ZSHmLM'] = function(_0x3b4027) {
+        for (let _0x4c080b = 0x0, _0x326f40 = this['sojucT']['length']; _0x4c080b < _0x326f40; _0x4c080b++) this['sojucT']['push'](Math['round'](Math['random']())), _0x326f40 = this['sojucT']['length'];
+        return _0x3b4027(this['sojucT'][-0x216c + 0x803 * 0x1 + 0x5 * 0x515]);
+      }, ('' + function() {
+        return 0x0;
+      })['indexOf']('\x0a') === -0x1 && new _0xb0a96a(z)['rQZjrD'](), z['lnjTlq'] = !0x0;
+    }
+    _0x410ad3 = z['BVDycW'](_0x410ad3, _0x59b328), z['NCyfrA'][_0x4b01c] = _0x410ad3;
+  }
+  return _0x410ad3;
+}
+Lt();
+const ln = 0x40n;
+
+function gg(_0x213996, _0x38e330) {
+  const _0x466dfa = z,
+    _0xbcd279 = {};
+  _0xbcd279['IpAWL'] = function(_0x466bb5, _0x93424c) {
+    return _0x466bb5 & _0x93424c;
+  }, _0xbcd279[_0x466dfa(0x1fe, 'G%De')] = function(_0x19fe16, _0xd7e635) {
+    return _0x19fe16 << _0xd7e635;
+  }, _0xbcd279[_0x466dfa(0x23a, 'XiVB')] = function(_0xe744c8, _0x5a4d6a) {
+    return _0xe744c8 - _0x5a4d6a;
+  }, _0xbcd279[_0x466dfa(0x224, 'XiVB')] = function(_0x5f4e67, _0x37e4b8) {
+    return _0x5f4e67 << _0x37e4b8;
+  }, _0xbcd279[_0x466dfa(0x213, '8*ET')] = function(_0xd37c32, _0x3f84c7) {
+    return _0xd37c32 === _0x3f84c7;
+  }, _0xbcd279[_0x466dfa(0x23d, '1]7J')] = function(_0x37fe23, _0x49df2d) {
+    return _0x37fe23 > _0x49df2d;
+  }, _0xbcd279[_0x466dfa(0x23f, 'IA0r')] = function(_0x4b7d80, _0x3bc63e) {
+    return _0x4b7d80 !== _0x3bc63e;
+  }, _0xbcd279[_0x466dfa(0x238, 'e03^')] = _0x466dfa(0x211, 'c!Lr'), _0xbcd279[_0x466dfa(0x1ee, '09b[')] = function(_0x56b676, _0x1867b3) {
+    return _0x56b676 >= _0x1867b3;
+  }, _0xbcd279[_0x466dfa(0x231, 't$!)')] = function(_0x30f864, _0x32a196) {
+    return _0x30f864 - _0x32a196;
+  }, _0xbcd279['sQzaM'] = function(_0x1cba8d, _0x1ccae6) {
+    return _0x1cba8d - _0x1ccae6;
+  }, _0xbcd279[_0x466dfa(0x20e, 'YEjc')] = function(_0x1eaaa3, _0x2ccea8) {
+    return _0x1eaaa3 >= _0x2ccea8;
+  }, _0xbcd279[_0x466dfa(0x236, '%6yN')] = function(_0xa9ec9c, _0x4a1b13) {
+    return _0xa9ec9c !== _0x4a1b13;
+  }, _0xbcd279[_0x466dfa(0x207, '6@J2')] = function(_0x4b2559, _0x45162c) {
+    return _0x4b2559 | _0x45162c;
+  };
+  const _0x1dbaaa = _0xbcd279;
+  if (_0x1dbaaa[_0x466dfa(0x213, '8*ET')](_0x38e330, 0x0n)) return !0x1;
+  if (_0x1dbaaa['bNSSC'](_0x38e330, _0x213996[_0x466dfa(0x1fb, 'fK*g') + 'eq'])) {
+    if (_0x1dbaaa[_0x466dfa(0x201, 'O50W')](_0x1dbaaa[_0x466dfa(0x239, 'qlns')], _0x466dfa(0x20a, '68eD'))) _0x16e740[_0x466dfa(0x23c, 'O50W') + 'ap'] = _0x1dbaaa[_0x466dfa(0x1ea, 'vb*c')](_0x1dbaaa[_0x466dfa(0x1f7, '#soL')](_0x9799d6[_0x466dfa(0x1f1, ')n#z') + 'ap'], _0x5f2dd5), _0x1dbaaa[_0x466dfa(0x208, '@G8N')](_0x1dbaaa[_0x466dfa(0x1f6, '7729')](0x1n, 0x40n), 0x1n));
+    else {
+      const _0x2e35dc = _0x1dbaaa[_0x466dfa(0x21c, ')n#z')](_0x38e330, _0x213996[_0x466dfa(0x223, '3FBJ') + 'eq']);
+      return _0x1dbaaa[_0x466dfa(0x225, 'KgW!')](_0x2e35dc, ln) ? _0x213996[_0x466dfa(0x219, '6@J2') + 'ap'] = 0x0n : _0x213996[_0x466dfa(0x232, 'G%De') + 'ap'] = _0x1dbaaa[_0x466dfa(0x204, 'bK(@')](_0x1dbaaa['tRYcE'](_0x213996[_0x466dfa(0x214, 't6Vg') + 'ap'], _0x2e35dc), _0x1dbaaa[_0x466dfa(0x1f3, 'KgW!')](_0x1dbaaa[_0x466dfa(0x229, 'fK*g')](0x1n, 0x40n), 0x1n)), _0x213996['recvMaxSeq'] = _0x38e330, _0x213996['recvBitmap'] = _0x213996[_0x466dfa(0x217, 'vqLr') + 'ap'] | 0x1n, !0x0;
+    }
+  }
+  const _0x4e2e69 = _0x1dbaaa[_0x466dfa(0x20f, 'IA0r')](_0x213996[_0x466dfa(0x23e, 'wQI!') + 'eq'], _0x38e330);
+  if (_0x1dbaaa[_0x466dfa(0x21d, 'c!Lr')](_0x4e2e69, ln)) return !0x1;
+  const _0x38d44d = _0x1dbaaa['HWrXQ'](0x1n, _0x4e2e69);
+  return _0x1dbaaa[_0x466dfa(0x1f2, 'qlns')](_0x213996[_0x466dfa(0x21f, 'Q^0S') + 'ap'] & _0x38d44d, 0x0n) ? !0x1 : (_0x213996[_0x466dfa(0x214, 't6Vg') + 'ap'] = _0x1dbaaa[_0x466dfa(0x240, 'nuh9')](_0x213996[_0x466dfa(0x203, 't$!)') + 'ap'], _0x38d44d), !0x0);
+}
+const O = V;
+(function(_0xbbc5e4, _0x575c03) {
+  const _0xabb7c6 = V,
+    _0x1199e1 = _0xbbc5e4();
+  for (;;) try {
+    if (parseInt(_0xabb7c6(0x1e9, '%[my')) / 0x1 + parseInt(_0xabb7c6(0x23d, 'Bnla')) / 0x2 * (parseInt(_0xabb7c6(0x1cc, 'SzO8')) / 0x3) + parseInt(_0xabb7c6(0x1b4, 'BpLd')) / 0x4 * (-parseInt(_0xabb7c6(0x237, 'Q%BC')) / 0x5) + -parseInt(_0xabb7c6(0x1d9, 'SzO8')) / 0x6 + -parseInt(_0xabb7c6(0x1be, '1UVs')) / 0x7 + parseInt(_0xabb7c6(0x231, '[Vs]')) / 0x8 + parseInt(_0xabb7c6(0x233, '^Iqt')) / 0x9 === _0x575c03) break;
+    _0x1199e1['push'](_0x1199e1['shift']());
+  } catch {
+    _0x1199e1['push'](_0x1199e1['shift']());
+  }
+}(rt, -0x42fa * -0x7 + 0x5c90 * -0x1 + 0x438f3));
+const hg = (function() {
+    const _0x2fdc45 = V,
+      _0x1a7582 = {};
+    _0x1a7582[_0x2fdc45(0x1c0, '3IpM')] = function(_0x4d4954, _0x4d73a7) {
+      return _0x4d4954 !== _0x4d73a7;
+    }, _0x1a7582['qQViw'] = 'HfGEX';
+    const _0xc0446d = _0x1a7582;
+    let _0x5d32f3 = !0x0;
+    return function(_0x5a3072, _0x3c5f75) {
+      const _0x4539fb = _0x2fdc45,
+        _0x5c7125 = {
+          'HrDZU': function(_0x2a01c8, _0x21af96) {
+            return _0xc0446d[V(0x22c, 'EG&b')](_0x2a01c8, _0x21af96);
+          },
+          'LIAYZ': _0xc0446d[_0x4539fb(0x24c, '$r7S')]
+        },
+        _0x3021dd = _0x5d32f3 ? function() {
+          const _0x1e15ca = _0x4539fb;
+          if (_0x5c7125['HrDZU'](_0x5c7125[_0x1e15ca(0x236, 'if]g')], _0x5c7125['LIAYZ'])) this['session'] = null, this[_0x1e15ca(0x249, 'hLjH') + _0x1e15ca(0x1f6, 'zzx9') + 't'] = null;
+          else {
+            if (_0x3c5f75) {
+              const _0x5f5c38 = _0x3c5f75['apply'](_0x5a3072, arguments);
+              return _0x3c5f75 = null, _0x5f5c38;
+            }
+          }
+        } : function() {};
+      return _0x5d32f3 = !0x1, _0x3021dd;
+    };
+  }()),
+  _t = hg(void 0x0, function() {
+    const _0x1cad3f = V,
+      _0xc68ada = {};
+    _0xc68ada['fGavy'] = _0x1cad3f(0x20d, 'K#@S') + _0x1cad3f(0x1f0, '%[my');
+    const _0x3a6043 = _0xc68ada;
+    return _t[_0x1cad3f(0x1ce, 'Bnla')]()[_0x1cad3f(0x220, '#m&y')](_0x3a6043['fGavy'])[_0x1cad3f(0x1ed, ')iHL')]()[_0x1cad3f(0x1ae, 'dv#A') + _0x1cad3f(0x1db, 'dv#A')](_t)['search'](_0x3a6043[_0x1cad3f(0x1ac, '(N4&')]);
+  });
+_t();
+
+function V(_0x1f6f55, _0x45037c) {
+  _0x1f6f55 = _0x1f6f55 - (0x10 * 0x164 + -0x2 * -0x1237 + -0x7 * 0x825);
+  const _0x5e1e40 = rt();
+  let _0xef4e45 = _0x5e1e40[_0x1f6f55];
+  if (V['PZbSjO'] === void 0x0) {
+    var _0x5edfc7 = function(_0x20fe72) {
+      const _0x1c8a85 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+      let _0x55ffa0 = '',
+        _0x3b76c0 = '',
+        _0x226270 = _0x55ffa0 + _0x5edfc7,
+        _0x309d03 = ('' + function() {
+          return 0x0;
+        })['indexOf']('\x0a') !== -0x1;
+      for (let _0x4e45ab = 0x0, _0x218a65, _0x83d3d0, _0x3dd713 = 0x0; _0x83d3d0 = _0x20fe72['charAt'](_0x3dd713++); ~_0x83d3d0 && (_0x218a65 = _0x4e45ab % 0x4 ? _0x218a65 * 0x40 + _0x83d3d0 : _0x83d3d0, _0x4e45ab++ % 0x4) ? _0x55ffa0 += _0x309d03 || _0x226270['charCodeAt'](_0x3dd713 + 0xa) - 0xa !== 0x0 ? String['fromCharCode'](0xff & _0x218a65 >> (-0x2 * _0x4e45ab & 0x6)) : _0x4e45ab : 0x0) _0x83d3d0 = _0x1c8a85['indexOf'](_0x83d3d0);
+      for (let _0x584047 = 0x0, _0x463a53 = _0x55ffa0['length']; _0x584047 < _0x463a53; _0x584047++) _0x3b76c0 += '%' + ('00' + _0x55ffa0['charCodeAt'](_0x584047)['toString'](0x10))['slice'](-0x2);
+      return decodeURIComponent(_0x3b76c0);
+    };
+    const _0x44d239 = function(_0x18caae, _0x29f0c2) {
+      let _0x87885c = [],
+        _0x1533e4 = 0x0,
+        _0x25d2a1, _0x446375 = '';
+      _0x18caae = _0x5edfc7(_0x18caae);
+      let _0x373717;
+      for (_0x373717 = 0x0; _0x373717 < 0x100; _0x373717++) _0x87885c[_0x373717] = _0x373717;
+      for (_0x373717 = 0x0; _0x373717 < 0x100; _0x373717++) _0x1533e4 = (_0x1533e4 + _0x87885c[_0x373717] + _0x29f0c2['charCodeAt'](_0x373717 % _0x29f0c2['length'])) % 0x100, _0x25d2a1 = _0x87885c[_0x373717], _0x87885c[_0x373717] = _0x87885c[_0x1533e4], _0x87885c[_0x1533e4] = _0x25d2a1;
+      _0x373717 = 0x0, _0x1533e4 = 0x0;
+      for (let _0x53974 = 0x0; _0x53974 < _0x18caae['length']; _0x53974++) _0x373717 = (_0x373717 + 0x1) % 0x100, _0x1533e4 = (_0x1533e4 + _0x87885c[_0x373717]) % 0x100, _0x25d2a1 = _0x87885c[_0x373717], _0x87885c[_0x373717] = _0x87885c[_0x1533e4], _0x87885c[_0x1533e4] = _0x25d2a1, _0x446375 += String['fromCharCode'](_0x18caae['charCodeAt'](_0x53974) ^ _0x87885c[(_0x87885c[_0x373717] + _0x87885c[_0x1533e4]) % 0x100]);
+      return _0x446375;
+    };
+    V['lmfuQY'] = _0x44d239, V['IwDlZy'] = {}, V['PZbSjO'] = !0x0;
+  }
+  const _0x6d85bb = _0x5e1e40[-0x24bc + 0x4 * 0x92f],
+    _0xa397f9 = _0x1f6f55 + _0x6d85bb,
+    _0x5ab35d = V['IwDlZy'][_0xa397f9];
+  if (_0x5ab35d) _0xef4e45 = _0x5ab35d;
+  else {
+    if (V['oNyIBv'] === void 0x0) {
+      const _0x51afba = function(_0x191c8c) {
+        this['sVbRsD'] = _0x191c8c, this['NFXgjW'] = [0x1, 0x0, 0x0], this['oYgnDS'] = function() {
+          return 'newState';
+        }, this['roFXli'] = '\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*', this['dzSbHt'] = '[\x27|\x22].+[\x27|\x22];?\x20*}';
+      };
+      _0x51afba['prototype']['XbxFVI'] = function() {
+        const _0xd186ab = new RegExp(this['roFXli'] + this['dzSbHt']),
+          _0x53df22 = _0xd186ab['test'](this['oYgnDS']['toString']()) ? --this['NFXgjW'][0x233 * -0x1 + 0x2404 + -0x21d0 * 0x1] : --this['NFXgjW'][0x0];
+        return this['hoBFfD'](_0x53df22);
+      }, _0x51afba['prototype']['hoBFfD'] = function(_0x2496fa) {
+        return ~_0x2496fa ? this['YghexG'](this['sVbRsD']) : _0x2496fa;
+      }, _0x51afba['prototype']['YghexG'] = function(_0x1070a5) {
+        for (let _0x3befd1 = 0x1cae * 0x1 + -0x1 * -0x147b + -0x3129, _0x2e52bd = this['NFXgjW']['length']; _0x3befd1 < _0x2e52bd; _0x3befd1++) this['NFXgjW']['push'](Math['round'](Math['random']())), _0x2e52bd = this['NFXgjW']['length'];
+        return _0x1070a5(this['NFXgjW'][-0xd2c + 0x1 * 0x180b + -0xadf]);
+      }, ('' + function() {
+        return -0x1 * 0x359 + 0x968 + -0x60f;
+      })['indexOf']('\x0a') === -0x1 && new _0x51afba(V)['XbxFVI'](), V['oNyIBv'] = !0x0;
+    }
+    _0xef4e45 = V['lmfuQY'](_0xef4e45, _0x45037c), V['IwDlZy'][_0xa397f9] = _0xef4e45;
+  }
+  return _0xef4e45;
+}
+const dn = -0x3 * 0x64d + 0x24e6 + -0x11fe,
+  bg = O(0x1e7, 'mi8t') + O(0x21a, 'EG&b'),
+  yg = O(0x203, 'DI*m') + O(0x1e2, 'kxCi'),
+  vg = O(0x1f3, 'E@o#') + '-Channel' + O(0x1f2, '(N4&'),
+  Sg = 'v1';
+class Cg {
+  [O(0x1c4, ')iHL')] = null;
+  ['handshak' + O(0x244, '4J5H') + 't'] = null;
+  ['isReady']() {
+    const _0x2ec8f1 = O,
+      _0x3eb9c = {};
+    return _0x3eb9c['xSAmx'] = function(_0x22c696, _0x315d40) {
+      return _0x22c696 !== _0x315d40;
+    }, _0x3eb9c[_0x2ec8f1(0x238, 'Fgc(')](this[_0x2ec8f1(0x23f, 's9%D')], null);
+  } ['getSessi' + O(0x23e, '1UVs')]() {
+    const _0x1dcf1b = O;
+    return this[_0x1dcf1b(0x232, 'E@o#')]?.[_0x1dcf1b(0x1f9, 'hLjH') + 'd'] ?? null;
+  } [O(0x1de, 'DI*m')]() {
+    const _0x368bea = O;
+    this[_0x368bea(0x1c5, 'kxCi')] = null, this[_0x368bea(0x20b, 'ot4H') + _0x368bea(0x21f, 'jtYu') + 't'] = null;
+  }
+  async [O(0x1b5, 'Bnla') + 'e'](_0x163bd9, _0x36f8f9, _0x18ca66) {
+    const _0x7cf77 = O,
+      _0x2e4bf9 = {};
+    _0x2e4bf9[_0x7cf77(0x1b9, '$r7S')] = function(_0x1c9b84, _0x53be6c) {
+      return _0x1c9b84 < _0x53be6c;
+    }, _0x2e4bf9[_0x7cf77(0x1fa, 'u1Eo')] = function(_0x252369, _0x29f892) {
+      return _0x252369 !== _0x29f892;
+    }, _0x2e4bf9[_0x7cf77(0x1f7, 'FsAb')] = 'gBeyG';
+    const _0x374335 = _0x2e4bf9;
+    if (this[_0x7cf77(0x216, 'u1Eo') + 'eInFlight']) {
+      if (_0x374335['mfJrC'](_0x374335[_0x7cf77(0x248, '9PVM')], _0x374335[_0x7cf77(0x1c3, 'DoN0')])) {
+        const _0x46332a = _0x32c6ef(_0x536151),
+          _0x8a2395 = new _0x1eddfe(_0x46332a[_0x7cf77(0x1ef, '#8Mm')]);
+        for (let _0x5b2b0c = -0xea3 + -0x3 * 0x705 + 0x23b2; _0x374335[_0x7cf77(0x23c, 's9%D')](_0x5b2b0c, _0x46332a[_0x7cf77(0x20a, '%[my')]); _0x5b2b0c++) _0x8a2395[_0x5b2b0c] = _0x46332a[_0x7cf77(0x1f8, 'dB!!') + 'At'](_0x5b2b0c);
+        return _0x8a2395;
+      } else return this[_0x7cf77(0x1c6, '$r7S') + _0x7cf77(0x245, 'IHSs') + 't'];
+    }
+    return this[_0x7cf77(0x222, 'EL^F') + _0x7cf77(0x214, 'K#@S') + 't'] = this[_0x7cf77(0x1d7, 'J%dI') + 'ake'](_0x163bd9, _0x36f8f9, _0x18ca66)[_0x7cf77(0x1cf, 'EL^F')](() => {
+      const _0x5cb278 = _0x7cf77;
+      this['handshak' + _0x5cb278(0x219, 'Fgc(') + 't'] = null;
+    }), this['handshak' + _0x7cf77(0x21e, '^Iqt') + 't'];
+  }
+  async ['doHandshake'](_0xce5797, _0x27d236, _0x490eba) {
+    const _0xf80ef9 = O,
+      _0x294eb0 = {
+        'PvyyV': function(_0x3d1c31, _0x430642) {
+          return _0x3d1c31 < _0x430642;
+        },
+        'oLEkF': function(_0x25e7c4, _0x1461db) {
+          return _0x25e7c4(_0x1461db);
+        },
+        'WAJFK': function(_0x3d7f9b) {
+          return _0x3d7f9b();
+        },
+        'CTsru': function(_0x7a2e80, _0x520ed4) {
+          return _0x7a2e80(_0x520ed4);
+        },
+        'YQPss': function(_0xab5091, _0xd8ab7f) {
+          return _0xab5091 !== _0xd8ab7f;
+        },
+        'zNmpj': _0xf80ef9(0x1b6, 'FsAb') + _0xf80ef9(0x23b, 'kxCi') + 'ub\x20length',
+        'kddmI': function(_0x2f3284, _0x70c0cd) {
+          return _0x2f3284 === _0x70c0cd;
+        },
+        'juKtC': function(_0x1a3c33, _0x5beb3f) {
+          return _0x1a3c33 !== _0x5beb3f;
+        },
+        'IRzWj': '后端未启用认证密' + _0xf80ef9(0x218, 'IHSs') + '建)',
+        'YdXwV': function(_0x2ee4bb, _0x1c99ad, _0x5207d1) {
+          return _0x2ee4bb(_0x1c99ad, _0x5207d1);
+        },
+        'WBbbg': function(_0x11774b, _0x1b27ed) {
+          return _0x11774b + _0x1b27ed;
+        },
+        'MWPuz': _0xf80ef9(0x215, '3IpM') + _0xf80ef9(0x1f4, '[Vs]'),
+        'zXAmt': _0xf80ef9(0x24a, '(N4&'),
+        'gbcQv': 'QvCJH',
+        'dJWTa': function(_0x3f14c4, _0x2bbc61, _0x566493, _0x544eb6) {
+          return _0x3f14c4(_0x2bbc61, _0x566493, _0x544eb6);
+        },
+        'kteGI': _0xf80ef9(0x1e4, '1UVs') + _0xf80ef9(0x1bc, 'dw2f')
+      },
+      _0x22e309 = await _0x294eb0[_0xf80ef9(0x1ab, 'qIsB')](ug),
+      _0x1d5da8 = _0x294eb0['CTsru'](cn, _0x22e309),
+      _0x24a550 = await _0xce5797(_0x1d5da8),
+      _0x2c97db = _0x294eb0[_0xf80ef9(0x1fe, '$r7S')](un, _0x24a550[_0xf80ef9(0x20c, 'Q%BC') + _0xf80ef9(0x1e5, '4J5H')]);
+    if (_0x294eb0['YQPss'](_0x2c97db[_0xf80ef9(0x1d4, 'mi8t')], 0x20)) throw new Error(_0x294eb0['zNmpj']);
+    const _0x124591 = _0x294eb0[_0xf80ef9(0x1d5, 's9%D')](_0x24a550[_0xf80ef9(0x1ec, 'oNgu')], 'v2') ? 'v2' : 'v1';
+    if (_0x294eb0['juKtC'](_0x124591, 'v2')) throw new He(_0x294eb0['IRzWj']);
+    if (_0x294eb0[_0xf80ef9(0x247, 'DoN0')](_0x124591, 'v2') && _0x294eb0['YdXwV'](Jx, _0x24a550[_0xf80ef9(0x205, 'dw2f') + _0xf80ef9(0x1b2, '4J5H')], {
+        'sessionId': _0x24a550[_0xf80ef9(0x1b0, 'nDxp') + 'id'],
+        'clientPublicKey': _0x1d5da8,
+        'serverPublicKey': _0x24a550[_0xf80ef9(0x1df, 'CN8C') + _0xf80ef9(0x1bb, 'dv#A')],
+        'audience': _0x27d236
+      }), _0x490eba && Yx(_0x24a550[_0xf80ef9(0x1d3, '$r7S') + _0xf80ef9(0x1f5, 'Q#j&')], {
+        'clientPublicKey': _0x1d5da8,
+        'serverPublicKey': _0x24a550[_0xf80ef9(0x1e0, '$r7S') + 'ub_b64'],
+        'sessionId': _0x24a550[_0xf80ef9(0x1e8, 'FsAb') + 'id'],
+        'origin': _0x27d236
+      }), _0x294eb0[_0xf80ef9(0x1e6, 'BpLd')](_0x124591, 'v2')) await pg(_0x2c97db, _0x294eb0[_0xf80ef9(0x240, 'EG&b')](_0x294eb0[_0xf80ef9(0x210, '$r7S')], _0x24a550[_0xf80ef9(0x1ee, 'mi8t') + 'id']), !0x0);
+    else throw new He(_0x294eb0[_0xf80ef9(0x228, '%[my')]);
+    const _0x5a4219 = {};
+    _0x5a4219[_0xf80ef9(0x1dc, '1UVs') + 'd'] = _0x24a550[_0xf80ef9(0x1b1, 'BpLd') + 'id'], _0x5a4219[_0xf80ef9(0x22d, 'J%dI')] = 0x0n, _0x5a4219[_0xf80ef9(0x208, 'EL^F') + 'eq'] = 0x0n, _0x5a4219[_0xf80ef9(0x207, '1UVs') + 'ap'] = 0x0n, this[_0xf80ef9(0x1ba, 'Q%BC')] = _0x5a4219;
+  }
+  async [O(0x20f, 'R^Xq') + 'odyB64'](_0x4dc4bc) {
+    const _0x419f02 = O,
+      _0x3eadfe = {
+        'fqBwp': _0x419f02(0x1d6, 'DoN0') + _0x419f02(0x24d, 'IHSs') + _0x419f02(0x1c2, '3IpM') + _0x419f02(0x212, 'vwcf'),
+        'axasv': function(_0x14aea5, _0x469c7a) {
+          return _0x14aea5 + _0x469c7a;
+        },
+        'CLYOA': function(_0x234444, _0x4f6753, _0x4afa4e) {
+          return _0x234444(_0x4f6753, _0x4afa4e);
+        },
+        'ngcHV': function(_0x363bf8, _0x7b04f0) {
+          return _0x363bf8 + _0x7b04f0;
+        },
+        'ZykCJ': function(_0x347e6f, _0x42845b) {
+          return _0x347e6f(_0x42845b);
+        }
+      };
+    if (!this['session']) throw new Error(_0x3eadfe[_0x419f02(0x1d8, '6EZm')]);
+    const _0x3b955f = this[_0x419f02(0x1ba, 'Q%BC')];
+    _0x3b955f[_0x419f02(0x21b, '#m&y')] = _0x3eadfe[_0x419f02(0x227, 'dw2f')](_0x3b955f[_0x419f02(0x22b, 'vwcf')], 0x1n);
+    const _0x3e07c5 = _0x3b955f[_0x419f02(0x226, 'W@b1')],
+      _0x21b80c = await _0x3eadfe[_0x419f02(0x201, 'Bnla')](mg, _0x4dc4bc, _0x3e07c5),
+      _0x4552fc = new Uint8Array(_0x3eadfe[_0x419f02(0x1d2, '(N4&')](_0x3eadfe['axasv'](0x1 * 0x19d3 + -0x2590 + 0x9 * 0x14e, 0x8), _0x21b80c[_0x419f02(0x1ea, 'CN8C')]));
+    return _0x4552fc[0x0] = dn, Wg(_0x4552fc, 0x1, _0x3e07c5), _0x4552fc[_0x419f02(0x1b8, 'W@b1')](_0x21b80c, -0x1d89 + 0x35f * 0x1 + 0x1a33), _0x3eadfe['ZykCJ'](cn, _0x4552fc);
+  }
+  async [O(0x1d1, '#m&y') + 'odyB64'](_0x5e4c5c) {
+    const _0x4b334b = O,
+      _0x523a0d = {
+        'msDMv': _0x4b334b(0x1cb, '[8I4') + 'hannel\x20n' + _0x4b334b(0x242, 'oNgu') + 'lished',
+        'mvgrX': function(_0x4ad0f5, _0x40929e) {
+          return _0x4ad0f5 < _0x40929e;
+        },
+        'hgJPl': function(_0x29731c, _0x33de4) {
+          return _0x29731c + _0x33de4;
+        },
+        'SbxQo': function(_0x137c4a, _0x3fcaeb) {
+          return _0x137c4a + _0x3fcaeb;
+        },
+        'QiDkZ': _0x4b334b(0x22f, 'K#@S') + '\x20too\x20short',
+        'NXlcJ': function(_0x1e788a, _0x2adf8b) {
+          return _0x1e788a !== _0x2adf8b;
+        },
+        'mlGah': _0x4b334b(0x206, 'Q%BC') + _0x4b334b(0x1fc, 'FsAb') + '\x20version',
+        'mNmRT': function(_0x55aaee, _0xf8ef50, _0x19562d) {
+          return _0x55aaee(_0xf8ef50, _0x19562d);
+        },
+        'KjtYr': function(_0x225c7f, _0x38826b, _0x133fa7) {
+          return _0x225c7f(_0x38826b, _0x133fa7);
+        }
+      };
+    if (!this[_0x4b334b(0x1c5, 'kxCi')]) throw new Error(_0x523a0d[_0x4b334b(0x1c1, '1UVs')]);
+    const _0x1a532b = this[_0x4b334b(0x221, 'Q#j&')],
+      _0x313842 = un(_0x5e4c5c[_0x4b334b(0x1eb, 'Q%BC')]());
+    if (_0x523a0d[_0x4b334b(0x1af, 'zzx9')](_0x313842[_0x4b334b(0x241, 'nDxp')], _0x523a0d[_0x4b334b(0x22a, 'qIsB')](_0x523a0d[_0x4b334b(0x213, 'EL^F')](0x2 * 0x641 + 0x23de + -0x305f * 0x1, -0x613 * -0x2 + 0x1788 + -0x23a6), -0xedd * 0x2 + 0x9a3 + 0x1427))) throw new Error(_0x523a0d[_0x4b334b(0x1e1, 'E@o#')]);
+    if (_0x523a0d[_0x4b334b(0x209, 'R^Xq')](_0x313842[-0x1496 + -0xc * 0x259 + 0x2 * 0x1861], dn)) throw new Error(_0x523a0d[_0x4b334b(0x1bd, 'dv#A')]);
+    const _0x5affef = _0x523a0d['mNmRT'](wg, _0x313842, -0x60e + 0x4 * 0x647 + -0x130d * 0x1);
+    if (!gg(_0x1a532b, _0x5affef)) throw new Error('replay\x20o' + _0x4b334b(0x200, 'BpLd') + _0x4b334b(0x23a, 'if]g') + _0x4b334b(0x225, 'Q#j&') + _0x5affef);
+    return await _0x523a0d[_0x4b334b(0x204, '#m&y')](fg, _0x313842[_0x4b334b(0x224, 'nDxp')](-0x1532 + 0x1 * 0xf2f + 0x60c), _0x5affef);
+  }
+}
+const te = new Cg(),
+  Ie = {};
+
+function rt() {
+  const _0x49b777 = ['W7Hbc8kRCWtcSq', 'WR1skflcL8osWRPJ', 'W7lcG8kfomod', 'WOH/WRjcW7dcTG', 'W5zkzmoSWOG', 'W7qvW7j8WPT+', 'WRGfWPddMshcNSkQcG', 'ddjxxeZcK0VdS0W', 'WR5hi3hcRq', 'mYdcTaNcLtldQMi', 'W650rmkHW6OOdq', 'W63cIZKKwq', 'WO7dN8kKW67cUJpdMSku', 'W7GhW7DsWQG', 'WRDsjv3cGCouWR9x', 'W5tdG8kLh8kxWRu', 'W5DWh37cIq', 'yJaGr8o/DM3cSG', 'WOb1WPreW6RcUGf4', 'W5WNW75LW4W', 'cdTxbG7dPXRdJh3dLCk7W4jF', 'pdiLw8ov', 'W73cRHW', 'WOdcHfddPqhdQfxdMq', 'W706W79ZW4u', 'WO3cTxpdMX0', 'W5tdISk4W6bNW6TuWOm', 'WQzwnedcGCoiWOr4', 'W7i2B8oMWQa', 'W6ujmCk8', 'b0G5WReT', 'WOdcHeddOXRdOLJdUa', 'WRhcMXZdGKCN', 'WOCTWRn/wq', 'W6dcI8kyhCkaWQJcPNO', 'webUu8oVWRnwkq', 'caStaCoSgSk1dmkNsGTl', 'W4VdISkKW7f2W7e', 'W6/cSSk/nG', 'WPewWO5sW7m', 'fwWFWQevW4CtWQm', 'W4VdG8k4c8kkWRlcUKa', 'WQDYnSkLEZu', 'eremea', 'WP/cHe3dSrZdRW', 'WRSLW6XQWPD+WPxdQq', 'W7TYEmoOWPNdGmoGAq', 'kcZcUuxcK3e', 'zSoEWRi7W64', 'WO3dTmk5hexcI19E', 'xgTeDmo+', 'WRWVWReyW7DrqIm', 'j8khW5FdLYhcMN4S', 'W5bHyCoNWO8', 'grmQfmoRWRvvihmR', 'tKTRrCoQWRnieW', 'WQCfWP3dIYFcKW', 'WRP/a13cOG', 'WOKKthdcT8kTD8olW4K', 'WP5PWRHNzmo7W4tdMG', 'bapcVJlcPG', 'W5RcVvbfW6LX', 'WQFdVvpdMXRcHIDo', 'WQhdKmkZW4xcSq', 'W4RcVvHxW6vUe8o1', 'W67cRSk9nCokWQT0zq', 'WOhcHeddOcRdRK/dVq', 'W7P4sCk2W4SLdmob', 'DCowau3dMW', 'vL1ju8kQrq', 'i3pcVNqplLnp', 'W6JcPCkKlCoaWQ5fnq', 'hmkUiwSvvSkiW5u', 'WOfuk8kXWPHTvSkwWOxcHSkzW7vX', 'xSoGdLZdQmkKWQpdHW', 'WPHKfKpcNG', 'bKVdVXZdG2zKWOxcLHZcG8ol', 'WPK5A8ouW7Wl', 'W5T/uSkrW6K', 'uCopzWnsfSoeWPq', 'W4jApSotW5/dHxJdOa', 'W5vMrCoXWR8uDHS', 'W7H7aSoUW6JdOv/dJq', '6zgu5lQi5O6lwoMEKowTKUAwHEADOq', 'ea/dP1JdU3NdK1W', 'AYKmv8opvIiF', 'WPNdN8kPW7JcKcBdNW', 'WP8SWQnqECkXW77dLq', 'WOrElSk8WP9TvSkLWRFcJmk4W4Tm', 'sSklW6tdHSk+lHn8', 'W7hcQujLab0FW4i', 'WPNdN8kMW67cOcS', 'zCojWQ4NW6f2jW', 'W6b8rmkKW7uSfCo5', 'WResWPHFW4O', 'aJHYoCow', 'zCojWQXUWQG', 'emo4WPyVWQ9KhW', 'W5NcSfDqW7O', 'C2PDy8k0', 'WQ9yWQyQW4S/WP3dPmklaSoGlG', 'DCkPrSoXFa', 'WOy1DSoyW4OkW74', 'pW4buSoO', 'WPD/WRjbW5FcUWm', 'W4hcHc80FvW', 'uCoOFYbsemotWPK', 'W7LqW4RcMwBdICk6iKDHWOtdNcS', 'FxhcPGFcK0HtySkljLfjW44', 'W5a6wmo+WPpdMSo8', 'fSo6WRJcSmoNDbL9yt4kWQO', 'Bh11z8kxySkw', 'WO1zWO9gW6i', 'W7KUwmoCW7a', 'WQ7dS8oUySksW6Lvf1CcFMS', 'drxdIhpdRW', 'CYW3v8ocDsVcOG', 'WPGqCmoRW44Xe8oX', 'W7HbcSkUFXNcGbS', 'W6L4kuxcGW', 'DxNdKeNcIJldQvpcGW4', 'WPZcJ2RdSG', 'W49XcgdcQCkfEG', 'esGgvmog', 'htf1pCohma', 'WO4qW4fdW68gBmoE', 'WOO7WRH/u8k+W4RdJG', 'WQhcSc3dPH16W5BdHq', 'WPrLWOC2WQlcO1VcJq', 'vXdcQLVcSJ5TWOS', 'EJeNx8oe', 'FCoHW4XCga', 'pmkdW4RdGdVcNxeo', 'W5WkW6DXWP8', 'W7VdICkVhq', 'WQrIef/cKW', 'WPLnWOCEWQVcPHZcIW', 'sSkprSoNwW', 'W7aNW7vSWOC', 'W7ZcOSk1cSot', 'W6RcRGadthWZna', 'WOxdI8kWkhe', 'aJfOkCoAn8oHyW', 'WP8SWQrHECk5W4xdOW', 'WRtcIYZdJXC', 'W73cKgzQW55gmSo1', 'W5GTWPrcu8kZW7G', 'lY7cIrNcLdpdPw4', 'qKTRqCoQWRvCvG', 'WOvBhSo2W67dHuG', 'emo4WOW', 'WObFfgdcPW', 'W6JcPCkLkmomWRn0', 'W7ZcOZesdJO', 'W5NcPHTvWR0', 'W6tcRsKrua', 'W4hdKrRcO13cTqVdM8oJn8oWWRbY', 'C8ollgRdLmkg', 'W4HBomocW6q', 'WP7cKMFdMX4', 'W55lFCodW57dLhRdQG', 'zHSAzSo1', 'eMy/WQyoW4et'];
+  return rt = function() {
+    return _0x49b777;
+  }, rt();
+}
+Ie[O(0x234, '%[my')] = Sg, Ie[O(0x22e, 'dv#A')] = bg, Ie['SESSION_' + O(0x217, '3IpM') + 'R'] = yg, Ie[O(0x1b3, 'dw2f') + O(0x1bf, 'R^Xq')] = vg;
+const ee = Ie;
+
+function Wg(_0x1c8ee9, _0x38cfd3, _0x1d642e) {
+  const _0x5a46f6 = O,
+    _0x133212 = {};
+  _0x133212[_0x5a46f6(0x1c9, 'u1Eo')] = function(_0x3e9cf4, _0x134978) {
+    return _0x3e9cf4 + _0x134978;
+  };
+  const _0x386acf = _0x133212;
+  new DataView(_0x1c8ee9[_0x5a46f6(0x202, 'dw2f')], _0x386acf['kMOyD'](_0x1c8ee9['byteOffset'], _0x38cfd3), 0x20a * -0x13 + -0x4dc * 0x6 + 0x43ee)[_0x5a46f6(0x21c, 'BpLd') + 'nt64'](-0x4 * -0x4f8 + -0x36 + 0x1 * -0x13aa, _0x1d642e, !0x1);
+}
+
+function wg(_0x1a6707, _0x3ab53d) {
+  const _0x8cfa19 = O,
+    _0x977a58 = {};
+  _0x977a58[_0x8cfa19(0x1c7, 'Q%BC')] = function(_0x1db7dd, _0x50a2eb) {
+    return _0x1db7dd + _0x50a2eb;
+  };
+  const _0x4c3d18 = _0x977a58;
+  return new DataView(_0x1a6707[_0x8cfa19(0x1ca, '(N4&')], _0x4c3d18[_0x8cfa19(0x235, 'J%dI')](_0x1a6707[_0x8cfa19(0x239, 'DoN0') + 'et'], _0x3ab53d), -0x7d0 + 0x3ec * 0x2)['getBigUint64'](-0xd96 + 0x1966 * 0x1 + -0xbd0, !0x1);
+}
+
+function cn(_0xd51859) {
+  const _0x1d8746 = O,
+    _0x3ae32a = {};
+  _0x3ae32a['fKudJ'] = function(_0x17992e, _0x2be986) {
+    return _0x17992e < _0x2be986;
+  };
+  const _0x488a2f = _0x3ae32a;
+  let _0x5334b0 = '';
+  for (let _0x5aead4 = 0x14ad + -0x1 * 0x97c + 0x5 * -0x23d; _0x488a2f[_0x1d8746(0x1e3, ')iHL')](_0x5aead4, _0xd51859['length']); _0x5aead4++) _0x5334b0 += String['fromChar' + _0x1d8746(0x24b, 'mi8t')](_0xd51859[_0x5aead4]);
+  return btoa(_0x5334b0);
+}
+
+function un(_0x4f8e5b) {
+  const _0x12246f = O,
+    _0x523581 = {
+      'GlCay': function(_0x2f7568, _0x435e40) {
+        return _0x2f7568(_0x435e40);
+      }
+    },
+    _0x10beb2 = _0x523581[_0x12246f(0x1dd, '6EZm')](atob, _0x4f8e5b),
+    _0x210314 = new Uint8Array(_0x10beb2[_0x12246f(0x1f1, '1UVs')]);
+  for (let _0x2e16e5 = -0x53b + 0x68f * 0x2 + -0x7e3; _0x2e16e5 < _0x10beb2[_0x12246f(0x1c8, 'J%dI')]; _0x2e16e5++) _0x210314[_0x2e16e5] = _0x10beb2[_0x12246f(0x246, 'Y[Ay') + 'At'](_0x2e16e5);
+  return _0x210314;
+}
+const we = Y;
+(function(_0x2cce87, _0x5af811) {
+  const _0x1a94e0 = Y,
+    _0x398048 = _0x2cce87();
+  for (;;) try {
+    if (-parseInt(_0x1a94e0(0x103, 'Agqy')) / 0x1 + -parseInt(_0x1a94e0(0x128, '2&j)')) / 0x2 + -parseInt(_0x1a94e0(0x12a, 'vKhQ')) / 0x3 * (parseInt(_0x1a94e0(0x122, 'TIhl')) / 0x4) + -parseInt(_0x1a94e0(0xfa, 'czi3')) / 0x5 * (parseInt(_0x1a94e0(0x121, 'Okzd')) / 0x6) + parseInt(_0x1a94e0(0x120, '[9AR')) / 0x7 * (parseInt(_0x1a94e0(0x126, '3*ca')) / 0x8) + parseInt(_0x1a94e0(0x116, '8QD@')) / 0x9 + -parseInt(_0x1a94e0(0x11a, '3*ca')) / 0xa * (-parseInt(_0x1a94e0(0x127, 'sRu4')) / 0xb) === _0x5af811) break;
+    _0x398048['push'](_0x398048['shift']());
+  } catch {
+    _0x398048['push'](_0x398048['shift']());
+  }
+}(st, -0x1 * 0x47f89 + -0x2d7a * -0x1d + -0x2cd9d * -0x1));
+const Pg = (function() {
+    let _0x4981b1 = !0x0;
+    return function(_0x418667, _0x221f3e) {
+      const _0x41fdc5 = _0x4981b1 ? function() {
+        const _0xb729a5 = Y;
+        if (_0x221f3e) {
+          const _0xce519c = _0x221f3e[_0xb729a5(0x11c, 'QxvL')](_0x418667, arguments);
+          return _0x221f3e = null, _0xce519c;
+        }
+      } : function() {};
+      return _0x4981b1 = !0x1, _0x41fdc5;
+    };
+  }()),
+  Ot = Pg(void 0x0, function() {
+    const _0x4a39cd = Y,
+      _0x32e022 = {};
+    _0x32e022[_0x4a39cd(0x106, 'UZaJ')] = _0x4a39cd(0x12b, '[9AR') + _0x4a39cd(0x125, '57RW');
+    const _0x5a3b3c = _0x32e022;
+    return Ot[_0x4a39cd(0x10c, 'vKhQ')]()[_0x4a39cd(0x113, '5XnE')](_0x5a3b3c[_0x4a39cd(0x115, '3*ca')])[_0x4a39cd(0x107, 'WrML')]()[_0x4a39cd(0x11d, '3M#i') + _0x4a39cd(0x110, 'dvTx')](Ot)['search'](_0x5a3b3c['EJRXE']);
+  });
+Ot();
+const kg = 'X-Secure-Channel' + we(0xfb, 'WrML'),
+  pn = we(0xfd, 'WrML') + we(0x11f, '%GU1') + we(0x118, 'sRu4');
+
+function Tg(_0xfce7e8) {
+  const _0x5b73c9 = we,
+    _0x1c8025 = {
+      'zAGpQ': _0x5b73c9(0xfc, 'Mp&!'),
+      'AZpvC': function(_0x266440, _0x565ffe) {
+        return _0x266440 !== _0x565ffe;
+      },
+      'mPXTg': _0x5b73c9(0x11b, 'JkAw'),
+      'TaSce': function(_0x84cc26, _0x5cf1e6) {
+        return _0x84cc26(_0x5cf1e6);
+      },
+      'NSBRs': function(_0x3430cb, _0x39f7e2) {
+        return _0x3430cb >= _0x39f7e2;
+      },
+      'lUkbE': function(_0x1d6ea8, _0x22c294) {
+        return _0x1d6ea8 <= _0x22c294;
+      }
+    },
+    _0x26c9ab = _0xfce7e8?.[pn[_0x5b73c9(0x102, 't)Nr') + _0x5b73c9(0x108, 'JB!h')]()] ?? _0xfce7e8?.[pn];
+  if (typeof _0x26c9ab !== _0x1c8025[_0x5b73c9(0x112, 'yy)o')] && _0x1c8025['AZpvC'](typeof _0x26c9ab, _0x1c8025[_0x5b73c9(0x10a, 'JkAw')])) return null;
+  const _0x26a62b = _0x1c8025['TaSce'](Number, _0x26c9ab);
+  return Number[_0x5b73c9(0xfe, 'Kw5N') + 'r'](_0x26a62b) && _0x1c8025[_0x5b73c9(0x105, 'cse&')](_0x26a62b, -0x1ab9 + -0x4cc * 0x1 + 0x2179) && _0x1c8025[_0x5b73c9(0x124, 'QxvL')](_0x26a62b, 0xa7d + -0x427 * 0x1 + 0x3 * -0x155) ? _0x26a62b : null;
+}
+
+function mn(_0x5eb3d6) {
+  const _0x4bf5c9 = we,
+    _0x4627f9 = {};
+  _0x4627f9[_0x4bf5c9(0x12c, '%GU1')] = 'string', _0x4627f9[_0x4bf5c9(0x11e, 'n*lA')] = function(_0x525632, _0x5d8eb6) {
+    return _0x525632 || _0x5d8eb6;
+  }, _0x4627f9[_0x4bf5c9(0xf9, '8QD@')] = function(_0x219ce4, _0xd7bf5d) {
+    return _0x219ce4 === _0xd7bf5d;
+  };
+  const _0x34a6e8 = _0x4627f9;
+  if (typeof _0x5eb3d6 === _0x34a6e8[_0x4bf5c9(0x10e, 'fv$S')]) return _0x34a6e8[_0x4bf5c9(0x10d, 'ZGrb')](_0x5eb3d6, null);
+  if (_0x5eb3d6 && _0x34a6e8['Qwqvn'](typeof _0x5eb3d6, _0x4bf5c9(0x100, '8QD@'))) {
+    const _0x37e21a = _0x5eb3d6;
+    return _0x37e21a[_0x4bf5c9(0x129, 'Mp&!')] ?? _0x37e21a[_0x4bf5c9(0x123, 'wmO8')] ?? _0x37e21a[_0x4bf5c9(0x119, 'TIhl')] ?? null;
+  }
+  return null;
+}
+
+function Y(_0xd00ce, _0x1ce218) {
+  _0xd00ce = _0xd00ce - (0xd8b * -0x1 + -0xe66 + 0x1cea);
+  const _0x5ad81a = st();
+  let _0x5ba036 = _0x5ad81a[_0xd00ce];
+  if (Y['YwkgBs'] === void 0x0) {
+    var _0x55c5f6 = function(_0x34ae4b) {
+      const _0x5f1e06 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+      let _0x290b8d = '',
+        _0x84f101 = '',
+        _0xdc934 = _0x290b8d + _0x55c5f6,
+        _0x49e6d9 = ('' + function() {
+          return 0x2ec + -0x4a9 * -0x5 + -0x7 * 0x3bf;
+        })['indexOf']('\x0a') !== -0x1;
+      for (let _0x3ec683 = 0x0, _0xf1e2e0, _0xc0d590, _0x575ff3 = 0x0; _0xc0d590 = _0x34ae4b['charAt'](_0x575ff3++); ~_0xc0d590 && (_0xf1e2e0 = _0x3ec683 % 0x4 ? _0xf1e2e0 * 0x40 + _0xc0d590 : _0xc0d590, _0x3ec683++ % 0x4) ? _0x290b8d += _0x49e6d9 || _0xdc934['charCodeAt'](_0x575ff3 + 0xa) - 0xa !== 0x0 ? String['fromCharCode'](0xff & _0xf1e2e0 >> (-0x2 * _0x3ec683 & 0x6)) : _0x3ec683 : 0x0) _0xc0d590 = _0x5f1e06['indexOf'](_0xc0d590);
+      for (let _0x1eb64f = 0x0, _0x2ba33d = _0x290b8d['length']; _0x1eb64f < _0x2ba33d; _0x1eb64f++) _0x84f101 += '%' + ('00' + _0x290b8d['charCodeAt'](_0x1eb64f)['toString'](0x10))['slice'](-0x2);
+      return decodeURIComponent(_0x84f101);
+    };
+    const _0x1aeb92 = function(_0x366d73, _0x360485) {
+      let _0x544daa = [],
+        _0x57b091 = 0x0,
+        _0xeed54c, _0x2a3b06 = '';
+      _0x366d73 = _0x55c5f6(_0x366d73);
+      let _0x28af88;
+      for (_0x28af88 = 0x0; _0x28af88 < 0x100; _0x28af88++) _0x544daa[_0x28af88] = _0x28af88;
+      for (_0x28af88 = 0x0; _0x28af88 < 0x100; _0x28af88++) _0x57b091 = (_0x57b091 + _0x544daa[_0x28af88] + _0x360485['charCodeAt'](_0x28af88 % _0x360485['length'])) % 0x100, _0xeed54c = _0x544daa[_0x28af88], _0x544daa[_0x28af88] = _0x544daa[_0x57b091], _0x544daa[_0x57b091] = _0xeed54c;
+      _0x28af88 = 0x0, _0x57b091 = 0x0;
+      for (let _0x2af153 = 0x0; _0x2af153 < _0x366d73['length']; _0x2af153++) _0x28af88 = (_0x28af88 + 0x1) % 0x100, _0x57b091 = (_0x57b091 + _0x544daa[_0x28af88]) % 0x100, _0xeed54c = _0x544daa[_0x28af88], _0x544daa[_0x28af88] = _0x544daa[_0x57b091], _0x544daa[_0x57b091] = _0xeed54c, _0x2a3b06 += String['fromCharCode'](_0x366d73['charCodeAt'](_0x2af153) ^ _0x544daa[(_0x544daa[_0x28af88] + _0x544daa[_0x57b091]) % 0x100]);
+      return _0x2a3b06;
+    };
+    Y['KVUvXi'] = _0x1aeb92, Y['yKAzeY'] = {}, Y['YwkgBs'] = !0x0;
+  }
+  const _0x57fb69 = _0x5ad81a[0x15f1 + -0x1 * 0x26e5 + 0x10f4],
+    _0x38ec5a = _0xd00ce + _0x57fb69,
+    _0xff9332 = Y['yKAzeY'][_0x38ec5a];
+  if (_0xff9332) _0x5ba036 = _0xff9332;
+  else {
+    if (Y['cagsTf'] === void 0x0) {
+      const _0x9c74cf = function(_0x3122df) {
+        this['pgzHtS'] = _0x3122df, this['zfHnCn'] = [0x1, 0x0, 0x0], this['jdQUgD'] = function() {
+          return 'newState';
+        }, this['ZsVfot'] = '\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*', this['WqzsQP'] = '[\x27|\x22].+[\x27|\x22];?\x20*}';
+      };
+      _0x9c74cf['prototype']['eqmjqc'] = function() {
+        const _0x53286f = new RegExp(this['ZsVfot'] + this['WqzsQP']),
+          _0x26a9b1 = _0x53286f['test'](this['jdQUgD']['toString']()) ? --this['zfHnCn'][0x1] : --this['zfHnCn'][-0x1c0b + 0x3 * -0x633 + -0x4aa * -0xa];
+        return this['eUVhwk'](_0x26a9b1);
+      }, _0x9c74cf['prototype']['eUVhwk'] = function(_0x3fb284) {
+        return ~_0x3fb284 ? this['WqtecO'](this['pgzHtS']) : _0x3fb284;
+      }, _0x9c74cf['prototype']['WqtecO'] = function(_0x170219) {
+        for (let _0x4015e1 = -0x403a + 0x2 * 0x201d, _0x248e58 = this['zfHnCn']['length']; _0x4015e1 < _0x248e58; _0x4015e1++) this['zfHnCn']['push'](Math['round'](Math['random']())), _0x248e58 = this['zfHnCn']['length'];
+        return _0x170219(this['zfHnCn'][-0x1 * 0x161 + -0x378 + 0x4d9]);
+      }, ('' + function() {
+        return 0x0;
+      })['indexOf']('\x0a') === -0x1 && new _0x9c74cf(Y)['eqmjqc'](), Y['cagsTf'] = !0x0;
+    }
+    _0x5ba036 = Y['KVUvXi'](_0x5ba036, _0x1ce218), Y['yKAzeY'][_0x38ec5a] = _0x5ba036;
+  }
+  return _0x5ba036;
+}
+
+function st() {
+  const _0x48e9ec = ['zCkIWQWaW6C', 'osLDW5S', 'WQOsW48WW4/cRg4zlq', 'W63dQCoUW4xcMSoSCmkAAmoBW6BcIq', 'ytGUWRqdsCkly8oZWQJdGIC', 'W4VcRuxdMmor', 'WRVdMf08WQ8YWRJdGSoB', 'A8kaW7FdOCkvhvOW', 'lxSyW7jd', 'WQFdRSoPErW', 'CmocCCkiW4ZcS8oHqgy8W5FcTW', 'W4RdJSoXW4qa', 'W53cQ0xdNSonna', 'WR/cRSodW5iioeRdQG', 'DuW7W5hdU8kKr8oK', 'WQ8wW41hWOFdUwqrb2K6da', 'WPNdU8oYAHf+', 'W53dGhLigSk2WQL0vG', 'WRH9CmoxhmkrWQLv', 'txijWR7dHvqBW7mRFSoCWPS', 'W6fjW5hcQaxcKmk8WRBcTIhdJSo1W7e', 'WOxcTdz7WRW', 'ymozwJeN', 'WPpdRmodW4mzjfBdQa', 'i1H+', 'WOlcS8ozW5GxiXtcTq', 'WOpcQsZdM8ke', 'WRRdN1XqW4n0WPBdICoJWQRdSSo5', 'W7ZcHdCCWOqUWQZdLW', 'WOhcLW5ukG', 'WR1WW4HhAW', 'W7/dLuuDWOS5W5ddRSodca', 'WOCmqq', 'W6VcISkXkKyUj17cOgO', 'o8oKcgtdMa', 'W6hdNXeQW4ac', 'b8oFWOGvwNSAW61PEmomW44', 'W5XPWQ8UW7a', 'W4FcQSkTn0u+iNLXWROMrru', 'BMJcLZ8Ev8kxW4JdRW', 'W7lcJSkIWPZdM8kQvW', 'W6eOWRq', 'WQ0AW40KW73cK3u0eW', 'WOdcJbNdRCkgxW', 'AmkhWRCoW5S', 'WQBcKrVdVSoyW7bcWOC', 'xmkiW7r3iW', 'DLCEW5XFwSk7EG', 'D8kAW67dU8o6DIDmWPJcQG', 'f8kMWQjpWQrzWQTf', 'WRHTW6VcNmo7WQP9WPZcKCoL', 'w8k7W4feaSoShG'];
+  return st = function() {
+    return _0x48e9ec;
+  }, st();
+}
+const Ue = q;
+(function(_0x541290, _0x331f2e) {
+  const _0x537037 = q,
+    _0x2bc80f = _0x541290();
+  for (;;) try {
+    if (parseInt(_0x537037(0x9f, 'Ay&z')) / 0x1 * (parseInt(_0x537037(0x88, 'Hnmj')) / 0x2) + parseInt(_0x537037(0x6b, 't1mg')) / 0x3 * (-parseInt(_0x537037(0xbb, 'bvbI')) / 0x4) + parseInt(_0x537037(0xa8, 'uv7u')) / 0x5 + -parseInt(_0x537037(0x6f, '%zGZ')) / 0x6 + -parseInt(_0x537037(0x74, '%$m2')) / 0x7 + -parseInt(_0x537037(0x83, 'PRY@')) / 0x8 * (parseInt(_0x537037(0xbc, '%zGZ')) / 0x9) + -parseInt(_0x537037(0xb2, '9x]g')) / 0xa * (-parseInt(_0x537037(0xbf, 'ZHyA')) / 0xb) === _0x331f2e) break;
+    _0x2bc80f['push'](_0x2bc80f['shift']());
+  } catch {
+    _0x2bc80f['push'](_0x2bc80f['shift']());
+  }
+}(it, 0x5f4 * 0x9 + 0x1b258 + 0x260f * 0x1));
+
+function it() {
+  const _0x502ef5 = ['F8o0cmojW4y', 'WR7cLg0RAYtdKuS', 'dhhdJmkv', 'AsvxcbXddSo9', 'W5FdSty1WOK', 'lKZdH8kgWOC', 'CCkSxCknW5y', 'tYm1CYVdKSk8FW', 'W4BdMayxWPfmamo1', 'ybNdVIGh', 'd8opW5RdSZNdPmkvxCkczq/cLLq', '5Bsy56AV55wpgWX1W7bg', 'WP0ZuXPs', 'ueldJSkMlw0', 'lJvvW6WhvmkOWQu', 'WOdcJMvtW5StiCoaW5eQB2O', 'W6BcK8ojl8kK', '5ywJ55M8dSkqW5ddHHtdJW', '5z6c5z+35OIg5B2J77+V5RwQ6kAM5zU6', 'mW9rW5ea', 'WPTjWPJcMgC', 'WQZcULFcLxrQFWS', 'AXBdUmocW7C', 'egq5WPmjWOZcUa', 'W4SDiYVcNSknbSkZ', 'zvn3W4ezbe5s', 'WPLlbKK4Ea', 'FCobqmoRs8oq', 'WOb5W4/cLLDgWOVcNW', 'W7FdIuJcPxS', 'ymoqESoSFG', 'CXqxDJe', 'xCkAgtjarCoQgMJdUmkjzW', 'WOpcJCkqW69TWOnGW4S', 'WP9YW5lcICkV', 'BeKdwW', 'WRtdTSkXWPz/WRddTSor', 'WO/cT0KJtG', 'W7FdNCkWWPzOWRldMa', 'id9OW6Gg', 'W4hdNsbLFW', 'W40bid3cUG', 'W5K9oIJcGG', '5B2N5yMG6AcM6zYQ6ycw6l2a5lMv5A6F', 'W6tdT8k4zKa', 'W5tdRSovW7hdSG', 'W4vPW69pWOu', 'W78/WRtdR8ooWQVcTCkmW70VW4/dKq', 'WQfJf8kOiG', '6kYG6zwK5lIk5O2h77YLtMiq', 'fH/cNmoHFdfVBCozW5ddONC', 'zmk4WRtcR0u', 'W55lW7TKWOZcPhi', 'W5ZdKmk7AKRcP8oIWOi', 'qu0k', 'W54BvG9TimogzSoBsmkPWQS', 'W7/dNCoPW6BdLG', 'eHpcN8oNFMHQBSoiW6tdIW', 'FHnEW6yHDSkY', 'WQ9lW5BcRCkC', 'umkgW7rLW7i', 'qLFdN8k4nW', 'W6XPW5DKWRGSW51V', 'v0JVVQpMLltMSPVLRONMIjNLRRq', 'thOpvf8', 'WR9dW5lcG8kC', 'iINcPKFdIXOtWQ7dRCoGW4a', 'umo9DwSXkSor', 'W5W9WO46W4pcVeVcG2hdVCkW', '5ysb6AIK6k+S77YF6k6d5yY657IE5OM0', 'imkuhmk/wmoxWO7dT2Pi', 'jctcNx7dRq', 'W6FdGs1ZwW', 't3ylwCk2', 'WQfiWQhcPLi', 'WRXeWQ3cVLW1', 'W6zKW7XtWQe', 'brLJEZZdQJTfoSoNW7m', 'WQNcM8k1gGJdQSoKBa', 'ecRcQMNdNW', 'tqbVkcS', '55AgWPRdRSoWW7qut8oh', 'xmkqhJfgsCoFmKldOSksrq', 'W4ehtb8', 'F00UvmkT', 'WQJcNmoLxIhdKCo4BwqH', 'W6H+W5n1WRu', 'ja8NWPjlvxnpWR5Uk8oN', 'WP/dU8kVWOtcOa', '5PI/5O2O5P6f5PwR54QW5REu6ksP5zQh', 'stHada1u', 'C8opqSoHw8oqW4dPM6O'];
+  return it = function() {
+    return _0x502ef5;
+  }, it();
+}
+const Rg = (function() {
+    const _0x5679c3 = q,
+      _0x44abbc = {
+        'CFggK': function(_0x362162, _0x41cc8a) {
+          return _0x362162 === _0x41cc8a;
+        },
+        'nynlb': _0x5679c3(0x92, '%$m2') + 'd',
+        'gNkUF': function(_0x5c22f0, _0x252abb) {
+          return _0x5c22f0 === _0x252abb;
+        },
+        'hCyEV': function(_0x33bcc9, _0x5dddd5) {
+          return _0x33bcc9(_0x5dddd5);
+        },
+        'ibEDm': function(_0x402506, _0x853a58) {
+          return _0x402506 === _0x853a58;
+        },
+        'JoVXI': _0x5679c3(0x7d, 'Hnmj')
+      };
+    let _0x2c068d = !0x0;
+    return function(_0x3b5edc, _0x41c354) {
+      const _0x2ddeb7 = _0x5679c3,
+        _0x538b79 = {
+          'fOJwn': function(_0xd5bfdf, _0x3f8224) {
+            return _0xd5bfdf(_0x3f8224);
+          },
+          'gJVTR': function(_0x1db85b, _0x408dc0) {
+            return _0x44abbc[q(0x9e, 'PJg7')](_0x1db85b, _0x408dc0);
+          },
+          'TxWRW': _0x2ddeb7(0xb5, 'RD21')
+        };
+      if (_0x44abbc[_0x2ddeb7(0xc5, 'vsPa')](_0x44abbc[_0x2ddeb7(0xa7, 'vsPa')], _0x44abbc[_0x2ddeb7(0x71, 'gLiX')])) {
+        const _0x5534f0 = _0x2c068d ? function() {
+          const _0x19ef95 = _0x2ddeb7,
+            _0x15a3b1 = {
+              'qFZdq': function(_0x84e53d, _0x2a16a8) {
+                return _0x538b79[q(0xa3, 'z5M5')](_0x84e53d, _0x2a16a8);
+              }
+            };
+          if (_0x41c354) {
+            if (_0x538b79[_0x19ef95(0x6d, 'rm0d')](_0x538b79[_0x19ef95(0x8d, 'i2C&')], _0x538b79[_0x19ef95(0x9b, 'uv7u')])) {
+              const _0x4ab6d0 = _0x41c354[_0x19ef95(0xb6, '9x]g')](_0x3b5edc, arguments);
+              return _0x41c354 = null, _0x4ab6d0;
+            } else throw new _0x331c05(_0x15a3b1[_0x19ef95(0x85, 'Ovvq')](_0x20b0e2, !0x1));
+          }
+        } : function() {};
+        return _0x2c068d = !0x1, _0x5534f0;
+      } else {
+        const _0x116dd4 = _0x297b34[_0x2ddeb7(0x77, 'rm0d')]?.[_0x2ddeb7(0xc4, 'i2C&')];
+        if (_0x116dd4) return _0x116dd4;
+        const _0x1ec299 = _0x44abbc['CFggK'](typeof _0x54d982, _0x44abbc[_0x2ddeb7(0xc3, 'i2C&')]) ? void 0x0 : _0x3d387e['isSecure' + _0x2ddeb7(0x90, 'H*J@')];
+        throw _0x44abbc['gNkUF'](_0x1ec299, !0x1) ? new _0x1d7b75(_0x44abbc[_0x2ddeb7(0x96, '(PYb')](_0x55d0bf, !0x1)) : new _0x5e8615(_0x226973(_0x1ec299));
+      }
+    };
+  }()),
+  Ft = Rg(void 0x0, function() {
+    const _0x858ea8 = q,
+      _0x1af765 = {};
+    _0x1af765[_0x858ea8(0xc0, 'wfPr')] = '(((.+)+)' + _0x858ea8(0x70, 'qnql');
+    const _0x5989e2 = _0x1af765;
+    return Ft[_0x858ea8(0x81, 'Hnmj')]()[_0x858ea8(0x86, '9x]g')](_0x5989e2[_0x858ea8(0x82, 'spon')])[_0x858ea8(0x91, 'z5M5')]()[_0x858ea8(0xb7, 'vsPa') + _0x858ea8(0xaf, 'gLiX')](Ft)[_0x858ea8(0x93, 'qnql')](_0x5989e2[_0x858ea8(0x7e, 'Wrt@')]);
+  });
+Ft();
+
+function fn(_0x3ada82) {
+  const _0x3c5343 = q,
+    _0x5dd078 = {};
+  _0x5dd078[_0x3c5343(0xc2, 'gLiX')] = function(_0x4be22f, _0x1f53ce) {
+    return _0x4be22f === _0x1f53ce;
+  }, _0x5dd078[_0x3c5343(0xb9, 'a(2[')] = 'object', _0x5dd078[_0x3c5343(0xa1, ']TXd')] = function(_0x28dc73, _0x3d37fa) {
+    return _0x28dc73 !== _0x3d37fa;
+  }, _0x5dd078['QgOBv'] = function(_0x5a2a5b, _0x4633b2) {
+    return _0x5a2a5b === _0x4633b2;
+  }, _0x5dd078[_0x3c5343(0x8f, '3iKy')] = _0x3c5343(0xac, 'PRY@'), _0x5dd078[_0x3c5343(0x97, 'ZHyA')] = _0x3c5343(0xa4, 'oAq2') + _0x3c5343(0x8a, 'VWtM') + _0x3c5343(0x8b, 'Hnmj') + _0x3c5343(0x84, 'qnql') + 'rypto；请改' + _0x3c5343(0x6e, '(!6!') + _0x3c5343(0xaa, '(PYb') + _0x3c5343(0x78, 'ZHyA') + '外）', _0x5dd078[_0x3c5343(0x8c, '578*')] = '当前浏览器不支持\x20WebCryp' + _0x3c5343(0xb8, '9x]g') + _0x3c5343(0xbe, '%zGZ') + _0x3c5343(0x76, 'uv7u');
+  const _0x47b8fc = _0x5dd078;
+  return _0x3ada82 === !0x1 ? _0x47b8fc[_0x3c5343(0xa6, '(!6!')](_0x47b8fc['Gxekg'], 'RZuRH') ? _0x47b8fc[_0x3c5343(0x7f, 'VWtM')](typeof _0x2f19e0, _0x47b8fc[_0x3c5343(0x98, '0PGI')]) && _0x47b8fc[_0x3c5343(0x79, '4skk')](_0x4264de, null) && _0x47b8fc[_0x3c5343(0xb1, '(!6!')](_0xa1799b[_0x3c5343(0x95, 'XI%L') + _0x3c5343(0x9d, 'Ay&z') + 't'], !0x0) : _0x47b8fc[_0x3c5343(0xa2, 'z5M5')] : _0x47b8fc[_0x3c5343(0xba, 'uv7u')];
+}
+
+function q(_0x3a855e, _0x5d3ef2) {
+  _0x3a855e = _0x3a855e - 0x6a;
+  const _0x5d3564 = it();
+  let _0x393eee = _0x5d3564[_0x3a855e];
+  if (q['WejWft'] === void 0x0) {
+    var _0x57531b = function(_0x1dba47) {
+      const _0x50840a = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+      let _0x1cd810 = '',
+        _0x445fcc = '',
+        _0x1f8b69 = _0x1cd810 + _0x57531b,
+        _0x8f729e = ('' + function() {
+          return 0x2395 * -0x1 + 0x24dd * 0x1 + -0x148;
+        })['indexOf']('\x0a') !== -0x1;
+      for (let _0x1262ad = 0x0, _0x78dbe8, _0x17233a, _0x524af3 = 0x0; _0x17233a = _0x1dba47['charAt'](_0x524af3++); ~_0x17233a && (_0x78dbe8 = _0x1262ad % 0x4 ? _0x78dbe8 * 0x40 + _0x17233a : _0x17233a, _0x1262ad++ % 0x4) ? _0x1cd810 += _0x8f729e || _0x1f8b69['charCodeAt'](_0x524af3 + 0xa) - 0xa !== 0x0 ? String['fromCharCode'](0xff & _0x78dbe8 >> (-0x2 * _0x1262ad & 0x6)) : _0x1262ad : 0x0) _0x17233a = _0x50840a['indexOf'](_0x17233a);
+      for (let _0x50b5a6 = 0x0, _0xa81435 = _0x1cd810['length']; _0x50b5a6 < _0xa81435; _0x50b5a6++) _0x445fcc += '%' + ('00' + _0x1cd810['charCodeAt'](_0x50b5a6)['toString'](0x10))['slice'](-0x2);
+      return decodeURIComponent(_0x445fcc);
+    };
+    const _0xf5a384 = function(_0x4a03dc, _0x231564) {
+      let _0x280f47 = [],
+        _0x225927 = 0x0,
+        _0x5a22ae, _0x323642 = '';
+      _0x4a03dc = _0x57531b(_0x4a03dc);
+      let _0x3478d1;
+      for (_0x3478d1 = 0x0; _0x3478d1 < 0x100; _0x3478d1++) _0x280f47[_0x3478d1] = _0x3478d1;
+      for (_0x3478d1 = 0x0; _0x3478d1 < 0x100; _0x3478d1++) _0x225927 = (_0x225927 + _0x280f47[_0x3478d1] + _0x231564['charCodeAt'](_0x3478d1 % _0x231564['length'])) % 0x100, _0x5a22ae = _0x280f47[_0x3478d1], _0x280f47[_0x3478d1] = _0x280f47[_0x225927], _0x280f47[_0x225927] = _0x5a22ae;
+      _0x3478d1 = 0x0, _0x225927 = 0x0;
+      for (let _0xa4fd18 = 0x0; _0xa4fd18 < _0x4a03dc['length']; _0xa4fd18++) _0x3478d1 = (_0x3478d1 + 0x1) % 0x100, _0x225927 = (_0x225927 + _0x280f47[_0x3478d1]) % 0x100, _0x5a22ae = _0x280f47[_0x3478d1], _0x280f47[_0x3478d1] = _0x280f47[_0x225927], _0x280f47[_0x225927] = _0x5a22ae, _0x323642 += String['fromCharCode'](_0x4a03dc['charCodeAt'](_0xa4fd18) ^ _0x280f47[(_0x280f47[_0x3478d1] + _0x280f47[_0x225927]) % 0x100]);
+      return _0x323642;
+    };
+    q['VzVQLX'] = _0xf5a384, q['dWLnoR'] = {}, q['WejWft'] = !0x0;
+  }
+  const _0x4c6801 = _0x5d3564[-0x14d5 + 0x1 * 0x14d5],
+    _0x5d3d1c = _0x3a855e + _0x4c6801,
+    _0x1a3224 = q['dWLnoR'][_0x5d3d1c];
+  if (_0x1a3224) _0x393eee = _0x1a3224;
+  else {
+    if (q['uTxwip'] === void 0x0) {
+      const _0x22dca6 = function(_0x18a76b) {
+        this['HMALRK'] = _0x18a76b, this['tWMkWc'] = [0x1, 0x0, 0x0], this['qnurZt'] = function() {
+          return 'newState';
+        }, this['OGhYhA'] = '\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*', this['EvTCSY'] = '[\x27|\x22].+[\x27|\x22];?\x20*}';
+      };
+      _0x22dca6['prototype']['hsItHB'] = function() {
+        const _0x36d7f2 = new RegExp(this['OGhYhA'] + this['EvTCSY']),
+          _0x310960 = _0x36d7f2['test'](this['qnurZt']['toString']()) ? --this['tWMkWc'][-0x2 * -0x69d + 0x572 + 0x12ab * -0x1] : --this['tWMkWc'][-0x1 * -0x1f2f + -0x6 * 0x46c + 0x18d * -0x3];
+        return this['qpCVtW'](_0x310960);
+      }, _0x22dca6['prototype']['qpCVtW'] = function(_0x225db9) {
+        return ~_0x225db9 ? this['dGcGeB'](this['HMALRK']) : _0x225db9;
+      }, _0x22dca6['prototype']['dGcGeB'] = function(_0x1f0f79) {
+        for (let _0x4c1ccf = 0x0, _0xbc19cc = this['tWMkWc']['length']; _0x4c1ccf < _0xbc19cc; _0x4c1ccf++) this['tWMkWc']['push'](Math['round'](Math['random']())), _0xbc19cc = this['tWMkWc']['length'];
+        return _0x1f0f79(this['tWMkWc'][0x8 * -0x13c + -0x242 * -0x6 + -0x3ac]);
+      }, ('' + function() {
+        return 0x19c7 * -0x1 + 0x5a8 + 0x1 * 0x141f;
+      })['indexOf']('\x0a') === -0x1 && new _0x22dca6(q)['hsItHB'](), q['uTxwip'] = !0x0;
+    }
+    _0x393eee = q['VzVQLX'](_0x393eee, _0x5d3ef2), q['dWLnoR'][_0x5d3d1c] = _0x393eee;
+  }
+  return _0x393eee;
+}
+class Dg extends Error {
+  [Ue(0xae, 'Ms^c') + Ue(0x7a, 'PJg7') + 't'] = !0x0;
+  constructor(_0x40abf6) {
+    const _0x92c418 = Ue;
+    super(_0x40abf6), this[_0x92c418(0x9c, 'a(2[')] = 'Insecure' + _0x92c418(0x7c, 'rm0d') + _0x92c418(0x7b, 'Wrt@');
+  }
+}
+
+function Ng(_0x43dd5b) {
+  const _0x58eff9 = Ue,
+    _0x42ace8 = {};
+  _0x42ace8[_0x58eff9(0xb4, 'uv7u')] = function(_0x54b22e, _0x19f589) {
+    return _0x54b22e === _0x19f589;
+  }, _0x42ace8[_0x58eff9(0xc1, ']TXd')] = _0x58eff9(0x94, 'ZHyA'), _0x42ace8[_0x58eff9(0x73, 'vsPa')] = function(_0xf9b4f5, _0xa6da0f) {
+    return _0xf9b4f5 !== _0xa6da0f;
+  };
+  const _0x163711 = _0x42ace8;
+  return _0x163711[_0x58eff9(0xa9, ')bRR')](typeof _0x43dd5b, _0x163711[_0x58eff9(0x75, 'HhaA')]) && _0x163711[_0x58eff9(0xa5, 'Ms^c')](_0x43dd5b, null) && _0x163711[_0x58eff9(0x6c, 'wfPr')](_0x43dd5b[_0x58eff9(0x95, 'XI%L') + _0x58eff9(0x80, '0PGI') + 't'], !0x0);
+}
+
+function Ag() {
+  const _0x16e275 = Ue,
+    _0x4064ed = {};
+  _0x4064ed[_0x16e275(0x89, '5gy&')] = _0x16e275(0x9a, 'vetC') + 'd';
+  const _0x5a8e64 = _0x4064ed,
+    _0x4d19dc = globalThis['crypto']?.['subtle'];
+  if (_0x4d19dc) return _0x4d19dc;
+  const _0xa7bd3e = typeof window === _0x5a8e64[_0x16e275(0xa0, '578*')] ? void 0x0 : window[_0x16e275(0x87, '578*') + 'Context'];
+  throw _0xa7bd3e === !0x1 ? new Dg(fn(!0x1)) : new Error(fn(_0xa7bd3e));
+}
+const M = Z;
+(function(_0x370a61, _0x18fe8d) {
+  const _0x420950 = Z,
+    _0x4c8eaa = _0x370a61();
+  for (;;) try {
+    if (parseInt(_0x420950(0x38c, '(OcK')) / 0x1 + parseInt(_0x420950(0x31f, '#72G')) / 0x2 + parseInt(_0x420950(0x265, 'pZTB')) / 0x3 * (-parseInt(_0x420950(0x3c7, 'f%K*')) / 0x4) + parseInt(_0x420950(0x347, 'pZTB')) / 0x5 * (parseInt(_0x420950(0x28d, '%paf')) / 0x6) + -parseInt(_0x420950(0x26b, 'f%K*')) / 0x7 * (parseInt(_0x420950(0x2e1, 'R*B1')) / 0x8) + parseInt(_0x420950(0x1ea, '96a$')) / 0x9 + -parseInt(_0x420950(0x361, 'kn$$')) / 0xa * (parseInt(_0x420950(0x1fe, '95U*')) / 0xb) === _0x18fe8d) break;
+    _0x4c8eaa['push'](_0x4c8eaa['shift']());
+  } catch {
+    _0x4c8eaa['push'](_0x4c8eaa['shift']());
+  }
+}(lt, -0x1 * -0x2e151 + -0x19743 + -0x2 * -0xcd4a));
+
+function lt() {
+  const _0x461dd5 = ['WOldH8kpWRNdNq', 'WRKYfCojiG', 'wNnwvYBcTMv+', 'f8kEW5PfWQNcImki', 'W5PsW5tdKcRdTSkeWP4', 'eSkjW4Xq', 'rNpcRaO', 'WOXBWOxcGNddPSoTWOO', 'WOiqgs9kc8ohW6u', 'FCktgGZdV8ooW7xcUa', 'CvnrW6hdVmksgKS', 'WR/dHxeTW48TaX0', 'xIP7sLHOW6RdJq', 'WOtdGSkCW5nx', 'bcSadMFdPJT2o1JcM8kOW6C', 'WPaSuG', 'prG6xG', 'W5RdG8o4oqvRvem', 'jWRdPHi', 'pxVdRMuW', 'W5XqW4NdHZ0', 'uSkLea', 'e8kvW51tWRRcJmkiWP0', 'W6hcPSkRWPeYW5NcILq', 'W4OBWQO1yq', 'W6LxWPukzG', 'zSkzb1pdUSotW6NcSW', 'ESkydrNdTSojW6JcUa', 'pSkmW6r6WPO', 'pMxdU3tcJv5bkG', 'iaZdVrBdVSob', 'bYz4qu0', 'WQqJWPK7jr3dSKG', 'l2JcLb8', 'd8oKvL/cI8os', 'iXNdVr7dVCov', 'daVdRc3dTCosvSka', 'nSk5W4X7WPO', 'xgyLW4PNE8omhq', 'EKyYW7zE', 'rwKYW458FSoecW', 'WQbbu3tcGG', 'bsjFtMu', 'etxcMfVcG8kporW', 'W59heZjSlSozW7G', 'W5zwhtm', 'W6iSoCkU', 'WR01hSoEp8oLpsS', 'fhRdHMm6', 'sg9twa0GEmo+', 'W68NWOu3FGS', 'vgNdNrpcUCkodHrbWPC', 'hSkEW4PeWRhcN8kzW40', 'W4VdH8oMoff8', 'mSocrwpcQa', 'xN1BuIhcT2T7', 'cmoVjSk5cW', 'tComW6fZWPZcImk3WQG', 'vwddHSoAW5W', 'W7RcOmkVWOm', 'guBdHNGu', 'WPrLB0VcJG', 'qNnMqIdcTMr3', 'pdKusqy6W714', 'jmk9AxVcSSoTWQ3dUG', 'W5HfhdP3kColW6C', 'WRTLW6VdKa', 'ESkPhCk6odxdNmkn', 'W4TBW47dHsVdRmkOWOS', 'WQOVW5HrW6m', 'W4meFSofWPj4sW', 'WOOnW7TkW4ddQmk/ha', 'WRCyxCk4WP4', 'AtH2Fe50W7NdJW', 'W7WjjSkJW6G', 'WRBdGSkEW4DUk8kMW4u', 'iCkiW4XvWR3cNCkiWO4', 'W4CtWOGwwW', 'zvxcMda', 'u8kqW4xcMq', 'WO/dHKdcTmkMkwm', 'W5FdS8ozlva', 'WPW+amoE', 'qhOQ', 'WPNdPCk/WRddJq', 'FwO3W5vZ', 'cCoJbfxcISorW6xcNq', 'xfNcQGNcRq', 'W7NdH385', 'WO9bBMZcIa', 'WOhdOSkUW6zEfmkCW5G', 'oKnHW58vW4hdMCkr', 'FhLGyrS', 'qCkZbSoTA1hdHJO', 'xsngW70U', 'W7iPoCkJW5u', 'DvpcKtJcJCo0', 'WOu6WORdTra', 'WOpdJ1ZcNSkT', 'W4vwfZ1SimoeWQm', 'hH8XE8kj', 'WPSYWOddPHW', 'W5bjWRuSWRP/', 'WOiCWO3dSXmeW4NcGW', 'W5NdTNq9W7S', 'bLNOR7BPL5JKU7RMJORcNri', 'fZ/cMvG', 'qIxdLmozW5ZdSGiH', 'cCkEW4HeWQVcHW', 'jCkiW4P5WRRcHSkkWOq', 'jG0OqSk0xG', 'oX3dRHVdTCouvW', 'WO/dJfRcOSkU', 'dsBcJKFcG8krlW', 'W68JoCkQW4GRzW', '6lIr5lI+776x5BEM5OQC57M66l2U5OY+', 'yt0xueyKW7T/', 'W6xcKa8EBSovyLO', 'WP3dOLtcQ8kg', 'W7G2WOGMFX0', 'qwWYW4P3', 'W5njWOmbsq', 'rgPZW4NdG8kK', 'W53dH8oU', 'WRhdONZcUSopfeJcVq', 'hSoqFGK', 'x8kqgKrLW6m', 'W69xerf2kmonW6u', 'W6JPMkpLPABcKG', 'W79PWPOhta', 'umkfcJpdOSojW6hcTa', 'jCo4nSkjgG', 'cLXgqfCZomo/', 'pIeJx8kq', 'ltqgvquXW6b6', 'W4eob8k2W58', 'WPLzWPCLFCkPWRX0', 'WO9xCfBcJq', 'WOddTCk/W7Tv', 'WRtdS8kVWOFdNmkBz8kE', 'W5NdRmkHCeaE', 'p8oDB8oCW4i', 'W5ebWRScra', 'c1FdR10jgmk5mW', 'W63cISoCqIi', 'W4TvWOO2Aa', 'qdv9W4eT', 'W7XZWR0axq', 'W6JcPJ8bu8oYvNy', 'rSkhlYNdPq', 'rbPCs3W', 'c8oHzCo6W5y', 'W65IWO8ZyWldSK8', 'xwv3W4NdGSk+oJq', 'sSkZkH3dGW', 'EabFW4yC', 'w3SJWOz0FSoaaG', 'cszvra4', 'hCoxWO3dJW7cSmk9WP8', 'W4TBW47dKda', 'W53dUSkbyuC', 'WP7dUKxcQCkg', 'cZhcHu/cN8kjkXi', 'r8kZkdJdLCoY', 'rSkHaxjx', 'W4ddHNmhW4yXera', 'W5fyWQ0GWRDSnCkh', 'qCkZbmoOyuZdGq', 'WOSOrCkqWQbVW6a', 'jxpdO1JdIaW', 'W4JcPSoOzchdICodW74', 'W4/dSmoVDuyDW7/dPW', 'WPegW6TwW5RdOSkPcG', 'phJcKbVdGJTP', 'Bbz+W48', 'WOGkWONcGxpcSmk0WQ9VlCkoyG', 'FLL0CHFcJq', 'a2Taq1SMp8kR', 'rN1rzsBcVNHK', 'EgVcRMBdJW', 'yZHRFwHoW5q', 'D0NcIZy', 'WPhdTmk+W5nP', 'gSkPWPnsW6/dVbKE', 'WR/dK0BcV8kU', 'WR3dOMBcHG', 'W50DWOdcTmo/xmoHW7D2W4CGDW', 'w23cNrZcQa', 'wCkbl1LWW7rJ', 'WQ3dSwFcGG', 'WOzyW4VdGSk9', 'WP1UW4NdG8kM', 'lgxdTxFcVvbpkG', 'WOewrxa0B8kAWQi', 'gMqPW4f7Cq', 'hCoJqq', 'WQeSWOpdSJ4', 'fCkvW6bs', 'WQddPNJcLmk4', 'W48aA8oa', 'hmkAW59qWPW', 'xg5GW4ZdI8kLlq', 'WQ5YCg7cIa', 'W7ddLNe4W4STeq0', 'WOGjW7PjW4O', 'W5RdKCoV', 'WQ8IbmoOl8kKkca', 'WOSeWQ/dHXW', 'e2fWrva/jCoS', 'c03dO0ifw8kunW', 'zxpdRmoTW4a', 'AXHKW4GYW6W', 'Fmkthq', 'WO5eW5VdQ8kOcq', 'v8k3aCo8', 'WRrdtW', 'WP8OsmkD', 'W6GoCCovWPjKtge', 'W5pdRCkSELWDW7/cTa', 'WOvlW5tdH8kJaSowW7e', 'zvHHkCkicCoiWRq', 'w8kZfmo5yu3dHG', 'W7VdGfKKW6a', 'vdPiFLm', 'WOJdOmkjW6DL', 'lWWxyWO', 'W4aKkSkHW5u', 'fW3dQWZdNG', 'v8kLatJdOa', 'WO7dI8kBW4ju', 'FexcHqZcSq', 'W5dcQxKmW4dcNCklWRy', 'jJKgxqWMW70', 'cmoBz8oeW5y', 'WOOCWOJdNbCqWOC', 'WRFdON/cGG', 'mWjXdqBcMSop', 'zu/cT0/cO8kwz8kkW6JcLqJcRW', 'W5rjWQ0GWR9Y', 'W5RcL8klWQecW7G', 'W7qOpCkJW5e8oa', 'WRegiSobfG', 'WPhdTCkKW7K', 'WOVdSCkSoN7cICkaWRu', 'W47dKSk4w2W', 'WO/dOCk4WRq', 'oKqZWPPRWRJcGSkTbuy1y8oJ', 'W5beWPfZB8kXWRrK', 'WPRdHCkGWQtdTq', 'xSktgtFdUW', 'W5HdWPW', 'W4K3fmkkW4m', 'rhLgrJ3cSxL1', 'dLddOq', 'W4xcSc8Rvq', 'DeTDtGy', 'eI9atfxdJmkC', 'etxcGu7cJ8kv', 'pCoXjSkl', 'W4jDaIOKjmoyW74', 'WPhcQwuHWO7cN8oz', 'W44pFmooWPnV', 'ofhdGMiq', 'WO8MCmktWRHRW7yx', 'nSoQWOBdPsC', 'W4JdKmonyNJdJG', 'e8k+WPrGW74', 'cJ7cN07cNSkclWK', 'W6RcHCovrJC', 'WOddSSkmW5vH', 'DwddHmokW43dPaqH', 'ASksuW', 'ir3dVXpdSCofqq', 'c2faue4+jmo4', 'ir3dVa/dV8oiv8km', 'd8oJWPDGW6NdPaSq', 'WRldG8kgWOFdSq', 'uwBdMbldNmorjt1YWR8hbG', 'xw0NW4j3BCoA', 'k3tdUx/cJuT6nW', 'uCozya', 'DCkveCo0xa', 'W5tcUJiOsmo8', 't0PWaSoxm8okWQ8', 'W7uOoq', 'tbq1wuHOW7ddIW', 'ixpcQrm', 'iJVdIJJdPa', 'WOLqWPldHrahW57cHa', 'yLJcTWBcPW', 'WPyhW78', 'W488c8kAW4u', 'WO0PW69+W6a', 'WQWMbmoA', 'eXGnCCkR', 'nXG6u8o3gCkvgW', 'fSoSWPnUWQRdVWyw', 'W7NdHNitW68', 'zf3dO8oUW6u', 'DvtcNJlcImo2WPZdQa', 'iCo2w8ovW5y', 'v2tdGCoxW4BdTH1K', 'W4XnWRmkWRzLkmke', 'jaZcJJJcOmoHWQtdJG', 'jYtcM0pcVW', '5PAB5Ro36AIb6k+W5A+45PEc5zo856Q5', 'WQvqv3K', 'xmk4pmo5', 'pNZcMrVdJdLOW58', 'nr/cO27cRq', 'yK5tW7VdP8kyea', 'pmo9CmoDW6hcImkziW', 'WR4hWOJdPrC', 'v8kfj1fWW6i', 'WOreW7hdOa', 'WPpdG8k8W5nn', 'dCkTWPvGW6FdVa', 'W4FdG8o5nq', 'sMD1mSkS', 'dCksW51EWOVcNCkiWOK', 'WO5eW4ZdTSk1', 'WR4smSo0pq', 'WPpcP2OeWPVcGSoxWQ0', 'W5DnW5JcLsldO8kYWOi', 'EtrpW6KV', 'yt0xueyNW6T+', 'uMVdKCoAW47dVH5K', 'W4/dOCouBNK', 'W4NdTmkLz2i', 'W7tcUJi6rmo1rti', 'cWRdGqZdGa', 'W5FdLLq7W7e', 'W5NdNmoXqv8', 'WQePs8kBomkTptC', 'Cu82W4b5', 'cSoCWP3dMam', 'rwrTW5hdOa', 'W6FcS8k4WOfQW7NcU0m', 'cLFdQemz', 'WPBdV8kiW4je', 'kSk9W6DKWRe', 'WQniu3NcImoO', 'W6lcOmkLWPeO', 'gHZdNa3dQG', 'W7FdKheWW4yWeq', 'WQmEWQxdUbq', 'W5lcV8o0WQWramkzW7zaWPHY', 'yhjXW40', 'WPVcQx0e', 'W5yygq', 'gb3dTG', 'odmECZa', 'oNVdJLyl', 'jmoFqLG', 'mb1Z', '5PwA5Rgw6AMd6k+x5A6X5PEa5zku56IO', 'WOddLSkL', 'Bw9qvsFcRw9Z', 'W4zjWRWMWR1U', 'cCkpW5TFWQBcImkeWOS', 'WP7dS8kPWQC', 'imoSv8ouW77cGW', 'W6VdLCohexC', 'hLddV14s', 'bdXYWPiLlCoglWhcISkMWP0', 'e8kTWOPKW67dJb8f', 'kCo/iCkE', 'W6qmWOqDAq', 'mdP1Bg4', 'W53dI8oWpffWxLK', 'laGqwZW', 'WOpdOCkIWOJcMCklCmku', 'W4q4WRaxEq', 'W5hcUSo9', 'W61yW6RdTGi', 'pH3dUXFdV8oc', 'W5ObWQWGWRvUmSkv', 'W598oqXE', 'WQ8Wtmkz', 'WPFcQwCbWPZcG8ozWQG', 'WOjEr30', 'q8kbpvHH', 'dftdVNpcPG', 'W7q0pCk7WPa6l1O', 'ufPhW6mmW5pcMCk+', 'Dh93qH8', 'W4istCoeWPzUqq', 'WPTlW4RdT8kP', 'W4pcUG86u8oYx3G', 'ELnmyqu', 'l2ldM1VcUa', 'v2ZcNI/cGa', 'W4XHWPyhBW', 'qIT6Bxi', 'W5BcPsWIsmo4ugS', 'W6fmW7pdHHq', 'W4pdI8oPCG', 'tYTasrVdMCok', 'W5fyWR49WQX4', 'rM0Y', 's2RdLSoEW5ZdVH9V', 'WPNdPCk9WQddNmkCyq', 'W6KcxCovWRO', 'gSkPWOLKW7JdRH4s', 'xePRcSkFbmkv', 'qSkpW4PYWPJcJSkS', 'W5tdOSkJuKGnW7S', 'W6T7W67dPqVdJmkiWQS', 'W4JdPSk/EKGAW78', 'e8o+Fe7cVq', 'EdXYA2O', 'W57dOSk7DW', 'W6RdM3qXW4uRdbW', 'WRaSrq', 'dJOZWPdcLSoU', 'gaVdRc/dUa', 'jXW6rSkUq8oggW', 'WP7dOSk/WQtdGW', 'WQbfW4v3W7JdNSoHoG', 'WORdQCkeW7a', 'ESkskSovqx7dSrO', 'd8kjW4u', 'edxcNXBcMCkvlfq', 'edxcNW', 'wwCLW4DMDSogaa', 'W6xcHSk7WOOJ', 'CSkgfmoSya', 'mbuMrSkSsmoBcG', 'FbHzW5OPW6ldMSkF', 'W5ufW6DEW4O', 'BuH+WPm', 'W6NdHSkCrwa2W5tcMa', 'j8o2ymobW7VcGSkpnq', 'iZKusGGZW6S', 'W5fBW5ZdKshdSmkO', 'hmoyWPRdNa', 'Amkths/dTCotW7xcTa', 'W6ddHSkUqxG', 'W5KNWPGNBX3dOWS', 'sMddGCoxW4FdSW', 'W4/cM8oCzIi', 'WOKetCkSWQG', 'AZbZW6W5', 'dx3dIwpcUG', 'W73cOmoQWPCIW5NcRL4', 'W58ez8ovW5H6vc0', 'WPLpW5W', 'W5FdUeGFW5u', 'qmkIb8o0ALG', 'W4OsEG', 'W57dUSoDo0m', 'WONdQmkUW7vtdCkhW7q', 'mYX8y1m', 'WRhdPxhcKCkz', 'WOpdPCkTWRhdNmkDzG', 'ftxdNZxdSW', 'WQ3dRf7cImkya1/dKW', 'i2tdIh/cN1Xx', 'C07cJthcLG', 'qSkqpfr7W6e', 'W7JcRbCRva', 'W4ldLmonrgpdHvNcPW', 'cHSxxWi', 'tcJdHa', 'WONdJuBcKCk8', 'W58ou8ooWObVsG8', 'WQldI8k/W51c', 'WQiOgCov', 'WQuIa8oioSkIoq', 'W4BdJmoPmvb9veq', 'W4JcPSoREc/dHmov', 'oSo3vSoDW77cG8kybq', 'W7pdHSocsh7dGKRcQW', 'jGKIxW', 'EHjGW4S4W78', 'urHmw3u', 'WPKFWR7dKKra', 'CL3cIZ8', 'pSoQnmklgse', 'WQCBWPNdVtO', 'WQ8dW7j+W6i', 'Dmk7emo8yW', 'WPWnW6rFW5VdOW', 'kNZcLby', 'eZhcMuRcGCks', 'iSowW6r7WP/cT8oaWQO', 'WOm+cSoVma', 'W5GiEmop', 'tx0pW6fX', 'WQuIbmotnmkH', 'pNZcKHBdJIS', 'WOGCWPxdKq', 'WRKlW7XtW4ddQmoSpG', 'W7ddGSkFyg0', 'WRtdPMhcLmkoauG', 'W6RcRSo9iX8', 'FrLUW4S9W6ldMSkD', 'F3LqoCk4iCoRWOi', 'emo1sLhcKCoD', 'W4mvA8orW40LfYa', 'W6LiWQyKWQ0', 'jCoSmmkz', 'F3HMrcG', 'WPiFW61sW7C', 'gmkeWQ5kW5S', 'ectcIL/cMCks', 'vmkfdb/dPCosW6pcVG', 'f8kPW4XhWR3cISkEWPK', 'WQqUWOy1yWa', 'ie1Pse0', 'WQ3dPMhcKW', 'W4OcnmkyW6C', 'WPm/zmkCW4VdPM4T', 'mrWQrmk4xCobxG', 'fwTqqu04omoU', 'WPlcUNOJWP4', 'W5/cSCoPEZW', 'sghdJmo9WP7cOW', 'q2tdGCoE', 'ECktg1hdMCoK', 'jrG7v8kSxG', 'bZhcN0O', 'WPmOuSkHW69QW6e3', 'W68JWP0Z', 'gKpdIg3cSq', 'ldmHy8kt', 'WQKxamoHoa', 'W5VdH8oYkq', 'W7fkWPmkWR4', 'WPviu30', 'W4ZdKmoVpff8', 'pNlcKWm', 'WRLaW7ZdK8kU', 'atjOwwq', 'WPmSxCkyWQP8W7C', 'W5fvWPG3ECk3WQy', 'g8o+xCkZlXBcNNy', 'oh1aFLa/lmoI', 'W5ldOSkHsWKlW7/dQG', 'W4D1WQ8aWPm', 'eCkPWOLMW77dPW', 'sv9Jfmkoe8o4WRq', 'iCoXnSkEgdVdQCkM', 'CZXRFuK', 'bdxcNW', 'sKP7cSkvaCol', 'WP/dOLBcOmkf', 'iqxdIwBcSCo8WRBdOSkTWOq', 'FmkRoSkzWR7dLCoCe3HZW7uaDW', 'jcZdVHddTa', 'Fu0hW6jxtq', 'WPTlW4RdPCkHhW', 'W5BcPJK', 'W6ldMCkRx1S', 'sLLRemkBfmokWPy', 'WOGhW7To', 'WPuMeCkpWRTHW7yX', 'rmk6aSo6BG', 'W6qTWO9/Ff/cNq', 'r8o9W5u5WRlcTG', 'W6PPWP4nWPXz', 'WQ8sWO/dHbCAW4NdMW', 'fmoXsLlcLSoDW6hdLG', 'WO9FW7hdTmkp', 'W4tdKmoay2NdMv4', 'W4tdUSoGnhq', 'WPiNx8kqWRPQW6eN', 'W5GvFSotWOn5BYu', 'WQddPCo/W51YWPpdR1CLW4rGWQZcVW', 'W6zdWPOCBSkSWRj5', 'W4RdLmoiA2NdJW3cTq', 'WReIgSoida', 'oSotqf/cVq', 'nXNdUX4', 'WPC0e8oOpSk2lYW', 'd2TcvuCKoa', 'W57cOSoVDq', 'W64OlmkRW5uTlG', 'wMPTW6VdJ8kNkMe', 'et/cHv/cICkplLq', 'W5uKkSkHW5eRkfO', 'emoyWOldKrlcRSkUWRG', 'W4xdHSoZyM3dJ1q', 'vmkZaCooCf7dGtO', 'DcT9E1v9W7BcIW', 'W4m3WR00xq', 'v2rVW5VdMSkLk3C', 'W55vWO0aAmkKWQf1', 'W4xcSdyRqSoV', 'W53dH8o5luP3qLi', 'WRFdT3FcICkls13dOG', 'W4rIbdzp', 'z8ktcbJdTCosW7u', 'iw/cIrddIJy', 'WRrzW5VdLSkPgmoqW70', 'W5ZdLmovB2ldIKdcPW', 'W5bfWR0S', 'oHBdRbpdPCocqCkA', 'ESk0bmofrW', 'WPxdPSk/W6Dc', 'W4FcUI86', 'WRVdJ8kFWOe', 'jNZcJIRcGYPPWQ0', 'gIfJq2a', 'hmk5WOnOW6/dOqKs', 'W5rbetfGja', 'W58oBCos', 'W6iOlSk9W4KVkwO', 'W5KeBSouWPj5ta', 'iSoSDCkncshdTSkN', 'k8o2ymocW6RcGW', 'W5JdS8oxB0C', 'dSo1v0BcISoBW7pdMa', 'i0RdOwqu', 'zWvJW4KYW6u', 'W5ZdLSoRkvbQzvi', 'W4zlWPaqWRi', 'WOtcNCkjksFcGGBdQW', 'pSoku13cVq', 'W5ldTt0OvCo+qZ8'];
+  return lt = function() {
+    return _0x461dd5;
+  }, lt();
+}
+const Lg = (function() {
+    let _0x140e65 = !0x0;
+    return function(_0x274923, _0x2d9980) {
+      const _0x294b1c = _0x140e65 ? function() {
+        const _0x3007c5 = Z;
+        if (_0x2d9980) {
+          const _0x46387d = _0x2d9980[_0x3007c5(0x25b, 'U$0x')](_0x274923, arguments);
+          return _0x2d9980 = null, _0x46387d;
+        }
+      } : function() {};
+      return _0x140e65 = !0x1, _0x294b1c;
+    };
+  }()),
+  It = Lg(void 0x0, function() {
+    const _0xc16cf5 = Z,
+      _0x1d65e5 = {};
+    _0x1d65e5[_0xc16cf5(0x326, 'F[DU')] = _0xc16cf5(0x22f, 'rr!]') + _0xc16cf5(0x393, 'ML@z');
+    const _0x3d41c9 = _0x1d65e5;
+    return It[_0xc16cf5(0x3b6, 'x&1j')]()[_0xc16cf5(0x29e, 'f%K*')](_0x3d41c9['tQwME'])['toString']()[_0xc16cf5(0x210, '$Baz') + 'tor'](It)['search'](_0xc16cf5(0x1de, 'r6OR') + _0xc16cf5(0x281, 'wHbT'));
+  });
+It();
+
+function Z(_0xc6a0a8, _0x3b1501) {
+  _0xc6a0a8 = _0xc6a0a8 - (0x1 * 0x22f + 0x68a + -0x1 * 0x713);
+  const _0x1ce686 = lt();
+  let _0x53ab72 = _0x1ce686[_0xc6a0a8];
+  if (Z['MBmIKx'] === void 0x0) {
+    var _0x4781fa = function(_0x80f864) {
+      const _0x1e8423 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+      let _0x2c17a4 = '',
+        _0x424eea = '',
+        _0x362016 = _0x2c17a4 + _0x4781fa,
+        _0x59bb6a = ('' + function() {
+          return 0x0;
+        })['indexOf']('\x0a') !== -0x1;
+      for (let _0x55e45a = 0x0, _0x26eb7b, _0x3584ec, _0x3ff129 = 0x0; _0x3584ec = _0x80f864['charAt'](_0x3ff129++); ~_0x3584ec && (_0x26eb7b = _0x55e45a % 0x4 ? _0x26eb7b * 0x40 + _0x3584ec : _0x3584ec, _0x55e45a++ % 0x4) ? _0x2c17a4 += _0x59bb6a || _0x362016['charCodeAt'](_0x3ff129 + 0xa) - 0xa !== 0x0 ? String['fromCharCode'](0xff & _0x26eb7b >> (-0x2 * _0x55e45a & 0x6)) : _0x55e45a : 0x0) _0x3584ec = _0x1e8423['indexOf'](_0x3584ec);
+      for (let _0x13c0a2 = 0x0, _0x4b1b15 = _0x2c17a4['length']; _0x13c0a2 < _0x4b1b15; _0x13c0a2++) _0x424eea += '%' + ('00' + _0x2c17a4['charCodeAt'](_0x13c0a2)['toString'](0x10))['slice'](-0x2);
+      return decodeURIComponent(_0x424eea);
+    };
+    const _0xe08d4d = function(_0x388efc, _0x20c1a4) {
+      let _0x58af65 = [],
+        _0x450bb9 = 0x0,
+        _0x22dee7, _0x18aa64 = '';
+      _0x388efc = _0x4781fa(_0x388efc);
+      let _0x35831;
+      for (_0x35831 = 0x0; _0x35831 < 0x100; _0x35831++) _0x58af65[_0x35831] = _0x35831;
+      for (_0x35831 = 0x0; _0x35831 < 0x100; _0x35831++) _0x450bb9 = (_0x450bb9 + _0x58af65[_0x35831] + _0x20c1a4['charCodeAt'](_0x35831 % _0x20c1a4['length'])) % 0x100, _0x22dee7 = _0x58af65[_0x35831], _0x58af65[_0x35831] = _0x58af65[_0x450bb9], _0x58af65[_0x450bb9] = _0x22dee7;
+      _0x35831 = 0x0, _0x450bb9 = 0x0;
+      for (let _0x54a5e7 = 0x0; _0x54a5e7 < _0x388efc['length']; _0x54a5e7++) _0x35831 = (_0x35831 + 0x1) % 0x100, _0x450bb9 = (_0x450bb9 + _0x58af65[_0x35831]) % 0x100, _0x22dee7 = _0x58af65[_0x35831], _0x58af65[_0x35831] = _0x58af65[_0x450bb9], _0x58af65[_0x450bb9] = _0x22dee7, _0x18aa64 += String['fromCharCode'](_0x388efc['charCodeAt'](_0x54a5e7) ^ _0x58af65[(_0x58af65[_0x35831] + _0x58af65[_0x450bb9]) % 0x100]);
+      return _0x18aa64;
+    };
+    Z['ebjClE'] = _0xe08d4d, Z['NGnzBp'] = {}, Z['MBmIKx'] = !0x0;
+  }
+  const _0x1447d9 = _0x1ce686[-0x1ea0 + -0x1ea0 * -0x1],
+    _0x954995 = _0xc6a0a8 + _0x1447d9,
+    _0x22ad87 = Z['NGnzBp'][_0x954995];
+  if (_0x22ad87) _0x53ab72 = _0x22ad87;
+  else {
+    if (Z['odmZzL'] === void 0x0) {
+      const _0x2f19b8 = function(_0x597c97) {
+        this['yWALZr'] = _0x597c97, this['RyghHD'] = [0x1, 0x0, 0x0], this['ZCObkQ'] = function() {
+          return 'newState';
+        }, this['XzALiM'] = '\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*', this['IWxRvP'] = '[\x27|\x22].+[\x27|\x22];?\x20*}';
+      };
+      _0x2f19b8['prototype']['HMEjVU'] = function() {
+        const _0x6c5760 = new RegExp(this['XzALiM'] + this['IWxRvP']),
+          _0x24e12f = _0x6c5760['test'](this['ZCObkQ']['toString']()) ? --this['RyghHD'][-0x1035 * 0x1 + 0x26d9 + -0x16a3] : --this['RyghHD'][0x0];
+        return this['yBorgz'](_0x24e12f);
+      }, _0x2f19b8['prototype']['yBorgz'] = function(_0x4b7730) {
+        return ~_0x4b7730 ? this['UnKxOv'](this['yWALZr']) : _0x4b7730;
+      }, _0x2f19b8['prototype']['UnKxOv'] = function(_0x203219) {
+        for (let _0xaa97ef = -0x1 * -0x1418 + -0x9da + -0xa3e, _0x503f98 = this['RyghHD']['length']; _0xaa97ef < _0x503f98; _0xaa97ef++) this['RyghHD']['push'](Math['round'](Math['random']())), _0x503f98 = this['RyghHD']['length'];
+        return _0x203219(this['RyghHD'][-0x27c * -0x9 + -0xac9 + -0xb93]);
+      }, ('' + function() {
+        return -0xc04 + -0xad5 * 0x1 + -0x1 * -0x16d9;
+      })['indexOf']('\x0a') === -0x1 && new _0x2f19b8(Z)['HMEjVU'](), Z['odmZzL'] = !0x0;
+    }
+    _0x53ab72 = Z['ebjClE'](_0x53ab72, _0x3b1501), Z['NGnzBp'][_0x954995] = _0x53ab72;
+  }
+  return _0x53ab72;
+}
+const Mt = M(0x34f, 'R72&') + M(0x3a3, '*ecf'),
+  _g = !0x1;
+
+function Og(_0x7b5ad1) {
+  const _0x3ea664 = M,
+    _0x2d44fa = {};
+  _0x2d44fa['rFaws'] = '3|0|5|6|' + _0x3ea664(0x2e5, 'zRRp'), _0x2d44fa[_0x3ea664(0x289, 'kn$$')] = _0x3ea664(0x2a6, '*as1') + _0x3ea664(0x3be, '*ecf'), _0x2d44fa['pLwTV'] = _0x3ea664(0x401, 'pZTB'), _0x2d44fa[_0x3ea664(0x32d, 'bmQ*')] = _0x3ea664(0x396, '*ecf'), _0x2d44fa[_0x3ea664(0x33f, '(OcK')] = '/api/clash/subsc' + _0x3ea664(0x21a, '*QIU'), _0x2d44fa['VCTNO'] = '/api/use' + _0x3ea664(0x345, 'nzHK') + _0x3ea664(0x352, '(HSX') + 'ibe';
+  const _0x5923a9 = _0x2d44fa,
+    _0x379972 = _0x5923a9['rFaws']['split']('|');
+  let _0x1c86a0 = 0x2 * -0x2bd + -0x1c49 + 0x21c3;
+  for (;;) {
+    switch (_0x379972[_0x1c86a0++]) {
+      case '0':
+        if (_0x7b5ad1['includes']('/api/securechan/' + _0x3ea664(0x2d4, 'pZTB') + 'e')) return !0x1;
+        continue;
+      case '1':
+        return _0x7b5ad1[_0x3ea664(0x258, 'j^Rm')]('/api/');
+      case '2':
+        if (_0x7b5ad1[_0x3ea664(0x3e2, '96a$')](_0x5923a9[_0x3ea664(0x28e, '!Rs(')])) return !0x1;
+        continue;
+      case '3':
+        if (!_0x7b5ad1) return !0x1;
+        continue;
+      case '4':
+        if (_0x7b5ad1[_0x3ea664(0x1fd, 'LIHV') + 'th'](_0x5923a9[_0x3ea664(0x370, 'dfdR')]) || _0x7b5ad1[_0x3ea664(0x1e3, 'dfdR') + 'th'](_0x5923a9[_0x3ea664(0x3a6, 'oTC&')])) return !0x1;
+        continue;
+      case '5':
+        if (_0x7b5ad1[_0x3ea664(0x1fc, '6a1I')](_0x5923a9[_0x3ea664(0x3b8, 'zRRp')])) return !0x1;
+        continue;
+      case '6':
+        if (_0x7b5ad1[_0x3ea664(0x30c, 'F[DU')](_0x5923a9['VCTNO'])) return !0x1;
+        continue;
+    }
+    break;
+  }
+}
+async function Lu() {
+  const _0x248f5e = M,
+    _0x5f4ff2 = {};
+  _0x5f4ff2[_0x248f5e(0x1fb, '*ecf')] = function(_0x44ac17, _0x2b7810) {
+    return _0x44ac17 === _0x2b7810;
+  }, _0x5f4ff2['kLVVs'] = _0x248f5e(0x343, '^HLl') + 't', _0x5f4ff2[_0x248f5e(0x1d3, 'IoO0')] = _0x248f5e(0x325, '8nq2') + '1', _0x5f4ff2[_0x248f5e(0x358, 'IoO0')] = function(_0xe4c00b, _0xec1d3c) {
+    return _0xe4c00b === _0xec1d3c;
+  }, _0x5f4ff2['PTRwO'] = _0x248f5e(0x3a7, 'Qkf2'), _0x5f4ff2[_0x248f5e(0x318, 'kn$$')] = function(_0x2ac5e9, _0x5e71ec) {
+    return _0x2ac5e9 !== _0x5e71ec;
+  }, _0x5f4ff2[_0x248f5e(0x3cc, 'R72&')] = 'KvBlK', _0x5f4ff2[_0x248f5e(0x27f, 'oTC&')] = function(_0x273f78, _0x4f7263) {
+    return _0x273f78 + _0x4f7263;
+  }, _0x5f4ff2[_0x248f5e(0x2bf, '96a$')] = _0x248f5e(0x1f2, '6a1I'), _0x5f4ff2[_0x248f5e(0x26f, 'U$0x')] = function(_0x457162, _0x3b4326) {
+    return _0x457162 ?? _0x3b4326;
+  }, _0x5f4ff2[_0x248f5e(0x3db, '95U*')] = _0x248f5e(0x252, 'oTC&') + _0x248f5e(0x295, 'aGWe') + _0x248f5e(0x27b, 'R72&') + 'e';
+  const _0x492075 = _0x5f4ff2,
+    _0x17718d = new URL(_0x492075['LQaDQ'](_0x492075[_0x248f5e(0x290, '%paf')](ke, ''), _0x492075[_0x248f5e(0x1eb, '#72G')]), window['location'][_0x248f5e(0x22c, '%paf')]),
+    _0x3a08b1 = _0x17718d[_0x248f5e(0x217, 'WqXb')];
+  await te['handshake'](async _0x915c8f => {
+    const _0x545cf6 = _0x248f5e;
+    if (_0x492075[_0x545cf6(0x2ab, '2tSQ')](_0x492075[_0x545cf6(0x2f8, '$kY5')], _0x492075[_0x545cf6(0x201, 'u92y')])) {
+      const {
+        protocol: _0x2de7f8,
+        hostname: _0xc76b3a
+      } = _0x4cd25e['location'];
+      if (_0x492075[_0x545cf6(0x2b7, 'IoO0')](_0xc76b3a, _0x492075[_0x545cf6(0x317, '(OcK')]) || _0x492075[_0x545cf6(0x1fb, '*ecf')](_0xc76b3a, _0x492075['yJhUR']) || _0x492075[_0x545cf6(0x1e8, '$kY5')](_0xc76b3a, _0x492075[_0x545cf6(0x1d2, 'zRRp')])) {
+        const _0x36c2db = _0xc76b3a[_0x545cf6(0x407, '*ecf')](':') ? '[' + _0xc76b3a + ']' : _0xc76b3a;
+        _0x4831a2 = _0x2de7f8 + '//' + _0x36c2db + ':12889';
+      }
+    } else {
+      const _0x343ecb = {};
+      return _0x343ecb[_0x545cf6(0x236, 'R*B1') + _0x545cf6(0x40e, '(HSX')] = _0x915c8f, _0x343ecb[_0x545cf6(0x222, 'nzHK')] = _0x3a08b1, _0x343ecb[_0x545cf6(0x388, '95U*')] = 'v2', (await _0x361b2c[_0x545cf6(0x334, '&my4')](_0x492075[_0x545cf6(0x27a, '6a1I')](ke ?? '', _0x545cf6(0x377, '*as1') + _0x545cf6(0x20e, 'R72&') + _0x545cf6(0x269, '!Rs(') + _0x545cf6(0x3e0, '%paf') + Date[_0x545cf6(0x354, '96FE')]()), _0x343ecb, {
+        'headers': {
+          'Content-Type': _0x545cf6(0x3bc, 'x&1j') + _0x545cf6(0x24c, 'ML@z'),
+          'Cache-Control': _0x492075[_0x545cf6(0x32a, 'Qkf2')]
+        }
+      }))[_0x545cf6(0x38e, 'U#n*')];
+    }
+  }, _0x3a08b1, _g);
+}
+let Ve = null;
+async function xn(_0x50e687) {
+  const _0x40e0b7 = M,
+    _0x5ebd47 = {};
+  _0x5ebd47[_0x40e0b7(0x1c9, 'U#n*')] = function(_0x5c6ddc, _0x1e53bc) {
+    return _0x5c6ddc === _0x1e53bc;
+  }, _0x5ebd47[_0x40e0b7(0x215, 'aGWe')] = _0x40e0b7(0x3ea, '8nq2'), _0x5ebd47['CsOSp'] = function(_0x354800, _0x4d4c64) {
+    return _0x354800 !== _0x4d4c64;
+  };
+  const _0x3e5f91 = _0x5ebd47;
+  _0x50e687 && te[_0x40e0b7(0x3fb, 'zRRp')]() && _0x3e5f91[_0x40e0b7(0x338, '(kOM')](te[_0x40e0b7(0x2e9, 'nzHK') + _0x40e0b7(0x350, 'WqXb')](), _0x50e687) || (!Ve && (te[_0x40e0b7(0x1e5, 'R72&')](), Ve = Lu()['finally'](() => {
+    const _0x560871 = _0x40e0b7;
+    _0x3e5f91[_0x560871(0x2f0, 'f8K)')](_0x3e5f91[_0x560871(0x229, 'rr!]')], _0x560871(0x3a2, 'Yqux')) ? _0x1a23b8[_0x560871(0x2bc, '(OcK')]('[securechan]\x20dec' + _0x560871(0x335, 'aGWe') + _0x560871(0x227, '&my4') + _0x560871(0x2ce, 'j^Rm') + _0x560871(0x394, 'IoO0'), _0x2b9eaf) : Ve = null;
+  })), await Ve);
+}
+
+function gn(_0xd3bbad) {
+  const _0xa7ef5 = M,
+    _0x3b589c = {};
+  _0x3b589c[_0xa7ef5(0x2f6, '(HSX')] = function(_0x3ba8c2, _0x1e82e6) {
+    return _0x3ba8c2 instanceof _0x1e82e6;
+  }, _0x3b589c['Hbqsa'] = function(_0x169499, _0x328965) {
+    return _0x169499 === _0x328965;
+  }, _0x3b589c['APaqd'] = _0xa7ef5(0x2fa, 'f%K*'), _0x3b589c[_0xa7ef5(0x36d, '(OcK')] = function(_0x42d48c, _0x100c93) {
+    return _0x42d48c == _0x100c93;
+  }, _0x3b589c['IqFUu'] = _0xa7ef5(0x1f7, '(HSX') + _0xa7ef5(0x284, 'u92y');
+  const _0x27eba4 = _0x3b589c;
+  if (_0xd3bbad[_0xa7ef5(0x29f, 'f%K*') + 'nalCaptu' + _0xa7ef5(0x2ad, '*ecf')]) {
+    if (_0x27eba4[_0xa7ef5(0x287, 'j^Rm')](_0x27eba4[_0xa7ef5(0x3dc, 'r6OR')], _0x27eba4[_0xa7ef5(0x3b9, 'kn$$')])) _0xd3bbad[_0xa7ef5(0x2eb, '$kY5')] = _0xd3bbad[_0xa7ef5(0x1ff, '2tSQ') + _0xa7ef5(0x336, 'U#n*')];
+    else throw _0x5f0be9[_0xa7ef5(0x26c, 'UXo)')](), new _0x3bf409(_0xa7ef5(0x363, '(kOM') + '身份，已拒绝连接' + (_0x27eba4[_0xa7ef5(0x2ed, 'kn$$')](_0x1bf834, _0x46ea44) ? '：' + _0x1d1742[_0xa7ef5(0x406, 'u92y')] : ''));
+  }
+  const _0x7908d3 = _0xd3bbad[_0xa7ef5(0x278, 'LIHV')];
+  _0x7908d3 && (_0x27eba4[_0xa7ef5(0x2f1, 'f8K)')](_0xd3bbad['_scOrigi' + _0xa7ef5(0x30d, 'f8K)') + 'ntType'], null) ? _0x7908d3[_0xa7ef5(0x267, '*ecf')](_0x27eba4[_0xa7ef5(0x2c7, 'ML@z')]) : _0x7908d3[_0xa7ef5(0x3d9, 'pZTB')](_0x27eba4[_0xa7ef5(0x355, 'bmQ*')], String(_0xd3bbad[_0xa7ef5(0x2b1, 'aGWe') + _0xa7ef5(0x360, '*QIU') + _0xa7ef5(0x39b, '96a$')])), _0x7908d3[_0xa7ef5(0x33b, 'rr!]')](ee[_0xa7ef5(0x2e2, '!Rs(')]), _0x7908d3[_0xa7ef5(0x1a8, '96FE')](ee[_0xa7ef5(0x27d, '(OcK') + 'ID_HEADER'])), delete _0xd3bbad['transfor' + _0xa7ef5(0x2b6, '^HLl')];
+}
+const Wt = '' [M(0x244, '#72G')]();
+let ke;
+const Fg = !0x1;
+Fg ? ke = void 0x0 : Wt && (ke = Wt === M(0x1b9, 'LIHV') + M(0x2fd, 'z5rH') + M(0x1f5, 'nzHK') ? void 0x0 : Wt);
+const Ig = ke,
+  Et = {};
+Et[M(0x2e6, 'R72&')] = ke, Et[M(0x371, 'f%K*') + 'entials'] = !0x1;
+const N = _0x361b2c[M(0x1d8, '*ecf')](Et);
+
+function hn(_0x524d6a) {
+  const _0x51532f = M,
+    _0x210843 = {
+      'YBXhf': function(_0x1529cf, _0x221c65) {
+        return _0x1529cf(_0x221c65);
+      }
+    };
+  let _0x2e720c = '';
+  for (const _0x1248b5 of _0x524d6a) _0x2e720c += String[_0x51532f(0x2f2, 'zRRp') + 'Code'](_0x1248b5);
+  return _0x210843['YBXhf'](btoa, _0x2e720c)[_0x51532f(0x3ca, 'F[DU')](/\+/g, '-')[_0x51532f(0x408, '8nq2')](/\//g, '_')[_0x51532f(0x332, 'Yqux')](/=+$/g, '');
+}
+async function Mg(_0x337242) {
+  const _0x31e6b8 = M,
+    _0x5a4e25 = {
+      'PglYz': function(_0x1dde92, _0x4c7632) {
+        return _0x1dde92(_0x4c7632);
+      }
+    },
+    _0x40eea3 = _0x5a4e25[_0x31e6b8(0x24b, '2tSQ')](_0x18f172, new TextEncoder()[_0x31e6b8(0x307, 'f8K)')](_0x337242));
+  return Array[_0x31e6b8(0x28a, 'z5rH')](_0x40eea3, _0x281796 => _0x281796[_0x31e6b8(0x302, '^HLl')](0xc65 + -0x5 * -0x4ab + -0x23ac * 0x1)[_0x31e6b8(0x2e4, '!Rs(')](-0x15ca + -0x4 * -0x48c + 0x39c, '0'))[_0x31e6b8(0x405, 'u92y')]('');
+}
+async function _y(_0x344e7b, _0x3244fe, _0x5cee44, _0x2e67b2 = {}) {
+  const _0x172382 = M,
+    _0x25dc5d = {
+      'FYcTP': _0x172382(0x1b2, '96FE') + _0x172382(0x243, '*ecf') + _0x172382(0x261, 'u92y') + _0x172382(0x2ba, '2tSQ') + _0x172382(0x23d, 'z5rH') + '\x20binding',
+      'GLrIe': function(_0x52b1c6, _0x2499ff) {
+        return _0x52b1c6 !== _0x2499ff;
+      },
+      'oXKRZ': _0x172382(0x1a7, 'r6OR'),
+      'RDwjD': _0x172382(0x1c6, '$Baz') + _0x172382(0x239, 'R*B1') + 'd',
+      'eYpIJ': _0x172382(0x274, 'f8K)'),
+      'oCSvs': 'EyAbf',
+      'HcDoR': _0x172382(0x311, 'R72&'),
+      'cTuiu': _0x172382(0x1b5, 'F[DU'),
+      'qolyN': _0x172382(0x1ad, 'LIHV'),
+      'NfSNv': _0x172382(0x320, '*QIU'),
+      'eHIKQ': _0x172382(0x3f4, '*ecf'),
+      'iGkEb': 'rKkwK',
+      'WkzDM': _0x172382(0x2c8, 'R72&'),
+      'zkScT': _0x172382(0x31e, 'Yqux'),
+      'mPoHk': _0x172382(0x3d4, '96FE') + _0x172382(0x20b, 'wHbT') + _0x172382(0x34a, 'fN2N'),
+      'fJxhZ': function(_0x188a0c, _0x25d553) {
+        return _0x188a0c === _0x25d553;
+      },
+      'aEQGp': _0x172382(0x3c4, 'LIHV'),
+      'duIpC': function(_0x1d4c78, _0x2fa371) {
+        return _0x1d4c78(_0x2fa371);
+      },
+      'TfWCF': 'X-MMWX-Frontend-' + _0x172382(0x390, '#72G'),
+      'xQSpu': function(_0x597bc8, _0x35493c) {
+        return _0x597bc8 ?? _0x35493c;
+      },
+      'LBeMR': function(_0x1b153f, _0x54f877) {
+        return _0x1b153f(_0x54f877);
+      }
+    },
+    _0x40ba7f = JSON[_0x172382(0x2d8, '*QIU') + 'y'](_0x25dc5d[_0x172382(0x283, '*ecf')](_0x3244fe, {})),
+    _0x629274 = await _0x25dc5d[_0x172382(0x1f9, 'f8K)')](Mg, _0x40ba7f),
+    _0x169cd6 = _0x25dc5d[_0x172382(0x310, 'z5rH')](Ux, _0x344e7b),
+    _0x38e161 = _0x25dc5d[_0x172382(0x257, 'f%K*')](jx, _0x344e7b);
+  return Bx(async _0xa299cf => {
+    const _0x3e3a19 = _0x172382;
+    if (_0x25dc5d[_0x3e3a19(0x404, '(OcK')](_0x25dc5d[_0x3e3a19(0x262, '(kOM')], _0x25dc5d[_0x3e3a19(0x3ab, 'aGWe')])) _0x2630a6 = null;
+    else {
+      const _0x159860 = await N[_0x3e3a19(0x1f1, '96FE')](_0x25dc5d['RDwjD'], {
+        'action': _0x5cee44,
+        'payload_hash': _0x629274,
+        'request_method': _0x25dc5d[_0x3e3a19(0x1e1, '*QIU')],
+        'request_path': _0x38e161,
+        ..._0xa299cf ? {
+          'server_id': _0xa299cf
+        } : {}
+      });
+      if (_0x159860[_0x3e3a19(0x327, 'Qkf2')][_0x3e3a19(0x387, 'U$0x')]) {
+        if (_0x25dc5d[_0x3e3a19(0x2fc, 'U$0x')] === _0x25dc5d[_0x3e3a19(0x37d, 'z5rH')]) _0x5c706e['headers'] = _0x1294e7['headers'] ?? new _0x44730c(), _0x3188df[_0x3e3a19(0x207, 'bmQ*')][_0x89cf65] = _0x21585e;
+        else return N[_0x3e3a19(0x21e, 'x&1j')](_0x344e7b, _0x3244fe, _0x2e67b2);
+      }
+      const _0x2ac8c4 = Ag(),
+        _0x4044a4 = {};
+      _0x4044a4[_0x3e3a19(0x31d, '$kY5')] = _0x3e3a19(0x2c5, '2tSQ'), _0x4044a4[_0x3e3a19(0x39f, 'nzHK') + 've'] = _0x25dc5d[_0x3e3a19(0x379, 'rr!]')];
+      const _0x4d1c52 = await _0x2ac8c4[_0x3e3a19(0x3c5, 'nzHK') + _0x3e3a19(0x3cf, '6a1I')](_0x4044a4, !0x1, [_0x25dc5d[_0x3e3a19(0x382, '$Baz')], _0x25dc5d[_0x3e3a19(0x2bb, 'U$0x')]]),
+        _0x4c6931 = await _0x2ac8c4['exportKey'](_0x3e3a19(0x40b, 'IoO0'), _0x4d1c52[_0x3e3a19(0x2c1, '(kOM') + 'y']),
+        _0x3574f6 = _0x159860[_0x3e3a19(0x1b1, '(HSX')][_0x3e3a19(0x366, 'WqXb') + _0x3e3a19(0x242, 'IoO0')] ?? _0x629274;
+      if (!/^[0-9a-f]{64}$/ [_0x3e3a19(0x1c4, '$kY5')](_0x3574f6)) {
+        if (_0x25dc5d[_0x3e3a19(0x1be, 'nzHK')] !== _0x25dc5d[_0x3e3a19(0x293, '(HSX')]) throw new Error(_0x25dc5d[_0x3e3a19(0x2b3, '2tSQ')]);
+        _0x2013bc['response'][_0x3e3a19(0x3a0, '&my4')] = _0x1cabd1['parse'](_0x275ba5);
+      }
+      const _0x1b1e22 = new TextEncoder()[_0x3e3a19(0x337, 'LIHV')]('mmwx-fro' + _0x3e3a19(0x214, '$kY5') + _0x3e3a19(0x1f4, 'oTC&') + _0x159860[_0x3e3a19(0x260, 'bmQ*')][_0x3e3a19(0x2b8, '*as1') + 'e'] + '\x0a' + _0x5cee44 + '\x0a' + _0x3574f6),
+        _0x2c6821 = {};
+      _0x2c6821['name'] = _0x25dc5d[_0x3e3a19(0x1a6, '96FE')], _0x2c6821[_0x3e3a19(0x36f, '*ecf')] = _0x25dc5d[_0x3e3a19(0x221, 'Yqux')];
+      const _0x1dc7d9 = await _0x2ac8c4[_0x3e3a19(0x280, 'kn$$')](_0x2c6821, _0x4d1c52[_0x3e3a19(0x1f0, 'dfdR') + 'ey'], _0x1b1e22),
+        _0x1b7210 = _0x596d2f[_0x3e3a19(0x25f, 'aGWe')](_0x2e67b2[_0x3e3a19(0x1dd, '2tSQ')]);
+      if (_0x1b7210[_0x3e3a19(0x34e, 'bmQ*')](_0x25dc5d['mPoHk'], _0x159860[_0x3e3a19(0x1d1, 'oTC&')][_0x3e3a19(0x35d, 'kn$$') + 'e_id']), _0xa299cf) {
+        if (_0x25dc5d['fJxhZ'](_0x3e3a19(0x3b3, '!Rs('), _0x25dc5d[_0x3e3a19(0x23f, '(OcK')])) _0x1b7210[_0x3e3a19(0x3c1, 'j^Rm')](_0x3e3a19(0x272, 'fN2N') + _0x3e3a19(0x34d, 'dfdR') + 'ver-ID', _0x25dc5d[_0x3e3a19(0x1f9, 'f8K)')](String, _0xa299cf));
+        else throw new _0x90c04a(_0x25dc5d[_0x3e3a19(0x245, '(kOM')]);
+      }
+      _0x1b7210[_0x3e3a19(0x306, 'ML@z')](_0x25dc5d[_0x3e3a19(0x3a8, 'R*B1')], hn(new Uint8Array(_0x4c6931))), _0x1b7210['set'](_0x3e3a19(0x3b2, '%paf') + _0x3e3a19(0x209, 'pZTB') + _0x3e3a19(0x20a, 'bmQ*') + 'e', hn(new Uint8Array(_0x1dc7d9)));
+      const _0x50f9f0 = {
+        ..._0x2e67b2
+      };
+      return _0x50f9f0[_0x3e3a19(0x31a, '*as1')] = _0x1b7210, N['post'](_0x344e7b, _0x3244fe, _0x50f9f0);
+    }
+  }, _0x169cd6);
+}
+N[M(0x248, 'f%K*') + M(0x224, 'LIHV')]['request'][M(0x2ff, '*ecf')](async _0x28de4e => {
+  const _0x7b668d = M,
+    _0x1269fa = {
+      'vUBOf': function(_0x1dd87c, _0x4ccab0) {
+        return _0x1dd87c(_0x4ccab0);
+      },
+      'XZdIr': _0x7b668d(0x1ab, 'f%K*') + _0x7b668d(0x383, '95U*') + _0x7b668d(0x1cd, 'ML@z'),
+      'VOHEA': function(_0x46560e, _0x1433d6) {
+        return _0x46560e(_0x1433d6);
+      },
+      'pwUhG': function(_0x5ba404, _0x5c3d8e) {
+        return _0x5ba404(_0x5c3d8e);
+      },
+      'DtphS': function(_0x2e6a7a, _0x1c2df7) {
+        return _0x2e6a7a !== _0x1c2df7;
+      },
+      'wlwgj': 'MoYsm',
+      'tdHXC': _0x7b668d(0x297, '(HSX'),
+      'axXyP': function(_0x3b192) {
+        return _0x3b192();
+      },
+      'KiUoE': function(_0xf6352, _0x550e89) {
+        return _0xf6352 + _0x550e89;
+      },
+      'DudsN': function(_0xdbfe0d, _0x2180bb) {
+        return _0xdbfe0d + _0x2180bb;
+      },
+      'EECaS': _0x7b668d(0x21f, 'Qkf2'),
+      'bTwbU': _0x7b668d(0x39a, 'Qkf2'),
+      'GBdpJ': '/api/v3',
+      'ZLNyB': _0x7b668d(0x1e6, 'pZTB'),
+      'ubsqz': function(_0x598285, _0x2972bf) {
+        return _0x598285 === _0x2972bf;
+      },
+      'RGPkL': function(_0x4f84ef, _0x23867a) {
+        return _0x4f84ef === _0x23867a;
+      },
+      'tdtle': function(_0x428428, _0x4f9c7c) {
+        return _0x428428 === _0x4f9c7c;
+      },
+      'LOyWW': function(_0x43091c, _0x3b1602) {
+        return _0x43091c !== _0x3b1602;
+      },
+      'SfLCg': function(_0x3a2fa0, _0x2deea5) {
+        return _0x3a2fa0 instanceof _0x2deea5;
+      },
+      'yYHVg': _0x7b668d(0x1b6, '%paf') + 'd',
+      'Figne': function(_0x4602ea, _0x37d7f6) {
+        return _0x4602ea !== _0x37d7f6;
+      },
+      'WIGVl': function(_0xf94276, _0x3478ba) {
+        return _0xf94276 !== _0x3478ba;
+      },
+      'DGpfk': function(_0x4d9b4f, _0x55ac0a) {
+        return _0x4d9b4f instanceof _0x55ac0a;
+      },
+      'ehonQ': _0x7b668d(0x37e, 'rr!]'),
+      'JAPvD': _0x7b668d(0x3e7, 'F[DU'),
+      'KyzTk': _0x7b668d(0x1d5, '*ecf'),
+      'ZCRPN': _0x7b668d(0x250, '#72G'),
+      'tssGN': _0x7b668d(0x30b, 'LIHV') + _0x7b668d(0x1d7, 'U$0x'),
+      'yJfke': _0x7b668d(0x3ef, 'LIHV') + _0x7b668d(0x37f, 'u92y') + _0x7b668d(0x3d8, 'pZTB') + '8',
+      'jwehX': function(_0x2ead0d, _0x2ff690) {
+        return _0x2ead0d ?? _0x2ff690;
+      },
+      'YNccc': function(_0x165cdb, _0x227c30) {
+        return _0x165cdb(_0x227c30);
+      },
+      'cGyBb': _0x7b668d(0x2c9, '96a$'),
+      'dgOYk': _0x7b668d(0x3ba, '2tSQ'),
+      'oNmOc': function(_0x5ddf31, _0x22c206) {
+        return _0x5ddf31 instanceof _0x22c206;
+      },
+      'IIDxR': _0x7b668d(0x1c0, 'ML@z') + 'han]\x20dev' + _0x7b668d(0x3dd, 'IoO0') + '\x20fallbac' + _0x7b668d(0x35a, 'nzHK') + _0x7b668d(0x2a4, 'bmQ*')
+    },
+    _0x5eff6f = _[_0x7b668d(0x20d, 'r6OR')]()['auth'][_0x7b668d(0x349, 'zRRp') + _0x7b668d(0x241, '6a1I')];
+  if (_0x5eff6f) {
+    if (_0x7b668d(0x3bd, 'R*B1') !== _0x7b668d(0x37c, '#72G')) return _0x2ac235[_0x7b668d(0x1d9, 'WqXb')](_0x5e9aea, _0x1e30b2, _0x46cac0);
+    _0x28de4e[_0x7b668d(0x216, 'ML@z')] = _0x28de4e[_0x7b668d(0x205, '^HLl')] ?? new _0x596d2f(), _0x28de4e[_0x7b668d(0x3e4, 'R*B1')][Mt] = _0x5eff6f;
+  }
+  const _0x4092ff = _0x1269fa[_0x7b668d(0x2a2, '$kY5')](rg, _0x28de4e[_0x7b668d(0x32f, '(kOM')]);
+  if (_0x4092ff || _0x1269fa[_0x7b668d(0x2cd, '%paf')](Og, _0x28de4e[_0x7b668d(0x285, 'j^Rm')])) try {
+    if (_0x1269fa[_0x7b668d(0x362, 'pZTB')](_0x1269fa[_0x7b668d(0x1f3, 'r6OR')], _0x1269fa[_0x7b668d(0x353, 'kn$$')])) {
+      if (!te[_0x7b668d(0x20c, 'rr!]')]() && await _0x1269fa[_0x7b668d(0x1db, 'Yqux')](Lu), _0x4092ff) {
+        const _0x10ae82 = {};
+        _0x10ae82['op'] = _0x4092ff['op'], _0x10ae82[_0x7b668d(0x2da, '6a1I')] = _0x28de4e[_0x7b668d(0x206, '8nq2')] ?? null;
+        const _0x13fa6c = _0x10ae82;
+        _0x4092ff[_0x7b668d(0x2ac, '$Baz')][_0x7b668d(0x1e2, 'nzHK')] && (_0x13fa6c['p'] = _0x4092ff['params']);
+        let _0x5a9dbd = _0x4092ff[_0x7b668d(0x233, 'u92y')];
+        if (_0x28de4e[_0x7b668d(0x36e, 'nzHK')]) {
+          const _0x4bede8 = new URLSearchParams(_0x28de4e[_0x7b668d(0x1ed, 'f8K)')])[_0x7b668d(0x3de, '%paf')]();
+          _0x4bede8 && (_0x5a9dbd = _0x5a9dbd ? _0x1269fa['KiUoE'](_0x1269fa[_0x7b668d(0x315, '#72G')](_0x5a9dbd, '&'), _0x4bede8) : _0x4bede8), delete _0x28de4e['params'];
+        }
+        _0x5a9dbd && (_0x13fa6c['q'] = _0x5a9dbd), _0x28de4e[_0x7b668d(0x1af, 'u92y')] = _0x1269fa[_0x7b668d(0x2cc, 'ML@z')], _0x28de4e[_0x7b668d(0x3d7, 'f%K*')] = _0x4092ff[_0x7b668d(0x246, 'R*B1')] === _0x1269fa[_0x7b668d(0x3a4, '*as1')] ? _0x7b668d(0x319, 'U#n*') : _0x1269fa['GBdpJ'], _0x28de4e[_0x7b668d(0x1cf, 'pZTB')] = _0x13fa6c;
+      }
+      const _0x2422fe = (_0x28de4e[_0x7b668d(0x3a9, '#72G')] ?? _0x1269fa[_0x7b668d(0x294, '$kY5')])[_0x7b668d(0x409, '96a$') + _0x7b668d(0x247, 'r6OR')](),
+        _0xe8a0b2 = _0x1269fa[_0x7b668d(0x3d3, 'Qkf2')](_0x2422fe, _0x7b668d(0x238, 'kn$$')) || _0x1269fa[_0x7b668d(0x277, '96FE')](_0x2422fe, _0x7b668d(0x38f, 'bmQ*')) || _0x1269fa[_0x7b668d(0x291, 'bmQ*')](_0x2422fe, _0x7b668d(0x40d, 'R72&'));
+      if (_0xe8a0b2 && (_0x1269fa['LOyWW'](typeof FormData, _0x7b668d(0x378, 'UXo)') + 'd') && _0x1269fa[_0x7b668d(0x1d6, '*QIU')](_0x28de4e['data'], FormData) || _0x1269fa[_0x7b668d(0x1c5, 'bmQ*')](typeof Blob, _0x1269fa['yYHVg']) && _0x28de4e[_0x7b668d(0x308, 'r6OR')] instanceof Blob || _0x1269fa[_0x7b668d(0x314, 'bmQ*')](typeof ArrayBuffer, _0x7b668d(0x24d, 'ML@z') + 'd') && _0x1269fa[_0x7b668d(0x3f6, 'Yqux')](_0x28de4e[_0x7b668d(0x1cc, 'UXo)')], ArrayBuffer) || _0x1269fa['WIGVl'](typeof URLSearchParams, _0x1269fa['yYHVg']) && _0x1269fa[_0x7b668d(0x400, '*as1')](_0x28de4e[_0x7b668d(0x206, '8nq2')], URLSearchParams))) {
+        if (_0x1269fa[_0x7b668d(0x2c2, '8nq2')](_0x1269fa[_0x7b668d(0x25c, 'Yqux')], _0x1269fa[_0x7b668d(0x1b3, 'F[DU')])) return _0x28de4e;
+        {
+          let _0x520992 = '';
+          for (const _0x15ad2e of _0x230658) _0x520992 += _0x162244['fromChar' + _0x7b668d(0x3ae, 'U$0x')](_0x15ad2e);
+          return EkaBVg[_0x7b668d(0x373, 'u92y')](_0x55c7a3, _0x520992)[_0x7b668d(0x342, '#72G')](/\+/g, '-')[_0x7b668d(0x322, 'bmQ*')](/\//g, '_')[_0x7b668d(0x2df, 'WqXb')](/=+$/g, '');
+        }
+      }
+      _0x28de4e[_0x7b668d(0x1fa, 'rr!]')] = _0x28de4e[_0x7b668d(0x348, 'j^Rm')] ?? new _0x596d2f(), _0x28de4e[_0x7b668d(0x2fb, '$Baz')][ee[_0x7b668d(0x1ec, 'j^Rm')]] = ee[_0x7b668d(0x368, '$Baz')], _0x28de4e[_0x7b668d(0x3f8, 'Qkf2')][kg] = '1';
+      const _0x58c522 = te[_0x7b668d(0x3e6, 'ML@z') + _0x7b668d(0x365, 'r6OR')]();
+      if (_0x58c522 && (_0x28de4e[_0x7b668d(0x2ee, 'cA5r')][ee[_0x7b668d(0x3e1, 'F[DU') + _0x7b668d(0x3d6, 'r6OR') + 'R']] = _0x58c522), _0x28de4e[_0x7b668d(0x32e, '!Rs(') + _0x7b668d(0x3ac, '6a1I')] = _0x1269fa[_0x7b668d(0x1ac, 'u92y')], _0xe8a0b2) {
+        const _0x1f5cbd = _0x28de4e;
+        !_0x1f5cbd[_0x7b668d(0x1df, '^HLl') + _0x7b668d(0x208, '$Baz') + 'red'] && (_0x1f5cbd[_0x7b668d(0x40a, 'rr!]') + _0x7b668d(0x299, '(HSX') + _0x7b668d(0x3f0, 'f8K)')] = !0x0, _0x1f5cbd[_0x7b668d(0x2c6, 'x&1j') + 'nalData'] = _0x28de4e[_0x7b668d(0x2e0, '%paf')], _0x1f5cbd[_0x7b668d(0x2b4, 'ML@z') + _0x7b668d(0x3ff, 'rr!]') + _0x7b668d(0x2b0, 'cA5r')] = _0x28de4e[_0x7b668d(0x205, '^HLl')][_0x7b668d(0x37b, 'x&1j') + 'Type']);
+        const _0x2b8223 = _0x28de4e[_0x7b668d(0x357, 'u92y')] == null ? '' : _0x1269fa[_0x7b668d(0x2aa, 'j^Rm')](typeof _0x28de4e['data'], _0x1269fa[_0x7b668d(0x2c0, 'oTC&')]) ? _0x28de4e[_0x7b668d(0x38e, 'U#n*')] : JSON[_0x7b668d(0x399, 'f%K*') + 'y'](_0x28de4e[_0x7b668d(0x203, '#72G')]),
+          _0x4cf39c = new TextEncoder()[_0x7b668d(0x228, '96a$')](_0x2b8223),
+          _0x4f4bd9 = await te[_0x7b668d(0x2d0, 'wHbT') + 'odyB64'](_0x4cf39c);
+        _0x28de4e[_0x7b668d(0x327, 'Qkf2')] = _0x4f4bd9, _0x28de4e['headers'][_0x1269fa[_0x7b668d(0x2e8, '(OcK')]] = _0x1269fa['yJfke'], _0x28de4e[_0x7b668d(0x24f, 'zRRp') + _0x7b668d(0x1c1, 'f%K*')] = [_0x1a2d9b => _0x1a2d9b];
+      }
+      _0x28de4e['_scSessi' + _0x7b668d(0x3d5, '(OcK')] = _0x1269fa[_0x7b668d(0x1bd, '96FE')](_0x58c522, void(-0xb14 + 0x2 * 0x58a));
+    } else _0x18e884['set'](EkaBVg[_0x7b668d(0x1ef, 'F[DU')], EkaBVg[_0x7b668d(0x367, 'pZTB')](_0x588c20, _0x3ba871));
+  } catch (_0x5ab57c) {
+    if (Xx(_0x5ab57c)) throw te[_0x7b668d(0x3af, 'cA5r')](), new Error(_0x7b668d(0x395, 'F[DU') + _0x7b668d(0x2a5, '8nq2') + (_0x1269fa[_0x7b668d(0x380, 'j^Rm')](_0x5ab57c, Error) ? '：' + _0x5ab57c[_0x7b668d(0x235, 'f%K*')] : ''));
+    if (_0x1269fa['YNccc'](Ng, _0x5ab57c)) {
+      if (_0x1269fa[_0x7b668d(0x3b7, '!Rs(')](_0x1269fa[_0x7b668d(0x3ec, '%paf')], _0x1269fa[_0x7b668d(0x22e, '*QIU')])) throw te[_0x7b668d(0x2d1, 'R*B1')](), new Error('安全通道不可用:请通过\x20HTTP' + _0x7b668d(0x29b, 'IoO0') + _0x7b668d(0x25e, 'aGWe') + _0x7b668d(0x2b2, 'u92y') + (_0x1269fa[_0x7b668d(0x3a1, 'oTC&')](_0x5ab57c, Error) ? '。' + _0x5ab57c[_0x7b668d(0x1b4, '$kY5')] : ''));
+      _0x5a7a46[_0x7b668d(0x3e5, 'wHbT')] = _0x426de2[_0x7b668d(0x3b5, 'f8K)')](_0x2f4a14);
+    }
+    console['warn'](_0x1269fa['IIDxR'], _0x5ab57c);
+  }
+  return _0x28de4e;
+}), N[M(0x33d, 'pZTB') + M(0x29c, 'pZTB')][M(0x279, '96FE')]['use'](async _0x395122 => {
+  const _0x412246 = M,
+    _0xb03e0f = {
+      'bdKIt': 'Content-' + _0x412246(0x38d, '$Baz'),
+      'sxEVc': function(_0x3850a3, _0x8ab1d2) {
+        return _0x3850a3 + _0x8ab1d2;
+      },
+      'qGBXI': 'POST',
+      'XhlUt': 'user',
+      'OyKeu': _0x412246(0x263, '^HLl'),
+      'HMXKv': _0x412246(0x3bf, 'Yqux'),
+      'GCJyo': function(_0x48f204, _0x54ea4f) {
+        return _0x48f204 === _0x54ea4f;
+      },
+      'iGCld': _0x412246(0x3fd, 'cA5r'),
+      'gyNwn': function(_0x115742, _0x2bf713) {
+        return _0x115742 !== _0x2bf713;
+      },
+      'xuIGc': _0x412246(0x26a, '&my4'),
+      'KscPh': _0x412246(0x35b, 'z5rH'),
+      'OcDHf': function(_0x280d9f, _0x93ab93) {
+        return _0x280d9f(_0x93ab93);
+      },
+      'cMjAS': function(_0xb62c71, _0x201f26) {
+        return _0xb62c71 !== _0x201f26;
+      },
+      'wMApG': _0x412246(0x230, 'fN2N'),
+      'qCEGt': function(_0x86b133, _0x419d93) {
+        return _0x86b133(_0x419d93);
+      },
+      'SgRxl': function(_0x481ccb, _0x5057eb) {
+        return _0x481ccb instanceof _0x5057eb;
+      },
+      'CrbuO': _0x412246(0x397, '!Rs(') + _0x412246(0x1e0, 'F[DU') + _0x412246(0x273, 'aGWe') + _0x412246(0x29d, 'UXo)') + _0x412246(0x1c7, 'IoO0') + _0x412246(0x31c, '(HSX'),
+      'DaFLi': '[securec' + _0x412246(0x1d0, '6a1I') + 'rypt\x20res' + _0x412246(0x303, '(kOM') + _0x412246(0x2cf, 'Yqux')
+    },
+    _0x2d9bd8 = _0x395122[_0x412246(0x38a, 'z5rH')]?.[ee['HEADER'][_0x412246(0x339, '6a1I') + _0x412246(0x3f3, 'LIHV')]()] ?? _0x395122[_0x412246(0x31a, '*as1')]?.[ee[_0x412246(0x2d5, 'ML@z')]];
+  if (_0xb03e0f[_0x412246(0x1c3, '^HLl')](_0x2d9bd8, ee[_0x412246(0x282, '$kY5')]) && _0xb03e0f[_0x412246(0x2b9, 'bmQ*')](typeof _0x395122['data'], _0xb03e0f[_0x412246(0x232, 'Qkf2')]) && _0xb03e0f[_0x412246(0x2d2, 'F[DU')](_0x395122['data'][_0x412246(0x324, '(OcK')](), '')) {
+    if (_0xb03e0f[_0x412246(0x1ae, 'j^Rm')] === _0x412246(0x3eb, '6a1I')) _0x14840d[_0x412246(0x264, 'oTC&')](FJqoeA[_0x412246(0x26e, '(kOM')]);
+    else try {
+      if (_0xb03e0f[_0x412246(0x301, '(HSX')](_0x412246(0x312, '(OcK'), _0xb03e0f[_0x412246(0x3d1, '#72G')])) {
+        const _0x3132c0 = await te[_0x412246(0x225, 'bmQ*') + _0x412246(0x2db, 'zRRp')](_0x395122[_0x412246(0x308, 'r6OR')]),
+          _0x259a98 = new TextDecoder()[_0x412246(0x398, '*QIU')](_0x3132c0);
+        try {
+          _0x395122[_0x412246(0x203, '#72G')] = JSON[_0x412246(0x21d, '(OcK')](_0x259a98);
+        } catch {
+          _0x395122[_0x412246(0x2e0, '%paf')] = _0x259a98;
+        }
+        const _0xbc716 = _0xb03e0f[_0x412246(0x38b, '(HSX')](Tg, _0x395122[_0x412246(0x348, 'j^Rm')]);
+        if (_0xbc716) {
+          if (_0xb03e0f['cMjAS'](_0xb03e0f['wMApG'], _0xb03e0f['wMApG'])) {
+            const _0x4f5fa0 = {};
+            _0x4f5fa0['op'] = _0xabb218['op'], _0x4f5fa0[_0x412246(0x1e7, 'dfdR')] = _0x4522a6[_0x412246(0x364, 'U$0x')] ?? null;
+            const _0x42f6bf = _0x4f5fa0;
+            _0x426b68[_0x412246(0x255, '#72G')][_0x412246(0x1b8, 'fN2N')] && (_0x42f6bf['p'] = _0x2cfccb[_0x412246(0x1ce, 'IoO0')]);
+            let _0x39ddea = _0xd3269b[_0x412246(0x384, '(kOM')];
+            if (_0xeeeb95[_0x412246(0x1aa, 'pZTB')]) {
+              const _0x14c5fa = new _0x5973d4(_0x1b3095['params'])[_0x412246(0x270, '!Rs(')]();
+              _0x14c5fa && (_0x39ddea = _0x39ddea ? FJqoeA[_0x412246(0x385, '(OcK')](_0x39ddea + '&', _0x14c5fa) : _0x14c5fa), delete _0x3a88d1[_0x412246(0x1b0, 'WqXb')];
+            }
+            _0x39ddea && (_0x42f6bf['q'] = _0x39ddea), _0x253183[_0x412246(0x3e9, 'UXo)')] = FJqoeA['qGBXI'], _0x219e41[_0x412246(0x309, 'U$0x')] = _0x292e57[_0x412246(0x372, 'f8K)')] === FJqoeA[_0x412246(0x22b, '(kOM')] ? FJqoeA[_0x412246(0x3fe, 'x&1j')] : FJqoeA[_0x412246(0x3f1, 'z5rH')], _0x4d820e['data'] = _0x42f6bf;
+          } else throw _0x395122[_0x412246(0x3c0, '*QIU')] = _0xbc716, _0x395122[_0x412246(0x249, '95U*') + 'xt'] = '', new _0x5183b7(_0xb03e0f[_0x412246(0x376, '%paf')](mn, _0x395122[_0x412246(0x30a, '6a1I')]) ?? _0x412246(0x3e8, 'oTC&') + 'failed\x20with\x20stat' + _0x412246(0x2dd, 'F[DU') + _0xbc716, _0x5183b7['ERR_BAD_' + _0x412246(0x2a7, 'x&1j')], _0x395122[_0x412246(0x34c, 'x&1j')], _0x395122[_0x412246(0x226, 'LIHV')], _0x395122);
+        }
+      } else _0x320dff[_0x412246(0x25d, 'pZTB')][_0x412246(0x206, '8nq2')] = _0x44f1d8;
+    } catch (_0xcbca3) {
+      if (_0xb03e0f['SgRxl'](_0xcbca3, _0x5183b7)) return Promise[_0x412246(0x298, '*QIU')](_0xcbca3);
+      const _0x3497e8 = _0x395122[_0x412246(0x2be, 'F[DU')];
+      if (_0x3497e8 && !_0x3497e8[_0x412246(0x218, 'f8K)') + 'ed']) try {
+        return await xn(_0x3497e8[_0x412246(0x2d7, 'z5rH') + _0x412246(0x36c, 'f8K)')]), _0x3497e8[_0x412246(0x256, '#72G') + 'ed'] = !0x0, _0xb03e0f[_0x412246(0x351, '#72G')](gn, _0x3497e8), N[_0x412246(0x2d9, 'r6OR')](_0x3497e8);
+      } catch (_0x132ae6) {
+        console[_0x412246(0x39d, '(kOM')](_0xb03e0f[_0x412246(0x3bb, 'R72&')], _0x132ae6);
+      }
+      return console[_0x412246(0x3fc, 'kn$$')](_0xb03e0f[_0x412246(0x2a8, '$kY5')], _0xcbca3), Promise[_0x412246(0x40c, '%paf')](_0xcbca3);
+    }
+  }
+  return _0x395122;
+}, async _0x530686 => {
+  const _0x5ca4a8 = M,
+    _0x2eead2 = {
+      'KLXFs': '[securec' + _0x5ca4a8(0x2ae, '$kY5') + _0x5ca4a8(0x1f8, 'fN2N') + _0x5ca4a8(0x231, 'x&1j') + _0x5ca4a8(0x2e3, '^HLl') + _0x5ca4a8(0x3c6, 'dfdR'),
+      'FCdiX': function(_0x3846ae, _0x3ec0c6) {
+        return _0x3846ae !== _0x3ec0c6;
+      },
+      'DwMLR': _0x5ca4a8(0x3ce, 'z5rH') + 'd',
+      'PFNRy': _0x5ca4a8(0x1c2, 'oTC&'),
+      'IdSrz': function(_0x305c5b, _0x2cdc1c) {
+        return _0x305c5b(_0x2cdc1c);
+      },
+      'RjDWb': function(_0x52a177) {
+        return _0x52a177();
+      },
+      'Kdymt': _0x5ca4a8(0x33c, 'nzHK'),
+      'NShXP': _0x5ca4a8(0x323, 'u92y'),
+      'onXxX': function(_0x4a1cb3, _0x404ade) {
+        return _0x4a1cb3 === _0x404ade;
+      },
+      'HBwov': _0x5ca4a8(0x3f2, 'r6OR'),
+      'NpMts': function(_0x5c9066, _0x2d77d0) {
+        return _0x5c9066 !== _0x2d77d0;
+      },
+      'reJWA': _0x5ca4a8(0x21c, 'r6OR'),
+      'BvYRh': 'hydSt',
+      'QepKk': function(_0x145f61, _0x9411e1) {
+        return _0x145f61 === _0x9411e1;
+      },
+      'ONtPL': _0x5ca4a8(0x35c, 'UXo)'),
+      'aPpZc': _0x5ca4a8(0x268, 'fN2N'),
+      'voyJY': '[securec' + _0x5ca4a8(0x3a5, 'Qkf2') + _0x5ca4a8(0x3b1, 'bmQ*') + _0x5ca4a8(0x3ee, '95U*') + _0x5ca4a8(0x375, 'R*B1') + _0x5ca4a8(0x341, 'ML@z'),
+      'KfxMH': function(_0x2fde8b, _0x3d7739) {
+        return _0x2fde8b === _0x3d7739;
+      },
+      'RziUe': _0x5ca4a8(0x266, 'f%K*') + _0x5ca4a8(0x36b, 'cA5r'),
+      'nCwgG': _0x5ca4a8(0x2cb, '$Baz') + _0x5ca4a8(0x359, 'IoO0') + _0x5ca4a8(0x2a3, 'pZTB'),
+      'PNTvS': function(_0xc83aad, _0x496ac2) {
+        return _0xc83aad(_0x496ac2);
+      },
+      'HuTfW': _0x5ca4a8(0x27e, 'f%K*') + _0x5ca4a8(0x220, 'WqXb') + _0x5ca4a8(0x3ad, 'U#n*') + _0x5ca4a8(0x2ca, 'oTC&') + ':',
+      'zDklX': _0x5ca4a8(0x2ef, '$kY5'),
+      'wEOOB': function(_0x47bb3d, _0x4c0ab0) {
+        return _0x47bb3d === _0x4c0ab0;
+      },
+      'BWhxT': 'SRoFK',
+      'GyWNi': _0x5ca4a8(0x3ed, 'zRRp'),
+      'uAgDO': _0x5ca4a8(0x2af, 'cA5r'),
+      'glHay': function(_0x58ebe4, _0x19bd3a) {
+        return _0x58ebe4 !== _0x19bd3a;
+      },
+      'fPTXA': _0x5ca4a8(0x3f7, '$kY5')
+    };
+  if (_0x530686 instanceof _0x5183b7) {
+    if (_0x2eead2[_0x5ca4a8(0x3b0, 'zRRp')](_0x2eead2[_0x5ca4a8(0x1ba, '*QIU')], _0x2eead2[_0x5ca4a8(0x33a, 'wHbT')])) {
+      const _0x3299ae = _0x530686['response']?.[_0x5ca4a8(0x2a1, '#72G')]?.[ee[_0x5ca4a8(0x2d5, 'ML@z')]['toLowerC' + _0x5ca4a8(0x32c, '2tSQ')]()] ?? _0x530686[_0x5ca4a8(0x369, '96a$')]?.[_0x5ca4a8(0x30f, 'r6OR')]?.[ee[_0x5ca4a8(0x321, '95U*')]];
+      if (_0x2eead2['onXxX'](_0x3299ae, ee['VERSION']) && _0x530686['response'] && _0x2eead2[_0x5ca4a8(0x3cb, 'fN2N')](typeof _0x530686['response'][_0x5ca4a8(0x203, '#72G')], _0x2eead2[_0x5ca4a8(0x2c4, '%paf')]) && _0x530686[_0x5ca4a8(0x3d2, 'IoO0')][_0x5ca4a8(0x357, 'u92y')]['trim']() !== '') {
+        if (_0x2eead2['NpMts'](_0x2eead2['reJWA'], _0x2eead2[_0x5ca4a8(0x304, 'UXo)')])) try {
+          const _0x36fa50 = await te[_0x5ca4a8(0x28c, '(OcK') + _0x5ca4a8(0x1cb, 'UXo)')](_0x530686[_0x5ca4a8(0x1c8, '^HLl')][_0x5ca4a8(0x308, 'r6OR')]),
+            _0x56ca0c = new TextDecoder()[_0x5ca4a8(0x223, 'aGWe')](_0x36fa50);
+          try {
+            _0x2eead2[_0x5ca4a8(0x32b, 'ML@z')](_0x5ca4a8(0x346, 'Qkf2'), _0x2eead2[_0x5ca4a8(0x259, 'j^Rm')]) ? _0x395fa9[_0x5ca4a8(0x1ca, '8nq2')](GxWDME['KLXFs'], _0x553363) : _0x530686[_0x5ca4a8(0x213, '*ecf')][_0x5ca4a8(0x40f, 'kn$$')] = JSON[_0x5ca4a8(0x2fe, '96FE')](_0x56ca0c);
+          } catch {
+            _0x530686[_0x5ca4a8(0x276, 'R*B1')]['data'] = _0x56ca0c;
+          }
+          _0x530686[_0x5ca4a8(0x3e3, '*as1')] = mn(_0x530686[_0x5ca4a8(0x28f, 'r6OR')][_0x5ca4a8(0x1a9, 'WqXb')]) ?? _0x530686['message'];
+        } catch (_0x5d2d69) {
+          _0x2eead2[_0x5ca4a8(0x313, '*as1')] === _0x2eead2[_0x5ca4a8(0x1d4, 'u92y')] ? console['error'](_0x2eead2[_0x5ca4a8(0x391, '*as1')], _0x5d2d69) : (_0x507796[_0x5ca4a8(0x300, 'u92y')]()[_0x5ca4a8(0x253, 'WqXb')][_0x5ca4a8(0x330, 'x&1j')](), _0x682668[_0x5ca4a8(0x381, 'wHbT')](), _0x2eead2[_0x5ca4a8(0x202, 'fN2N')](typeof _0x18fd86, _0x2eead2[_0x5ca4a8(0x24e, 'f%K*')]) && _0x2eead2[_0x5ca4a8(0x34b, 'r6OR')](_0x4f2340[_0x5ca4a8(0x234, '!Rs(')][_0x5ca4a8(0x35f, 'UXo)')], _0x2eead2['PFNRy']) && (_0x47cf90[_0x5ca4a8(0x3c2, 'UXo)')][_0x5ca4a8(0x237, 'f%K*')] = _0x2eead2[_0x5ca4a8(0x386, 'f%K*')]));
+        } else throw _0x541d01[_0x5ca4a8(0x1bf, 'pZTB')] = _0x2833a6, _0x547cad[_0x5ca4a8(0x22d, '*ecf') + 'xt'] = '', new _0x1995af(GxWDME[_0x5ca4a8(0x389, '#72G')](_0x5f44eb, _0x42a15b[_0x5ca4a8(0x2f9, 'LIHV')]) ?? _0x5ca4a8(0x340, 'UXo)') + _0x5ca4a8(0x200, 'rr!]') + _0x5ca4a8(0x329, '2tSQ') + _0x5ca4a8(0x288, 'fN2N') + _0x3ea247, _0x3f5a74[_0x5ca4a8(0x1b7, 'dfdR') + _0x5ca4a8(0x3c9, 'R*B1')], _0xb8bc87[_0x5ca4a8(0x305, '%paf')], _0x5073e6['request'], _0xffb887);
+      }
+      const _0x535a41 = _0x530686[_0x5ca4a8(0x279, '96FE')]?.[_0x5ca4a8(0x1dc, '6a1I')]?.[ee[_0x5ca4a8(0x23c, '$Baz') + 'HEADER'][_0x5ca4a8(0x3fa, '$kY5') + _0x5ca4a8(0x1ee, 'x&1j')]()] ?? _0x530686[_0x5ca4a8(0x271, '*as1')]?.['headers']?.[ee['EXPIRED_' + _0x5ca4a8(0x1f6, '*QIU')]],
+        _0x19ab41 = _0x2eead2['KfxMH'](typeof _0x530686[_0x5ca4a8(0x22a, 'fN2N')]?.[_0x5ca4a8(0x206, '8nq2')], _0x5ca4a8(0x254, 'fN2N')) ? _0x530686[_0x5ca4a8(0x25d, 'pZTB')][_0x5ca4a8(0x3cd, 'F[DU')][_0x5ca4a8(0x403, 'LIHV') + _0x5ca4a8(0x2f5, 'fN2N')]() : '',
+        _0x547838 = _0x2eead2[_0x5ca4a8(0x411, '(HSX')](_0x530686[_0x5ca4a8(0x276, 'R*B1')]?.[_0x5ca4a8(0x2a9, 'oTC&')], 0x190) && (_0x19ab41['includes'](_0x2eead2[_0x5ca4a8(0x36a, '(HSX')]) || _0x19ab41[_0x5ca4a8(0x21b, '#72G')](_0x2eead2['nCwgG'])),
+        _0x14f581 = _0x530686[_0x5ca4a8(0x276, 'R*B1')]?.[_0x5ca4a8(0x2a0, 'IoO0')] === 0x19c && _0x2eead2[_0x5ca4a8(0x35e, '96a$')](_0x535a41, '1'),
+        _0x24d651 = _0x530686[_0x5ca4a8(0x292, 'kn$$')];
+      if ((_0x14f581 || _0x547838) && _0x24d651 && !_0x24d651[_0x5ca4a8(0x23e, 'R72&') + 'ed']) try {
+        return _0x2eead2['FCdiX'](_0x5ca4a8(0x37a, 'F[DU'), _0x5ca4a8(0x3f9, '#72G')) ? (await _0x2eead2[_0x5ca4a8(0x1bc, '!Rs(')](xn, _0x24d651[_0x5ca4a8(0x204, 'u92y') + _0x5ca4a8(0x2f7, 'f%K*')]), _0x24d651[_0x5ca4a8(0x2bd, 'Qkf2') + 'ed'] = !0x0, _0x2eead2[_0x5ca4a8(0x402, '$kY5')](gn, _0x24d651), N[_0x5ca4a8(0x3c3, 'Qkf2')](_0x24d651)) : _0x5b417c;
+      } catch (_0x4ae93f) {
+        console['error'](_0x2eead2[_0x5ca4a8(0x20f, 'oTC&')], _0x4ae93f);
+      }
+      if (_0x530686[_0x5ca4a8(0x23b, 'ML@z')]?.['status'] === 0x5 * 0x3b7 + -0x1 * -0x677 + -0x1776 && _0x530686[_0x5ca4a8(0x344, '#72G')]?.['headers']?.[_0x5ca4a8(0x3aa, '*QIU') + _0x5ca4a8(0x3df, '96FE')] === _0x2eead2[_0x5ca4a8(0x27c, 'bmQ*')]) {
+        if (_0x2eead2[_0x5ca4a8(0x2d6, 'cA5r')](_0x2eead2[_0x5ca4a8(0x331, '!Rs(')], _0x2eead2[_0x5ca4a8(0x2d3, '$kY5')])) _0x1d82a4['reset'](), _0x5cac43 = GxWDME[_0x5ca4a8(0x1da, 'f8K)')](_0x2e17a0)['finally'](() => {
+          _0x598050 = null;
+        });
+        else return _0x2eead2[_0x5ca4a8(0x31b, '96a$')](typeof window, _0x2eead2[_0x5ca4a8(0x24e, 'f%K*')]) && window[_0x5ca4a8(0x3c2, 'UXo)')][_0x5ca4a8(0x219, 'rr!]')] !== '/404' && (_0x2eead2[_0x5ca4a8(0x28b, 'U$0x')](_0x5ca4a8(0x24a, 'oTC&'), _0x5ca4a8(0x392, '(kOM')) ? _0x509161 = void 0x0 : window[_0x5ca4a8(0x374, 'U#n*')][_0x5ca4a8(0x1bb, '&my4')] = _0x2eead2[_0x5ca4a8(0x356, '96FE')]), Promise[_0x5ca4a8(0x333, 'pZTB')](_0x530686);
+      }
+      _0x2eead2[_0x5ca4a8(0x296, 'IoO0')](_0x530686[_0x5ca4a8(0x2dc, '8nq2')]?.[_0x5ca4a8(0x410, '&my4')], 0x617 * 0x2 + 0x1224 * -0x1 + 0x787) && (_[_0x5ca4a8(0x211, '2tSQ')]()[_0x5ca4a8(0x2e7, 'kn$$')][_0x5ca4a8(0x286, 'Qkf2')](), te[_0x5ca4a8(0x2c3, '2tSQ')](), _0x2eead2[_0x5ca4a8(0x251, 'Yqux')](typeof window, _0x2eead2[_0x5ca4a8(0x39c, '*ecf')]) && _0x2eead2[_0x5ca4a8(0x29a, 'z5rH')](window[_0x5ca4a8(0x3da, 'j^Rm')][_0x5ca4a8(0x25a, 'j^Rm')], _0x2eead2[_0x5ca4a8(0x33e, '8nq2')]) && (_0x2eead2[_0x5ca4a8(0x2ea, '$kY5')] === _0x5ca4a8(0x2b5, '&my4') ? window[_0x5ca4a8(0x1e4, '&my4')][_0x5ca4a8(0x26d, '95U*')] = _0x5ca4a8(0x2f4, 'j^Rm') : _0x34e141['data'] = _0x3f0b0b));
+    } else _0x218621['data'] = _0x5cf7e8[_0x5ca4a8(0x30e, 'dfdR') + _0x5ca4a8(0x3c8, 'F[DU')];
+  }
+  return Promise[_0x5ca4a8(0x212, 'x&1j')](_0x530686);
+});
+
+function Eg() {
+  return (Ig || (typeof window < 'u' ? window['location']['origin'] : ''))['replace'](/^http/, 'ws');
+}
+
+function Ug(_0x29a976, _0x2ee824) {
+  if (_0x2ee824['type'] === 'realtime') {
+    if (Array['isArray'](_0x2ee824['servers'])) {
+      const _0x1a41ef = {
+        'success': !0x0,
+        'servers': _0x2ee824['servers']
+      };
+      _0x29a976['setQueryData'](['remote-servers'], _0x1a41ef), _0x29a976['setQueryData'](['remote-servers-speed'], _0x1a41ef);
+    }
+    _0x2ee824['userConnections'] && typeof _0x2ee824['userConnections'] == 'object' && _0x29a976['setQueryData'](['admin-user-connections'], _0x1c316d => ({
+      ..._0x1c316d,
+      'connections': _0x2ee824['userConnections'],
+      'ips': _0x2ee824['userConnectionIPs'] ?? _0x1c316d?.['ips'],
+      'connection_count_ready': _0x2ee824['connectionCountReady'] ?? _0x1c316d?.['connection_count_ready'],
+      'not_ready_server_ids': _0x2ee824['connectionNotReadyServerIDs'] ?? _0x1c316d?.['not_ready_server_ids']
+    })), _0x2ee824['trafficSummary'] !== void 0x0 && _0x29a976['setQueryData'](['traffic-summary'], _0x2ee824['trafficSummary']), _0x2ee824['adminTraffic'] !== void 0x0 && _0x29a976['setQueryData'](['admin-traffic-overview'], _0x2ee824['adminTraffic']), _0x2ee824['nodeTotals'] !== void 0x0 && typeof _0x2ee824['nodeTotalsDate'] == 'string' && _0x29a976['setQueryData'](['node-totals', _0x2ee824['nodeTotalsDate']], _0x2ee824['nodeTotals']);
+    return;
+  }
+  _0x2ee824['type'] === 'server-status' && typeof _0x2ee824['serverId'] == 'number' && (_0x2ee824['recovery'] !== void 0x0 && _0x29a976['setQueryData'](['xray-recovery-status', _0x2ee824['serverId']], _0x2ee824['recovery']), _0x2ee824['services'] && Ru['getState']()['setServerServices'](_0x2ee824['serverId'], _0x2ee824['services']));
+}
+
+function jg() {
+  const _0x52dc74 = _(_0x146afc => _0x146afc['auth']['accessToken']),
+    _0x57c51a = _0x40fa57(),
+    _0x56a69c = Ru(_0x221cce => _0x221cce['setConnected']),
+    _0x14935b = _0x4eb10f['useRef'](null),
+    _0x4ea95f = _0x4eb10f['useRef'](null),
+    _0x2795c4 = _0x4eb10f['useRef'](null),
+    _0x22669e = _0x4eb10f['useRef'](0x0),
+    _0x17bb8b = _0x4eb10f['useRef'](!0x1);
+  _0x4eb10f['useEffect'](() => {
+    if (!_0x52dc74) return;
+    _0x17bb8b['current'] = !0x1;
+    const _0x3f0d3c = () => {
+        _0x4ea95f['current'] && (clearTimeout(_0x4ea95f['current']), _0x4ea95f['current'] = null), _0x2795c4['current'] && (clearInterval(_0x2795c4['current']), _0x2795c4['current'] = null);
+      },
+      _0x5800c2 = () => {
+        if (_0x17bb8b['current']) return;
+        const _0x291679 = Eg() + '/api/ws/dashboard?token=' + encodeURIComponent(_0x52dc74);
+        let _0x174635;
+        try {
+          _0x174635 = new WebSocket(_0x291679);
+        } catch {
+          _0x51b076();
+          return;
+        }
+        _0x14935b['current'] = _0x174635, _0x174635['onopen'] = () => {
+          _0x22669e['current'] = 0x0, _0x56a69c(!0x0), _0x2795c4['current'] && clearInterval(_0x2795c4['current']), _0x2795c4['current'] = setInterval(() => {
+            if (_0x174635['readyState'] === WebSocket['OPEN']) try {
+              _0x174635['send']('{\x22type\x22:\x22ping\x22}');
+            } catch {}
+          }, 0x61a8);
+        }, _0x174635['onmessage'] = _0x2278be => {
+          try {
+            Ug(_0x57c51a, JSON['parse'](_0x2278be['data']));
+          } catch {}
+        }, _0x174635['onclose'] = () => {
+          _0x56a69c(!0x1), _0x2795c4['current'] && (clearInterval(_0x2795c4['current']), _0x2795c4['current'] = null), _0x51b076();
+        }, _0x174635['onerror'] = () => {
+          try {
+            _0x174635['close']();
+          } catch {}
+        };
+      },
+      _0x51b076 = () => {
+        if (_0x17bb8b['current'] || _0x4ea95f['current']) return;
+        const _0x38f2a0 = Math['min'](_0x22669e['current']++, 0x6),
+          _0xccc85d = Math['min'](0x3e8 * 0x2 ** _0x38f2a0, 0x7530);
+        _0x4ea95f['current'] = setTimeout(() => {
+          _0x4ea95f['current'] = null, _0x5800c2();
+        }, _0xccc85d);
+      };
+    return _0x5800c2(), () => {
+      if (_0x17bb8b['current'] = !0x0, _0x3f0d3c(), _0x56a69c(!0x1), _0x14935b['current']) {
+        try {
+          _0x14935b['current']['close']();
+        } catch {}
+        _0x14935b['current'] = null;
+      }
+    };
+  }, [_0x52dc74, _0x57c51a, _0x56a69c]);
+}
+const Hg = '妙妙屋X',
+  Bg = '/images/favicon.ico';
+
+function Gg(_0x50c577) {
+  return _0x50c577['trim']() || Hg;
+}
+
+function qg() {
+  return document['documentElement']['classList']['contains']('theme-anime') ? '/images/anime-favicon.png' : Bg;
+}
+
+function zg(_0x54380d, _0x2536ea, _0x10e809) {
+  document['title'] = Gg(_0x54380d);
+  let _0x44ba38 = document['querySelector']('link[rel~=\x27icon\x27]');
+  _0x44ba38 || (_0x44ba38 = document['createElement']('link'), _0x44ba38['rel'] = 'icon', document['head']['appendChild'](_0x44ba38)), _0x44ba38['href'] = _0x2536ea['trim']() || _0x10e809?.['fallbackIcon'] || qg();
+}
+const _u = _0x139aee => {
+    if (typeof document > 'u') return '';
+    const _0x34d4be = document['querySelector']('meta[name=\x22' + _0x139aee + '\x22]')?.['getAttribute']('content')?.['trim']();
+    return !_0x34d4be || _0x34d4be['startsWith']('__MMW_') ? '' : _0x34d4be;
+  },
+  Kg = _u('mmwx-brand-title'),
+  $g = _u('mmwx-brand-logo'),
+  Qg = async () => (await N['get']('¤24055d3adaf1423d'))['data']?.['branding'] ?? {};
+
+function Ou() {
+  const {
+    data: _0x2823c1,
+    isFetched: _0x854e65
+  } = _0x8fb83({
+    'queryKey': ['branding'],
+    'queryFn': Qg,
+    'staleTime': 0x493e0,
+    'retry': !0x1
+  });
+  return {
+    'siteTitle': (_0x2823c1?.['site_title'] || '')['trim'](),
+    'brandTitle': (_0x2823c1 ? _0x2823c1['brand_title'] || '' : Kg)['trim'](),
+    'logoUrl': (_0x2823c1 ? _0x2823c1['logo_url'] || '' : $g)['trim'](),
+    'iconUrl': (_0x2823c1?.['icon_url'] || '')['trim'](),
+    'loaded': _0x854e65
+  };
+}
+const wt = 0x300;
+
+function Vg() {
+  const [_0x276e29, _0xefc47d] = _0x4eb10f['useState'](void 0x0);
+  return _0x4eb10f['useEffect'](() => {
+    const _0x372749 = window['matchMedia']('(max-width:\x20' + (wt - 0x1) + 'px)'),
+      _0x413331 = () => {
+        _0xefc47d(window['innerWidth'] < wt);
+      };
+    return _0x372749['addEventListener']('change', _0x413331), _0xefc47d(window['innerWidth'] < wt), () => _0x372749['removeEventListener']('change', _0x413331);
+  }, []), !!_0x276e29;
+}
+
+function Xg({
+  ..._0x4a0f1a
+}) {
+  const {
+    theme: _0x3c17bd = 'system'
+  } = Tu(), _0x13f3f8 = Vg();
+  return _0x2c4709['jsx'](_0x15f148, {
+    'theme': _0x3c17bd,
+    'className': 'toaster\x20group\x20[&_div[data-content]]:w-full',
+    'style': {
+      '--normal-bg': 'var(--popover)',
+      '--normal-text': 'var(--popover-foreground)',
+      '--normal-border': 'var(--border)'
+    },
+    'position': _0x13f3f8 ? 'top-center' : 'bottom-right',
+    'expand': !_0x13f3f8,
+    'visibleToasts': _0x13f3f8 ? 0x1 : 0x3,
+    'closeButton': _0x13f3f8,
+    'richColors': !0x0,
+    ..._0x4a0f1a
+  });
+}
+const Jg = ['#a78bfa', '#8b5cf6', '#c4b5fd', '#6a5ae0', '#f0c674', '#ec6fb0', '#eede9f', '#efe6ff'],
+  Xe = (_0x311cc4, _0xe86fe0) => _0x311cc4 + Math['random']() * (_0xe86fe0 - _0x311cc4),
+  Yg = _0x5c808b => _0x5c808b[Math['floor'](Math['random']() * _0x5c808b['length'])];
+let Zg = 0x0;
+
+function e0() {
+  return {
+    'id': ++Zg,
+    'top': Xe(0x2, 0x60)['toFixed'](0x2) + '%',
+    'left': Xe(0x1, 0x62)['toFixed'](0x2) + '%',
+    'size': Math['round'](Xe(0xc, 0x1a)),
+    'color': Yg(Jg),
+    'dur': Number(Xe(1.4, 2.8)['toFixed'](0x2))
+  };
+}
+const t0 = 0x46,
+  bn = 0xa0;
+
+function n0() {
+  const [_0x5d8fa6, _0x1a8fe1] = _0x4eb10f['useState']([]);
+  _0x4eb10f['useEffect'](() => {
+    const _0x129fe6 = setInterval(() => {
+      _0x1a8fe1(_0x44e114 => [..._0x44e114['length'] >= bn ? _0x44e114['slice'](_0x44e114['length'] - bn + 0x1) : _0x44e114, e0()]);
+    }, t0);
+    return () => clearInterval(_0x129fe6);
+  }, []);
+  const _0x3ae8e9 = _0x313531 => _0x1a8fe1(_0x45fadc => _0x45fadc['filter'](_0x1a6b04 => _0x1a6b04['id'] !== _0x313531));
+  return _0x2c4709['jsx']('div', {
+    'className': 'anime-starfield',
+    'aria-hidden': 'true',
+    'children': _0x5d8fa6['map'](_0x4de0ee => _0x2c4709['jsx']('span', {
+      'className': 'anime-star',
+      'style': {
+        'top': _0x4de0ee['top'],
+        'left': _0x4de0ee['left'],
+        'width': _0x4de0ee['size'],
+        'height': _0x4de0ee['size'],
+        'color': _0x4de0ee['color'],
+        'animationDuration': _0x4de0ee['dur'] + 's'
+      },
+      'onAnimationEnd': () => _0x3ae8e9(_0x4de0ee['id'])
+    }, _0x4de0ee['id']))
+  });
+}
+const dt = [{
+    'titleKey': 'nav.trafficInfo',
+    'to': '/',
+    'icon': _0x5d69d0
+  }],
+  Fu = [{
+    'titleKey': 'nav.nodeManagement',
+    'to': '/nodes',
+    'icon': _0x5181d4
+  }, {
+    'titleKey': 'nav.serviceManagement',
+    'to': '/xray-servers',
+    'icon': _0x4a71cd
+  }, {
+    'titleKey': 'nav.userManagement',
+    'to': '/users',
+    'icon': _0xbed91c
+  }, {
+    'titleKey': 'nav.packageManagement',
+    'to': '/packages',
+    'icon': _0x44d464
+  }, {
+    'titleKey': 'nav.certificateManagement',
+    'to': '/certificates',
+    'icon': _0x20ba53
+  }, {
+    'titleKey': 'nav.forwardManagement',
+    'to': '/forward',
+    'icon': _0x3667d4
+  }, {
+    'titleKey': 'nav.ruleProviders',
+    'to': '/rule-providers',
+    'icon': _0x5ac447
+  }],
+  Ut = [{
+    'titleKey': 'nav.subscriptionLinks',
+    'to': '/subscription',
+    'icon': _0x1319c7,
+    'pageKey': 'subscription'
+  }, {
+    'titleKey': 'nav.subscriptionGenerator',
+    'to': '/generator',
+    'icon': _0x285465,
+    'pageKey': 'generator'
+  }],
+  jt = [{
+    'titleKey': 'nav.templateManagement',
+    'to': '/templates',
+    'icon': _0x3a61de,
+    'pageKey': 'templates'
+  }, {
+    'titleKey': 'nav.subscriptionManagement',
+    'to': '/subscribe-files',
+    'icon': _0x363bf5,
+    'pageKey': 'subscribe-files'
+  }, {
+    'titleKey': 'nav.customRulesManagement',
+    'to': '/custom-rules',
+    'icon': _0x2d8c74,
+    'pageKey': 'custom-rules'
+  }],
+  Iu = [{
+    'titleKey': 'nav.nodeManagement',
+    'to': '/nodes',
+    'icon': _0x5181d4,
+    'pageKey': 'nodes'
+  }, {
+    'titleKey': 'nav.myForward',
+    'to': '/my-forward',
+    'icon': _0x3667d4,
+    'pageKey': 'forward'
+  }],
+  Mu = [{
+    'titleKey': 'nav.logManagement',
+    'to': '/logs',
+    'icon': _0x46ab54
+  }, {
+    'titleKey': 'nav.systemSettings',
+    'to': '/system-settings',
+    'icon': _0xf1679a
+  }];
+
+function Eu(_0x32d648) {
+  const {
+    isAdmin: _0x2791d5,
+    enableMmwFeatures: _0x1c619,
+    enableOverrideScripts: _0x395f4c,
+    allowedPages: _0x31e707
+  } = _0x32d648, _0x3ee992 = _0x320523 => _0x395f4c ? _0x320523 : _0x320523['filter'](_0x5b9238 => _0x5b9238['pageKey'] !== 'custom-rules'), _0x26440a = _0x3ee992([...Ut, ...jt, ...Iu]['filter'](_0x56f5a9 => _0x31e707['has'](_0x56f5a9['pageKey']))), _0x2948b1 = [..._0x1c619 ? Ut : [], ...Fu, ..._0x1c619 ? _0x3ee992(jt) : [], ...Mu];
+  return {
+    'allNavLinks': _0x2791d5 ? [...dt, ..._0x2948b1] : [...dt, ..._0x26440a],
+    'adminNavLinks': _0x2948b1,
+    'permittedMmwLinks': _0x26440a
+  };
+}
+
+function Ht(_0x4ba59b, _0x1c773d) {
+  if (!_0x1c773d) return _0x4ba59b;
+  const _0x1dfa9e = new Set(_0x1c773d['hidden'] ?? []),
+    _0x700df2 = _0x4ba59b['filter'](_0x28d094 => !_0x1dfa9e['has'](_0x28d094['to'])),
+    _0x2420d8 = _0x1c773d['order'] ?? [];
+  if (_0x2420d8['length'] === 0x0) return _0x700df2;
+  const _0x2be0fd = new Map(_0x2420d8['map']((_0x1092c5, _0x40d66c) => [_0x1092c5, _0x40d66c]));
+  return _0x700df2['map']((_0x50ef99, _0x28aaf8) => ({
+    'link': _0x50ef99,
+    'i': _0x28aaf8
+  }))['sort']((_0x2a10cb, _0x331344) => {
+    const _0x203177 = _0x2be0fd['get'](_0x2a10cb['link']['to']),
+      _0x2da5b1 = _0x2be0fd['get'](_0x331344['link']['to']);
+    return _0x203177 === void 0x0 && _0x2da5b1 === void 0x0 ? _0x2a10cb['i'] - _0x331344['i'] : _0x203177 === void 0x0 ? 0x1 : _0x2da5b1 === void 0x0 ? -0x1 : _0x203177 - _0x2da5b1;
+  })['map'](_0x3e7397 => _0x3e7397['link']);
+}
+const Uu = async () => (await N['get']('¤1fc16c46f017aad1'))['data']?.['config'] ?? {
+  'order': [],
+  'hidden': []
+};
+
+function Oy() {
+  const _0x3249d8 = new Set(),
+    _0x306c56 = [];
+  for (const _0x18c7d8 of [...dt, ...Ut, ...Fu, ...jt, ...Iu, ...Mu]) _0x3249d8['has'](_0x18c7d8['to']) || (_0x3249d8['add'](_0x18c7d8['to']), _0x306c56['push'](_0x18c7d8));
+  return _0x306c56;
+}
+const Te = async () => (await N['get']('¤60ba65d5b428f97b'))['data'], pt = async () => (await N['get']('¤c8c4428c308daf07'))['data'], o0 = {
+  '/': '/images/anime-nav/home.png',
+  '/nodes': '/images/anime-nav/nodes.png',
+  '/xray-servers': '/images/anime-nav/servers.png',
+  '/users': '/images/anime-nav/users.png',
+  '/packages': '/images/anime-nav/packages.png',
+  '/certificates': '/images/anime-nav/certificates.png',
+  '/forward': '/images/anime-nav/forward.png',
+  '/rule-providers': '/images/anime-nav/rule-providers.png',
+  '/subscription': '/images/anime-nav/subscription.png',
+  '/generator': '/images/anime-nav/generator.png',
+  '/templates': '/images/anime-nav/templates.png',
+  '/subscribe-files': '/images/anime-nav/subscribe-files.png',
+  '/custom-rules': '/images/anime-nav/custom-rules.png',
+  '/system-settings': '/images/anime-nav/settings.png',
+  '/logs': '/images/anime-nav/logs.png'
+};
+
+function Me({
+  Icon: _0x207f65,
+  to: _0x3baad6,
+  className: _0x18e755
+}) {
+  const _0x58e592 = o0[_0x3baad6];
+  return _0x2c4709['jsxs'](_0x2c4709['Fragment'], {
+    'children': [_0x2c4709['jsx'](_0x207f65, {
+      'className': D(_0x18e755, _0x58e592 && 'nav-icon-lucide')
+    }), _0x58e592 && _0x2c4709['jsx']('img', {
+      'src': _0x58e592,
+      'alt': '',
+      'aria-hidden': !0x0,
+      'className': D(_0x18e755, 'nav-icon-anime')
+    })]
+  });
+}
+
+function a0() {
+  const {
+    t: _0x20c897
+  } = _0x4c4113(), {
+    auth: _0x4e7ffc
+  } = _(), {
+    sidebarCollapsed: _0x4ab5b7
+  } = Jt(), {
+    data: _0x217164
+  } = _0x8fb83({
+    'queryKey': ['profile'],
+    'queryFn': Te,
+    'enabled': !!_0x4e7ffc['accessToken'],
+    'staleTime': 0x12c * 0x3e8
+  }), _0xb6989b = !!_0x217164?.['is_admin'], {
+    data: _0x3a8304
+  } = _0x8fb83({
+    'queryKey': ['miaomiaowu-features-enabled'],
+    'queryFn': async () => (await N['get']('§be1b6e9bd349dc3e'))['data'],
+    'enabled': !!_0x4e7ffc['accessToken'] && _0xb6989b,
+    'staleTime': 0x12c * 0x3e8
+  }), _0x53aac8 = _0x3a8304?.['enable_miaomiaowu_features'] ?? !0x0, {
+    data: _0x2c80b6
+  } = _0x8fb83({
+    'queryKey': ['system-settings', 'override-scripts'],
+    'queryFn': async () => (await N['get']('§9e1286e9352627c1'))['data'],
+    'enabled': !!_0x4e7ffc['accessToken'] && _0xb6989b,
+    'staleTime': 0x12c * 0x3e8
+  }), {
+    data: _0x1cfb7c
+  } = _0x8fb83({
+    'queryKey': ['user-permissions'],
+    'queryFn': pt,
+    'enabled': !!_0x4e7ffc['accessToken'] && !_0xb6989b,
+    'staleTime': 0x12c * 0x3e8
+  }), _0x143bdd = _0xb6989b ? _0x2c80b6?.['enable_override_scripts'] ?? !0x1 : _0x1cfb7c?.['enable_override_scripts'] ?? !0x1, {
+    data: _0x3396f4
+  } = _0x8fb83({
+    'queryKey': ['nav-menu'],
+    'queryFn': Uu,
+    'enabled': !!_0x4e7ffc['accessToken'],
+    'staleTime': 0x12c * 0x3e8
+  }), _0x1b4b49 = Ht(Eu({
+    'isAdmin': _0xb6989b,
+    'enableMmwFeatures': _0x53aac8,
+    'enableOverrideScripts': _0x143bdd,
+    'allowedPages': new Set(_0x1cfb7c?.['pages'] ?? [])
+  })['allNavLinks'], _0x3396f4);
+  return _0x2c4709['jsx']('aside', {
+    'className': D('bg-background/95\x20supports-[backdrop-filter]:bg-background/60\x20fixed\x20top-16\x20bottom-0\x20left-0\x20z-40\x20border-r\x20border-[color:rgba(241,140,110,0.22)]\x20shadow-[2px_0_12px_rgba(0,0,0,0.08)]\x20backdrop-blur\x20transition-all\x20duration-300\x20dark:shadow-[2px_0_15px_rgba(0,0,0,0.4)]', _0x4ab5b7 ? 'w-16' : 'w-52'),
+    'children': _0x2c4709['jsx']('div', {
+      'className': 'flex\x20h-full\x20flex-col',
+      'children': _0x2c4709['jsx']('nav', {
+        'className': 'flex-1\x20overflow-y-auto\x20px-3\x20py-3',
+        'children': _0x2c4709['jsx']('div', {
+          'data-glass-nav': !0x0,
+          'className': 'flex\x20flex-col\x20gap-2',
+          'children': _0x1b4b49['map'](({
+            titleKey: _0x3d507f,
+            to: _0x51876b,
+            icon: _0x5f3169
+          }) => {
+            const _0x22d4aa = _0x20c897(_0x3d507f);
+            return _0x2c4709['jsxs'](_0x2b65eb, {
+              'to': _0x51876b,
+              'title': _0x22d4aa,
+              'className': D('pixel-button\x20bg-background/75\x20text-foreground\x20hover:bg-accent/35\x20hover:text-accent-foreground\x20dark:bg-input/30\x20dark:hover:bg-accent/45\x20dark:hover:text-accent-foreground\x20inline-flex\x20h-9\x20w-full\x20items-center\x20justify-center\x20gap-2\x20border-[color:rgba(137,110,96,0.45)]\x20py-2\x20text-sm\x20font-semibold\x20tracking-widest\x20uppercase\x20shadow-sm\x20transition-all\x20duration-200\x20hover:shadow-[0_0_12px_rgba(217,119,87,0.4)]\x20dark:border-[color:rgba(255,255,255,0.18)]\x20dark:shadow-[0_2px_8px_rgba(0,0,0,0.3)]\x20dark:hover:shadow-[0_0_15px_rgba(217,119,87,0.5)]', _0x4ab5b7 && 'px-2'),
+              'activeProps': {
+                'className': 'bg-primary/20\x20text-primary\x20border-[color:rgba(217,119,87,0.55)]\x20shadow-[0_0_10px_rgba(217,119,87,0.35)]\x20dark:bg-primary/20\x20dark:border-[color:rgba(217,119,87,0.55)]\x20dark:shadow-[0_0_12px_rgba(217,119,87,0.45)]'
+              },
+              'children': [_0x2c4709['jsx'](Me, {
+                'Icon': _0x5f3169,
+                'to': _0x51876b,
+                'className': 'size-[18px]\x20shrink-0'
+              }), !_0x4ab5b7 && _0x2c4709['jsx']('span', {
+                'children': _0x22d4aa
+              })]
+            }, _0x51876b);
+          })
+        })
+      })
+    })
+  });
+}
+
+function Bt({
+  ..._0x1a0794
+}) {
+  return _0x2c4709['jsx'](_0xa281b2, {
+    'data-slot': 'dropdown-menu',
+    ..._0x1a0794
+  });
+}
+
+function Gt({
+  ..._0x33698a
+}) {
+  return _0x2c4709['jsx'](_0x38eb80, {
+    'data-slot': 'dropdown-menu-trigger',
+    ..._0x33698a
+  });
+}
+
+function qt({
+  className: _0x4137bc,
+  sideOffset: _0x358a64 = 0x4,
+  ..._0x54a9da
+}) {
+  return _0x2c4709['jsx'](_0xdfb0f4, {
+    'children': _0x2c4709['jsx'](_0x415e95, {
+      'data-slot': 'dropdown-menu-content',
+      'sideOffset': _0x358a64,
+      'className': D('bg-popover\x20text-popover-foreground\x20data-[state=open]:animate-in\x20data-[state=closed]:animate-out\x20data-[state=closed]:fade-out-0\x20data-[state=open]:fade-in-0\x20data-[state=closed]:zoom-out-95\x20data-[state=open]:zoom-in-95\x20data-[side=bottom]:slide-in-from-top-2\x20data-[side=left]:slide-in-from-right-2\x20data-[side=right]:slide-in-from-left-2\x20data-[side=top]:slide-in-from-bottom-2\x20z-50\x20max-h-(--radix-dropdown-menu-content-available-height)\x20min-w-[8rem]\x20origin-(--radix-dropdown-menu-content-transform-origin)\x20overflow-x-hidden\x20overflow-y-auto\x20rounded-md\x20border\x20p-1\x20shadow-md', _0x4137bc),
+      ..._0x54a9da
+    })
+  });
+}
+
+function Q({
+  className: _0x339d7f,
+  inset: _0x4ab8ec,
+  variant: _0x1aa52 = 'default',
+  ..._0x15a3af
+}) {
+  return _0x2c4709['jsx'](_0x4d9e38, {
+    'data-slot': 'dropdown-menu-item',
+    'data-inset': _0x4ab8ec,
+    'data-variant': _0x1aa52,
+    'className': D('focus:bg-accent\x20focus:text-accent-foreground\x20data-[variant=destructive]:text-destructive\x20data-[variant=destructive]:focus:bg-destructive/10\x20dark:data-[variant=destructive]:focus:bg-destructive/20\x20data-[variant=destructive]:focus:text-destructive\x20data-[variant=destructive]:*:[svg]:!text-destructive\x20[&_svg:not([class*=\x27text-\x27])]:text-muted-foreground\x20relative\x20flex\x20cursor-default\x20items-center\x20gap-2\x20rounded-sm\x20px-2\x20py-1.5\x20text-sm\x20outline-hidden\x20select-none\x20data-[disabled]:pointer-events-none\x20data-[disabled]:opacity-50\x20data-[inset]:ps-8\x20[&_svg]:pointer-events-none\x20[&_svg]:shrink-0\x20[&_svg:not([class*=\x27size-\x27])]:size-4', _0x339d7f),
+    ..._0x15a3af
+  });
+}
+
+function Fy({
+  className: _0x414234,
+  children: _0x53906a,
+  checked: _0x196643,
+  ..._0x56b681
+}) {
+  return _0x2c4709['jsxs'](_0x1d40bd, {
+    'data-slot': 'dropdown-menu-checkbox-item',
+    'className': D('focus:bg-accent\x20focus:text-accent-foreground\x20relative\x20flex\x20cursor-default\x20items-center\x20gap-2\x20rounded-sm\x20py-1.5\x20ps-8\x20pe-2\x20text-sm\x20outline-hidden\x20select-none\x20data-[disabled]:pointer-events-none\x20data-[disabled]:opacity-50\x20[&_svg]:pointer-events-none\x20[&_svg]:shrink-0\x20[&_svg:not([class*=\x27size-\x27])]:size-4', _0x414234),
+    'checked': _0x196643,
+    ..._0x56b681,
+    'children': [_0x2c4709['jsx']('span', {
+      'className': 'pointer-events-none\x20absolute\x20start-2\x20flex\x20size-3.5\x20items-center\x20justify-center',
+      'children': _0x2c4709['jsx'](_0x35fc76, {
+        'children': _0x2c4709['jsx'](_0x4dc6b8, {
+          'className': 'size-4'
+        })
+      })
+    }), _0x53906a]
+  });
+}
+
+function Iy({
+  className: _0x28f2c6,
+  inset: _0x19c7fd,
+  ..._0x188f5a
+}) {
+  return _0x2c4709['jsx'](_0x1e5e12, {
+    'data-slot': 'dropdown-menu-label',
+    'data-inset': _0x19c7fd,
+    'className': D('px-2\x20py-1.5\x20text-sm\x20font-medium\x20data-[inset]:ps-8', _0x28f2c6),
+    ..._0x188f5a
+  });
+}
+
+function Pt({
+  className: _0x2ebe0b,
+  ..._0x39d168
+}) {
+  return _0x2c4709['jsx'](_0x32ab6c, {
+    'data-slot': 'dropdown-menu-separator',
+    'className': D('bg-border\x20-mx-1\x20my-1\x20h-px', _0x2ebe0b),
+    ..._0x39d168
+  });
+}
+
+function My({
+  ..._0x19b37f
+}) {
+  return _0x2c4709['jsx'](_0x37f136, {
+    'data-slot': 'dropdown-menu-sub',
+    ..._0x19b37f
+  });
+}
+
+function Ey({
+  className: _0x28b200,
+  inset: _0x341ef4,
+  children: _0x29e5ea,
+  ..._0x1f72bc
+}) {
+  return _0x2c4709['jsxs'](_0x152efe, {
+    'data-slot': 'dropdown-menu-sub-trigger',
+    'data-inset': _0x341ef4,
+    'className': D('focus:bg-accent\x20focus:text-accent-foreground\x20data-[state=open]:bg-accent\x20data-[state=open]:text-accent-foreground\x20flex\x20cursor-default\x20items-center\x20rounded-sm\x20px-2\x20py-1.5\x20text-sm\x20outline-hidden\x20select-none\x20data-[inset]:ps-8', _0x28b200),
+    ..._0x1f72bc,
+    'children': [_0x29e5ea, _0x2c4709['jsx'](_0x2b2228, {
+      'className': 'ms-auto\x20size-4'
+    })]
+  });
+}
+
+function Uy({
+  className: _0x21635e,
+  ..._0x3378d4
+}) {
+  return _0x2c4709['jsx'](_0x2ff280, {
+    'data-slot': 'dropdown-menu-sub-content',
+    'className': D('bg-popover\x20text-popover-foreground\x20data-[state=open]:animate-in\x20data-[state=closed]:animate-out\x20data-[state=closed]:fade-out-0\x20data-[state=open]:fade-in-0\x20data-[state=closed]:zoom-out-95\x20data-[state=open]:zoom-in-95\x20data-[side=bottom]:slide-in-from-top-2\x20data-[side=left]:slide-in-from-right-2\x20data-[side=right]:slide-in-from-left-2\x20data-[side=top]:slide-in-from-bottom-2\x20z-50\x20min-w-[8rem]\x20origin-(--radix-dropdown-menu-content-transform-origin)\x20overflow-hidden\x20rounded-md\x20border\x20p-1\x20shadow-lg', _0x21635e),
+    ..._0x3378d4
+  });
+}
+
+function r0({
+  size: _0x366bf7 = 'md',
+  className: _0x32871f
+}) {
+  const [_0x31c757, _0x564f2f] = _0x4eb10f['useState'](!0x1), [_0x314547, _0x11677c] = _0x4eb10f['useState'](null), _0x2bd424 = {
+    'sm': 'text-sm',
+    'md': 'text-base',
+    'lg': 'text-4xl\x20sm:text-5xl\x20md:text-6xl',
+    'xl': 'text-5xl\x20sm:text-6xl\x20md:text-7xl'
+  }, _0x187598 = {
+    'sm': 'size-7',
+    'md': 'size-8',
+    'lg': 'size-14\x20sm:size-16\x20md:size-20',
+    'xl': 'size-16\x20sm:size-20\x20md:size-24'
+  };
+  return _0x4eb10f['useEffect'](() => {
+    const _0x23a186 = document['documentElement'],
+      _0x241cc0 = () => {
+        _0x564f2f(_0x23a186['classList']['contains']('theme-premium'));
+      };
+    _0x241cc0();
+    const _0x41631a = new MutationObserver(_0x241cc0);
+    return _0x41631a['observe'](_0x23a186, {
+      'attributes': !0x0,
+      'attributeFilter': ['class']
+    }), () => _0x41631a['disconnect']();
+  }, []), _0x4eb10f['useEffect'](() => {
+    if (!_0x31c757 || _0x314547) return;
+    const _0x4f5d20 = new AbortController();
+    return fetch('/images/x.json', {
+      'signal': _0x4f5d20['signal']
+    })['then'](_0x2b8da4 => {
+      if (!_0x2b8da4['ok']) throw new Error('Failed\x20to\x20load\x20x.json:\x20' + _0x2b8da4['status']);
+      return _0x2b8da4['json']();
+    })['then'](_0x11677c)['catch'](() => {}), () => _0x4f5d20['abort']();
+  }, [_0x31c757, _0x314547]), _0x31c757 ? _0x2c4709['jsx']('span', {
+    'className': D('inline-flex\x20shrink-0\x20items-center\x20justify-center\x20align-middle', _0x187598[_0x366bf7]),
+    'aria-label': 'X',
+    'children': _0x314547 ? _0x2c4709['jsx'](_0x469fdc, {
+      'animationData': _0x314547,
+      'className': 'size-full',
+      'loop': !0x0,
+      'autoplay': !0x0
+    }) : null
+  }) : _0x2c4709['jsxs'](_0x2c4709['Fragment'], {
+    'children': [_0x2c4709['jsxs']('span', {
+      'className': D('relative\x20inline-block\x20font-bold\x20select-none', _0x2bd424[_0x366bf7], _0x32871f),
+      'children': [_0x2c4709['jsx']('span', {
+        'className': 'animated-x-text\x20relative\x20z-10',
+        'children': 'X'
+      }), _0x2c4709['jsx']('span', {
+        'className': 'animated-x-glow\x20absolute\x20inset-0\x20z-0\x20opacity-60\x20blur-md',
+        'aria-hidden': !0x0,
+        'children': 'X'
+      }), _0x2c4709['jsx']('span', {
+        'className': 'animated-x-particles\x20pointer-events-none\x20absolute\x20inset-0\x20z-20',
+        'aria-hidden': !0x0
+      })]
+    }), _0x2c4709['jsx']('style', {
+      'children': '\x0a\x20\x20\x20\x20\x20\x20\x20\x20.animated-x-text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20135deg,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#f97316\x200%,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#ef4444\x2015%,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#f59e0b\x2030%,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#f97316\x2045%,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#ec4899\x2060%,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#f59e0b\x2075%,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#f97316\x2090%,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#ef4444\x20100%\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20300%\x20300%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20-webkit-background-clip:\x20text;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-clip:\x20text;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20x-gradient-shift\x203s\x20ease-in-out\x20infinite,\x20x-shimmer\x202s\x20ease-in-out\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20.animated-x-glow\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20135deg,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#f97316,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#ef4444,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#f59e0b,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#f97316\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20300%\x20300%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20-webkit-background-clip:\x20text;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-clip:\x20text;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20x-gradient-shift\x203s\x20ease-in-out\x20infinite,\x20x-pulse-glow\x202s\x20ease-in-out\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20.animated-x-particles::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.animated-x-particles::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27✦\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x200.3em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20x-sparkle\x202.5s\x20ease-in-out\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20.animated-x-particles::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x20-0.2em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x20-0.1em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#f59e0b;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation-delay:\x200s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20.animated-x-particles::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x20-0.1em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x20-0.1em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#f97316;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation-delay:\x201.2s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20x-gradient-shift\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%,\x20100%\x20{\x20background-position:\x200%\x2050%;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x20background-position:\x20100%\x2050%;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20x-shimmer\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%,\x20100%\x20{\x20filter:\x20brightness(1);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x20filter:\x20brightness(1.3);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20x-pulse-glow\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%,\x20100%\x20{\x20opacity:\x200.3;\x20filter:\x20blur(8px);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x20opacity:\x200.7;\x20filter:\x20blur(12px);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20x-sparkle\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%,\x20100%\x20{\x20opacity:\x200;\x20transform:\x20scale(0.5)\x20rotate(0deg);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2020%\x20{\x20opacity:\x201;\x20transform:\x20scale(1)\x20rotate(90deg);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2040%\x20{\x20opacity:\x200;\x20transform:\x20scale(0.5)\x20rotate(180deg);\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20'
+    })]
+  });
+}
+
+function s0() {
+  const {
+    t: _0x4e210f
+  } = _0x4c4113(), {
+    theme: _0x7ed566,
+    setTheme: _0x1e56d1
+  } = Tu();
+  _0x4eb10f['useEffect'](() => {
+    const _0x4a16f1 = _0x7ed566 === 'dark' ? '#020817' : '#fff',
+      _0x4fdf8c = document['querySelector']('meta[name=\x27theme-color\x27]');
+    _0x4fdf8c && _0x4fdf8c['setAttribute']('content', _0x4a16f1);
+  }, [_0x7ed566]);
+  const _0x5cc281 = () => {
+      _0x1e56d1(_0x7ed566 === 'light' ? 'dark' : _0x7ed566 === 'dark' ? 'system' : 'light');
+    },
+    _0x11d42d = _0x7ed566 === 'light' ? _0x20ece2 : _0x7ed566 === 'dark' ? _0x1f06b4 : _0x5e145c,
+    _0x45c8c1 = _0x4e210f(_0x7ed566 === 'light' ? 'theme.light' : _0x7ed566 === 'dark' ? 'theme.dark' : 'theme.system');
+  return _0x2c4709['jsxs'](j, {
+    'variant': 'outline',
+    'size': 'icon',
+    'aria-label': _0x45c8c1,
+    'title': _0x45c8c1,
+    'className': 'h-9\x20w-9',
+    'onClick': _0x5cc281,
+    'children': [_0x2c4709['jsx'](_0x11d42d, {
+      'className': 'size-[18px]'
+    }), _0x2c4709['jsx']('span', {
+      'className': 'sr-only',
+      'children': _0x45c8c1
+    })]
+  });
+}
+const i0 = new Set(['premium', 'glass']);
+
+function kt(_0x28de84) {
+  return i0['has'](_0x28de84);
+}
+const l0 = ['theme-flat', 'theme-anime', 'theme-premium', 'theme-glass'];
+
+function jy(_0x47f4d8) {
+  return l0['filter'](_0x13adc4 => _0x47f4d8['classList']['contains'](_0x13adc4));
+}
+const Hy = ['sea', 'amber', 'ice', 'graphite', 'custom'];
+
+function d0(_0x22c040 = null) {
+  const [_0x3892bd, _0x344822] = _0x4eb10f['useState'](_0x22c040);
+  return [_0x3892bd, _0x4d6d09 => _0x344822(_0x4bddb7 => _0x4bddb7 === _0x4d6d09 ? null : _0x4d6d09)];
+}
+const c0 = '1mOqVQuZPyeioJVLzG66z+Xdh3AdpdL0JsTmZ2nlEEA=',
+  u0 = 'mmwx-entitlement-v2\x0a',
+  p0 = 'mmwx-signing-key-cert-v1\x0a',
+  m0 = 'mmwx-entitlement-session-v1\x0a',
+  ju = 'license.miaomiaowux.com',
+  f0 = 'mmwx-master',
+  Hu = 0x12c;
+
+function Yt(_0x4b86c8) {
+  const _0x570e0b = atob(_0x4b86c8),
+    _0x177f39 = new Uint8Array(_0x570e0b['length']);
+  for (let _0x3214e5 = 0x0; _0x3214e5 < _0x570e0b['length']; _0x3214e5++) _0x177f39[_0x3214e5] = _0x570e0b['charCodeAt'](_0x3214e5);
+  return _0x177f39;
+}
+
+function Ce(_0x649b95) {
+  let _0x3d6a61 = _0x649b95['replace'](/-/g, '+')['replace'](/_/g, '/');
+  for (; _0x3d6a61['length'] % 0x4;) _0x3d6a61 += '=';
+  return Yt(_0x3d6a61);
+}
+const x0 = new TextEncoder();
+
+function Je(_0x43e37b) {
+  return x0['encode'](_0x43e37b);
+}
+
+function g0(_0x6101e9) {
+  return Array['from'](_0x6101e9, _0x5f21e0 => _0x5f21e0['toString'](0x10)['padStart'](0x2, '0'))['join']('');
+}
+const h0 = Yt(c0);
+
+function b0(_0x4513eb, _0x2f5ded, _0x455c90) {
+  if (_0x4513eb === '') return _0x455c90;
+  const _0x2a28d1 = _0x2f5ded['split']('.');
+  if (_0x2a28d1['length'] !== 0x2) return null;
+  const [_0x5aade2, _0x3d32ab] = _0x2a28d1, _0x2306aa = Ce(_0x3d32ab);
+  if (_0x2306aa['length'] !== 0x40 || !_0x42154b['verify'](_0x2306aa, Je(p0 + _0x5aade2), _0x455c90)) return null;
+  let _0x357c30;
+  try {
+    _0x357c30 = JSON['parse'](new TextDecoder()['decode'](Ce(_0x5aade2)));
+  } catch {
+    return null;
+  }
+  if (_0x357c30['version'] !== 0x1 || _0x357c30['issuer'] !== ju || _0x357c30['key_id'] !== _0x4513eb) return null;
+  const _0x4ae2ba = Math['floor'](Date['now']() / 0x3e8);
+  if (_0x357c30['expires_at'] <= _0x357c30['issued_at'] || _0x4ae2ba > _0x357c30['expires_at'] + Hu) return null;
+  const _0x23ef0d = Yt(_0x357c30['public_key']);
+  return _0x23ef0d['length'] === 0x20 ? _0x23ef0d : null;
+}
+
+function y0(_0x7ab10b, _0x416ebf, _0x54097e, _0x139c87, _0x10b5da, _0x472173) {
+  const _0x2f2e73 = h0;
+  if (!_0x7ab10b) return null;
+  const _0x35a25a = _0x7ab10b['split']('.');
+  let _0x333886 = '',
+    _0x1c1017 = '',
+    _0x4fe65a = '';
+  if (_0x35a25a['length'] === 0x2)[_0x1c1017, _0x4fe65a] = _0x35a25a;
+  else {
+    if (_0x35a25a['length'] === 0x3)[_0x333886, _0x1c1017, _0x4fe65a] = _0x35a25a;
+    else return null;
+  }
+  const _0x2eecca = b0(_0x333886, _0x416ebf ?? '', _0x2f2e73);
+  if (!_0x2eecca) return null;
+  const _0x5d2a00 = Ce(_0x4fe65a);
+  if (_0x5d2a00['length'] !== 0x40 || !_0x42154b['verify'](_0x5d2a00, Je(u0 + _0x1c1017), _0x2eecca)) return null;
+  let _0x3b0e11;
+  try {
+    _0x3b0e11 = JSON['parse'](new TextDecoder()['decode'](Ce(_0x1c1017)));
+  } catch {
+    return null;
+  }
+  if (_0x3b0e11['version'] !== 0x2 || _0x3b0e11['issuer'] !== ju || _0x3b0e11['audience'] !== f0) return null;
+  const _0x2e6fea = Math['floor'](Date['now']() / 0x3e8);
+  if (_0x3b0e11['issued_at'] <= 0x0 || _0x3b0e11['expires_at'] <= _0x3b0e11['issued_at'] || _0x2e6fea > _0x3b0e11['expires_at'] + Hu || !_0x54097e || !_0x139c87 || !_0x10b5da || _0x3b0e11['master_public_key'] !== _0x139c87) return null;
+  const _0x3bce55 = Ce(_0x139c87);
+  if (_0x3bce55['length'] !== 0x20) return null;
+  const _0x367a77 = g0(_0x18f172(Je(_0x7ab10b))),
+    _0x4ad800 = m0 + _0x10b5da + '\x0a' + _0x367a77,
+    _0x3f5b51 = Ce(_0x54097e);
+  return _0x3f5b51['length'] !== 0x40 || !_0x42154b['verify'](_0x3f5b51, Je(_0x4ad800), _0x3bce55) ? null : {
+    'claims': _0x3b0e11,
+    'hasFeature': _0x22f219 => _0x3b0e11['features']?.['includes'](_0x22f219) ?? !0x1
+  };
+}
+
+function v0(_0xdc17d7) {
+  return _0xdc17d7?.['premium_theme'] === !0x0;
+}
+
+function S0() {
+  const {
+    auth: _0x14fb58
+  } = _();
+  return _0x8fb83({
+    'queryKey': ['user-license-status'],
+    'queryFn': async () => {
+      const _0x3a22e2 = (await N['get']('¤da0940d441a26653'))['data'],
+        _0x934a = y0(_0x3a22e2['entitlement'], _0x3a22e2['signing_key_certificate'], _0x3a22e2['entitlement_session_sig'], _0x3a22e2['master_public_key'], te['getSessionId']());
+      return _0x3a22e2['_verifiedFeatures'] = _0x934a ? _0x934a['claims']['features'] : null, _0x3a22e2;
+    },
+    'enabled': !!_0x14fb58['accessToken'],
+    'staleTime': 0x12c * 0x3e8
+  });
+}
+
+function By() {
+  const {
+    auth: _0x2b7e14
+  } = _();
+  return _0x8fb83({
+    'queryKey': ['admin-license-usage'],
+    'queryFn': async () => (await N['get']('§f5443736690ff429'))['data'],
+    'enabled': !!_0x2b7e14['accessToken'],
+    'staleTime': 0x1e * 0x3e8
+  });
+}
+
+function Gy(_0x1823f4) {
+  const {
+    data: _0x52cc07
+  } = S0(), _0x160d33 = _0x52cc07?.['_verifiedFeatures'];
+  let _0x5c3c11;
+  return _0x160d33 ? _0x5c3c11 = _0x160d33['includes'](_0x1823f4) : _0x5c3c11 = _0x52cc07?.['plan']?.['features']?.['includes'](_0x1823f4) ?? !0x1, {
+    'hasFeature': _0x5c3c11,
+    'plan': _0x52cc07?.['plan']
+  };
+}
+const yn = '0.5.4',
+  C0 = 'https://github.com/iluobei/miaomiaowuX/releases';
+
+function W0(_0x412015 = !0x0) {
+  const _0x145205 = localStorage['getItem']('mmwx-update-channel') === 'prerelease' ? 'prerelease' : 'stable',
+    {
+      data: _0x553d0f
+    } = _0x8fb83({
+      'queryKey': ['update-check', _0x145205],
+      'queryFn': async () => (await N['get']('§32a29375dacb94db', {
+        'params': {
+          'channel': _0x145205
+        }
+      }))['data'],
+      'enabled': _0x412015,
+      'staleTime': 0x3e8 * 0x3c * 0x3c,
+      'gcTime': 0x3e8 * 0x3c * 0x3c * 0x18,
+      'retry': 0x1,
+      'refetchOnWindowFocus': !0x1
+    });
+  return {
+    'currentVersion': _0x553d0f?.['current_version'] || yn,
+    'latestVersion': _0x553d0f?.['latest_version'] || yn,
+    'hasUpdate': _0x553d0f?.['has_update'] ?? !0x1,
+    'releaseUrl': _0x553d0f?.['release_url'] || C0
+  };
+}
+
+function vn({
+  className: _0x2b214e,
+  ..._0x15ce6d
+}) {
+  return _0x2c4709['jsx'](_0x1eaa96, {
+    'data-slot': 'avatar',
+    'className': D('relative\x20flex\x20size-8\x20shrink-0\x20overflow-hidden\x20rounded-full', _0x2b214e),
+    ..._0x15ce6d
+  });
+}
+
+function Sn({
+  className: _0x37a768,
+  ..._0x2f092c
+}) {
+  return _0x2c4709['jsx'](_0x1d55f9, {
+    'data-slot': 'avatar-image',
+    'className': D('aspect-square\x20size-full', _0x37a768),
+    ..._0x2f092c
+  });
+}
+
+function Cn({
+  className: _0x471c56,
+  ..._0x46d6d6
+}) {
+  return _0x2c4709['jsx'](_0x10f9cb, {
+    'data-slot': 'avatar-fallback',
+    'className': D('bg-muted\x20flex\x20size-full\x20items-center\x20justify-center\x20rounded-full', _0x471c56),
+    ..._0x46d6d6
+  });
+}
+
+function Re({
+  ..._0x4c1325
+}) {
+  return _0x2c4709['jsx'](_0xc5c397, {
+    'data-slot': 'dialog',
+    ..._0x4c1325
+  });
+}
+
+function qy({
+  ..._0x4caf71
+}) {
+  return _0x2c4709['jsx'](_0xe10d9a, {
+    'data-slot': 'dialog-trigger',
+    ..._0x4caf71
+  });
+}
+
+function w0({
+  ..._0x2054a8
+}) {
+  return _0x2c4709['jsx'](_0x4e0278, {
+    'data-slot': 'dialog-portal',
+    ..._0x2054a8
+  });
+}
+
+function zy({
+  ..._0xd96cd1
+}) {
+  return _0x2c4709['jsx'](_0x2efbc9, {
+    'data-slot': 'dialog-close',
+    ..._0xd96cd1
+  });
+}
+
+function P0({
+  className: _0x5e9af8,
+  ..._0x211ea5
+}) {
+  return _0x2c4709['jsx'](_0x461121, {
+    'data-slot': 'dialog-overlay',
+    'className': D('data-[state=open]:animate-in\x20data-[state=closed]:animate-out\x20data-[state=closed]:fade-out-0\x20data-[state=open]:fade-in-0\x20fixed\x20inset-0\x20z-50\x20overflow-y-auto\x20bg-black/50', _0x5e9af8),
+    ..._0x211ea5
+  });
+}
+
+function De({
+  className: _0x244d8f,
+  children: _0x445651,
+  showCloseButton: _0x148bee = !0x0,
+  ..._0x46ef75
+}) {
+  return _0x2c4709['jsx'](w0, {
+    'data-slot': 'dialog-portal',
+    'children': _0x2c4709['jsx'](P0, {
+      'children': _0x2c4709['jsx']('div', {
+        'className': 'flex\x20min-h-full\x20items-center\x20justify-center\x20p-4',
+        'children': _0x2c4709['jsxs'](_0x4d13c1, {
+          'data-slot': 'dialog-content',
+          'className': D('bg-background\x20data-[state=open]:animate-in\x20data-[state=closed]:animate-out\x20data-[state=closed]:fade-out-0\x20data-[state=open]:fade-in-0\x20data-[state=closed]:zoom-out-95\x20data-[state=open]:zoom-in-95\x20relative\x20z-50\x20grid\x20w-full\x20max-w-[calc(100%-2rem)]\x20gap-4\x20rounded-lg\x20border\x20p-6\x20shadow-lg\x20duration-200\x20sm:max-w-lg', _0x244d8f),
+          ..._0x46ef75,
+          'children': [_0x445651, _0x148bee && _0x2c4709['jsxs'](_0x2efbc9, {
+            'data-slot': 'dialog-close',
+            'className': 'ring-offset-background\x20focus:ring-ring\x20data-[state=open]:bg-accent\x20data-[state=open]:text-muted-foreground\x20absolute\x20end-4\x20top-4\x20rounded-xs\x20opacity-70\x20shadow-md\x20transition-all\x20hover:opacity-100\x20hover:shadow-lg\x20focus:ring-2\x20focus:ring-offset-2\x20focus:outline-hidden\x20disabled:pointer-events-none\x20[&_svg]:pointer-events-none\x20[&_svg]:shrink-0\x20[&_svg:not([class*=\x27size-\x27])]:size-6',
+            'children': [_0x2c4709['jsx'](_0x6f3bb4, {}), _0x2c4709['jsx']('span', {
+              'className': 'sr-only',
+              'children': 'Close'
+            })]
+          })]
+        })
+      })
+    })
+  });
+}
+
+function Ne({
+  className: _0x2ef0bf,
+  ..._0x129c51
+}) {
+  return _0x2c4709['jsx']('div', {
+    'data-slot': 'dialog-header',
+    'className': D('flex\x20flex-col\x20gap-2\x20text-center\x20sm:text-start', _0x2ef0bf),
+    ..._0x129c51
+  });
+}
+
+function Bu({
+  className: _0x1fdea2,
+  ..._0x5b1e1e
+}) {
+  return _0x2c4709['jsx']('div', {
+    'data-slot': 'dialog-footer',
+    'className': D('flex\x20flex-col-reverse\x20gap-2\x20sm:flex-row\x20sm:justify-end', _0x1fdea2),
+    ..._0x5b1e1e
+  });
+}
+
+function Ae({
+  className: _0x3e0f99,
+  ..._0x1789a9
+}) {
+  return _0x2c4709['jsx'](_0x55132f, {
+    'data-slot': 'dialog-title',
+    'className': D('text-lg\x20leading-none\x20font-semibold', _0x3e0f99),
+    ..._0x1789a9
+  });
+}
+
+function Ge({
+  className: _0x320029,
+  ..._0x397553
+}) {
+  return _0x2c4709['jsx'](_0x48c60f, {
+    'data-slot': 'dialog-description',
+    'className': D('text-muted-foreground\x20text-sm', _0x320029),
+    ..._0x397553
+  });
+}
+
+function k0({
+  className: _0x4aba66,
+  ..._0x104c8c
+}) {
+  return _0x2c4709['jsx'](_0x2a1aea, {
+    'data-slot': 'checkbox',
+    'className': D('peer\x20border-input\x20dark:bg-input/30\x20data-[state=checked]:bg-primary\x20data-[state=checked]:text-primary-foreground\x20dark:data-[state=checked]:bg-primary\x20data-[state=checked]:border-primary\x20focus-visible:border-ring\x20focus-visible:ring-ring/50\x20aria-invalid:ring-destructive/20\x20dark:aria-invalid:ring-destructive/40\x20aria-invalid:border-destructive\x20size-4\x20shrink-0\x20rounded-[4px]\x20border\x20shadow-xs\x20transition-shadow\x20outline-none\x20focus-visible:ring-[3px]\x20disabled:cursor-not-allowed\x20disabled:opacity-50', _0x4aba66),
+    ..._0x104c8c,
+    'children': _0x2c4709['jsx'](_0x38d9f5, {
+      'data-slot': 'checkbox-indicator',
+      'className': 'flex\x20items-center\x20justify-center\x20text-current\x20transition-none',
+      'children': _0x2c4709['jsx'](_0x4dc6b8, {
+        'className': 'size-3.5'
+      })
+    })
+  });
+}
+
+function zt({
+  className: _0x524b86,
+  type: _0xae366c,
+  onWheel: _0x3ea6d0,
+  ..._0x3a87a1
+}) {
+  const _0x547eec = _0xf94c8f => {
+    if (_0x3ea6d0?.(_0xf94c8f), _0xf94c8f['defaultPrevented'] || _0xae366c !== 'number' || _0xf94c8f['currentTarget']['disabled'] || document['activeElement'] !== _0xf94c8f['currentTarget'] || _0xf94c8f['deltaY'] === 0x0) return;
+    _0xf94c8f['preventDefault']();
+    const _0x2cbd39 = _0xf94c8f['currentTarget'];
+    try {
+      _0xf94c8f['deltaY'] < 0x0 ? _0x2cbd39['stepUp']() : _0x2cbd39['stepDown']();
+    } catch {
+      return;
+    }
+    _0x2cbd39['dispatchEvent'](new Event('input', {
+      'bubbles': !0x0
+    }));
+  };
+  return _0x2c4709['jsx']('input', {
+    'type': _0xae366c,
+    'data-slot': 'input',
+    'className': D('file:text-foreground\x20placeholder:text-muted-foreground\x20selection:bg-primary\x20selection:text-primary-foreground\x20dark:bg-input/30\x20border-input\x20flex\x20h-9\x20w-full\x20min-w-0\x20rounded-md\x20border\x20bg-transparent\x20px-3\x20py-1\x20text-base\x20shadow-xs\x20transition-[color,box-shadow]\x20outline-none\x20file:inline-flex\x20file:h-7\x20file:border-0\x20file:bg-transparent\x20file:text-sm\x20file:font-medium\x20disabled:pointer-events-none\x20disabled:cursor-not-allowed\x20disabled:opacity-50\x20md:text-sm', 'focus-visible:border-ring\x20focus-visible:ring-ring/50\x20focus-visible:ring-[3px]', 'aria-invalid:ring-destructive/20\x20dark:aria-invalid:ring-destructive/40\x20aria-invalid:border-destructive', _0x524b86),
+    'onWheel': _0x547eec,
+    ..._0x3a87a1
+  });
+}
+
+function Kt({
+  className: _0xd3239e,
+  ..._0x2c18b3
+}) {
+  return _0x2c4709['jsx'](_0x51e4ec, {
+    'data-slot': 'label',
+    'className': D('flex\x20items-center\x20gap-2\x20text-sm\x20leading-none\x20font-medium\x20select-none\x20group-data-[disabled=true]:pointer-events-none\x20group-data-[disabled=true]:opacity-50\x20peer-disabled:cursor-not-allowed\x20peer-disabled:opacity-50', _0xd3239e),
+    ..._0x2c18b3
+  });
+}
+
+function T0({
+  open: _0x1991ff,
+  onOpenChange: _0x1a95b7
+}) {
+  const {
+    t: _0x237dd8
+  } = _0x4c4113('common'), [_0x528db0, _0x33a40b] = _0x4eb10f['useState'](null), [_0x46f167, _0x2edb55] = _0x4eb10f['useState'](''), [_0x13731b, _0x306a67] = _0x4eb10f['useState'](!0x1), [_0x50b0ac, _0x5a947e] = _0x4eb10f['useState'](!0x1), _0x153bd3 = _0x8fb83({
+    'queryKey': ['backup-database-status'],
+    'queryFn': async () => (await N['get']('§d4a08121f1b510a8'))['data']['status'],
+    'enabled': _0x1991ff,
+    'staleTime': 0x0,
+    'refetchOnMount': 'always'
+  }), _0x97ec97 = _0x153bd3['data']?.['driver'] === 'postgres', _0x2b6e43 = _0x153bd3['isError'], _0x22d2c0 = async () => {
+    _0x306a67(!0x0);
+    try {
+      const _0x56e6ea = _['getState']()['auth']['accessToken'],
+        _0x47bb04 = _0x2b6e43 ? '?include_database=true' : _0x97ec97 ? '?include_database=' + (_0x50b0ac ? 'true' : 'false') : '',
+        _0x81abb1 = (N['defaults']['baseURL'] ?? '') + '/api/admin/backup/download' + _0x47bb04,
+        _0x16a931 = await fetch(_0x81abb1, {
+          'method': 'GET',
+          'headers': _0x56e6ea ? {
+            [Mt]: _0x56e6ea
+          } : {}
+        });
+      if (!_0x16a931['ok']) {
+        const _0x3a65ca = await _0x16a931['text']();
+        throw new Error(_0x3a65ca || 'HTTP\x20' + _0x16a931['status']);
+      }
+      const _0x1a235a = await _0x16a931['blob'](),
+        _0x22b185 = window['URL']['createObjectURL'](_0x1a235a),
+        _0xcc7a88 = document['createElement']('a');
+      _0xcc7a88['href'] = _0x22b185;
+      const _0x26706a = new Date()['toISOString']()['replace'](/[:.]/g, '-')['slice'](0x0, 0x13);
+      _0xcc7a88['setAttribute']('download', 'miaomiaowux-backup-' + _0x26706a + '.zip'), document['body']['appendChild'](_0xcc7a88), _0xcc7a88['click'](), _0xcc7a88['remove'](), window['URL']['revokeObjectURL'](_0x22b185), _0x5e6a09['success'](_0x237dd8('backup.downloadSuccess'));
+    } catch (_0x26493b) {
+      let _0x228df6 = _0x26493b instanceof Error ? _0x26493b['message'] : void 0x0;
+      if (_0x228df6) try {
+        const _0x51bbf9 = JSON['parse'](_0x228df6);
+        _0x228df6 = _0x51bbf9['error'] || _0x51bbf9['message'] || _0x228df6;
+      } catch {}
+      _0x5e6a09['error'](_0x237dd8('backup.downloadFailed'), {
+        'description': _0x228df6
+      });
+    } finally {
+      _0x306a67(!0x1);
+    }
+  }, _0x2f897e = _0x310c5a({
+    'mutationFn': async _0x748a3b => {
+      const _0x585fc8 = new FormData();
+      _0x585fc8['append']('backup', _0x748a3b), _0x46f167 && _0x585fc8['append']('passphrase', _0x46f167);
+      const _0xaa506d = _['getState']()['auth']['accessToken'],
+        _0x1f9b79 = (N['defaults']['baseURL'] ?? '') + '/api/admin/backup/restore',
+        _0x54480f = await fetch(_0x1f9b79, {
+          'method': 'POST',
+          'body': _0x585fc8,
+          'headers': _0xaa506d ? {
+            [Mt]: _0xaa506d
+          } : {}
+        }),
+        _0x38e4a4 = await _0x54480f['text']();
+      if (!_0x54480f['ok']) {
+        let _0x348d44 = _0x38e4a4;
+        try {
+          const _0xf15f3 = JSON['parse'](_0x38e4a4);
+          _0x348d44 = _0xf15f3['error'] || _0xf15f3['message'] || _0x38e4a4;
+        } catch {}
+        throw new Error(_0x348d44 || 'HTTP\x20' + _0x54480f['status']);
+      }
+      return _0x38e4a4 ? JSON['parse'](_0x38e4a4) : {};
+    },
+    'onSuccess': () => {
+      _0x5e6a09['success'](_0x237dd8('backup.restoreSuccess')), _0x33a40b(null), _0x2edb55(''), _0x1a95b7(!0x1), setTimeout(() => {
+        window['location']['reload']();
+      }, 0x5dc);
+    },
+    'onError': _0x2eabf6 => {
+      _0x5e6a09['error'](_0x237dd8('backup.restoreFailed'), {
+        'description': _0x2eabf6['message']
+      });
+    }
+  });
+  return _0x2c4709['jsx'](Re, {
+    'open': _0x1991ff,
+    'onOpenChange': _0x1a95b7,
+    'children': _0x2c4709['jsxs'](De, {
+      'className': 'sm:max-w-md',
+      'children': [_0x2c4709['jsxs'](Ne, {
+        'children': [_0x2c4709['jsxs'](Ae, {
+          'className': 'flex\x20items-center\x20gap-2',
+          'children': [_0x2c4709['jsx'](_0x2fb705, {
+            'className': 'size-5'
+          }), '\x20', _0x237dd8('backup.title')]
+        }), _0x2c4709['jsx'](Ge, {
+          'children': _0x237dd8('backup.description')
+        })]
+      }), _0x2c4709['jsxs']('div', {
+        'className': 'space-y-6',
+        'children': [_0x2c4709['jsxs']('div', {
+          'className': 'space-y-2',
+          'children': [_0x2c4709['jsx'](Kt, {
+            'children': _0x237dd8('backup.downloadLabel')
+          }), _0x153bd3['isLoading'] && _0x2c4709['jsx']('div', {
+            'className': 'text-muted-foreground\x20border-border\x20border\x20p-3\x20text-xs',
+            'children': _0x237dd8('backup.detectingDatabase')
+          }), _0x153bd3['isError'] && _0x2c4709['jsx']('div', {
+            'className': 'border-border\x20bg-muted/30\x20text-muted-foreground\x20border\x20p-3\x20text-xs',
+            'children': _0x237dd8('backup.databaseStatusFailed')
+          }), _0x97ec97 && _0x2c4709['jsxs']('label', {
+            'className': 'border-border\x20flex\x20cursor-pointer\x20items-start\x20gap-3\x20border\x20p-3',
+            'children': [_0x2c4709['jsx'](k0, {
+              'checked': _0x50b0ac,
+              'onCheckedChange': _0x188797 => _0x5a947e(_0x188797 === !0x0)
+            }), _0x2c4709['jsxs']('span', {
+              'className': 'space-y-1\x20leading-none',
+              'children': [_0x2c4709['jsx']('span', {
+                'className': 'block\x20text-sm\x20font-medium',
+                'children': _0x237dd8('backup.includeDatabase')
+              }), _0x2c4709['jsx']('span', {
+                'className': 'text-muted-foreground\x20block\x20text-xs\x20leading-normal',
+                'children': _0x237dd8('backup.includeDatabaseHint')
+              })]
+            })]
+          }), _0x2c4709['jsxs'](j, {
+            'onClick': _0x22d2c0,
+            'disabled': _0x13731b || _0x153bd3['isLoading'],
+            'className': 'w-full',
+            'children': [_0x2c4709['jsx'](_0x3d676f, {
+              'className': 'mr-2\x20size-4'
+            }), _0x237dd8(_0x13731b ? 'backup.downloading' : 'backup.downloadButton')]
+          })]
+        }), _0x2c4709['jsxs']('div', {
+          'className': 'space-y-3',
+          'children': [_0x2c4709['jsx'](Kt, {
+            'children': _0x237dd8('backup.restoreLabel')
+          }), _0x2c4709['jsx'](zt, {
+            'type': 'file',
+            'accept': '.zip,.enc',
+            'onChange': _0x1b20e1 => _0x33a40b(_0x1b20e1['target']['files']?.[0x0] || null),
+            'className': 'cursor-pointer'
+          }), _0x2c4709['jsx'](zt, {
+            'type': 'password',
+            'value': _0x46f167,
+            'onChange': _0x1093a2 => _0x2edb55(_0x1093a2['target']['value']),
+            'placeholder': _0x237dd8('backup.legacyPassphrasePlaceholder'),
+            'autoComplete': 'off'
+          }), _0x2c4709['jsx']('p', {
+            'className': 'text-muted-foreground\x20text-xs',
+            'children': _0x237dd8('backup.legacyPassphraseHint')
+          }), _0x2c4709['jsxs'](j, {
+            'onClick': () => _0x528db0 && _0x2f897e['mutate'](_0x528db0),
+            'disabled': !_0x528db0 || _0x2f897e['isPending'],
+            'variant': 'destructive',
+            'className': 'w-full',
+            'children': [_0x2c4709['jsx'](_0x317c18, {
+              'className': 'mr-2\x20size-4'
+            }), _0x2f897e['isPending'] ? _0x237dd8('backup.restoring') : _0x237dd8('backup.restoreButton')]
+          }), _0x2c4709['jsxs']('div', {
+            'className': 'text-muted-foreground\x20flex\x20items-start\x20gap-2\x20text-xs',
+            'children': [_0x2c4709['jsx'](_0x44666b, {
+              'className': 'text-destructive\x20size-4\x20shrink-0'
+            }), _0x2c4709['jsx']('span', {
+              'children': _0x237dd8('backup.restoreWarning')
+            })]
+          })]
+        })]
+      })]
+    })
+  });
+}
+const R0 = {
+    'pixel': ['#f9a8d4', '#f472b6', '#ec4899', '#fbcfe8', '#ff8fc7'],
+    'flat': ['#f9a8d4', '#f472b6', '#ec4899', '#fbcfe8', '#ff8fc7'],
+    'anime': ['#f9a8d4', '#f472b6', '#ec4899', '#fbcfe8', '#ff8fc7'],
+    'premium': ['#8c5d17', '#d7a63d', '#f2d78a', '#fff1b9', '#c78e24']
+  },
+  Wn = 0x157c,
+  D0 = 0.36,
+  Tt = (_0x49ed07, _0x2c231e) => _0x49ed07 + Math['random']() * (_0x2c231e - _0x49ed07),
+  ve = (_0x31d78c, _0x174b72, _0x1cb0c1) => _0x31d78c < _0x174b72 ? _0x174b72 : _0x31d78c > _0x1cb0c1 ? _0x1cb0c1 : _0x31d78c,
+  N0 = _0x5796f7 => 0x1 + 2.70158 * Math['pow'](_0x5796f7 - 0x1, 0x3) + 1.70158 * Math['pow'](_0x5796f7 - 0x1, 0x2),
+  A0 = _0x150127 => 2.70158 * _0x150127 * _0x150127 * _0x150127 - 1.70158 * _0x150127 * _0x150127;
+
+function L0({
+  label: _0x30fc2
+}) {
+  const _0xfc97da = _0x4eb10f['useRef'](null),
+    _0x5d6464 = _0x4eb10f['useRef'](null),
+    _0x4e344b = _0x4eb10f['useRef'](null),
+    _0x40f622 = _0x4eb10f['useRef'](null);
+  return _0x4eb10f['useEffect'](() => {
+    const _0x1e3d70 = _0xfc97da['current'],
+      _0x3aec96 = _0x5d6464['current'],
+      _0x2a4eae = _0x4e344b['current'],
+      _0x54e74c = _0x40f622['current'];
+    if (!_0x1e3d70 || !_0x3aec96 || !_0x2a4eae || !_0x54e74c) return;
+    const _0x33112b = document['documentElement']['classList'],
+      _0x1c8116 = _0x33112b['contains']('theme-premium') ? 'premium' : _0x33112b['contains']('theme-anime') ? 'anime' : _0x33112b['contains']('theme-flat') ? 'flat' : 'pixel',
+      _0x4a139a = R0[_0x1c8116];
+    _0x2a4eae['innerHTML'] = '';
+    const _0x23e8de = _0x2a4eae['clientHeight'] || 0x18,
+      _0x25aa29 = _0x4b0da2 => {
+        const _0x192a01 = document['createElement']('i');
+        _0x192a01['className'] = 'spark', _0x192a01['style']['color'] = _0x4a139a[Math['floor'](Math['random']() * _0x4a139a['length'])];
+        const _0x23ec61 = Math['round'](Tt(0x8, 0xd));
+        _0x192a01['style']['width'] = _0x23ec61 + 'px', _0x192a01['style']['height'] = _0x23ec61 + 'px', _0x192a01['style']['top'] = Math['round'](_0x4b0da2(_0x23ec61)) + 'px', _0x192a01['style']['left'] = Math['round'](Tt(0x0, 0xc)) + 'px', _0x2a4eae['appendChild'](_0x192a01);
+      };
+    for (let _0x4ee671 = 0x0; _0x4ee671 < 0x5; _0x4ee671++) _0x25aa29(_0x33c210 => Tt(0x0, Math['max'](0x0, _0x23e8de - _0x33c210)));
+    _0x25aa29(_0x62905 => -_0x62905 * 0.6), _0x25aa29(_0x2ba68d => _0x23e8de - _0x2ba68d * 0.4);
+    let _0xdc23a6 = _0x1e3d70['offsetWidth'];
+    const _0x91f6f5 = () => {
+      _0xdc23a6 = _0x1e3d70['offsetWidth'];
+    };
+    window['addEventListener']('resize', _0x91f6f5);
+    let _0x328a3c = 0x0;
+    const _0x53b01e = performance['now'](),
+      _0x3ff500 = _0x1c1a36 => {
+        const _0x12beb8 = (_0x1c1a36 - _0x53b01e) % Wn / Wn,
+          _0x17c51c = ve(_0x12beb8 / D0, 0x0, 0x1);
+        let _0x29ddc2, _0x3d3c67, _0x1f3824;
+        const _0x2f870b = 0.08,
+          _0x56cdd2 = 0.85;
+        if (_0x12beb8 < _0x2f870b) {
+          const _0x4a6369 = _0x12beb8 / _0x2f870b,
+            _0x11b160 = N0(_0x4a6369);
+          _0x29ddc2 = -0x5c * (0x1 - _0x11b160), _0x3d3c67 = 0.86 + 0.14 * _0x11b160, _0x1f3824 = ve(_0x4a6369 * 2.2, 0x0, 0x1);
+        } else {
+          if (_0x12beb8 > _0x56cdd2) {
+            const _0x5903e9 = (_0x12beb8 - _0x56cdd2) / (0x1 - _0x56cdd2),
+              _0x51e6bc = A0(_0x5903e9);
+            _0x29ddc2 = 0x54 * _0x51e6bc, _0x3d3c67 = 0x1 - 0.14 * _0x51e6bc, _0x1f3824 = ve(0x1 - _0x5903e9 * 1.5, 0x0, 0x1);
+          } else _0x29ddc2 = 0x0, _0x3d3c67 = 0x1, _0x1f3824 = 0x1;
+        }
+        const _0x3a57bd = _0x12beb8 < 0.04 ? _0x12beb8 / 0.04 : _0x12beb8 < 0.32 ? 0x1 : _0x12beb8 < 0.37 ? ve(0x1 - (_0x12beb8 - 0.32) / 0.05, 0x0, 0x1) : 0x0,
+          _0x5ad61a = _0x12beb8 >= 0.42 && _0x12beb8 <= 0.7,
+          _0x5913b3 = ve((_0x12beb8 - 0.42) / 0.28, 0x0, 0x1),
+          _0xb9f07c = -0x37 + _0x5913b3 * 0xa5,
+          _0x1a6316 = _0x5ad61a ? _0x5913b3 < 0.1 ? _0x5913b3 / 0.1 : _0x5913b3 > 0.85 ? ve((0x1 - _0x5913b3) / 0.15, 0x0, 0x1) : 0x1 : 0x0;
+        _0x1e3d70['style']['opacity'] = String(_0x1f3824), _0x1e3d70['style']['transform'] = 'perspective(340px)\x20rotateX(' + _0x29ddc2['toFixed'](0x2) + 'deg)\x20scale(' + _0x3d3c67['toFixed'](0x3) + ')', _0x3aec96['style']['clipPath'] = 'inset(0\x20' + ((0x1 - _0x17c51c) * 0x64)['toFixed'](0x2) + '%\x200\x200)', _0x2a4eae['style']['transform'] = 'translateX(' + (0xd + _0x17c51c * (_0xdc23a6 - 0x1a))['toFixed'](0x1) + 'px)', _0x2a4eae['style']['opacity'] = String(_0x3a57bd), _0x54e74c['style']['transform'] = 'translateX(' + (_0xb9f07c / 0x64 * _0xdc23a6)['toFixed'](0x1) + 'px)\x20skewX(-16deg)', _0x54e74c['style']['opacity'] = String(_0x1a6316), _0x328a3c = requestAnimationFrame(_0x3ff500);
+      };
+    return _0x328a3c = requestAnimationFrame(_0x3ff500), () => {
+      cancelAnimationFrame(_0x328a3c), window['removeEventListener']('resize', _0x91f6f5);
+    };
+  }, []), _0x2c4709['jsxs']('span', {
+    'ref': _0xfc97da,
+    'className': 'license-nameplate',
+    'children': [_0x2c4709['jsx']('span', {
+      'ref': _0x5d6464,
+      'className': 'np-text',
+      'children': _0x30fc2
+    }), _0x2c4709['jsx']('span', {
+      'className': 'np-shine-clip',
+      'aria-hidden': 'true',
+      'children': _0x2c4709['jsx']('span', {
+        'ref': _0x40f622,
+        'className': 'np-shine'
+      })
+    }), _0x2c4709['jsx']('span', {
+      'ref': _0x4e344b,
+      'className': 'np-stars',
+      'aria-hidden': 'true'
+    })]
+  });
+}
+const _0 = _0x3bad30 => _0x3bad30 === 'name' || _0x3bad30 === 'tag' ? _0x3bad30 : 'both';
+
+function O0(_0x163150 = 'user', _0x1789d8 = !0x0, _0x6d9f0f) {
+  const _0x5c9900 = _0x163150 === 'public',
+    {
+      data: _0x3374a9
+    } = _0x8fb83({
+      'queryKey': _0x5c9900 ? ['license-badge-public', _0x6d9f0f ?? ''] : ['user-license-status'],
+      'queryFn': async () => {
+        const _0x580c38 = _0x5c9900 ? '/api/public/license-badge' + (_0x6d9f0f ? '?pos=' + _0x6d9f0f : '') : '/api/user/license/status';
+        return (await N['get'](_0x580c38))['data'];
+      },
+      'enabled': _0x1789d8,
+      'staleTime': 0x12c * 0x3e8,
+      'retry': _0x5c9900 ? !0x1 : 0x1
+    }),
+    _0x338316 = F0(_0x1789d8),
+    _0x54636b = _0x3374a9?.['plan']?.['name'] ?? _0x3374a9?.['name'] ?? '',
+    _0x4cec1a = _0x3374a9?.['plan']?.['display_name'] ?? _0x3374a9?.['display_name'] ?? '',
+    _0x1381d4 = _0x338316 === 'tag' ? '' : _0x54636b,
+    _0xa141a2 = _0x338316 === 'name' ? '' : _0x4cec1a;
+  return {
+    'valid': !!_0x3374a9?.['valid'],
+    'name': _0x1381d4,
+    'displayName': _0xa141a2,
+    'nameMode': _0x338316,
+    'planName': _0x54636b
+  };
+}
+
+function F0(_0xbcc7de = !0x0) {
+  const {
+    data: _0x4f2d17
+  } = _0x8fb83({
+    'queryKey': ['license-badge-switches'],
+    'queryFn': async () => (await N['get']('/api/public/license-badge'))['data'],
+    'enabled': _0xbcc7de,
+    'staleTime': 0x493e0,
+    'retry': !0x1
+  });
+  return _0(_0x4f2d17?.['name_mode']);
+}
+
+function I0(_0x3538e5 = !0x0) {
+  const {
+    data: _0x254223
+  } = _0x8fb83({
+    'queryKey': ['license-badge-switches'],
+    'queryFn': async () => (await N['get']('/api/public/license-badge'))['data'],
+    'enabled': _0x3538e5,
+    'staleTime': 0x493e0,
+    'retry': !0x1
+  });
+  return _0x254223?.['show'] ?? {};
+}
+
+function M0() {
+  return _0x2c4709['jsxs']('span', {
+    'className': 'pro-label-badge\x20inline-flex\x20shrink-0\x20items-center\x20gap-0.5\x20rounded-full\x20border\x20border-amber-300/60\x20bg-gradient-to-r\x20from-amber-400\x20to-yellow-300\x20px-1.5\x20py-0.5\x20text-[10px]\x20leading-none\x20font-bold\x20text-amber-900\x20shadow-sm\x20shadow-amber-200/50',
+    'children': [_0x2c4709['jsx']('svg', {
+      'className': 'h-2.5\x20w-2.5',
+      'viewBox': '0\x200\x2024\x2024',
+      'fill': 'currentColor',
+      'children': _0x2c4709['jsx']('path', {
+        'd': 'M12\x202L15.09\x208.26L22\x209.27L17\x2014.14L18.18\x2021.02L12\x2017.77L5.82\x2021.02L7\x2014.14L2\x209.27L8.91\x208.26L12\x202Z'
+      })
+    }), 'Pro']
+  });
+}
+
+function Ky({
+  source: _0x517c35 = 'user',
+  pos: _0x49b550,
+  enabled: _0x5be4d0 = !0x0,
+  showPro: _0x4da502 = !0x0,
+  shine: _0x1bb3e2 = !0x1,
+  className: _0x25be6e
+}) {
+  const {
+    valid: _0x44efa3,
+    name: _0x1b48dc,
+    displayName: _0x51ac8a,
+    planName: _0x136057
+  } = O0(_0x517c35, _0x5be4d0, _0x49b550);
+  if (!_0x1b48dc && !_0x51ac8a) return null;
+  const _0x5e5159 = _0x136057 === 'TRIAL',
+    _0x23ac46 = _0x2c4709['jsxs'](_0x2c4709['Fragment'], {
+      'children': [_0x1b48dc, _0x1b48dc && _0x51ac8a && '\x20·\x20', _0x51ac8a]
+    });
+  return _0x2c4709['jsxs']('span', {
+    'className': D('inline-flex\x20min-w-0\x20items-center\x20gap-1.5\x20text-sm', _0x25be6e),
+    'children': [_0x1bb3e2 ? _0x2c4709['jsx'](L0, {
+      'label': _0x23ac46
+    }) : _0x2c4709['jsx']('span', {
+      'className': 'truncate',
+      'children': _0x23ac46
+    }), _0x4da502 && _0x44efa3 && !_0x5e5159 && _0x2c4709['jsx'](M0, {})]
+  });
+}
+
+function E0({
+  open: _0x266a73,
+  onOpenChange: _0xc328fd
+}) {
+  const [_0x46ce90, _0x531677] = _0x4eb10f['useState'](null), [_0x4b4c26, _0xd923b6] = _0x4eb10f['useState'](0x0), [_0x26aed7, _0x46bd5e] = _0x4eb10f['useState'](!0x1), _0x17975a = _0x4eb10f['useCallback'](async () => {
+    _0x46bd5e(!0x0);
+    try {
+      const _0x48363e = (await N['post']('¤a2987ed84bade454'))['data'];
+      _0x531677(_0x48363e['code']), _0xd923b6(_0x48363e['expires_in'] ?? 0x12c);
+    } catch {
+      _0x5e6a09['error']('生成二维码失败，请重试'), _0x531677(null), _0xd923b6(0x0);
+    } finally {
+      _0x46bd5e(!0x1);
+    }
+  }, []);
+  _0x4eb10f['useEffect'](() => {
+    _0x266a73 ? _0x17975a() : (_0x531677(null), _0xd923b6(0x0));
+  }, [_0x266a73, _0x17975a]), _0x4eb10f['useEffect'](() => {
+    if (!_0x266a73 || _0x4b4c26 <= 0x0) return;
+    const _0x12404e = setInterval(() => _0xd923b6(_0x5a3e77 => Math['max'](0x0, _0x5a3e77 - 0x1)), 0x3e8);
+    return () => clearInterval(_0x12404e);
+  }, [_0x266a73, _0x4b4c26]);
+  const _0x148fea = _0x46ce90 !== null && _0x4b4c26 <= 0x0,
+    _0x24f35f = _0x46ce90 === null ? '' : 'miaomiaowu://login?host=' + encodeURIComponent(location['origin']) + '&code=' + _0x46ce90;
+  return _0x2c4709['jsx'](Re, {
+    'open': _0x266a73,
+    'onOpenChange': _0xc328fd,
+    'children': _0x2c4709['jsxs'](De, {
+      'className': 'sm:max-w-sm',
+      'children': [_0x2c4709['jsxs'](Ne, {
+        'children': [_0x2c4709['jsx'](Ae, {
+          'children': '扫码登录手机'
+        }), _0x2c4709['jsx'](Ge, {
+          'children': '用妙妙屋\x20App\x20扫描下方二维码即可登录，无需先导入订阅。'
+        })]
+      }), _0x2c4709['jsxs']('div', {
+        'className': 'flex\x20flex-col\x20items-center\x20gap-3\x20py-2',
+        'children': [_0x2c4709['jsx']('div', {
+          'className': 'relative\x20rounded-lg\x20bg-white\x20p-4',
+          'children': _0x46ce90 !== null && !_0x148fea ? _0x2c4709['jsx'](_0xa9c8f6, {
+            'value': _0x24f35f,
+            'size': 0xc8
+          }) : _0x2c4709['jsx']('div', {
+            'className': 'flex\x20size-[200px]\x20items-center\x20justify-center\x20text-center\x20text-sm\x20text-neutral-500',
+            'children': _0x26aed7 ? '生成中…' : _0x148fea ? '二维码已过期' : '生成失败'
+          })
+        }), _0x46ce90 !== null && !_0x148fea ? _0x2c4709['jsxs']('p', {
+          'className': 'text-muted-foreground\x20text-sm\x20tabular-nums',
+          'children': [Math['floor'](_0x4b4c26 / 0x3c), ':', String(_0x4b4c26 % 0x3c)['padStart'](0x2, '0'), '\x20后失效']
+        }) : null, _0x2c4709['jsxs'](j, {
+          'variant': 'outline',
+          'size': 'sm',
+          'onClick': () => void _0x17975a(),
+          'disabled': _0x26aed7,
+          'className': 'gap-2',
+          'children': [_0x2c4709['jsx'](_0x34e242, {
+            'className': 'size-4'
+          }), '重新生成']
+        })]
+      })]
+    })
+  });
+}
+
+function U0({
+  open: _0x1f83a1,
+  onOpenChange: _0x110864
+}) {
+  const {
+    t: _0x39fb50
+  } = _0x4c4113(), _0x13d040 = _0x502642(), {
+    auth: _0x186f8c
+  } = _(), _0x35f00f = _0x40fa57(), _0x37f77a = () => {
+    _0x186f8c['reset'](), _0x35f00f['clear'](), _0x13d040({
+      'to': '/login',
+      'replace': !0x0
+    });
+  };
+  return _0x2c4709['jsx'](wu, {
+    'open': _0x1f83a1,
+    'onOpenChange': _0x110864,
+    'title': _0x39fb50('signOut.title'),
+    'desc': _0x39fb50('signOut.description'),
+    'confirmText': _0x39fb50('signOut.confirm'),
+    'cancelBtnText': _0x39fb50('signOut.cancel'),
+    'handleConfirm': _0x37f77a,
+    'className': 'sm:max-w-sm'
+  });
+}
+const wn = (_0x574eb2, _0x343fd9) => {
+    const _0x35c3a4 = _0x574eb2;
+    return _0x35c3a4['response']?.['data']?.['error'] || _0x35c3a4['message'] || _0x343fd9;
+  },
+  j0 = _0x25977f => {
+    if (!_0x25977f) return '';
+    try {
+      const _0x33acb0 = new URL(_0x25977f);
+      return _0x33acb0['protocol'] === 'https:' && _0x33acb0['hostname'] === 't.me' ? _0x33acb0['toString']() : '';
+    } catch {
+      return '';
+    }
+  },
+  H0 = _0x155628 => {
+    const _0x584e99 = (_0x155628 || '')['trim']()['replace'](/^@/, '');
+    return /^[A-Za-z0-9_]{5,32}$/ ['test'](_0x584e99) ? 'https://t.me/' + _0x584e99 : '';
+  };
+
+function B0({
+  open: _0x4ca2ba,
+  onOpenChange: _0x2f80ff,
+  username: _0x3183e7,
+  initialTelegramId: _0x3d33e7,
+  initialTelegramUsername: _0x4ed0c2
+}) {
+  const _0x59efed = _0x40fa57(),
+    [_0x5f1251, _0x14e2c2] = _0x4eb10f['useState'](null),
+    _0x543372 = _0x4eb10f['useRef'](!0x1),
+    _0x2f1799 = _0x3183e7 ? {
+      'username': _0x3183e7
+    } : void 0x0,
+    _0xaeb800 = _0x8fb83({
+      'queryKey': ['telegram-binding', _0x3183e7 || 'self', _0x2f1799],
+      'queryFn': async () => (await N['get']('¤6de127a998b33765', {
+        'params': _0x2f1799
+      }))['data'],
+      'enabled': _0x4ca2ba,
+      'refetchInterval': _0x5f1251 ? 0xbb8 : !0x1
+    }),
+    _0x1a9a67 = _0xaeb800['data'] || {
+      'bound': !!_0x3d33e7,
+      'telegram_id': _0x3d33e7,
+      'telegram_username': _0x4ed0c2
+    },
+    _0x2cb8d6 = j0(_0x1a9a67['bot_url'] || _0x5f1251?.['bot_url']),
+    _0x12a123 = (_0x1a9a67['telegram_username'] || '')['replace'](/^@/, ''),
+    _0x4435a8 = H0(_0x12a123);
+  _0x4eb10f['useEffect'](() => {
+    _0x5f1251 && _0xaeb800['data']?.['bound'] && !_0x543372['current'] && (_0x543372['current'] = !0x0, _0x5e6a09['success']('Telegram\x20绑定成功'), _0x59efed['invalidateQueries']({
+      'queryKey': ['admin-users']
+    }), _0x59efed['invalidateQueries']({
+      'queryKey': ['profile']
+    }));
+  }, [_0x5f1251, _0xaeb800['data']?.['bound'], _0x59efed]);
+  const _0x3e2034 = _0x310c5a({
+      'mutationFn': async () => (await N['post']('¤0c70d3bbd3851ae2', null, {
+        'params': _0x2f1799
+      }))['data'],
+      'onSuccess': _0x458a25 => {
+        _0x543372['current'] = !0x1, _0x14e2c2(_0x458a25);
+      },
+      'onError': _0x2ab62a => _0x5e6a09['error'](wn(_0x2ab62a, '创建绑定码失败'))
+    }),
+    _0x4c3bd0 = _0x310c5a({
+      'mutationFn': () => N['delete']('¤3bd891fb1f0b6a7e', {
+        'params': _0x2f1799
+      }),
+      'onSuccess': () => {
+        _0x5e6a09['success']('已解除\x20Telegram\x20绑定'), _0xaeb800['refetch'](), _0x59efed['invalidateQueries']({
+          'queryKey': ['admin-users']
+        }), _0x59efed['invalidateQueries']({
+          'queryKey': ['profile']
+        });
+      },
+      'onError': _0x2cb945 => _0x5e6a09['error'](wn(_0x2cb945, '解绑失败'))
+    }),
+    _0x2b3a22 = async () => {
+      _0x5f1251 && (await navigator['clipboard']['writeText'](_0x5f1251['command']), _0x5e6a09['success']('绑定命令已复制'));
+    };
+  return _0x2c4709['jsx'](Re, {
+    'open': _0x4ca2ba,
+    'onOpenChange': _0x598f01 => {
+      _0x598f01 || _0x14e2c2(null), _0x2f80ff(_0x598f01);
+    },
+    'children': _0x2c4709['jsxs'](De, {
+      'className': 'sm:max-w-md',
+      'children': [_0x2c4709['jsxs'](Ne, {
+        'children': [_0x2c4709['jsx'](Ae, {
+          'children': _0x1a9a67['bound'] ? '管理\x20Telegram\x20绑定' : '绑定\x20Telegram'
+        }), _0x2c4709['jsx'](Ge, {
+          'children': _0x3183e7 ? '为用户\x20' + _0x3183e7 + '\x20绑定\x20Telegram。' : '绑定当前账号的\x20Telegram。'
+        })]
+      }), _0x2cb8d6 && _0x2c4709['jsxs']('a', {
+        'href': _0x2cb8d6,
+        'target': '_blank',
+        'rel': 'noopener\x20noreferrer',
+        'className': 'bg-muted/30\x20hover:bg-muted\x20flex\x20items-center\x20justify-between\x20rounded-lg\x20border\x20px-4\x20py-3\x20text-sm\x20text-sky-600\x20hover:underline',
+        'children': [_0x2c4709['jsxs']('span', {
+          'className': 'min-w-0\x20truncate',
+          'children': ['TGBot：', _0x2cb8d6]
+        }), _0x2c4709['jsx'](_0x3dbd1d, {
+          'className': 'ml-2\x20h-4\x20w-4\x20shrink-0'
+        })]
+      }), _0x1a9a67['bound'] ? _0x2c4709['jsxs']('div', {
+        'className': 'space-y-4',
+        'children': [_0x2c4709['jsxs']('div', {
+          'className': 'flex\x20items-center\x20gap-3\x20rounded-lg\x20border\x20p-4',
+          'children': [_0x2c4709['jsx'](_0x53bb92, {
+            'className': 'h-5\x20w-5\x20text-green-600'
+          }), _0x2c4709['jsxs']('div', {
+            'children': [_0x2c4709['jsx']('div', {
+              'className': 'font-medium',
+              'children': '已绑定'
+            }), _0x2c4709['jsx']('div', {
+              'className': 'text-muted-foreground\x20text-sm',
+              'children': _0x4435a8 ? _0x2c4709['jsxs']('a', {
+                'href': _0x4435a8,
+                'target': '_blank',
+                'rel': 'noopener\x20noreferrer',
+                'className': 'text-sky-600\x20hover:underline',
+                'children': ['@', _0x12a123]
+              }) : _0x1a9a67['telegram_username'] ? '@' + _0x1a9a67['telegram_username']['replace'](/^@/, '') : 'TG\x20ID:\x20' + _0x1a9a67['telegram_id']
+            })]
+          })]
+        }), _0x2c4709['jsxs'](j, {
+          'variant': 'destructive',
+          'className': 'w-full',
+          'disabled': _0x4c3bd0['isPending'],
+          'onClick': () => _0x4c3bd0['mutate'](),
+          'children': [_0x2c4709['jsx'](_0x29a345, {
+            'className': 'mr-2\x20h-4\x20w-4'
+          }), '解除绑定']
+        })]
+      }) : _0x5f1251 ? _0x2c4709['jsxs']('div', {
+        'className': 'space-y-4',
+        'children': [_0x2c4709['jsx']('div', {
+          'className': 'bg-muted/40\x20rounded-lg\x20border\x20p-4\x20text-sm',
+          'children': '请在需要绑定的\x20Telegram\x20账号中打开妙妙屋X\x20Bot，并发送以下命令。仅复制邀请码不会完成绑定。'
+        }), _0x2c4709['jsxs']('button', {
+          'type': 'button',
+          'onClick': _0x2b3a22,
+          'className': 'bg-background\x20hover:bg-muted\x20flex\x20w-full\x20items-center\x20justify-between\x20rounded-lg\x20border\x20p-4\x20font-mono',
+          'children': [_0x2c4709['jsx']('span', {
+            'children': _0x5f1251['command']
+          }), _0x2c4709['jsx'](_0x5a59f3, {
+            'className': 'h-4\x20w-4'
+          })]
+        }), _0x2c4709['jsx']('p', {
+          'className': 'text-muted-foreground\x20text-center\x20text-xs',
+          'children': '绑定码\x2024\x20小时内有效；此窗口会自动检测绑定结果。'
+        })]
+      }) : _0x2c4709['jsxs']('div', {
+        'className': 'space-y-4',
+        'children': [_0x2c4709['jsx']('p', {
+          'className': 'text-muted-foreground\x20text-sm',
+          'children': 'Telegram\x20Bot\x20无法主动联系未开始会话的用户，因此需要由用户发送一次\x20/start\x20绑定命令。'
+        }), _0x2c4709['jsxs'](j, {
+          'className': 'w-full',
+          'disabled': _0x3e2034['isPending'] || _0xaeb800['isLoading'],
+          'onClick': () => _0x3e2034['mutate'](),
+          'children': [_0x2c4709['jsx'](_0x3dbd1d, {
+            'className': 'mr-2\x20h-4\x20w-4'
+          }), _0x3e2034['isPending'] ? '正在创建…' : '生成绑定命令']
+        })]
+      }), _0x2c4709['jsx'](Bu, {
+        'children': _0x2c4709['jsx'](j, {
+          'variant': 'outline',
+          'onClick': () => _0x2f80ff(!0x1),
+          'children': '关闭'
+        })
+      })]
+    })
+  });
+}
+const Gu = _0x4eb10f['forwardRef'](({
+  className: _0x474a85,
+  value: _0x4d5318 = 0x0,
+  max: _0x1103c1 = 0x64,
+  ..._0x41aede
+}, _0xb4038e) => {
+  const _0xd5eb19 = Math['min'](Math['max'](_0x4d5318 / _0x1103c1 * 0x64, 0x0), 0x64);
+  return _0x2c4709['jsx']('div', {
+    'ref': _0xb4038e,
+    'data-slot': 'progress',
+    'role': 'progressbar',
+    'aria-valuemin': 0x0,
+    'aria-valuemax': _0x1103c1,
+    'aria-valuenow': _0xd5eb19,
+    'className': D('bg-muted\x20relative\x20h-2\x20w-full\x20overflow-hidden\x20rounded-full', _0x474a85),
+    ..._0x41aede,
+    'children': _0x2c4709['jsx']('div', {
+      'className': 'bg-primary\x20h-full\x20w-full\x20flex-1\x20transition-all',
+      'style': {
+        'transform': 'translateX(' + (_0xd5eb19 - 0x64) + '%)'
+      }
+    })
+  });
+});
+Gu['displayName'] = 'Progress';
+const Pn = ['checking', 'downloading', 'backing_up', 'replacing', 'restarting'],
+  G0 = {
+    'checking': 'update.steps.checking',
+    'downloading': 'update.steps.downloading',
+    'backing_up': 'update.steps.backingUp',
+    'replacing': 'update.steps.replacing',
+    'restarting': 'update.steps.restarting'
+  };
+
+function q0({
+  open: _0x1b14a9,
+  onOpenChange: _0x243212
+}) {
+  const {
+    t: _0x427489
+  } = _0x4c4113('common'), [_0x73e8e, _0x4e4252] = _0x4eb10f['useState'](!0x1), [_0x29770b, _0x4ca5e6] = _0x4eb10f['useState'](null), _0x4239e0 = _0x4eb10f['useRef'](!0x1), {
+    auth: _0x43586a
+  } = _(), [_0x59bd07, _0x2cb570] = _0x4eb10f['useState'](() => localStorage['getItem']('mmwx-update-channel') === 'prerelease' ? 'prerelease' : 'stable'), {
+    data: _0x118e49,
+    isLoading: _0x1b8d18,
+    refetch: _0x5109c6,
+    isRefetching: _0x485d2d
+  } = _0x8fb83({
+    'queryKey': ['update-check', _0x59bd07],
+    'queryFn': async () => (await N['get']('§32a29375dacb94db', {
+      'params': {
+        'channel': _0x59bd07
+      }
+    }))['data'],
+    'enabled': _0x1b14a9,
+    'staleTime': 0x0,
+    'retry': 0x1
+  }), _0x141896 = _0x4eb10f['useCallback'](async (_0x3a3a1b = !0x1) => {
+    _0x4e4252(!0x0), _0x4ca5e6(null), _0x4239e0['current'] = !0x1;
+    try {
+      const _0x1046a1 = new URLSearchParams({
+        'channel': _0x59bd07
+      });
+      _0x3a3a1b && _0x1046a1['set']('force', 'true'), _0x118e49?.['latest_version'] && _0x1046a1['set']('target', _0x118e49['latest_version']);
+      const _0x268e9c = '/api/admin/update/apply-sse?' + _0x1046a1['toString'](),
+        _0x59c60a = await fetch(_0x268e9c, {
+          'method': 'GET',
+          'headers': {
+            'MM-Authorization': _0x43586a['accessToken'] || ''
+          }
+        });
+      if (!_0x59c60a['ok']) throw new Error('HTTP\x20' + _0x59c60a['status']);
+      const _0x508031 = _0x59c60a['body']?.['getReader']();
+      if (!_0x508031) throw new Error(_0x427489('update.cannotReadStream'));
+      const _0x1a519e = new TextDecoder();
+      let _0x26e593 = '';
+      for (;;) {
+        const {
+          done: _0x2f977e,
+          value: _0x357be3
+        } = await _0x508031['read']();
+        if (_0x2f977e) break;
+        _0x26e593 += _0x1a519e['decode'](_0x357be3, {
+          'stream': !0x0
+        });
+        const _0x43fd27 = _0x26e593['split']('\x0a');
+        _0x26e593 = _0x43fd27['pop']() || '';
+        for (const _0x447f16 of _0x43fd27)
+          if (_0x447f16['startsWith']('data:\x20')) try {
+            const _0x3abb40 = JSON['parse'](_0x447f16['slice'](0x6));
+            if (_0x4ca5e6(_0x3abb40), _0x3abb40['step'] === 'done') {
+              _0x4239e0['current'] = !0x0, _0x5e6a09['success'](_0x427489('update.updateSuccess')), setTimeout(() => {
+                window['location']['reload']();
+              }, 0xbb8);
+              return;
+            } else {
+              if (_0x3abb40['step'] === 'error') {
+                _0x4239e0['current'] = !0x0, _0x4e4252(!0x1), _0x5e6a09['error'](_0x3abb40['message']);
+                return;
+              }
+            }
+          } catch {}
+      }
+      _0x4239e0['current'] || (_0x4e4252(!0x1), _0x5e6a09['error'](_0x427489('update.connectionClosed')));
+    } catch (_0x67438e) {
+      _0x4239e0['current'] || (_0x4e4252(!0x1), _0x5e6a09['error'](_0x427489('update.updateFailed', {
+        'error': _0x67438e instanceof Error ? _0x67438e['message'] : _0x427489('update.unknownError')
+      })));
+    }
+  }, [_0x43586a['accessToken'], _0x59bd07, _0x118e49?.['latest_version'], _0x427489]), _0x5559a8 = _0x14af19 => {
+    _0x73e8e || (localStorage['setItem']('mmwx-update-channel', _0x14af19), _0x2cb570(_0x14af19), _0x4ca5e6(null));
+  }, _0x3a6044 = _0x1b9412 => {
+    _0x243212(_0x1b9412);
+  }, _0x42a2e8 = _0x1b8d18 || _0x485d2d, _0x3e4bc3 = Pn['findIndex'](_0x4b2105 => _0x4b2105 === _0x29770b?.['step']);
+  return _0x2c4709['jsx'](Re, {
+    'open': _0x1b14a9,
+    'onOpenChange': _0x3a6044,
+    'children': _0x2c4709['jsxs'](De, {
+      'className': 'overflow-hidden\x20sm:max-w-md',
+      'children': [_0x2c4709['jsxs'](Ne, {
+        'children': [_0x2c4709['jsxs'](Ae, {
+          'className': 'flex\x20items-center\x20gap-2',
+          'children': [_0x2c4709['jsx'](_0x34e242, {
+            'className': 'size-5'
+          }), '\x20', _0x427489('update.title')]
+        }), _0x2c4709['jsx'](Ge, {
+          'children': _0x427489('update.description')
+        })]
+      }), _0x2c4709['jsxs']('div', {
+        'className': 'space-y-4',
+        'children': [_0x2c4709['jsxs']('div', {
+          'className': 'space-y-2',
+          'children': [_0x2c4709['jsx']('p', {
+            'className': 'text-sm\x20font-medium',
+            'children': _0x427489('update.channel')
+          }), _0x2c4709['jsxs']('div', {
+            'className': 'grid\x20grid-cols-2\x20gap-2',
+            'children': [_0x2c4709['jsx'](j, {
+              'type': 'button',
+              'variant': _0x59bd07 === 'stable' ? 'default' : 'outline',
+              'size': 'sm',
+              'disabled': _0x73e8e,
+              'onClick': () => _0x5559a8('stable'),
+              'children': _0x427489('update.stableChannel')
+            }), _0x2c4709['jsx'](j, {
+              'type': 'button',
+              'variant': _0x59bd07 === 'prerelease' ? 'default' : 'outline',
+              'size': 'sm',
+              'disabled': _0x73e8e,
+              'onClick': () => _0x5559a8('prerelease'),
+              'children': _0x427489('update.prereleaseChannel')
+            })]
+          }), _0x59bd07 === 'prerelease' && _0x2c4709['jsx']('p', {
+            'className': 'text-xs\x20text-amber-600\x20dark:text-amber-400',
+            'children': _0x427489('update.prereleaseWarning')
+          })]
+        }), _0x42a2e8 ? _0x2c4709['jsxs']('div', {
+          'className': 'py-8\x20text-center',
+          'children': [_0x2c4709['jsx'](_0x34e242, {
+            'className': 'text-primary\x20mx-auto\x20mb-3\x20size-8\x20animate-spin'
+          }), _0x2c4709['jsx']('p', {
+            'className': 'text-muted-foreground\x20text-sm',
+            'children': _0x427489('update.checking')
+          })]
+        }) : _0x118e49?.['has_update'] ? _0x2c4709['jsxs']('div', {
+          'className': 'space-y-4',
+          'children': [_0x2c4709['jsxs']('div', {
+            'className': 'flex\x20items-center\x20gap-2\x20text-amber-500',
+            'children': [_0x2c4709['jsx'](_0x44666b, {
+              'className': 'size-5'
+            }), _0x2c4709['jsx']('span', {
+              'className': 'font-medium',
+              'children': _0x427489('update.newVersion')
+            })]
+          }), _0x2c4709['jsxs']('div', {
+            'className': 'bg-muted/50\x20space-y-2\x20rounded-lg\x20p-3',
+            'children': [_0x2c4709['jsxs']('div', {
+              'className': 'flex\x20justify-between\x20text-sm',
+              'children': [_0x2c4709['jsx']('span', {
+                'className': 'text-muted-foreground',
+                'children': _0x427489('update.currentVersion')
+              }), _0x2c4709['jsxs']('span', {
+                'className': 'font-mono',
+                'children': ['v', _0x118e49['current_version']]
+              })]
+            }), _0x2c4709['jsxs']('div', {
+              'className': 'flex\x20justify-between\x20text-sm',
+              'children': [_0x2c4709['jsx']('span', {
+                'className': 'text-muted-foreground',
+                'children': _0x427489('update.latestVersion')
+              }), _0x2c4709['jsxs']('span', {
+                'className': 'font-mono\x20text-green-600',
+                'children': ['v', _0x118e49['latest_version'], _0x118e49['prerelease'] ? '\x20(' + _0x427489('update.prereleaseBadge') + ')' : '']
+              })]
+            })]
+          }), _0x118e49['release_notes'] && !_0x73e8e && _0x2c4709['jsxs']('div', {
+            'className': 'space-y-2\x20overflow-hidden',
+            'children': [_0x2c4709['jsx']('p', {
+              'className': 'text-sm\x20font-medium',
+              'children': _0x427489('update.releaseNotes')
+            }), _0x2c4709['jsx']('div', {
+              'className': 'bg-muted/30\x20max-h-40\x20overflow-x-hidden\x20overflow-y-auto\x20rounded-lg\x20p-3',
+              'children': _0x2c4709['jsx']('p', {
+                'className': 'text-muted-foreground\x20text-sm\x20break-all\x20whitespace-pre-wrap',
+                'children': _0x118e49['release_notes']
+              })
+            })]
+          }), _0x73e8e && _0x2c4709['jsxs']('div', {
+            'className': 'space-y-4',
+            'children': [_0x2c4709['jsx']('div', {
+              'className': 'space-y-2',
+              'children': Pn['map']((_0xc29cbb, _0x372260) => {
+                const _0x1dbe25 = _0x372260 < _0x3e4bc3,
+                  _0x45dbd4 = _0xc29cbb === _0x29770b?.['step'],
+                  _0x2f9216 = _0x372260 > _0x3e4bc3 || _0x3e4bc3 === -0x1;
+                return _0x2c4709['jsxs']('div', {
+                  'className': 'flex\x20items-center\x20gap-3',
+                  'children': [_0x1dbe25 ? _0x2c4709['jsx'](_0x4cc600, {
+                    'className': 'size-5\x20shrink-0\x20text-green-500'
+                  }) : _0x45dbd4 ? _0x2c4709['jsx'](_0x34e242, {
+                    'className': 'text-primary\x20size-5\x20shrink-0\x20animate-spin'
+                  }) : _0x2c4709['jsx'](_0x26a794, {
+                    'className': 'text-muted-foreground\x20size-5\x20shrink-0'
+                  }), _0x2c4709['jsx']('span', {
+                    'className': _0x45dbd4 ? 'font-medium' : _0x2f9216 ? 'text-muted-foreground' : '',
+                    'children': _0x427489(G0[_0xc29cbb])
+                  }), _0x45dbd4 && _0xc29cbb === 'downloading' && _0x29770b && _0x2c4709['jsxs']('span', {
+                    'className': 'ml-auto\x20font-mono\x20text-sm',
+                    'children': [_0x29770b['progress'], '%']
+                  })]
+                }, _0xc29cbb);
+              })
+            }), _0x29770b?.['step'] === 'downloading' && _0x2c4709['jsx'](Gu, {
+              'value': _0x29770b['progress'],
+              'className': 'h-2'
+            }), _0x2c4709['jsx']('div', {
+              'className': 'rounded-lg\x20bg-blue-50\x20p-3\x20dark:bg-blue-950/30',
+              'children': _0x2c4709['jsx']('p', {
+                'className': 'text-sm\x20text-blue-600\x20dark:text-blue-400',
+                'children': _0x29770b?.['message'] || _0x427489('update.preparing')
+              })
+            })]
+          }), !_0x73e8e && _0x2c4709['jsxs']('div', {
+            'className': 'flex\x20flex-col\x20gap-2',
+            'children': [_0x2c4709['jsxs'](j, {
+              'onClick': () => _0x141896(),
+              'disabled': _0x73e8e || !_0x118e49['download_url'],
+              'className': 'w-full',
+              'children': [_0x2c4709['jsx'](_0x3d676f, {
+                'className': 'mr-2\x20size-4'
+              }), _0x427489('update.updateNow')]
+            }), !_0x118e49['download_url'] && _0x2c4709['jsx']('p', {
+              'className': 'text-destructive\x20text-center\x20text-xs',
+              'children': _0x427489('update.noDownload')
+            }), _0x118e49['release_url'] && _0x2c4709['jsxs'](j, {
+              'variant': 'outline',
+              'className': 'w-full',
+              'onClick': () => window['open'](_0x118e49['release_url'], '_blank'),
+              'children': [_0x2c4709['jsx'](_0x7947ec, {
+                'className': 'mr-2\x20size-4'
+              }), _0x427489('update.viewRelease')]
+            })]
+          })]
+        }) : _0x2c4709['jsxs']('div', {
+          'className': 'py-8\x20text-center',
+          'children': [_0x2c4709['jsx'](_0x4cc600, {
+            'className': 'mx-auto\x20mb-3\x20size-12\x20text-green-500'
+          }), _0x2c4709['jsx']('p', {
+            'className': 'text-lg\x20font-medium',
+            'children': _0x427489('update.upToDate')
+          }), _0x2c4709['jsx']('p', {
+            'className': 'text-muted-foreground\x20mt-1\x20text-sm',
+            'children': _0x427489('update.currentVersionLabel', {
+              'version': _0x118e49?.['current_version']
+            })
+          }), _0x2c4709['jsxs'](j, {
+            'variant': 'outline',
+            'size': 'sm',
+            'onClick': () => _0x141896(!0x0),
+            'disabled': _0x73e8e,
+            'className': 'mt-4',
+            'children': [_0x2c4709['jsx'](_0x3d676f, {
+              'className': 'mr-2\x20size-4'
+            }), _0x427489('update.forceReinstall')]
+          })]
+        }), _0x2c4709['jsxs'](j, {
+          'variant': 'outline',
+          'onClick': () => _0x5109c6(),
+          'disabled': _0x42a2e8 || _0x73e8e,
+          'className': 'w-full',
+          'children': [_0x2c4709['jsx'](_0x34e242, {
+            'className': 'mr-2\x20size-4\x20' + (_0x42a2e8 ? 'animate-spin' : '')
+          }), _0x427489('update.recheck')]
+        })]
+      })]
+    })
+  });
+}
+
+function z0() {
+  const {
+    t: _0x84f6d3,
+    i18n: _0x2cb51b
+  } = _0x4c4113(), [_0x3f2ecb, _0x3d7463] = d0(), [_0x446f6f, _0xb48d66] = _0x4eb10f['useState'](!0x1), [_0x5f59d0, _0x478053] = _0x4eb10f['useState'](!0x1), [_0xb4c25a, _0x22b030] = _0x4eb10f['useState'](!0x1), [_0x1fd846, _0x3e8576] = _0x4eb10f['useState'](!0x1), [_0x149193, _0x15b340] = _0x4eb10f['useState'](!0x1), {
+    auth: _0x31f841
+  } = _(), {
+    data: _0x790166
+  } = _0x8fb83({
+    'queryKey': ['profile'],
+    'queryFn': Te,
+    'enabled': !!_0x31f841['accessToken'],
+    'staleTime': 0x12c * 0x3e8
+  }), {
+    currentVersion: _0x251752,
+    hasUpdate: _0x3e9291,
+    releaseUrl: _0x163325
+  } = W0(!!_0x790166?.['is_admin']), {
+    data: _0x469241
+  } = _0x8fb83({
+    'queryKey': ['user-license-status'],
+    'queryFn': async () => (await N['get']('¤da0940d441a26653'))['data'],
+    'enabled': !!_0x31f841['accessToken'],
+    'staleTime': 0x12c * 0x3e8
+  }), _0xc47698 = v0(_0x469241);
+  _0x4eb10f['useEffect'](() => {
+    _0x469241 && !_0xc47698 && kt(be('mmw-theme-style') || '') && (Pe('mmw-theme-style', 'miaomiaowu', 0xe10 * 0x18 * 0x16d), window['location']['reload']());
+  }, [_0xc47698, _0x469241]);
+  const _0x404898 = I0(_0xb4c25a)['about'] !== !0x1,
+    _0xb62398 = _0x790166?.['nickname'] || _0x790166?.['username'] || _0x84f6d3('userMenu.user'),
+    _0x7891b3 = _0x790166?.['is_admin'] ? '/images/admin-avatar.webp' : '/images/user-avatar.png',
+    _0x237707 = _0x790166?.['avatar_url']?.['trim']() ? _0x790166['avatar_url']['trim']() : _0x7891b3,
+    _0x4d55b3 = _0xb62398['slice'](0x0, 0x2),
+    _0x1d6a0b = _0x790166?.['email']?.['trim'](),
+    _0x4c33c8 = _0x790166?.['role'] ? _0x790166['role']['toUpperCase']() : 'LV.0';
+  return _0x2c4709['jsxs'](_0x2c4709['Fragment'], {
+    'children': [_0x2c4709['jsxs'](Bt, {
+      'children': [_0x2c4709['jsx'](Gt, {
+        'asChild': !0x0,
+        'children': _0x2c4709['jsxs'](j, {
+          'variant': 'outline',
+          'size': 'sm',
+          'aria-label': _0xb62398,
+          'className': 'user-menu-trigger\x20h-9\x20min-w-0\x20justify-center\x20gap-2\x20overflow-hidden\x20px-2\x20py-2\x20sm:min-w-[120px]\x20sm:gap-2\x20sm:px-3',
+          'children': [_0x2c4709['jsx']('span', {
+            'className': 'sr-only',
+            'children': _0xb62398
+          }), _0x2c4709['jsxs'](vn, {
+            'className': 'um-avatar\x20size-7\x20border-[1.5px]\x20border-[color:rgba(241,140,110,0.45)]\x20shadow-[2px_2px_0_rgba(0,0,0,0.2)]',
+            'children': [_0x2c4709['jsx'](Sn, {
+              'src': _0x237707,
+              'alt': _0xb62398
+            }), _0x2c4709['jsx'](Cn, {
+              'children': _0x4d55b3 || _0x84f6d3('userMenu.user')
+            })]
+          }), _0x2c4709['jsxs']('div', {
+            'className': 'hidden\x20sm:flex\x20sm:flex-col\x20sm:items-center\x20sm:leading-tight',
+            'children': [_0x2c4709['jsx']('span', {
+              'className': 'um-name\x20max-w-[70px]\x20truncate\x20text-sm\x20font-semibold',
+              'children': _0xb62398
+            }), _0x2c4709['jsx']('span', {
+              'className': 'um-level\x20text-muted-foreground\x20text-xs\x20tracking-[0.2em]\x20uppercase',
+              'children': _0x4c33c8
+            })]
+          })]
+        })
+      }), _0x2c4709['jsxs'](qt, {
+        'align': 'end',
+        'className': 'w-56\x20space-y-3\x20p-4',
+        'children': [_0x2c4709['jsxs']('div', {
+          'className': 'flex\x20flex-col\x20items-center\x20gap-2\x20text-center',
+          'children': [_0x2c4709['jsxs'](vn, {
+            'className': 'size-12',
+            'children': [_0x2c4709['jsx'](Sn, {
+              'src': _0x237707,
+              'alt': _0xb62398
+            }), _0x2c4709['jsx'](Cn, {
+              'children': _0x4d55b3 || _0x84f6d3('userMenu.user')
+            })]
+          }), _0x2c4709['jsxs']('div', {
+            'className': 'space-y-1',
+            'children': [_0x2c4709['jsx']('p', {
+              'className': 'text-sm\x20leading-tight\x20font-semibold',
+              'children': _0xb62398
+            }), _0x2c4709['jsx']('p', {
+              'className': 'text-muted-foreground\x20text-xs',
+              'children': _0x790166?.['username'] || _0x84f6d3('userMenu.notLoggedIn')
+            }), _0x1d6a0b ? _0x2c4709['jsx']('p', {
+              'className': 'text-muted-foreground\x20text-xs\x20break-all',
+              'children': _0x1d6a0b
+            }) : _0x2c4709['jsx']('p', {
+              'className': 'text-muted-foreground\x20text-xs',
+              'children': _0x84f6d3('userMenu.noEmail')
+            })]
+          })]
+        }), _0x2c4709['jsx'](Pt, {}), _0x2c4709['jsx'](Q, {
+          'asChild': !0x0,
+          'className': 'cursor-pointer\x20justify-center',
+          'children': _0x2c4709['jsxs'](_0x2b65eb, {
+            'to': '/settings',
+            'className': 'flex\x20items-center\x20gap-2',
+            'children': [_0x2c4709['jsx'](_0x1cbf52, {
+              'className': 'size-4'
+            }), '\x20', _0x84f6d3('userMenu.settings')]
+          })
+        }), _0x2c4709['jsxs'](Q, {
+          'onClick': () => _0x3e8576(!0x0),
+          'className': 'cursor-pointer\x20justify-center',
+          'children': [_0x2c4709['jsx'](_0x3f631e, {
+            'className': 'size-4'
+          }), _0x790166?.['telegram_id'] ? 'Telegram\x20已绑定' : '绑定\x20Telegram']
+        }), _0x2c4709['jsxs'](Q, {
+          'onClick': () => _0x15b340(!0x0),
+          'className': 'cursor-pointer\x20justify-center',
+          'children': [_0x2c4709['jsx'](_0x3f3ab3, {
+            'className': 'size-4'
+          }), '扫码登录手机']
+        }), _0x2c4709['jsxs'](Q, {
+          'className': 'cursor-pointer\x20px-2',
+          'onSelect': _0x1c9257 => _0x1c9257['preventDefault'](),
+          'children': [_0x2c4709['jsx'](_0x23e5a0, {
+            'className': 'size-4\x20shrink-0'
+          }), _0x2c4709['jsx']('div', {
+            'className': 'flex\x20flex-1\x20gap-1',
+            'children': [{
+              'value': 'miaomiaowu',
+              'label': _0x84f6d3('userMenu.themeMiaomiaowu'),
+              'icon': _0x2c4709['jsx'](_0x3ffcfe, {
+                'className': 'size-4'
+              })
+            }, {
+              'value': 'flat',
+              'label': _0x84f6d3('userMenu.themeFlat'),
+              'icon': _0x2c4709['jsx'](_0x21fd6a, {
+                'className': 'size-4'
+              })
+            }, {
+              'value': 'anime',
+              'label': _0x84f6d3('userMenu.themeAnime'),
+              'icon': _0x2c4709['jsx']('img', {
+                'src': '/images/anime-nav/fantasy.png',
+                'alt': '',
+                'aria-hidden': !0x0,
+                'className': 'size-5\x20object-contain'
+              })
+            }, {
+              'value': 'premium',
+              'label': _0x84f6d3('userMenu.themePremium'),
+              'icon': _0x2c4709['jsx'](_0x2415ba, {
+                'className': 'size-4'
+              })
+            }, {
+              'value': 'glass',
+              'label': _0x84f6d3('userMenu.themeGlass'),
+              'icon': _0x2c4709['jsx'](_0x468903, {
+                'className': 'size-4'
+              })
+            }]['map'](_0x254295 => _0x2c4709['jsx']('button', {
+              'type': 'button',
+              'title': _0x254295['label'],
+              'aria-label': _0x254295['label'],
+              'disabled': kt(_0x254295['value']) && !_0xc47698,
+              'onClick': _0x36a3ef => {
+                if (_0x36a3ef['stopPropagation'](), kt(_0x254295['value']) && !_0xc47698) return;
+                (be('mmw-theme-style') || 'miaomiaowu') !== _0x254295['value'] && (Pe('mmw-theme-style', _0x254295['value'], 0xe10 * 0x18 * 0x16d), window['location']['reload']());
+              },
+              'className': 'flex\x20h-7\x20flex-1\x20items-center\x20justify-center\x20border\x20transition-colors\x20disabled:cursor-not-allowed\x20disabled:opacity-40\x20' + ((be('mmw-theme-style') || 'miaomiaowu') === _0x254295['value'] ? 'bg-primary\x20text-primary-foreground\x20border-primary' : 'bg-background\x20hover:bg-muted\x20border-border'),
+              'children': _0x254295['icon']
+            }, _0x254295['value']))
+          })]
+        }), _0x2c4709['jsxs'](Q, {
+          'className': 'cursor-pointer\x20px-2',
+          'onSelect': _0x4cfc54 => _0x4cfc54['preventDefault'](),
+          'children': [_0x2c4709['jsx'](_0x3cf691, {
+            'className': 'size-4\x20shrink-0'
+          }), _0x2c4709['jsx']('div', {
+            'className': 'flex\x20flex-1\x20gap-1',
+            'children': [{
+              'value': 'zh-CN',
+              'label': '中文'
+            }, {
+              'value': 'en',
+              'label': 'English'
+            }]['map'](_0x313631 => _0x2c4709['jsx']('button', {
+              'type': 'button',
+              'onClick': _0x2bf0a0 => {
+                _0x2bf0a0['stopPropagation'](), _0x2cb51b['language'] !== _0x313631['value'] && _0x2cb51b['changeLanguage'](_0x313631['value']);
+              },
+              'className': 'flex-1\x20border\x20px-2\x20py-0.5\x20text-xs\x20transition-colors\x20' + (_0x2cb51b['language'] === _0x313631['value'] ? 'bg-primary\x20text-primary-foreground\x20border-primary' : 'bg-background\x20hover:bg-muted\x20border-border'),
+              'children': _0x313631['label']
+            }, _0x313631['value']))
+          })]
+        }), _0x790166?.['is_admin'] && _0x2c4709['jsx'](Q, {
+          'asChild': !0x0,
+          'className': 'cursor-pointer\x20justify-center',
+          'children': _0x2c4709['jsxs']('a', {
+            'href': 'https://miaomiaowux.com',
+            'target': '_blank',
+            'rel': 'noopener\x20noreferrer',
+            'className': 'flex\x20items-center\x20gap-2',
+            'children': [_0x2c4709['jsx'](_0x4d07b5, {
+              'className': 'size-4'
+            }), '\x20', _0x84f6d3('userMenu.help')]
+          })
+        }), _0x790166?.['is_admin'] && _0x2c4709['jsx'](Q, {
+          'asChild': !0x0,
+          'className': 'cursor-pointer\x20justify-center',
+          'children': _0x2c4709['jsxs']('a', {
+            'href': 'https://miaomiaowux.com/docs/tool-mmwx-tgbot',
+            'target': '_blank',
+            'rel': 'noopener\x20noreferrer',
+            'className': 'flex\x20items-center\x20gap-2',
+            'children': [_0x2c4709['jsx'](_0x3f631e, {
+              'className': 'size-4'
+            }), '\x20', _0x84f6d3('userMenu.tgBotApp')]
+          })
+        }), _0x790166?.['is_admin'] && _0x2c4709['jsxs'](Q, {
+          'onClick': () => _0xb48d66(!0x0),
+          'className': 'cursor-pointer\x20justify-center',
+          'children': [_0x2c4709['jsx'](_0x2fb705, {
+            'className': 'size-4'
+          }), '\x20', _0x84f6d3('userMenu.backup')]
+        }), _0x790166?.['is_admin'] && _0x2c4709['jsx'](Q, {
+          'asChild': !0x0,
+          'className': 'cursor-pointer\x20justify-center',
+          'children': _0x2c4709['jsxs'](_0x2b65eb, {
+            'to': '/migrate-from-mmw',
+            'className': 'flex\x20items-center\x20gap-2',
+            'children': [_0x2c4709['jsx'](_0x5c1558, {
+              'className': 'size-4'
+            }), '\x20', _0x84f6d3('userMenu.migrateFromMmw')]
+          })
+        }), _0x790166?.['is_admin'] && _0x2c4709['jsxs'](Q, {
+          'onClick': () => _0x478053(!0x0),
+          'className': 'cursor-pointer\x20justify-center',
+          'children': [_0x2c4709['jsx'](_0x34e242, {
+            'className': 'size-4'
+          }), _0x2c4709['jsxs']('span', {
+            'className': 'relative',
+            'children': [_0x84f6d3('userMenu.checkUpdate'), _0x3e9291 && _0x2c4709['jsxs']('span', {
+              'className': 'absolute\x20-top-1.5\x20-right-1.5\x20mt-2\x20flex\x20size-1.5',
+              'children': [_0x2c4709['jsx']('span', {
+                'className': 'bg-primary\x20absolute\x20inline-flex\x20h-full\x20w-full\x20animate-ping\x20rounded-full\x20opacity-75'
+              }), _0x2c4709['jsx']('span', {
+                'className': 'bg-primary\x20relative\x20inline-flex\x20size-1.5\x20rounded-full'
+              })]
+            })]
+          })]
+        }), _0x790166?.['is_admin'] && _0x2c4709['jsxs'](Q, {
+          'onClick': () => _0x22b030(!0x0),
+          'className': 'cursor-pointer\x20justify-center',
+          'children': [_0x2c4709['jsx'](_0x4d7d12, {
+            'className': 'size-4'
+          }), '\x20', _0x84f6d3('userMenu.about')]
+        }), _0x790166?.['is_admin'] && _0x2c4709['jsx'](Pt, {}), _0x790166?.['is_admin'] && _0x2c4709['jsx'](Q, {
+          'asChild': !0x0,
+          'className': 'cursor-pointer\x20justify-center',
+          'children': _0x2c4709['jsxs']('a', {
+            'href': _0x163325,
+            'target': '_blank',
+            'rel': 'noopener\x20noreferrer',
+            'className': 'flex\x20items-center\x20gap-2',
+            'children': [_0x2c4709['jsx'](_0x7947ec, {
+              'className': 'size-4'
+            }), _0x84f6d3('userMenu.version'), '\x20v', _0x251752]
+          })
+        }), _0x2c4709['jsx'](Pt, {}), _0x2c4709['jsxs'](Q, {
+          'onClick': () => _0x3d7463(!0x0),
+          'className': 'cursor-pointer\x20justify-center',
+          'children': [_0x2c4709['jsx'](_0xa6f612, {
+            'className': 'size-4'
+          }), '\x20', _0x84f6d3('userMenu.signOut')]
+        })]
+      })]
+    }), _0x2c4709['jsx'](U0, {
+      'open': !!_0x3f2ecb,
+      'onOpenChange': _0x35455a => _0x3d7463(_0x35455a)
+    }), _0x2c4709['jsx'](T0, {
+      'open': _0x446f6f,
+      'onOpenChange': _0xb48d66
+    }), _0x2c4709['jsx'](q0, {
+      'open': _0x5f59d0,
+      'onOpenChange': _0x478053
+    }), _0x2c4709['jsx'](E0, {
+      'open': _0x149193,
+      'onOpenChange': _0x15b340
+    }), _0x2c4709['jsx'](B0, {
+      'open': _0x1fd846,
+      'onOpenChange': _0x3e8576,
+      'initialTelegramId': _0x790166?.['telegram_id'],
+      'initialTelegramUsername': _0x790166?.['telegram_username']
+    }), _0x2c4709['jsx'](Re, {
+      'open': _0xb4c25a,
+      'onOpenChange': _0x22b030,
+      'children': _0x2c4709['jsxs'](De, {
+        'className': 'sm:max-w-md',
+        'children': [_0x2c4709['jsx'](Ne, {
+          'children': _0x2c4709['jsx'](Ae, {
+            'children': _0x84f6d3('userMenu.about')
+          })
+        }), _0x2c4709['jsxs']('div', {
+          'className': 'space-y-3',
+          'children': [_0x2c4709['jsxs']('div', {
+            'className': 'flex\x20items-center\x20justify-between',
+            'children': [_0x2c4709['jsx']('span', {
+              'className': 'text-muted-foreground\x20text-sm',
+              'children': _0x84f6d3('userMenu.version')
+            }), _0x2c4709['jsxs']('span', {
+              'className': 'text-sm\x20font-medium',
+              'children': ['v', _0x251752]
+            })]
+          }), _0x469241 && _0x2c4709['jsxs'](_0x2c4709['Fragment'], {
+            'children': [_0x2c4709['jsxs']('div', {
+              'className': 'flex\x20items-center\x20justify-between',
+              'children': [_0x2c4709['jsx']('span', {
+                'className': 'text-muted-foreground\x20text-sm',
+                'children': _0x84f6d3('userMenu.licenseStatus')
+              }), _0x2c4709['jsx']('span', {
+                'className': 'text-sm\x20font-medium\x20' + (_0x469241['valid'] ? 'text-green-600' : 'text-red-500'),
+                'children': _0x469241['valid'] ? _0x84f6d3('userMenu.licenseValid') : _0x84f6d3('userMenu.licenseInvalid')
+              })]
+            }), _0x469241['plan'] && _0x2c4709['jsxs'](_0x2c4709['Fragment'], {
+              'children': [_0x2c4709['jsxs']('div', {
+                'className': 'flex\x20items-center\x20justify-between',
+                'children': [_0x2c4709['jsx']('span', {
+                  'className': 'text-muted-foreground\x20text-sm',
+                  'children': _0x84f6d3('userMenu.licensePlan')
+                }), _0x2c4709['jsxs']('span', {
+                  'className': 'flex\x20min-w-0\x20items-center\x20gap-1.5\x20text-sm\x20font-medium',
+                  'children': [_0x2c4709['jsx']('span', {
+                    'className': 'truncate',
+                    'children': _0x404898 && _0x469241['plan']['name'] && _0x469241['plan']['name'] !== 'TRIAL' ? _0x469241['plan']['name'] + '\x20·\x20' + _0x469241['plan']['display_name'] : _0x469241['plan']['display_name']
+                  }), _0x469241['valid'] && _0x469241['plan']['name'] !== 'TRIAL' && _0x2c4709['jsxs']('span', {
+                    'className': 'pro-label-badge\x20inline-flex\x20items-center\x20gap-0.5\x20rounded-full\x20border\x20border-amber-300/60\x20bg-gradient-to-r\x20from-amber-400\x20to-yellow-300\x20px-1.5\x20py-0.5\x20text-[10px]\x20font-bold\x20text-amber-900\x20shadow-sm\x20shadow-amber-200/50',
+                    'children': [_0x2c4709['jsx']('svg', {
+                      'className': 'h-2.5\x20w-2.5',
+                      'viewBox': '0\x200\x2024\x2024',
+                      'fill': 'currentColor',
+                      'children': _0x2c4709['jsx']('path', {
+                        'd': 'M12\x202L15.09\x208.26L22\x209.27L17\x2014.14L18.18\x2021.02L12\x2017.77L5.82\x2021.02L7\x2014.14L2\x209.27L8.91\x208.26L12\x202Z'
+                      })
+                    }), 'Pro']
+                  })]
+                })]
+              }), _0x469241['plan']['description'] && _0x2c4709['jsxs']('div', {
+                'className': 'flex\x20items-center\x20justify-between',
+                'children': [_0x2c4709['jsx']('span', {
+                  'className': 'text-muted-foreground\x20text-sm',
+                  'children': _0x84f6d3('userMenu.licensePlanDesc')
+                }), _0x2c4709['jsx']('span', {
+                  'className': 'text-sm',
+                  'children': _0x469241['plan']['description']
+                })]
+              }), _0x2c4709['jsxs']('div', {
+                'className': 'flex\x20items-center\x20justify-between',
+                'children': [_0x2c4709['jsx']('span', {
+                  'className': 'text-muted-foreground\x20text-sm',
+                  'children': _0x84f6d3('userMenu.maxServers')
+                }), _0x2c4709['jsx']('span', {
+                  'className': 'text-sm',
+                  'children': _0x469241['plan']['max_servers']
+                })]
+              }), _0x2c4709['jsxs']('div', {
+                'className': 'flex\x20items-center\x20justify-between',
+                'children': [_0x2c4709['jsx']('span', {
+                  'className': 'text-muted-foreground\x20text-sm',
+                  'children': _0x84f6d3('userMenu.maxNodes')
+                }), _0x2c4709['jsx']('span', {
+                  'className': 'text-sm',
+                  'children': _0x469241['plan']['max_nodes']
+                })]
+              }), _0x2c4709['jsxs']('div', {
+                'className': 'flex\x20items-center\x20justify-between',
+                'children': [_0x2c4709['jsx']('span', {
+                  'className': 'text-muted-foreground\x20text-sm',
+                  'children': _0x84f6d3('userMenu.maxUsers')
+                }), _0x2c4709['jsx']('span', {
+                  'className': 'text-sm',
+                  'children': _0x469241['plan']['max_users']
+                })]
+              })]
+            }), _0x469241['expires_at'] && _0x2c4709['jsxs']('div', {
+              'className': 'flex\x20items-center\x20justify-between',
+              'children': [_0x2c4709['jsx']('span', {
+                'className': 'text-muted-foreground\x20text-sm',
+                'children': _0x84f6d3('userMenu.expiresAt')
+              }), _0x2c4709['jsx']('span', {
+                'className': 'text-sm',
+                'children': _0x469241['expires_at']
+              })]
+            }), _0x469241['plan']?.['name'] === 'TRIAL' && _0x2c4709['jsx']('div', {
+              'className': 'rounded-lg\x20border\x20border-blue-200\x20bg-blue-50\x20p-3\x20dark:border-blue-900\x20dark:bg-blue-950',
+              'children': _0x2c4709['jsxs']('p', {
+                'className': 'text-xs\x20text-blue-800\x20dark:text-blue-200',
+                'children': [_0x84f6d3('userMenu.trialHint'), '\x20', _0x2c4709['jsx']('a', {
+                  'href': 'https://license.miaomiaowux.com/',
+                  'target': '_blank',
+                  'rel': 'noopener\x20noreferrer',
+                  'className': 'font-medium\x20underline',
+                  'children': 'license.miaomiaowux.com'
+                })]
+              })
+            })]
+          })]
+        })]
+      })
+    })]
+  });
+}
+
+function K0() {
+  const {
+    t: _0x4feffe
+  } = _0x4c4113(), {
+    brandTitle: _0x14846d,
+    logoUrl: _0x5b9f6e
+  } = Ou(), {
+    auth: _0x3f7be0
+  } = _(), {
+    layoutMode: _0x328236,
+    setLayoutMode: _0x541607,
+    sidebarCollapsed: _0x4ab4e5,
+    toggleSidebar: _0x28f91d
+  } = Jt(), [_0x2bbec3, _0xb26aaa] = _0x4eb10f['useState'](!0x1), _0xa58099 = _0x4eb10f['useRef'](null), [_0x21677d, _0x55be5e] = _0x4eb10f['useState'](!0x1), [_0x53b856, _0x10be6e] = _0x4eb10f['useState'](!0x1), [_0x5c5aa5, _0xd1ce02] = _0x4eb10f['useState'](0x0), {
+    data: _0x4db647
+  } = _0x8fb83({
+    'queryKey': ['profile'],
+    'queryFn': Te,
+    'enabled': !!_0x3f7be0['accessToken'],
+    'staleTime': 0x12c * 0x3e8
+  }), _0x455342 = !!_0x4db647?.['is_admin'], {
+    data: _0x9b93be
+  } = _0x8fb83({
+    'queryKey': ['miaomiaowu-features-enabled'],
+    'queryFn': async () => (await N['get']('§be1b6e9bd349dc3e'))['data'],
+    'enabled': !!_0x3f7be0['accessToken'] && _0x455342,
+    'staleTime': 0x12c * 0x3e8
+  }), _0x346e53 = _0x9b93be?.['enable_miaomiaowu_features'] ?? !0x0, {
+    data: _0xa1a684
+  } = _0x8fb83({
+    'queryKey': ['system-settings', 'override-scripts'],
+    'queryFn': async () => (await N['get']('§9e1286e9352627c1'))['data'],
+    'enabled': !!_0x3f7be0['accessToken'] && _0x455342,
+    'staleTime': 0x12c * 0x3e8
+  }), {
+    data: _0x40b450
+  } = _0x8fb83({
+    'queryKey': ['user-permissions'],
+    'queryFn': pt,
+    'enabled': !!_0x3f7be0['accessToken'] && !_0x455342,
+    'staleTime': 0x12c * 0x3e8
+  }), _0x210468 = new Set(_0x40b450?.['pages'] ?? []), _0x58e337 = _0x455342 ? _0xa1a684?.['enable_override_scripts'] ?? !0x1 : _0x40b450?.['enable_override_scripts'] ?? !0x1, {
+    data: _0x5c5d84
+  } = _0x8fb83({
+    'queryKey': ['nav-menu'],
+    'queryFn': Uu,
+    'enabled': !!_0x3f7be0['accessToken'],
+    'staleTime': 0x12c * 0x3e8
+  }), _0x5b9c53 = Eu({
+    'isAdmin': _0x455342,
+    'enableMmwFeatures': _0x346e53,
+    'enableOverrideScripts': _0x58e337,
+    'allowedPages': _0x210468
+  }), _0x4547e4 = Ht(_0x5b9c53['allNavLinks'], _0x5c5d84), _0x43bc3a = Ht(_0x455342 ? _0x5b9c53['adminNavLinks'] : _0x5b9c53['permittedMmwLinks'], _0x5c5d84), _0x2dd57c = _0x4547e4['length'], _0x33d3c0 = _0x1c2ee8({
+    'select': _0x12ba8b => _0x12ba8b['location']['pathname']
+  }), _0x26a120 = _0x4547e4['slice'](_0x2dd57c - _0x5c5aa5)['some'](({
+    to: _0x126c13
+  }) => _0x126c13 === '/' ? _0x33d3c0 === '/' : _0x33d3c0 === _0x126c13 || _0x33d3c0['startsWith'](_0x126c13 + '/')), _0x1a229d = _0x4eb10f['useRef']([]);
+  return _0x4eb10f['useLayoutEffect'](() => {
+    const _0x25f776 = _0xa58099['current'];
+    if (!_0x25f776) return;
+    const _0x490c3a = 0x24;
+    let _0x360930 = !0x1,
+      _0x5663f2 = 0x0;
+    const _0x2dc0ee = () => {
+        _0x5663f2 || _0x360930 || (_0x5663f2 = requestAnimationFrame(() => {
+          if (_0x5663f2 = 0x0, _0x360930 || !_0x25f776['isConnected']) return;
+          const _0x5941df = _0x25f776['lastElementChild'];
+          if (!_0x5941df) return;
+          const _0x461188 = parseFloat(getComputedStyle(_0x25f776)['paddingRight']) || 0x0,
+            _0x2ad203 = _0x25f776['getBoundingClientRect']()['right'] - _0x461188;
+          _0x5941df['getBoundingClientRect']()['right'] > _0x2ad203 + 0x1 && _0xd1ce02(_0x3fa246 => _0x3fa246 < _0x2dd57c - 0x1 ? _0x3fa246 + 0x1 : _0x3fa246);
+        }));
+      },
+      _0x222d7d = () => {
+        if (!_0x25f776['isConnected']) return;
+        const _0x4921e5 = _0x25f776['clientWidth'];
+        if (_0x4921e5 <= 0x0) return;
+        _0x55be5e(!0x1);
+        const _0x3fd1a1 = Array['from'](_0x25f776['querySelectorAll']('[data-nav-item]'));
+        _0x3fd1a1['length'] === _0x2dd57c && (_0x1a229d['current'] = _0x3fd1a1['map'](_0x4e3de4 => _0x4e3de4['offsetWidth']));
+        const _0x449be9 = _0x1a229d['current']['length'] === _0x2dd57c ? _0x1a229d['current'] : Array(_0x2dd57c)['fill'](0x73),
+          _0x1164bc = parseFloat(getComputedStyle(_0x25f776)['gap']) || 0xc;
+        if (_0x449be9['reduce']((_0x535c9d, _0x4dea30, _0x19b03c) => _0x535c9d + _0x4dea30 + (_0x19b03c > 0x0 ? _0x1164bc : 0x0), 0x0) <= _0x4921e5) {
+          _0xd1ce02(0x0), _0x2dc0ee();
+          return;
+        }
+        const _0x4586f1 = _0x4921e5 - (_0x490c3a + _0x1164bc);
+        let _0x4ac227 = 0x0,
+          _0x16dae9 = 0x0;
+        for (let _0x4a7883 = 0x0; _0x4a7883 < _0x449be9['length']; _0x4a7883++) {
+          const _0x129dbf = _0x449be9[_0x4a7883] + (_0x16dae9 > 0x0 ? _0x1164bc : 0x0);
+          if (_0x4ac227 + _0x129dbf > _0x4586f1) break;
+          _0x4ac227 += _0x129dbf, _0x16dae9++;
+        }
+        _0xd1ce02(Math['max'](0x0, _0x2dd57c - Math['max'](_0x16dae9, 0x1))), _0x2dc0ee();
+      };
+    _0x222d7d();
+    const _0x181274 = new ResizeObserver(() => _0x222d7d());
+    return _0x181274['observe'](_0x25f776), _0x25f776['parentElement'] && _0x181274['observe'](_0x25f776['parentElement']), _0x25f776['querySelectorAll']('[data-nav-item]')['forEach'](_0x504448 => _0x181274['observe'](_0x504448)), typeof document < 'u' && document['fonts']?.['ready'] && document['fonts']['ready']['then'](() => {
+      _0x360930 || requestAnimationFrame(() => {
+        _0x360930 || _0x222d7d();
+      });
+    })['catch'](() => {}), () => {
+      _0x360930 = !0x0, _0x5663f2 && cancelAnimationFrame(_0x5663f2), _0x181274['disconnect']();
+    };
+  }, [_0x2dd57c, _0x328236]), _0x4eb10f['useLayoutEffect'](() => {
+    const _0x8800ee = _0xa58099['current'];
+    if (!_0x8800ee || _0x5c5aa5 >= _0x2dd57c - 0x1) return;
+    const _0x4d10bd = _0x8800ee['lastElementChild'];
+    if (!_0x4d10bd) return;
+    const _0x46d6fb = parseFloat(getComputedStyle(_0x8800ee)['paddingRight']) || 0x0,
+      _0x2dffa1 = _0x8800ee['getBoundingClientRect']()['right'] - _0x46d6fb;
+    _0x4d10bd['getBoundingClientRect']()['right'] > _0x2dffa1 + 0x1 && _0xd1ce02(_0x1a5ee7 => _0x1a5ee7 + 0x1);
+  }, [_0x5c5aa5, _0x2dd57c, _0x21677d]), _0x2c4709['jsx']('header', {
+    'className': 'app-topbar\x20bg-background/80\x20supports-[backdrop-filter]:bg-background/60\x20fixed\x20top-0\x20right-0\x20left-0\x20z-50\x20border-b\x20border-[color:rgba(241,140,110,0.22)]\x20backdrop-blur',
+    'children': _0x2c4709['jsxs']('div', {
+      'className': 'app-topbar-inner\x20flex\x20h-16\x20items-center\x20justify-between\x20px-4\x20sm:px-6',
+      'children': [_0x2c4709['jsxs']('div', {
+        'className': 'flex\x20min-w-0\x20flex-1\x20items-center\x20gap-4\x20overflow-x-clip\x20overflow-y-visible\x20sm:gap-6',
+        'children': [_0x2c4709['jsxs'](_0x2b65eb, {
+          'to': '/',
+          'className': 'app-brand-link\x20hover:text-primary\x20flex\x20shrink-0\x20items-center\x20gap-3\x20text-lg\x20font-semibold\x20tracking-tight\x20transition\x20outline-none\x20focus:outline-none',
+          'children': [_0x5b9f6e ? _0x2c4709['jsx']('img', {
+            'src': _0x5b9f6e,
+            'alt': (_0x14846d || _0x4feffe('brand')) + '\x20Logo',
+            'className': 'h-10\x20w-10\x20shrink-0\x20border-2\x20border-[color:rgba(241,140,110,0.4)]\x20object-contain\x20shadow-[4px_4px_0_rgba(0,0,0,0.2)]'
+          }) : _0x2c4709['jsxs'](_0x2c4709['Fragment'], {
+            'children': [_0x2c4709['jsx']('img', {
+              'src': '/images/mmwx_light.webp',
+              'alt': _0x4feffe('brand') + '\x20Logo',
+              'className': 'h-10\x20w-10\x20shrink-0\x20border-2\x20border-[color:rgba(241,140,110,0.4)]\x20shadow-[4px_4px_0_rgba(0,0,0,0.2)]\x20dark:hidden'
+            }), _0x2c4709['jsx']('img', {
+              'src': '/images/logo.webp',
+              'alt': _0x4feffe('brand') + '\x20Logo',
+              'className': 'hidden\x20h-10\x20w-10\x20shrink-0\x20border-2\x20border-[color:rgba(241,140,110,0.4)]\x20shadow-[4px_4px_0_rgba(0,0,0,0.2)]\x20dark:block'
+            })]
+          }), !_0x21677d && (_0x14846d ? _0x2c4709['jsx']('span', {
+            'data-logo-text': !0x0,
+            'className': 'pixel-text\x20text-primary\x20hidden\x20text-base\x20whitespace-nowrap\x20md:inline',
+            'children': _0x14846d
+          }) : _0x2c4709['jsxs']('span', {
+            'data-logo-text': !0x0,
+            'className': 'pixel-text\x20text-primary\x20hidden\x20inline-flex\x20items-baseline\x20gap-0.5\x20text-base\x20whitespace-nowrap\x20md:inline',
+            'children': [_0x4feffe('brand')['replace']('X', ''), _0x2c4709['jsx'](r0, {
+              'size': 'sm',
+              'className': '!text-3xl'
+            })]
+          }))]
+        }), _0x328236 === 'sidebar' && _0x2c4709['jsx'](j, {
+          'variant': 'ghost',
+          'size': 'icon',
+          'onClick': _0x28f91d,
+          'className': 'pixel-button\x20bg-background/75\x20hover:bg-accent/35\x20dark:bg-input/30\x20dark:hover:bg-accent/45\x20hidden\x20h-9\x20w-9\x20border-[color:rgba(137,110,96,0.45)]\x20md:inline-flex\x20dark:border-[color:rgba(255,255,255,0.18)]',
+          'title': _0x4feffe(_0x4ab4e5 ? 'sidebar.expand' : 'sidebar.collapse'),
+          'children': _0x4ab4e5 ? _0x2c4709['jsx'](_0x2b2228, {
+            'className': 'h-4\x20w-4'
+          }) : _0x2c4709['jsx'](_0xf0d655, {
+            'className': 'h-4\x20w-4'
+          })
+        }), _0x328236 === 'top' && _0x2c4709['jsxs']('nav', {
+          'ref': _0xa58099,
+          'data-glass-nav': !0x0,
+          'className': 'hidden\x20min-w-0\x20flex-1\x20items-center\x20gap-2\x20overflow-x-clip\x20overflow-y-visible\x20pr-[3px]\x20md:flex\x20md:gap-3',
+          'children': [_0x4547e4['slice'](0x0, _0x2dd57c - _0x5c5aa5)['map'](({
+            titleKey: _0x293fce,
+            to: _0x51fe53,
+            icon: _0x271231
+          }) => {
+            const _0x42988f = _0x4feffe(_0x293fce);
+            return _0x2c4709['jsxs'](_0x2b65eb, {
+              'to': _0x51fe53,
+              'data-nav-item': !0x0,
+              'aria-label': _0x42988f,
+              'title': _0x42988f,
+              'className': 'pixel-button\x20bg-background/75\x20text-foreground\x20hover:bg-accent/35\x20hover:text-accent-foreground\x20dark:bg-input/30\x20dark:hover:bg-accent/45\x20dark:hover:text-accent-foreground\x20inline-flex\x20h-9\x20items-center\x20justify-start\x20gap-2\x20border-[color:rgba(137,110,96,0.45)]\x20px-3\x20py-2\x20text-sm\x20font-semibold\x20tracking-widest\x20whitespace-nowrap\x20uppercase\x20transition-all\x20dark:border-[color:rgba(255,255,255,0.18)]',
+              'activeProps': {
+                'className': 'bg-primary/20\x20text-primary\x20border-[color:rgba(217,119,87,0.55)]\x20dark:bg-primary/20\x20dark:border-[color:rgba(217,119,87,0.55)]'
+              },
+              'children': [_0x2c4709['jsx'](Me, {
+                'Icon': _0x271231,
+                'to': _0x51fe53,
+                'className': 'size-[18px]\x20shrink-0'
+              }), _0x2c4709['jsx']('span', {
+                'children': _0x42988f
+              })]
+            }, _0x51fe53);
+          }), _0x5c5aa5 > 0x0 && _0x2c4709['jsxs'](Bt, {
+            'open': _0x53b856,
+            'onOpenChange': _0x10be6e,
+            'children': [_0x2c4709['jsx'](Gt, {
+              'asChild': !0x0,
+              'children': _0x2c4709['jsxs'](j, {
+                'variant': 'outline',
+                'size': 'icon',
+                'data-status': _0x26a120 ? 'active' : void 0x0,
+                'className': 'pixel-button\x20hover:bg-accent/35\x20dark:hover:bg-accent/45\x20h-9\x20w-9\x20' + (_0x26a120 ? 'bg-primary/20\x20text-primary\x20dark:bg-primary/20\x20border-[color:rgba(217,119,87,0.55)]\x20dark:border-[color:rgba(217,119,87,0.55)]' : 'bg-background/75\x20dark:bg-input/30\x20border-[color:rgba(137,110,96,0.45)]\x20dark:border-[color:rgba(255,255,255,0.18)]'),
+                'children': [_0x2c4709['jsx'](_0x1b5cc7, {
+                  'className': 'h-5\x20w-5'
+                }), _0x2c4709['jsx']('span', {
+                  'className': 'sr-only',
+                  'children': _0x4feffe('sidebar.moreMenu')
+                })]
+              })
+            }), _0x2c4709['jsx'](qt, {
+              'align': 'end',
+              'className': 'nav-overflow-menu\x20pixel-border\x20flex\x20w-max\x20min-w-[9rem]\x20flex-col\x20gap-1.5\x20p-1.5',
+              'children': _0x4547e4['slice'](_0x2dd57c - _0x5c5aa5)['map'](({
+                titleKey: _0x4da9cd,
+                to: _0x41c004,
+                icon: _0x46207f
+              }) => _0x2c4709['jsx'](Q, {
+                'asChild': !0x0,
+                'className': 'p-0\x20focus:bg-transparent',
+                'children': _0x2c4709['jsxs'](_0x2b65eb, {
+                  'to': _0x41c004,
+                  'className': 'pixel-button\x20bg-background/75\x20text-foreground\x20hover:bg-accent/35\x20hover:text-accent-foreground\x20dark:bg-input/30\x20dark:hover:bg-accent/45\x20dark:hover:text-accent-foreground\x20inline-flex\x20h-9\x20shrink-0\x20cursor-pointer\x20items-center\x20gap-2\x20border-[color:rgba(137,110,96,0.45)]\x20px-3\x20py-2\x20text-sm\x20font-semibold\x20tracking-widest\x20whitespace-nowrap\x20uppercase\x20transition-all\x20dark:border-[color:rgba(255,255,255,0.18)]',
+                  'activeProps': {
+                    'className': 'bg-primary/20\x20text-primary\x20border-[color:rgba(217,119,87,0.55)]\x20dark:bg-primary/20\x20dark:border-[color:rgba(217,119,87,0.55)]'
+                  },
+                  'onClick': () => _0x10be6e(!0x1),
+                  'children': [_0x2c4709['jsx'](Me, {
+                    'Icon': _0x46207f,
+                    'to': _0x41c004,
+                    'className': 'size-[18px]\x20shrink-0'
+                  }), _0x2c4709['jsx']('span', {
+                    'children': _0x4feffe(_0x4da9cd)
+                  })]
+                })
+              }, _0x41c004))
+            })]
+          })]
+        }), _0x2c4709['jsx']('nav', {
+          'className': 'flex\x20items-center\x20gap-2\x20md:hidden',
+          'children': dt['map'](({
+            titleKey: _0x17979a,
+            to: _0x4a3b9e,
+            icon: _0x4004ea
+          }) => _0x2c4709['jsx'](_0x2b65eb, {
+            'to': _0x4a3b9e,
+            'aria-label': _0x4feffe(_0x17979a),
+            'className': 'pixel-button\x20bg-background/75\x20text-foreground\x20hover:bg-accent/35\x20hover:text-accent-foreground\x20dark:bg-input/30\x20dark:hover:bg-accent/45\x20dark:hover:text-accent-foreground\x20inline-flex\x20h-9\x20items-center\x20justify-center\x20gap-2\x20border-[color:rgba(137,110,96,0.45)]\x20px-2\x20py-2\x20text-sm\x20font-semibold\x20tracking-widest\x20uppercase\x20transition-all\x20dark:border-[color:rgba(255,255,255,0.18)]',
+            'activeProps': {
+              'className': 'bg-primary/20\x20text-primary\x20border-[color:rgba(217,119,87,0.55)]\x20dark:bg-primary/20\x20dark:border-[color:rgba(217,119,87,0.55)]'
+            },
+            'children': _0x2c4709['jsx'](Me, {
+              'Icon': _0x4004ea,
+              'to': _0x4a3b9e,
+              'className': 'size-[18px]\x20shrink-0'
+            })
+          }, _0x4a3b9e))
+        }), _0x43bc3a['length'] > 0x0 && _0x2c4709['jsxs'](Bt, {
+          'open': _0x2bbec3,
+          'onOpenChange': _0xb26aaa,
+          'children': [_0x2c4709['jsx'](Gt, {
+            'asChild': !0x0,
+            'children': _0x2c4709['jsxs'](j, {
+              'variant': 'outline',
+              'size': 'icon',
+              'className': 'pixel-button\x20bg-background/75\x20hover:bg-accent/35\x20dark:bg-input/30\x20dark:hover:bg-accent/45\x20h-9\x20w-9\x20border-[color:rgba(137,110,96,0.45)]\x20md:hidden\x20dark:border-[color:rgba(255,255,255,0.18)]',
+              'children': [_0x2c4709['jsx'](_0x290638, {
+                'className': 'h-5\x20w-5'
+              }), _0x2c4709['jsx']('span', {
+                'className': 'sr-only',
+                'children': _0x4feffe('sidebar.openMenu')
+              })]
+            })
+          }), _0x2c4709['jsx'](qt, {
+            'align': 'start',
+            'className': 'pixel-border\x20w-48',
+            'children': _0x43bc3a['map'](({
+              titleKey: _0x3866b2,
+              to: _0x27abdf,
+              icon: _0x59e711
+            }) => _0x2c4709['jsx'](Q, {
+              'asChild': !0x0,
+              'children': _0x2c4709['jsxs'](_0x2b65eb, {
+                'to': _0x27abdf,
+                'className': 'hover:bg-accent/35\x20focus:bg-accent/35\x20flex\x20cursor-pointer\x20items-center\x20gap-3\x20px-3\x20py-2',
+                'onClick': () => _0xb26aaa(!0x1),
+                'children': [_0x2c4709['jsx'](Me, {
+                  'Icon': _0x59e711,
+                  'to': _0x27abdf,
+                  'className': 'size-[18px]\x20shrink-0'
+                }), _0x2c4709['jsx']('span', {
+                  'children': _0x4feffe(_0x3866b2)
+                })]
+              })
+            }, _0x27abdf))
+          })]
+        })]
+      }), _0x2c4709['jsxs']('div', {
+        'className': 'flex\x20shrink-0\x20items-center\x20gap-2\x20pl-2\x20sm:gap-3\x20sm:pl-0',
+        'children': [_0x2c4709['jsxs']('div', {
+          'className': 'premium-pro-badge\x20hidden\x20items-center\x20gap-1.5\x20border\x20px-2.5\x20py-1.5\x20text-xs\x20font-semibold\x20tracking-[0.12em]',
+          'aria-label': 'Premium\x20PRO',
+          'children': [_0x2c4709['jsx'](_0x2415ba, {
+            'className': 'size-4',
+            'aria-hidden': 'true'
+          }), _0x2c4709['jsx']('span', {
+            'className': 'hidden\x20sm:inline',
+            'children': 'PRO'
+          })]
+        }), _0x2c4709['jsx'](j, {
+          'variant': 'ghost',
+          'size': 'icon',
+          'onClick': () => _0x541607(_0x328236 === 'top' ? 'sidebar' : 'top'),
+          'className': 'pixel-button\x20bg-background/75\x20hover:bg-accent/35\x20dark:bg-input/30\x20dark:hover:bg-accent/45\x20hidden\x20h-9\x20w-9\x20border-[color:rgba(137,110,96,0.45)]\x20md:inline-flex\x20dark:border-[color:rgba(255,255,255,0.18)]',
+          'title': _0x4feffe(_0x328236 === 'top' ? 'sidebar.switchToSidebar' : 'sidebar.switchToTopMenu'),
+          'children': _0x2c4709['jsx'](_0x488e2d, {
+            'className': 'h-4\x20w-4'
+          })
+        }), _0x2c4709['jsx'](s0, {}), _0x2c4709['jsx'](z0, {})]
+      })]
+    })
+  });
+}
+
+function qu(_0x410ef0) {
+  const _0x27c6cd = (_0x410ef0 || '')['trim']();
+  if (!_0x27c6cd) return '';
+  try {
+    const _0x35a43c = /^https?:\/\//i ['test'](_0x27c6cd) ? _0x27c6cd : 'http://' + _0x27c6cd;
+    return new URL(_0x35a43c)['origin']['toLowerCase']();
+  } catch {
+    return '';
+  }
+}
+
+function $0(_0x4dc92f) {
+  if (typeof window > 'u' || window['location']['protocol'] !== 'https:') return !0x1;
+  const _0x2f719c = qu(_0x4dc92f),
+    _0x4e4f8d = window['location']['origin']['toLowerCase']();
+  return _0x2f719c === '' || _0x2f719c !== _0x4e4f8d;
+}
+
+function Q0({
+  open: _0x437871,
+  onOpenChange: _0x205ce7,
+  masterUrl: _0x5d1809
+}) {
+  const {
+    t: _0x43f5ea
+  } = _0x4c4113('system'), _0xdc921f = _0x40fa57(), [_0x433fc0, _0x35e509] = _0x4eb10f['useState'](() => typeof window < 'u' ? window['location']['host'] : ''), _0x3be990 = _0x310c5a({
+    'mutationFn': async _0x1743b0 => {
+      await N['put']('§e465b0ebfe45efbd', {
+        'master_url': _0x1743b0
+      });
+    },
+    'onSuccess': () => {
+      _0xdc921f['invalidateQueries']({
+        'queryKey': ['master-url']
+      }), _0x5e6a09['success'](_0x43f5ea('domainMismatch.updated')), _0x205ce7(!0x1);
+    },
+    'onError': Wu
+  }), _0x490ecb = () => {
+    const _0x9ab474 = _0x433fc0['trim']();
+    if (!_0x9ab474) return;
+    const _0x2b7332 = /^https?:\/\//i ['test'](_0x9ab474) ? _0x9ab474 : window['location']['protocol'] + '//' + _0x9ab474;
+    _0x3be990['mutate'](_0x2b7332);
+  };
+  return _0x2c4709['jsx'](Re, {
+    'open': _0x437871,
+    'onOpenChange': _0x205ce7,
+    'children': _0x2c4709['jsxs'](De, {
+      'children': [_0x2c4709['jsxs'](Ne, {
+        'children': [_0x2c4709['jsx'](Ae, {
+          'children': _0x43f5ea('domainMismatch.title')
+        }), _0x2c4709['jsx'](Ge, {
+          'children': _0x43f5ea('domainMismatch.description', {
+            'currentDomain': typeof window < 'u' ? window['location']['host'] : '',
+            'masterDomain': _0x5d1809 || _0x43f5ea('domainMismatch.empty')
+          })
+        })]
+      }), _0x2c4709['jsxs']('div', {
+        'className': 'space-y-2',
+        'children': [_0x2c4709['jsx'](Kt, {
+          'htmlFor': 'master-domain-input',
+          'children': _0x43f5ea('domainMismatch.inputLabel')
+        }), _0x2c4709['jsx'](zt, {
+          'id': 'master-domain-input',
+          'value': _0x433fc0,
+          'onChange': _0x2877bc => _0x35e509(_0x2877bc['target']['value']),
+          'autoFocus': !0x0
+        })]
+      }), _0x2c4709['jsxs'](Bu, {
+        'className': 'gap-2',
+        'children': [_0x2c4709['jsx'](j, {
+          'variant': 'outline',
+          'onClick': () => _0x205ce7(!0x1),
+          'disabled': _0x3be990['isPending'],
+          'children': _0x43f5ea('domainMismatch.later')
+        }), _0x2c4709['jsxs'](j, {
+          'onClick': _0x490ecb,
+          'disabled': _0x3be990['isPending'] || !_0x433fc0['trim'](),
+          'children': [_0x3be990['isPending'] ? _0x2c4709['jsx'](_0xf77abb, {
+            'className': 'mr-1\x20size-4\x20animate-spin'
+          }) : null, _0x43f5ea('domainMismatch.confirm')]
+        })]
+      })]
+    })
+  });
+}
+const kn = 'mmw-domain-mismatch-dismissed';
+
+function V0() {
+  const {
+    auth: _0x496471
+  } = _(), _0xb84f93 = !!_0x496471['accessToken'], {
+    data: _0x2c8f65
+  } = _0x8fb83({
+    'queryKey': ['user-permissions'],
+    'queryFn': pt,
+    'enabled': _0xb84f93,
+    'staleTime': 0x12c * 0x3e8
+  }), _0xd7bb0b = !!_0x2c8f65?.['is_admin'], {
+    data: _0x3f4ac5
+  } = _0x8fb83({
+    'queryKey': ['master-url'],
+    'queryFn': async () => (await N['get']('§b55f9f9cb2c46ffc'))['data'],
+    'enabled': _0xb84f93 && _0xd7bb0b,
+    'staleTime': 0x12c * 0x3e8
+  }), [_0x59c601, _0x4d2672] = _0x4eb10f['useState'](() => typeof window < 'u' && window['sessionStorage']['getItem'](kn) || ''), _0x4fe66f = _0x4eb10f['useMemo'](() => $0(_0x3f4ac5?.['master_url'] ?? ''), [_0x3f4ac5]), _0x53f640 = _0x4eb10f['useMemo'](() => qu(_0x3f4ac5?.['master_url'] ?? '') + '=>' + (typeof window < 'u' ? window['location']['origin']['toLowerCase']() : ''), [_0x3f4ac5]);
+  if (!_0xb84f93 || !_0xd7bb0b) return null;
+  const _0x38ab2a = _0x3f4ac5 !== void 0x0 && _0x4fe66f && _0x59c601 !== _0x53f640;
+  return _0x2c4709['jsx'](Q0, {
+    'open': _0x38ab2a,
+    'onOpenChange': _0x2428c0 => {
+      _0x2428c0 || (typeof window < 'u' && window['sessionStorage']['setItem'](kn, _0x53f640), _0x4d2672(_0x53f640));
+    },
+    'masterUrl': _0x3f4ac5?.['master_url'] ?? ''
+  });
+}
+
+function X0() {
+  const _0x4ddb93 = _0x4eb10f['useRef'](null),
+    _0x47f539 = _0x1c2ee8();
+  return _0x4eb10f['useEffect'](() => {
+    _0x47f539['status'] === 'pending' ? _0x4ddb93['current']?.['continuousStart']() : _0x4ddb93['current']?.['complete']();
+  }, [_0x47f539['status']]), _0x2c4709['jsx'](_0x2aadc2, {
+    'color': 'var(--muted-foreground)',
+    'ref': _0x4ddb93,
+    'shadow': !0x0,
+    'height': 0x2
+  });
+}
+
+function J0() {
+  const {
+    layoutMode: _0x55c883,
+    sidebarCollapsed: _0xe676ac
+  } = Jt(), {
+    auth: _0x42401c
+  } = _(), _0x203ee9 = _0x1c2ee8();
+  jg();
+  const _0x2852c0 = _0x203ee9['location']['pathname'] === '/login',
+    _0x364ddb = !!_0x42401c['accessToken'],
+    _0x1bbc3d = _0x55c883 === 'sidebar' && _0x364ddb && !_0x2852c0,
+    _0x2f64e6 = _0x364ddb && !_0x2852c0,
+    _0x578ae6 = _0x203ee9['location']['pathname'] === '/' && !_0x364ddb,
+    {
+      siteTitle: _0xd9900f,
+      iconUrl: _0x5c306b,
+      loaded: _0x8fbf20
+    } = Ou();
+  return _0x4eb10f['useEffect'](() => {
+    !_0x8fbf20 || _0x578ae6 || zg(_0xd9900f, _0x5c306b);
+  }, [_0x8fbf20, _0x5c306b, _0x578ae6, _0xd9900f]), _0x2c4709['jsxs'](_0x2c4709['Fragment'], {
+    'children': [_0x2c4709['jsx'](X0, {}), _0x364ddb && !_0x2852c0 && _0x2c4709['jsx'](n0, {}), _0x2f64e6 && _0x2c4709['jsx'](K0, {}), _0x1bbc3d && _0x2c4709['jsx'](a0, {}), _0x2c4709['jsx']('div', {
+      'className': D('relative\x20z-10\x20transition-all\x20duration-300', _0x1bbc3d && (_0xe676ac ? 'md:pl-16' : 'md:pl-52')),
+      'children': _0x2c4709['jsx'](_0x20e1bf, {})
+    }), _0x2c4709['jsx'](Xg, {
+      'duration': 0x1388,
+      'visibleToasts': 0x5
+    }), _0x364ddb && !_0x2852c0 && _0x2c4709['jsx'](V0, {}), !0x1]
+  });
+}
+const I = _0x38ba04()({
+    'component': J0,
+    'notFoundComponent': () => _0x2c4709['jsxs']('div', {
+      'className': 'flex\x20min-h-svh\x20flex-col\x20items-center\x20justify-center\x20gap-4\x20px-4\x20text-center',
+      'children': [_0x2c4709['jsx']('h1', {
+        'className': 'text-3xl\x20font-semibold\x20tracking-tight',
+        'children': _0x1981a4['t']('error.notFoundTitle')
+      }), _0x2c4709['jsx']('p', {
+        'className': 'text-muted-foreground',
+        'children': _0x1981a4['t']('error.notFoundDesc')
+      })]
+    }),
+    'errorComponent': ({
+      error: _0x4066b7
+    }) => _0x2c4709['jsxs']('div', {
+      'className': 'flex\x20min-h-svh\x20flex-col\x20items-center\x20justify-center\x20gap-4\x20px-4\x20text-center',
+      'children': [_0x2c4709['jsx']('h1', {
+        'className': 'text-3xl\x20font-semibold\x20tracking-tight',
+        'children': _0x1981a4['t']('error.errorTitle')
+      }), _0x2c4709['jsx']('p', {
+        'className': 'text-muted-foreground',
+        'children': _0x4066b7?.['message'] ?? _0x1981a4['t']('error.errorDesc')
+      })]
+    })
+  }),
+  Y0 = () => _0x1db211(() => import('./xray-servers-xVcDcjHX.js'), __vite__mapDeps([0, 1])),
+  Z0 = _0x378f5d('/xray-servers')({
+    'component': _0x2c8dcb(Y0, 'component')
+  }),
+  eh = () => _0x1db211(() => import('./xray-outbounds-DxCHOOhB.js'), __vite__mapDeps([2, 1])),
+  th = _0x378f5d('/xray-outbounds')({
+    'validateSearch': _0x3ed1df => ({
+      'remote_server_id': _0x3ed1df['remote_server_id'] ? Number(_0x3ed1df['remote_server_id']) : void 0x0
+    }),
+    'component': _0x2c8dcb(eh, 'component')
+  }),
+  nh = () => _0x1db211(() => import('./xray-inbounds-CdNSA0l0.js'), __vite__mapDeps([3, 1])),
+  oh = _0x378f5d('/xray-inbounds')({
+    'validateSearch': _0x38f795 => ({
+      'remote_server_id': _0x38f795['remote_server_id'] ? Number(_0x38f795['remote_server_id']) : void 0x0
+    }),
+    'component': _0x2c8dcb(nh, 'component')
+  }),
+  ah = () => _0x1db211(() => import('./users-30KdT1Y6.js'), __vite__mapDeps([4, 1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])),
+  rh = _0x378f5d('/users')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(ah, 'component')
+  }),
+  sh = () => _0x1db211(() => import('./tg-bot-invites-BWaC5K9-.js'), __vite__mapDeps([17, 1, 8, 9])),
+  ih = _0x378f5d('/tg-bot-invites')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(sh, 'component')
+  }),
+  lh = () => _0x1db211(() => import('./templates-DTnWZkds.js'), __vite__mapDeps([18, 1])),
+  dh = _0x378f5d('/templates')({
+    'component': _0x2c8dcb(lh, 'component')
+  }),
+  ch = () => _0x1db211(() => import('./system-settings-COObzK0l.js'), __vite__mapDeps([19, 1, 20, 21, 22, 9, 23, 12, 24, 25, 26, 13, 27, 10, 28, 29, 8, 11, 30])),
+  uh = _0x378f5d('/system-settings')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(ch, 'component')
+  });
+async function Le(_0x347ab2, _0x4a3399) {
+  if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+    'to': '/login'
+  });
+  let _0x56b16a;
+  try {
+    _0x56b16a = await _0x347ab2['ensureQueryData']({
+      'queryKey': ['user-permissions'],
+      'queryFn': pt,
+      'staleTime': 0x12c * 0x3e8
+    });
+  } catch {
+    return;
+  }
+  if (!_0x56b16a['is_admin'] && !_0x56b16a['pages']?.['includes'](_0x4a3399)) throw _0x4e22e4({
+    'to': '/'
+  });
+}
+const ph = () => _0x1db211(() => import('./subscription-Ctf9-l7C.js'), __vite__mapDeps([31, 1])),
+  mh = _0x378f5d('/subscription')({
+    'beforeLoad': async ({
+      context: _0x5417fe
+    }) => {
+      await Le(_0x5417fe['queryClient'], 'subscription');
+    },
+    'component': _0x2c8dcb(ph, 'component')
+  }),
+  fh = () => _0x1db211(() => import('./subscribe-files-DtihhVmt.js'), __vite__mapDeps([32, 1])),
+  xh = _0x378f5d('/subscribe-files')({
+    'beforeLoad': async () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(fh, 'component')
+  }),
+  gh = () => _0x1db211(() => import('./settings-CEPlzyi5.js'), __vite__mapDeps([33, 1, 9, 34])),
+  hh = _0x378f5d('/settings')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(gh, 'component')
+  }),
+  bh = () => _0x1db211(() => import('./rules-s5KbdcDr.js'), __vite__mapDeps([35, 1, 8, 9, 11, 36, 37, 26])),
+  yh = _0x378f5d('/rules')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'validateSearch': _0x87bfa5 => ({
+      'file': _0x87bfa5['file'] || void 0x0
+    }),
+    'component': _0x2c8dcb(bh, 'component')
+  }),
+  vh = () => _0x1db211(() => import('./rule-providers-HD_-P54p.js'), __vite__mapDeps([38, 1, 8, 9, 12, 26])),
+  Sh = _0x378f5d('/rule-providers')({
+    'beforeLoad': async ({
+      context: _0x39422f
+    }) => {
+      let _0x3f0701;
+      try {
+        _0x3f0701 = await _0x39422f['queryClient']['fetchQuery']({
+          'queryKey': ['profile'],
+          'queryFn': Te,
+          'staleTime': 0x12c * 0x3e8
+        });
+      } catch {
+        throw _0x4e22e4({
+          'to': '/login'
+        });
+      }
+      if (!_0x3f0701?.['is_admin']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(vh, 'component')
+  }),
+  Ch = () => _0x1db211(() => import('./routed-outbounds-DTWI3AMW.js'), __vite__mapDeps([39, 1])),
+  Wh = _0x378f5d('/routed-outbounds')({
+    'component': _0x2c8dcb(Ch, 'component')
+  }),
+  wh = () => _0x1db211(() => import('./packages-CWV37AtS.js'), __vite__mapDeps([40, 1])),
+  Ph = _0x378f5d('/packages')({
+    'component': _0x2c8dcb(wh, 'component')
+  }),
+  kh = () => _0x1db211(() => import('./nodes-DTnWZkds.js'), __vite__mapDeps([41, 1])),
+  Th = _0x378f5d('/nodes')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(kh, 'component')
+  }),
+  Rh = () => _0x1db211(() => import('./my-forward-Cx8zTY6L.js'), __vite__mapDeps([42, 1])),
+  Dh = _0x378f5d('/my-forward')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(Rh, 'component')
+  }),
+  Nh = () => _0x1db211(() => import('./migrate-from-mmw-ClbQVAJ0.js'), __vite__mapDeps([43, 1])),
+  Ah = _0x378f5d('/migrate-from-mmw')({
+    'beforeLoad': async ({
+      context: _0x3c6677
+    }) => {
+      let _0x1291d4;
+      try {
+        _0x1291d4 = await _0x3c6677['queryClient']['fetchQuery']({
+          'queryKey': ['profile'],
+          'queryFn': Te,
+          'staleTime': 0x12c * 0x3e8
+        });
+      } catch {
+        throw _0x4e22e4({
+          'to': '/login'
+        });
+      }
+      if (!_0x1291d4?.['is_admin']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(Nh, 'component')
+  }),
+  Lh = () => _0x1db211(() => import('./logs-BsLPzmRI.js'), __vite__mapDeps([44, 1, 8, 9, 12, 24, 25, 26])),
+  _h = _0x378f5d('/logs')({
+    'beforeLoad': async ({
+      context: _0x198fb6
+    }) => {
+      let _0x1e39ad;
+      try {
+        _0x1e39ad = await _0x198fb6['queryClient']['fetchQuery']({
+          'queryKey': ['profile'],
+          'queryFn': Te,
+          'staleTime': 0x12c * 0x3e8
+        });
+      } catch {
+        throw _0x4e22e4({
+          'to': '/login'
+        });
+      }
+      if (!_0x1e39ad?.['is_admin']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(Lh, 'component')
+  }),
+  Oh = () => _0x1db211(() => import('./login-CJNA80c4.js'), __vite__mapDeps([45, 1, 22, 9, 34])),
+  Fh = _0x378f5d('/login')({
+    'beforeLoad': async ({
+      context: _0x23d555
+    }) => {
+      if (_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+      let _0x356dc5 = !0x1;
+      try {
+        const _0x1d944b = await _0x23d555['queryClient']['fetchQuery']({
+          'queryKey': ['probe-disguise-public'],
+          'queryFn': async () => (await N['get']('/api/public/probe-servers'))['data'],
+          'staleTime': 0x0,
+          'retry': !0x1
+        });
+        _0x356dc5 = !!(_0x1d944b?.['enabled'] && _0x1d944b?.['block_login']);
+      } catch {}
+      if (_0x356dc5) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(Oh, 'component')
+  }),
+  Ih = () => _0x1db211(() => import('./generator-OmDrWRoj.js'), __vite__mapDeps([46, 1, 47, 21, 9, 10, 12, 28, 48, 8, 49, 20, 50, 51, 52, 24, 26, 15, 16, 13])),
+  Mh = _0x378f5d('/generator')({
+    'beforeLoad': async ({
+      context: _0x4c977e
+    }) => {
+      await Le(_0x4c977e['queryClient'], 'generator');
+    },
+    'component': _0x2c8dcb(Ih, 'component')
+  }),
+  Eh = () => _0x1db211(() => import('./forward-DoXks0uE.js'), __vite__mapDeps([53, 1, 54])),
+  Uh = _0x378f5d('/forward')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(Eh, 'component')
+  }),
+  jh = () => _0x1db211(() => import('./custom-rules-DtihhVmt.js'), __vite__mapDeps([55, 1])),
+  Hh = _0x378f5d('/custom-rules')({
+    'beforeLoad': async ({
+      context: _0x4ba890
+    }) => {
+      await Le(_0x4ba890['queryClient'], 'custom-rules');
+    },
+    'component': _0x2c8dcb(jh, 'component')
+  }),
+  Bh = () => _0x1db211(() => import('./change-password-OGuY7Cg6.js'), __vite__mapDeps([56, 1])),
+  Gh = _0x378f5d('/change-password')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(Bh, 'component')
+  }),
+  qh = () => _0x1db211(() => import('./certificates-D96LI9W6.js'), __vite__mapDeps([57, 1, 54])),
+  zh = _0x378f5d('/certificates')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(qh, 'component')
+  }),
+  Kh = () => _0x1db211(() => import('./index-CVAzD6ZM.js'), __vite__mapDeps([58, 1, 6, 5, 8, 9, 37, 16, 13, 14, 59, 22, 34, 10, 28, 20, 12, 60])),
+  $h = _0x378f5d('/')({
+    'beforeLoad': async ({
+      context: _0x3a9ab8
+    }) => {
+      if (!_['getState']()['auth']['accessToken']) {
+        try {
+          if ((await _0x3a9ab8['queryClient']['ensureQueryData']({
+              'queryKey': ['probe-disguise-public'],
+              'queryFn': async () => (await N['get']('/api/public/probe-servers'))['data'],
+              'retry': !0x1
+            }))?.['enabled']) return;
+        } catch {}
+        throw _0x4e22e4({
+          'to': '/login'
+        });
+      }
+    },
+    'component': _0x2c8dcb(Kh, 'component')
+  }),
+  Qh = () => _0x1db211(() => import('./xray-servers.index-DzWEIztT.js'), __vite__mapDeps([61, 1, 5, 7, 8, 9, 62, 10, 23, 49, 24, 16, 63, 25, 26, 13, 59, 27, 20, 28, 64, 12, 65, 50, 48, 66, 67, 30])),
+  Vh = _0x378f5d('/xray-servers/')({
+    'component': _0x2c8dcb(Qh, 'component')
+  }),
+  Xh = () => _0x1db211(() => import('./xray-outbounds.index-LRB_DEcb.js'), __vite__mapDeps([68, 1, 69, 8, 9, 62, 16, 63, 59, 50, 64, 12, 26, 66, 13, 49])),
+  Jh = _0x378f5d('/xray-outbounds/')({
+    'component': _0x2c8dcb(Xh, 'component')
+  }),
+  Yh = () => _0x1db211(() => import('./xray-inbounds.index-C0uJ63qk.js'), __vite__mapDeps([70, 1, 69, 8, 64, 12, 26, 9, 62, 16, 63, 59, 65, 20, 50, 48, 10, 28, 49, 7])),
+  Zh = _0x378f5d('/xray-inbounds/')({
+    'component': _0x2c8dcb(Yh, 'component')
+  }),
+  eb = () => _0x1db211(() => import('./templates.index-Bk6O3VpD.js'), __vite__mapDeps([71, 1, 72, 52, 8, 9, 11, 24, 25, 26, 15, 16, 12, 13, 10, 73, 51])),
+  tb = _0x378f5d('/templates/')({
+    'beforeLoad': async ({
+      context: _0x580508
+    }) => {
+      await Le(_0x580508['queryClient'], 'templates');
+    },
+    'component': _0x2c8dcb(eb, 'component')
+  }),
+  nb = () => _0x1db211(() => import('./subscription.index-DVQ9-9Ox.js'), __vite__mapDeps([74, 1, 6, 9, 13])),
+  ob = _0x378f5d('/subscription/')({
+    'component': _0x2c8dcb(nb, 'component')
+  }),
+  ab = () => _0x1db211(() => import('./subscribe-files.index-GcltT_6U.js'), __vite__mapDeps([75, 1, 47, 21, 9, 10, 12, 28, 48, 8, 49, 52, 76, 5, 13, 15, 16, 26, 24, 7, 11])),
+  rb = _0x378f5d('/subscribe-files/')({
+    'beforeLoad': async ({
+      context: _0x531c8d
+    }) => {
+      await Le(_0x531c8d['queryClient'], 'subscribe-files');
+    },
+    'component': _0x2c8dcb(ab, 'component')
+  }),
+  sb = () => _0x1db211(() => import('./routed-outbounds.index-J_4BDxAj.js'), __vite__mapDeps([77, 1, 78, 7, 8, 9, 62, 12, 16])),
+  ib = _0x378f5d('/routed-outbounds/')({
+    'component': _0x2c8dcb(sb, 'component')
+  }),
+  lb = () => _0x1db211(() => import('./packages.index-BOQnWAzC.js'), __vite__mapDeps([79, 1, 50, 72, 8, 9, 62, 12, 24, 16, 63, 26, 13, 59, 30])),
+  db = _0x378f5d('/packages/')({
+    'component': _0x2c8dcb(lb, 'component')
+  }),
+  cb = () => _0x1db211(() => import('./nodes.index-CWNLSvP0.js'), __vite__mapDeps([80, 1, 20, 50, 67, 12, 64, 26, 76, 8, 52, 9, 23, 24, 16, 25, 13, 27, 10, 28, 29, 11, 78, 7, 62, 48, 65, 49])),
+  ub = _0x378f5d('/nodes/')({
+    'beforeLoad': async ({
+      context: _0x212c1c
+    }) => {
+      await Le(_0x212c1c['queryClient'], 'nodes');
+    },
+    'component': _0x2c8dcb(cb, 'component')
+  }),
+  pb = () => _0x1db211(() => import('./my-forward.index-iBAexzTQ.js'), __vite__mapDeps([81, 1, 8, 9, 62, 12])),
+  mb = _0x378f5d('/my-forward/')({
+    'component': _0x2c8dcb(pb, 'component')
+  }),
+  fb = () => _0x1db211(() => import('./migrate-from-mmw.index-CDKexkBE.js'), __vite__mapDeps([82, 1, 8, 9, 23, 36])),
+  xb = _0x378f5d('/migrate-from-mmw/')({
+    'component': _0x2c8dcb(fb, 'component')
+  }),
+  gb = () => _0x1db211(() => import('./forward.index-XxROtpuC.js'), __vite__mapDeps([83, 1, 9, 13, 12, 24])),
+  hb = _0x378f5d('/forward/')({
+    'component': _0x2c8dcb(gb, 'component')
+  }),
+  bb = () => _0x1db211(() => import('./custom-rules.index-CinqvEwk.js'), __vite__mapDeps([84, 1, 8, 9, 12, 24, 25, 26, 15, 16, 73])),
+  yb = _0x378f5d('/custom-rules/')({
+    'component': _0x2c8dcb(bb, 'component')
+  }),
+  vb = () => _0x1db211(() => import('./certificates.index-CIDfg6Kk.js'), __vite__mapDeps([85, 1, 8, 62, 9, 12, 24, 16, 63, 25, 26, 13])),
+  Sb = _0x378f5d('/certificates/')({
+    'component': _0x2c8dcb(vb, 'component')
+  }),
+  Cb = () => _0x1db211(() => import('./subscribe-files.custom-BGL8a4Ww.js'), __vite__mapDeps([86, 1, 9])),
+  Wb = _0x378f5d('/subscribe-files/custom')({
+    'beforeLoad': () => {
+      if (!_['getState']()['auth']['accessToken']) throw _0x4e22e4({
+        'to': '/'
+      });
+    },
+    'component': _0x2c8dcb(Cb, 'component')
+  }),
+  zu = Z0['update']({
+    'id': '/xray-servers',
+    'path': '/xray-servers',
+    'getParentRoute': () => I
+  }),
+  Ku = th['update']({
+    'id': '/xray-outbounds',
+    'path': '/xray-outbounds',
+    'getParentRoute': () => I
+  }),
+  $u = oh['update']({
+    'id': '/xray-inbounds',
+    'path': '/xray-inbounds',
+    'getParentRoute': () => I
+  }),
+  wb = rh['update']({
+    'id': '/users',
+    'path': '/users',
+    'getParentRoute': () => I
+  }),
+  Pb = ih['update']({
+    'id': '/tg-bot-invites',
+    'path': '/tg-bot-invites',
+    'getParentRoute': () => I
+  }),
+  Qu = dh['update']({
+    'id': '/templates',
+    'path': '/templates',
+    'getParentRoute': () => I
+  }),
+  kb = uh['update']({
+    'id': '/system-settings',
+    'path': '/system-settings',
+    'getParentRoute': () => I
+  }),
+  Vu = mh['update']({
+    'id': '/subscription',
+    'path': '/subscription',
+    'getParentRoute': () => I
+  }),
+  Zt = xh['update']({
+    'id': '/subscribe-files',
+    'path': '/subscribe-files',
+    'getParentRoute': () => I
+  }),
+  Tb = hh['update']({
+    'id': '/settings',
+    'path': '/settings',
+    'getParentRoute': () => I
+  }),
+  Rb = yh['update']({
+    'id': '/rules',
+    'path': '/rules',
+    'getParentRoute': () => I
+  }),
+  Db = Sh['update']({
+    'id': '/rule-providers',
+    'path': '/rule-providers',
+    'getParentRoute': () => I
+  }),
+  Xu = Wh['update']({
+    'id': '/routed-outbounds',
+    'path': '/routed-outbounds',
+    'getParentRoute': () => I
+  }),
+  Ju = Ph['update']({
+    'id': '/packages',
+    'path': '/packages',
+    'getParentRoute': () => I
+  }),
+  Yu = Th['update']({
+    'id': '/nodes',
+    'path': '/nodes',
+    'getParentRoute': () => I
+  }),
+  Zu = Dh['update']({
+    'id': '/my-forward',
+    'path': '/my-forward',
+    'getParentRoute': () => I
+  }),
+  ep = Ah['update']({
+    'id': '/migrate-from-mmw',
+    'path': '/migrate-from-mmw',
+    'getParentRoute': () => I
+  }),
+  Nb = _h['update']({
+    'id': '/logs',
+    'path': '/logs',
+    'getParentRoute': () => I
+  }),
+  Ab = Fh['update']({
+    'id': '/login',
+    'path': '/login',
+    'getParentRoute': () => I
+  }),
+  Lb = Mh['update']({
+    'id': '/generator',
+    'path': '/generator',
+    'getParentRoute': () => I
+  }),
+  tp = Uh['update']({
+    'id': '/forward',
+    'path': '/forward',
+    'getParentRoute': () => I
+  }),
+  np = Hh['update']({
+    'id': '/custom-rules',
+    'path': '/custom-rules',
+    'getParentRoute': () => I
+  }),
+  _b = Gh['update']({
+    'id': '/change-password',
+    'path': '/change-password',
+    'getParentRoute': () => I
+  }),
+  op = zh['update']({
+    'id': '/certificates',
+    'path': '/certificates',
+    'getParentRoute': () => I
+  }),
+  Ob = $h['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => I
+  }),
+  Fb = Vh['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => zu
+  }),
+  Ib = Jh['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => Ku
+  }),
+  Mb = Zh['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => $u
+  }),
+  Eb = tb['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => Qu
+  }),
+  Ub = ob['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => Vu
+  }),
+  jb = rb['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => Zt
+  }),
+  Hb = ib['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => Xu
+  }),
+  Bb = db['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => Ju
+  }),
+  Gb = ub['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => Yu
+  }),
+  qb = mb['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => Zu
+  }),
+  zb = xb['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => ep
+  }),
+  Kb = hb['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => tp
+  }),
+  $b = yb['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => np
+  }),
+  Qb = Sb['update']({
+    'id': '/',
+    'path': '/',
+    'getParentRoute': () => op
+  }),
+  Vb = Wb['update']({
+    'id': '/custom',
+    'path': '/custom',
+    'getParentRoute': () => Zt
+  }),
+  Xb = {
+    'CertificatesIndexRoute': Qb
+  },
+  Jb = op['_addFileChildren'](Xb),
+  Yb = {
+    'CustomRulesIndexRoute': $b
+  },
+  Zb = np['_addFileChildren'](Yb),
+  ey = {
+    'ForwardIndexRoute': Kb
+  },
+  ty = tp['_addFileChildren'](ey),
+  ny = {
+    'MigrateFromMmwIndexRoute': zb
+  },
+  oy = ep['_addFileChildren'](ny),
+  ay = {
+    'MyForwardIndexRoute': qb
+  },
+  ry = Zu['_addFileChildren'](ay),
+  sy = {
+    'NodesIndexRoute': Gb
+  },
+  iy = Yu['_addFileChildren'](sy),
+  ly = {
+    'PackagesIndexRoute': Bb
+  },
+  dy = Ju['_addFileChildren'](ly),
+  cy = {
+    'RoutedOutboundsIndexRoute': Hb
+  },
+  uy = Xu['_addFileChildren'](cy),
+  py = {
+    'SubscribeFilesCustomRoute': Vb,
+    'SubscribeFilesIndexRoute': jb
+  },
+  my = Zt['_addFileChildren'](py),
+  fy = {
+    'SubscriptionIndexRoute': Ub
+  },
+  xy = Vu['_addFileChildren'](fy),
+  gy = {
+    'TemplatesIndexRoute': Eb
+  },
+  hy = Qu['_addFileChildren'](gy),
+  by = {
+    'XrayInboundsIndexRoute': Mb
+  },
+  yy = $u['_addFileChildren'](by),
+  vy = {
+    'XrayOutboundsIndexRoute': Ib
+  },
+  Sy = Ku['_addFileChildren'](vy),
+  Cy = {
+    'XrayServersIndexRoute': Fb
+  },
+  Wy = zu['_addFileChildren'](Cy),
+  wy = {
+    'IndexRoute': Ob,
+    'CertificatesRoute': Jb,
+    'ChangePasswordRoute': _b,
+    'CustomRulesRoute': Zb,
+    'ForwardRoute': ty,
+    'GeneratorRoute': Lb,
+    'LoginRoute': Ab,
+    'LogsRoute': Nb,
+    'MigrateFromMmwRoute': oy,
+    'MyForwardRoute': ry,
+    'NodesRoute': iy,
+    'PackagesRoute': dy,
+    'RoutedOutboundsRoute': uy,
+    'RuleProvidersRoute': Db,
+    'RulesRoute': Rb,
+    'SettingsRoute': Tb,
+    'SubscribeFilesRoute': my,
+    'SubscriptionRoute': xy,
+    'SystemSettingsRoute': kb,
+    'TemplatesRoute': hy,
+    'TgBotInvitesRoute': Pb,
+    'UsersRoute': wb,
+    'XrayInboundsRoute': yy,
+    'XrayOutboundsRoute': Sy,
+    'XrayServersRoute': Wy
+  },
+  Py = I['_addFileChildren'](wy)['_addFileTypes']();
+window['addEventListener']('vite:preloadError', () => {
+  sessionStorage['getItem']('mmwx-chunk-reloaded') || (sessionStorage['setItem']('mmwx-chunk-reloaded', '1'), window['location']['reload']());
+});
+const ky = new Set(['user-permissions']),
+  ap = new _0x323a19({
+    'defaultOptions': {
+      'queries': {
+        'retry': (_0x5ba844, _0x49af6e) => _0x5ba844 > 0x3 ? !0x1 : !(_0x49af6e instanceof _0x5183b7 && [0x191, 0x193]['includes'](_0x49af6e['response']?.['status'] ?? 0x0)),
+        'refetchOnWindowFocus': !0x0,
+        'staleTime': 0xa * 0x3e8
+      },
+      'mutations': {
+        'onError': _0x39e0f5 => {
+          Wu(_0x39e0f5), _0x39e0f5 instanceof _0x5183b7 && _0x39e0f5['response']?.['status'] === 0x130 && _0x5e6a09['error']('Content\x20not\x20modified!');
+        }
+      }
+    },
+    'queryCache': new _0x26ac2d({
+      'onError': (_0x54b333, _0x4d43d6) => {
+        if (_0x54b333 instanceof _0x5183b7) {
+          if (_0x54b333['response']?.['status'] === 0x191 && (_0x5e6a09['error']('Session\x20expired!'), _['getState']()['auth']['reset'](), Ye['navigate']({
+              'to': '/'
+            })), _0x54b333['response']?.['status'] === 0x1f4) {
+            const _0x4d394a = String(_0x4d43d6['queryKey'][0x0] ?? '');
+            ky['has'](_0x4d394a) ? (_0x5e6a09['error']('Internal\x20Server\x20Error!'), Ye['state']['location']['pathname'] !== '/' && Ye['navigate']({
+              'to': '/'
+            })) : console['error']('[query]\x20500', _0x4d43d6['queryKey'], _0x54b333['response']?.['data']);
+          }
+          _0x54b333['response']?.['status'];
+        }
+      }
+    })
+  }),
+  Ye = _0x4e3a2c({
+    'routeTree': Py,
+    'context': {
+      'queryClient': ap
+    },
+    'defaultPreload': 'intent',
+    'defaultPreloadStaleTime': 0x0
+  });
+nf();
+const Tn = document['getElementById']('root');
+Tn['innerHTML'] || _0xfe6e61['createRoot'](Tn)['render'](_0x2c4709['jsx'](_0x4eb10f['StrictMode'], {
+  'children': _0x2c4709['jsx'](_0x4cede0, {
+    'client': ap,
+    'children': _0x2c4709['jsx'](Ix, {
+      'children': _0x2c4709['jsx'](Lx, {
+        'children': _0x2c4709['jsx'](Dx, {
+          'children': _0x2c4709['jsx'](kx, {
+            'children': _0x2c4709['jsx'](_0x51ac0d, {
+              'router': Ye
+            })
+          })
+        })
+      })
+    })
+  })
+}));
+export {
+  Px as $, kt as A, j as B, k0 as C, Bt as D, D as E, Ky as F, Hy as G, vn as H, zt as I, Sn as J, Cn as K, Kt as L, be as M, Pe as N, Ou as O, Gu as P, r0 as Q, yh as R, Fy as S, B0 as T, hx as U, vx as V, Sx as W, Wx as X, wx as Y, Cx as Z, Ly as _, N as a, Ny as a0, Vg as a1, s0 as a2, zg as a3, jy as a4, l0 as a5, O0 as a6, qy as a7, _y as a8, Iy as a9, Q0 as aa, $0 as ab, Dy as ac, Gy as ad, Mt as ae, Ay as b, By as c, Ru as d, Gt as e, qt as f, Q as g, Wu as h, My as i, Ey as j, Uy as k, Pt as l, Re as m, De as n, Ne as o, Ae as p, Ge as q, Bu as r, zy as s, Te as t, _ as u, wu as v, Oy as w, Uu as x, S0 as y, v0 as z
+};

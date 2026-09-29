@@ -1,0 +1,129 @@
+
+################ BASELINE (untouched client) ################
+license status seen by UI : {"plan":{"description":"","display_name":"试用版","features":null,"max_nodes":5,"max_servers":1,"max_users":3,"name":"TRIAL"},"premium_theme":false,"success":true,"valid":true}
+html class               : font-oplusans3 light
+"Pro" badges on license UI: 5
+--- UI tail ---
+License
+License
+Manage license status
+Current Status:
+Valid
+·
+Plan:
+试用版
+0 / 1
+Servers
+Remaining: 1
+0 / 5
+Nodes
+Remaining: 5
+0 / 3
+Users
+Remaining: 3
+
+You are on a trial license. PRO features (rate limiter, node speed test, etc.) are not available. Register and claim your license (includes PRO features, with more coming...) at: license.miaomiaowux.com
+
+购买许可证
+PRO 功能
+Pro
+节点测速
+Pro
+节点限速
+Pro
+分享服务器
+Pro
+内嵌 Xray
+Pro
+REALITY 域名池
+称号内容
+
+称号由「名称」和「称号文案」两段组成,默认并排显示。可以只露其中一段 —— 服务端按这个设置裁剪后才下发,不是发下去再由前端藏起来。
+
+都显示
+名称 · 称号
+只显示名称
+许可证 name
+只显示称号
+许可证 display_name
+当前效果
+TRIAL · 试用版
+称号展示位
+
+控制许可证称号在各处是否显示。
+
+登录页
+关于弹窗 / 用户菜单
+探针页 · 登录气泡
+探针页是对外伪装页面,开启后访客可见
+探针页 · 页脚
+同上,会暴露本站是妙妙屋X
+探针页 · 标题后方
+同上,开启后在探针页标题后方显示
+License Key
+Save
+
+################ AFTER INJECTING UNSIGNED plan.features ################
+license status seen by UI : {"plan":{"description":"","display_name":"专业版","features":["speed_test","limiter","server_share","embedded","reality_pool"],"max_nodes":9999,"max_servers":999,"max_users":9999,"name":"PRO"},"premium_theme":true,"success":true,"valid":true}
+html class               : font-oplusans3 light
+"Pro" badges on license UI: 5
+bypass rewrite hits      : 2
+--- UI tail ---
+License
+License
+Manage license status
+Current Status:
+Valid
+·
+Plan:
+专业版
+0 / 1
+Servers
+Remaining: 1
+0 / 5
+Nodes
+Remaining: 5
+0 / 3
+Users
+Remaining: 3
+
+You are on a trial license. PRO features (rate limiter, node speed test, etc.) are not available. Register and claim your license (includes PRO features, with more coming...) at: license.miaomiaowux.com
+
+购买许可证
+PRO 功能
+Pro
+节点测速
+Pro
+节点限速
+Pro
+分享服务器
+Pro
+内嵌 Xray
+Pro
+REALITY 域名池
+称号内容
+
+称号由「名称」和「称号文案」两段组成,默认并排显示。可以只露其中一段 —— 服务端按这个设置裁剪后才下发,不是发下去再由前端藏起来。
+
+都显示
+名称 · 称号
+只显示名称
+许可证 name
+只显示称号
+许可证 display_name
+当前效果
+PRO · 专业版
+称号展示位
+
+控制许可证称号在各处是否显示。
+
+登录页
+关于弹窗 / 用户菜单
+探针页 · 登录气泡
+探针页是对外伪装页面,开启后访客可见
+探针页 · 页脚
+同上,会暴露本站是妙妙屋X
+探针页 · 标题后方
+同上,开启后在探针页标题后方显示
+License Key
+Save

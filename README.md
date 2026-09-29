@@ -15,6 +15,8 @@
 | [`Listary/`](Listary/) | Listary 6 Pro (6.3.5.94) | .NET/WPF 客户端 VIP 鉴权脆弱性 —— **CWE-602 / CWE-345** |
 | [`HexHub-5.1.9/`](HexHub-5.1.9/) | HexHub Client 5.1.9 (CEF + Go) | 会员权益判定完全客户端化 + 自证式签名 + 可完全离线伪造「登录+下发」 —— **CWE-602 / CWE-345** |
 
+| [`MiaomiaowuX-v0.5.4/`](MiaomiaowuX-v0.5.4/) | 妙妙屋X (miaomiaowuX) v0.5.4 | 自托管 Xray 节点管理与订阅分发 —— 许可门禁与服务器/节点/用户数量配额 —— **CWE-602** |
+| [`oneclick/`](oneclick/) | —— | ★ **一键命令**：三个案例各自一条命令，全部从本仓库 Release 拉取并校验 sha256 |
 ---
 
 ## 项目一览
@@ -67,6 +69,44 @@
 | B | 伪造 token | 原版 · 服务器可达 | ❌ 401 拦截器清空会话 |
 | C1 → C2 | **已过期 + 伪造签名** | 原版 → **等长补丁版** | ❌ → ✅ 👑 Plus（仅换二进制即翻转） |
 | D | 自建 RSA + mock 响应 | 原版 · 服务器阻断 | ✅ 👑 Plus（客户端认为已登录+已同步） |
+
+---
+
+## 一键命令（三个案例通用）
+
+测试工具包与被测软件**全部从本交付仓库的 Release 拉取**，下载后逐一校验 sha256，
+不匹配立即中止；不访问被测软件官网的「最新版」，厂商发新版不会改变测试对象。
+
+```powershell
+# HexHub —— 会员权益
+powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/hexhub-vip-test.ps1 | iex"
+
+# Listary 6 —— 专业版权益
+powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/listary-pro-test.ps1 | iex"
+```
+
+```bash
+# 妙妙屋X —— 许可门禁与数量配额（Linux / WSL）
+bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
+
+# 同案例的 Windows 入口（自动交给 WSL 执行）
+powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.ps1 | iex"
+```
+
+| 案例 | 固定版本 | 入口脚本 |
+| :--- | :--- | :--- |
+| HexHub | **5.1.9** | `oneclick/hexhub-vip-test.ps1` |
+| Listary 6 | **6.3.5.94** | `oneclick/listary-pro-test.ps1` |
+| 妙妙屋X | **v0.5.4** | `oneclick/miaomiaowux-license-test.sh` / `.ps1` |
+
+**Release（全部固定构件 + `SHA256SUMS.txt`）**
+→ https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0
+
+每个案例根目录都有 `PINNED-VERSIONS.md`，记录版本号与 sha256；
+**落点隔离**：HexHub / Listary 在 `%TEMP%\<case>-lab\`，妙妙屋X 在 WSL 的 `~/mmwx-lab/`；
+Listary 提供 `-Restore` 一键回滚，妙妙屋X 不写 systemd、不动 `/etc`。
+
+完整说明与参数见 [`oneclick/README.md`](oneclick/README.md)。
 
 ---
 

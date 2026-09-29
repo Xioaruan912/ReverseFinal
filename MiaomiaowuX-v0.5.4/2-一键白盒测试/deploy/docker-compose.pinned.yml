@@ -1,0 +1,34 @@
+# ---------------------------------------------------------------------------
+# 妙妙屋X 白盒鉴权测试 —— Docker 部署（版本固定 · 按摘要锁定）
+#
+#   与官方 docker-compose.yml 的区别：镜像不再使用 `:latest`，
+#   而是按 **sha256 摘要** 锁定到本次审计所用版本，上游推新镜像也不会改变行为。
+#
+#   在线部署（可拉取 ghcr.io）：
+#       docker compose -f deploy/docker-compose.pinned.yml up -d
+#
+#   离线部署（无外网 / 完全自控）：
+#       bash deploy/deploy-docker.sh --offline
+# ---------------------------------------------------------------------------
+services:
+  miaomiaowu:
+    # 摘要锁定：ghcr.io/iluobei/miaomiaowux@sha256:5edb2de2…  （v0.5.4 时期镜像）
+    image: ghcr.io/iluobei/miaomiaowux@sha256:5edb2de21b5a4ae6eba8094267d36c2a61bc25304c36efb9a083d698fbbde6d1
+    container_name: mmwx-lab
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - PORT=${PORT:-12889}
+      - LOG_LEVEL=info
+      - MMWX_DATABASE_DRIVER=sqlite
+    volumes:
+      - ./data:/app/data
+      - ./subscribes:/app/subscribes
+      - ./rule_templates:/app/rule_templates
+      - /etc/localtime:/etc/localtime:ro
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:$${PORT:-12889}/ || exit 1"]
+      interval: 30s
+      timeout: 3s
+      start_period: 10s
+      retries: 3

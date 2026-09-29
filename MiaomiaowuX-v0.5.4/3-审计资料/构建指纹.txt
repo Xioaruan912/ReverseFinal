@@ -1,0 +1,6 @@
+mmwx-linux-amd64 (官方发行物) : ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657
+mmwx-unpacked    (仅脱壳)     : c11d44d4aedb65936d07ff876af2ede0595a8618ef86f155014105ee8886e699
+mmwx-cracked     (打补丁后)   : 1c1a55979845da533ebe305c6602f411ce32c2d2936938320ae200f3c0636e1c
+
+注意：按 GitHub 100MB 单文件限制，破解产物(132MB)与官方原件(36MB)不随包分发，
+      可用 patches/oneliner.sh 在当前版本上重建。

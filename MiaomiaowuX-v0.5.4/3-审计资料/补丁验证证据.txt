@@ -1,0 +1,47 @@
+===== MMWX v0.5.4  VIP 检测移除补丁 —— 验证证据 =====
+
+### A. pclntab（magic 被厂商篡改） ###
+pcHeader @ file 0x582b7a0: ec c0 c8 d7 00 00 01 08 4a 91 01 00 00 00 00 00 8c f4 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+magic=0xd7c8c0ec  (Go 官方应为 0xfffffff1 / 0xfffffff0 -> 已被篡改)
+nfunc=102730 nfiles=62604 minLC=1 ptrSize=8
+moduledata @ file 0x7a4d0c0:
+  pcHeader=0x5c2b7a0 funcnametab=0x5c2b7e8 len=0x80eeb8 ftab=0x6fdfa78 nfunc=102731
+
+### B. HasFeature 单点汇聚（全二进制 call 扫描） ###
+18 个调用方：
+    IWPMOgYs4.(*BcGS_j).CanUsePremiumTheme
+    IWPMOgYs4.(*BcGS_j).HasFeatureForDataPlane
+    IWPMOgYs4.(*BcGS_j).a0iRwxdbcs
+    IWPMOgYs4.(*BcGS_j).uVzrS_vmX
+    JLKbOa2Pg.(*A9HAUOry).bMvUZb
+    JLKbOa2Pg.(*A9HAUOry).ztAMZ3Q
+    JLKbOa2Pg.(*EEyIhK5EEDsK).Dispatch
+    JLKbOa2Pg.(*EEyIhK5EEDsK).DispatchFetch
+    JLKbOa2Pg.(*ElC2bejZVMb).rf0aF6qLoIZ
+    JLKbOa2Pg.(*I6bHSqWGZB).hz8RcgJ9Hm
+    JLKbOa2Pg.(*JvBPHSc).fcolsj6
+    JLKbOa2Pg.(*K9AsWddxB7xg).ServeHTTP
+    JLKbOa2Pg.(*PRXXP1om0AY).ztAMZ3Q
+    JLKbOa2Pg.(*RPdCJGxcv).ServeHTTP
+    JLKbOa2Pg.(*UkNcIGKjvgD).ztAMZ3Q
+    JLKbOa2Pg.(*Zi0EBcAJ).GetConfig
+    main.main.ImYKVvqUVtnj.func794
+    main.main.OGUD0sRZ.func791
+
+### C. 补丁字节与反汇编 ###
+VA 0x17b4180   :  17b4180:	b0 01 	mov al,0x1| 17b4182:	c3 	ret| 17b4183:	24 20 	and al,0x20|
+VA 0x17b44a0   :  17b44a0:	b0 01 	mov al,0x1| 17b44a2:	c3 	ret| 17b44a3:	24 e0 	and al,0xe0|
+VA 0x17b3180   :  17b3180:	31 c0 	xor eax,eax| 17b3182:	c3 	ret| 17b3183:	10 0f 	adc BYTE PTR [rdi],cl|
+VA 0x17b3a20   :  17b3a20:	48 b8 ff ff ff ff ff 	movabs rax,0x7fffffffffffffff| 17b3a27:	ff ff 7f | 17b3a2a:	c3 	ret|
+VA 0x17b3280   :  17b3280:	48 b8 ff ff ff ff ff 	movabs rax,0x7fffffffffffffff| 17b3287:	ff ff 7f | 17b328a:	c3 	ret|
+VA 0x17b37c0   :  17b37c0:	48 b8 ff ff ff ff ff 	movabs rax,0x7fffffffffffffff| 17b37c7:	ff ff 7f | 17b37ca:	c3 	ret|
+
+### D. 产物指纹 ###
+官方发行物  : ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657
+仅脱壳      : c11d44d4aedb65936d07ff876af2ede0595a8618ef86f155014105ee8886e699
+python 打补丁: 573a95ffbafe3a75cdd6b196aa738ed24cab3771af90668ec9b9d6d6c2cb0243
+单行 dd 打补丁: 573a95ffbafe3a75cdd6b196aa738ed24cab3771af90668ec9b9d6d6c2cb0243
+
+### E. 服务端可观测差异 ###
+port 12889 GET / -> var ps = 'false'
+port 12890 GET / -> var ps = 'true'
