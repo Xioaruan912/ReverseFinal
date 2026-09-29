@@ -131,7 +131,7 @@ prepare_binary(){
   cp -f "$src" "$out"
   upx -d -qq "$out" >/dev/null 2>&1 || true
   local p
-  p(){ printf '%s' "$2" | dd of="$out" bs=1 seek=$(( $1 )) conv=notrunc status=none; }
+  p(){ printf '%b' "$2" | dd of="$out" bs=1 seek=$(( $1 )) conv=notrunc status=none; }
   p 0x13b4180 '\xb0\x01\xc3'
   p 0x13b44a0 '\xb0\x01\xc3'
   p 0x13b3180 '\x31\xc0\xc3'
