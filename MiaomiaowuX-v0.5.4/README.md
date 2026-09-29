@@ -1,4 +1,4 @@
-# 妙妙屋X v0.5.4 · 许可与数量配额 测试包
+# 妙妙屋X v0.5.4
 
 > **妙妙屋X（miaomiaowux）** 是一套自托管的代理节点管理与订阅分发系统。
 > 本包用于在**自建实例**上检查它的「专业版能力」与「数量上限」是服务端说了算，还是页面自己说了算。
@@ -83,10 +83,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 
 ```
 [1] 提示构件来自 GitHub，中国大陆可能较慢（可自建镜像 / 手动放置）
-[2] 询问安装/工作目录（回车用默认）
-[3] 取测试包 + 取固定版本 v0.5.4 主程序 → 逐个校验 sha256
-[4] 准备测试副本并在 12889 端口启动实例
-[5] 你停止实例后：证据与报告先另存，再自动清理中间产物
+[2] 选择运行方式：1) 测试模式   2) 生产模式（持久化）
+[3] 询问目录（测试=工作目录；生产=安装目录）
+[4] 取测试包 + 取固定版本 v0.5.4 主程序 → 逐个校验 sha256
+[5] 测试模式：12889 端口临时启动，停止后清理
+    生产模式：安装到指定目录 + 注册 systemd 服务 + 开机自启，长期保留
 ```
 
 **GitHub 下载慢时**：
@@ -126,14 +127,64 @@ MMWX_MIRROR=https://your-mirror/mmwx bash <(curl -fsSL .../miaomiaowux-license-t
 | 反复添加服务器 | 到上限后被拦回 | 可持续添加 |
 | 面板上的专业版标记 | 显示未解锁 | 显示已解锁 |
 
-停止实例（Ctrl+C）后，脚本会：
+---
 
-- 把 **证据与报告** 另存到 `~/ReverseAudit-Evidence/MiaomiaowuX-v0.5.4/<时间戳>/`
-- **自动删除** 中间产物（下载的包、测试副本、解包件）
+## 六、两种使用方式
+
+### 方式一：测试模式（默认）
+
+临时启动，验证完即走：
+
+- 停止实例（Ctrl+C）后，**证据与报告**先另存到 `~/ReverseAudit-Evidence/MiaomiaowuX-v0.5.4/<时间戳>/`
+- 随后**自动删除**中间产物（下载的包、测试副本、解包件）
+
+### 方式二：生产模式（持久化，长期使用）
+
+想把这个实例当作长期运行的服务，选择生产模式：
+
+```bash
+MMWX_MODE=persist MMWX_INSTALLDIR=/opt/mmwx bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
+```
+
+脚本会：
+
+1. 把可执行文件安装到 `<安装目录>/mmwx`，数据目录为 `<安装目录>/data`（**长期保留，不清理**）
+2. 注册 systemd 服务 `mmwx.service`（`Restart=always` + **开机自启**）
+3. 立即启动并打印管理命令
+
+管理命令：
+
+```bash
+systemctl status  mmwx      # 查看状态
+systemctl restart mmwx      # 重启
+systemctl stop    mmwx      # 停止
+systemctl disable mmwx      # 取消开机自启
+journalctl -u mmwx -f       # 实时日志
+```
+
+卸载：
+
+```bash
+systemctl disable --now mmwx && rm -f /etc/systemd/system/mmwx.service && rm -rf /opt/mmwx
+```
+
+> WSL 默认未启用 systemd？脚本会自动降级为后台常驻脚本，安装目录下会生成
+> `start.sh` / `stop.sh`，日志在 `<安装目录>/mmwx.log`。
+> 想用 systemd：在 `/etc/wsl.conf` 写入 `[boot]` + `systemd=true` 后重启 WSL，再重跑本脚本即可。
+
+### 前端与 Docker 部署
+
+`toolkit/deploy/` 下另有三条部署路径，均按 sha256 摘要/哈希锁定版本：
+
+| 脚本 | 用途 |
+| :--- | :--- |
+| `deploy/deploy-native.sh` | 本机部署（不写 systemd、不改 `/etc`，目录可控） |
+| `deploy/deploy-docker.sh` | Docker 部署，按 `@sha256` 摘要锁定镜像 |
+| `deploy/deploy-docker.sh --offline` | 离线部署，用包内镜像 tar 导入，零外部请求 |
 
 ---
 
-## 六、目录说明
+## 七、目录说明
 
 ```
 MiaomiaowuX-v0.5.4/
