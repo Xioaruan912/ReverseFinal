@@ -266,17 +266,19 @@ prepare_binary(){
   # （坏 unit 的表现就是 status=127 + auto-restart 循环，排查成本很高）
   local sp=$(( PORT + 1 )) rc=0
   mkdir -p "$WORKDIR/smoke"
-  ( PORT=$sp MMWX_LISTEN_PORT=$sp MMWX_DATA_DIR="$WORKDIR/smoke"       timeout 10 "$out" >"$WORKDIR/smoke.log" 2>&1 ) &
+  # 必须 cd 到临时目录：程序会按 CWD 生成 data/ 与 rule_templates/，
+  # 不 cd 就会在用户当前目录（甚至交付仓库根目录）拉出一堆运行数据。
+  # 也绝不写 \\ 续行（易被改写），一条长命令写在单行里。
+  ( cd "$WORKDIR/smoke" && PORT=$sp MMWX_LISTEN_PORT=$sp MMWX_DATA_DIR="$WORKDIR/smoke" timeout 10 "$out" >"$WORKDIR/smoke.out" 2>&1 ) &
   local spid=$!
   sleep 5
   if kill -0 "$spid" 2>/dev/null; then
     kill "$spid" 2>/dev/null || true
     wait "$spid" 2>/dev/null || true
-    printf '  [+] 可执行文件自检通过（能正常启动）
-' >&2
+    printf '  [+] 可执行文件自检通过（能正常启动）\n' >&2
   else
     wait "$spid" 2>/dev/null || rc=$?
-    sed 's/^/      /' "$WORKDIR/smoke.log" 2>/dev/null | head -8 >&2 || true
+    sed 's/^/      /' "$WORKDIR/smoke.out" 2>/dev/null | head -8 >&2 || true
     [ "$rc" = "127" ] && die "可执行文件以 127 退出 —— 补丁打在了压缩态上，请确认 upx 可用后重跑"
     die "可执行文件无法启动（退出码 $rc）"
   fi

@@ -327,10 +327,18 @@ PREP_SHA256="1c1a5597…6e1c"     # 与 toolkit 里的参考实现逐字节一�
 4. **装前冒烟测试**：真跑一次再注册服务，别把坏 unit 留给用户
 
 ```bash
-( PORT=$sp MMWX_LISTEN_PORT=$sp MMWX_DATA_DIR="$WORKDIR/smoke" timeout 10 "$out" >"$WORKDIR/smoke.log" 2>&1 ) &
+# 必须在临时目录里跑！程序会按 CWD 生成 data/ 与 rule_templates/，
+# 不 cd 就会在用户当前目录（甚至交付仓库根目录）拉出一堆运行数据。
+mkdir -p "$WORKDIR/smoke"
+( cd "$WORKDIR/smoke" && PORT=$sp MMWX_LISTEN_PORT=$sp MMWX_DATA_DIR="$WORKDIR/smoke" \
+    timeout 10 "$out" >"$WORKDIR/smoke.out" 2>&1 ) &
 sleep 5
-kill -0 "$spid" 2>/dev/null || { sed 's/^/      /' "$WORKDIR/smoke.log"; die "可执行文件无法启动"; }
+kill -0 "$spid" 2>/dev/null || { sed 's/^/      /' "$WORKDIR/smoke.out"; die "可执行文件无法启动"; }
 ```
+
+> ⚠️ **冒烟测试一定要 `cd` 到临时目录**。实战事故：没 cd，程序把 `data/`、`rule_templates/`
+> 写到了交付仓库根目录，直接 `git add -A` 提交进了 git。
+> 把程序会写的目录名（`data/`、`rule_templates/`、`subscribes/`）都加进 `.gitignore` 作为第二层保险。
 
 > ⚠️ 这类函数常被 `PREP="$(prepare_binary ...)"` 调用，**函数内所有提示必须写 stderr**，
 > 否则提示文字会被拼进返回的路径里（与 §5 的 `ask()` 完全同一个坑）。
@@ -778,6 +786,8 @@ README 只保留「是什么 / 怎么用 / 用完能用什么 / 去哪找报告�
 - [ ] **没有任何 `|| true` 吞掉解包失败**
 - [ ] **补丁后钉了黄金哈希**，且该哈希来自**正确顺序**的参考实现
 - [ ] 装前**冒烟测试**通过（真跑一次再注册服务）
+- [ ] 冒烟测试**已 `cd` 到临时目录**（否则程序会把 `data/` 等写进用户当前目录 / 仓库根目录）
+- [ ] 程序会写的目录名已加入 `.gitignore`
 - [ ] 补丁函数的提示**全部走 stderr**（否则污染 `$()` 返回值）
 
 **产出物（纯安装器）**

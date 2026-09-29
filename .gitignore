@@ -7,15 +7,18 @@ dump/
 exports/
 __pycache__/
 *.pyc
-
 # 备份
 *.bak
 *.bak-*
 *.orig
-
 # 编辑器
 .vs/
 .vscode/
 .idea/
 Thumbs.db
 desktop.ini
+data/
+rule_templates/
+subscribes/
+*.log
+machine-id
