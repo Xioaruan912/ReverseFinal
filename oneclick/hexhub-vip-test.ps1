@@ -30,7 +30,7 @@ $ErrorActionPreference = 'Stop'
 # ---- lock file (only edit here when bumping the version) --------------------
 $REL_BASE    = 'https://github.com/Xioaruan912/ReverseFinal/releases/download/whitebox-audit-v1.0'
 $PACK_NAME   = 'HexHub-whitebox-audit-pack-v1.0.zip'
-$PACK_SHA256 = '8e4a0420b2e4b96a82a4abeb648a5c2f70720de00c410be9bd3245b75ec9395a'
+$PACK_SHA256 = '87b4efd7b0b4368629c6bf4400fbfdfcbc58efa72512740aad8af7750b96650a'
 $INST_NAME   = 'HexHub-Client-5.1.9-windows-amd64-setup.exe'
 $INST_SHA256 = '0ce38138688455ab2452c3620861ef6c71db2316aaa49f53273d6cdd2cf3b3c6'
 $INST_AS     = 'HexHub-Client-windows-amd64-installer-5.1.9.exe'
