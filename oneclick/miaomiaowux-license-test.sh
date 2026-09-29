@@ -1,20 +1,19 @@
 #!/usr/bin/env bash
 # ============================================================================
-# 妙妙屋X (miaomiaowuX) v0.5.4 —— 一键取件 · 安装 · 持久化部署
+# 妙妙屋X (miaomiaowuX) v0.5.4 - 一键安装 · 持久化部署
 #
 #   用法（Linux / WSL）:
 #     bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
 #
-#   行为（默认持久化）:
+#   行为（纯安装器：只产出可运行的目标，不生成 md / 报告 / 证据目录）:
 #     · 告知构件来自 GitHub，中国大陆可能较慢，给出镜像 / 手动放置两条备选
-#     · 询问安装目录（回车用默认 /opt/mmwx）
-#     · 取测试包与固定版本主程序，逐个校验 sha256
-#     · 安装到 <安装目录>，注册 systemd 服务并设为开机自启
-#     · 证据与报告另存，临时文件自动清理（安装目录长期保留）
+#     · 询问安装目录（回车用默认 /opt/mmwx），并做可写性校验
+#     · 取固定版本 v0.5.4 主程序，强制校验 sha256
+#     · 安装到 <安装目录>，注册 systemd 服务 + 开机自启
+#     · 下载缓存与临时文件自动清理，安装目录长期保留
 #
 #   环境变量:
 #     MMWX_INSTALLDIR=/opt/mmwx  安装目录（程序 + data/）
-#     MMWX_EVIDENCE=~            证据留存目录
 #     MMWX_YES=1                 非交互，全部用默认值
 #     MMWX_MIRROR=<url>          自建镜像前缀（GitHub 慢时用）
 #     PORT=12889                 面板端口
@@ -26,24 +25,19 @@
 set -euo pipefail
 
 REL_BASE="https://github.com/Xioaruan912/ReverseFinal/releases/download/whitebox-audit-v1.0"
-PACK_NAME="miaomiaowuX-whitebox-audit-pack-v1.0.zip"
-PACK_SHA256="8975eecf069d7070647151702c128542b0c819875f66756343e23bd47beac76a"
 BIN_NAME="mmwx-v0.5.4-linux-amd64"
 BIN_SHA256="ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657"
 PINNED_VER="v0.5.4"
-CASE_NAME="MiaomiaowuX-v0.5.4"
 SERVICE="mmwx"
 
 PORT="${PORT:-12889}"
 AUTO="${MMWX_YES:-0}"
 NO_SERVICE="${MMWX_NO_SERVICE:-0}"
 DEFAULT_INSTALL="${MMWX_INSTALLDIR:-/opt/mmwx}"
-EVID_ROOT="${MMWX_EVIDENCE:-$HOME/ReverseAudit-Evidence}"
-STAMP="$(date +%Y%m%d-%H%M%S)"
 
-WORKDIR="$(mktemp -d /tmp/mmwx-deploy.XXXXXX)"
-INSTALL_DIR=""
-EVID_DIR=""
+WORKDIR="$(mktemp -d /tmp/mmwx-install.XXXXXX)"
+cleanup(){ rm -rf "$WORKDIR"; }
+trap cleanup EXIT
 
 c(){ printf '\033[%sm%s\033[0m\n' "$1" "$2"; }
 head_(){ echo; c '36' "=== $1 ==="; }
@@ -53,16 +47,47 @@ die(){  c '31' "  [x] $1"; exit 1; }
 
 sha_ok(){ [ "$(sha256sum "$1" | awk '{print $1}')" = "$2" ]; }
 
+# ── 交互：提示一律走 stderr，且只在真交互终端下提问 ──────────────────────────
+# 两个坑都在这里：
+#  1) 本函数会被 $( ) 捕获：提示若写 stdout，提示文字会被当成返回值拼进目录名；
+#  2) [ -r /dev/tty ] 在管道/非交互执行时同样成立，read 会永久阻塞（卡死）。
+#     因此判定交互性必须看「是否真有终端」，并用 read -t 兜底。
+is_tty(){
+  [ "${AUTO:-0}" = "1" ] && return 1
+  [ -t 0 ] && return 0
+  [ -t 2 ] && [ -c /dev/tty ] && return 0
+  return 1
+}
+
 ask(){
   local label="$1" default="$2" v=""
-  if [ "$AUTO" = "1" ]; then printf '%s' "$default"; return 0; fi
-  if [ -t 0 ] || [ -r /dev/tty ]; then
-    printf '%s\n    default [%s]\n    input (Enter = default): ' "$label" "$default"
-    read -r v </dev/tty 2>/dev/null || v=""
-  fi
-  v="$(printf '%s' "$v" | tr -d '\r' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//;s/^"//;s/"$//')"
+  if ! is_tty; then printf '%s' "$default"; return 0; fi
+  {
+    printf '[37m%s[0m
+' "$label"
+    printf '[90m    default [%s][0m
+' "$default"
+    printf '[90m    input (Enter = default): [0m'
+  } >&2
+  # 最多等 300 秒；无输入 / 超时 / 无终端 -> 用默认值
+  read -r -t 300 v </dev/tty 2>/dev/null || v=""
+  v="$(printf '%s' "$v" | tr -d '' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//;s/^"//;s/"$//')"
   [ -z "$v" ] && v="$default"
   printf '%s' "$v"
+}
+
+# ── 目录询问 + 可写性校验，非法则重问 ──────────────────────────────────────
+ask_dir(){
+  local label="$1" default="$2" v
+  while :; do
+    v="$(ask "$label" "$default")"
+    case "$v" in /*) ;; *) warn "请填写绝对路径（以 / 开头）: $v"; continue ;; esac
+    if mkdir -p "$v" 2>/dev/null && [ -w "$v" ] && touch "$v/.mmwx-wtest" 2>/dev/null; then
+      rm -f "$v/.mmwx-wtest"; printf '%s' "$v"; return 0
+    fi
+    warn "目录不存在或不可写: $v"
+    [ "$AUTO" = "1" ] && die "默认安装目录不可写: $v"
+  done
 }
 
 cat <<BANNER
@@ -77,14 +102,16 @@ c '33' ' [!] 构件从 GitHub 下载，中国大陆网络可能较慢（主程�
 c '33' '     若下载困难，可任选其一：'
 c '90' "       - 自建镜像：  MMWX_MIRROR=https://your-mirror/mmwx 重跑"
 c '90' "       - 先手动下载 $BIN_NAME 放进 <安装目录>/artifacts/ 后重跑"
+if ! is_tty; then
+  c '90' ' (非交互执行：全部使用默认值；想自选目录请设置 MMWX_INSTALLDIR)'
+fi
 
 echo
-INSTALL_DIR="$(ask '选择安装目录（程序与数据都放这里，长期保留）' "$DEFAULT_INSTALL")"
-mkdir -p "$INSTALL_DIR"
+INSTALL_DIR="$(ask_dir '选择安装目录（程序与数据都放这里，长期保留）' "$DEFAULT_INSTALL")"
 INSTALL_DIR="$(cd "$INSTALL_DIR" && pwd)"
 ok "安装目录: $INSTALL_DIR"
 
-for t in curl unzip python3; do command -v "$t" >/dev/null || die "缺少依赖: $t（请先安装）"; done
+for t in curl sha256sum; do command -v "$t" >/dev/null || die "缺少依赖: $t"; done
 command -v upx >/dev/null || warn '未检测到 upx（准备可执行文件时需要；Debian/Ubuntu: apt install upx-ucl）'
 
 get_pinned(){
@@ -103,13 +130,13 @@ get_pinned(){
   die "$label 下载失败或校验不通过（期望 $expect）"
 }
 
-# ── 脱壳 + 打补丁，产物路径输出到 stdout ────────────────────────────────────
+# ── 脱壳 + 打补丁 ───────────────────────────────────────────────────────────
 prepare_binary(){
   local src="$1" out="$2"
   cp -f "$src" "$out"
   upx -d -qq "$out" >/dev/null 2>&1 || true
   # 关键：必须用 printf 的「格式串」写法，不能写成 printf '%s' 或 '%b' ——
-  # 只有格式串会解释反斜杠 x 十六进制转义（与 toolkit/run.sh 保持一致）
+  # 只有格式串会解释 \xHH 十六进制转义（与 toolkit/run.sh 保持一致）
   local p
   p(){ printf "$2" | dd of="$out" bs=1 seek=$(( $1 )) conv=notrunc status=none; }
   p 0x13b4180 '\xb0\x01\xc3'
@@ -127,19 +154,7 @@ prepare_binary(){
   printf '%s' "$out"
 }
 
-# ── 1/2 取件 ────────────────────────────────────────────────────────────────
-head_ '1/2  取得构件（本仓库 Release + sha256 校验）'
-PKG="$WORKDIR/$PACK_NAME"
-get_pinned "$REL_BASE/$PACK_NAME" "$PKG" "$PACK_SHA256" '测试工具包'
-RUN="$WORKDIR/case"
-mkdir -p "$RUN"
-unzip -q "$PKG" -d "$RUN"
-PKGROOT="$(find "$RUN" -maxdepth 2 -name '使用说明.txt' -printf '%h\n' | head -1)"
-[ -n "$PKGROOT" ] || PKGROOT="$(find "$RUN" -maxdepth 2 -name 'README.md' -printf '%h\n' | head -1)"
-[ -n "$PKGROOT" ] || die '包结构异常：未找到 README.md / 使用说明.txt'
-ok "已展开到 $PKGROOT"
-
-head_ "2/2  取得主程序 $PINNED_VER"
+head_ "取得主程序 $PINNED_VER"
 mkdir -p "$INSTALL_DIR/artifacts" "$WORKDIR/artifacts"
 # 复用已手动放置的构件
 if [ -f "$INSTALL_DIR/artifacts/$BIN_NAME" ]; then
@@ -150,22 +165,19 @@ fi
 get_pinned "$REL_BASE/$BIN_NAME" "$BIN" "$BIN_SHA256" '主程序'
 install -m 0644 "$BIN" "$INSTALL_DIR/artifacts/$BIN_NAME" 2>/dev/null || true
 
-# ── 部署 ────────────────────────────────────────────────────────────────────
-head_ '部署'
-PREP="$(prepare_binary "$BIN" "$WORKDIR/mmwx-tested")"
+head_ '安装'
+PREP="$(prepare_binary "$BIN" "$WORKDIR/mmwx-prepared")"
 install -m 0755 "$PREP" "$INSTALL_DIR/mmwx"
 mkdir -p "$INSTALL_DIR/data"
 ok "程序已安装: $INSTALL_DIR/mmwx"
 
-EVID_DIR="$EVID_ROOT/$CASE_NAME/$STAMP"
-if [ -d "$PKGROOT/reports" ]; then
-  mkdir -p "$EVID_DIR" && cp -r "$PKGROOT/reports" "$EVID_DIR/" 2>/dev/null || true
-  [ -d "$EVID_DIR" ] && ok "证据与报告已留存: $EVID_DIR"
-fi
-
+# ── 服务：先清理旧 unit，保证幂等（也能治愈历史坏 unit） ────────────────────
 if [ "$NO_SERVICE" = "1" ]; then
   warn 'MMWX_NO_SERVICE=1 -> 跳过服务注册'
 elif command -v systemctl >/dev/null 2>&1 && systemctl show >/dev/null 2>&1; then
+  systemctl disable --now "$SERVICE" >/dev/null 2>&1 || true
+  rm -f "/etc/systemd/system/$SERVICE.service"
+
   cat > "/etc/systemd/system/$SERVICE.service" <<UNIT
 [Unit]
 Description=MiaomiaowuX $PINNED_VER
@@ -189,7 +201,13 @@ UNIT
   systemctl daemon-reload
   systemctl enable --now "$SERVICE" >/dev/null 2>&1
   sleep 4
-  ok "systemd 服务已注册并启动：$SERVICE.service（已开启开机自启）"
+  if systemctl is-active --quiet "$SERVICE"; then
+    ok "systemd 服务已注册并启动：$SERVICE.service（已开启开机自启）"
+  else
+    warn "服务未能active，最近日志："
+    journalctl -u "$SERVICE" -n 10 --no-pager 2>/dev/null | sed 's/^/      /' || true
+    die "启动失败。可执行文件或路径可能有问题：$INSTALL_DIR/mmwx"
+  fi
   echo
   echo "  管理命令："
   echo "    查看状态 : systemctl status $SERVICE"
@@ -227,12 +245,10 @@ STOP
   echo "  想开机自启：启用 WSL systemd 后重跑本脚本，或把 start.sh 加入 ~/.bashrc"
 fi
 
-rm -rf "$WORKDIR"
 echo
 echo "============================================================"
-echo " 部署完成（持久化）"
+echo " 安装完成（持久化）"
 echo "============================================================"
 echo " 面板地址 : http://<本机IP>:$PORT/"
 echo " 安装目录 : $INSTALL_DIR   （程序 + data/，长期保留）"
 echo " 固定版本 : miaomiaowuX $PINNED_VER"
-[ -d "$EVID_DIR" ] && echo " 证据报告 : $EVID_DIR"

@@ -1,14 +1,14 @@
 # Agent.md — ReverseFinal 交付仓库作业规范
 
-> **这份文件给谁看**：接手本仓库继续做案例、或基于本仓库开发一键安装/部署工具的开发者与 AI Agent。
-> **它约束什么**：目录怎么放、脚本怎么写、安装包怎么定版、一键命令长什么样、Linux 产品默认怎么跑、怎么上传 GitHub。
+> **这份文件给谁看**：接手本仓库继续做案例、或基于本仓库开发**一键安装 / 部署 / 分发**工具的开发者与 AI Agent。
+> **它约束什么**：目录怎么放、脚本怎么写、安装包怎么定版、一键安装长什么样、交互怎么做、Linux 产品默认怎么跑、怎么部署、怎么分发、怎么上传 GitHub。
 > 本仓库所有已交付案例（`HexHub-5.1.9/`、`Listary/`、`MiaomiaowuX-v0.5.4/`、`oneclick/`）都是按本规范做的，可直接当范例读。
 
 ---
 
 ## 0. 一句话原则
 
-> **一条命令可用、版本永远固定、默认持久化、跑完不留垃圾、上传前先自检。**
+> **一条命令装好、产出就是能用的程序、版本永远固定、默认持久化、跑完不留垃圾、上传前先自检。**
 
 ---
 
@@ -36,12 +36,11 @@ ReverseFinal/
 
 ```
 <目标>/
-├── README.md            一页说明：这是什么 / 怎么用 / 跑完能用什么
+├── README.md            一页说明：这是什么 / 怎么用
 ├── PINNED-VERSIONS.md   固定版本与 sha256（必填）
-├── 使用说明.txt          纯文本速查（面向最终使用者）
 ├── installer/           安装包放置说明（大件不入库）、官方校验清单、上游脚本留档
-├── toolkit/             一键工装：取件 + 准备 + 启动/安装 + 页面行为脚本 + deploy/
-├── reports/             评估报告、证据截图（evidence/）、前端资源等
+├── toolkit/             工装源码：取件、解包、打补丁、激活、页面行为脚本、deploy/
+├── reports/             分析报告与证据（**仅仓库留档用，一键脚本不读、不写**）
 └── src/                 自研分析工装源码
 ```
 
@@ -65,15 +64,15 @@ ReverseFinal/
 ### 2.1 双入口：bash + PowerShell
 
 Linux/服务端类目标给 **bash**，Windows 类目标给 **PowerShell**；
-跨平台目标（Linux 服务 + Windows 前端工具）给两个入口，语义保持一致。
+跨平台目标给两个入口，语义与参数命名保持一致。
 
 ### 2.2 PowerShell 脚本三条硬约束
 
 | # | 约束 | 原因 |
 | :--- | :--- | :--- |
 | 1 | **不用 `param()` / `[CmdletBinding()]`** | 这两者只在「脚本文件入口」合法，`irm … \| iex` 会报 `UnexpectedAttribute` |
-| 2 | **必须无 BOM，且整文件纯 ASCII** | BOM 经 `irm` 会变成杂字符把首行注释打断；无 BOM 时 PowerShell 5.1 按 ANSI 读，中文会把解析撑坏 |
-| 3 | **中文输出用 base64 内嵌，运行时解码** | 兼得「源码纯 ASCII」与「输出中文」；模板见下 |
+| 2 | **必须无 BOM，且整文件纯 ASCII** | BOM 经 `irm` 会变成杂字符把首行打断；无 BOM 时 PowerShell 5.1 按 ANSI 读，中文会把解析撑坏 |
+| 3 | **中文输出用 base64 内嵌，运行时解码** | 兼得「源码纯 ASCII」与「输出中文」 |
 
 ```powershell
 function T($b64) { [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($b64)) }
@@ -82,42 +81,36 @@ Write-Host (T '5p6E5Lu25LuOR2l0SHVi...') -ForegroundColor Yellow
 
 生成 base64：`python -c "import base64;print(base64.b64encode('中文'.encode()).decode())"`
 
+> 理想状态是脚本**全部英文输出**——省掉 base64 这一步，也没有编码风险。
+> 已知三份 oneclick 脚本都是全英文，新脚本优先照做；确实需要中文输出时再用上面的办法。
+
 ### 2.3 选项一律走环境变量
 
 ```powershell
-$WorkDir = if ($env:XXX_WORKDIR) { $env:XXX_WORKDIR } else { Join-Path $env:USERPROFILE 'ReverseAudit\xxx' }
-$Auto    = ($env:XXX_YES -eq '1')
+$OutDir = if ($env:XXX_OUTDIR) { $env:XXX_OUTDIR } else { <default> }
+$Auto   = ($env:XXX_YES -eq '1')
 ```
 
-命名前缀与目标一致（`HEXHUB_` / `LISTARY_` / `MMWX_`），常用变量：
+命名前缀与目标一致（`HEXHUB_` / `LISTARY_` / `MMWX_`）。
 
-| 变量 | 含义 |
+| 变量后缀 | 含义 |
 | :--- | :--- |
-| `*_WORKDIR` / `*_INSTALLDIR` | 工作目录 / 安装目录（跳过询问） |
-| `*_YES=1` | 非交互，全部用默认值 |
-| `*_KEEP_FILES=1` | 保留中间产物 |
-| `*_MIRROR` | 自建镜像前缀 |
+| `_OUTDIR` / `_INSTALLDIR` | 输出目录 / 安装目录（跳过询问） |
+| `_YES=1` | 非交互，全部用默认值 |
+| `_MIRROR` | 自建镜像前缀 |
+| `_SKIP_INSTALL=1` | 已装好，跳过安装步骤 |
+| `_RESTORE=1` | 回滚（撤销激活 / 删除授权） |
 
 ### 2.4 bash 脚本约定
 
-- `set -euo pipefail` 开头
-- 交互读取优先 `/dev/tty`，取不到就用默认值，**绝不因无终端而中断**
+- `set -euo pipefail` 开头，`mktemp -d` + `trap cleanup EXIT` 保证临时件必清
+- 交互读取见 §5（**这是本仓库踩过最深的坑**）
 - **补丁类写入必须用 `printf "$2"`（格式串写法）**：
-  `printf '%s'` 不解释 `\xHH`，会写入字面文本把二进制写坏；`%b` 虽可用但与之不一致，统一用格式串。
-- 交互函数模板：
+  `printf '%s'` 不解释 `\xHH`，会写入字面文本把二进制写坏。
 
 ```bash
-ask(){
-  local label="$1" default="$2" v=""
-  if [ "$AUTO" = "1" ]; then printf '%s' "$default"; return 0; fi
-  if [ -t 0 ] || [ -r /dev/tty ]; then
-    printf '%s\n    default [%s]\n    input (Enter = default): ' "$label" "$default"
-    read -r v </dev/tty 2>/dev/null || v=""
-  fi
-  v="$(printf '%s' "$v" | tr -d '\r' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//;s/^"//;s/"$//')"
-  [ -z "$v" ] && v="$default"
-  printf '%s' "$v"
-}
+p(){ printf "$2" | dd of="$out" bs=1 seek=$(( $1 )) conv=notrunc status=none; }
+p 0x13b4180 '\xb0\x01\xc3'
 ```
 
 ### 2.5 安全与幂等
@@ -134,7 +127,10 @@ function Safe-Remove($path) {
 ```
 
 - **幂等可重入**：重复执行应升级/覆盖而不是报错
-- **失败即中止**：校验不过、下载失败，一律 `exit 非零` 并给出「期望值 / 实际值 / 补救办法」
+- **自愈历史故障**：写 unit / 注册服务前，先 `disable --now` + 删旧 unit，
+  这样历史遗留的坏配置会被自动修掉（范例：`mmwx.service` 的 `ExecStart` 曾指向一个坏路径）
+- **启动后要验证**：`systemctl is-active` 不为真就打印最近 10 行日志并 `exit 非零`，
+  **不能只报"已注册"就结束**
 
 ---
 
@@ -160,24 +156,28 @@ if ((Get-FileHash $f -Algorithm SHA256).Hash.ToLower() -ne $PACK_SHA256) { Die '
 ### 3.3 取件顺序（严格三级，不降级到 latest）
 
 ```
-1) 本地已有构件（<工作目录>/artifacts/ 或 installer/）
+1) 本地已有构件（<安装目录>/artifacts/ 或 installer/）
 2) 本仓库 Release 固定件
 3) 自建镜像 *_MIRROR
         ↓   sha256 强制校验
      不匹配 → 立即中止，绝不安装
 ```
 
-### 3.4 必须产出的记录
+### 3.4 构件缓存复用
 
-- 每个目标根目录一份 **`PINNED-VERSIONS.md`**：产品、版本、大小、sha256、（Docker 目标还要摘要）
-- 构建产物哈希对照（如 `BUILD_FINGERPRINTS.txt`）
+主程序类构件（几十 MB 的）缓存到 **`<安装目录>/artifacts/`**，
+重跑时命中即直接复用，避免二次下载。缓存本身不进 git、不入包。
+
+### 3.5 必须产出的记录
+
+- 每个目标根目录一份 **`PINNED-VERSIONS.md`**：产品、版本、大小、sha256、（容器类外加镜像摘要）
 - **同一版本号出现多份外壳时**：各自哈希都记下，并给出「解包产物是否一致」的实测结论
   （范例：HexHub 5.1.9 有两份外壳，`0ce38138…` / `77f7f4fa…`，解包产物逐字节相同）
 
-### 3.5 大件不入库
+### 3.6 大件不入库
 
 - 单文件 > 10 MB 一律不上 git，走 **Release 资产**
-- 每个目标目录写 `.gitignore` 忽略可再生的大件：
+- 目标目录写 `.gitignore` 忽略可再生的大件：
 
 ```
 samples/
@@ -190,64 +190,211 @@ __pycache__/
 
 ---
 
-## 4. 一键安装要求
+## 4. 一键脚本 = 纯安装器 ★ 核心条款
 
-### 4.1 形态：一条命令
+> **一键脚本的产出物，是一个「可以直接使用的目标程序」，不是一份报告。**
+> 用户跑完之后，机器上应该多出一个能用的软件，而不是一堆 .md。
 
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/<case>.ps1 | iex"
+### 4.1 产出物定义
+
+| 目标类型 | 产出物 | 用户拿到后 |
+| :--- | :--- | :--- |
+| 便携式客户端 | 一个程序目录，内含全部文件 | 双击主程序即可用 |
+| 安装式桌面软件 | 装好的程序 + 激活状态 | 托盘/开始菜单启动，功能已解锁 |
+| 服务端产品 | 常驻服务 + 开机自启 | 直接访问面板 |
+| 容器化产品 | 运行中的容器 + 数据卷 | 直接访问面板 |
+
+### 4.2 硬性禁止（违反即返工）
+
+| 禁止 | 说明 |
+| :--- | :--- |
+| ✗ 生成 `.md` 文件 | 不在用户机器上写任何说明文档 |
+| ✗ 生成报告目录 | 不 `cp -r reports/`、不建 `REPORT.md` |
+| ✗ 生成证据目录 | 不建 `ReverseAudit-Evidence/`、不抓验证截图 |
+| ✗ 把中间产物留在机器上 | 下载包、解包副本、临时工装目录全部清理 |
+| ✗ 只输出"审计结论" | 脚本必须交付可运行的程序，不是结论 |
+
+> **报告在哪？** 报告属于**仓库的 `reports/` 目录**，是仓库留档物，由开发者提交进 git。
+> 一键脚本**既不读取也不生成**它。
+
+### 4.3 保留规则
+
+- **产出目录长期保留**，不被清理（用户就是要用它）
+- 只清理**中间件**：下载的 zip / exe、解包临时目录、工装 stage 目录
+- 构件缓存放 `<安装目录>/artifacts/`，保留（利于重跑与升级）
+
 ```
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/<case>.sh)
+清理前                         清理后
+├── 下载的 installer.exe   →    （删除）
+├── stage/ 解包副本        →    （删除）
+└── <产出目录>/            →    ✅ 保留，可直接运行
+    <产出目录>/artifacts/  →    ✅ 保留（构件缓存）
 ```
 
-入口脚本统一放 **`oneclick/`**，一个目标一个文件，文件名 `目标-用途.ps1/.sh`。
+### 4.4 输出规范
 
-### 4.2 四个必备阶段
+结尾必须给出**可执行的三件事**：
+
+```
+============================================================
+ done
+============================================================
+ HexHub   : C:\Users\...\Desktop\HexHub-5.1.9\HexHub.exe
+ version  : 5.1.9
+ launch   : double-click HexHub.exe (portable, no installer needed)
+ remove   : just delete the folder C:\Users\...\Desktop\HexHub-5.1.9
+```
+
+即：**产物路径 / 怎么启动 / 怎么删除**。
+
+### 4.5 四个必备阶段
 
 | 阶段 | 必须做的事 |
 | :--- | :--- |
-| **① 开场告知** | 打印「构件来自 GitHub，中国大陆网络可能较慢」+ 两条备选（自建镜像、手动放置后重跑） |
-| **② 自选目录** | 交互询问安装/工作目录，回车用默认；**做可写性探测**，不可写让用户重输 |
+| **① 开场告知** | 打印「构件来自 GitHub，中国大陆网络可能较慢（并给出体积）」+ 两条备选（自建镜像、手动放置后重跑） |
+| **② 自选目录** | 交互询问产出目录，回车用默认；**校验绝对路径 + 可写性**（见 §5） |
 | **③ 取件校验** | 按 §3.3 三级取件 + sha256 强制校验 |
-| **④ 安装即持久化** | 见 §5；结束时**中间产物自动清理、证据另存** |
+| **④ 安装即持久化** | 见 §6；结束时清理中间件，产出物保留 |
 
-### 4.3 结束行为
+### 4.6 默认目录 = 桌面
 
+Windows 侧产出目录默认放在**桌面**，不要用 `%USERPROFILE%\ReverseAudit\...` 这类隐蔽路径：
+
+```powershell
+$Desktop = [Environment]::GetFolderPath('Desktop')
+$DefaultOut = Join-Path $Desktop 'HexHub-5.1.9'      # 便携式：直接产品名+版本
+$DefaultInstall = Join-Path $Desktop 'Listary'       # 安装式：产品名
 ```
-=== cleanup ===
-  [+] evidence kept : %USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>\
-  [+] intermediates removed: <工作目录>
-```
 
-- **证据先另存**再删中间产物
-- 只留存**真证据**：`*.png` 截图 + `reports/` 文档；**绝不**把几百 MB 的中间流文件当证据留下
-- `*_KEEP_FILES=1` 可关闭清理
-
-### 4.4 必须给出卸载/回滚路径
-
-| 目标类型 | 回滚 |
-| :--- | :--- |
-| Windows 桌面软件 | 撤销授权 `*_RESTORE=1`；卸载 `unins000.exe /VERYSILENT` |
-| Linux 服务 | `systemctl disable --now <svc>` + 删 unit + 删安装目录 |
-| 纯测试 | 删工作目录即可 |
+Linux 服务端产品默认 `/opt/<产品>`（服务本体放桌面没有意义，见 §6.2）。
 
 ---
 
-## 5. Linux 产品默认持久化
+## 5. 交互规范（硬性）★ 血泪条款
+
+> 这一节的两个坑都在实测中真实触发过，务必照抄。
+
+### 5.1 坑一：提示不能写 stdout（bash）
+
+交互函数通常这样用：`DIR="$(ask '选择目录' '/opt/x')"`。
+**命令替换会捕获函数内所有 stdout**。若提示用 `printf` 打到 stdout，
+提示文字会被当成返回值拼进目录名——实测产生了名为
+`/root/选择安装目录（程序与数据都放这里，长期保留）\n    default [/opt/mmwx]` 的目录，
+并让 systemd 报 `status=203/EXEC`。
+
+```bash
+# ❌ 错：提示进 stdout，被 $( ) 捕获
+ask(){ printf '输入目录: '; read -r v; printf '%s' "$v"; }
+
+# ✅ 对：提示全部 >&2，stdout 只输出答案
+ask(){
+  local label="$1" default="$2" v=""
+  if ! is_tty; then printf '%s' "$default"; return 0; fi
+  { printf '%s\n' "$label"
+    printf '    default [%s]\n' "$default"
+    printf '    input (Enter = default): '; } >&2
+  read -r -t 300 v </dev/tty 2>/dev/null || v=""
+  v="$(printf '%s' "$v" | tr -d '\r' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//;s/^"//;s/"$//')"
+  [ -z "$v" ] && v="$default"
+  printf '%s' "$v"
+}
+```
+
+> PowerShell 天然安全：`Write-Host` 走 host 流，不会被 `$x = Func` 捕获。
+> 但**绝对不要**在交互函数里用 `Write-Output` / 裸字符串输出提示。
+
+### 5.2 坑二：`[ -r /dev/tty ]` 不能用来判断「有人能输入」
+
+管道 / 自动化执行时，`/dev/tty` **可能可打开但无人输入**，
+此时 `read -r v </dev/tty` 会**永久阻塞**（实测卡死）。
+
+```bash
+# ❌ 错：判据太弱，会卡死
+if [ -t 0 ] || [ -r /dev/tty ]; then read -r v </dev/tty; fi
+
+# ✅ 对：必须真终端 + 超时兜底
+is_tty(){
+  [ "${AUTO:-0}" = "1" ] && return 1
+  [ -t 0 ] && return 0                 # stdin 是终端
+  [ -t 2 ] && [ -c /dev/tty ] && return 0   # stderr 是终端且有 tty 设备
+  return 1
+}
+# ...并且 read 一律带 -t
+read -r -t 300 v </dev/tty 2>/dev/null || v=""
+```
+
+### 5.3 PowerShell 对应写法
+
+```powershell
+function Test-Interactive {
+    if ($Auto) { return $false }
+    if (-not [Environment]::UserInteractive) { return $false }
+    try { if ([Console]::IsInputRedirected) { return $false } } catch { return $false }
+    return $true
+}
+
+function Ask-Dir($label, $default) {
+    if (-not (Test-Interactive)) { return $default }
+    while ($true) {
+        Write-Host $label -ForegroundColor White
+        Write-Host ("    default [" + $default + "]") -ForegroundColor DarkGray
+        Write-Host -NoNewline "    input (Enter = default): " -ForegroundColor DarkGray
+        $v = $null
+        try { $v = Read-Host } catch { return $default }
+        if ([string]::IsNullOrWhiteSpace($v)) { return $default }
+        $v = $v.Trim().Trim('"')
+        try {
+            New-Item -ItemType Directory -Force -Path $v | Out-Null
+            $probe = Join-Path $v ('.w-' + [guid]::NewGuid().ToString('N').Substring(0,8))
+            Set-Content -Path $probe -Value 'ok' -ErrorAction Stop
+            Remove-Item $probe -Force
+            return $v
+        } catch { Warn "cannot write to '$v', try another path" }
+    }
+}
+```
+
+### 5.4 输入校验三件套
+
+1. **形态校验**：bash 要求绝对路径（`case "$v" in /*)`），Windows 拒绝非法字符
+2. **可写性探测**：真写一个随机探针文件再删掉，不要只判断 `Test-Path`
+3. **循环重问**：不合法就重问；`*_YES=1` 时直接报错退出，不要静默用错值
+
+### 5.5 非交互时要有交代
+
+```bash
+if ! is_tty; then
+  c '90' ' (非交互执行：全部使用默认值；想自选目录请设置 MMWX_INSTALLDIR)'
+fi
+```
+
+不能静默吞掉提问，否则用户以为脚本坏了。
+
+---
+
+## 6. 部署形态
+
+### 6.1 形态矩阵
+
+| 形态 | 适用 | 默认目录 | 启动方式 | 卸载方式 |
+| :--- | :--- | :--- | :--- | :--- |
+| **Windows 便携** | 免安装客户端 | `桌面\<产品>-<版本>` | 双击主程序 | 删目录 |
+| **Windows 安装** | 需服务/驱动/托盘的桌面软件 | `桌面\<产品>` | 托盘 / 开始菜单 | `<目录>\unins000.exe /VERYSILENT` |
+| **Linux 服务** | 服务端产品 | `/opt/<产品>` | systemd 常驻 + 开机自启 | `disable --now` + 删 unit + 删目录 |
+| **容器** | 需隔离/依赖复杂的产品 | 数据卷 | `docker compose up -d` | `docker compose down -v` |
+
+### 6.2 Linux 产品默认持久化
 
 > **规则**：Linux/服务端类目标，一键脚本**默认生产模式**，装完即常驻 + 开机自启，**不做临时测试运行**。
-
-### 5.1 目录规划
 
 ```
 <安装目录>/            默认 /opt/<产品>
 ├── <binary>           可执行文件（0755）
-├── artifacts/         固定版本构件缓存（可复用，避免重复下载）
+├── artifacts/         固定版本构件缓存（重跑复用，避免重复下载）
 └── data/              数据目录（长期保留）
 ```
 
-### 5.2 systemd 单元模板
+**systemd 单元模板**
 
 ```ini
 [Unit]
@@ -269,26 +416,84 @@ LimitNOFILE=1048576
 WantedBy=multi-user.target
 ```
 
-安装流程：写 unit → `systemctl daemon-reload` → `systemctl enable --now <svc>` → `sleep 4` → 打印管理命令。
+部署流程：`disable --now` 清旧 unit → 写 unit → `daemon-reload` → `enable --now` → `sleep 4` → **校验 active** → 打印管理命令。
 
-### 5.3 无 systemd 时降级
+**无 systemd 时降级**：WSL / 容器里自动降级为安装目录下的 `start.sh` / `stop.sh` + `nohup` + `<产品>.log`，并提示如何启用 WSL systemd 后重跑。
 
-WSL / 容器里没有可用的 systemd 时，**自动降级**为安装目录下的 `start.sh` / `stop.sh` + `nohup` + `mmwx.log`，并提示如何启用 WSL systemd 后重跑。
-
-### 5.4 必须打印的管理命令
+**必须打印的管理命令**
 
 ```
-查看状态 : systemctl status <svc>      启动/重启 : systemctl start|restart <svc>
+查看状态 : systemctl status <svc>      重启 : systemctl restart <svc>
 停止     : systemctl stop <svc>        取消自启 : systemctl disable <svc>
 实时日志 : journalctl -u <svc> -f
 卸载     : systemctl disable --now <svc> && rm -f /etc/systemd/system/<svc>.service && rm -rf <安装目录>
 ```
 
+### 6.3 Windows 安装式软件
+
+- 静默安装：Inno Setup 用 `/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR="<目录>"`
+- 安装前后要判断：**已装且哈希等于固定版本 → 跳过**；已装但版本不同 → 提示并重装
+- 安装完 `Start-Sleep 3` 再执行后续步骤（服务/托盘需要起来）
+- 必须给出回滚与卸载命令
+
+### 6.4 升级路径
+
+重跑同一条命令即升级：覆盖可执行文件 / 重装程序，**`data/` 与用户配置不动**。
+
 ---
 
-## 6. 文档规范
+## 7. 分发规范
 
-### 6.1 首页 `README.md` —— 只放三块
+### 7.1 三条分发通道（脚本必须都支持）
+
+| 通道 | 用什么 | 说明 |
+| :--- | :--- | :--- |
+| **主通道** | 本仓库 Release（固定 tag） | 默认走这里，URL 写死在脚本里 |
+| **镜像通道** | `*_MIRROR` 环境变量 | 中国大陆加速；脚本把镜像 URL 与官方 URL 一起放进候选列表逐个试 |
+| **离线通道** | `<安装目录>/artifacts/` | 用户手动放构件，脚本命中即用，不下载 |
+
+```bash
+urls=("$official")
+[ -n "${XXX_MIRROR:-}" ] && urls+=("${XXX_MIRROR%/}/$(basename "$official")")
+for u in "${urls[@]}"; do ... done
+```
+
+### 7.2 开场必须提示网络状况
+
+```
+ [!] artifacts are downloaded from GitHub; in mainland China this can be slow (installer ~145 MB).
+     if that is a problem, either:
+       - use a mirror:  $env:HEXHUB_MIRROR='https://your-mirror/xxx'
+       - download the installer manually and put it into the temp folder, then re-run
+```
+
+三条信息缺一不可：**从哪下 / 多大 / 慢怎么办**。
+
+### 7.3 离线分发包（可选）
+
+需要完全离线时，打一份自包含分发包：
+
+```
+<产品>-offline-v<版本>/
+├── artifacts/         全部固定构件
+├── install.ps1 / .sh  一键脚本
+└── install-offline.*  把 *_MIRROR 指向本地目录的包装脚本
+```
+
+### 7.4 资产命名（ASCII）
+
+- 主程序：`<产品>-<版本>-<平台>.<扩展名>`
+- 测试/工装包：`<产品>-whitebox-audit-pack-v<版本>.zip`
+- 离线镜像：`<产品>-docker-image-<版本>.tar.gz`
+- 校验清单：`SHA256SUMS.txt`
+
+> **必须 ASCII**：中文名经 GitHub API 上传会被转义成 `.`，需要改名。
+
+---
+
+## 8. 文档规范
+
+### 8.1 首页 `README.md` —— 只放三块
 
 1. **声明**（一两句话，仅首页有）
 2. **一键命令**（各目标一条 + 固定版本表 + Release 链接）
@@ -296,41 +501,40 @@ WSL / 容器里没有可用的 systemd 时，**自动降级**为安装目录下�
 
 > 首页**不写**漏洞细节、不写整改建议、不写技术章节。
 
-### 6.2 目标目录 `README.md` —— 一页讲完
+### 8.2 目标目录 `README.md` —— 一页讲完
 
 ```
 # <产品> <版本>              ← 标题只留名字，不加「· 测试包」「· 白盒鉴权」之类后缀
 一、这是什么软件            产品用途 + 免费档/付费档差异
-二、测试后可用功能          ★ 跑完能用哪些功能（表格）
+二、跑完能用什么            ★ 装完/跑完能用哪些功能（表格）
 三、环境要求
 四、一条命令跑通            只保留一键方式，不铺开方式 B/C
-五、跑完看到什么            观察项对照表
-六、使用方式（可选）        持久化部署 / 容器部署
-七、目录说明                目录树 + 报告索引
+五、产物与运维              产出目录 / 启动 / 管理命令 / 卸载
+六、目录说明                目录树 + 报告索引
 ```
 
 **禁止**：`第 N 步：记录基线`、`方式 B/C：分步执行`、`第 N 步：对比结论`、`这个测试包要验证什么` 这类冗余章节。
 
-### 6.3 子页不放声明
+### 8.3 子页不放声明
 
 声明只在首页。**子目录 README 一律不写免责声明**。
 
-### 6.4 技术细节下沉
+### 8.4 技术细节下沉
 
-成因分析、逆向位点、整改建议 → 全部放 `reports/`；
+成因分析、逆向位点、加固建议 → 全部放 `reports/`；
 README 只保留「是什么 / 怎么用 / 用完能用什么 / 去哪找报告」。
 
 ---
 
-## 7. 上传 GitHub 规范
+## 9. 上传 GitHub 规范
 
-### 7.1 提交信息：短
+### 9.1 提交信息：短
 
 - 一律 `update` / `remove` / `fix` 这类**单词级**信息
 - **不要**长篇 commit message
 - 一次提交只做一类事（改脚本 / 改文档 / 换构件）
 
-### 7.2 行尾与属性
+### 9.2 行尾与属性
 
 `.gitattributes` 固定：
 
@@ -350,57 +554,59 @@ README 只保留「是什么 / 怎么用 / 用完能用什么 / 去哪找报告�
 *.png       -text -diff
 ```
 
-> 用脚本改文件时注意：Python 在 Windows 上默认会把 `\n` 写成 `\r\n`，
-> 必须 `open(..., newline='')` 或显式 `newline='\n'`，否则 `.sh` 带 CRLF 直接跑不起来。
+> 用脚本改文件时注意：Python 在 Windows 上默认把 `\n` 写成 `\r\n`，
+> 必须 `open(..., newline='')` 或 `newline='\n'`，否则 `.sh` 带 CRLF 直接跑不起来。
 
-### 7.3 大件走 Release
+### 9.3 大件走 Release
 
-- 单文件 > 10 MB → Release 资产，命名 `<产品>-<版本>-<平台>.<扩展名>`
-- 测试包 → `<产品>-whitebox-audit-pack-v<版本>.zip`
+- 单文件 > 10 MB → Release 资产
 - 每次 Release 必带 **`SHA256SUMS.txt`**
-- 资产名**用 ASCII**：中文名经 API 上传会被转义成 `.`，需要改名
+- 需要替换资产时：先 DELETE 旧 asset（按 id），再 POST 新资产
 
-### 7.4 Release 内容清单（模板）
-
-| 资产 | 说明 |
-| :--- | :--- |
-| `<产品>-<版本>-<平台>` | 被测软件固定版本 |
-| `<产品>-whitebox-audit-pack-v<版本>.zip` | 测试工具包 |
-| `<产品>-docker-image-<版本>.tar.gz` | 离线镜像（容器类目标） |
-| `SHA256SUMS.txt` | 全部构件哈希 |
-
-### 7.5 上传后必做
+### 9.4 上传后必做
 
 1. 用 API 校验资产清单与哈希（**不要只看网页**）
 2. 与脚本内嵌哈希逐一对齐
 3. **注意 CDN 边缘缓存**：`raw.githubusercontent.com` 在推送后约 1–2 分钟仍可能返回旧版；
-   验证时可用 `?cb=<随机数>` 绕缓存，确认无误后再按默认 URL 复测
+   验证时可加 `?cb=<随机数>` 绕缓存，确认无误后再按默认 URL 复测
 
 ---
 
-## 8. 交付前检查清单
+## 10. 交付前检查清单
 
 **脚本**
 
 - [ ] PowerShell：无 `param()`、无 BOM、纯 ASCII、`irm | iex` 与 `-File` 双通
 - [ ] bash：`bash -n` 通过、LF 行尾、无 CRLF
-- [ ] 交互询问目录 + 可写性探测
+- [ ] **交互提示走 stderr / Write-Host**（不得进 stdout）
+- [ ] **交互性判定用 `is_tty` / `Test-Interactive`，`read` 带 `-t`**
+- [ ] **非交互执行不卡死**（`bash script.sh < /dev/null` 实测通过）
+- [ ] 目录有效性校验（绝对路径 + 写探针）
 - [ ] 危险删除有浅路径保护
-- [ ] 重复执行幂等
+- [ ] 重复执行幂等；能自愈历史坏 unit
+- [ ] 服务启动后校验 `is-active`，失败要打日志并非零退出
+
+**产出物（纯安装器）**
+
+- [ ] **不生成任何 `.md` / 报告 / 证据目录**
+- [ ] 产出目录 = 可直接运行的程序目录，**长期保留**
+- [ ] 中间件（下载包 / stage / 解包副本）全部清理
+- [ ] 结尾打印：产物路径 / 启动方式 / 删除方式
 
 **版本与取件**
 
 - [ ] 无 `latest`、无 `:latest`
 - [ ] 被测软件 sha256 写死在脚本
-- [ ] 三级取件 + 强制校验
+- [ ] 三级取件（本地缓存 / Release / 镜像）+ 强制校验
+- [ ] `<安装目录>/artifacts/` 缓存复用生效
 - [ ] `PINNED-VERSIONS.md` 齐全
 
-**一键体验**
+**分发与部署**
 
-- [ ] 开场提示 GitHub 国内慢 + 两条备选
-- [ ] 默认持久化（Linux 产品）
-- [ ] 证据另存 / 中间产物自动清理
-- [ ] 打印管理命令与卸载方法
+- [ ] 开场提示「从哪下 / 多大 / 慢怎么办」
+- [ ] Linux 产品默认持久化（systemd + 开机自启）
+- [ ] Windows 默认产出目录在**桌面**
+- [ ] 打印完整卸载方法
 
 **仓库**
 
@@ -414,20 +620,20 @@ README 只保留「是什么 / 怎么用 / 用完能用什么 / 去哪找报告�
 
 ---
 
-## 9. 已有案例的固定版本（速查）
+## 11. 已有案例的固定版本（速查）
 
-| 目标 | 固定版本 | 一键入口 | 默认行为 |
-| :--- | :--- | :--- | :--- |
-| HexHub | **5.1.9** | `oneclick/hexhub-vip-test.ps1` | 静态解包副本运行 + 取证，结束清理 |
-| Listary 6 | **6.3.5.94** | `oneclick/listary-pro-test.ps1` | 安装固定版本 + 授权验证，保留安装 |
-| 妙妙屋X | **v0.5.4** | `oneclick/miaomiaowux-license-test.sh/.ps1` | **持久化部署**（systemd 常驻 + 开机自启） |
+| 目标 | 固定版本 | 一键入口 | 产出物 | 默认目录 |
+| :--- | :--- | :--- | :--- | :--- |
+| HexHub | **5.1.9** | `oneclick/hexhub-vip-test.ps1` | 便携式 HexHub 目录（已打补丁） | `桌面\HexHub-5.1.9` |
+| Listary 6 | **6.3.5.94** | `oneclick/listary-pro-test.ps1` | 正常安装的 Listary Pro | `桌面\Listary` |
+| 妙妙屋X | **v0.5.4** | `oneclick/miaomiaowux-license-test.sh` / `.ps1` | systemd 常驻服务 | `/opt/mmwx` |
 
 > 所有构件托管于本仓库 Release：
 > `https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0`
 
 ---
 
-## 10. 免责声明
+## 12. 免责声明
 
 本仓库仅用于**已完成授权的自有资产 / 沙盒环境**的安全验证与防御加固研究。
 使用者须自行确认测试目标处于合法授权范围内。

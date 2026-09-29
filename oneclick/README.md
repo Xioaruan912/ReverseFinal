@@ -1,14 +1,35 @@
-# 一键白盒鉴权脆弱性测试
+# 一键安装
 
-三条命令，各自复制即用。**测试工具包与被测软件全部从本交付仓库
+三条命令，各自复制即用。**工具包与被测软件全部从本交付仓库
 （`Xioaruan912/ReverseFinal`）拉取**，下载后逐一校验 sha256，不匹配立即中止；
-全程不访问被测软件官网的「最新版」地址，避免厂商发新版后测试对象漂移、结论不可复现。
+全程不访问被测软件官网的「最新版」地址，避免厂商发新版后对象漂移、结果不可复现。
 
-| 案例 | 被测软件 | 固定版本 | 入口脚本 |
-|---|---|---|---|
-| HexHub | SSH / SFTP / Docker / 数据库客户端 | 5.1.9 | `hexhub-vip-test.ps1` |
-| Listary 6 | Windows 文件搜索增强 | 6.3.5.94 | `listary-pro-test.ps1` |
-| 妙妙屋X | 自托管 Xray 节点管理与订阅分发 | v0.5.4 | `miaomiaowux-license-test.sh` / `.ps1` |
+**脚本是安装器，不是报告生成器**：跑完给你一个**可直接使用的目标程序**，
+不在机器上生成任何 `.md` / 报告 / 证据目录，下载包与临时文件自动清理。
+
+| 目标 | 被测软件 | 固定版本 | 入口脚本 | 跑完得到 | 默认目录 |
+|---|---|---|---|---|---|
+| HexHub | SSH / SFTP / Docker / 数据库客户端 | 5.1.9 | `hexhub-vip-test.ps1` | 便携式 HexHub（免安装） | `桌面\HexHub-5.1.9` |
+| Listary 6 | Windows 文件搜索增强 | 6.3.5.94 | `listary-pro-test.ps1` | 正常安装的 Listary Pro | `桌面\Listary` |
+| 妙妙屋X | 自托管 Xray 节点管理与订阅分发 | v0.5.4 | `miaomiaowux-license-test.sh` / `.ps1` | systemd 常驻服务 + 开机自启 | `/opt/mmwx` |
+
+---
+
+## 0. 关于下载速度
+
+三个脚本开场都会提示：
+
+```
+ [!] 构件从 GitHub 下载，中国大陆网络可能较慢（主程序约 35 MB / 安装包约 145 MB）。
+     若下载困难，可任选其一：
+       - 自建镜像：  MMWX_MIRROR=https://your-mirror/xxx 重跑
+       - 先手动下载 <构件> 放进 <安装目录>/artifacts/ 后重跑
+```
+
+## 0.1 关于目录选择
+
+脚本会**询问安装目录**，直接回车用默认值。非交互执行（管道 / 自动化）时自动用默认值，
+此时想自选目录请用环境变量。
 
 ---
 
@@ -18,19 +39,22 @@
 powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/hexhub-vip-test.ps1 | iex"
 ```
 
-脚本会：拉取测试工具包 → 校验 → 拉取 HexHub 5.1.9 安装包 → 校验 → 环境自检 → 执行测试并出截图。
+脚本会：拉测试工具包 → 校验 → 拉 HexHub 5.1.9 安装包 → 校验 →
+**静态解包（不执行安装程序）** → 打等长字节补丁 → 产出便携目录。
 
-保存到本地再跑（推荐，参数更全）：
+跑完得到 `桌面\HexHub-5.1.9\HexHub.exe`，双击即可用；卸载就是删掉这个文件夹。
 
 ```powershell
-curl.exe -fL -o hexhub-vip-test.ps1 https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/hexhub-vip-test.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\hexhub-vip-test.ps1
-# 可选参数： -StopAtEnd  跑完自动关闭被测程序
-#           -KeepFiles  保留工作目录
-#           -WorkDir D:\lab\hexhub
+# 自选目录 + 非交互
+$env:HEXHUB_OUTDIR='D:\hexhub'; $env:HEXHUB_YES='1'
+irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/hexhub-vip-test.ps1 | iex
 ```
 
-跑完后看点：`%TEMP%\hexhub-lab\case\exports\` 里的截图，以及 `reports\` 里的报告。
+| 环境变量 | 说明 |
+|---|---|
+| `HEXHUB_OUTDIR` | 输出目录（跳过询问） |
+| `HEXHUB_YES=1` | 非交互，全部用默认值 |
+| `HEXHUB_MIRROR` | 自建镜像前缀 |
 
 ---
 
@@ -40,122 +64,68 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\hexhub-vip-test.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/listary-pro-test.ps1 | iex"
 ```
 
-脚本会：拉取测试工具包 → 校验 → 拉取 Listary 6.3.5.94 安装包与主程序 → 校验 →
-（未安装则静默安装）→ 执行鉴权测试 → 复核状态。
+脚本会：拉测试工具包 → 校验 → 拉 Listary 6.3.5.94 安装包与主程序 → 校验 →
+（未装则静默安装到指定目录）→ 写入自洽权益 → 复核状态。
+
+跑完得到**正常安装、已激活的 Listary Pro**；卸载走官方卸载器。
 
 ```powershell
-curl.exe -fL -o listary-pro-test.ps1 https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/listary-pro-test.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\listary-pro-test.ps1 -Email 你的邮箱@example.com
-# 可选参数： -SkipInstall   已装好 Listary 时跳过安装
-#           -Restore       回滚到测试前状态
-#           -WorkDir D:\lab\listary
+$env:LISTARY_INSTALLDIR='D:\Listary'; $env:LISTARY_EMAIL='you@example.com'
+irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/listary-pro-test.ps1 | iex
 ```
 
-跑完后看点：Listary 托盘右键 → 设置，专业版状态是否已生效。
+| 环境变量 | 说明 |
+|---|---|
+| `LISTARY_INSTALLDIR` | 安装目录（跳过询问） |
+| `LISTARY_EMAIL` | 权益邮箱，默认 `%USERNAME%@lab.local` |
+| `LISTARY_YES=1` | 非交互，全部用默认值 |
+| `LISTARY_SKIP_INSTALL=1` | 已装好，跳过安装步骤 |
+| `LISTARY_RESTORE=1` | 删除权益，回到未激活状态 |
+| `LISTARY_MIRROR` | 自建镜像前缀 |
 
 ---
 
-## 3. 妙妙屋X · 许可与数量配额
+## 3. 妙妙屋X · 授权与配额
 
-**Linux / WSL：**
+**Linux / WSL（默认持久化：装成 systemd 服务 + 开机自启）**
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
 ```
 
-**Windows（自动交给 WSL 执行）：**
+**Windows**
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.ps1 | iex"
 ```
 
-脚本会：拉取测试工具包 → 校验 → 取固定版本 v0.5.4 主程序 → 校验 →
-在 `12889` 端口启动测试实例。
+跑完得到**常驻服务**，直接访问面板即可；安装目录（程序 + `data/`）长期保留。
 
 ```bash
-PORT=12889 WORKDIR=~/mmwx-lab bash <(curl -fsSL .../oneclick/miaomiaowux-license-test.sh)
-# 自建镜像作为 Release 的备用源
-MMWX_MIRROR=https://your-mirror/mmwx bash <(...)
+# 自选安装目录
+MMWX_INSTALLDIR=/srv/mmwx bash <(curl -fsSL .../miaomiaowux-license-test.sh)
 ```
 
-启动后浏览器打开 `http://127.0.0.1:12889/`：首次进入是初始化向导 → 创建管理员 →
-登录后到「系统设置 → 许可证」对照档位与数量上限。
-
----
-
----
-
-## 运行方式
-
-三条命令都是**交互式**的，会先问你两件事，然后自动跑完并清理：
-
-1. **下载源提示** —— 构件从 GitHub 拉取，中国大陆网络可能较慢，脚本会给出镜像/手动放置两条备选
-2. **自选目录** —— 让你指定安装/工作目录（直接回车用默认值）
-
-跑完后：
-
-- **证据与报告** 自动复制到 `%USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>\`
-- **中间产物**（下载的包、解包副本）自动删除
-- Linux 产品（妙妙屋X）**默认持久化**：安装到指定目录 + systemd 常驻 + 开机自启，
-  安装目录与 `data/` 长期保留；Windows 桌面软件保留已安装的程序
-- 想保留中间产物：加 `..._KEEP_FILES=1`
-
-### 可用环境变量（跳过交互）
-
-| 变量 | 作用 |
-| :--- | :--- |
-| `HEXHUB_WORKDIR` / `LISTARY_WORKDIR` / `MMWX_INSTALLDIR` | 直接指定工作目录 / 安装目录 |
-| `LISTARY_INSTALLDIR` | 指定 Listary 安装目录（默认 `C:\Program Files\Listary`） |
-| `HEXHUB_YES` / `LISTARY_YES` / `MMWX_YES` | `=1` 非交互，全部用默认值 |
-| `HEXHUB_KEEP_FILES` / `LISTARY_KEEP_FILES` / `MMWX_KEEP_FILES` | `=1` 保留中间产物 |
-| `HEXHUB_MIRROR` / `LISTARY_MIRROR` / `MMWX_MIRROR` | 自建镜像前缀（GitHub 慢时用） |
-| `PORT` | 妙妙屋X 面板端口（默认 12889） |
-
-### 下载慢怎么办
-
-```powershell
-# 方式一：自建镜像
-$env:HEXHUB_MIRROR='https://your-mirror/xxx'; irm <脚本地址> | iex
-
-# 方式二：先手动下载，放进工作目录后重跑（脚本会自动校验 sha256）
-```
-
----
-
-## 构件来源与校验
-
-所有构件都在本交付仓库的 Release：
-
-**`https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0`**
-
-| 构件 | 用途 |
+| 环境变量 | 说明 |
 |---|---|
-| `HexHub-whitebox-audit-pack-v1.0.zip` | HexHub 测试工具包 |
-| `HexHub-Client-5.1.9-windows-amd64-setup.exe` | HexHub 5.1.9 安装包 |
-| `Listary-whitebox-audit-pack-v1.0.zip` | Listary 测试工具包 |
-| `Listary-6.3.5.94-setup.exe` / `...-main.exe` | Listary 6.3.5.94 安装包 / 主程序 |
-| `miaomiaowuX-whitebox-audit-pack-v1.0.zip` | 妙妙屋X 测试工具包 |
-| `mmwx-v0.5.4-linux-amd64` / `...-windows-amd64.exe` | 妙妙屋X v0.5.4 主程序 |
-| `miaomiaowux-docker-image-v0.5.4.tar.gz` | 妙妙屋X 离线镜像 |
-| `SHA256SUMS.txt` | 全部构件的哈希清单 |
-
-三个一键脚本把**被测软件的哈希直接写在脚本里**（改版本时同步改），
-下载后强制比对，不匹配即中止，绝不安装未经验证的二进制。
+| `MMWX_INSTALLDIR` | 安装目录，默认 `/opt/mmwx` |
+| `MMWX_YES=1` | 非交互，全部用默认值 |
+| `MMWX_NO_SERVICE=1` | 只安装，不注册 systemd 服务 |
+| `MMWX_MIRROR` | 自建镜像前缀 |
+| `PORT` | 面板端口，默认 `12889` |
 
 ---
 
-## 落点与清理
-
-| 案例 | 中间产物落点 | 自动清理 | 回滚 |
-| :--- | :--- | :--- | :--- |
-| HexHub | `%USERPROFILE%\ReverseAudit\hexhub\` | 测试结束自动删除 | 删目录即可 |
-| Listary | `%USERPROFILE%\ReverseAudit\listary\` | 测试结束自动删除 | `LISTARY_RESTORE=1` 撤销授权；卸载用 `unins000.exe` |
-| 妙妙屋X | `~/ReverseAudit/miaomiaowuX/`（WSL 内） | 停止实例后自动删除 | 删目录即可；不写 systemd、不动 `/etc` |
-
-**证据与报告不随中间产物删除**，统一留存到：
+## 4. 跑完发生什么
 
 ```
-%USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>\
+清理前                              清理后
+├── 下载的安装包 / 工具包        →   （删除）
+├── stage 解包副本 / 临时工装    →   （删除）
+└── <产出目录>/                  →   ✅ 保留，可直接运行
+    <产出目录>/artifacts/        →   ✅ 保留（构件缓存，重跑不再下载）
 ```
 
-> 本目录所有脚本仅用于**已完成授权的沙盒 / 自有资产**安全测试。
+- **不生成** `.md`、报告目录、证据目录
+- 重跑同一条命令即**升级**：覆盖可执行文件，`data/` 与用户配置不受影响
+- 每个脚本结尾都会打印：**产物路径 / 怎么启动 / 怎么删除**

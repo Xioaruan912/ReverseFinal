@@ -6,18 +6,19 @@
 # Usage 2 (save to disk first, then configure via environment variables):
 #   powershell -NoProfile -ExecutionPolicy Bypass -File .\miaomiaowux-license-test.ps1
 #
-# Behavior:
-#   * asks you where to put the install/working directory
-#   * hands the work to WSL, which fetches pinned artifacts and runs the audit
-#   * when the test instance stops, intermediates are cleaned automatically
+# Behavior (pure installer: produces a running service, no .md / reports / evidence):
+#   * warns that artifacts come from GitHub (slow in mainland China) and offers alternatives
+#   * asks you where to install miaomiaowuX inside WSL (default /opt/mmwx)
+#   * hands the work to WSL, which fetches the pinned binary and verifies sha256
+#   * installs it as a systemd service, enabled at boot, and verifies it came up
 #
 # Optional environment variables:
-#   MMWX_DISTRO    WSL distribution (default: Debian, then Ubuntu, then the first found)
-#   MMWX_WORKDIR   install/working directory inside WSL (skips the prompt)
-#   MMWX_YES       =1  non-interactive, accept all defaults
-#   MMWX_KEEP_FILES=1  do NOT clean up intermediates
-#   MMWX_MIRROR    mirror prefix for the release download (optional)
-#   PORT           panel port (default 12889)
+#   MMWX_DISTRO     WSL distribution (default: Debian, then Ubuntu, then the first found)
+#   MMWX_INSTALLDIR install directory inside WSL (skips the prompt, default /opt/mmwx)
+#   MMWX_YES        =1  non-interactive, accept all defaults
+#   MMWX_NO_SERVICE =1  install only, do not register the systemd service
+#   MMWX_MIRROR     mirror prefix for the release download (optional)
+#   PORT            panel port (default 12889)
 #
 # Notes:
 #   * ASCII-only and no param()/[CmdletBinding()] on purpose. param() only parses when
@@ -43,7 +44,6 @@ $PINNED_VER   = 'v0.5.4'
 $Distro = $env:MMWX_DISTRO
 $Port   = if ($env:PORT) { [int]$env:PORT } else { 12889 }
 $Auto   = ($env:MMWX_YES -eq '1')
-$Keep   = ($env:MMWX_KEEP_FILES -eq '1')
 $Mirror = $env:MMWX_MIRROR
 
 function Head($t) { Write-Host ""; Write-Host "=== $t ===" -ForegroundColor Cyan }
@@ -86,13 +86,14 @@ if ($chk) {
 }
 Ok 'dependencies OK (curl / unzip / python3 / upx)'
 
-Head "3/3  run the white-box audit inside WSL (port $Port)"
-Write-Host "  [..] the WSL script will ask you for the install/work directory." -ForegroundColor DarkGray
-Write-Host "  [..] intermediates are cleaned automatically when you stop the instance." -ForegroundColor DarkGray
+Head "3/3  install inside WSL (port $Port)"
+Write-Host "  [..] the WSL script will ask you for the install directory (Enter = /opt/mmwx)." -ForegroundColor DarkGray
+Write-Host "  [..] the result is a systemd service, enabled at boot; intermediates are cleaned." -ForegroundColor DarkGray
 Write-Host ""
 
-$envbits = "PORT=$Port MMWX_YES=$([int]$Auto) MMWX_KEEP_FILES=$([int]$Keep)"
+$envbits = "PORT=$Port MMWX_YES=$([int]$Auto)"
 if ($Mirror) { $envbits += " MMWX_MIRROR='$Mirror'" }
-if ($env:MMWX_WORKDIR) { $envbits += " MMWX_WORKDIR='$($env:MMWX_WORKDIR)'" }
+if ($env:MMWX_NO_SERVICE -eq '1') { $envbits += " MMWX_NO_SERVICE=1" }
+if ($env:MMWX_INSTALLDIR) { $envbits += " MMWX_INSTALLDIR='$($env:MMWX_INSTALLDIR)'" }
 
 & wsl.exe -d $Distro -- bash -lc "$envbits bash <(curl -fsSL '$ONECLICK_URL')"
