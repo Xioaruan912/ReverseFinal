@@ -153,6 +153,7 @@ $env:HEXHUB_MIRROR='https://your-mirror/xxx'; irm <脚本地址> | iex
 **证据与报告不随中间产物删除**，统一留存到：
 
 ```
-%USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>\n```
+%USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>\
+```
 
 > 本目录所有脚本仅用于**已完成授权的沙盒 / 自有资产**安全测试。
