@@ -53,3 +53,28 @@
 | 试用机制 | 30 天试用，首次运行时间戳（注册表 / 文件） |
 | 离线凭证 | **支持 key 文件离线激活** ← 本次审计核心目标 |
 | 更新检查 | 安装包内 `Update` 出现 7 次；主程序待解包后定位 |
+
+---
+
+## 补丁产物
+
+| 项 | 值 |
+| :--- | :--- |
+| 补丁后 `BCompare.exe` | 50,551,848 字节 |
+| 补丁后 sha256（**黄金哈希**） | `aba327b822ae74d896c53ccfbe1ae57cc40e46350e929634cd5631d80e0d66dc` |
+| 补丁处数 | 13（10 处代码 + 2 处等长字符串 + 移除 Authenticode 证书表 13,312 字节） |
+| 构建脚本 | `toolkit/bc5_patch.py`（参考实现）/ `toolkit/bc5_patch.ps1`（便携）/ `oneclick/beyondcompare-license-test.ps1`（安装器内置） |
+| 互证 | 三份互相独立的实现产出**逐字节相同**（见审计报告 §2.4） |
+
+> 校验纪律：任何装机流程都必须先校验**原始构件 sha256**，打补丁后再校验**黄金哈希**。
+> 回读校验只证明「写进去了」，黄金哈希才证明「写对了地方」。
+
+## 构件获取
+
+| 构件 | 位置 |
+| :--- | :--- |
+| `BCompare-5.2.6.32774.exe`（28,692,792 B） | 本仓库 Release 固定件：<https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0> |
+| 解包产物 `BCompare.exe` | 由安装包静默安装产出（`/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /NOICONS /SP- /DIR=<dir>`） |
+
+> 静态解包在本构件上不可用：`innoextract 1.9` 报 `Unexpected setup loader revision: 2`；
+> `7z 25.01` 只能取出安装器资源，载荷 `[0]` 是 Inno `zlb` 压缩块（魔数 `7a 6c 62 1a`）。

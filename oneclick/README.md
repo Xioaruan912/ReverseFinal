@@ -129,3 +129,25 @@ MMWX_INSTALLDIR=/srv/mmwx bash <(curl -fsSL .../miaomiaowux-license-test.sh)
 - **不生成** `.md`、报告目录、证据目录
 - 重跑同一条命令即**升级**：覆盖可执行文件，`data/` 与用户配置不受影响
 - 每个脚本结尾都会打印：**产物路径 / 怎么启动 / 怎么删除**
+
+---
+
+## Beyond Compare 5 —— 离线凭证判定（CWE-602）
+
+目标：Beyond Compare **5.2.6.32774**（Delphi / VCL 原生 x64 PE）
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare-license-test.ps1 | iex"
+```
+
+产物：`桌面\BeyondCompare-5.2.6\BCompare.exe`（双击即用，离线凭证判定通过）
+
+| 环境变量 | 作用 |
+| :--- | :--- |
+| `BC_INSTALLDIR` | 产出目录（默认桌面） |
+| `BC_YES=1` | 非交互 |
+| `BC_MIRROR` | 构件镜像前缀 |
+| `BC_SKIP_INSTALL=1` | 已装好，跳过安装 |
+| `BC_KEEP_ARTIFACTS=1` | 保留下载的安装包 |
+
+细则见 `../BeyondCompare-5.2.6/README.md`。

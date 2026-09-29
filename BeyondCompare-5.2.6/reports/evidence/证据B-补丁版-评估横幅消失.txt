@@ -1,0 +1,6 @@
+2026/9/30 0:35:23  >> log verbose "C:\Users\Administrator\Downloads\bc5-recon\r_ev\out.log"
+2026/9/30 0:35:23  >> load "C:\Users\Administrator\Downloads\bc5-recon\r_ev" "C:\Users\Administrator\Downloads\bc5-recon\r_ev"
+2026/9/30 0:35:23  Load comparison: C:\Users\Administrator\Downloads\bc5-recon\r_ev <-> C:\Users\Administrator\Downloads\bc5-recon\r_ev
+2026/9/30 0:35:23  >> expand all
+2026/9/30 0:35:23  >> 
+2026/9/30 0:35:23  Script completed in 0.01 seconds

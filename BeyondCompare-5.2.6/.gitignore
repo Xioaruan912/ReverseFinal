@@ -1,0 +1,10 @@
+artifacts/
+*.exe
+*.dll
+*.msix
+*.chm
+*.bin
+__pycache__/
+*.pyc
+tmp/
+smoke/

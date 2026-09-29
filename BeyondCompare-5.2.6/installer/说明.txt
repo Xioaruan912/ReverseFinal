@@ -1,0 +1,31 @@
+安装包放置说明
+==============
+
+本目录不入库大件（单文件 > 10 MB 一律走 Release 资产）。
+
+固定构件
+--------
+  BCompare-5.2.6.32774.exe    28,692,792 字节
+  sha256  a28a1eb43551999e499a8a16af328e0eff1b9a6d45b7dc479682852701b7bb97
+  官方直链 https://www.scootersoftware.com/files/BCompare-5.2.6.32774.exe
+  Release  https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0
+
+一键脚本按三级顺序取件（不降级到 latest）：
+  1) <产出目录>\artifacts\BCompare-5.2.6.32774.exe   （本地缓存，命中即用）
+  2) 本仓库 Release 固定件
+  3) 自建镜像 $env:BC_MIRROR
+每一级都强制校验 sha256，不匹配立即中止。
+
+解包方式
+--------
+静态解包不可用（innoextract 1.9 报 loader revision 2；7z 只得安装器资源）。
+采用静默安装提取：
+
+  BCompare-5.2.6.32774.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /NOICONS /SP- /DIR=<tmp>
+
+产物 19 个文件 / 约 62 MB，其中 BCompare.exe = 50,565,160 字节，
+sha256 4e44c526722d6420e89b372460c519e293c417723305b83ed0eff853db16ce5d。
+
+安装器会写注册表卸载项，一键脚本收尾会清理：
+  HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Beyond Compare 5_is1
+  HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Beyond Compare 5_is1

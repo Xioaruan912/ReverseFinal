@@ -1,0 +1,7 @@
+2026/9/30 0:12:55  *** Beyond Compare 5 Evaluation -- 29 days remaining ***
+2026/9/30 0:12:55  >> log verbose "C:\Users\Administrator\Downloads\bc5-recon\r_key2\out.log"
+2026/9/30 0:12:55  >> load "C:\Users\Administrator\Downloads\bc5-recon\r_key2" "C:\Users\Administrator\Downloads\bc5-recon\r_key2"
+2026/9/30 0:12:55  Load comparison: C:\Users\Administrator\Downloads\bc5-recon\r_key2 <-> C:\Users\Administrator\Downloads\bc5-recon\r_key2
+2026/9/30 0:12:55  >> expand all
+2026/9/30 0:12:55  >> 
+2026/9/30 0:12:55  Script completed in 0.01 seconds

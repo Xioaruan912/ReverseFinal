@@ -1,0 +1,24 @@
+Beyond Compare 5.2.6.32774 —— 一键命令
+======================================
+
+powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare-license-test.ps1 | iex"
+
+可选环境变量
+------------
+  BC_INSTALLDIR        产出目录（默认 桌面\BeyondCompare-5.2.6）
+  BC_YES=1             全程非交互
+  BC_MIRROR            构件镜像前缀，例如 https://your-mirror/path
+  BC_SKIP_INSTALL=1    已经装好，跳过安装
+  BC_KEEP_ARTIFACTS=1  保留下载的安装包
+
+跑完得到什么
+------------
+  桌面\BeyondCompare-5.2.6\BCompare.exe    双击即用，离线凭证判定通过
+  卸载：直接删除该目录
+
+只用便携脚本给已装好的 BC 打补丁
+--------------------------------
+  $env:BC_EXE = 'C:\path\to\BCompare.exe'
+  powershell -NoProfile -ExecutionPolicy Bypass -File BeyondCompare-5.2.6\toolkit\bc5_patch.ps1
+
+详细说明见 README.md 与 reports\BeyondCompare-5.2.6-鉴权脆弱性审计报告.md

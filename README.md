@@ -18,6 +18,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/listary-pro-test.ps1 | iex"
 ```
 
+```powershell
+# Beyond Compare 5 —— 离线凭证判定（Delphi / VCL 原生 PE）
+powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare-license-test.ps1 | iex"
+```
+
 ```bash
 # 妙妙屋X —— 许可门禁与数量配额（Linux / WSL）
 bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
@@ -31,6 +36,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 | HexHub | 5.1.9 | `oneclick/hexhub-vip-test.ps1` |
 | Listary 6 | 6.3.5.94 | `oneclick/listary-pro-test.ps1` |
 | 妙妙屋X | v0.5.4 | `oneclick/miaomiaowux-license-test.sh` / `.ps1` |
+| Beyond Compare | 5.2.6.32774 | `oneclick/beyondcompare-license-test.ps1` |
 
 构件来源：<https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0>
 （全部固定构件 + `SHA256SUMS.txt`）
@@ -59,6 +65,7 @@ Reverse_OK/
 │   ├── reports/                 评估报告 / 功能测绘 / SOP / 证据截图
 │   └── src/                     自研分析工装源码
 │
+├── BeyondCompare-5.2.6/         Beyond Compare 5 · 离线凭证判定
 ├── Listary/                     Listary 6.3.5.94 · 专业版权益
 │   ├── README.md
 │   ├── PINNED-VERSIONS.md
