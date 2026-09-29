@@ -197,8 +197,9 @@ Head 'cleanup'
 $kept = $false
 try {
     New-Item -ItemType Directory -Force -Path $evidenceDir | Out-Null
-    Copy-Item (Join-Path $caseRoot 'exports\*') $evidenceDir -Force -ErrorAction SilentlyContinue
-    Copy-Item (Join-Path $caseRoot 'reports\*') $evidenceDir -Force -Recurse -ErrorAction SilentlyContinue
+    # only keep real evidence: screenshots + report text (never the big LZMA stream)
+    Copy-Item (Join-Path $caseRoot 'exports\*.png') $evidenceDir -Force -ErrorAction SilentlyContinue
+    Copy-Item (Join-Path $caseRoot 'reports\*')   $evidenceDir -Force -Recurse -ErrorAction SilentlyContinue
     $kept = $true
     Ok "evidence kept : $evidenceDir"
 } catch { Warn "could not copy evidence: $_" }
@@ -208,7 +209,13 @@ if ($KeepFiles) {
 } else {
     Safe-Remove $WorkDir
     if (Test-Path $WorkDir) { Warn "some files are still locked (target program running?) -> $WorkDir" }
-    else { Ok "intermediates removed: $WorkDir" }
+    else {
+        Ok "intermediates removed: $WorkDir"
+        $parent = Split-Path $WorkDir -Parent
+        if ((Test-Path $parent) -and -not (Get-ChildItem $parent -Force -ErrorAction SilentlyContinue)) {
+            Remove-Item $parent -Force -ErrorAction SilentlyContinue
+        }
+    }
 }
 
 Write-Host ""
