@@ -157,3 +157,48 @@ const isTrial = !licenseKey || license?.['plan']?.['name'] === 'TRIAL'
   经接口间接读取计划限额 / `LicenseUsage` 快照，**不经过** `Effective*Quota`。
   本轮未完成，需对该函数做运行时断点定位（gdb 硬件断点或 patch `LicenseUsage` 返回值）。
 - 本补丁为**前端展示层 + 后端功能门禁**两层判据的解除，**不改动**许可服务器交互与签名链。
+
+---
+
+# 附录 D：数量配额路径 —— 交接说明（未完成）
+
+> **状态**：本轮未打通。以下为已确认事实与最短路径，供下一轮直接接手。
+
+## D.1 现象
+
+面板卡片显示服务端下发的 `服务器 0/1 · 节点 0/5 · 用户 0/3`，
+新建第 4 个用户时被拦（附录 B.4 实测报错：`已达到用户数量上限 (3/3)，请升级许可证`）。
+
+## D.2 已确认事实
+
+| 项 | 结论 |
+| --- | --- |
+| 配额判定位置 | `VLgBxN.(*CjOdSUIBHq4).CreateUser`，VA `0xd43000`（fileoff `0x943000`），8896 B |
+| 与已有补丁的关系 | **不经过** `(*BcGS_j).Effective*Quota`，所以 §B.2 的 3 条配额补丁对该路径无效 |
+| 字面量 | 被 `garble -literals` 加密：`已达到用户数量上限` 明文 **0 次**（`升级许可证` 尚存 2 次残存） |
+| 符号名 | garble 全量重命名，pclntab 虽可解析（真头部 `0x582b7a0`，nfunc=102730）但**无可用可读名** |
+| 静态反汇编 | `objdump -b binary` 无法解析相对 `call` 目标，需先转成带节头的 ELF 或用 r2/capstone |
+| 调用链（已知） | `… → bcrypt.GenerateFromPassword → CreateUser → GetOrCreateUserToken`，配额判定在 `CreateUser` 内部或其闭包内，**经接口间接调用**取计划限额 |
+
+## D.3 建议路径（按性价比排序）
+
+1. **patch `LicenseUsage` 返回 0 用量**（推荐）
+   `used >= limit` 永不成立 → 用户/节点/服务器一次全解，比改 `CreateUser` 内部干净得多。
+   需先定位 `LicenseUsage`（可用 gdb：在 `CreateUser` 内单步，观察哪次 `call` 返回结构体被拿去比较）。
+2. **gdb 硬件断点**
+   `gdb -p <pid>` → `hbreak *0xd43000` → 通过 UI 建第 4 个用户 → 单步到比较指令，
+   把 `jae/jg`（`used >= limit` 跳转到错误分支）改成 `jmp` 或 NOP。
+3. **先验证是否仍需补**
+   附录 B.4 的拦截实测是在**旧的 6 处补丁**产物上做的；
+   当前产物已是 **17 处补丁**（新增 `wFeRoafTxm` / `yqkjNzz7` / `CountLicensedUsers` / `CountLicensedNodes`），
+   **该路径可能已被其中某处覆盖** —— 下一轮应先做一次功能性复测（建第 4 个用户），
+   确认仍被拦再动手，避免无效补丁。
+
+## D.4 复测脚本要点（本轮踩坑）
+
+- 登录页有两种形态：**首次启动**（按钮 `创建管理员账号`）与**已有账号**（按钮 `登录`），脚本必须都兼容；
+  建号后往往**不会自动登录**，需再走一次登录。
+- 用户管理页的新增弹窗用 `data-slot="dialog-overlay"` 遮罩，
+  前一个弹窗未关时后续 `click` 会被 `intercepts pointer events` 拦掉 → 每次操作后按 `Escape`。
+- 新增用户表单的字段 `name` 属性与预期不符（`input[name=username]` 未命中），
+  需先 dump 弹窗内 input 的 `name`/`placeholder` 再写选择器。
