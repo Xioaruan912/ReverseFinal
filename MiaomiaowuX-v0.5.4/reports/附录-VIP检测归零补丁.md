@@ -130,9 +130,10 @@ const isTrial = !licenseKey || license?.['plan']?.['name'] === 'TRIAL'
 | `0x54a8071` | 套餐显示名 | 70 B `plan.display_name??…` | `'专业版'` | 70 |
 | `0x54a8112` | 有效位 | 30 B `!!data?.valid` | `'valid':!0x0` | 30 |
 | `0x4fadb75` | 试用判定 | 51 B `!key\|\|name==='TRIAL'` | `!0x1` | 51 |
+| `0x4fb022f` | PRO 功能按钮门禁 | 34 B `_0x1a70b6['has'](key)` | `!0x0` | 34 |
 
-**合成产物 sha256**：`f04e06d58af3c3571a80b77434ab71e45fd97edf59713e337a8c000eff262e34`
-（= 11 处 Go 门禁 + 5 处前端许可状态，共 16 处）
+**合成产物 sha256**：`84bf303bcbf11ec1080b746d60a2d9d9df645403f76abd6f52343548eea980a0`
+（= 11 处 Go 门禁 + 6 处前端许可状态，共 17 处）
 
 ## C.3 验证（浏览器实拍）
 
@@ -143,6 +144,9 @@ const isTrial = !licenseKey || license?.['plan']?.['name'] === 'TRIAL'
 | PRO 功能 🔒 | 全部带锁 | **全部解除** |
 | 当前效果 | **TRIAL · 试用版** | **PRO · 专业版** |
 | 关键字计数 | 试用版>0 / TRIAL>0 | 试用版 0 / TRIAL 0 / 购买许可证 0 / 不可用 0 |
+| **PRO 功能 5 项** | 全部 `<button disabled>` + tooltip「需要升级许可证」 | **全部 `<a>` 启用**，locked=0 |
+| **功能开关真点** | 不可切换 | `aria-checked: true → false` 可切换 ✅ |
+| **高级主题** | 不生效 | cookie 选 premium → `<html class="theme-premium ...">` ✅ |
 
 另经服务端确认：实际下发的 `/assets/index-B2G2S9sm.js` 含全部 5 处补丁特征串。
 
