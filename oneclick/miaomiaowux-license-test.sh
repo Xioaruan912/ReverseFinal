@@ -27,6 +27,9 @@ set -euo pipefail
 REL_BASE="https://github.com/Xioaruan912/ReverseFinal/releases/download/whitebox-audit-v1.0"
 BIN_NAME="mmwx-v0.5.4-linux-amd64"
 BIN_SHA256="ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657"
+# 打补丁后的黄金哈希（与 toolkit 里的参考实现逐字节一致，132,604,030 字节）：
+# 这是唯一能真正锁死「偏移算错 / 补丁表被改动 / 构件漂移」的一道闸。
+PREP_SHA256="1c1a55979845da533ebe305c6602f411ce32c2d2936938320ae200f3c0636e1c"
 PINNED_VER="v0.5.4"
 SERVICE="mmwx"
 
@@ -71,7 +74,7 @@ ask(){
   } >&2
   # 最多等 300 秒；无输入 / 超时 / 无终端 -> 用默认值
   read -r -t 300 v </dev/tty 2>/dev/null || v=""
-  v="$(printf '%s' "$v" | tr -d '' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//;s/^"//;s/"$//')"
+  v="$(printf '%s' "$v" | tr -d '' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//;s/^"//;s/"$//')"
   [ -z "$v" ] && v="$default"
   printf '%s' "$v"
 }
@@ -112,6 +115,16 @@ INSTALL_DIR="$(cd "$INSTALL_DIR" && pwd)"
 ok "安装目录: $INSTALL_DIR"
 
 for t in curl sha256sum; do command -v "$t" >/dev/null || die "缺少依赖: $t"; done
+# upx 是硬依赖，不是可选项：
+#   固定构件 mmwx-v0.5.4-linux-amd64 是 UPX 压缩包（36,605,840 字节），
+#   而补丁偏移全部是「解包后」的偏移（解包后 132,604,030 字节）。
+#   没解包就打补丁 = 补丁写进压缩数据 -> UPX stub 解压失败 -> 进程 exit 127
+#   -> systemd 表现为 activating (auto-restart) + status=127 的死循环。
+command -v upx >/dev/null || die '缺少依赖 upx（固定构件是 UPX 压缩的，必须先解包才能打补丁）
+        安装: apt-get update && apt-get install -y upx-ucl   # Debian/Ubuntu
+              apk add upx                                   # Alpine
+              dnf install upx                               # Fedora
+        装好后重跑本脚本即可（旧服务会被自动清理重建）'
 command -v upx >/dev/null || warn '未检测到 upx（准备可执行文件时需要；Debian/Ubuntu: apt install upx-ucl）'
 
 get_pinned(){
@@ -122,7 +135,7 @@ get_pinned(){
   local urls=("$url")
   [ -n "${MMWX_MIRROR:-}" ] && urls+=("${MMWX_MIRROR%/}/$(basename "$url")")
   for u in "${urls[@]}"; do
-    if curl -fL --retry 3 --connect-timeout 15 --max-time 1800 -o "$dest.part" "$u"; then
+    if curl -fsSL --retry 3 --connect-timeout 15 --max-time 1800 -o "$dest.part" "$u"; then
       if sha_ok "$dest.part" "$expect"; then mv -f "$dest.part" "$dest"; ok "$label 校验通过"; return 0; fi
       warn "sha256 不匹配: $u"; rm -f "$dest.part"
     fi
@@ -131,26 +144,84 @@ get_pinned(){
 }
 
 # ── 脱壳 + 打补丁 ───────────────────────────────────────────────────────────
+# 注意：本函数的 stdout 会被 $() 捕获当作返回值（打补丁后的文件路径），
+#       所以内部所有提示都必须写 stderr，否则会把返回的路径拼坏（与 ask() 同一个坑）。
 prepare_binary(){
   local src="$1" out="$2"
   cp -f "$src" "$out"
-  upx -d -qq "$out" >/dev/null 2>&1 || true
+  # 构件是 UPX 压缩态，必须先解包；解不开就立刻失败，绝不带着压缩态往下打补丁
+  if grep -qa 'UPX!' "$out"; then
+    printf '  [..] 检测到 UPX 压缩构件，正在解包\n' >&2
+    upx -d -qq "$out" >/dev/null 2>&1 || die "upx 解包失败：$src（构件不完整或 upx 版本不兼容）"
+    grep -qa 'UPX!' "$out" && die "upx 解包后仍为压缩态，构件或 upx 异常，拒绝继续打补丁"
+  fi
+  printf '  [+] 解包完成: %s 字节\n' "$(stat -c %s "$out")" >&2
+  # 补丁表：<文件偏移> <机器码>   （file offset = VA - 0x400000）
   # 关键：必须用 printf 的「格式串」写法，不能写成 printf '%s' 或 '%b' ——
   # 只有格式串会解释 \xHH 十六进制转义（与 toolkit/run.sh 保持一致）
-  local p
-  p(){ printf "$2" | dd of="$out" bs=1 seek=$(( $1 )) conv=notrunc status=none; }
-  p 0x13b4180 '\xb0\x01\xc3'
-  p 0x13b44a0 '\xb0\x01\xc3'
-  p 0x13b3180 '\x31\xc0\xc3'
-  p 0x13b3a20 '\x48\xb8\xff\xff\xff\xff\xff\xff\xff\x7f\xc3'
-  p 0x13b3280 '\x48\xb8\xff\xff\xff\xff\xff\xff\xff\x7f\xc3'
-  p 0x13b37c0 '\x48\xb8\xff\xff\xff\xff\xff\xff\xff\x7f\xc3'
-  p 0x26cb6a0 '\x31\xc0\x31\xdb\x31\xc9\xc3'
-  p 0x273a2e0 '\xb9\x01\x00\x00\x00\xc3'
-  p 0x9c3a80  '\x31\xc0\x31\xdb\x31\xc9\xc3'
-  p 0x83e760  '\x31\xc0\x31\xdb\x31\xc9\xc3'
-  p 0x245aa89 '\x90\x90'
+  local PATCH_TABLE='
+0x13b4180 \xb0\x01\xc3
+0x13b44a0 \xb0\x01\xc3
+0x13b3180 \x31\xc0\xc3
+0x13b3a20 \x48\xb8\xff\xff\xff\xff\xff\xff\xff\x7f\xc3
+0x13b3280 \x48\xb8\xff\xff\xff\xff\xff\xff\xff\x7f\xc3
+0x13b37c0 \x48\xb8\xff\xff\xff\xff\xff\xff\xff\x7f\xc3
+0x26cb6a0 \x31\xc0\x31\xdb\x31\xc9\xc3
+0x273a2e0 \xb9\x01\x00\x00\x00\xc3
+0x9c3a80  \x31\xc0\x31\xdb\x31\xc9\xc3
+0x83e760  \x31\xc0\x31\xdb\x31\xc9\xc3
+0x245aa89 \x90\x90
+'
+  local off bytes want got n=0
+  while read -r off bytes; do
+    [ -z "${off:-}" ] && continue
+    printf "$bytes" | dd of="$out" bs=1 seek=$(( off )) conv=notrunc status=none
+    n=$(( n + 1 ))
+  done <<< "$PATCH_TABLE"
+
+  # 回读校验：逐处读回比对，任何一处没写对就立刻失败。
+  # 这一层专治「构件形态不对 / 偏移算错 / 写入被截断」——
+  # 那种情况会装出一个 exit 127 的坏 unit，事后查 systemd 成本极高。
+  while read -r off bytes; do
+    [ -z "${off:-}" ] && continue
+    want="$(printf "$bytes" | od -An -tx1 | tr -d ' \n')"
+    got="$(dd if="$out" bs=1 skip=$(( off )) count=$(( ${#want} / 2 )) status=none \
+             | od -An -tx1 | tr -d ' \n')"
+    [ "$got" = "$want" ] || die "补丁回读校验失败 @ $off（期望 $want 实得 $got）"
+  done <<< "$PATCH_TABLE"
+  printf '  [+] %s 处补丁全部回读校验通过\n' "$n" >&2
+
+  # 黄金哈希：脚本产出必须与参考实现逐字节一致。
+  # 回读校验只能证明「写进去了」，证明不了「写对了地方」；这一层才能。
+  local got_sha
+  got_sha="$(sha256sum "$out" | cut -d' ' -f1)"
+  [ "$got_sha" = "$PREP_SHA256" ] || die "打补丁后的文件与黄金哈希不符
+        期望 $PREP_SHA256
+        实得 $got_sha
+        补丁表或构件与参考实现不一致，拒绝安装"
+  printf '  [+] 黄金哈希校验通过（与参考实现逐字节一致）\n' >&2
+
   chmod 0755 "$out"
+
+  # 冒烟测试：先真跑一次再注册服务，避免装出一个坏 unit
+  # （坏 unit 的表现就是 status=127 + auto-restart 循环，排查成本很高）
+  local sp=$(( PORT + 1 )) rc=0
+  mkdir -p "$WORKDIR/smoke"
+  ( PORT=$sp MMWX_LISTEN_PORT=$sp MMWX_DATA_DIR="$WORKDIR/smoke"       timeout 10 "$out" >"$WORKDIR/smoke.log" 2>&1 ) &
+  local spid=$!
+  sleep 5
+  if kill -0 "$spid" 2>/dev/null; then
+    kill "$spid" 2>/dev/null || true
+    wait "$spid" 2>/dev/null || true
+    printf '  [+] 可执行文件自检通过（能正常启动）
+' >&2
+  else
+    wait "$spid" 2>/dev/null || rc=$?
+    sed 's/^/      /' "$WORKDIR/smoke.log" 2>/dev/null | head -8 >&2 || true
+    [ "$rc" = "127" ] && die "可执行文件以 127 退出 —— 补丁打在了压缩态上，请确认 upx 可用后重跑"
+    die "可执行文件无法启动（退出码 $rc）"
+  fi
+
   printf '%s' "$out"
 }
 
