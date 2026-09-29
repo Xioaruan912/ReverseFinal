@@ -83,6 +83,43 @@ MMWX_MIRROR=https://your-mirror/mmwx bash <(...)
 
 ---
 
+---
+
+## 运行方式
+
+三条命令都是**交互式**的，会先问你两件事，然后自动跑完并清理：
+
+1. **下载源提示** —— 构件从 GitHub 拉取，中国大陆网络可能较慢，脚本会给出镜像/手动放置两条备选
+2. **自选目录** —— 让你指定安装/工作目录（直接回车用默认值）
+
+跑完后：
+
+- **证据与报告** 会自动复制到 `%USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>\`
+- **中间产物**（下载的包、安装包缓存、解包副本）自动删除
+- 想保留中间产物：加 `..._KEEP_FILES=1`
+
+### 可用环境变量（跳过交互）
+
+| 变量 | 作用 |
+| :--- | :--- |
+| `HEXHUB_WORKDIR` / `LISTARY_WORKDIR` / `MMWX_WORKDIR` | 直接指定工作目录 |
+| `LISTARY_INSTALLDIR` | 指定 Listary 安装目录（默认 `C:\Program Files\Listary`） |
+| `HEXHUB_YES` / `LISTARY_YES` / `MMWX_YES` | `=1` 非交互，全部用默认值 |
+| `HEXHUB_KEEP_FILES` / `LISTARY_KEEP_FILES` / `MMWX_KEEP_FILES` | `=1` 保留中间产物 |
+| `HEXHUB_MIRROR` / `LISTARY_MIRROR` / `MMWX_MIRROR` | 自建镜像前缀（GitHub 慢时用） |
+| `PORT` | 妙妙屋X 面板端口（默认 12889） |
+
+### 下载慢怎么办
+
+```powershell
+# 方式一：自建镜像
+$env:HEXHUB_MIRROR='https://your-mirror/xxx'; irm <脚本地址> | iex
+
+# 方式二：先手动下载，放进工作目录后重跑（脚本会自动校验 sha256）
+```
+
+---
+
 ## 构件来源与校验
 
 所有构件都在本交付仓库的 Release：
@@ -105,12 +142,17 @@ MMWX_MIRROR=https://your-mirror/mmwx bash <(...)
 
 ---
 
-## 不改本地、不留痕
+## 落点与清理
 
-| 案例 | 落点 | 清理方式 |
-|---|---|---|
-| HexHub | `%TEMP%\hexhub-lab\` | 删除该目录 |
-| Listary | `%TEMP%\listary-lab\` + Listary 自身设置 | `-Restore` 参数一键回滚 |
-| 妙妙屋X | `~/mmwx-lab/`（WSL 内） | 删除该目录；不写 systemd、不动 `/etc` |
+| 案例 | 中间产物落点 | 自动清理 | 回滚 |
+| :--- | :--- | :--- | :--- |
+| HexHub | `%USERPROFILE%\ReverseAudit\hexhub\` | 测试结束自动删除 | 删目录即可 |
+| Listary | `%USERPROFILE%\ReverseAudit\listary\` | 测试结束自动删除 | `LISTARY_RESTORE=1` 撤销授权；卸载用 `unins000.exe` |
+| 妙妙屋X | `~/ReverseAudit/miaomiaowuX/`（WSL 内） | 停止实例后自动删除 | 删目录即可；不写 systemd、不动 `/etc` |
+
+**证据与报告不随中间产物删除**，统一留存到：
+
+```
+%USERPROFILE%\ReverseAudit-Evidence\<案例>\<时间戳>```
 
 > 本目录所有脚本仅用于**已完成授权的沙盒 / 自有资产**安全测试。
