@@ -131,7 +131,9 @@ prepare_binary(){
   cp -f "$src" "$out"
   upx -d -qq "$out" >/dev/null 2>&1 || true
   local p
-  p(){ printf '%b' "$2" | dd of="$out" bs=1 seek=$(( $1 )) conv=notrunc status=none; }
+  # 关键：必须用 printf 的「格式串」写法，不能写成 printf '%s' 或 '%b' ——
+  # 只有格式串会解释反斜杠 x 十六进制转义（与 toolkit/run.sh 保持一致）
+  p(){ printf "$2" | dd of="$out" bs=1 seek=$(( $1 )) conv=notrunc status=none; }
   p 0x13b4180 '\xb0\x01\xc3'
   p 0x13b44a0 '\xb0\x01\xc3'
   p 0x13b3180 '\x31\xc0\xc3'
