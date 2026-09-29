@@ -8,7 +8,7 @@
 
 ## 0. 一句话原则
 
-> **一条命令装好、产出就是能用的程序、版本永远固定、默认持久化、跑完不留垃圾、上传前先自检。**
+> **一条命令装好、产出就是能用的程序、缺什么自己装什么、版本永远固定、默认持久化、跑完不留垃圾、上传前先自检。**
 
 ---
 
@@ -113,7 +113,114 @@ p(){ printf "$2" | dd of="$out" bs=1 seek=$(( $1 )) conv=notrunc status=none; }
 p 0x13b4180 '\xb0\x01\xc3'
 ```
 
-### 2.5 安全与幂等
+### 2.5 依赖自举 ★ 一句话原则
+
+> **本脚本需要什么，就自己装什么 —— 检测 → 自动安装 → 装不上才报错退出。**
+> **绝不把「你先去装个 upx」这种活推回给用户。**
+
+实战教训：`mmwx` 脚本把 `upx` 当可选依赖只 `warn`，用户机器上没装，
+结果补丁全打进了 UPX 压缩数据 → 服务 `status=127` 死循环（详见 §3.5）。
+如果当时能自己装上，这个故障根本不会发生。
+
+#### bash：覆盖 6 种包管理器 + sudo 降级
+
+```bash
+as_root(){
+  if [ "$(id -u)" = "0" ]; then "$@"
+  elif command -v sudo >/dev/null 2>&1; then sudo "$@"
+  else return 1; fi
+}
+
+PM=""; PM_UPDATED=0
+pm_detect(){
+  local m
+  for m in apt-get:apt apk:apk dnf:dnf yum:yum pacman:pacman zypper:zypper; do
+    if command -v "${m%%:*}" >/dev/null 2>&1; then PM="${m##*:}"; return 0; fi
+  done
+  return 1
+}
+
+pm_install(){   # pm_install <包名>...
+  [ -z "$PM" ] && { pm_detect || return 1; }
+  case "$PM" in
+    apt)    [ "$PM_UPDATED" = "0" ] && { as_root apt-get update -qq >/dev/null 2>&1 || true; PM_UPDATED=1; }
+            as_root apt-get install -y -qq "$@" ;;
+    apk)    as_root apk add --no-cache "$@" ;;
+    dnf)    as_root dnf install -y -q "$@" ;;
+    yum)    as_root yum install -y -q "$@" ;;
+    pacman) as_root pacman -Sy --noconfirm --needed "$@" ;;
+    zypper) as_root zypper -n install "$@" ;;
+    *)      return 1 ;;
+  esac
+}
+
+# ensure_dep <命令> <用途> <候选包名...>   一个个试，装到能跑为止
+ensure_dep(){
+  local bin="$1" why="$2"; shift 2
+  command -v "$bin" >/dev/null 2>&1 && return 0
+  warn "缺少 $bin（$why），正在自动安装…"
+  pm_detect || true
+  if [ -n "$PM" ]; then
+    local p
+    for p in "$@"; do
+      if pm_install "$p" >/dev/null 2>&1; then
+        hash -r 2>/dev/null || true          # 清 bash 命令哈希缓存，否则新装的命令可能找不到
+        command -v "$bin" >/dev/null 2>&1 && { ok "$bin 已自动安装（$PM: $p）"; return 0; }
+      fi
+    done
+  fi
+  die "无法自动安装 $bin（$why）……给出六种发行版的手动命令"
+}
+
+ensure_dep curl '下载构件' curl
+ensure_dep unzip '解压工具包' unzip
+ensure_dep upx   '解包 UPX 压缩构件，必须' upx-ucl upx     # 包名按发行版不同，依次试
+```
+
+**要点**：`apt-get update` 只跑一次（`PM_UPDATED` 标记）；包名在不同发行版不一样就**传多个候选**依次试；
+`hash -r` 必加；装不上才 `die`，且要给出**六种发行版的手动命令**。
+
+#### PowerShell：先跑一遍再信任
+
+```powershell
+# Windows 商店的 python3.exe 是个假壳，运行就 exit 49 —— 绝不能只看路径存在
+function Test-PythonUsable($exe) {
+    if (-not (Test-Path $exe)) { return $false }
+    try {
+        $out = & $exe -c "print('ok')" 2>$null
+        return ($LASTEXITCODE -eq 0 -and (($out -join '') -match 'ok'))
+    } catch { return $false }
+}
+
+function Ensure-Python {
+    $py = Find-Python                      # PATH -> 已知安装路径，每一个都过 Test-PythonUsable
+    if ($py) { return $py }
+    Warn 'Python not found - installing it automatically'
+    if (Get-Command winget.exe -EA SilentlyContinue) {      # ① winget（用户级，免管理员）
+        & winget.exe install -e --id Python.Python.3.12 --scope user --silent `
+            --accept-package-agreements --accept-source-agreements
+        Refresh-Path                                       # 重读注册表 PATH，否则本会话看不见
+        $py = Find-Python; if ($py) { return $py }
+    }
+    if (Get-Command choco.exe -EA SilentlyContinue) { ... } # ② choco
+    return (Install-PythonPortable)                         # ③ 官方 embeddable zip，免安装免管理员
+}
+```
+
+> **兜底优先用免安装包**：HexHub 那两个脚本（`extract.py` / `patch_vip.py`）**只用标准库**，
+> 所以官方 embeddable zip（解到 `%LOCALAPPDATA%` 直接用）永远是最可靠的一层。
+> 先看一眼待执行的脚本 import 了什么，再决定兜底要不要真的装完整环境。
+
+**要点**：安装器装完 Python 后**当前会话的 PATH 不会自动更新**，必须
+`Refresh-Path` 从注册表重读；唯有 `Get-Command` + **实跑一次**双验，才敢用。
+
+#### 内置依赖也要显式声明
+
+即使某个脚本什么都不缺（如 Listary 只用 Windows 自带的 `Expand-Archive` / `Get-FileHash`），
+也要有一个 `Ensure-Deps` 显式检查并打印 `dependencies OK` ——**四个脚本口径一致**，
+用户不需要猜哪个脚本要装东西。
+
+### 2.6 安全与幂等
 
 - **危险删除必须保护**：拒绝删除盘根 / 层级 < 3 的路径
 
@@ -656,6 +763,12 @@ README 只保留「是什么 / 怎么用 / 用完能用什么 / 去哪找报告�
 - [ ] 危险删除有浅路径保护
 - [ ] 重复执行幂等；能自愈历史坏 unit
 - [ ] 服务启动后校验 `is-active`，失败要打日志并非零退出
+- [ ] **依赖自举**：脚本需要的外部命令（curl / unzip / upx / python…）都能**自己装上**
+- [ ] 覆盖 6 种包管理器（apt / apk / dnf / yum / pacman / zypper），自动 `sudo` 降级
+- [ ] 包名跨发行版不同时，传多个候选**依次试**
+- [ ] 装完 `hash -r`（bash）/ `Refresh-Path`（PowerShell），否则本会话看不见
+- [ ] Windows 侧探测 Python 要**实跑一次**，识别商店假壳（exit 49）
+- [ ] 实在装不上才 `die`，且必须给出**六种发行版的手动命令**
 
 **构件形态与打补丁（§3.5）**
 

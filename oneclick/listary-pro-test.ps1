@@ -122,6 +122,26 @@ function Get-Pinned($url, $dest, $expectSha, $label) {
     Ok "$label verified"
 }
 
+# ---- dependencies: detect and auto-install ----------------------------------
+# One rule: whatever this installer needs, it installs itself.
+# Here everything ships with Windows: PowerShell 5.1, Expand-Archive and
+# Get-FileHash. There is nothing external to download, so the check is a guard
+# (old PowerShell) rather than an installer.
+function Ensure-Deps {
+    $need = @()
+    if ($PSVersionTable.PSVersion.Major -lt 5) { $need += 'PowerShell 5.1 or newer' }
+    foreach ($c in @('Expand-Archive','Get-FileHash','Start-Process')) {
+        if (-not (Get-Command $c -ErrorAction SilentlyContinue)) { $need += $c }
+    }
+    if (-not (Get-Command curl.exe -ErrorAction SilentlyContinue)) {
+        Write-Host '  [..] curl.exe missing - falling back to the built-in WebClient downloader' -ForegroundColor DarkGray
+    }
+    if ($need.Count) {
+        Die ('missing, and Windows cannot install these silently: ' + ($need -join ', '))
+    }
+    Ok 'dependencies OK (all built into Windows PowerShell)'
+}
+
 # ---- banner ----------------------------------------------------------------
 Write-Host "============================================================" -ForegroundColor White
 Write-Host " Listary $PINNED_VER - one-command install"                     -ForegroundColor White
@@ -141,6 +161,7 @@ Write-Host ""
 $InstallDir = if ($env:LISTARY_INSTALLDIR) { $env:LISTARY_INSTALLDIR } else { Ask-Dir "Select the Listary install folder" $DefaultInstall }
 Ok "install folder: $InstallDir"
 Ok "test email    : $Email"
+Ensure-Deps
 
 $Stage = Join-Path $env:TEMP ('listary-stage-' + [guid]::NewGuid().ToString('N').Substring(0,8))
 New-Item -ItemType Directory -Force -Path $Stage | Out-Null

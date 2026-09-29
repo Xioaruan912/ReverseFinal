@@ -1,0 +1,40 @@
+time="2026-09-29 18:27:18" level="INFO " msg=本地时区 zone=Local
+time="2026-09-29 18:27:18" level="INFO " msg=喵喵屋服务器启动中 version=0.5.4
+time="2026-09-29 18:27:18" level="INFO " msg="[日志清理] 定时清理任务已启动" interval=10分钟 debug_max_age=7天 main_keep=2
+time="2026-09-29 18:27:19" level="INFO " msg=数据库连接成功 driver=sqlite config=/tmp/mmwx-install.NEDSYc/smoke/database.json database=/tmp/mmwx-install.NEDSYc/smoke/mmwx.db
+time="2026-09-29 18:27:19" level="INFO " msg=数据库已就绪 driver=sqlite target=/tmp/mmwx-install.NEDSYc/smoke/mmwx.db config=/tmp/mmwx-install.NEDSYc/smoke/database.json
+time="2026-09-29 18:27:19" level="INFO " msg="[Main] HTTP server binding to 0.0.0.0:12890"
+time="2026-09-29 18:27:19" level="INFO " msg=主控加密公钥已加载 public_key=***
+time="2026-09-29 18:27:19" level="INFO " msg="Action Guard 未强制启用，跳过 Guard 校验（不依赖 guard.sock）" mode=optional
+time="2026-09-29 18:27:19" level="INFO " msg=会话加载完成 count=0
+time="2026-09-29 18:27:19" level="INFO " msg=代理组配置加载成功 source=https://raw.githubusercontent.com/iluobei/miaomiaowu/refs/heads/main/proxy_groups/proxy-groups-lite.json
+time="2026-09-29 18:27:19" level="INFO " msg="[DDNS] reconciler started, interval=5m0s"
+time="2026-09-29 18:27:19" level="INFO " msg="[NodeAddressReconcile] scheduler started, first pass in 3m0s then every 15m0s"
+time="2026-09-29 18:27:19" level="INFO " msg="[OrphanXrayClientCleaner] scheduler started, startup repair in 5m0s"
+time="2026-09-29 18:27:19" level="INFO " msg="[InboundClientReconciler] scheduler started, first run at 2026-09-30 04:00:00 (in 9h32m40s)"
+time="2026-09-29 18:27:19" level="INFO " msg="[InboundCache] warmup done for 0 servers"
+time="2026-09-29 18:27:19" level="INFO " msg="[Event] Inbound event listeners registered"
+time="2026-09-29 18:27:19" level="INFO " msg="[app-secure] 已生成主控 X25519 身份: /tmp/mmwx-install.NEDSYc/smoke/mmwx_app_x25519.key"
+time="2026-09-29 18:27:19" level="INFO " msg="[app-secure] 证书续签任务启动,2m0s 后首次检查,之后每 6h0m0s 一次"
+time="2026-09-29 18:27:19" level="INFO " msg="🔓 [SILENT_MODE] 服务启动，静默模式临时恢复中" start_time="2026-09-29 18:27:19"
+time="2026-09-29 18:27:19" level="INFO " msg="[ReturnRoute] scheduled daily at 04:20 when probe return-route display is enabled, three carrier targets per connected agent"
+time="2026-09-29 18:27:19" level="INFO " msg="[流量收集器] 定时调度器已启动" first_run_at="2026-09-30 00:00:00" interval=24小时
+time="2026-09-29 18:27:19" level="INFO " msg="[Speed Collector] Starting speed collection with 3s interval"
+time="2026-09-29 18:27:19" level="INFO " msg="[Traffic Collector] Starting with interval: 5s"
+time="2026-09-29 18:27:19" level="INFO " msg="[TrafficLimitEnforcer] Starting with interval: 2m0s"
+time="2026-09-29 18:27:19" level="INFO " msg="[Startup] ResetTrafficTotalsForXrayBootTimeMigration: reset done, 0 rows affected (3 tables)"
+time="2026-09-29 18:27:19" level="INFO " msg="[Startup] BackfillWeightedTraffic: backfilled 0 user_email_traffic row(s)"
+time="2026-09-29 18:27:19" level="INFO " msg="[Startup] RepairWeightedAttribution: nothing to repair"
+time="2026-09-29 18:27:19" level="INFO " msg="[Startup] RestoreNodeTrafficFromSnapshots: restored 0 node_traffic row(s) from snapshots"
+time="2026-09-29 18:27:19" level="INFO " msg="[Startup] RestoreUserTrafficFromSnapshots: restored 0 user_traffic row(s) from snapshots"
+time="2026-09-29 18:27:19" level="INFO " msg="[Startup] ClearNegativeTrafficUsedOffsetsAfterReset: cleared 0 server(s) with negative offset"
+time="2026-09-29 18:27:19" level="INFO " msg="全局 API Token 已配置（出于安全原因不输出明文）"
+time="2026-09-29 18:27:19" level="INFO " msg="[forward] status poller started, interval=17s"
+time="2026-09-29 18:27:19" level="INFO " msg="妙妙屋 HTTP 服务器启动" version=0.5.4 address=0.0.0.0:12890
+time="2026-09-29 18:27:23" level="INFO " msg=收到关闭信号，开始优雅关闭
+time="2026-09-29 18:27:23" level="INFO " msg="[Speed Collector] Stopping..."
+time="2026-09-29 18:27:23" level="INFO " msg="[forward] status poller stopped"
+time="2026-09-29 18:27:23" level="INFO " msg="[Traffic Collector] Stopping..."
+time="2026-09-29 18:27:23" level="INFO " msg="[流量收集器] 定时调度器已停止"
+time="2026-09-29 18:27:23" level="INFO " msg=后台写入协程已全部退出
+time="2026-09-29 18:27:23" level="INFO " msg=服务器已安全关闭

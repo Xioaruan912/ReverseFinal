@@ -76,15 +76,33 @@ if ([string]::IsNullOrWhiteSpace($Distro)) {
 }
 Ok "using distribution: $Distro"
 
-Head '2/3  check dependencies inside WSL'
-$chk = & wsl.exe -d $Distro -- bash -lc "for t in curl unzip python3; do command -v \$t >/dev/null || echo MISSING:\$t; done; command -v upx >/dev/null || echo MISSING:upx"
-if ($chk) {
-    Write-Host $chk -ForegroundColor Yellow
-    Write-Host "  install them (Debian/Ubuntu):" -ForegroundColor DarkGray
-    Write-Host "    wsl -d $Distro -u root -- bash -c 'apt-get update && apt-get install -y curl unzip python3 upx-ucl'" -ForegroundColor DarkGray
-    Die 'install the missing packages and re-run'
+Head '2/3  dependencies inside WSL (auto-install)'
+# One rule: whatever the script needs, it installs itself.
+# The .sh performs the full bootstrap; here we only pre-warm it so the user sees
+# progress before the long download, and so the first run works on a bare image.
+$Probe = 'miss=""; for t in curl unzip upx; do command -v $t >/dev/null || miss="$miss $t"; done; printf ''%s'' "$miss"'
+$miss = (& wsl.exe -d $Distro -- bash -lc $Probe) -join ''
+if ($miss.Trim()) {
+    Warn ("missing inside WSL:" + $miss + " - installing automatically")
+    $Fix = 'set -e; ' +
+           'for t in curl unzip; do command -v $t >/dev/null && continue; ' +
+           'if command -v apt-get >/dev/null; then apt-get update -qq && apt-get install -y -qq $t; ' +
+           'elif command -v apk >/dev/null; then apk add --no-cache $t; ' +
+           'elif command -v dnf >/dev/null; then dnf install -y -q $t; ' +
+           'elif command -v yum >/dev/null; then yum install -y -q $t; ' +
+           'elif command -v pacman >/dev/null; then pacman -Sy --noconfirm --needed $t; fi; done; ' +
+           'command -v upx >/dev/null || { ' +
+           'if command -v apt-get >/dev/null; then apt-get update -qq && (apt-get install -y -qq upx-ucl || apt-get install -y -qq upx); ' +
+           'elif command -v apk >/dev/null; then apk add --no-cache upx; ' +
+           'elif command -v dnf >/dev/null; then dnf install -y -q upx; ' +
+           'elif command -v yum >/dev/null; then yum install -y -q upx; ' +
+           'elif command -v pacman >/dev/null; then pacman -Sy --noconfirm --needed upx; fi; }'
+    & wsl.exe -d $Distro -u root -- bash -lc $Fix | Out-Null
+    $still = (& wsl.exe -d $Distro -- bash -lc $Probe) -join ''
+    if ($still.Trim()) { Die ("still missing inside WSL:" + $still + " - neither the package manager nor sudo worked") }
+    Ok 'missing packages installed automatically'
 }
-Ok 'dependencies OK (curl / unzip / python3 / upx)'
+Ok 'dependencies OK (curl / unzip / upx)'
 
 Head "3/3  install inside WSL (port $Port)"
 Write-Host "  [..] the WSL script will ask you for the install directory (Enter = /opt/mmwx)." -ForegroundColor DarkGray

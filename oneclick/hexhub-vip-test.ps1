@@ -121,6 +121,90 @@ function Get-Pinned($url, $dest, $expectSha, $label) {
     Ok "$label verified"
 }
 
+# ---- dependencies: detect and auto-install ----------------------------------
+# One rule: whatever this installer needs, it installs itself.
+# extract.py / patch_vip.py use nothing but the standard library, so a portable
+# Python is always enough -- no admin rights, no system-wide install.
+function Refresh-Path {
+    $env:Path = [Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [Environment]::GetEnvironmentVariable('Path','User')
+}
+
+# The Microsoft Store ships a fake python.exe stub that exits 49; never trust a
+# path, always run it once.
+function Test-PythonUsable($exe) {
+    if (-not (Test-Path $exe)) { return $false }
+    try {
+        $out = & $exe -c "print('ok')" 2>$null
+        return ($LASTEXITCODE -eq 0 -and (($out -join '') -match 'ok'))
+    } catch { return $false }
+}
+
+function Find-Python {
+    foreach ($c in @('python','python3')) {
+        $g = Get-Command $c -ErrorAction SilentlyContinue
+        if ($g -and (Test-PythonUsable $g.Source)) { return $g.Source }
+    }
+    foreach ($d in @((Join-Path $env:LOCALAPPDATA 'miniconda3'),
+                     (Join-Path $env:USERPROFILE 'miniconda3'),
+                     (Join-Path $env:LOCALAPPDATA 'Programs\Python'),
+                     'C:\miniconda3', 'D:\miniconda3')) {
+        $exe = Join-Path $d 'python.exe'
+        if (Test-PythonUsable $exe) { return $exe }
+        if (Test-Path $d) {
+            $hit = Get-ChildItem $d -Recurse -Filter 'python.exe' -ErrorAction SilentlyContinue |
+                   Sort-Object FullName -Descending | Select-Object -First 1
+            if ($hit -and (Test-PythonUsable $hit.FullName)) { return $hit.FullName }
+        }
+    }
+    return $null
+}
+
+function Install-PythonPortable {
+    $dst = Join-Path $env:LOCALAPPDATA 'hexhub-python'
+    $exe = Join-Path $dst 'python.exe'
+    if (Test-PythonUsable $exe) { return $exe }
+    $ver = '3.12.8'
+    $zip = Join-Path $env:TEMP ('python-embed-' + $ver + '.zip')
+    $url = "https://www.python.org/ftp/python/$ver/python-$ver-embed-amd64.zip"
+    Write-Host "  [..] fetching a portable Python $ver (no install, no admin)"
+    New-Item -ItemType Directory -Force -Path $dst | Out-Null
+    try {
+        if (Get-Command curl.exe -ErrorAction SilentlyContinue) {
+            & curl.exe -fL --retry 3 --connect-timeout 15 -o $zip $url
+            if ($LASTEXITCODE -ne 0) { return $null }
+        } else {
+            (New-Object Net.WebClient).DownloadFile($url, $zip)
+        }
+        Expand-Archive -Path $zip -DestinationPath $dst -Force
+        Remove-Item $zip -Force -ErrorAction SilentlyContinue
+    } catch { return $null }
+    if (Test-PythonUsable $exe) { return $exe }
+    return $null
+}
+
+function Ensure-Python {
+    $py = Find-Python
+    if ($py) { Ok "python: $py"; return $py }
+    Warn 'Python not found - installing it automatically'
+    if (Get-Command winget.exe -ErrorAction SilentlyContinue) {
+        Write-Host '  [..] winget install Python.Python.3.12 (user scope, no admin)'
+        & winget.exe install -e --id Python.Python.3.12 --scope user --silent --accept-package-agreements --accept-source-agreements 2>&1 | Out-Null
+        Refresh-Path
+        $py = Find-Python
+        if ($py) { Ok "python installed: $py"; return $py }
+    }
+    if (Get-Command choco.exe -ErrorAction SilentlyContinue) {
+        Write-Host '  [..] choco install python'
+        & choco.exe install python -y --no-progress 2>&1 | Out-Null
+        Refresh-Path
+        $py = Find-Python
+        if ($py) { Ok "python installed: $py"; return $py }
+    }
+    $py = Install-PythonPortable
+    if ($py) { Ok "portable python ready: $py"; return $py }
+    Die 'cannot install Python automatically; install Python 3 manually and re-run'
+}
+
 # ---- banner ----------------------------------------------------------------
 Write-Host "============================================================" -ForegroundColor White
 Write-Host " HexHub $PINNED_VER - one-command install"                      -ForegroundColor White
@@ -161,19 +245,7 @@ try {
 
     # ---- 3/3 static unpack + patch -----------------------------------------
     Head '3/3  unpack and patch'
-    $py = $null
-    foreach ($c in @('python', 'python3')) {
-        $g = Get-Command $c -ErrorAction SilentlyContinue
-        if ($g) { $py = $g.Source; break }
-    }
-    if (-not $py) {
-        foreach ($c in @((Join-Path $env:LOCALAPPDATA 'miniconda3\python.exe'),
-                         (Join-Path $env:USERPROFILE 'miniconda3\python.exe'),
-                         'D:\miniconda3\python.exe')) {
-            if (Test-Path $c) { $py = $c; break }
-        }
-    }
-    if (-not $py) { Die 'Python not found; install Python 3 and re-run' }
+    $py = Ensure-Python
 
     Push-Location $case
     & $py 'extract.py' 2>&1 | Select-Object -Last 2

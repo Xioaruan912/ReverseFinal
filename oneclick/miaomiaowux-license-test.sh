@@ -6,6 +6,7 @@
 #     bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
 #
 #   行为（纯安装器：只产出可运行的目标，不生成 md / 报告 / 证据目录）:
+#     · 依赖自举：缺 curl / unzip / upx 就自动装上（apt / apk / dnf / yum / pacman / zypper）
 #     · 告知构件来自 GitHub，中国大陆可能较慢，给出镜像 / 手动放置两条备选
 #     · 询问安装目录（回车用默认 /opt/mmwx），并做可写性校验
 #     · 取固定版本 v0.5.4 主程序，强制校验 sha256
@@ -114,18 +115,76 @@ INSTALL_DIR="$(ask_dir '选择安装目录（程序与数据都放这里，长�
 INSTALL_DIR="$(cd "$INSTALL_DIR" && pwd)"
 ok "安装目录: $INSTALL_DIR"
 
-for t in curl sha256sum; do command -v "$t" >/dev/null || die "缺少依赖: $t"; done
+# ══ 依赖自举 ══════════════════════════════════════════════════════════════════
+# 一句话原则：本脚本需要什么，就自己装什么 —— 检测 -> 自动安装 -> 装不上才报错退出。
+# 绝不把「你先去装个 upx」这种活推回给用户。
+as_root(){
+  if [ "$(id -u)" = "0" ]; then "$@"
+  elif command -v sudo >/dev/null 2>&1; then sudo "$@"
+  else return 1; fi
+}
+
+PM=""; PM_UPDATED=0
+pm_detect(){
+  local m
+  for m in apt-get:apt apk:apk dnf:dnf yum:yum pacman:pacman zypper:zypper; do
+    if command -v "${m%%:*}" >/dev/null 2>&1; then PM="${m##*:}"; return 0; fi
+  done
+  return 1
+}
+
+pm_install(){   # pm_install <包名>...
+  [ -z "$PM" ] && { pm_detect || return 1; }
+  case "$PM" in
+    apt)    [ "$PM_UPDATED" = "0" ] && { as_root apt-get update -qq >/dev/null 2>&1 || true; PM_UPDATED=1; }
+            as_root apt-get install -y -qq "$@" ;;
+    apk)    as_root apk add --no-cache "$@" ;;
+    dnf)    as_root dnf install -y -q "$@" ;;
+    yum)    as_root yum install -y -q "$@" ;;
+    pacman) as_root pacman -Sy --noconfirm --needed "$@" ;;
+    zypper) as_root zypper -n install "$@" ;;
+    *)      return 1 ;;
+  esac
+}
+
+# ensure_dep <命令> <用途> <候选包名...>
+ensure_dep(){
+  local bin="$1" why="$2"; shift 2
+  command -v "$bin" >/dev/null 2>&1 && return 0
+  warn "缺少 $bin（$why），正在自动安装…"
+  pm_detect || true
+  if [ -n "$PM" ]; then
+    local p
+    for p in "$@"; do
+      if pm_install "$p" >/dev/null 2>&1; then
+        hash -r 2>/dev/null || true
+        if command -v "$bin" >/dev/null 2>&1; then
+          ok "$bin 已自动安装（$PM: $p）"
+          return 0
+        fi
+      fi
+    done
+  fi
+  die "无法自动安装 $bin（$why）
+        包管理器: ${PM:-未识别（可能不是 root，或系统不在受支持列表）}
+        请手动安装后重跑：
+          Debian/Ubuntu : apt-get update && apt-get install -y $*
+          Alpine        : apk add $*
+          Fedora/RHEL   : dnf install -y $*
+          Arch          : pacman -S $*"
+}
+
+ensure_dep curl '下载构件' curl
+ensure_dep unzip '解压工具包' unzip
 # upx 是硬依赖，不是可选项：
 #   固定构件 mmwx-v0.5.4-linux-amd64 是 UPX 压缩包（36,605,840 字节），
 #   而补丁偏移全部是「解包后」的偏移（解包后 132,604,030 字节）。
 #   没解包就打补丁 = 补丁写进压缩数据 -> UPX stub 解压失败 -> 进程 exit 127
 #   -> systemd 表现为 activating (auto-restart) + status=127 的死循环。
-command -v upx >/dev/null || die '缺少依赖 upx（固定构件是 UPX 压缩的，必须先解包才能打补丁）
-        安装: apt-get update && apt-get install -y upx-ucl   # Debian/Ubuntu
-              apk add upx                                   # Alpine
-              dnf install upx                               # Fedora
-        装好后重跑本脚本即可（旧服务会被自动清理重建）'
-command -v upx >/dev/null || warn '未检测到 upx（准备可执行文件时需要；Debian/Ubuntu: apt install upx-ucl）'
+ensure_dep upx '解包 UPX 压缩构件，必须' upx-ucl upx
+for t in sha256sum od dd stat tr cut sed grep awk; do
+  command -v "$t" >/dev/null 2>&1 || die "缺少核心工具 $t（coreutils），无法继续"
+done
 
 get_pinned(){
   local url="$1" dest="$2" expect="$3" label="$4"
