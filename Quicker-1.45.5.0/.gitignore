@@ -4,3 +4,5 @@ toolkit/build/
 toolkit/out/
 artifacts/
 *.msi
+__pycache__/
+*.pyc
