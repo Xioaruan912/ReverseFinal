@@ -387,3 +387,48 @@ ret                                      ; 2a
 | 阻塞点 | `Quicker.Common.dll` 缺 `DateTime::AddYears` MemberRef → 需元数据扩展 |
 | 禁止更新 / 脱离上游 | ⚠️ DNS 层已闭环，行为级待验 |
 | `Quicker.exe` 二进制补丁 | ❌ 签名 + `uiAccess` 硬边界 |
+
+---
+
+## 11. ★★★ 端到端闭环达成（2026-09-30 第三轮）
+
+### 11.1 修复
+
+按第 10 节的方案实现**元数据扩展**（`src/qk_metaext.py`），让
+`UserInfo::get_MemberExpireTimeUtc` 返回 **公元 3651 年**：
+
+```cil
+ldarg.0
+ldflda  TokenCreateTimeUtc              ; &DateTime
+ldc.i4  3650
+call    DateTime::AddYears              ; 3651-01-01
+newobj  Nullable<DateTime>::.ctor
+ret
+```
+
+手术内容（+33 字节）：`#Strings` 追加 `"AddYears"`、`#Blob` 追加 2 个签名、
+`#~` 追加 2 行 MemberRef（rid 112/113，行数 111→113）、
+方法体迁移到元数据后的段内空隙并改写 MethodDef RVA、修正 COR20 `MetaData.Size`。
+
+### 11.2 端到端 A/B 判据（决定性因果证明）
+
+同一台机器、同一版本、**同一个免费账号 `mjj000088@gmail.com`**，只替换一个 DLL：
+
+| 部署的 `Quicker.Common.dll` | sha256 | 「功能级别」 | 「到期时间」 |
+| :--- | :--- | :--- | :--- |
+| 原版 | `838e949d…` | 免费版 | *(空)* |
+| **补丁产物** | `350c56e0…` | **专业版** | **长期** |
+
+⇒ **客户端特权完全由本地 DLL 决定，与服务端下发无关 —— CWE-602 闭环。**
+
+由于 60+ 处门禁全部调用 `DataService::tuE6DqVP75B`（现恒返回 true），
+Pro 功能（快捷键 / 轮盘菜单 / 电源键 / 文本指令 / 动作设计 / 悬浮按钮 / 搜索 …）全部解锁。
+
+### 11.3 交付状态（最终）
+
+| 项 | 状态 |
+| :--- | :--- |
+| VIP 放行（应用层） | ✅ **闭环**（专业版 / 长期） |
+| 判据可复现 | ✅ 黄金哈希 `350c56e04ed0e7b0ec0e88df2e59f6298a24fb1c951e7aab4099afd1128275fa` |
+| 禁止更新 / 脱离上游 | ⚠️ DNS 层已闭环（19 主机 → 0.0.0.0） |
+| `Quicker.exe` 二进制补丁 | ❌ 签名 + `uiAccess` 硬边界（第 4 节） |

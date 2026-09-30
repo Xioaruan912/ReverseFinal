@@ -24,6 +24,7 @@ Quicker 是 Windows 上的效率触发工具：把鼠标中键、Ctrl、轮盘�
 | 能力 | 免费档 | 本包跑完 |
 | :--- | :--- | :--- |
 | 会员等级 | Free | **Pro** |
+| 到期时间 | 空 | **长期（公元 3651 年）** |
 | 手机端（CanUseMobileApp） | ✗ | **✓** |
 | 动作历史（EnableActionHistory） | ✗ | **✓** |
 | 扩展热键（EnableActionHotKey） | ✗ | **✓** |

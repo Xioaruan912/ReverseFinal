@@ -40,7 +40,7 @@ $QK_VER    = '1.45.5.0'
 
 $DLL_NAME  = 'Quicker.Common.patched.dll'
 $DLL_URL   = $REL + '/' + $DLL_NAME
-$DLL_SHA   = '3924e21d208fb2a90c0c241a2806365979fe1838a9ea297e3f874fd6c45c421c'
+$DLL_SHA   = '350c56e04ed0e7b0ec0e88df2e59f6298a24fb1c951e7aab4099afd1128275fa'
 $DLL_SIZE  = 207872
 
 $ORIG_SHA  = '838e949d15b376c087b2bf0d00bf14f3c6c1b0e122a06ffea4213c800f71a594'
@@ -196,40 +196,6 @@ function Get-Pinned($url, $name, $sha, $size, $cacheDir) {
        '        place it in ' + $cacheDir + ' and re-run')
 }
 
-# --------------------------------------------------------------------- patch
-function Invoke-DllPatch([string]$file) {
-  $bytes = [IO.File]::ReadAllBytes($file)
-  if ($bytes.Length -ne $ORIG_SIZE) { Die ('unexpected size ' + $bytes.Length + ' (expected ' + $ORIG_SIZE + ')') }
-  $h = Get-Sha256 $file
-  if ($h -eq $DLL_SHA) { Ok 'already patched (golden hash matches)'; return }
-  if ($h -ne $ORIG_SHA) { Die 'Quicker.Common.dll does not match the pinned build - aborting' }
-
-  foreach ($p in $DLL_PATCHES) {
-    $old = Convert-HexToBytes $p.old
-    $new = Convert-HexToBytes $p.new
-    $cur = New-Object byte[] $old.Length
-    [Array]::Copy($bytes, $p.off, $cur, 0, $old.Length)
-    for ($i = 0; $i -lt $old.Length; $i++) {
-      if ($cur[$i] -ne $old[$i]) { Die ('patch site 0x{0:x} does not match: {1}' -f $p.off, $p.what) }
-    }
-    [Array]::Copy($new, 0, $bytes, $p.off, $new.Length)
-    # read back
-    $back = New-Object byte[] $new.Length
-    [Array]::Copy($bytes, $p.off, $back, 0, $new.Length)
-    for ($i = 0; $i -lt $new.Length; $i++) {
-      if ($back[$i] -ne $new[$i]) { Die ('read-back mismatch at 0x{0:x}' -f $p.off) }
-    }
-    Ok ('  ' + $p.what)
-  }
-  [IO.File]::WriteAllBytes($file, $bytes)
-
-  $h2 = Get-Sha256 $file
-  if ($h2 -ne $DLL_SHA) {
-    Die ('result does not match the golden hash' + [Environment]::NewLine + '        got ' + $h2)
-  }
-  Ok ('14/14 sites applied, golden hash verified: ' + $h2)
-}
-
 # ------------------------------------------------------------------- sinkhole
 function Invoke-Sinkhole([string]$mode) {
   $path = Join-Path $env:SystemRoot 'System32\drivers\etc\hosts'
@@ -323,25 +289,33 @@ if (-not $needInstall) {
 }
 
 Step 'stage 3/6  licence patch'
+# The Pro gate in Quicker.exe is DataService::tuE6DqVP75B:
+#     IsPro == MemberExpireTimeUtc.HasValue && MemberExpireTimeUtc.Value > DateTime.UtcNow
+# MemberLevel and every UserLimitation flag are ignored by it, so the only lever
+# inside the unsigned Quicker.Common.dll is the expiry accessor.  Returning a future
+# date needs System.DateTime::AddYears, which the assembly does not reference, so the
+# pinned artefact already carries a minimal metadata extension (one #Strings entry,
+# two #Blob entries, two MemberRef rows, one relocated method body).  This stage just
+# deploys it and verifies the golden hash.
 $orig = Join-Path $outDir 'Quicker.Common.dll.orig'
-if ((Test-Path -LiteralPath $qkDll) -and -not (Test-Path -LiteralPath $orig)) {
-  if ((Get-Sha256 $qkDll) -eq $ORIG_SHA) {
-    Copy-Item -LiteralPath $qkDll -Destination $orig -Force
-    Ok ('pristine DLL backed up: ' + (Split-Path $orig -Leaf))
-  }
-}
 $targetSha = Get-Sha256 $qkDll
 if ($targetSha -eq $DLL_SHA) {
   Ok 'already patched (golden hash matches) - nothing to do'
 } elseif ($targetSha -eq $ORIG_SHA) {
+  if (-not (Test-Path -LiteralPath $orig)) {
+    Copy-Item -LiteralPath $qkDll -Destination $orig -Force
+    Ok 'pristine DLL backed up: Quicker.Common.dll.orig'
+  }
   Copy-Item -LiteralPath $pdl -Destination $qkDll -Force
   $now = Get-Sha256 $qkDll
   if ($now -ne $DLL_SHA) { Die ('deployed DLL hash mismatch: ' + $now) }
   Ok 'patched DLL deployed, golden hash verified'
 } else {
-  Warn ('installed Quicker.Common.dll is neither the pinned original nor the patched build (' + $targetSha + ')')
-  Warn 'applying the offset patch directly to it anyway (sites are validated first)'
-  Invoke-DllPatch $qkDll
+  Warn ('installed Quicker.Common.dll is neither the pinned original nor the patched build')
+  Warn ('  got      ' + $targetSha)
+  Warn ('  original ' + $ORIG_SHA)
+  Warn ('  patched  ' + $DLL_SHA)
+  Die 'refusing to patch an unknown build'
 }
 
 Step 'stage 4/6  upstream detachment'
