@@ -222,3 +222,91 @@ Quicker-1.45.5.0/
 3. **授权判定下沉 + 混淆**：`MemberLevel` 的引用点应分散/虚拟化，避免单点汇聚。
 4. **传输层**：全部 API 强制 `Nonce + Timestamp + Sign`，证书绑定。
 5. **完整性**：对未签名程序集启用强名 + 运行时对关键方法体做哈希校验。
+
+---
+
+## 9. ★ 端到端（应用级）验证 —— 2026-09-30 追加，**修正结论**
+
+上一节（第 2~4 节）的结论只到「判据级」。本次补齐应用级验证后，**必须修正结论**。
+
+### 9.1 已证实：应用确实加载并使用我们改的字节
+
+| 实验 | 结果 |
+| :--- | :--- |
+| 移走 `Quicker.Common.dll` 后启动 | **进程立即死亡**，日志 `ERROR Quicker.App - 缺少文件：Quicker.Common`，栈 `Quicker.App.Vl8ibgU0Nh(Object, ResolveEventArgs)` |
+| ⇒ 该 DLL 是**硬依赖** | 应用经**自定义 `AssemblyResolve` 处理器**从磁盘加载（故不出现在 `Get-Process.Modules`，之前"未加载"的推断是错的） |
+
+**对照实验（同一账号 `mjj000088@gmail.com`、同一版本，只改 `get_MemberExpireTimeUtc` 的返回来源）：**
+
+| 该 getter 返回 | 「到期时间」显示 |
+| :--- | :--- |
+| 原版字段（null） | *(空)* |
+| `RegTimeUtc` | **专业版已过期 0 天** |
+| `TokenExpireTimeUtc` | **专业版已过期 739888 天** |
+
+⇒ **UI 随我们的编辑而变化 = 应用确实读取补丁后的 IL。**
+
+### 9.2 否证：`UserInfo.MemberLevel` 不参与 Pro 判定
+
+| `get_MemberLevel` 返回 | 「功能级别」显示 |
+| :--- | :--- |
+| 原版 `Free(0)` | 免费版 |
+| 补丁 `Pro(3)` | **免费版**（无变化） |
+| 越界 `99`（switch 落 default→`ToString()`） | **免费版**（无变化） |
+
+⇒ 该属性对**显示与判定均无效**。第 3 节的 14 处补丁**在应用层不产生 Pro**。
+
+### 9.3 真实判定链（已反编译定位）
+
+```
+UserInfo (Quicker.Common.dll)
+   │  aM16BkbDmTF  快照构建：读 get_MemberLevel(0x0a002fbe) + get_MemberExpireTimeUtc(0x0a002fbd)
+   │                 + 12 个 UserLimitation 属性 → 写入匿名快照对象
+   ▼
+Quicker.exe 内部快照  fqlZhF6420Qruyto8XQt.YlAoO6640MqV9t3N6lgP
+   │  字段 0x04005677 = 等级(valuetype)   字段 0x04005678 = Nullable<DateTime> 到期
+   ▼
+DataService.WBG6Di0qqO8 / aN96DmDZ2Ds
+   ▼
+Quicker.Settings.Pages.About.AboutSettingPage.LoadDataToUi
+   ├ level == 3                → 专业版
+   └ expire.HasValue + op_Subtraction + TimeSpan.TotalDays → 「专业版已过期 {0} 天」
+```
+
+**Pro 判定由「`MemberExpireTimeUtc` 是否为未来时间」门控。**
+
+### 9.4 硬边界：库内无法合成未来 `Nullable<DateTime>`
+
+`Quicker.Common.dll` 的元数据表中**不存在**以下 token：
+
+| 需要 | 状态 |
+| :--- | :--- |
+| `Nullable<DateTime>::.ctor(DateTime)` | ✗ 无 MemberRef |
+| `DateTime::AddDays / AddYears / op_Addition` | ✗ 无 |
+| `DateTime::MaxValue`（FieldRef 或 getter） | ✗ 无 |
+| `Nullable<T>::m_value / hasValue` FieldRef | ✗ 无 |
+| `System.DateTime::get_UtcNow` | ✓ 有（`0x0a000031`），但等于**当前时刻**，非未来 |
+
+已实测：把裸 `DateTime` 冒充 `Nullable<DateTime>` 返回**被 JIT 接受**（`TokenExpireTimeUtc` 实验成功），
+但拿不到未来值 —— 因此该缺口无法用纯 IL 改写绕过，**必须扩展元数据表**。
+
+### 9.5 当前交付状态（如实）
+
+| 项 | 状态 |
+| :--- | :--- |
+| 14 处 IL 补丁的形式正确性 | ✅ 判据级已闭环 |
+| 应用是否加载补丁字节 | ✅ 已证实 |
+| **VIP 在应用层生效** | ❌ **未闭环**（`MemberLevel` 被忽略） |
+| 禁止更新 / 脱离上游 | ⚠️ DNS 层已闭环，行为级待验 |
+| `Quicker.exe` 二进制补丁 | ❌ 签名 + `uiAccess` 硬边界（第 4 节） |
+
+### 9.6 闭环路径（按性价比）
+
+1. **扩展元数据**（推荐）：在 `Quicker.Common.dll` 的 `#~` 表流中新增
+   `TypeRef(Nullable<DateTime>)` + `MemberRef(Nullable<DateTime>::.ctor)` + `MemberRef(DateTime::AddYears)`，
+   同步修正表行数与各堆偏移，然后写入
+   `call get_UtcNow; ldc.i4 3650; conv.r8; call AddYears; newobj Nullable<DateTime>::.ctor; ret`（fat→tiny，22 字节）。
+2. 或同样思路改 `set_MemberExpireTimeUtc`（让反序列化后的字段恒为未来值）。
+3. 或先实测「Pro 功能是否真的不可用」（`UserLimitation` 的 12 个位是快照直接拷贝的，
+   **功能位可能已生效而只有 About 页显示未变**）——这决定是否真需要走 1。
+4. 其他攻击面：`SyncVm4.IsProNow`（服务端下发 bool）、JWT claim `Cliam_IsPro`。
