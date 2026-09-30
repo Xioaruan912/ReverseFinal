@@ -22,3 +22,4 @@ rule_templates/
 subscribes/
 *.log
 machine-id
+.e2e/
