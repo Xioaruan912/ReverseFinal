@@ -310,3 +310,80 @@ Quicker.Settings.Pages.About.AboutSettingPage.LoadDataToUi
 3. 或先实测「Pro 功能是否真的不可用」（`UserLimitation` 的 12 个位是快照直接拷贝的，
    **功能位可能已生效而只有 About 页显示未变**）——这决定是否真需要走 1。
 4. 其他攻击面：`SyncVm4.IsProNow`（服务端下发 bool）、JWT claim `Cliam_IsPro`。
+
+---
+
+## 10. ★★ 根因彻底锁定（2026-09-30 第二轮）
+
+### 10.1 唯一门禁函数：`DataService::tuE6DqVP75B`
+
+反编译（RVA `0x276190` 附近，MethodDef token `0x06008e79`）得到完整 IL：
+
+```cil
+IL_000c  ldloca.s   0
+IL_000e  call       Nullable<DateTime>::get_HasValue
+IL_0013  brtrue     IL_003c
+IL_003a  ldc.i4.0
+IL_003b  ret                              // 无到期时间 -> false
+IL_003c  ldloca.s   0
+IL_003e  call       Nullable<DateTime>::get_Value
+IL_0043  ldloc.s    1                     // DateTime.UtcNow
+IL_0045  call       DateTime::op_GreaterThan
+IL_004a  ret                              // 到期时间 > 当前时间 -> true
+```
+
+**`IsPro == (MemberExpireTimeUtc.HasValue && MemberExpireTimeUtc.Value > DateTime.UtcNow)`**
+
+**该函数完全不读取 `MemberLevel`，也不读取任何 `UserLimitation` 位。**
+
+### 10.2 调用面（60+ 处，即全部 Pro 门禁）
+
+`BasicSettings` · `UISettingsPage` · `ActionHotkeysSettingPage` · `CircleMenuSettingPage` ·
+`HotkeyWatchersSettingPage` · `KeyActionsSettingPage` · `LeftButtonPlusSettingPage` ·
+`PowerKeysManagementPage` · `TextCommandManagePage` · `ActionDesignerSettings` ·
+`AutoRunSettings` · `<StartupApplicationAsync>` · `<BtnShare_OnClick>` · `Quicker.App::wXbi5hw6LN` …
+
+⇒ 这解释了全部实测现象：
+* `get_MemberLevel` 改成 `Pro(3)` / `99` → **毫无变化**（根本不参与）
+* `get_MemberExpireTimeUtc` 改成非空 → 「到期时间」立刻变化（**该值确实流入判定**）
+
+### 10.3 可行修复：让 `get_MemberExpireTimeUtc` 返回未来时间
+
+关键便利条件（**已实测**）：**CLR 的 JIT 接受把裸 `DateTime` 当作 `Nullable<DateTime>` 返回**
+（`get_MemberExpireTimeUtc → TokenExpireTimeUtc` 实验成功，UI 正常渲染），
+因此**不需要** `Nullable<T>::.ctor`。
+
+目标 IL（16 字节，用 fat→tiny 改写，header = `(16<<2)|2 = 0x42`）：
+
+```cil
+call  System.DateTime::get_UtcNow        ; 28 31 00 00 0a
+ldc.i4 3650                              ; 20 42 0e 00 00
+call  System.DateTime::AddYears          ; 28 <新 MemberRef>
+ret                                      ; 2a
+```
+
+**唯一缺口**：`Quicker.Common.dll` 的元数据表中没有 `DateTime::AddYears` 的 `MemberRef`。
+
+| 所需元素 | 现状 |
+| :--- | :--- |
+| `TypeRef System.DateTime` | ✅ 存在（`0x0100000e`） |
+| `TypeRef System.Nullable\`1` | ✅ 存在（`0x0100000d`） |
+| `MemberRef DateTime::get_UtcNow` | ✅ 存在（`0x0a000031`） |
+| `MemberRef DateTime::AddYears` | ❌ **缺失** |
+| `#Strings` 中的 `"AddYears"` | ❌ 缺失 |
+| `#Blob` 中的签名 `20 01 11 0e 08` | ❌ 缺失 |
+
+⇒ 必须做**元数据扩展**：向 `#~` 表流追加 1 行 `MemberRef`、向 `#Strings` 追加 `"AddYears\0"`、
+向 `#Blob` 追加签名，并同步修正 `#~` 表头的行数、各堆偏移与元数据根目录的流偏移。
+
+### 10.4 当前交付状态（最终）
+
+| 项 | 状态 |
+| :--- | :--- |
+| 14 处 IL 补丁形式正确性 | ✅ 判据级闭环（反射 Pro/999/True；黄金哈希；独立回读 14/14） |
+| 应用是否加载并使用补丁字节 | ✅ **已证实**（3 组 UI 对照实验 + 移走文件即崩） |
+| **VIP 在应用层生效** | ❌ **未闭环** —— 补丁改错了字段（`MemberLevel` 不参与判定） |
+| 唯一有效杠杆 | `UserInfo.MemberExpireTimeUtc` 必须 > 当前时间 |
+| 阻塞点 | `Quicker.Common.dll` 缺 `DateTime::AddYears` MemberRef → 需元数据扩展 |
+| 禁止更新 / 脱离上游 | ⚠️ DNS 层已闭环，行为级待验 |
+| `Quicker.exe` 二进制补丁 | ❌ 签名 + `uiAccess` 硬边界 |
