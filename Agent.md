@@ -895,6 +895,7 @@ README 只保留「是什么 / 怎么用 / 用完能用什么 / 去哪找报告�
 | HexHub | **5.1.9** | `oneclick/hexhub-vip-test.ps1` | 便携式 HexHub 目录（已打补丁） | `桌面\HexHub-5.1.9` |
 | Listary 6 | **6.3.5.94** | `oneclick/listary-pro-test.ps1` | 正常安装的 Listary Pro | `桌面\Listary` |
 | 妙妙屋X | **v0.5.4** | `oneclick/miaomiaowux-license-test.sh` / `.ps1` | systemd 常驻服务 | `/opt/mmwx` |
+| Quicker | **1.45.5.0** | `oneclick/quicker-vip-test.ps1` | 已打补丁的 Quicker 目录 + 上游沉洞 | `桌面\Quicker-1.45.5.0` |
 
 > 所有构件托管于本仓库 Release：
 > `https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0`

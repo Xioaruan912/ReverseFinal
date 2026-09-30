@@ -14,13 +14,24 @@
 
 $ErrorActionPreference = 'Stop'
 $dll = $args[0]
-if (-not $dll) { $dll = Join-Path (Split-Path $PSScriptRoot -Parent) 'toolkit\Quicker.Common.patched.dll' }
+if (-not $dll) {
+  # works both with -File and with irm | iex (where $PSScriptRoot is empty)
+  $cand = @()
+  if ($PSScriptRoot) { $cand += (Join-Path (Split-Path $PSScriptRoot -Parent) 'toolkit\Quicker.Common.patched.dll') }
+  $cand += (Join-Path (Get-Location).Path 'toolkit\Quicker.Common.patched.dll')
+  foreach ($c in $cand) { if (Test-Path -LiteralPath $c) { $dll = $c; break } }
+}
+if (-not $dll) { Write-Host 'usage: verify_dto.ps1 <path to Quicker.Common.dll>'; exit 2 }
 if (-not (Test-Path -LiteralPath $dll)) { Write-Host ('missing: ' + $dll); exit 2 }
 $dll = (Resolve-Path -LiteralPath $dll).Path
 
 $dir = Split-Path $dll -Parent
-[void][Reflection.Assembly]::LoadFrom((Join-Path $dir 'Quicker.Public.dll'))
-[void][Reflection.Assembly]::LoadFrom((Join-Path $dir 'Newtonsoft.Json.dll'))
+# optional sibling assemblies: only needed when the DLL sits inside a full
+# Quicker install folder.  Their absence is not fatal for reading the DTO.
+foreach ($sib in @('Quicker.Public.dll', 'Newtonsoft.Json.dll')) {
+  $sp = Join-Path $dir $sib
+  if (Test-Path -LiteralPath $sp) { try { [void][Reflection.Assembly]::LoadFrom($sp) } catch { } }
+}
 
 $sha = (Get-FileHash -LiteralPath $dll -Algorithm SHA256).Hash.ToLower()
 Write-Host ''
@@ -31,7 +42,12 @@ Write-Host ('  assembly : ' + $dll)
 Write-Host ('  sha256   : ' + $sha)
 Write-Host ''
 
-$asm = [Reflection.Assembly]::LoadFrom($dll)
+try { $asm = [Reflection.Assembly]::LoadFrom($dll) }
+catch {
+  Write-Host ('  cannot load the assembly: ' + $_.Exception.Message) -ForegroundColor Red
+  Write-Host '  hint: point this script at Quicker.Common.dll inside a full Quicker folder.' -ForegroundColor DarkGray
+  exit 2
+}
 
 function Show-Props($typeName, $props) {
   $t = $asm.GetType($typeName)

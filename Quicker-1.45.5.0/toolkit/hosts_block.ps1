@@ -64,10 +64,6 @@ if (-not (Test-Admin)) { Die 'editing the hosts file requires an elevated shell'
 # read as latin-1 so an existing OEM/ANSI hosts file survives byte-for-byte
 $enc = [Text.Encoding]::GetEncoding(28591)
 $bak = $path + '.quickerlab.bak'
-if (-not (Test-Path -LiteralPath $bak)) {
-  Copy-Item -LiteralPath $path -Destination $bak -Force
-  Ok ('backup written: ' + $bak)
-}
 
 function Get-Body([string[]]$lines) {
   $out = New-Object System.Collections.Generic.List[string]
@@ -99,6 +95,10 @@ $present = ($lines | Where-Object { $_.Trim() -eq $BEGIN }).Count -gt 0
 switch ($mode) {
   'on' {
     if ($present) { Ok 'sinkhole already active'; break }
+    if (-not (Test-Path -LiteralPath $bak)) {
+      Copy-Item -LiteralPath $path -Destination $bak -Force
+      Ok ('backup written: ' + $bak)
+    }
     $body.Add('')
     $body.Add($BEGIN)
     foreach ($h in $HOSTS) { $body.Add('0.0.0.0 ' + $h) }

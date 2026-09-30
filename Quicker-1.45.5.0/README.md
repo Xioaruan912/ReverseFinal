@@ -1,142 +1,113 @@
-# Quicker 1.45.5.0 — 客户端鉴权脆弱性白盒审计（授权测试）
+# Quicker 1.45.5.0
 
-> 目标：`Quicker.exe` / `Quicker.Common.dll`（.NET Framework 4.x · C# / WPF）
-> 类型：**CWE-602 客户端强行实施服务端安全机制**
-> 范围：自有授权环境内的客户端逻辑验证与防御加固研究
+## 一、这是什么软件
+
+Quicker 是 Windows 上的效率触发工具：把鼠标中键、Ctrl、轮盘菜单、扩展热键、悬浮按钮、
+文本指令等触发方式绑到「动作」上，一键执行组合操作（打开软件、发按键、跑脚本、
+处理文件、OCR、翻译…）。常驻托盘运行，是本机使用频率很高的效率中枢。
+
+免费档与专业档的差异全部由客户端本地的一份授权对象决定：
+
+| 维度 | 免费档 | 专业档 |
+| :--- | :--- | :--- |
+| 会员等级 | `Free` | `Pro` |
+| 功能位（6 项） | 全 `False` | 全 `True` |
+| 数量配额（6 项） | 全 `0`（部分有很小的硬编码预设） | 大幅放开 |
+| 动作页/动作数量 | 受限 | 放开 |
 
 ---
 
-## 一键命令
+## 二、跑完能用什么
+
+一条命令装完即为专业档客户端授权状态：
+
+| 能力 | 免费档 | 本包跑完 |
+| :--- | :--- | :--- |
+| 会员等级 | Free | **Pro** |
+| 手机端（CanUseMobileApp） | ✗ | **✓** |
+| 动作历史（EnableActionHistory） | ✗ | **✓** |
+| 扩展热键（EnableActionHotKey） | ✗ | **✓** |
+| 快速启动器（EnableStarter） | ✗ | **✓** |
+| 悬浮按钮（EnableFloatButton） | ✗ | **✓** |
+| 搜索（EnableSearching） | ✗ | **✓** |
+| 动作页上限 / 动作上限 / 每页动作上限 | 0 | **999 / 999 / 999** |
+| 单页文件上限 / 总文件上限 | 0 | **102400 / 1048576** |
+| 图标数量上限 | 0 | **9999** |
+| 版本更新 | 会检查并提示 | **通道已切断** |
+| 上游连通 | getquicker.net / .cn 全通 | **19 个主机不可路由** |
+
+功能位与配额一律以客户端实际读出的值为准，可用 `toolkit\verify_dto.ps1` 当场复核。
+
+---
+
+## 三、环境要求
+
+| 项 | 要求 |
+| :--- | :--- |
+| 操作系统 | Windows 10 / 11 x64 |
+| 运行时 | .NET Framework 4.7.2+（MSI 自带引导） |
+| 权限 | 管理员（安装 MSI + 写 hosts 需要） |
+| PowerShell | 5.1（系统自带） |
+| 外部依赖 | **无**。不需要 Python / Java / .NET SDK / radare2 |
+
+---
+
+## 四、一条命令跑通
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/quicker-vip-test.ps1 | iex"
 ```
 
-固定版本 `1.45.5.0`，安装包与补丁产物**全部从本仓库 Release 拉取**并逐一校验 sha256，
-不访问被测软件官网的「最新版」，厂商发新版不会改变测试对象。
+安装包与补丁产物全部从本仓库 Release 固定件拉取，逐个校验 sha256，不匹配立即中止。
+全程约 1～2 分钟（含 24 MB 安装包下载）。
 
----
-
-## 这个包做了什么
-
-| 能力 | 实现层 | 判据 |
-| :--- | :--- | :--- |
-| **VIP 放行** | `Quicker.Common.dll` 14 处 IL 等长改写 | `MemberLevel=Pro` + 6 项功能位 True + 6 项配额放开 |
-| **禁止更新** | DNS 沉洞切断版本/下载通道 | 19 个上游主机 → `0.0.0.0` |
-| **脱离上游** | hosts 可逆管控块 | `Resolve-DnsName` 全部返回 `0.0.0.0` |
-
-`Quicker.exe` **保持字节完全原样**——原因见下。
-
----
-
-## ★ 关键发现一：`ret` 必须是方法体最后一个字节
-
-上一轮把「常量 IL 改写必抛 `InvalidProgramException`」判成了**方法体完整性守卫**。这是误判。
-
-```
-02 7B xx xx 00 04 2A     ldarg.0; ldfld; ret        ← 原版，合法
-20 03 00 00 00 2A 00     ldc.i4 3; ret; nop          ← ❌ InvalidProgramException
-00 20 03 00 00 00 2A     nop; ldc.i4 3; ret          ← ✅ 正常返回 3
-```
-
-`ret` 之后不能再有任何字节。用**自编译的 scratch 程序集**做同样的改写会复现同一错误，
-证明这与任何保护机制无关，是纯 IL 结构问题。
-
-配套反证（用来锁死结论，不是推测）：
-
-| 变体 | 结果 |
+| 环境变量 | 作用 |
 | :--- | :--- |
-| 原样写回 | ✅ 正常 |
-| 只改 `ldfld` token 一个字节 | ✅ **正常编译并执行**（抛 `FieldAccessException`） |
-| 方法体外翻字节（DOS stub / MVID / 文件尾） | ✅ 正常 → **不存在全文件哈希校验** |
-| `ret` 不在末字节 | ❌ `InvalidProgramException` |
+| `QK_INSTALLDIR` | 指定安装目录（默认 `桌面\Quicker-1.45.5.0`） |
+| `QK_YES=1` | 全程不再询问，使用默认值 |
+| `QK_MIRROR` | 安装包镜像前缀（下载慢时用） |
+| `QK_SKIP_INSTALL=1` | 已装好，跳过安装 |
+| `QK_KEEP_ARTIFACTS=1` | 保留下载的安装包 |
+| `QK_NO_HOSTS=1` | 不改 hosts（不做上游切断） |
+
+> **首次使用需先登录一次**：Quicker 需要登录（或点登录窗的「体验」）才会实例化授权对象，
+> 而登录依赖上游。顺序是 `hosts_block.ps1 -Mode off` → 登录 → `hosts_block.ps1 -Mode on`。
+> 登录之后客户端授权状态由已打补丁的程序集决定，与服务端下发什么无关。
 
 ---
 
-## ★ 关键发现二：`Quicker.exe` 是不可二进制补丁的硬边界
+## 五、产物与运维
 
-```
-Authenticode : Valid（CN=Beijing LiErHeXun Tech Co., Ltd.）
-嵌入式清单    : <requestedExecutionLevel level="asInvoker" uiAccess="true" />
-```
+| 项 | 值 |
+| :--- | :--- |
+| 产出目录 | `桌面\Quicker-1.45.5.0\`（可直接运行的程序目录，长期保留） |
+| 启动 | 双击 `Quicker.exe`，常驻托盘 |
+| 授权判据 | `powershell -File toolkit\verify_dto.ps1 "<安装目录>\Quicker.Common.dll"` → `VERDICT: PRO` |
+| 原始对照 | 同目录 `Quicker.Common.dll.orig` → `VERDICT: FREE` |
+| 上游沉洞状态 | `powershell -File toolkit\hosts_block.ps1 -Mode status` |
+| 临时放行（登录用） | `powershell -File toolkit\hosts_block.ps1 -Mode off` |
+| 重新阻断 | `powershell -File toolkit\hosts_block.ps1 -Mode on` |
+| 卸载 | 控制面板 → 程序和功能 → Quicker → 卸载；再删安装目录；再 `hosts_block.ps1 -Mode off` |
 
-`uiAccess="true"` 的进程，Windows **只授予签名有效的映像**。8 组变量二分定位：
-
-| 变体 | 内容 | 结果 |
-| :--- | :--- | :--- |
-| V1 | 原版 exe + 原版 dll | ✅ ALIVE |
-| V2 | 原版 exe + **补丁 dll** | ✅ ALIVE |
-| V3 | **仅改清单** `uiAccess="true"` → `"false"` | ❌ 启动即崩 |
-| V4~V6 | 清单 + 上游字符串 / 更新入口短路 | ❌ 崩溃 |
-| V7~V8 | 全量补丁 exe | ❌ 崩溃 |
-
-- 保持 `uiAccess="true"` 改字节 → `CreateProcess` 直接失败（`ERROR_ELEVATION_REQUIRED`）
-- 放宽成 `uiAccess="false"` → 进程能创建，但 log4net 初始化前抛未处理 CLR 异常
-  （事件日志 `Application Error 0xe0434352`）
-- 放到**非安全路径**同样崩溃 → 与位置无关
-- Quicker.exe 内含 `X509Certificate` / `VerifyHash` 字符串 → 存在签名/哈希校验路径
-
-**结论**：`Quicker.Common.dll` 未签名（`NotSigned`）所以可改；`Quicker.exe` 已签名所以不可改。
-「禁止更新 / 脱离上游」因此下沉到 DNS 层实现——等价且更彻底，且零回归。
-
-> 已定位但未启用的更新入口（保留为证据）：`SoftVersionHelper.CheckVersionUpdateAfterFirstSync`、
-> `<MenuCheckUpdate_OnClick>d__216::MoveNext`、`<MenuUpdateVersion_OnClick>d__207::MoveNext`、
-> `<BtnCheckVersion_OnClick>d__5::MoveNext`。
-> ⚠️ `IsVersionNewer` **不要改**——它有 20+ 调用点，其中包含共享动作版本比较。
+原 hosts 自动备份为 `hosts.quickerlab.bak`，`-Mode off` 会移除整块并保留备份。
 
 ---
 
-## 判据（A/B）
-
-```powershell
-# 补丁产物
-powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\verify_dto.ps1 toolkit\Quicker.Common.patched.dll
-
-# 安装目录里的实际文件
-powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\verify_dto.ps1 "C:\path\to\Quicker.Common.dll"
-```
-
-| 属性 | 原始 | 补丁后 |
-| :--- | :--- | :--- |
-| `MemberLevel` | `Free` | **`Pro`** |
-| `MemberExpireTimeUtc` | `<null>` | `<null>`（消费者按 `DateTime.MaxValue` 处理） |
-| `CanUseMobileApp` / `Enable*` | `False` | **`True`** |
-| `MaxPcCount` / `MaxExeCount` / `MaxPagePerExe` | `0` | **`999`** |
-| `MaxPageFileSize` / `TotalPageFileSize` / `MaxIconCount` | `0` | **`102400` / `1048576` / `9999`** |
-
----
-
-## 上游沉洞（可逆）
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\hosts_block.ps1 -Mode status
-powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\hosts_block.ps1 -Mode off   # 临时放行（登录用）
-powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\hosts_block.ps1 -Mode on    # 重新阻断
-```
-
-覆盖 19 个主机：`getquicker.net` / `getquicker.cn` 全部子域（授权、同步、推送、更新、帮助），
-以及 `*.aliyuncs.com` / `*.bcebos.com` 云状态与临时文件桶。原 hosts 自动备份为 `hosts.quickerlab.bak`。
-
-> ⚠️ 首次使用需登录（或点「体验」）。登录依赖上游，请先 `-Mode off`，登录成功后再 `-Mode on`。
-> 登录后客户端授权状态由**已补丁的 `Quicker.Common.dll`** 决定，与服务端无关。
-
----
-
-## 目录
+## 六、目录说明
 
 ```
 Quicker-1.45.5.0/
-├── PINNED-VERSIONS.md          固定版本与全部哈希
+├── PINNED-VERSIONS.md          固定版本与全部哈希（含 14 处补丁站点）
 ├── README.md                   本文件
 ├── 使用说明.txt                 面向使用者的操作说明
 ├── installer/                  安装包说明（MSI 走 Release，不入库）
 ├── toolkit/
 │   ├── Quicker.Common.patched.dll  VIP 补丁产物（sha256 已钉）
-│   ├── verify_dto.ps1             A/B 反射判据
+│   ├── verify_dto.ps1             A/B 反射判据（原始 vs 补丁）
 │   ├── hosts_block.ps1            上游沉洞 开/关/查（可逆）
-│   └── build/hosts_block.txt      沉洞清单
+│   └── hosts_block.txt            沉洞清单（19 个主机）
 ├── reports/
-│   └── Quicker-1.45.5.0-鉴权脆弱性审计记录.md
+│   └── Quicker-1.45.5.0-鉴权脆弱性审计记录.md   ← 成因 / 位点 / 证据 / 整改建议
 └── src/
     ├── peil.py    PE / CLR 元数据 / IL 方法体读写库
     ├── ild.py     CIL 反汇编器（自带 opcode 表，零外部依赖）
@@ -144,13 +115,5 @@ Quicker-1.45.5.0/
     └── qk_patch.py 补丁驱动（含独立回读复验 + 黄金哈希）
 ```
 
----
-
-## 防御加固建议（厂商侧）
-
-1. **服务端权威**：`MemberLevel` / `UserLimitation` 不得作为唯一门禁；特权动作与配额扣减必须服务端二次鉴权。
-2. **授权 DTO 下沉**：本例已证明签名 + `uiAccess` 足以阻止主程序被改，但未签名的伴生程序集仍可被改写 →
-   授权模型应下沉到已签名程序集或 Native 层，并对关键方法体加运行时哈希校验。
-3. **判据分离**：后端门禁 / 前端展示 / 数量配额三层都会被同一份 DTO 带着走，单点汇聚 = 单点失效。
-4. **传输层**：全部 API 强制 `Nonce + Timestamp + Sign` + 证书绑定。
-5. **强名 + 完整性**：对未签名程序集启用强名并校验方法体完整性。
+报告索引：`reports/Quicker-1.45.5.0-鉴权脆弱性审计记录.md`
+（授权模型、`ret` 必须置末的 IL 规则、`Quicker.exe` 签名硬边界、冒烟判据、厂商整改建议）
