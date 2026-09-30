@@ -1,0 +1,106 @@
+Quicker 1.45.5.0  客户端鉴权脆弱性白盒审计（授权测试）
+========================================================
+
+一、一键安装
+------------
+在 PowerShell 里执行（管理员权限）：
+
+  powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/quicker-vip-test.ps1 | iex"
+
+脚本会依次完成：
+
+  0 环境检查（只用系统自带 cmdlet，无需 Python / Java / .NET SDK）
+  1 从本仓库 Release 拉取固定版本的安装包与补丁产物，逐一校验 sha256
+  2 静默安装 Quicker 1.45.5.0（WiX MSI，属性名是 INSTALLFOLDER）
+  3 备份原始 Quicker.Common.dll，写入 VIP 补丁产物并校验黄金哈希
+  4 写入上游沉洞（hosts 可逆管控块，19 个主机 -> 0.0.0.0）
+  5 冒烟测试：启动 Quicker.exe，确认进程存活且写出启动日志
+  6 清理下载件，打印产物路径 / 启动方式 / 卸载方式
+
+默认安装目录：桌面\Quicker-1.45.5.0
+若需要驱动「以管理员身份运行」的窗口，建议改装到 Program Files。
+
+可用环境变量：
+
+  QK_INSTALLDIR       指定安装目录
+  QK_YES=1            全程不再询问，使用默认值
+  QK_MIRROR           安装包镜像前缀
+  QK_SKIP_INSTALL=1   已装好，跳过安装
+  QK_KEEP_ARTIFACTS=1 保留下载的安装包
+  QK_NO_HOSTS=1       不改 hosts（不做上游切断）
+
+------------------------------------------------------------
+
+二、首次使用必须先登录（重要）
+------------------------------
+Quicker 需要登录（或点登录窗里的「体验」按钮）才会实例化授权对象。
+登录依赖上游服务器，而本方案默认已把上游切断，因此顺序是：
+
+  1) 解除沉洞
+       powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\hosts_block.ps1 -Mode off
+
+  2) 启动 Quicker.exe，用任意免费账号登录（或点「体验」）
+
+  3) 重新阻断上游
+       powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\hosts_block.ps1 -Mode on
+
+登录之后，客户端授权状态由**已打补丁的 Quicker.Common.dll** 决定，
+与服务端下发什么无关：会员等级读出来就是 Pro，功能位与配额全部放开。
+
+------------------------------------------------------------
+
+三、验证是否生效
+----------------
+  powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\verify_dto.ps1 "C:\安装目录\Quicker.Common.dll"
+
+期望输出：
+
+  MemberLevel            = Pro
+  CanUseMobileApp        = True
+  EnableSearching        = True
+  MaxExeCount            = 999
+  ...
+  VERDICT: PRO  (member level lifted, quota ceilings opened)
+
+拿未修改的原版对照（安装目录里的 Quicker.Common.dll.orig）会得到：
+
+  MemberLevel            = Free
+  MaxExeCount            = 0
+  VERDICT: FREE (pristine baseline)
+
+上游切断验证：
+
+  powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\hosts_block.ps1 -Mode status
+  Resolve-DnsName getquicker.net        # 应返回 0.0.0.0
+
+------------------------------------------------------------
+
+四、卸载 / 还原
+---------------
+  1) 解除上游沉洞
+       powershell -NoProfile -ExecutionPolicy Bypass -File toolkit\hosts_block.ps1 -Mode off
+     （原始 hosts 已自动备份为  hosts.quickerlab.bak）
+
+  2) 还原原版 DLL
+       把安装目录里的 Quicker.Common.dll.orig 复制回 Quicker.Common.dll
+
+  3) 卸载程序
+       控制面板 -> 程序和功能 -> Quicker -> 卸载
+     或删除安装目录整个文件夹
+
+------------------------------------------------------------
+
+五、说明
+--------
+* Quicker.exe 保持字节完全原样。它带有效 Authenticode 签名，且嵌入式清单
+  声明 uiAccess="true"；Windows 只给签名有效的映像授予 UIAccess，
+  所以任何字节改动都会导致进程无法启动（已用 8 组变量二分验证）。
+  因此「禁止更新 / 脱离上游」改由 DNS 层实现，等价且更彻底。
+
+* Quicker.Common.dll 未签名、未混淆，是客户端授权真相的唯一载体，
+  14 处访问器被改成常量返回（MemberLevel -> Pro，配额 -> 999 等）。
+
+* 禁止更新：版本查询与下载通道（api / files / download / cc / temp 等）
+  已在 DNS 层阻断，更新包无法获取。
+
+* 本包仅用于自有授权环境的安全验证与防御加固研究。

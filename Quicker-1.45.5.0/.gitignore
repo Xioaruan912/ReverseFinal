@@ -1,0 +1,6 @@
+installer/*.msi
+installer/*.exe
+toolkit/build/
+toolkit/out/
+artifacts/
+*.msi

@@ -1,0 +1,21 @@
+# --- QuickerLab upstream sinkhole (managed block) ---
+0.0.0.0 getquicker.net
+0.0.0.0 api.getquicker.net
+0.0.0.0 files.getquicker.net
+0.0.0.0 cc.getquicker.net
+0.0.0.0 temp.getquicker.net
+0.0.0.0 download.getquicker.net
+0.0.0.0 getquicker.cn
+0.0.0.0 data.getquicker.cn
+0.0.0.0 connect.getquicker.cn
+0.0.0.0 ocr.getquicker.cn
+0.0.0.0 files.getquicker.cn
+0.0.0.0 tools.getquicker.cn
+0.0.0.0 tmpimg.getquicker.cn
+0.0.0.0 helperservice.getquicker.cn
+0.0.0.0 aiproxy.getquicker.cn
+0.0.0.0 quicker-temp.bj.bcebos.com
+0.0.0.0 quickeruserdata.oss-cn-shanghai.aliyuncs.com
+0.0.0.0 deskpad.oss-cn-shanghai.aliyuncs.com
+0.0.0.0 quickeruserdata.oss-accelerate.aliyuncs.com
+# --- end QuickerLab upstream sinkhole ---

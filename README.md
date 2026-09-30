@@ -23,6 +23,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare-license-test.ps1 | iex"
 ```
 
+```powershell
+# Quicker 1.45.5.0 —— 客户端鉴权状态（.NET / C# WPF 托盘工具）
+powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/quicker-vip-test.ps1 | iex"
+```
+
 ```bash
 # 妙妙屋X —— 许可门禁与数量配额（Linux / WSL）
 bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
@@ -37,6 +42,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercont
 | Listary 6 | 6.3.5.94 | `oneclick/listary-pro-test.ps1` |
 | 妙妙屋X | v0.5.4 | `oneclick/miaomiaowux-license-test.sh` / `.ps1` |
 | Beyond Compare | 5.2.6.32774 | `oneclick/beyondcompare-license-test.ps1` |
+| Quicker | 1.45.5.0 | `oneclick/quicker-vip-test.ps1` |
 
 构件来源：<https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0>
 （全部固定构件 + `SHA256SUMS.txt`）
@@ -54,7 +60,8 @@ Reverse_OK/
 │   ├── hexhub-vip-test.ps1
 │   ├── listary-pro-test.ps1
 │   ├── miaomiaowux-license-test.sh
-│   └── miaomiaowux-license-test.ps1
+│   ├── miaomiaowux-license-test.ps1
+│   └── quicker-vip-test.ps1
 │
 ├── HexHub-5.1.9/                HexHub Client 5.1.9 · 会员权益
 │   ├── README.md
@@ -66,6 +73,14 @@ Reverse_OK/
 │   └── src/                     自研分析工装源码
 │
 ├── BeyondCompare-5.2.6/         Beyond Compare 5 · 离线凭证判定
+├── Quicker-1.45.5.0/            Quicker 1.45.5.0 · 客户端鉴权状态 + 上游切断
+│   ├── README.md
+│   ├── PINNED-VERSIONS.md
+│   ├── 使用说明.txt
+│   ├── installer/               安装包放置说明
+│   ├── toolkit/                 补丁产物 / A-B 判据 / 上游沉洞开关
+│   ├── reports/                 审计记录
+│   └── src/                     PE-CLR-IL 读写库 / 反汇编器 / 补丁驱动
 ├── Listary/                     Listary 6.3.5.94 · 专业版权益
 │   ├── README.md
 │   ├── PINNED-VERSIONS.md
