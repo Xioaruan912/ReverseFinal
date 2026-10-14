@@ -103,6 +103,4 @@ Pop-Location
 Step 6 '结果'
 Write-Host ''
 Write-Host '  evidence: exports\poc_offline_vip.png' -ForegroundColor Green
-Write-Host '  报告:     reports\HexHub-5.1.9-VIP鉴权脆弱性评估报告.md' -ForegroundColor Green
-Write-Host '  SOP:      reports\HOWTO-白盒鉴权脆弱性测试-SOP.md' -ForegroundColor Green
 Warn '验证完毕请执行 -Restore 复原环境'

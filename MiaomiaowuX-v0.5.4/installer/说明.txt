@@ -1,32 +1,14 @@
-﻿妙妙屋X (miaomiaowuX) v0.5.4 —— 安装包放置说明
-=====================================================
+﻿安装包放置说明
+==============
 
-本目录用于放置目标主程序。因单文件较大，不随仓库分发，统一托管在交付仓库的 Release：
+这个文件夹平时不用管。
 
-  Release 地址
-    https://github.com/Xioaruan912/ReverseFinal/releases/tag/whitebox-audit-v1.0
+一键命令会自动把程序下载下来，并自动检查文件是否完整。
 
-  需要的文件
-    mmwx-v0.5.4-linux-amd64          36,605,840 bytes
-      SHA-256  ecc1020ad9e5448fdb04bf510f85f9eec329844809cd62f131ccbd635b0d5657
+如果你想提前自己下载好放进来（比如网络慢、想提前准备），把文件放在
+下面任意一个位置，一键命令会自动找到它：
 
-    mmwx-v0.5.4-windows-amd64.exe   133,516,800 bytes（可选，Windows 端核对用）
-      SHA-256  d11895aa6819b68ad61dd50cf1713556445e377d6257467dc8f1b06f01e6cc81
+  1) 本文件夹
+  2) 上一级的 toolkit/artifacts/ 文件夹
 
-    mmwx-v0.5.4-checksums.txt                官方全平台校验清单
-    mmwx-v0.5.4-master.manifest              官方签名清单（含可执行文件哈希）
-
-  下载与校验（Linux / WSL）
-    BASE=https://github.com/Xioaruan912/ReverseFinal/releases/download/whitebox-audit-v1.0
-    curl -fL -O $BASE/mmwx-v0.5.4-linux-amd64
-    sha256sum mmwx-v0.5.4-linux-amd64
-
-放置位置（任选其一，脚本会依次查找）
-  1) 本目录（MiaomiaowuX-v0.5.4/installer/）
-  2) ../toolkit/artifacts/
-  3) 环境变量 MMWX_ARTIFACTS 指定的目录
-
-说明
-  · 版本固定为 v0.5.4，部署脚本不会去取上游的 releases/latest；
-  · 一键脚本会自动下载并强制校验 sha256，校验不过即中止；
-  · 若使用自建镜像，可用 MMWX_MIRROR=<url> 指定备用下载前缀。
+需要的文件：mmwx-v0.5.4-linux-amd64
