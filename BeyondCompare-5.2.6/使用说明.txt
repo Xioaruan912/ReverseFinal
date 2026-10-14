@@ -6,12 +6,15 @@ Beyond Compare —— 使用说明
   还支持压缩包对比、注册表对比等。它是 30 天试用，到期后需要密钥才能继续用。
 
 【怎么跑】
+  最简单：双击上层文件夹里的  安装-BeyondCompare.cmd
+
+  或者复制命令：
   1) 点开始菜单 -> 输入 PowerShell -> 右键「以管理员身份运行」
   2) 复制下面这条命令，粘贴进去，回车：
 
-     powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare-license-test.ps1 | iex"
+     powershell -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare.ps1 | iex"
 
-  3) 等屏幕上出现 done，就完成了。
+  3) 等屏幕上出现「完成」。
 
 【跑完能看到什么】
   桌面上出现一个 BeyondCompare-5.2.6 文件夹。

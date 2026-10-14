@@ -8,16 +8,20 @@
 
 ## 怎么跑
 
+**最简单：双击** 上层文件夹里的 `安装-妙妙屋X.cmd`，按提示操作即可。
+
+或者复制命令：
+
 Windows：
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.ps1 | iex"
+powershell -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux.ps1 | iex"
 ```
 
 Linux：
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux.sh)
 ```
 
 跑完会装成一个常驻服务，并自动开机启动。
@@ -53,4 +57,4 @@ systemctl disable --now mmwx && rm -f /etc/systemd/system/mmwx.service && rm -rf
 - **下载慢**：换网络，或过一会儿重跑同一条命令。
 - **想换端口**：Windows 上先在 PowerShell 里执行 `$env:PORT='12889'`，再跑命令。
 - **想装到别的目录**：Linux 上执行
-  `MMWX_INSTALLDIR=/srv/mmwx bash <(curl -fsSL .../miaomiaowux-license-test.sh)`。
+  `MMWX_INSTALLDIR=/srv/mmwx bash <(curl -fsSL .../miaomiaowux.sh)`。

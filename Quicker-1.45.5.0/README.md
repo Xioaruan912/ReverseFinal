@@ -9,14 +9,18 @@ Quicker 是 Windows 上的效率工具：把鼠标中键、Ctrl、轮盘菜单�
 
 ## 怎么跑
 
+**最简单：双击** 上层文件夹里的 `安装-Quicker.cmd`，按提示操作即可。
+
+或者复制命令：
+
 1. 用管理员身份打开 PowerShell（右键「以管理员身份运行」）
 2. 复制下面这条命令，粘贴进去，回车
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/quicker-vip-test.ps1 | iex"
+powershell -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/quicker.ps1 | iex"
 ```
 
-3. 等屏幕上出现 `done`，就完成了（大约 1～2 分钟）
+3. 等屏幕上出现「完成」（大约 1～2 分钟）
 
 ## 跑完能看到什么
 

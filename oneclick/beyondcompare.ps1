@@ -2,8 +2,8 @@
 #  Beyond Compare 5.2.6.32774 - whitebox licence audit one-click installer
 #  Produces a ready-to-use, offline-licensed Beyond Compare installation.
 #
-#  Usage (non-interactive):
-#     powershell -NoProfile -ExecutionPolicy Bypass -c "irm <url> | iex"
+#  Usage (one-liner):
+#     powershell -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare.ps1 | iex"
 #
 #  Environment variables:
 #     BC_INSTALLDIR      target folder (default: Desktop\BeyondCompare-5.2.6)
@@ -79,21 +79,21 @@ function Test-Interactive {
 function Safe-Remove($path) {
   $full = [IO.Path]::GetFullPath($path)
   $parts = $full.TrimEnd('\').Split('\') | Where-Object { $_ -ne '' }
-  if ($parts.Count -lt 3) { Warn ('refusing to delete shallow path: ' + $full); return }
+  if ($parts.Count -lt 3) { Warn ((T '5ouS57ud5Yig6Zmk6Lev5b6E6L+H5rWF55qE55uu5b2V77ya') + $full); return }
   if (Test-Path $full) { Remove-Item $full -Recurse -Force -ErrorAction SilentlyContinue }
 }
 
 function Ensure-Deps {
   foreach ($c in @('Get-FileHash', 'Invoke-WebRequest', 'Start-Process')) { }
-  Write-Host '  dependencies OK (built-in cmdlets only, no Python/Java needed)' -ForegroundColor DarkGray
+  Write-Host (T '5L6d6LWW5bey5bCx57uq77yI5Y+q55So57O757uf6Ieq5bim57uE5Lu277yM5peg6ZyAIFB5dGhvbiAvIEphdmHvvIk=') -ForegroundColor DarkGray
 }
 
 function Ask-Dir($label, $default) {
   if (-not (Test-Interactive)) { return $default }
   while ($true) {
     Write-Host $label -ForegroundColor White
-    Write-Host ('    default [' + $default + ']') -ForegroundColor DarkGray
-    Write-Host -NoNewline '    input (Enter = default): ' -ForegroundColor DarkGray
+    Write-Host (((T 'ICAgIOm7mOiupCBb')) + $default + (T 'XQ==')) -ForegroundColor DarkGray
+    Write-Host -NoNewline (T 'ICAgIOivt+i+k+WFpe+8iOebtOaOpeWbnui9pueUqOm7mOiupO+8iTog') -ForegroundColor DarkGray
     $v = $null
     try { $v = Read-Host } catch { return $default }
     if ([string]::IsNullOrWhiteSpace($v)) { return $default }
@@ -104,7 +104,7 @@ function Ask-Dir($label, $default) {
       Set-Content -Path $probe -Value 'ok' -ErrorAction Stop
       Remove-Item $probe -Force
       return $v
-    } catch { Warn ("cannot write to '" + $v + "', try another path") }
+    } catch { Warn ((T '5peg5rOV5YaZ5YWlIA==') + $v + (T '77yM6K+35o2i5LiA5Liq6Lev5b6E')) }
   }
 }
 
@@ -119,10 +119,10 @@ function Test-Admin {
 function Invoke-Patch([string]$file) {
   $bytes = [IO.File]::ReadAllBytes($file)
   if ($bytes.Length -ne $ORIG_SIZE) {
-    Die ('unexpected size ' + $bytes.Length + ' (expected ' + $ORIG_SIZE + ') - wrong build?')
+    Die ((T '5paH5Lu25aSn5bCP5byC5bi477ya') + $bytes.Length + (T '77yI5bqU5Li6IA==') + $ORIG_SIZE + (T '77yJ4oCU4oCU54mI5pys5LiN5a+577yf'))
   }
   if ((Get-Sha256 $file) -ne $ORIG_SHA256) {
-    Die 'installed BCompare.exe does not match the pinned build - aborting'
+    Die (T '5bey5a6J6KOF55qEIEJDb21wYXJlLmV4ZSDkuI7nm67moIfniYjmnKzkuI3kuIDoh7TvvIzlt7LkuK3mraI=')
   }
 
   foreach ($p in $CODE_PATCHES) {
@@ -131,24 +131,24 @@ function Invoke-Patch([string]$file) {
     $cur = New-Object byte[] $old.Length
     [Array]::Copy($bytes, $p.off, $cur, 0, $old.Length)
     for ($i = 0; $i -lt $old.Length; $i++) {
-      if ($cur[$i] -ne $old[$i]) { Die ('patch site 0x{0:x} does not match the pinned build' -f $p.off) }
+      if ($cur[$i] -ne $old[$i]) { Die ((T '5aSE55CG5L2N572uIDB4ezA6eH0g5LiO55uu5qCH54mI5pys5LiN5LiA6Ie0') -f $p.off) }
     }
     [Array]::Copy($new, 0, $bytes, $p.off, $new.Length)
   }
-  Ok ('applied ' + $CODE_PATCHES.Count + ' code patches')
+  Ok ((T '5bey5aSE55CGIA==') + $CODE_PATCHES.Count + (T 'IOWkhOS7o+eggQ=='))
 
   foreach ($p in $STR_PATCHES) {
     $old = [Text.Encoding]::ASCII.GetBytes($p.old)
     $new = [Text.Encoding]::ASCII.GetBytes($p.new)
-    if ($new.Length -ne $old.Length) { Die 'string patch length mismatch' }
+    if ($new.Length -ne $old.Length) { Die (T '5paH5pys5pu/5o2i6ZW/5bqm5LiN5LiA6Ie0') }
     $cur = New-Object byte[] $old.Length
     [Array]::Copy($bytes, $p.off, $cur, 0, $old.Length)
     for ($i = 0; $i -lt $old.Length; $i++) {
-      if ($cur[$i] -ne $old[$i]) { Die ('string site 0x{0:x} does not match the pinned build' -f $p.off) }
+      if ($cur[$i] -ne $old[$i]) { Die ((T '5paH5pys5L2N572uIDB4ezA6eH0g5LiO55uu5qCH54mI5pys5LiN5LiA6Ie0') -f $p.off) }
     }
     [Array]::Copy($new, 0, $bytes, $p.off, $new.Length)
   }
-  Ok ('applied ' + $STR_PATCHES.Count + ' upstream-detachment patches')
+  Ok ((T '5bey5aSE55CGIA==') + $STR_PATCHES.Count + (T 'IOWkhOe9kee7nOmalOemuw=='))
 
   # drop the Authenticode certificate table: Beyond Compare verifies its own
   # signature at start-up and refuses to run once the image has been changed
@@ -157,21 +157,21 @@ function Invoke-Patch([string]$file) {
   $secOff = [BitConverter]::ToUInt32($bytes, $dd)
   $secSz  = [BitConverter]::ToUInt32($bytes, $dd + 4)
   if ($secOff -gt 0) {
-    if (($secOff + $secSz) -ne $bytes.Length) { Die 'unexpected certificate layout' }
+    if (($secOff + $secSz) -ne $bytes.Length) { Die (T '6K+B5Lmm57uT5p6E5byC5bi4') }
     $trimmed = New-Object byte[] $secOff
     [Array]::Copy($bytes, 0, $trimmed, 0, $secOff)
     $bytes = $trimmed
     for ($i = 0; $i -lt 8; $i++) { $bytes[$dd + $i] = 0 }
-    Ok ('removed certificate table (' + $secSz + ' bytes) - self-signature check disabled')
+    Ok ((T '5bey56e76Zmk6K+B5Lmm5q6177yI') + $secSz + (T 'IOWtl+iKgu+8ie+8jOWFs+mXreiHquagoemqjA=='))
   }
 
   [IO.File]::WriteAllBytes($file, $bytes)
 
   $h = Get-Sha256 $file
   if ($h -ne $GOLD_SHA256) {
-    Die ('result does not match the golden hash' + [Environment]::NewLine + '        got ' + $h)
+    Die ((T '57uT5p6c5LiO6aKE5pyf5LiN5LiA6Ie0') + [Environment]::NewLine + (T 'ICAgICAgICDlrp7pmYXvvJo=') + $h)
   }
-  Ok ('golden hash verified: ' + $h)
+  Ok ((T '5qCh6aqM6YCa6L+H77ya') + $h)
 }
 
 # ----------------------------------------------------------------- download
@@ -180,8 +180,8 @@ function Get-Installer([string]$cacheDir) {
   New-Item -ItemType Directory -Force -Path $cacheDir | Out-Null
   $cached = Join-Path $cacheDir $name
   if (Test-Path $cached) {
-    if ((Get-Sha256 $cached) -eq $PKG_SHA256) { Ok ('using cached installer: ' + $cached); return @($cached, $false) }
-    Warn 'cached installer failed its checksum, downloading again'
+    if ((Get-Sha256 $cached) -eq $PKG_SHA256) { Ok ((T '5L2/55So5bey57yT5a2Y55qE5a6J6KOF5YyF77ya') + $cached); return @($cached, $false) }
+    Warn (T '57yT5a2Y5a6J6KOF5YyF5qCh6aqM5aSx6LSl77yM6YeN5paw5LiL6L29')
     Remove-Item $cached -Force -ErrorAction SilentlyContinue
   }
 
@@ -189,46 +189,46 @@ function Get-Installer([string]$cacheDir) {
   if ($env:BC_MIRROR) { $urls += ($env:BC_MIRROR.TrimEnd('/') + '/' + $name) }
 
   foreach ($u in $urls) {
-    Write-Host ('  trying ' + $u) -ForegroundColor DarkGray
+    Write-Host ((T 'ICDmraPlnKjlsJ3or5Ug') + $u) -ForegroundColor DarkGray
     try {
       $tmp = $cached + '.part'
       $ProgressPreference = 'SilentlyContinue'
       Invoke-WebRequest -Uri $u -OutFile $tmp -UseBasicParsing -TimeoutSec 600
-      if ((Get-Item $tmp).Length -ne $PKG_SIZE) { Warn 'size mismatch'; Remove-Item $tmp -Force; continue }
-      if ((Get-Sha256 $tmp) -ne $PKG_SHA256) { Warn 'checksum mismatch'; Remove-Item $tmp -Force; continue }
+      if ((Get-Item $tmp).Length -ne $PKG_SIZE) { Warn (T '5paH5Lu25aSn5bCP5LiN5LiA6Ie0'); Remove-Item $tmp -Force; continue }
+      if ((Get-Sha256 $tmp) -ne $PKG_SHA256) { Warn (T '5qCh6aqM5LiN5LiA6Ie0'); Remove-Item $tmp -Force; continue }
       Move-Item $tmp $cached -Force
-      Ok 'downloaded and verified'
+      Ok (T '5bey5LiL6L295bm25qCh6aqM6YCa6L+H')
       return @($cached, $true)
     } catch {
-      Warn ('download failed: ' + $_.Exception.Message)
+      Warn ((T '5LiL6L295aSx6LSl77ya') + $_.Exception.Message)
     }
   }
-  Die ('could not obtain the installer' + [Environment]::NewLine +
-       '        manual step: download ' + $PKG_URL + [Environment]::NewLine +
-       '        and place it in ' + $cacheDir)
+  Die ((T '5peg5rOV6I635Y+W5a6J6KOF5YyF') + [Environment]::NewLine +
+       (T 'ICAgICAgICDor7fmiYvliqjkuIvovb3vvJo=') + $PKG_URL + [Environment]::NewLine +
+       (T 'ICAgICAgICDlubbmlL7liLDvvJo=') + $cacheDir)
 }
 
 # --------------------------------------------------------------------- main
 Write-Host ''
 Write-Host '============================================================' -ForegroundColor White
-Write-Host ' Beyond Compare 5 - offline licence validation (whitebox)' -ForegroundColor White
-Write-Host (' target: Beyond Compare ' + $BC_VER) -ForegroundColor White
+Write-Host (T 'IEJleW9uZCBDb21wYXJlIMK3IOS4gOmUruWuieijhQ==') -ForegroundColor White
+Write-Host ((T 'IOebruagh+eJiOacrO+8mg==') + $BC_VER) -ForegroundColor White
 Write-Host '============================================================' -ForegroundColor White
 
-Step 'stage 0/5  environment'
+Step (T 'MC81ICDnjq/looPmo4Dmn6U=')
 Ensure-Deps
 $isAdmin = Test-Admin
-if (-not $isAdmin) { Write-Host '  not elevated - the vendor installer will raise one UAC prompt' -ForegroundColor DarkGray }
+if (-not $isAdmin) { Write-Host (T 'ICDmnKrku6XnrqHnkIblkZjov5DooYzigJTigJTlronoo4Xml7bkvJrlvLnkuIDmrKHmnYPpmZDnoa7orqQ=') -ForegroundColor DarkGray }
 
 $desktop = [Environment]::GetFolderPath('Desktop')
 $default = Join-Path $desktop ('BeyondCompare-' + $BC_VER)
-$outDir  = if ($env:BC_INSTALLDIR) { $env:BC_INSTALLDIR } else { Ask-Dir 'Choose the output folder' $default }
+$outDir  = if ($env:BC_INSTALLDIR) { $env:BC_INSTALLDIR } else { Ask-Dir (T '6K+36YCJ5oup5a6J6KOF55uu5b2V') $default }
 if (-not $env:BC_INSTALLDIR -and -not (Test-Interactive)) {
-  Write-Host '  (non-interactive: using the default folder; set BC_INSTALLDIR to change it)' -ForegroundColor DarkGray
+  Write-Host (T 'ICDvvIjpnZ7kuqTkupLov5DooYzvvJrkvb/nlKjpu5jorqTnm67lvZXvvJvlj6/nlKggQkNfSU5TVEFMTERJUiDkv67mlLnvvIk=') -ForegroundColor DarkGray
 }
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 $outDir = (Resolve-Path $outDir).Path
-Write-Host ('  output: ' + $outDir) -ForegroundColor White
+Write-Host ((T 'ICDlronoo4Xnm67lvZXvvJo=') + $outDir) -ForegroundColor White
 
 $bcExe = Join-Path $outDir 'BCompare.exe'
 $needInstall = $true
@@ -238,50 +238,50 @@ elseif (Test-Path $bcExe) {
   if ($h0 -eq $ORIG_SHA256 -or $h0 -eq $GOLD_SHA256) { $needInstall = $false }
 }
 
-Step 'stage 1/5  pinned artifacts'
-Write-Host ('  the installer comes from GitHub Releases (' +
-            [Math]::Round($PKG_SIZE / 1MB, 1) + ' MB);' + [Environment]::NewLine +
-            '  in mainland China this can be slow - use a mirror with' + [Environment]::NewLine +
-            '      $env:BC_MIRROR=''https://your-mirror/path''   then re-run.' + [Environment]::NewLine +
-            '  a copy placed in <output>\artifacts\ is used as-is.') -ForegroundColor DarkGray
+Step (T 'MS81ICDojrflj5blronoo4XljIU=')
+Write-Host ((T 'ICDlronoo4XljIXku44gR2l0SHViIOS4i+i9ve+8iOe6piA=') +
+            [Math]::Round($PKG_SIZE / 1MB, 1) + (T 'IE1C77yJ77yb') + [Environment]::NewLine +
+            (T 'ICDkuK3lm73lpKfpmYblj6/og73ovoPmhaLvvIzlj6/nlKjplZzlg4/vvJo=') + [Environment]::NewLine +
+            (T 'ICAgICAgJGVudjpCQ19NSVJST1I9J2h0dHBzOi8veW91ci1taXJyb3IvcGF0aCcgIOeEtuWQjumHjeaWsOi/kOihjOOAgg==') + [Environment]::NewLine +
+            (T 'ICDmlL7lnKggPOWuieijheebruW9lT5cYXJ0aWZhY3RzXCDph4znmoTlia/mnKzkvJrnm7TmjqXkvb/nlKjjgII=')) -ForegroundColor DarkGray
 $cacheDir = Join-Path $outDir 'artifacts'
 if ($needInstall) {
   $fetched  = @(Get-Installer $cacheDir)
   $pkg      = $fetched[0]
   $download = $fetched[1]
 } else {
-  Write-Host '  not needed (Beyond Compare is already in place)' -ForegroundColor DarkGray
+  Write-Host (T 'ICDml6DpnIDkuIvovb3vvIhCZXlvbmQgQ29tcGFyZSDlt7LlsLHkvY3vvIk=') -ForegroundColor DarkGray
   $pkg = $null; $download = $false
 }
 
-Step 'stage 2/5  install'
+Step (T 'Mi81ICDlronoo4U=')
 if ($env:BC_SKIP_INSTALL -eq '1') {
-  if (-not (Test-Path $bcExe)) { Die ('BC_SKIP_INSTALL=1 but ' + $bcExe + ' does not exist') }
-  Write-Host '  skipped (BC_SKIP_INSTALL=1)'
+  if (-not (Test-Path $bcExe)) { Die ((T '5bey6K6+572uIEJDX1NLSVBfSU5TVEFMTD0x77yM5L2G5om+5LiN5YiwIA==') + $bcExe) }
+  Write-Host (T 'ICDlt7Lot7Pov4fvvIhCQ19TS0lQX0lOU1RBTEw9Me+8iQ==')
 } elseif (-not $needInstall) {
-  Write-Host ('  Beyond Compare ' + $BC_VER + ' is already installed and matches the pinned build') -ForegroundColor DarkGray
+  Write-Host ((T 'ICBCZXlvbmQgQ29tcGFyZSA=') + $BC_VER + (T 'IOW3suWuieijheS4lOS4juebruagh+eJiOacrOS4gOiHtA==')) -ForegroundColor DarkGray
 } else {
-  if (Test-Path $bcExe) { Warn 'a different BCompare.exe is present - reinstalling' }
+  if (Test-Path $bcExe) { Warn (T '5qOA5rWL5Yiw5LiN5ZCM55qEIEJDb21wYXJlLmV4Ze+8jOmHjeaWsOWuieijhQ==') }
   $args = @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/NOICONS', '/SP-', ('/DIR=' + $outDir))
-  Write-Host '  running the vendor installer silently (UAC may prompt)...' -ForegroundColor DarkGray
+  Write-Host (T 'ICDmraPlnKjpnZnpu5jlronoo4XvvIjlj6/og73lvLnkuIDmrKHmnYPpmZDnoa7orqTvvIkuLi4=') -ForegroundColor DarkGray
   if (Test-Admin) {
     $pr = Start-Process -FilePath $pkg -ArgumentList $args -Wait -PassThru
   } else {
     $pr = Start-Process -FilePath $pkg -ArgumentList $args -Wait -PassThru -Verb RunAs
   }
   Start-Sleep -Seconds 3
-  if (-not (Test-Path $bcExe)) { Die 'installation did not produce BCompare.exe' }
-  Ok ('installed Beyond Compare ' + $BC_VER)
+  if (-not (Test-Path $bcExe)) { Die (T '5a6J6KOF5ZCO5pyq55Sf5oiQIEJDb21wYXJlLmV4ZQ==') }
+  Ok ((T '5bey5a6J6KOFIEJleW9uZCBDb21wYXJlIA==') + $BC_VER)
 }
 
-Step 'stage 3/5  patch'
+Step (T 'My81ICDlpITnkIY=')
 if ((Get-Sha256 $bcExe) -eq $GOLD_SHA256) {
-  Ok 'already patched (golden hash matches) - nothing to do'
+  Ok (T '5bey5aSE55CG6L+H77yI5qCh6aqM5LiA6Ie077yJ77yM5peg6ZyA5pON5L2c')
 } else {
   Invoke-Patch $bcExe
 }
 
-Step 'stage 4/5  smoke test'
+Step (T 'NC81ICDoh6rmo4A=')
 $smoke = Join-Path $outDir ('.smoke-' + [guid]::NewGuid().ToString('N').Substring(0, 8))
 New-Item -ItemType Directory -Force -Path $smoke | Out-Null
 $sfile = Join-Path $smoke 's.txt'
@@ -301,38 +301,37 @@ while ((Get-Date) -lt $deadline -and -not (Test-Path $slog)) { Start-Sleep -Mill
 Stop-Process -Name BCompare -Force -ErrorAction SilentlyContinue
 Start-Sleep -Seconds 1
 if (-not (Test-Path $slog)) {
-  Write-Host ('  smoke folder: ' + $smoke) -ForegroundColor DarkGray
+  Write-Host ((T 'ICDoh6rmo4Dnm67lvZXvvJo=') + $smoke) -ForegroundColor DarkGray
   Get-ChildItem $smoke -ErrorAction SilentlyContinue | ForEach-Object { Write-Host ('    ' + $_.Name) -ForegroundColor DarkGray }
-  Die 'the patched binary did not start - no script log was produced'
+  Die (T '5aSE55CG5ZCO56iL5bqP5peg5rOV5ZCv5Yqo4oCU4oCU5pyq55Sf5oiQ5pel5b+X')
 }
 $banner = (Select-String -Path $slog -Pattern '\*\*\*' | Select-Object -First 1)
 if ($banner) {
   Safe-Remove $smoke
-  Die ('licence state was not lifted: ' + $banner.Line.Trim())
+  Die ((T '5o6I5p2D54q25oCB5pyq55Sf5pWI77ya') + $banner.Line.Trim())
 }
-Ok 'binary runs and the evaluation banner is gone (licence check passes)'
+Ok (T '56iL5bqP5Y+v5q2j5bi46L+Q6KGM77yM6K+V55So5o+Q56S65bey5raI5aSx77yI5o6I5p2D5qOA5p+l6YCa6L+H77yJ')
 Safe-Remove $smoke
 
-Step 'stage 5/5  cleanup'
+Step (T 'NS81ICDmuIXnkIY=')
 if ($download -and $env:BC_KEEP_ARTIFACTS -ne '1') {
   Remove-Item $pkg -Force -ErrorAction SilentlyContinue
-  Write-Host '  removed the downloaded installer (set BC_KEEP_ARTIFACTS=1 to keep it)' -ForegroundColor DarkGray
+  Write-Host (T 'ICDlt7LliKDpmaTkuIvovb3nmoTlronoo4XljIXvvIjorr4gQkNfS0VFUF9BUlRJRkFDVFM9MSDlj6/kv53nlZnvvIk=') -ForegroundColor DarkGray
 }
 foreach ($k in @('HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Beyond Compare 5_is1',
                  'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Beyond Compare 5_is1')) {
   if (Test-Path $k) { Remove-Item $k -Recurse -Force -ErrorAction SilentlyContinue }
 }
-Ok 'cleanup done'
+Ok (T '5riF55CG5a6M5oiQ')
 
 Write-Host ''
 Write-Host '============================================================' -ForegroundColor Green
-Write-Host ' done' -ForegroundColor Green
+Write-Host (T 'IOWujOaIkA==') -ForegroundColor Green
 Write-Host '============================================================' -ForegroundColor Green
-Write-Host (' product  : Beyond Compare ' + $BC_VER + ' (offline licence validation passes)')
-Write-Host (' path     : ' + $bcExe)
-Write-Host (' version  : ' + $BC_VER)
-Write-Host (' launch   : double-click BCompare.exe')
-Write-Host (' remove   : delete the folder ' + $outDir)
-Write-Host (' notes    : update checks are disabled and all vendor URLs are')
-Write-Host ('            retargeted to a non-routable host.')
+Write-Host ((T 'IOeoi+W6jyAgICAg77yaQmV5b25kIENvbXBhcmUg') + $BC_VER)
+Write-Host ((T 'IOS9jee9riAgICAg77ya') + $bcExe)
+Write-Host ((T 'IOeJiOacrCAgICAg77ya') + $BC_VER)
+Write-Host (T 'IOaJk+W8gOaWueW8jyDvvJrlj4zlh7sgQkNvbXBhcmUuZXhl')
+Write-Host ((T 'IOWIoOmZpOaWueW8jyDvvJrliKDmjonmlofku7blpLkg') + $outDir)
+Write-Host (T 'IOivtOaYjiAgICAg77ya5bey5YWz6Zet6Ieq5Yqo5pu05paw77yM5Lmf5LiN5YaN5Zue6L+e5Y6C5ZWG5pyN5Yqh5Zmo44CC')
 Write-Host '============================================================' -ForegroundColor Green

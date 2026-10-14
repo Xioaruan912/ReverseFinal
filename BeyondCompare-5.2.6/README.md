@@ -9,14 +9,18 @@ Beyond Compare 是用来对比文件和文件夹的工具：能看两个文件�
 
 ## 怎么跑
 
+**最简单：双击** 上层文件夹里的 `安装-BeyondCompare.cmd`，按提示操作即可。
+
+或者复制命令：
+
 1. 点开始菜单 → 输入 `PowerShell` → 右键「以管理员身份运行」
 2. 复制下面这条命令，粘贴进去，回车
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare-license-test.ps1 | iex"
+powershell -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/beyondcompare.ps1 | iex"
 ```
 
-3. 等屏幕上出现 `done`，就完成了
+3. 等屏幕上出现「完成」
 
 ## 跑完能看到什么
 

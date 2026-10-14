@@ -3,7 +3,7 @@
 # 妙妙屋X (miaomiaowuX) v0.5.4 - 一键安装 · 持久化部署
 #
 #   用法（Linux / WSL）:
-#     bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
+#     bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux.sh)
 #
 #   行为（纯安装器：只产出可运行的目标，不生成 md / 报告 / 证据目录）:
 #     · 依赖自举：缺 curl / unzip / upx 就自动装上（apt / apk / dnf / yum / pacman / zypper）
@@ -69,9 +69,9 @@ ask(){
   {
     printf '[37m%s[0m
 ' "$label"
-    printf '[90m    default [%s][0m
+    printf '[90m    默认 [%s][0m
 ' "$default"
-    printf '[90m    input (Enter = default): [0m'
+    printf '[90m    请输入（直接回车用默认）: [0m'
   } >&2
   # 最多等 300 秒；无输入 / 超时 / 无终端 -> 用默认值
   read -r -t 300 v </dev/tty 2>/dev/null || v=""
@@ -380,13 +380,13 @@ cd "$INSTALL_DIR"
 PORT=$PORT MMWX_LISTEN_PORT=$PORT MMWX_DATA_DIR="$INSTALL_DIR/data" \\
   nohup "$INSTALL_DIR/mmwx" >> "$INSTALL_DIR/mmwx.log" 2>&1 &
 echo \$! > "$INSTALL_DIR/mmwx.pid"
-echo "started pid \$(cat "$INSTALL_DIR/mmwx.pid")"
+echo "已启动，进程号 \$(cat "$INSTALL_DIR/mmwx.pid")"
 START
   cat > "$INSTALL_DIR/stop.sh" <<STOP
 #!/usr/bin/env bash
 [ -f "$INSTALL_DIR/mmwx.pid" ] && kill "\$(cat $INSTALL_DIR/mmwx.pid)" 2>/dev/null || pkill -f "$INSTALL_DIR/mmwx"
 rm -f "$INSTALL_DIR/mmwx.pid"
-echo stopped
+echo 已停止
 STOP
   chmod 0755 "$INSTALL_DIR/start.sh" "$INSTALL_DIR/stop.sh"
   bash "$INSTALL_DIR/start.sh" >/dev/null 2>&1 || true

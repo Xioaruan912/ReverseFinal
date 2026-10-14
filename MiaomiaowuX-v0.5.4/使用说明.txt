@@ -7,14 +7,17 @@
   专业版会放开这些上限并解锁一批进阶功能。
 
 【怎么跑】
+  最简单：双击上层文件夹里的  安装-妙妙屋X.cmd
+
+  或者复制命令：
   Windows：
     1) 用管理员身份打开 PowerShell
     2) 复制下面这条命令，粘贴进去，回车：
 
-       powershell -NoProfile -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.ps1 | iex"
+       powershell -c "irm https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux.ps1 | iex"
 
   Linux：
-    bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux-license-test.sh)
+    bash <(curl -fsSL https://raw.githubusercontent.com/Xioaruan912/ReverseFinal/main/oneclick/miaomiaowux.sh)
 
   跑完会装成一个常驻服务，并自动开机启动。
 
@@ -46,4 +49,4 @@
   A: Windows 上先在 PowerShell 里执行  $env:PORT='12889'  再跑命令。
 
   Q: 想装到别的目录？
-  A: Linux 上执行  MMWX_INSTALLDIR=/srv/mmwx bash <(curl -fsSL .../miaomiaowux-license-test.sh)
+  A: Linux 上执行  MMWX_INSTALLDIR=/srv/mmwx bash <(curl -fsSL .../miaomiaowux.sh)
